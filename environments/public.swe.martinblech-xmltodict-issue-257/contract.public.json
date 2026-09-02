@@ -1,0 +1,39 @@
+{
+  "classification": "public-oss",
+  "family": "public_oss_swe",
+  "fingerprint": "aa41977120e6ecdddb5c4fc603e8ab23cb272726a86750119969ff4dfc90e297",
+  "freeze": {
+    "fsPolicy": "agent-tree-only",
+    "imageDigest": "sha256:679b36225a1f83238efba8c71b9cde3c24caaeacc9b682ae92819cb55eec328f",
+    "networkPolicy": "deny",
+    "resourceLimits": {
+      "cpus": "1",
+      "memory": "512m",
+      "network": "none",
+      "pids": 128,
+      "readOnlyRoot": true,
+      "timeoutS": 120
+    },
+    "secretsPolicy": "job-envelope-only"
+  },
+  "identity": {
+    "environmentId": "public.swe.martinblech-xmltodict-issue-257",
+    "publicationName": "vvdex-xmltodict-streaming-text",
+    "taskId": "public.swe.martinblech-xmltodict-issue-257",
+    "title": "Streaming items must equal what the full parse would have built",
+    "version": "0.1.0"
+  },
+  "schema": "vvdex.forge.public-exam-contract/v1",
+  "world": {
+    "allowedTools": [
+      "edit",
+      "test"
+    ],
+    "limits": null,
+    "startState": "frozen-parent-tree",
+    "termination": "grader-exits",
+    "writablePaths": [
+      "xmltodict.py"
+    ]
+  }
+}

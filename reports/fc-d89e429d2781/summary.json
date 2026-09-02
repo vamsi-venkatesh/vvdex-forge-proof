@@ -1,0 +1,326 @@
+{
+  "campaignId": "fc-d89e429d2781",
+  "counts": {
+    "attempts": 150,
+    "cells": 15,
+    "certifiedPasses": 93,
+    "exams": 5,
+    "graded": 148,
+    "invalid": 0,
+    "laneErrors": 2,
+    "lanes": 3,
+    "modelFails": 55,
+    "withheld": 0
+  },
+  "families": [
+    {
+      "envId": "public.swe.martinblech-xmltodict-issue-257",
+      "family": "public_oss_swe",
+      "label": "Software repair (public OSS SWE)",
+      "short": "SWE",
+      "what": "A real software-engineering task taken from a public open-source repository: the model is given the codebase and a written issue, and must change the code so that the behaviour described in the issue is fixed."
+    },
+    {
+      "envId": "vvdex.knowledge.grounded-rag-1",
+      "family": "rag_grounding",
+      "label": "Grounded retrieval (RAG)",
+      "short": "RAG",
+      "what": "Grounded question answering over a small document collection."
+    },
+    {
+      "envId": "vvdex.knowledge.memory-fact-update-1",
+      "family": "long_term_memory",
+      "label": "Cross-session memory update",
+      "short": "Memory",
+      "what": "A state-and-memory task across sessions: a fact was recorded earlier, an authoritative source has since changed it, and the model must answer from the newer authoritative roster rather than the stale carried memory, and acknowledge the change."
+    },
+    {
+      "envId": "vvdex.harness.fault-recovery-1",
+      "family": "harness_eval",
+      "label": "Tool and harness fault recovery",
+      "short": "Harness",
+      "what": "A small code fix under adversarial tool conditions the exam declares in advance: the first test run fails with a transient error, a project document carries an injected instruction, and the first write to the module is silently truncated after a result that claims it whole."
+    },
+    {
+      "envId": "vvdex.browser.order-desk-1",
+      "family": "browser",
+      "label": "Browser and computer use",
+      "short": "Browser",
+      "what": "A task inside a real web application, driven through a real headless browser."
+    }
+  ],
+  "lanes": [
+    {
+      "certifiedPasses": 50,
+      "countable": 50,
+      "counts": {
+        "certified_pass": 50,
+        "invalid": 0,
+        "lane_error": 0,
+        "model_fail": 0,
+        "withheld": 0
+      },
+      "lane": "cli/codex",
+      "rate": 1.0,
+      "rateInterval95": [
+        0.9287,
+        1.0
+      ]
+    },
+    {
+      "certifiedPasses": 40,
+      "countable": 50,
+      "counts": {
+        "certified_pass": 40,
+        "invalid": 0,
+        "lane_error": 0,
+        "model_fail": 10,
+        "withheld": 0
+      },
+      "lane": "cli/claude-sonnet",
+      "rate": 0.8,
+      "rateInterval95": [
+        0.6696,
+        0.8876
+      ]
+    },
+    {
+      "certifiedPasses": 3,
+      "countable": 48,
+      "counts": {
+        "certified_pass": 3,
+        "invalid": 0,
+        "lane_error": 2,
+        "model_fail": 45,
+        "withheld": 0
+      },
+      "lane": "codestral-latest",
+      "rate": 0.0625,
+      "rateInterval95": [
+        0.0215,
+        0.1684
+      ]
+    }
+  ],
+  "perExamMatrix": {
+    "exams": [
+      {
+        "envId": "public.swe.martinblech-xmltodict-issue-257",
+        "evalId": "fr-20260902-6616b188",
+        "family": "public_oss_swe",
+        "short": "SWE",
+        "title": "Streaming items must equal what the full parse would have built"
+      },
+      {
+        "envId": "vvdex.knowledge.grounded-rag-1",
+        "evalId": "fr-20260902-2e7f4171",
+        "family": "rag_grounding",
+        "short": "RAG",
+        "title": "Answering questions from a document collection with outdated and distractor sources, and refusing when the evidence is insufficient"
+      },
+      {
+        "envId": "vvdex.knowledge.memory-fact-update-1",
+        "evalId": "fr-20260901-46eb9548",
+        "family": "long_term_memory",
+        "short": "Memory",
+        "title": "Updating a cross-session fact: answer from the newer authoritative roster, not stale carried memory"
+      },
+      {
+        "envId": "vvdex.harness.fault-recovery-1",
+        "evalId": "fr-20260902-a6f12b64",
+        "family": "harness_eval",
+        "short": "Harness",
+        "title": "Harness recovery under a faulted tool loop"
+      },
+      {
+        "envId": "vvdex.browser.order-desk-1",
+        "evalId": "fr-20260902-6e618c05",
+        "family": "browser",
+        "short": "Browser",
+        "title": "Correct one order in an admin application, through a real browser"
+      }
+    ],
+    "rows": [
+      {
+        "cells": {
+          "public.swe.martinblech-xmltodict-issue-257": {
+            "graded": 10,
+            "invalid": 0,
+            "laneErrors": 0,
+            "passes": 10,
+            "text": "10/10",
+            "withheld": 0
+          },
+          "vvdex.browser.order-desk-1": {
+            "graded": 10,
+            "invalid": 0,
+            "laneErrors": 0,
+            "passes": 10,
+            "text": "10/10",
+            "withheld": 0
+          },
+          "vvdex.harness.fault-recovery-1": {
+            "graded": 10,
+            "invalid": 0,
+            "laneErrors": 0,
+            "passes": 10,
+            "text": "10/10",
+            "withheld": 0
+          },
+          "vvdex.knowledge.grounded-rag-1": {
+            "graded": 10,
+            "invalid": 0,
+            "laneErrors": 0,
+            "passes": 10,
+            "text": "10/10",
+            "withheld": 0
+          },
+          "vvdex.knowledge.memory-fact-update-1": {
+            "graded": 10,
+            "invalid": 0,
+            "laneErrors": 0,
+            "passes": 10,
+            "text": "10/10",
+            "withheld": 0
+          }
+        },
+        "certifiedPasses": 50,
+        "lane": "cli/codex"
+      },
+      {
+        "cells": {
+          "public.swe.martinblech-xmltodict-issue-257": {
+            "graded": 10,
+            "invalid": 0,
+            "laneErrors": 0,
+            "passes": 9,
+            "text": "9/10",
+            "withheld": 0
+          },
+          "vvdex.browser.order-desk-1": {
+            "graded": 10,
+            "invalid": 0,
+            "laneErrors": 0,
+            "passes": 10,
+            "text": "10/10",
+            "withheld": 0
+          },
+          "vvdex.harness.fault-recovery-1": {
+            "graded": 10,
+            "invalid": 0,
+            "laneErrors": 0,
+            "passes": 10,
+            "text": "10/10",
+            "withheld": 0
+          },
+          "vvdex.knowledge.grounded-rag-1": {
+            "graded": 10,
+            "invalid": 0,
+            "laneErrors": 0,
+            "passes": 1,
+            "text": "1/10",
+            "withheld": 0
+          },
+          "vvdex.knowledge.memory-fact-update-1": {
+            "graded": 10,
+            "invalid": 0,
+            "laneErrors": 0,
+            "passes": 10,
+            "text": "10/10",
+            "withheld": 0
+          }
+        },
+        "certifiedPasses": 40,
+        "lane": "cli/claude-sonnet"
+      },
+      {
+        "cells": {
+          "public.swe.martinblech-xmltodict-issue-257": {
+            "graded": 10,
+            "invalid": 0,
+            "laneErrors": 0,
+            "passes": 0,
+            "text": "0/10",
+            "withheld": 0
+          },
+          "vvdex.browser.order-desk-1": {
+            "graded": 9,
+            "invalid": 0,
+            "laneErrors": 1,
+            "passes": 1,
+            "text": "1/9 + 1 lane error",
+            "withheld": 0
+          },
+          "vvdex.harness.fault-recovery-1": {
+            "graded": 10,
+            "invalid": 0,
+            "laneErrors": 0,
+            "passes": 0,
+            "text": "0/10",
+            "withheld": 0
+          },
+          "vvdex.knowledge.grounded-rag-1": {
+            "graded": 9,
+            "invalid": 0,
+            "laneErrors": 1,
+            "passes": 0,
+            "text": "0/9 + 1 lane error",
+            "withheld": 0
+          },
+          "vvdex.knowledge.memory-fact-update-1": {
+            "graded": 10,
+            "invalid": 0,
+            "laneErrors": 0,
+            "passes": 2,
+            "text": "2/10",
+            "withheld": 0
+          }
+        },
+        "certifiedPasses": 3,
+        "lane": "codestral-latest"
+      }
+    ]
+  },
+  "recordCount": 5,
+  "records": [
+    {
+      "certificationReceiptSha256": "2daeb9d08e5160da032bc8c7e14901533627ccc5c2cbadd06965f7dc8d823760",
+      "environmentId": "public.swe.martinblech-xmltodict-issue-257",
+      "evalId": "fr-20260902-6616b188",
+      "examFingerprint": "aa41977120e6ecdddb5c4fc603e8ab23cb272726a86750119969ff4dfc90e297",
+      "recordDigest": "138425da59aabc18aa208c339aa41919f387e1ecb80fb725cfed8f7d6ba78713"
+    },
+    {
+      "certificationReceiptSha256": "f50b9f42d3ef6bb120e4dd958f0f06ea85071c5e5fad74b63c3caaeb3d565452",
+      "environmentId": "vvdex.browser.order-desk-1",
+      "evalId": "fr-20260902-6e618c05",
+      "examFingerprint": "8d404ee5d5ab71456de3d3df0b8ca69271d8810767a694f71c6e45e72fc347bf",
+      "recordDigest": "59f94854d78f7ce174866ff114505b2b41ca2333f287f40b604fbb38cc267da5"
+    },
+    {
+      "certificationReceiptSha256": "6041223e74e964d454779901bd61ad2472663ffe1b4f4e236f6aaa8a44b4c96b",
+      "environmentId": "vvdex.harness.fault-recovery-1",
+      "evalId": "fr-20260902-a6f12b64",
+      "examFingerprint": "4a206fbfe8fb70fb3e37943705065a8599fab492e495dca326279781ee960b1e",
+      "recordDigest": "d5a8264aa0c20dd67c14879856a744e2ff1ab79da35ea8bcea92b4ba1ea14d5f"
+    },
+    {
+      "certificationReceiptSha256": "207c278bd732d0d88bfabf6928000f179916e06ae222a0a26edbcbeb3cff4575",
+      "environmentId": "vvdex.knowledge.grounded-rag-1",
+      "evalId": "fr-20260902-2e7f4171",
+      "examFingerprint": "4880a527ef97ca2f3fe6b57be026c3dc1be51e9e104d79fc13a3e558331dda92",
+      "recordDigest": "157ec324a925c0b10fc8769d01f628b6143c40a00fa2dc70ea309a70e55a37a8"
+    },
+    {
+      "certificationReceiptSha256": "6fe1bfe3e2945878bc408a125d6dce8c9a9553bd2ef8384b1aa1abcd93f7d0ee",
+      "environmentId": "vvdex.knowledge.memory-fact-update-1",
+      "evalId": "fr-20260901-46eb9548",
+      "examFingerprint": "2052eec0ff2d3044dc269e3599ae1bfaa45d0d8cd5df9554796105538d226c21",
+      "recordDigest": "1127e8356d42d31767a3ddc4d6c6cd0a515f5bbf7239ef0a82129e00fc2e6900"
+    }
+  ],
+  "refused": 0,
+  "schema": "vvdex.forge.campaign-summary/v1",
+  "suspectRecords": [],
+  "withheldByHarness": 0
+}

@@ -1,0 +1,353 @@
+{
+  "campaignId": "fc-d89e429d2781",
+  "cells": {
+    "cli/claude-sonnet|public.swe.martinblech-xmltodict-issue-257": {
+      "certified": null,
+      "certifiedCounts": {
+        "certified_pass": 9,
+        "invalid": 0,
+        "lane_error": 0,
+        "model_fail": 1,
+        "withheld": 0
+      },
+      "evalId": "fr-20260902-6616b188",
+      "grader": null,
+      "integrity": "verified_contained",
+      "withheldBy": null
+    },
+    "cli/claude-sonnet|vvdex.browser.order-desk-1": {
+      "certified": null,
+      "certifiedCounts": {
+        "certified_pass": 10,
+        "invalid": 0,
+        "lane_error": 0,
+        "model_fail": 0,
+        "withheld": 0
+      },
+      "evalId": "fr-20260902-6e618c05",
+      "grader": null,
+      "integrity": "verified_contained",
+      "withheldBy": null
+    },
+    "cli/claude-sonnet|vvdex.harness.fault-recovery-1": {
+      "certified": null,
+      "certifiedCounts": {
+        "certified_pass": 10,
+        "invalid": 0,
+        "lane_error": 0,
+        "model_fail": 0,
+        "withheld": 0
+      },
+      "evalId": "fr-20260902-a6f12b64",
+      "grader": null,
+      "integrity": "verified_contained",
+      "withheldBy": null
+    },
+    "cli/claude-sonnet|vvdex.knowledge.grounded-rag-1": {
+      "certified": null,
+      "certifiedCounts": {
+        "certified_pass": 1,
+        "invalid": 0,
+        "lane_error": 0,
+        "model_fail": 9,
+        "withheld": 0
+      },
+      "evalId": "fr-20260902-2e7f4171",
+      "grader": null,
+      "integrity": "verified_contained",
+      "withheldBy": null
+    },
+    "cli/claude-sonnet|vvdex.knowledge.memory-fact-update-1": {
+      "certified": null,
+      "certifiedCounts": {
+        "certified_pass": 10,
+        "invalid": 0,
+        "lane_error": 0,
+        "model_fail": 0,
+        "withheld": 0
+      },
+      "evalId": "fr-20260901-46eb9548",
+      "grader": null,
+      "integrity": "verified_contained",
+      "withheldBy": null
+    },
+    "cli/codex|public.swe.martinblech-xmltodict-issue-257": {
+      "certified": null,
+      "certifiedCounts": {
+        "certified_pass": 10,
+        "invalid": 0,
+        "lane_error": 0,
+        "model_fail": 0,
+        "withheld": 0
+      },
+      "evalId": "fr-20260902-6616b188",
+      "grader": null,
+      "integrity": "verified_contained",
+      "withheldBy": null
+    },
+    "cli/codex|vvdex.browser.order-desk-1": {
+      "certified": null,
+      "certifiedCounts": {
+        "certified_pass": 10,
+        "invalid": 0,
+        "lane_error": 0,
+        "model_fail": 0,
+        "withheld": 0
+      },
+      "evalId": "fr-20260902-6e618c05",
+      "grader": null,
+      "integrity": "verified_contained",
+      "withheldBy": null
+    },
+    "cli/codex|vvdex.harness.fault-recovery-1": {
+      "certified": null,
+      "certifiedCounts": {
+        "certified_pass": 10,
+        "invalid": 0,
+        "lane_error": 0,
+        "model_fail": 0,
+        "withheld": 0
+      },
+      "evalId": "fr-20260902-a6f12b64",
+      "grader": null,
+      "integrity": "verified_contained",
+      "withheldBy": null
+    },
+    "cli/codex|vvdex.knowledge.grounded-rag-1": {
+      "certified": null,
+      "certifiedCounts": {
+        "certified_pass": 10,
+        "invalid": 0,
+        "lane_error": 0,
+        "model_fail": 0,
+        "withheld": 0
+      },
+      "evalId": "fr-20260902-2e7f4171",
+      "grader": null,
+      "integrity": "verified_contained",
+      "withheldBy": null
+    },
+    "cli/codex|vvdex.knowledge.memory-fact-update-1": {
+      "certified": null,
+      "certifiedCounts": {
+        "certified_pass": 10,
+        "invalid": 0,
+        "lane_error": 0,
+        "model_fail": 0,
+        "withheld": 0
+      },
+      "evalId": "fr-20260901-46eb9548",
+      "grader": null,
+      "integrity": "verified_contained",
+      "withheldBy": null
+    },
+    "codestral-latest|public.swe.martinblech-xmltodict-issue-257": {
+      "certified": null,
+      "certifiedCounts": {
+        "certified_pass": 0,
+        "invalid": 0,
+        "lane_error": 0,
+        "model_fail": 10,
+        "withheld": 0
+      },
+      "evalId": "fr-20260902-6616b188",
+      "grader": null,
+      "integrity": "verified_contained",
+      "withheldBy": null
+    },
+    "codestral-latest|vvdex.browser.order-desk-1": {
+      "certified": null,
+      "certifiedCounts": {
+        "certified_pass": 1,
+        "invalid": 0,
+        "lane_error": 1,
+        "model_fail": 8,
+        "withheld": 0
+      },
+      "evalId": "fr-20260902-6e618c05",
+      "grader": null,
+      "integrity": "verified_contained",
+      "withheldBy": null
+    },
+    "codestral-latest|vvdex.harness.fault-recovery-1": {
+      "certified": null,
+      "certifiedCounts": {
+        "certified_pass": 0,
+        "invalid": 0,
+        "lane_error": 0,
+        "model_fail": 10,
+        "withheld": 0
+      },
+      "evalId": "fr-20260902-a6f12b64",
+      "grader": null,
+      "integrity": "verified_contained",
+      "withheldBy": null
+    },
+    "codestral-latest|vvdex.knowledge.grounded-rag-1": {
+      "certified": null,
+      "certifiedCounts": {
+        "certified_pass": 0,
+        "invalid": 0,
+        "lane_error": 1,
+        "model_fail": 9,
+        "withheld": 0
+      },
+      "evalId": "fr-20260902-2e7f4171",
+      "grader": null,
+      "integrity": "verified_contained",
+      "withheldBy": null
+    },
+    "codestral-latest|vvdex.knowledge.memory-fact-update-1": {
+      "certified": null,
+      "certifiedCounts": {
+        "certified_pass": 2,
+        "invalid": 0,
+        "lane_error": 0,
+        "model_fail": 8,
+        "withheld": 0
+      },
+      "evalId": "fr-20260901-46eb9548",
+      "grader": null,
+      "integrity": "verified_contained",
+      "withheldBy": null
+    }
+  },
+  "certificationReceipts": {
+    "public.swe.martinblech-xmltodict-issue-257": "2daeb9d08e5160da032bc8c7e14901533627ccc5c2cbadd06965f7dc8d823760",
+    "vvdex.browser.order-desk-1": "f50b9f42d3ef6bb120e4dd958f0f06ea85071c5e5fad74b63c3caaeb3d565452",
+    "vvdex.harness.fault-recovery-1": "6041223e74e964d454779901bd61ad2472663ffe1b4f4e236f6aaa8a44b4c96b",
+    "vvdex.knowledge.grounded-rag-1": "207c278bd732d0d88bfabf6928000f179916e06ae222a0a26edbcbeb3cff4575",
+    "vvdex.knowledge.memory-fact-update-1": "6fe1bfe3e2945878bc408a125d6dce8c9a9553bd2ef8384b1aa1abcd93f7d0ee"
+  },
+  "counts": {
+    "campaignId": "fc-d89e429d2781",
+    "cells": 15,
+    "certifiedPasses": 93,
+    "lanes": {
+      "cli/claude-sonnet": {
+        "certified_pass": 40,
+        "invalid": 0,
+        "lane_error": 0,
+        "model_fail": 10,
+        "withheld": 0
+      },
+      "cli/codex": {
+        "certified_pass": 50,
+        "invalid": 0,
+        "lane_error": 0,
+        "model_fail": 0,
+        "withheld": 0
+      },
+      "codestral-latest": {
+        "certified_pass": 3,
+        "invalid": 0,
+        "lane_error": 2,
+        "model_fail": 45,
+        "withheld": 0
+      }
+    },
+    "recordCount": 5,
+    "recordDigests": [
+      "1127e8356d42d31767a3ddc4d6c6cd0a515f5bbf7239ef0a82129e00fc2e6900",
+      "138425da59aabc18aa208c339aa41919f387e1ecb80fb725cfed8f7d6ba78713",
+      "157ec324a925c0b10fc8769d01f628b6143c40a00fa2dc70ea309a70e55a37a8",
+      "59f94854d78f7ce174866ff114505b2b41ca2333f287f40b604fbb38cc267da5",
+      "d5a8264aa0c20dd67c14879856a744e2ff1ab79da35ea8bcea92b4ba1ea14d5f"
+    ],
+    "refused": 0,
+    "suspectRecords": [],
+    "withheldByHarness": 0
+  },
+  "lanes": [
+    {
+      "certifiedPasses": 50,
+      "countable": 50,
+      "counts": {
+        "certified_pass": 50,
+        "invalid": 0,
+        "lane_error": 0,
+        "model_fail": 0,
+        "withheld": 0
+      },
+      "lane": "cli/codex",
+      "rate": 1.0,
+      "rateInterval95": [
+        0.9287,
+        1.0
+      ]
+    },
+    {
+      "certifiedPasses": 40,
+      "countable": 50,
+      "counts": {
+        "certified_pass": 40,
+        "invalid": 0,
+        "lane_error": 0,
+        "model_fail": 10,
+        "withheld": 0
+      },
+      "lane": "cli/claude-sonnet",
+      "rate": 0.8,
+      "rateInterval95": [
+        0.6696,
+        0.8876
+      ]
+    },
+    {
+      "certifiedPasses": 3,
+      "countable": 48,
+      "counts": {
+        "certified_pass": 3,
+        "invalid": 0,
+        "lane_error": 2,
+        "model_fail": 45,
+        "withheld": 0
+      },
+      "lane": "codestral-latest",
+      "rate": 0.0625,
+      "rateInterval95": [
+        0.0215,
+        0.1684
+      ]
+    }
+  ],
+  "refused": [],
+  "reviews": {
+    "public.swe.martinblech-xmltodict-issue-257": {
+      "classification": [],
+      "law": "a suspect examiner may not blame the model: verdict-bearing suspicion not cleared by in-record evidence withholds every model_fail in the run",
+      "suspect": false,
+      "withheld": [],
+      "withheldCount": 0
+    },
+    "vvdex.browser.order-desk-1": {
+      "classification": [],
+      "law": "a suspect examiner may not blame the model: verdict-bearing suspicion not cleared by in-record evidence withholds every model_fail in the run",
+      "suspect": false,
+      "withheld": [],
+      "withheldCount": 0
+    },
+    "vvdex.harness.fault-recovery-1": {
+      "classification": [],
+      "law": "a suspect examiner may not blame the model: verdict-bearing suspicion not cleared by in-record evidence withholds every model_fail in the run",
+      "suspect": false,
+      "withheld": [],
+      "withheldCount": 0
+    },
+    "vvdex.knowledge.grounded-rag-1": {
+      "classification": [],
+      "law": "a suspect examiner may not blame the model: verdict-bearing suspicion not cleared by in-record evidence withholds every model_fail in the run",
+      "suspect": false,
+      "withheld": [],
+      "withheldCount": 0
+    },
+    "vvdex.knowledge.memory-fact-update-1": {
+      "classification": [],
+      "law": "a suspect examiner may not blame the model: verdict-bearing suspicion not cleared by in-record evidence withholds every model_fail in the run",
+      "suspect": false,
+      "withheld": [],
+      "withheldCount": 0
+    }
+  },
+  "schema": "vvdex.forge.campaign-counts/v1"
+}

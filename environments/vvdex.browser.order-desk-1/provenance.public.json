@@ -1,0 +1,19 @@
+{
+  "classification": "prime-publishable",
+  "credit": {
+    "authoredBy": "VVDex",
+    "upstream": null
+  },
+  "environmentId": "vvdex.browser.order-desk-1",
+  "family": "browser",
+  "license": "MIT",
+  "schema": "vvdex.forge.public-exam-provenance/v1",
+  "source": {
+    "issueUrl": null,
+    "parentCommit": "vvdex-authored-browser-1-parent",
+    "pullRequestUrl": null,
+    "repository": null
+  },
+  "title": "Correct one order in an admin application, through a real browser",
+  "version": "0.1.0"
+}
