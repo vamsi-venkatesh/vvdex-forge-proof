@@ -223,7 +223,7 @@ under agreement, recomputes it with `shasum -a 256`. `./verify.sh` reports the
 recomputed count and the withheld count separately rather than passing
 silently.
 
-## 10. The public open-source example
+## 10. Public OSS example: xmltodict issue #257
 
 One exam is built on public material, and only because its ownership says so.
 `public.swe.martinblech-xmltodict-issue-257` is issue #257 of
