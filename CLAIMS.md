@@ -62,7 +62,7 @@ receipt's own `sources` block names the evidence field it was copied from.
 | Baseline fail | rate 0.0, expected 0.0, n=2, on all five exams | `baselineFail` |
 | Grader controls | 7 cases on `public.swe.martinblech-xmltodict-issue-257`, `vvdex.knowledge.grounded-rag-1`, `vvdex.knowledge.memory-fact-update-1`; 9 on `vvdex.browser.order-desk-1`; 12 on `vvdex.harness.fault-recovery-1`; `distinguished: true` on all five | `graderControls.cases`, `graderControls.distinguished` |
 | Attack probes | 10 probes, 10 blocked, 0 trivial exploits, on all five exams | `attackProbes.probes`, `.blocked`, `.trivialExploits` |
-| Runtime limits | `cpus: 1`, `memory: 512m`, `pids: 128`, `network: none`, `readOnlyRoot: true`, `timeoutS: 120` | `runtime.resourceLimits` |
+| Runtime limits | `cpus: "1"`, `memory: 512m`, `pids: 128`, `network: none`, `readOnlyRoot: true`, `timeoutS: 120` | `runtime.resourceLimits` |
 | Unavailable fields | `certificationEvidenceDigest` on all five; `certificationVersion` and `certifiedAt` on `vvdex.browser.order-desk-1` and `vvdex.harness.fault-recovery-1` | those keys, whose value is the string `"unavailable"` |
 
 ## The records and the joins
@@ -78,7 +78,7 @@ receipt's own `sources` block names the evidence field it was copied from.
 | Sixty-four `0` characters in the zeroed digest slot | METHODOLOGY, VERIFICATION; the serialization convention a holder of the sealed record hashes against. It is not exercised in this repository, which publishes no canonical body |
 | `lowN: false` per lane | `results.byModel[].lowN` in each of the five `<current>records/*.record.public.json`. `lowNThreshold: 10` is a sealed-record field, readable by a holder, not published here |
 | The browser exam's ten advertised tools | `<current>fc-d89e429d2781.html` and the campaign PDF, the record's `limits.advertisedTools` as rendered |
-| 144 files with a SHA-256 | `MANIFEST.json` `files`, checked by `./verify.sh` |
+| 154 files with a SHA-256 | `MANIFEST.json` `files`, checked by `./verify.sh`, which prints the same count |
 
 ## The statistics
 

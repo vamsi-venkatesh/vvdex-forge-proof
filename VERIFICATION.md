@@ -21,9 +21,9 @@ terms are promised in advance.
 
 Why no canonical body is published: a sealed record's bytes carry the grader's
 own verdicts, and those name VVDex evaluation internals such as the hidden tests
-a rollout failed. An exam's `public_source` disclosure class says where the
-**task** came from, and it permits the upstream open-source material and the
-public-source diff. It does not declassify the grader built around that task.
+a rollout failed. Public-source ownership may permit upstream source or task
+material and approved public-source diffs. It never declassifies VVDex grader,
+hidden-test, reference, answer-key or other evaluation internals.
 So the bytes stay in the Forge, and this repository publishes the digest and a
 sanitized projection instead.
 
@@ -190,12 +190,11 @@ which applies to it.
    each rollout submitted, and on an exam whose graded output is an answer or a
    world state that excerpt is the answer.
 2. **VVDex evaluation internals.** A sealed record carries the grader's own
-   verdicts, which name the hidden tests a rollout failed. An exam's
-   `public_source` disclosure class covers the upstream task and the
-   public-source diff. It does not cover the grader, the hidden tests, the
-   attack probes or the reference-evaluation internals, which are VVDex's own
-   work whatever the task's ownership. The record on the public-source exam is
-   withheld for this reason.
+   verdicts, which name the hidden tests a rollout failed.
+   Public-source ownership may permit upstream source or task material and
+   approved public-source diffs. It never declassifies VVDex grader,
+   hidden-test, reference, answer-key or other evaluation internals.
+   The record on the public-source exam is withheld for this reason.
 
 The digest is the digest of the sealed record as it exists in the Forge; a
 holder of that record, meaning the customer who commissioned the run or an

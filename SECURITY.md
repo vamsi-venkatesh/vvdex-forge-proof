@@ -76,7 +76,7 @@ in this repository.
 | Canary tokens and their registry | a published canary detects nothing |
 | The engine (`vvdex-env`) and the Studio | the certification chain, the containment auditor, the verdict state machine and the report renderer |
 | Runnable exam packages | they exist to run an exam; this repository exists to verify a result |
-| Full transcripts | for answer-key exams a diff is the answer |
+| Full transcripts | they carry submissions, tool results and grader-facing detail; public-source ownership never declassifies evaluation internals |
 | Campaign workspaces | they hold all of the above |
 
 Report transcripts are redacted: a request for a hidden path is recorded as

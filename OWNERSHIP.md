@@ -10,7 +10,9 @@ ownership registry; not typed.
 | --- | --- | --- |
 | `ARCHITECTURE.md` | VVDex | VVDex proprietary; published for viewing, evaluation and verification |
 | `CLAIMS.md` | VVDex | VVDex proprietary; published for viewing, evaluation and verification |
+| `MANIFEST.json` | VVDex | VVDex proprietary; published for viewing, evaluation and verification |
 | `METHODOLOGY.md` | VVDex | VVDex proprietary; published for viewing, evaluation and verification |
+| `OWNERSHIP.md` | VVDex | VVDex proprietary; published for viewing, evaluation and verification |
 | `README.md` | VVDex | VVDex proprietary; published for viewing, evaluation and verification |
 | `SECURITY.md` | VVDex | VVDex proprietary; published for viewing, evaluation and verification |
 | `TERMS.md` | VVDex | VVDex proprietary; published for viewing, evaluation and verification |
