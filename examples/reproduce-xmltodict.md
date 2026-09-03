@@ -51,7 +51,7 @@ page.
 
 ```bash
 python3 -c "import json;print(json.load(open('exams/public.swe.martinblech-xmltodict-issue-257/certification-receipt.json'))['examFingerprint'])"
-python3 -c "import json;print(json.load(open('reports/fc-d89e429d2781/records/fr-20260902-6616b188.canonical.json'))['environment']['fingerprint'])"
+python3 -c "import json;print(json.load(open('reports/fc-d89e429d2781/records/fr-20260902-6616b188.record.public.json'))['fingerprint'])"
 # both: aa41977120e6ecdddb5c4fc603e8ab23cb272726a86750119969ff4dfc90e297
 ```
 
@@ -63,16 +63,21 @@ python3 -c "import json;print(json.load(open('reports/fc-d89e429d2781/campaign.j
 # both: 87ba9833637f004939e1a7b2d3a69b2d0e0e37b1040ef5d403eb9c392695bee0
 ```
 
-**5. The result, from its sealed record.**
+**5. The result, from the record's digest and projection.**
 
 ```bash
-examples/verify-record.sh reports/fc-d89e429d2781/records/fr-20260902-6616b188.canonical.json
-# MATCH
+examples/verify-record.sh reports/fc-d89e429d2781/records/fr-20260902-6616b188.digest.txt
+# AGREE
 ```
 
-The record carries the per-lane outcomes this exam produced in campaign
-`fc-d89e429d2781`: `cli/codex` 10/10, `cli/claude-sonnet` 9/10,
-`codestral-latest` 0/10, 30 graded rollouts, no lane errors.
+The sealed record's own bytes are not published, on this exam or any other. This
+exam's `public_source` class covers the upstream task and the public-source
+diff; it does not cover the grader written around that task, and the sealed
+bytes carry the grader's verdicts. What is published is the digest and
+`fr-20260902-6616b188.record.public.json`, which carries the per-lane outcomes
+this exam produced in campaign `fc-d89e429d2781`: `cli/codex` 10/10,
+`cli/claude-sonnet` 9/10, `codestral-latest` 0/10, 30 graded rollouts, no lane
+errors.
 
 ## Cannot be reproduced
 
@@ -85,7 +90,8 @@ record), which identifies it without publishing it.
 Consequently:
 
 - **You cannot run this exam.** There is no runnable package here, by design.
-- **You cannot re-grade a submission.** The hidden tests are not published.
+- **You cannot re-grade a submission.** The hidden tests are not published, and
+  neither are their names.
 - **You cannot check the reference solution.** It is not published; what is
   published is that it passed and the untouched tree failed, n=2 each.
 - **You cannot recompute the frozen tree's hash.** The tree is the exam.

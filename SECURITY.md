@@ -144,9 +144,9 @@ A scan is only worth reporting when it is told what its findings were.
    relative path naming where its run bundle sits inside the private workspace,
    of the form `<release dir>/<version>/benchmarks/<runId>`. It matches one of
    the private-name patterns. It is not a host path and it carries no private
-   material, and it cannot be edited: the canonical bytes are what the record's
-   digest was computed over, and the same bytes are already served from the live
-   site. It stands, and it is named here rather than quietly excepted.
+   material. Since 2026-09-03 no canonical record body is published here, so the
+   string no longer reaches this repository at all; it is named because it is
+   still in the sealed bytes a holder receives under agreement.
 
 ### Why the export shape was inverted
 
@@ -159,8 +159,13 @@ every future file will be remembered.
 
 ## What a verifier can check
 
-- That every published record's canonical bytes hash to the digest stated beside
-  them.
+- That every file listed in `MANIFEST.json` hashes to the SHA-256 stated for it.
+- That a record's digest is the same string everywhere this package states it:
+  the `.digest.txt` file, the record projection's `sourceRecordDigest`, the
+  campaign summary, the report manifest and the verification receipt.
+- **Not** that a record digest reproduces from the sealed bytes. No canonical
+  record body is published here, so that check belongs to a holder of the record
+  under agreement.
 - That each report states its own digest, invertibly, and that the stated digest
   reproduces.
 - That the exam fingerprint agrees across the certification receipt, the public

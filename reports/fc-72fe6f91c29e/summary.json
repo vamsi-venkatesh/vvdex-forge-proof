@@ -187,6 +187,7 @@
       "evalId": "fr-20260902-6e618c05",
       "examFingerprint": "8d404ee5d5ab71456de3d3df0b8ca69271d8810767a694f71c6e45e72fc347bf",
       "recordDigest": "59f94854d78f7ce174866ff114505b2b41ca2333f287f40b604fbb38cc267da5",
+      "recordProjectionPublished": false,
       "retired_for_future_evaluation": null
     },
     {
@@ -197,6 +198,7 @@
       "evalId": "fr-20260902-a6f12b64",
       "examFingerprint": "4a206fbfe8fb70fb3e37943705065a8599fab492e495dca326279781ee960b1e",
       "recordDigest": "d5a8264aa0c20dd67c14879856a744e2ff1ab79da35ea8bcea92b4ba1ea14d5f",
+      "recordProjectionPublished": false,
       "retired_for_future_evaluation": null
     }
   ],

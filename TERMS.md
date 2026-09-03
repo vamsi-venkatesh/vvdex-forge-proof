@@ -20,11 +20,26 @@ Publication of a result does not place the exam, or any part of it, under an
 open-source or open-content licence. Not MIT, not Apache, not GPL, not
 CC BY. Public visibility is not an open-source grant.
 
+## Hosting this repository in public
+
+While this repository is public on GitHub, GitHub's Terms of Service grant
+every user of the Service certain rights in it, including the right to view it
+and to fork it within the Service. Nothing in this document is intended to
+remove or narrow those rights, and to the extent anything here reads as though
+it does, GitHub's Terms govern instead.
+
+Those rights are the ones GitHub's Terms give and no more. Making this
+repository public grants no additional licence in VVDex materials: no
+open-source licence, no open-content licence, and no permission to reuse,
+redistribute, republish, build a derivative benchmark from, or train on them
+outside the Service. Third-party material carries its own licence, which is
+unaffected by any of this; see below.
+
 ## The verification utilities
 
 `verify.sh` and everything under `examples/` are VVDex-authored. They carry no
-separate licence of their own, and none is granted here. They are covered by the
-notice above: published so that a reader can check the evidence in this
+separate licence of their own, and none is granted here. They are covered by
+the notice above: published so that a reader can check the evidence in this
 repository, and not licensed for reuse, redistribution or derivative work
 without written permission. There is no `LICENSE` file at the root of this
 repository, and the absence of one is not a permission.

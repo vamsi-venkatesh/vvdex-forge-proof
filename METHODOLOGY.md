@@ -170,11 +170,11 @@ approximation. The records state the reason:
 the number of rollouts actually run: there is no pass@5 in a 2-rollout run.
 
 Below the low-N threshold (10 rollouts) a report shows raw counts and refuses to
-present percentages as stable rates. The one record in campaign
-`fc-d89e429d2781` whose canonical bytes are published,
-`fr-20260902-6616b188.canonical.json`, carries `lowN: false` at
-`lowNThreshold: 10`; the other four records carry the same fields, and a holder
-of those sealed records can read them there. The historical
+present percentages as stable rates. No record's canonical bytes are published
+here, so this repository substantiates `lowN` only through the published
+projection of `fr-20260902-6616b188`, which carries `lowN: false` per lane; all
+five records carry `lowN` and `lowNThreshold` fields, and a holder of the sealed
+records reads them there. The historical
 campaign `fc-8626f712e26f` is a one-rollout-per-lane run and its summary carries
 no lane intervals at all.
 
@@ -200,8 +200,9 @@ reader to count a stage the exam never had.
 
 - A record's digest is SHA-256 over its canonical JSON (keys sorted, separators
   `,` and `:` with no spaces, non-ASCII escaped) with `recordDigest.sha256` set
-  to sixty-four `0` characters. The published `*.canonical.json` is that
-  serialization byte for byte.
+  to sixty-four `0` characters. That serialization is not published here; a
+  holder of the sealed record hashes it and reaches the digest in the
+  `.digest.txt` file.
 - The campaign id is a digest over the sorted record digests. The same records
   always name the same campaign, and a changed record names a different one.
 - Campaign documents are regenerated from records only, and fail generation if

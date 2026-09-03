@@ -1,0 +1,5 @@
+fr-20260902-6616b188
+recordDigest sha256: 138425da59aabc18aa208c339aa41919f387e1ecb80fb725cfed8f7d6ba78713
+
+The canonical record bytes are not published: they name VVDex evaluation internals (hidden_test_names), and an exam's `public_source` disclosure class does not declassify those. `public_source` says where the TASK came from, and permits the upstream open-source material and the public-source diff; the grader built around that task is VVDex's own work whatever the task's ownership. The record digest is published instead, beside a sanitized projection in `fr-20260902-6616b188.record.public.json`.
+The digest above is the digest of the sealed record in the Forge; a holder of that record reproduces it with `shasum -a 256` on the canonical bytes or with `vvdex-env records verify`.

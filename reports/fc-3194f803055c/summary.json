@@ -222,13 +222,14 @@
   "recordCount": 3,
   "records": [
     {
-      "canonicalBytesPublished": true,
+      "canonicalBytesPublished": false,
       "certificationReceiptSha256": "87ba9833637f004939e1a7b2d3a69b2d0e0e37b1040ef5d403eb9c392695bee0",
       "disclosureClass": "public_source",
       "environmentId": "public.swe.martinblech-xmltodict-issue-257",
       "evalId": "fr-20260902-6616b188",
       "examFingerprint": "aa41977120e6ecdddb5c4fc603e8ab23cb272726a86750119969ff4dfc90e297",
       "recordDigest": "138425da59aabc18aa208c339aa41919f387e1ecb80fb725cfed8f7d6ba78713",
+      "recordProjectionPublished": true,
       "retired_for_future_evaluation": null
     },
     {
@@ -239,6 +240,7 @@
       "evalId": "fr-20260902-2e7f4171",
       "examFingerprint": "4880a527ef97ca2f3fe6b57be026c3dc1be51e9e104d79fc13a3e558331dda92",
       "recordDigest": "157ec324a925c0b10fc8769d01f628b6143c40a00fa2dc70ea309a70e55a37a8",
+      "recordProjectionPublished": false,
       "retired_for_future_evaluation": {
         "environmentId": "vvdex.knowledge.grounded-rag-1",
         "historicalResults": "Historical sealed results on this revision are unaffected: the disclosure happened after those runs, so it could not have influenced them.",
@@ -255,6 +257,7 @@
       "evalId": "fr-20260901-46eb9548",
       "examFingerprint": "2052eec0ff2d3044dc269e3599ae1bfaa45d0d8cd5df9554796105538d226c21",
       "recordDigest": "1127e8356d42d31767a3ddc4d6c6cd0a515f5bbf7239ef0a82129e00fc2e6900",
+      "recordProjectionPublished": false,
       "retired_for_future_evaluation": {
         "environmentId": "vvdex.knowledge.memory-fact-update-1",
         "historicalResults": "Historical sealed results on this revision are unaffected: the disclosure happened after those runs, so it could not have influenced them.",

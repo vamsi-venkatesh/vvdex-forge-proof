@@ -349,13 +349,14 @@
   "recordCount": 5,
   "records": [
     {
-      "canonicalBytesPublished": true,
+      "canonicalBytesPublished": false,
       "certificationReceiptSha256": "87ba9833637f004939e1a7b2d3a69b2d0e0e37b1040ef5d403eb9c392695bee0",
       "disclosureClass": "public_source",
       "environmentId": "public.swe.martinblech-xmltodict-issue-257",
       "evalId": "fr-20260901-a27316a3",
       "examFingerprint": "aa41977120e6ecdddb5c4fc603e8ab23cb272726a86750119969ff4dfc90e297",
       "recordDigest": "96f8b631c6d65f03b21e4a9a94e86c82874e1506fac38c9a093d2f8c618dd2dc",
+      "recordProjectionPublished": true,
       "retired_for_future_evaluation": null
     },
     {
@@ -366,6 +367,7 @@
       "evalId": "fr-20260901-88c3cdf1",
       "examFingerprint": "e8312ce98b82558f9a1c5593e7d431f409fb1024b3013b7dbd934f1398a8937f",
       "recordDigest": "f49a31336e4865c1dcefccf5141e2f6926110c72f03d6cb3d645a1761fa09ac8",
+      "recordProjectionPublished": false,
       "retired_for_future_evaluation": null
     },
     {
@@ -376,6 +378,7 @@
       "evalId": "fr-20260901-4b1e3251",
       "examFingerprint": "483b68b383c851060781196403325de0e00e5f6327fd52d24eb581005be38812",
       "recordDigest": "d94c313144f8b36db4448440b873462bc9372e1783b1164451695b7b8497816a",
+      "recordProjectionPublished": false,
       "retired_for_future_evaluation": null
     },
     {
@@ -386,6 +389,7 @@
       "evalId": "fr-20260901-718db345",
       "examFingerprint": "4880a527ef97ca2f3fe6b57be026c3dc1be51e9e104d79fc13a3e558331dda92",
       "recordDigest": "a6426b0b7932b6c0f679f230c44c4b75a30df10a17f7e145b567ac9849d63a36",
+      "recordProjectionPublished": false,
       "retired_for_future_evaluation": {
         "environmentId": "vvdex.knowledge.grounded-rag-1",
         "historicalResults": "Historical sealed results on this revision are unaffected: the disclosure happened after those runs, so it could not have influenced them.",
@@ -402,6 +406,7 @@
       "evalId": "fr-20260901-109cfa3c",
       "examFingerprint": "2052eec0ff2d3044dc269e3599ae1bfaa45d0d8cd5df9554796105538d226c21",
       "recordDigest": "6354cff6fc47eca13b596d285f805a9f3994d048d69b446166acfeb7f8659929",
+      "recordProjectionPublished": false,
       "retired_for_future_evaluation": {
         "environmentId": "vvdex.knowledge.memory-fact-update-1",
         "historicalResults": "Historical sealed results on this revision are unaffected: the disclosure happened after those runs, so it could not have influenced them.",

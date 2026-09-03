@@ -139,13 +139,17 @@ Four artifact kinds, in dependency order. Each one names the one below it.
    ownership declaration names a public upstream repository and licence, a
    `contract.public.json` travels beside it with the world the model was given;
    for a VVDex-authored exam it does not, because the world is the exam.
-3. **The sealed record** (`reports/<campaignId>/records/<evalId>.canonical.json`)
-   — the run. It carries the environment block (including the same fingerprint),
-   the engine revision (`engine.gitCommit`), the certification block as it stood
-   at run time, per-rollout results, statistics, containment verdicts, integrity
-   counts and the harness's review of itself. The `recordDigest` field in the
-   canonical bytes is sixty-four zeros; the digest it states is in the
-   `.digest.txt` beside it.
+3. **The sealed record** is the run. It carries the environment block (including
+   the same fingerprint), the engine revision (`engine.gitCommit`), the
+   certification block as it stood at run time, per-rollout results, statistics,
+   containment verdicts, integrity counts and the harness's review of itself.
+   The `recordDigest` field in the canonical bytes is sixty-four zeros; the
+   digest it states ships here as
+   `reports/<campaignId>/records/<evalId>.digest.txt`. The bytes themselves stay
+   in the Forge, because they carry both submission-derived content and the
+   grader's own verdicts, which name VVDex evaluation internals. What ships
+   beside the digest is a `.canonical.WITHHELD.txt` naming the reason and, where
+   published, a sanitized `.record.public.json` projection.
 4. **The campaign** (`reports/<campaignId>/campaign.json`, `summary.json`, the
    PDFs) — derived from the records and nothing else. The campaign id is a
    digest over the sorted record digests, so the same records always name the

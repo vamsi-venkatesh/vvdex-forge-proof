@@ -1,31 +1,57 @@
 # Verification
 
-Nothing here asks for trust. Each claim binds to a digest you can recompute with
-`shasum` and a JSON reader. Four checks, in the order a skeptical reader would
-run them.
+Nothing here asks for trust. Two kinds of checking exist, and this document
+keeps them apart, because one of them can be done with this repository alone and
+the other cannot.
+
+**(a) Artifact and digest verification, available to anyone holding this
+repository.** Every file listed in `MANIFEST.json` hashes to the SHA-256 stated
+for it, and every record digest string agrees with itself everywhere it is
+stated: the `.digest.txt` file, the record projection's `sourceRecordDigest`,
+the campaign summary, the report manifests and the verification receipts. This
+is what `./verify.sh` runs, and it needs nothing but `python3`.
+
+**(b) Sealed-record recomputation, available to a holder of the canonical
+record under agreement.** Recomputing a record digest means hashing the sealed
+record's canonical bytes. This repository publishes no canonical record body, so
+that check cannot be run here, and nothing below claims otherwise. A reader who
+needs it can ask for the sealed evidence through
+<https://vvdexops.com/connect/>; access is arranged under agreement, and no
+terms are promised in advance.
+
+Why no canonical body is published: a sealed record's bytes carry the grader's
+own verdicts, and those name VVDex evaluation internals such as the hidden tests
+a rollout failed. An exam's `public_source` disclosure class says where the
+**task** came from, and it permits the upstream open-source material and the
+public-source diff. It does not declassify the grader built around that task.
+So the bytes stay in the Forge, and this repository publishes the digest and a
+sanitized projection instead.
 
 ## 1. A sealed record's digest
 
-Each `reports/<campaignId>/records/<evalId>.canonical.json` is the exact
-serialization its digest was computed over: canonical JSON, keys sorted,
-separators `,` and `:` with no spaces, non-ASCII escaped, and
-`recordDigest.sha256` set to sixty-four `0` characters. The digest the record
-states about itself is in the `.digest.txt` beside it.
+Each record ships as three files in `reports/<campaignId>/records/`:
+
+| File | What it is |
+| --- | --- |
+| `<evalId>.digest.txt` | the digest of the sealed record, immutable |
+| `<evalId>.canonical.WITHHELD.txt` | why the bytes are not here |
+| `<evalId>.record.public.json` | a sanitized projection, where one is published |
+
+The projection is **not** the record and does not hash to the digest; it says so
+itself, in its own `note` field. It states `sourceRecordDigest`, so a holder of
+the sealed record can tie the two together. What you can check here is that
+every place stating a record's digest states the same one:
 
 ```bash
-cd reports/fc-d89e429d2781/records
-shasum -a 256 fr-20260902-6616b188.canonical.json
-cat fr-20260902-6616b188.digest.txt
+examples/verify-record.sh reports/fc-d89e429d2781/records/fr-20260902-6616b188.digest.txt
 ```
 
-The two must be equal. The script does it for you and prints `MATCH` or
-`MISMATCH`:
+The digest scheme itself, for a holder of the bytes: canonical JSON, keys
+sorted, separators `,` and `:` with no spaces, non-ASCII escaped, and
+`recordDigest.sha256` set to sixty-four `0` characters. A holder recomputes it
+with `shasum -a 256` on the canonical bytes, or with `vvdex-env records verify`.
 
-```bash
-examples/verify-record.sh reports/fc-d89e429d2781/records/fr-20260902-6616b188.canonical.json
-```
-
-Expected for all five records in campaign `fc-d89e429d2781`:
+Digests for all five records in campaign `fc-d89e429d2781`:
 
 | Record | Environment | Digest |
 | --- | --- | --- |
@@ -89,8 +115,8 @@ python3 -c "import json;print(json.load(open('exams/public.swe.martinblech-xmlto
 #    declaration names a public upstream repository and its licence)
 python3 -c "import json;print(json.load(open('exams/public.swe.martinblech-xmltodict-issue-257/contract.public.json'))['fingerprint'])"
 
-# 3. the sealed record's canonical bytes
-python3 -c "import json;print(json.load(open('reports/fc-d89e429d2781/records/fr-20260902-6616b188.canonical.json'))['environment']['fingerprint'])"
+# 3. the sealed record, through its published projection
+python3 -c "import json;print(json.load(open('reports/fc-d89e429d2781/records/fr-20260902-6616b188.record.public.json'))['fingerprint'])"
 
 # 4. the exam's page on the live site
 #    https://vvdexops.com/featured/martinblech-xmltodict-issue-257/
@@ -129,7 +155,9 @@ Both are `87ba9833637f004939e1a7b2d3a69b2d0e0e37b1040ef5d403eb9c392695bee0`.
 
 Every file in this repository has its SHA-256 in
 [`MANIFEST.json`](MANIFEST.json), and `./verify.sh` checks all of them at once
-and then recomputes every published record digest:
+and then cross-checks every record digest string against every other place that
+states it. It does not recompute a digest from the sealed bytes, because the
+sealed bytes are not here, and its output labels the two separately:
 
 ```bash
 ./verify.sh
@@ -141,16 +169,36 @@ python3 -c "import json;print(json.load(open('MANIFEST.json'))['files']['exams/v
 
 ## Where the bytes are withheld
 
-Four of the five records' canonical bytes are not published. A sealed record
-carries an excerpt of what each rollout submitted, and on an exam whose graded
-output is an answer or a world state that excerpt is the answer. Those records
-ship as `<evalId>.digest.txt` beside a `<evalId>.canonical.WITHHELD.txt` that
-states the digest and the reason. The digest is the digest of the sealed record
-as it exists in the Forge; a holder of that record — the customer who
-commissioned the run, or an auditor under agreement — reproduces it with
-`shasum -a 256` or `vvdex-env records verify` and reaches the printed value.
-`./verify.sh` reports how many were recomputed and how many are withheld, so a
-withheld record is visible as a fact rather than read as a pass.
+**No record's canonical bytes are published.** Every record in this repository
+ships as `<evalId>.digest.txt` beside a `<evalId>.canonical.WITHHELD.txt` that
+states the digest and the reason. There are two reasons, and each notice says
+which applies to it.
+
+1. **Submission-derived content.** A sealed record carries an excerpt of what
+   each rollout submitted, and on an exam whose graded output is an answer or a
+   world state that excerpt is the answer.
+2. **VVDex evaluation internals.** A sealed record carries the grader's own
+   verdicts, which name the hidden tests a rollout failed. An exam's
+   `public_source` disclosure class covers the upstream task and the
+   public-source diff. It does not cover the grader, the hidden tests, the
+   attack probes or the reference-evaluation internals, which are VVDex's own
+   work whatever the task's ownership. The record on the public-source exam is
+   withheld for this reason.
+
+The digest is the digest of the sealed record as it exists in the Forge; a
+holder of that record, meaning the customer who commissioned the run or an
+auditor under agreement, reproduces it with `shasum -a 256` or
+`vvdex-env records verify` and reaches the printed value. Access is arranged
+through <https://vvdexops.com/connect/>, under agreement; no terms are promised
+in advance.
+
+Where a projection is published, `<evalId>.record.public.json` carries the
+record's identity, its lanes, its per-rollout outcome, stage flags, elapsed time
+and tool-name counts, its result counts, its disclosure class and its
+`sourceRecordDigest`. It carries no submission body, no model prose and no name
+the grader owns. `./verify.sh` reports the published-body count and the
+projection count separately, so a withheld record is visible as a fact rather
+than read as a pass.
 
 ## 4. The campaign id
 

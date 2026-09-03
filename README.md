@@ -170,8 +170,9 @@ Public in this repository:
 * one proof descriptor per exam: what it measures, its content fingerprint,
   runtime class, tool categories, limits, ownership and disclosure level;
 * the certification receipt for each exam;
-* the sealed record digests, and the canonical bytes of the one record whose
-  graded artefact is public upstream source;
+* the sealed record digests, and for the public-source exam a sanitized
+  projection of its record: identity, lanes, per-rollout outcome, stages,
+  elapsed time and tool-name counts, and result counts;
 * the campaign reports, `campaign.json` and `summary.json`;
 * the upstream issue text and licence of the one third-party exam.
 
@@ -206,8 +207,8 @@ python3 examples/inspect-campaign.py reports/fc-d89e429d2781/summary.json
 #    against the table in this README
 python3 examples/check-readme-matrix.py
 
-# 4. one record, checked on its own
-examples/verify-record.sh reports/fc-d89e429d2781/records/fr-20260902-6616b188.canonical.json
+# 4. one record's digest, cross-checked against every place stating it
+examples/verify-record.sh reports/fc-d89e429d2781/records/fr-20260902-6616b188.digest.txt
 
 # 5. every vvdexops.com URL this repository names (needs the network)
 examples/check-links.sh
@@ -215,13 +216,19 @@ examples/check-links.sh
 
 [VERIFICATION.md](VERIFICATION.md) walks the same checks by hand: the record
 digest, a report's self-check, the fingerprint joins across receipt, contract
-and record, and the campaign id.
+and record, and the campaign id. It also separates the two kinds of checking,
+because they are not the same and only one of them can be run here.
 
-Where a record's bytes are withheld, its digest is still published. A holder of
-the sealed record, meaning the customer who commissioned the run or an auditor
-under agreement, recomputes it with `shasum -a 256`. `./verify.sh` reports the
-recomputed count and the withheld count separately rather than passing
-silently.
+**Available publicly:** artifact and digest verification. Every file listed in
+`MANIFEST.json` hashes to the SHA-256 stated for it, and every record digest
+string agrees with itself across the `.digest.txt` file, the record projection,
+the campaign summary, the report manifests and the verification receipts.
+
+**Available to a holder of the canonical record, under agreement:** recomputing
+a record digest from the sealed bytes. No canonical record body is published
+here, on any record, so that check cannot be run from this repository and
+nothing here claims it can. Access to sealed evidence is arranged through
+<https://vvdexops.com/connect/>; no terms are promised in advance.
 
 ## 10. Public OSS example: xmltodict issue #257
 
@@ -229,8 +236,13 @@ One exam is built on public material, and only because its ownership says so.
 `public.swe.martinblech-xmltodict-issue-257` is issue #257 of
 `martinblech/xmltodict`, an MIT-licensed project. The upstream issue, its fix
 and the pull request are public, so the task statement, the upstream `LICENSE`
-and the public contract travel with the exam, and the graded submission bytes of
-its sealed record are published rather than withheld.
+and the public contract travel with the exam.
+
+That class covers the task, not the grader. The hidden tests written against
+that public bug, and everything else the certification chain is built from, are
+VVDex's own work, so this exam's sealed record body is withheld like every
+other. What is published for it is the record digest and a sanitized
+projection.
 
 [`examples/reproduce-xmltodict.md`](examples/reproduce-xmltodict.md) walks it end
 to end: the task statement the model received, the upstream issue and pull
@@ -253,9 +265,11 @@ Only what the records and the receipts substantiate.
 * **Grading is deterministic.** No exam in this package is graded by a language
   model judging another language model. Grading is hidden tests, an end state
   compared to a frozen key, or a recorded tool trace.
-* **The records recompute.** Every published `*.canonical.json` hashes to the
-  digest in the `*.digest.txt` beside it, and the campaign id is a digest over
-  the sorted record digests.
+* **The record digests agree wherever they are stated.** A record's digest is
+  the same string in the `.digest.txt` file, the record projection, the campaign
+  summary, the report manifest and the verification receipt, and the campaign id
+  is a digest over the sorted record digests. Recomputing a digest from the
+  sealed bytes needs the canonical record, which is not published here.
 * **Lane errors are separated from model failures.** A provider or CLI failure
   never enters a capability count in either direction.
 
@@ -302,6 +316,16 @@ does not place an exam, or any part of it, under an open-source or open-content
 licence, and this repository is not an open-source release of Forge. The one
 exception is the upstream project's own material in the xmltodict exam, which
 keeps the upstream MIT licence.
+
+While this repository is public on GitHub, GitHub's Terms of Service grant every
+user of the Service certain rights in it, including the right to view it and to
+fork it within the Service. Nothing here is intended to remove or narrow those
+rights, and to the extent anything reads as though it does, GitHub's Terms
+govern instead. Those rights are the ones GitHub's Terms give and no more:
+making this repository public grants no additional licence in VVDex materials,
+open-source or otherwise, and no permission to reuse, redistribute, republish,
+build a derivative benchmark from, or train on them outside the Service.
+[TERMS.md](TERMS.md) states this in full.
 
 * [TERMS.md](TERMS.md), who owns what is published here and what may be done
   with it.
