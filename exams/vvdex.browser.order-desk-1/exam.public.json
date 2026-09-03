@@ -8,7 +8,9 @@
   "examFingerprint": "8d404ee5d5ab71456de3d3df0b8ca69271d8810767a694f71c6e45e72fc347bf",
   "examId": "vvdex.browser.order-desk-1",
   "family": "browser",
-  "limits": {},
+  "limits": {
+    "steps": 40
+  },
   "note": "This descriptor states what the exam measures and how its published result can be checked. It deliberately does not carry the material an exam would have to ship to be reusable.",
   "ownership": {
     "declaration": "vvdex_proprietary",
@@ -41,7 +43,7 @@
   "schema": "vvdex.forge.public-exam-descriptor/v1",
   "title": "Correct one order in an admin application, through a real browser",
   "toolCategories": {
-    "other": [
+    "browser": [
       "browse"
     ]
   },

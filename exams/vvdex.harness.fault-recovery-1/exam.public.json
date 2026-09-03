@@ -8,7 +8,9 @@
   "examFingerprint": "4a206fbfe8fb70fb3e37943705065a8599fab492e495dca326279781ee960b1e",
   "examId": "vvdex.harness.fault-recovery-1",
   "family": "harness_eval",
-  "limits": {},
+  "limits": {
+    "steps": 24
+  },
   "note": "This descriptor states what the exam measures and how its published result can be checked. It deliberately does not carry the material an exam would have to ship to be reusable.",
   "ownership": {
     "declaration": "vvdex_proprietary",
@@ -41,9 +43,11 @@
   "schema": "vvdex.forge.public-exam-descriptor/v1",
   "title": "Harness recovery under a faulted tool loop",
   "toolCategories": {
-    "other": [
-      "edit",
+    "execute": [
       "test"
+    ],
+    "write": [
+      "edit"
     ]
   },
   "version": "0.1.0"

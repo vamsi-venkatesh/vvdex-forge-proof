@@ -8,7 +8,7 @@
   "examFingerprint": "aa41977120e6ecdddb5c4fc603e8ab23cb272726a86750119969ff4dfc90e297",
   "examId": "public.swe.martinblech-xmltodict-issue-257",
   "family": "public_oss_swe",
-  "limits": {},
+  "limits": null,
   "note": "This descriptor states what the exam measures and how its published result can be checked. It deliberately does not carry the material an exam would have to ship to be reusable.",
   "ownership": {
     "declaration": "public_source",
@@ -42,9 +42,11 @@
   "schema": "vvdex.forge.public-exam-descriptor/v1",
   "title": "Streaming items must equal what the full parse would have built",
   "toolCategories": {
-    "other": [
-      "edit",
+    "execute": [
       "test"
+    ],
+    "write": [
+      "edit"
     ]
   },
   "version": "0.1.0"

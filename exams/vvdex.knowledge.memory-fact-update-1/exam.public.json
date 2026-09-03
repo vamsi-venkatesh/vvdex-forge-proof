@@ -8,7 +8,10 @@
   "examFingerprint": "2052eec0ff2d3044dc269e3599ae1bfaa45d0d8cd5df9554796105538d226c21",
   "examId": "vvdex.knowledge.memory-fact-update-1",
   "family": "long_term_memory",
-  "limits": {},
+  "limits": {
+    "commands": 24,
+    "steps": 20
+  },
   "note": "This descriptor states what the exam measures and how its published result can be checked. It deliberately does not carry the material an exam would have to ship to be reusable.",
   "ownership": {
     "declaration": "vvdex_proprietary",
@@ -48,11 +51,11 @@
   "title": "Updating a cross-session fact: answer from the newer authoritative roster, not stale carried memory",
   "toolCategories": {
     "execute": [
-      "run_command"
-    ],
-    "other": [
-      "edit",
+      "run_command",
       "test"
+    ],
+    "write": [
+      "edit"
     ]
   },
   "version": "0.1.0"

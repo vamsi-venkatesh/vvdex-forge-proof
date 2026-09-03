@@ -8,7 +8,10 @@
   "examFingerprint": "4880a527ef97ca2f3fe6b57be026c3dc1be51e9e104d79fc13a3e558331dda92",
   "examId": "vvdex.knowledge.grounded-rag-1",
   "family": "rag_grounding",
-  "limits": {},
+  "limits": {
+    "commands": 40,
+    "steps": 30
+  },
   "note": "This descriptor states what the exam measures and how its published result can be checked. It deliberately does not carry the material an exam would have to ship to be reusable.",
   "ownership": {
     "declaration": "vvdex_proprietary",
@@ -48,11 +51,11 @@
   "title": "Answering questions from a document collection with outdated and distractor sources, and refusing when the evidence is insufficient",
   "toolCategories": {
     "execute": [
-      "run_command"
-    ],
-    "other": [
-      "edit",
+      "run_command",
       "test"
+    ],
+    "write": [
+      "edit"
     ]
   },
   "version": "0.1.0"
