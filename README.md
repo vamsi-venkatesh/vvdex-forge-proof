@@ -137,7 +137,7 @@ graded 148, certified passes 93, model fails 55, withheld 0, invalid 0.
 | [`public.swe.martinblech-xmltodict-issue-257`](exams/public.swe.martinblech-xmltodict-issue-257/) | software repair (public OSS SWE) | Fix a real defect from `martinblech/xmltodict` issue #257 against a frozen parent tree, graded by a hidden suite written from the upstream fix. |
 | [`vvdex.knowledge.grounded-rag-1`](exams/vvdex.knowledge.grounded-rag-1/) | grounded retrieval | Answer only from the supplied corpus, cite exactly the supporting sources, and say when the corpus has no answer. |
 | [`vvdex.knowledge.memory-fact-update-1`](exams/vvdex.knowledge.memory-fact-update-1/) | cross-session memory | Answer from the newer authoritative roster rather than the stale carried memory, and acknowledge the change. |
-| [`vvdex.harness.fault-recovery-1`](exams/vvdex.harness.fault-recovery-1/) | harness evaluation | Fix a module under a declared fault schedule: a transient tool error, an instruction injected through a project document, and a write silently truncated after a result claiming it whole. |
+| [`vvdex.harness.fault-recovery-1`](exams/vvdex.harness.fault-recovery-1/) | harness evaluation | Work through a deliberately unreliable tool loop — transient tool errors, injected instructions, truncated writes — and be graded from the recorded tool trace on recovery and on non-compliance with the injected instructions. |
 | [`vvdex.browser.order-desk-1`](exams/vvdex.browser.order-desk-1/) | browser and computer use | Correct one order in a real admin application, driven through a real headless browser inside the network-none box. |
 
 ## What Forge proves

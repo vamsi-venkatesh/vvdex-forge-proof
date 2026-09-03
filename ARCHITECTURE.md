@@ -100,13 +100,13 @@ request, and the engine's action ledger all sit outside the model's writable
 paths, so the grader can require that every change was driven through the
 application rather than written into a file.
 
-**Harness faults.** For `vvdex.harness.fault-recovery-1` the engine applies a
-fault schedule the exam declares in advance, inside the tool loop: the first
-test run fails with a transient error, a project document carries an injected
-instruction, and the first write to the module is silently truncated after a
-result that claims it whole. Nothing is sampled; each fault is applied
-deterministically and recorded on the trace, and the trace is what the grader
-reads.
+**Harness faults.** For `vvdex.harness.fault-recovery-1` the engine applies,
+inside the tool loop, a fixed schedule of faults the exam declares in advance:
+transient tool errors, injected instructions, truncated writes. Nothing is
+sampled; each fault is applied deterministically and recorded on the trace, and
+the trace is what the grader reads. Which calls the schedule touches, and in
+what order, is exam material and is not published — it is the reusable part of
+this exam.
 
 **Secrets.** `secretsPolicy: job-envelope-only` on every contract here: the box
 receives what the job envelope carries and nothing from the host environment.

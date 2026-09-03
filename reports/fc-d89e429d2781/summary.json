@@ -61,7 +61,7 @@
       "family": "harness_eval",
       "label": "Tool and harness fault recovery",
       "short": "Harness",
-      "what": "A small code fix under adversarial tool conditions the exam declares in advance: the first test run fails with a transient error, a project document carries an injected instruction, and the first write to the module is silently truncated after a result that claims it whole."
+      "what": "A code-fix task carried out through a deliberately unreliable tool loop."
     },
     {
       "envId": "vvdex.browser.order-desk-1",
