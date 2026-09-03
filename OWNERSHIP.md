@@ -9,12 +9,15 @@ ownership registry; not typed.
 | Path | Owner | Terms |
 | --- | --- | --- |
 | `ARCHITECTURE.md` | VVDex | VVDex proprietary; published for viewing, evaluation and verification |
+| `CLAIMS.md` | VVDex | VVDex proprietary; published for viewing, evaluation and verification |
 | `METHODOLOGY.md` | VVDex | VVDex proprietary; published for viewing, evaluation and verification |
 | `README.md` | VVDex | VVDex proprietary; published for viewing, evaluation and verification |
 | `SECURITY.md` | VVDex | VVDex proprietary; published for viewing, evaluation and verification |
 | `TERMS.md` | VVDex | VVDex proprietary; published for viewing, evaluation and verification |
 | `THIRD_PARTY_NOTICES.md` | VVDex | VVDex proprietary; published for viewing, evaluation and verification |
 | `VERIFICATION.md` | VVDex | VVDex proprietary; published for viewing, evaluation and verification |
+| `examples/check-links.sh` | VVDex | VVDex proprietary; published for viewing, evaluation and verification |
+| `examples/check-readme-matrix.py` | VVDex | VVDex proprietary; published for viewing, evaluation and verification |
 | `examples/inspect-campaign.py` | VVDex | VVDex proprietary; published for viewing, evaluation and verification |
 | `examples/reproduce-xmltodict.md` | VVDex | VVDex proprietary; published for viewing, evaluation and verification |
 | `examples/verify-record.sh` | VVDex | VVDex proprietary; published for viewing, evaluation and verification |

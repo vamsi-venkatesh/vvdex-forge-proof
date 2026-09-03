@@ -25,13 +25,16 @@ as `referencePass` and `baselineFail`; on all five exams here, rate 1.0 and rate
 answer. It rules out the exam nobody can pass and the exam that is already passed
 before the model starts.
 
-**Grader controls.** Seven submissions that must land on known verdicts:
-untouched tree (fail), reference (pass), incomplete fix (fail), plausible
-lookalike (fail), planted test hook (fail), planted reward file (fail),
-reference again after the tampering attempts (pass). The two wrong-but-plausible
-cases must fail for different reasons, read from the failing test sets rather
-than inferred from an exit code. Recorded as `graderControls: {cases: 7,
-distinguished: true}` on all five receipts here.
+**Grader controls.** Submissions that must land on known verdicts: untouched tree
+(fail), reference (pass), incomplete fix (fail), plausible lookalike (fail),
+planted test hook (fail), planted reward file (fail), reference again after the
+tampering attempts (pass). Families with more ways to fake an end state carry
+more cases. The two wrong-but-plausible cases must fail for different reasons,
+read from the failing test sets rather than inferred from an exit code. Every
+receipt here records `distinguished: true`, and `graderControls.cases` reads 7
+on `public.swe.martinblech-xmltodict-issue-257`,
+`vvdex.knowledge.grounded-rag-1` and `vvdex.knowledge.memory-fact-update-1`, 9
+on `vvdex.browser.order-desk-1`, and 12 on `vvdex.harness.fault-recovery-1`.
 *Does not prove* that no wrong answer passes. It proves the specific wrong answers
 we could think of do not, and that the grader ignored material planted to bend
 it. A probe set is a floor.
@@ -167,8 +170,11 @@ approximation. The records state the reason:
 the number of rollouts actually run: there is no pass@5 in a 2-rollout run.
 
 Below the low-N threshold (10 rollouts) a report shows raw counts and refuses to
-present percentages as stable rates. The five records in campaign
-`fc-d89e429d2781` all carry `lowN: false` at `lowNThreshold: 10`. The historical
+present percentages as stable rates. The one record in campaign
+`fc-d89e429d2781` whose canonical bytes are published,
+`fr-20260902-6616b188.canonical.json`, carries `lowN: false` at
+`lowNThreshold: 10`; the other four records carry the same fields, and a holder
+of those sealed records can read them there. The historical
 campaign `fc-8626f712e26f` is a one-rollout-per-lane run and its summary carries
 no lane intervals at all.
 

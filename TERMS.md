@@ -20,6 +20,15 @@ Publication of a result does not place the exam, or any part of it, under an
 open-source or open-content licence. Not MIT, not Apache, not GPL, not
 CC BY. Public visibility is not an open-source grant.
 
+## The verification utilities
+
+`verify.sh` and everything under `examples/` are VVDex-authored. They carry no
+separate licence of their own, and none is granted here. They are covered by the
+notice above: published so that a reader can check the evidence in this
+repository, and not licensed for reuse, redistribution or derivative work
+without written permission. There is no `LICENSE` file at the root of this
+repository, and the absence of one is not a permission.
+
 ## Third-party open source
 
 One exam is built around a task from a third-party open-source project. That

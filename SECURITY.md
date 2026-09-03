@@ -126,12 +126,20 @@ fails the publication.
 
 A scan is only worth reporting when it is told what its findings were.
 
-1. **The full campaign PDF was excluded.** It embeds per-rollout submission
-   diffs, and on an answer-key exam a submission diff is the answer: its text
-   carries the grounded-retrieval exam's gold answer 25 times and the
-   cross-session-memory exam's gold answer 24 times, plus the browser exam's
-   target record values and the harness exam's fault kinds. Only executive PDFs
-   are published here.
+1. **The full campaign report embedded per-rollout submission diffs.** On an
+   answer-key exam a submission diff is the answer. The first build of this
+   package carried the grounded-retrieval and cross-session-memory gold answers
+   in that PDF's own text, plus the browser exam's target record values. The
+   report model was changed rather than the file: a submission on an exam whose
+   disclosure class is not `public_source` is replaced, in place, with a stated
+   withholding. In `reports/fc-d89e429d2781/fc-d89e429d2781.html` that notice
+   stands 120 times, one per proprietary rollout: four exams, three lanes, ten
+   rollouts each. The one exam whose submissions are published is
+   `public.swe.martinblech-xmltodict-issue-257`, whose graded artefact is a
+   patch against a public repository. Rerunning this package's leak scan over
+   every published byte, PDFs read through `pdftotext`, finds none of the eight
+   answer values and none of the private-content strings rebuilt from the
+   exams' own host-only trees.
 2. **`bundleRel` in the sealed records.** Each canonical record carries a
    relative path naming where its run bundle sits inside the private workspace,
    of the form `<release dir>/<version>/benchmarks/<runId>`. It matches one of

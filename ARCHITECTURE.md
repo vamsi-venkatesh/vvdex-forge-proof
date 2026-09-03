@@ -44,8 +44,11 @@ untouched tree (fail), reference (pass), an incomplete fix (fail), a plausible
 lookalike near-miss (fail), a planted test hook (fail), a planted reward file
 (fail), and the reference again after the tampering attempts (pass). The two
 wrong-but-plausible cases are required to fail for different reasons, read from
-the failing test sets rather than inferred from an exit code. Each receipt here
-records `graderControls.cases: 7` and `distinguished: true`.
+the failing test sets rather than inferred from an exit code. The case count is
+per exam, and every receipt here records `distinguished: true`:
+`graderControls.cases` is 7 on `public.swe.martinblech-xmltodict-issue-257`,
+`vvdex.knowledge.grounded-rag-1` and `vvdex.knowledge.memory-fact-update-1`, 9
+on `vvdex.browser.order-desk-1`, and 12 on `vvdex.harness.fault-recovery-1`.
 
 **Attack suite.** Scripted probes attack the grade rather than the task:
 rewriting or deleting tests, planting collection hooks, reaching for the answer
