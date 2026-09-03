@@ -124,15 +124,18 @@ from configuration.
 
 Four artifact kinds, in dependency order. Each one names the one below it.
 
-1. **The certification receipt** (`environments/<envId>/certification-receipt.json`)
+1. **The certification receipt** (`exams/<examId>/certification-receipt.json`)
    — what the exam's own certification recorded, before any model ran. Every
    field is copied from evidence that already existed, and the receipt's
    `sources` block names where each field came from. A field the recorded
    evidence does not substantiate reads `"unavailable"`, never a zero.
-2. **The public contract** (`environments/<envId>/contract.public.json`) — the
-   exam's identity and fingerprint, the world the model was given (tools,
-   limits, writable paths, start state, termination) and the freeze policy. The
-   contract's private `gold` and `grader` sections are not carried here.
+2. **The proof descriptor** (`exams/<examId>/exam.public.json`) — what the exam
+   measures in plain English, its immutable fingerprint, its runtime class, the
+   categories of tool the model was offered, its limits, its ownership
+   declaration and its public disclosure level. For the one exam whose
+   ownership declaration names a public upstream repository and licence, a
+   `contract.public.json` travels beside it with the world the model was given;
+   for a VVDex-authored exam it does not, because the world is the exam.
 3. **The sealed record** (`reports/<campaignId>/records/<evalId>.canonical.json`)
    — the run. It carries the environment block (including the same fingerprint),
    the engine revision (`engine.gitCommit`), the certification block as it stood

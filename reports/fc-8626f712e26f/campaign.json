@@ -1,0 +1,463 @@
+{
+  "campaignId": "fc-8626f712e26f",
+  "cells": {
+    "cli/claude-sonnet|public.swe.martinblech-xmltodict-issue-257": {
+      "certified": "certified_pass",
+      "certifiedCounts": {
+        "certified_pass": 1,
+        "invalid": 0,
+        "lane_error": 0,
+        "model_fail": 0,
+        "withheld": 0
+      },
+      "evalId": "fr-20260901-a27316a3",
+      "grader": "pass",
+      "integrity": "verified_contained",
+      "withheldBy": null
+    },
+    "cli/claude-sonnet|public.swe.pytoolz-toolz-issue-602": {
+      "certified": "certified_pass",
+      "certifiedCounts": {
+        "certified_pass": 1,
+        "invalid": 0,
+        "lane_error": 0,
+        "model_fail": 0,
+        "withheld": 0
+      },
+      "evalId": "fr-20260901-88c3cdf1",
+      "grader": "pass",
+      "integrity": "verified_contained",
+      "withheldBy": null
+    },
+    "cli/claude-sonnet|public.swe.r1chardj0n3s-parse-issue-102": {
+      "certified": "certified_pass",
+      "certifiedCounts": {
+        "certified_pass": 1,
+        "invalid": 0,
+        "lane_error": 0,
+        "model_fail": 0,
+        "withheld": 0
+      },
+      "evalId": "fr-20260901-4b1e3251",
+      "grader": "pass",
+      "integrity": "verified_contained",
+      "withheldBy": null
+    },
+    "cli/claude-sonnet|vvdex.knowledge.grounded-rag-1": {
+      "certified": "model_fail",
+      "certifiedCounts": {
+        "certified_pass": 0,
+        "invalid": 0,
+        "lane_error": 0,
+        "model_fail": 1,
+        "withheld": 0
+      },
+      "evalId": "fr-20260901-718db345",
+      "grader": "fail",
+      "integrity": "verified_contained",
+      "withheldBy": null
+    },
+    "cli/claude-sonnet|vvdex.knowledge.memory-fact-update-1": {
+      "certified": "certified_pass",
+      "certifiedCounts": {
+        "certified_pass": 1,
+        "invalid": 0,
+        "lane_error": 0,
+        "model_fail": 0,
+        "withheld": 0
+      },
+      "evalId": "fr-20260901-109cfa3c",
+      "grader": "pass",
+      "integrity": "verified_contained",
+      "withheldBy": null
+    },
+    "cli/codex|public.swe.martinblech-xmltodict-issue-257": {
+      "certified": "certified_pass",
+      "certifiedCounts": {
+        "certified_pass": 1,
+        "invalid": 0,
+        "lane_error": 0,
+        "model_fail": 0,
+        "withheld": 0
+      },
+      "evalId": "fr-20260901-a27316a3",
+      "grader": "pass",
+      "integrity": "verified_contained",
+      "withheldBy": null
+    },
+    "cli/codex|public.swe.pytoolz-toolz-issue-602": {
+      "certified": "model_fail",
+      "certifiedCounts": {
+        "certified_pass": 0,
+        "invalid": 0,
+        "lane_error": 0,
+        "model_fail": 1,
+        "withheld": 0
+      },
+      "evalId": "fr-20260901-88c3cdf1",
+      "grader": "fail",
+      "integrity": "verified_contained",
+      "withheldBy": null
+    },
+    "cli/codex|public.swe.r1chardj0n3s-parse-issue-102": {
+      "certified": "model_fail",
+      "certifiedCounts": {
+        "certified_pass": 0,
+        "invalid": 0,
+        "lane_error": 0,
+        "model_fail": 1,
+        "withheld": 0
+      },
+      "evalId": "fr-20260901-4b1e3251",
+      "grader": "fail",
+      "integrity": "verified_contained",
+      "withheldBy": null
+    },
+    "cli/codex|vvdex.knowledge.grounded-rag-1": {
+      "certified": "certified_pass",
+      "certifiedCounts": {
+        "certified_pass": 1,
+        "invalid": 0,
+        "lane_error": 0,
+        "model_fail": 0,
+        "withheld": 0
+      },
+      "evalId": "fr-20260901-718db345",
+      "grader": "pass",
+      "integrity": "verified_contained",
+      "withheldBy": null
+    },
+    "cli/codex|vvdex.knowledge.memory-fact-update-1": {
+      "certified": "certified_pass",
+      "certifiedCounts": {
+        "certified_pass": 1,
+        "invalid": 0,
+        "lane_error": 0,
+        "model_fail": 0,
+        "withheld": 0
+      },
+      "evalId": "fr-20260901-109cfa3c",
+      "grader": "pass",
+      "integrity": "verified_contained",
+      "withheldBy": null
+    },
+    "codestral-latest|public.swe.martinblech-xmltodict-issue-257": {
+      "certified": "model_fail",
+      "certifiedCounts": {
+        "certified_pass": 0,
+        "invalid": 0,
+        "lane_error": 0,
+        "model_fail": 1,
+        "withheld": 0
+      },
+      "evalId": "fr-20260901-a27316a3",
+      "grader": "fail",
+      "integrity": "verified_contained",
+      "withheldBy": null
+    },
+    "codestral-latest|public.swe.pytoolz-toolz-issue-602": {
+      "certified": "model_fail",
+      "certifiedCounts": {
+        "certified_pass": 0,
+        "invalid": 0,
+        "lane_error": 0,
+        "model_fail": 1,
+        "withheld": 0
+      },
+      "evalId": "fr-20260901-88c3cdf1",
+      "grader": "fail",
+      "integrity": "verified_contained",
+      "withheldBy": null
+    },
+    "codestral-latest|public.swe.r1chardj0n3s-parse-issue-102": {
+      "certified": "model_fail",
+      "certifiedCounts": {
+        "certified_pass": 0,
+        "invalid": 0,
+        "lane_error": 0,
+        "model_fail": 1,
+        "withheld": 0
+      },
+      "evalId": "fr-20260901-4b1e3251",
+      "grader": "fail",
+      "integrity": "verified_contained",
+      "withheldBy": null
+    },
+    "codestral-latest|vvdex.knowledge.grounded-rag-1": {
+      "certified": "model_fail",
+      "certifiedCounts": {
+        "certified_pass": 0,
+        "invalid": 0,
+        "lane_error": 0,
+        "model_fail": 1,
+        "withheld": 0
+      },
+      "evalId": "fr-20260901-718db345",
+      "grader": "fail",
+      "integrity": "verified_contained",
+      "withheldBy": null
+    },
+    "codestral-latest|vvdex.knowledge.memory-fact-update-1": {
+      "certified": "model_fail",
+      "certifiedCounts": {
+        "certified_pass": 0,
+        "invalid": 0,
+        "lane_error": 0,
+        "model_fail": 1,
+        "withheld": 0
+      },
+      "evalId": "fr-20260901-109cfa3c",
+      "grader": "fail",
+      "integrity": "verified_contained",
+      "withheldBy": null
+    },
+    "openai/gpt-oss-120b|public.swe.martinblech-xmltodict-issue-257": {
+      "certified": "lane_error",
+      "certifiedCounts": {
+        "certified_pass": 0,
+        "invalid": 0,
+        "lane_error": 1,
+        "model_fail": 0,
+        "withheld": 0
+      },
+      "evalId": "fr-20260901-a27316a3",
+      "grader": "error",
+      "integrity": "verified_contained",
+      "withheldBy": null
+    },
+    "openai/gpt-oss-120b|public.swe.pytoolz-toolz-issue-602": {
+      "certified": "lane_error",
+      "certifiedCounts": {
+        "certified_pass": 0,
+        "invalid": 0,
+        "lane_error": 1,
+        "model_fail": 0,
+        "withheld": 0
+      },
+      "evalId": "fr-20260901-88c3cdf1",
+      "grader": "error",
+      "integrity": "verified_contained",
+      "withheldBy": null
+    },
+    "openai/gpt-oss-120b|public.swe.r1chardj0n3s-parse-issue-102": {
+      "certified": "lane_error",
+      "certifiedCounts": {
+        "certified_pass": 0,
+        "invalid": 0,
+        "lane_error": 1,
+        "model_fail": 0,
+        "withheld": 0
+      },
+      "evalId": "fr-20260901-4b1e3251",
+      "grader": "error",
+      "integrity": "verified_contained",
+      "withheldBy": null
+    },
+    "openai/gpt-oss-120b|vvdex.knowledge.grounded-rag-1": {
+      "certified": "lane_error",
+      "certifiedCounts": {
+        "certified_pass": 0,
+        "invalid": 0,
+        "lane_error": 1,
+        "model_fail": 0,
+        "withheld": 0
+      },
+      "evalId": "fr-20260901-718db345",
+      "grader": "error",
+      "integrity": "verified_contained",
+      "withheldBy": null
+    },
+    "openai/gpt-oss-120b|vvdex.knowledge.memory-fact-update-1": {
+      "certified": "certified_pass",
+      "certifiedCounts": {
+        "certified_pass": 1,
+        "invalid": 0,
+        "lane_error": 0,
+        "model_fail": 0,
+        "withheld": 0
+      },
+      "evalId": "fr-20260901-109cfa3c",
+      "grader": "pass",
+      "integrity": "verified_contained",
+      "withheldBy": null
+    }
+  },
+  "certificationReceipts": {
+    "public.swe.martinblech-xmltodict-issue-257": "87ba9833637f004939e1a7b2d3a69b2d0e0e37b1040ef5d403eb9c392695bee0",
+    "vvdex.knowledge.grounded-rag-1": "95deabd2469ddea08d716e0cc5c2c966b874be73743798020aeedaa2fd99d70f",
+    "vvdex.knowledge.memory-fact-update-1": "0e21831617f6d3b3680450adc93ec0aa0367a79dfc6ed07538d8a69a05a104ee"
+  },
+  "counts": {
+    "campaignId": "fc-8626f712e26f",
+    "cells": 20,
+    "certifiedPasses": 8,
+    "lanes": {
+      "cli/claude-sonnet": {
+        "certified_pass": 4,
+        "invalid": 0,
+        "lane_error": 0,
+        "model_fail": 1,
+        "withheld": 0
+      },
+      "cli/codex": {
+        "certified_pass": 3,
+        "invalid": 0,
+        "lane_error": 0,
+        "model_fail": 2,
+        "withheld": 0
+      },
+      "codestral-latest": {
+        "certified_pass": 0,
+        "invalid": 0,
+        "lane_error": 0,
+        "model_fail": 5,
+        "withheld": 0
+      },
+      "openai/gpt-oss-120b": {
+        "certified_pass": 1,
+        "invalid": 0,
+        "lane_error": 4,
+        "model_fail": 0,
+        "withheld": 0
+      }
+    },
+    "recordCount": 5,
+    "recordDigests": [
+      "6354cff6fc47eca13b596d285f805a9f3994d048d69b446166acfeb7f8659929",
+      "96f8b631c6d65f03b21e4a9a94e86c82874e1506fac38c9a093d2f8c618dd2dc",
+      "a6426b0b7932b6c0f679f230c44c4b75a30df10a17f7e145b567ac9849d63a36",
+      "d94c313144f8b36db4448440b873462bc9372e1783b1164451695b7b8497816a",
+      "f49a31336e4865c1dcefccf5141e2f6926110c72f03d6cb3d645a1761fa09ac8"
+    ],
+    "refused": 0,
+    "suspectRecords": [],
+    "withheldByHarness": 0
+  },
+  "disclosure": {
+    "public.swe.martinblech-xmltodict-issue-257": {
+      "class": "public_source",
+      "rule": "public-source disclosure (ownership public_source declared by engine registry, upstream https://github.com/martinblech/xmltodict under MIT; family public_oss_swe): the submitted change is a patch against a public repository, so a redacted excerpt of it is published."
+    },
+    "public.swe.pytoolz-toolz-issue-602": {
+      "class": "answer_key",
+      "rule": "answer-key disclosure (ownership vvdex_proprietary \u2014 no declaration \u2014 proprietary by default; family public_oss_swe): the exam is VVDex evaluation IP and the graded output is an answer or a keyed value, so no submission content, diff, model claim or hidden-assertion name is published."
+    },
+    "public.swe.r1chardj0n3s-parse-issue-102": {
+      "class": "answer_key",
+      "rule": "answer-key disclosure (ownership vvdex_proprietary \u2014 no declaration \u2014 proprietary by default; family public_oss_swe): the exam is VVDex evaluation IP and the graded output is an answer or a keyed value, so no submission content, diff, model claim or hidden-assertion name is published."
+    },
+    "vvdex.knowledge.grounded-rag-1": {
+      "class": "answer_key",
+      "rule": "answer-key disclosure (ownership vvdex_proprietary \u2014 engine registry; family rag_grounding): the exam is VVDex evaluation IP and the graded output is an answer or a keyed value, so no submission content, diff, model claim or hidden-assertion name is published."
+    },
+    "vvdex.knowledge.memory-fact-update-1": {
+      "class": "answer_key",
+      "rule": "answer-key disclosure (ownership vvdex_proprietary \u2014 engine registry; family long_term_memory): the exam is VVDex evaluation IP and the graded output is an answer or a keyed value, so no submission content, diff, model claim or hidden-assertion name is published."
+    }
+  },
+  "lanes": [
+    {
+      "certifiedPasses": 4,
+      "countable": 5,
+      "counts": {
+        "certified_pass": 4,
+        "invalid": 0,
+        "lane_error": 0,
+        "model_fail": 1,
+        "withheld": 0
+      },
+      "lane": "cli/claude-sonnet"
+    },
+    {
+      "certifiedPasses": 3,
+      "countable": 5,
+      "counts": {
+        "certified_pass": 3,
+        "invalid": 0,
+        "lane_error": 0,
+        "model_fail": 2,
+        "withheld": 0
+      },
+      "lane": "cli/codex"
+    },
+    {
+      "certifiedPasses": 1,
+      "countable": 1,
+      "counts": {
+        "certified_pass": 1,
+        "invalid": 0,
+        "lane_error": 4,
+        "model_fail": 0,
+        "withheld": 0
+      },
+      "lane": "openai/gpt-oss-120b"
+    },
+    {
+      "certifiedPasses": 0,
+      "countable": 5,
+      "counts": {
+        "certified_pass": 0,
+        "invalid": 0,
+        "lane_error": 0,
+        "model_fail": 5,
+        "withheld": 0
+      },
+      "lane": "codestral-latest"
+    }
+  ],
+  "refused": [],
+  "retired_for_future_evaluation": {
+    "vvdex.knowledge.grounded-rag-1": {
+      "environmentId": "vvdex.knowledge.grounded-rag-1",
+      "historicalResults": "Historical sealed results on this revision are unaffected: the disclosure happened after those runs, so it could not have influenced them.",
+      "reason": "post-run public disclosure of answer-bearing submission content",
+      "retiredOn": "2026-09-02",
+      "version": "0.1.0"
+    },
+    "vvdex.knowledge.memory-fact-update-1": {
+      "environmentId": "vvdex.knowledge.memory-fact-update-1",
+      "historicalResults": "Historical sealed results on this revision are unaffected: the disclosure happened after those runs, so it could not have influenced them.",
+      "reason": "post-run public disclosure of answer-bearing submission content",
+      "retiredOn": "2026-09-02",
+      "version": "0.1.0"
+    }
+  },
+  "reviews": {
+    "public.swe.martinblech-xmltodict-issue-257": {
+      "classification": [],
+      "law": "a suspect examiner may not blame the model: verdict-bearing suspicion not cleared by in-record evidence withholds every model_fail in the run",
+      "suspect": false,
+      "withheld": [],
+      "withheldCount": 0
+    },
+    "public.swe.pytoolz-toolz-issue-602": {
+      "classification": [],
+      "law": "a suspect examiner may not blame the model: verdict-bearing suspicion not cleared by in-record evidence withholds every model_fail in the run",
+      "suspect": false,
+      "withheld": [],
+      "withheldCount": 0
+    },
+    "public.swe.r1chardj0n3s-parse-issue-102": {
+      "classification": [],
+      "law": "a suspect examiner may not blame the model: verdict-bearing suspicion not cleared by in-record evidence withholds every model_fail in the run",
+      "suspect": false,
+      "withheld": [],
+      "withheldCount": 0
+    },
+    "vvdex.knowledge.grounded-rag-1": {
+      "classification": [],
+      "law": "a suspect examiner may not blame the model: verdict-bearing suspicion not cleared by in-record evidence withholds every model_fail in the run",
+      "suspect": false,
+      "withheld": [],
+      "withheldCount": 0
+    },
+    "vvdex.knowledge.memory-fact-update-1": {
+      "classification": [],
+      "law": "a suspect examiner may not blame the model: verdict-bearing suspicion not cleared by in-record evidence withholds every model_fail in the run",
+      "suspect": false,
+      "withheld": [],
+      "withheldCount": 0
+    }
+  },
+  "schema": "vvdex.forge.campaign-counts/v1"
+}

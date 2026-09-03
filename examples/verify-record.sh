@@ -9,6 +9,13 @@
 # escaped, and recordDigest.sha256 set to sixty-four "0" characters. So the
 # check is a plain SHA-256 over the file as published.
 #
+# Only one of the five records in this package publishes its canonical bytes:
+# the exam whose graded artefact is public upstream source. The other four ship
+# <evalId>.digest.txt beside a <evalId>.canonical.WITHHELD.txt, because a sealed
+# record carries an excerpt of what each rollout submitted and on those exams
+# the submission is the graded answer. This script says so rather than failing
+# with a confusing "no such file".
+#
 # Exit status: 0 on MATCH, 1 on MISMATCH, 2 on a usage or file error.
 
 set -eu
@@ -25,7 +32,16 @@ case $canonical in
 esac
 
 stated_file=${canonical%.canonical.json}.digest.txt
-[ -f "$canonical" ]   || { echo "no such file: $canonical" >&2; exit 2; }
+if [ ! -f "$canonical" ]; then
+  withheld=${canonical%.canonical.json}.canonical.WITHHELD.txt
+  if [ -f "$withheld" ]; then
+    echo "this record's canonical bytes are not published:" >&2
+    cat "$withheld" >&2
+    exit 2
+  fi
+  echo "no such file: $canonical" >&2
+  exit 2
+fi
 [ -f "$stated_file" ] || { echo "no digest file beside it: $stated_file" >&2; exit 2; }
 
 if command -v shasum >/dev/null 2>&1; then

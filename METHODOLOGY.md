@@ -8,7 +8,7 @@ teaches a reader to trust it further than it goes.
 ## The certification chain
 
 Run per exam, before any model sees it. The recorded outcome of each stage is on
-`environments/<envId>/certification-receipt.json`.
+`exams/<examId>/certification-receipt.json`.
 
 **Contract.** The exam declares its identity and version, family, grader entry
 point, licence and classification. The declaration is validated before any other

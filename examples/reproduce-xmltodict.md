@@ -1,8 +1,11 @@
 # What can be reproduced for the xmltodict exam, and what cannot
 
 `public.swe.martinblech-xmltodict-issue-257` is the one exam in this repository
-built from public open-source software, so it is the one where an outside reader
-can go furthest. This page says exactly how far, and where the road ends.
+whose ownership declaration names a public upstream repository and its licence,
+so it is the one where an outside reader can go furthest. The other four exams
+are VVDex-authored: this repository carries a proof descriptor for each and no
+task package at all, so none of what follows applies to them. This page says
+exactly how far this one goes, and where the road ends.
 
 ## Can be reproduced
 
@@ -10,8 +13,8 @@ can go furthest. This page says exactly how far, and where the road ends.
 byte, and its SHA-256 is in the manifest.
 
 ```bash
-shasum -a 256 environments/public.swe.martinblech-xmltodict-issue-257/ISSUE.md
-python3 -c "import json;print(json.load(open('environments/MANIFEST.json'))['files']['public.swe.martinblech-xmltodict-issue-257/ISSUE.md'])"
+shasum -a 256 exams/public.swe.martinblech-xmltodict-issue-257/ISSUE.md
+python3 -c "import json;print(json.load(open('MANIFEST.json'))['files']['exams/public.swe.martinblech-xmltodict-issue-257/ISSUE.md'])"
 ```
 
 **2. The upstream issue and pull request.** Both are public and both are named in
@@ -22,7 +25,7 @@ the exam's provenance.
 - Repository: <https://github.com/martinblech/xmltodict> (MIT)
 
 ```bash
-python3 -c "import json;print(json.load(open('environments/public.swe.martinblech-xmltodict-issue-257/provenance.public.json'))['source'])"
+python3 -c "import json;print(json.load(open('exams/public.swe.martinblech-xmltodict-issue-257/provenance.public.json'))['source'])"
 ```
 
 **3. The parent commit the tree was frozen at.** The exam's tree is the upstream
@@ -47,7 +50,7 @@ fingerprint must agree with the contract, the sealed record and the exam's live
 page.
 
 ```bash
-python3 -c "import json;print(json.load(open('environments/public.swe.martinblech-xmltodict-issue-257/certification-receipt.json'))['examFingerprint'])"
+python3 -c "import json;print(json.load(open('exams/public.swe.martinblech-xmltodict-issue-257/certification-receipt.json'))['examFingerprint'])"
 python3 -c "import json;print(json.load(open('reports/fc-d89e429d2781/records/fr-20260902-6616b188.canonical.json'))['environment']['fingerprint'])"
 # both: aa41977120e6ecdddb5c4fc603e8ab23cb272726a86750119969ff4dfc90e297
 ```
@@ -55,9 +58,9 @@ python3 -c "import json;print(json.load(open('reports/fc-d89e429d2781/records/fr
 The receipt file's own SHA-256 is bound into the campaign:
 
 ```bash
-shasum -a 256 environments/public.swe.martinblech-xmltodict-issue-257/certification-receipt.json
+shasum -a 256 exams/public.swe.martinblech-xmltodict-issue-257/certification-receipt.json
 python3 -c "import json;print(json.load(open('reports/fc-d89e429d2781/campaign.json'))['certificationReceipts']['public.swe.martinblech-xmltodict-issue-257'])"
-# both: 2daeb9d08e5160da032bc8c7e14901533627ccc5c2cbadd06965f7dc8d823760
+# both: 87ba9833637f004939e1a7b2d3a69b2d0e0e37b1040ef5d403eb9c392695bee0
 ```
 
 **5. The result, from its sealed record.**

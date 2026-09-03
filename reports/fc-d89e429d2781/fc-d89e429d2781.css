@@ -1,0 +1,362 @@
+
+:root {
+  /* IRON & FIRE (2026-09-01): the report wears the instrument's identity —
+     the same tokens as vvdexops.com. One chroma: the ember. */
+  /* Dark only, like the instrument itself: the viewer's scheme preference
+     must never be able to show this document in another identity. Print
+     stays white via the @media print override. */
+  color-scheme: dark;
+  --canvas: #0b0b0e;
+  --surface: #17181f;
+  --raised: #1d1f28;
+  --line: rgba(245,244,242,0.10);
+  --ink: #f5f4f2;
+  --muted: #c9c7c2;
+  --faint: #8e8c86;
+  --brass: #ff6a2b;
+  --brass-ink: #ffb15c;
+  --sage: #86d0a6;
+  --crimson: #ff8a80;
+  --serif: 'Space Grotesk', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  --mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0; padding: 40px 24px 72px;
+  background: var(--canvas); color: var(--ink);
+  font: 15px/1.65 Inter, ui-sans-serif, system-ui, -apple-system, sans-serif;
+}
+main { max-width: 940px; margin: 0 auto; }
+h1, h2, h3 { font-family: var(--serif); font-weight: 600; letter-spacing: 0.01em; }
+h1 { font-size: 30px; margin: 0 0 6px; }
+h2 {
+  font-size: 21px; margin: 44px 0 14px; padding-bottom: 8px;
+  border-bottom: 1px solid var(--line);
+  counter-increment: sec;
+}
+h2::before {
+  content: counter(sec, decimal-leading-zero) "  ";
+  font-family: var(--mono); font-size: 12px; font-weight: 400;
+  color: var(--brass); letter-spacing: 0.08em; vertical-align: 2px;
+}
+main { counter-reset: sec; }
+h3 { font-size: 15px; margin: 20px 0 8px; }
+p { margin: 0 0 10px; }
+.kicker {
+  font: 500 11px/1.4 Inter, sans-serif; letter-spacing: 0.14em;
+  text-transform: uppercase; color: var(--brass); margin: 0 0 10px;
+}
+.lead { color: var(--muted); max-width: 68ch; }
+.mono { font-family: var(--mono); font-size: 12.5px; word-break: break-all; }
+.head { border-bottom: 2px solid var(--brass); padding-bottom: 18px; margin-bottom: 8px; }
+.head .id { font-family: var(--mono); font-size: 13px; color: var(--brass-ink); }
+.verdict {
+  display: flex; flex-wrap: wrap; gap: 14px; align-items: baseline;
+  background: var(--surface); border: 1px solid var(--line); border-left: 3px solid var(--brass);
+  border-radius: 10px; padding: 18px 20px; margin: 20px 0 8px;
+}
+.verdict strong {
+  font-family: var(--serif); font-size: 52px; font-weight: 700; line-height: 1;
+  color: var(--brass);
+}
+.verdict span { color: var(--muted); font-size: 15px; max-width: 30ch; }
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 12px; }
+.card {
+  background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 14px 16px;
+}
+.card dt { font: 500 11px/1.4 Inter, sans-serif; letter-spacing: 0.1em; text-transform: uppercase; color: var(--faint); }
+.card dd { margin: 6px 0 0; font-size: 18px; font-weight: 600; letter-spacing: -0.01em; overflow-wrap: anywhere; }
+.card dd + dd.lead, .card dd.lead { font-size: 12px; font-weight: 400; color: var(--faint); }
+.card[data-state="pass"] { border-left: 3px solid var(--sage); }
+.card[data-state="fail"] { border-left: 3px solid var(--crimson); }
+.card[data-state="unknown"] { border-left: 3px solid var(--faint); }
+table { width: 100%; border-collapse: collapse; font-size: 13.5px; }
+.scroll { overflow-x: auto; border: 1px solid var(--line); border-radius: 10px; background: var(--surface); }
+th, td { text-align: left; padding: 9px 12px; border-bottom: 1px solid var(--line); white-space: nowrap; }
+th { font: 500 11px/1.4 Inter, sans-serif; letter-spacing: 0.1em; text-transform: uppercase; color: var(--faint); }
+tbody tr:last-child td { border-bottom: 0; }
+tbody tr:nth-child(even) { background: color-mix(in srgb, var(--raised) 55%, transparent); }
+tbody tr.row-pass {
+  background: color-mix(in srgb, var(--sage) 12%, transparent);
+  box-shadow: inset 3px 0 0 var(--sage);
+}
+td.num { text-align: right; font-family: var(--mono); font-size: 12.5px; }
+.mark { font-weight: 600; }
+.mark[data-v="pass"] { color: var(--sage); }
+.mark[data-v="fail"] { color: var(--crimson); }
+.mark[data-v="unknown"] { color: var(--faint); }
+.mark[data-v="warn"] { color: var(--brass-ink); }
+.mark[data-v="infra"] { color: var(--faint); font-style: italic; }
+.coversub { font-family: var(--serif); font-size: 18px; color: var(--muted); margin: 0 0 22px; max-width: 34ch; line-height: 1.45; }
+.grid.metrics .card dd { font-size: 24px; }
+.rec .rlabel {
+  font-family: var(--mono); font-size: 9.5px; letter-spacing: 0.12em;
+  text-transform: uppercase; color: var(--faint); margin: 8px 0 1px;
+}
+.rec .rlabel:first-child { margin-top: 0; }
+table.primary td { font-size: 14px; padding: 10px 12px; }
+table.primary th { font-size: 11px; }
+table.matrix td, table.matrix th { text-align: center; }
+table.matrix td:first-child, table.matrix th:first-child { text-align: left; }
+.caveat.certok { border-left-color: var(--sage); background: color-mix(in srgb, var(--sage) 8%, var(--raised)); }
+.caveat.certwarn { border-left-color: var(--brass-ink); background: color-mix(in srgb, var(--brass-ink) 10%, var(--raised)); }
+.subid { font-size: 10px; color: var(--faint); }
+.certpair { display: grid; grid-template-columns: 1fr auto 1fr; gap: 16px; align-items: stretch; margin: 18px 0; }
+.certhalf { border: 1px solid var(--line); border-radius: 10px; padding: 18px 20px; background: var(--surface); }
+.certhalf[data-state="fail"] { border-top: 3px solid var(--crimson); }
+.certhalf[data-state="pass"] { border-top: 3px solid var(--sage); }
+.certlabel { font-family: var(--mono); font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--faint); margin: 0 0 6px; }
+.certverdict { font-family: var(--serif); font-size: 30px; font-weight: 700; margin: 0 0 6px; }
+.certhalf[data-state="fail"] .certverdict { color: var(--crimson); }
+.certhalf[data-state="pass"] .certverdict { color: var(--sage); }
+.certnote { font-size: 11.5px; color: var(--muted); margin: 0; }
+.certarrow { align-self: center; font-size: 22px; color: var(--faint); }
+.caveat {
+  background: color-mix(in srgb, var(--brass) 6%, var(--raised));
+  border: 1px solid var(--line); border-left: 4px solid var(--brass);
+  border-radius: 10px; padding: 16px 18px; margin: 16px 0; color: var(--ink);
+}
+.caveat p:last-child { margin-bottom: 0; }
+ul.plain { margin: 0; padding-left: 18px; color: var(--muted); }
+footer { margin-top: 44px; padding-top: 16px; border-top: 1px solid var(--line); color: var(--faint); font-size: 12.5px; }
+.chart { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 16px 18px; overflow-x: auto; }
+.chart svg { display: block; width: 100%; min-width: 520px; height: auto; }
+.funnel { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 14px 18px; margin: 12px 0; }
+.funnel h3 { margin-top: 0; }
+.step { display: flex; gap: 12px; align-items: center; margin: 7px 0; font-size: 13px; }
+.step .name { width: 168px; color: var(--muted); flex: none; }
+.step .track { flex: 1 1 auto; min-width: 100px; height: 10px; background: var(--raised); border-radius: 5px; overflow: hidden; }
+.step .fill { display: block; height: 10px; background: var(--brass); border-radius: 5px; }
+.step .fill[data-terminal="yes"] { background: var(--sage); }
+.step .count { width: 62px; text-align: right; font-family: var(--mono); font-size: 12.5px; flex: none; }
+dl.defs { margin: 0; }
+dl.defs dt { font-weight: 600; margin-top: 12px; }
+dl.defs dd { margin: 3px 0 0; color: var(--muted); }
+.trace { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 14px 18px; margin: 12px 0; }
+.trace h3 { margin: 0 0 8px; font-family: var(--mono); font-size: 13px; }
+pre.diff {
+  margin: 10px 0 0; padding: 12px 14px; background: var(--raised); border-radius: 8px;
+  overflow-x: auto; font-family: var(--mono); font-size: 12px; line-height: 1.5; white-space: pre;
+}
+pre.diff b { font-weight: 400; color: var(--sage); }
+pre.diff i { font-style: normal; color: var(--crimson); }
+pre.diff u { text-decoration: none; color: var(--faint); }
+.verify { font-family: var(--mono); font-size: 12px; }
+.verify li { margin: 4px 0; }
+/* ── PRINT / PDF: a complete PAPER theme, not an override (2026-09-01). ──
+   The first PDF shipped dark cards floating on a white page with values in
+   invisible greys — because print flipped only the body while every
+   component kept its dark tokens. On paper, EVERY token is redefined:
+   white ground, hairline-bordered white cards, dark ink, the ember darkened
+   to hold contrast on paper. Screens never see any of this. */
+
+/* ── Report architecture: cover · front matter · contents · findings · closing ── */
+.cover { margin-bottom: 48px; }
+.coverhead { padding: 26px 0 0; }
+.coverhead .coverword {
+  font-family: var(--mono); font-size: 15px; letter-spacing: 0.34em;
+  text-transform: uppercase; color: var(--ink); margin: 0;
+}
+.coverhead .covertag {
+  font-family: var(--mono); font-size: 10px; letter-spacing: 0.18em;
+  text-transform: uppercase; color: var(--faint); margin: 6px 0 16px;
+}
+.heatrule {
+  height: 3px; border-radius: 2px;
+  background: linear-gradient(90deg, var(--brass) 0%, var(--brass-ink) 55%, transparent 100%);
+}
+.coverbody { padding: 84px 0 8px; }
+.coverbody h1 { font-size: 44px; line-height: 1.15; margin: 0 0 14px; letter-spacing: -0.015em; }
+.coverdoc {
+  font-family: var(--serif); font-size: 19px; letter-spacing: 0.1em;
+  text-transform: uppercase; color: var(--brass); margin: 0 0 6px;
+}
+.coverdate { font-size: 14px; font-weight: 600; margin: 0; }
+.coverspacer { height: 72px; }
+.coverwho { padding-top: 0; }
+.coverwho p { margin: 0 0 24px; font-size: 13.5px; line-height: 1.75; }
+.coverwho em { color: var(--faint); font-style: italic; }
+.coverref {
+  font-size: 11px; color: var(--faint); margin: 18px 0 0;
+  border-top: 1px solid var(--line); padding-top: 12px;
+}
+h2.front { counter-increment: none; }
+h2.front::before { content: none; }
+.toc { padding: 4px 0 0; }
+.toc ol { margin: 0; padding: 0; list-style: none; counter-reset: tocn; }
+.toc li {
+  display: flex; align-items: baseline; gap: 10px;
+  font-size: 13.5px; padding: 7px 0; border-bottom: 1px solid var(--line);
+  counter-increment: tocn;
+}
+.toc li::before {
+  content: counter(tocn, decimal-leading-zero) ".";
+  font-family: var(--mono); font-size: 11px; color: var(--brass); flex: 0 0 24px;
+}
+.toc .toctitle { flex: 0 1 auto; order: 1; }
+.toc li::before { order: 0; }
+.toc li::after { content: ""; flex: 1 1 auto; order: 2; border-bottom: 1px dotted var(--line); }
+.toc .tocpage { font-family: var(--mono); font-size: 11.5px; color: var(--muted); flex: 0 0 auto; order: 3; }
+.toc-appendix { font-size: 11.5px; color: var(--faint); margin: 12px 0 0; }
+.meta { display: grid; grid-template-columns: 1fr 1fr; gap: 4px 28px; }
+.mrow { display: flex; gap: 10px; border-bottom: 1px solid var(--line); padding: 5px 0; }
+.mlabel {
+  font-family: var(--mono); font-size: 10px; letter-spacing: 0.1em;
+  text-transform: uppercase; color: var(--faint); flex: 0 0 130px; padding-top: 2px;
+}
+.mvalue { font-size: 12.5px; overflow-wrap: anywhere; min-width: 0; }
+@media (max-width: 720px) {
+  .meta, .sig { grid-template-columns: 1fr; }
+  .verdict strong { font-size: 38px; }
+  .coverbody { padding-top: 40px; }
+  .coverbody h1 { font-size: 30px; }
+}
+.keyfindings.keyfindings { margin: 8px 0; padding: 0; list-style: none; }
+.keyfindings li { padding: 6px 0; border-bottom: 1px solid var(--line); font-size: 13.5px; }
+.fid { font-family: var(--mono); font-size: 11px; color: var(--brass); margin-right: 8px; }
+.chip {
+  display: inline-block; font-family: var(--mono); font-size: 9.5px; letter-spacing: 0.08em;
+  padding: 2px 8px; border-radius: 999px; border: 1px solid var(--line); color: var(--muted);
+}
+.chip[data-sev="pass"] { color: var(--sage); border-color: var(--sage); }
+.chip[data-sev="attention"] { color: var(--brass); border-color: var(--brass); }
+.chip[data-sev="lane"] { color: var(--faint); }
+.chip[data-sev="info"] { color: var(--muted); }
+.findings { display: grid; gap: 18px; margin: 16px 0; }
+.finding { border: 1px solid var(--line); border-radius: 8px; overflow: hidden; background: var(--surface); }
+.finding .fhead {
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 10px 16px; border-bottom: 1px solid var(--line);
+}
+.finding .ftitle { font-weight: 600; font-size: 14px; margin: 0; padding: 0 16px 4px; }
+.finding .fsev {
+  display: grid; grid-template-columns: 1fr 1fr; border-bottom: 1px solid var(--line);
+}
+.finding .fsev > div { padding: 7px 16px; font-size: 12px; }
+.finding .fsev .sevcell { border-right: 1px solid var(--line); font-weight: 600; }
+.finding .fsev .sevcell[data-sev="pass"] { background: color-mix(in srgb, var(--sage) 16%, transparent); color: var(--sage); }
+.finding .fsev .sevcell[data-sev="attention"] { background: color-mix(in srgb, var(--brass) 14%, transparent); color: var(--brass); }
+.finding .fsev .sevcell[data-sev="lane"], .finding .fsev .sevcell[data-sev="info"] {
+  background: color-mix(in srgb, var(--faint) 12%, transparent); color: var(--muted);
+}
+.finding .fbody { font-size: 13px; color: var(--muted); margin: 0; padding: 12px 16px 4px; }
+.finding .fev { font-family: var(--mono); font-size: 10.5px; color: var(--faint); margin: 0; padding: 6px 16px 12px; }
+.recs { display: grid; gap: 10px; margin: 16px 0; }
+.rec {
+  display: flex; gap: 14px; border: 1px solid var(--line); border-radius: 10px;
+  padding: 12px 16px; background: var(--surface);
+}
+.rid { font-family: var(--mono); font-size: 11px; color: var(--brass); padding-top: 3px; flex: 0 0 auto; }
+.rec .rtitle { font-weight: 600; font-size: 13.5px; margin: 0 0 4px; }
+.rec .rbody { font-size: 12.5px; color: var(--muted); margin: 0; }
+h2.appendix { counter-increment: none; }
+h2.appendix::before { content: none; }
+.closing { margin-top: 48px; border-top: 2px solid var(--brass); padding-top: 20px; }
+.closing h3 { margin-top: 0; }
+.sig { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin: 26px 0 18px; }
+.sigblock { border-top: 1px solid var(--ink); padding-top: 8px; }
+.sigline { font-size: 13px; font-weight: 600; margin: 0; }
+.sigrole { font-family: var(--mono); font-size: 10px; letter-spacing: 0.06em; color: var(--faint); margin: 3px 0 0; }
+.credit { font-size: 11.5px; color: var(--faint); margin: 4px 0; }
+.endmark {
+  text-align: center; font-family: var(--mono); font-size: 11px; letter-spacing: 0.2em;
+  color: var(--faint); margin: 30px 0 6px;
+}
+
+@media print {
+  :root {
+    /* color-scheme dark makes the print engine paint the page canvas BLACK
+       around/behind the content — the 'cropped screenshot on a dark page'
+       effect. Paper has no scheme. */
+    color-scheme: only light;
+    --canvas: #ffffff;
+    --surface: #ffffff;
+    --raised: #f3f2f0;
+    --line: rgba(23,24,31,0.22);
+    --ink: #17181f;
+    --muted: #3d3f48;
+    --faint: #63656e;
+    --brass: #c93d12;
+    --brass-ink: #a33005;
+    --sage: #1e6e3f;
+    --crimson: #b3261e;
+  }
+  /* Literals, not vars: the dark screen canvas was bleeding around the body
+     on the printed page — a white sheet framed in black, which reads as a
+     cropped screenshot pasted onto a dark page. Paper is white to the edge. */
+  html, body { background: #faf8f4 !important; }
+  body { color: var(--ink); padding: 0; margin: 0; font-size: 13px; min-height: 100%; }
+  .card, .verdict, .funnel, .chart {
+    background: #ffffff; border-color: var(--line);
+    break-inside: avoid;
+  }
+  /* Long tables (Appendix A/B at ten rollouts per lane) flow across pages
+     with the header row repeated, rather than jumping whole to a fresh page. */
+  .scroll { background: #ffffff; border-color: var(--line); break-inside: auto; }
+  .scroll thead { display: table-header-group; }
+  .scroll tr { break-inside: avoid; }
+  h3 { break-after: avoid; }
+  /* A transcript is often taller than a page: it flows across pages with its
+     heading attached to its first rows, instead of jumping to a fresh page and
+     orphaning the appendix heading (2026-09-02, per-exam PDFs 47→56 pages). */
+  .trace { background: #ffffff; border-color: var(--line); break-inside: auto; }
+  .trace h3 { break-after: avoid; }
+  .trace table { break-inside: auto; }
+  .trace thead { display: table-header-group; }
+  .trace tr { break-inside: avoid; }
+  .caveat {
+    background: #f6efe8; border-left: 4px solid var(--brass); break-inside: avoid;
+  }
+  .verdict { border-left: 5px solid var(--brass); }
+  tbody tr:nth-child(even) { background: #f4f2ee; }
+  tbody tr.row-pass { background: #e9f3ec; box-shadow: inset 3px 0 0 var(--sage); }
+  pre.diff, .step .track { background: var(--raised); }
+  pre.diff { white-space: pre-wrap; overflow-wrap: anywhere; }
+  td { white-space: normal; overflow-wrap: anywhere; padding: 6px 8px; font-size: 12px; }
+  table.primary td { font-size: 13px; }
+  .caveat.certok { background: #e9f3ec; border-left-color: #1e6e3f; }
+  .caveat.certwarn { background: #fdf3e2; border-left-color: #b07d2e; }
+  .mark[data-v="warn"] { color: #a05a00; }
+  td:first-child { overflow-wrap: normal; word-break: keep-all; hyphens: none; }
+  td.num, td.mono { white-space: nowrap; }
+  th { color: var(--faint); white-space: normal; padding: 6px 8px; font-size: 10px; }
+  @page { margin: 14mm 12mm; }
+  .scroll { overflow: visible; }
+  table { min-width: 0; }
+  .step .fill { background: var(--brass); }
+  .step .fill[data-terminal="yes"] { background: var(--sage); }
+  h2 { break-after: avoid; break-before: page; }
+  main.exec h2 { break-before: auto; }
+  main.exec h2.front { break-before: page; }
+  .cover { break-after: page; margin-bottom: 0; }
+  /* The cover is one page whatever the title's line count: a fixed-height
+     column whose spacer absorbs the slack, so the reference line at the foot
+     never spills onto a second page (executive report, 3-line title, 2026-09-02).
+     240mm fits inside both Letter and A4 at the 14mm page margins. */
+  .cover { height: 240mm; display: flex; flex-direction: column; overflow: hidden; }
+  .coverbody { display: flex; flex-direction: column; flex: 1 1 auto; min-height: 0; }
+  .coverspacer { height: auto; flex: 1 1 auto; min-height: 20mm; }
+  .heatrule { background: linear-gradient(90deg, #c93d12 0%, #e08a3c 55%, rgba(224,138,60,0) 100%); }
+  .finding .fsev .sevcell[data-sev="pass"] { background: #e9f3ec; color: #1e6e3f; }
+  .finding .fsev .sevcell[data-sev="attention"] { background: #f6e7dd; color: #a33005; }
+  .finding .fsev .sevcell[data-sev="lane"], .finding .fsev .sevcell[data-sev="info"] { background: #f0efec; color: #585650; }
+  .finding, .rec, .sigblock, .toc li, .certpair { break-inside: avoid; }
+  .certhalf { background: #ffffff; }
+  .certhalf[data-state="fail"] .certverdict { color: #b3261e; }
+  .certhalf[data-state="pass"] .certverdict { color: #1e6e3f; }
+  .toc, .finding, .rec { background: #ffffff; }
+  .closing { break-before: page; }
+  .sigblock { border-top-color: #17181f; }
+  a { color: var(--ink); }
+}
+
+.coverstatus{margin:10px 0 0;letter-spacing:.08em;text-transform:uppercase;font-size:12px}
+.nowrap{white-space:nowrap}
+@media print{.verdict span{max-width:none}
+.chapter h3{break-before:page;break-after:avoid}
+.chapter h3:first-of-type{break-before:auto}
+.chapter h4{break-after:avoid}
+.chapter .scroll table{break-inside:auto}
+.chapter table tr{break-inside:avoid}}
+h4{font-size:14px;margin:16px 0 6px;font-weight:600}
+.chapter{margin-top:8px}

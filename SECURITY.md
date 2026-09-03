@@ -84,11 +84,21 @@ Report transcripts are redacted: a request for a hidden path is recorded as
 
 ## Leak controls
 
-The exam exports in `environments/` were produced by an **allowlist**, not by a
-filtered copy. Six file names may be written — the task statement (`ISSUE.md` or
-`TASK.md`), `provenance.public.json`, `contract.public.json`,
-`certification-receipt.json`, `REPRODUCE.md`, and `LICENSE` where the frozen tree
-ships one — and nothing else is written at all.
+The exam exports in `exams/` were produced by an **allowlist**, not by a
+filtered copy, and the allowlist depends on who owns the exam.
+
+A **VVDex-authored** exam exports four files and no others: `exam.public.json`,
+`certification-receipt.json`, `provenance.public.json` and `VERIFY.md`. Its task
+statement is never read into a published byte, and no contract world travels
+with it.
+
+An exam whose ownership declaration names a public upstream repository AND its
+licence exports the richer set as well: the task statement (`ISSUE.md` or
+`TASK.md`), `contract.public.json`, the upstream `LICENSE` as shipped in the
+frozen tree, `THIRD_PARTY_NOTICES.md` and `REPRODUCE.md`.
+
+An exam with no declaration gets the proprietary shape. The absence of a licence
+is not permission.
 
 After writing, each export is scanned twice and fails closed:
 

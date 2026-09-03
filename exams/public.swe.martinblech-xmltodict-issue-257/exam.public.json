@@ -1,0 +1,51 @@
+{
+  "capability": {
+    "howSuccessIsMeasured": "Visible: the model may run the repository's own tests through the exam's run_tests action. Hidden: after submission, a separate test suite is executed in an isolated container (no network) against the submitted workspace. A pass requires every hidden test to pass.",
+    "name": "Open-source software-engineering task",
+    "whatIsTested": "A real software-engineering task taken from a public open-source repository: the model is given the codebase and a written issue, and must change the code so that the behaviour described in the issue is fixed.",
+    "whyItIsDifficult": "The failure mode this exposes is a fix that looks right and is not: a change that satisfies the visible description while breaking, or failing to cover, the contract the hidden tests check. The hidden tests were written from the upstream fix and are never shown to the model."
+  },
+  "examFingerprint": "aa41977120e6ecdddb5c4fc603e8ab23cb272726a86750119969ff4dfc90e297",
+  "examId": "public.swe.martinblech-xmltodict-issue-257",
+  "family": "public_oss_swe",
+  "limits": {},
+  "note": "This descriptor states what the exam measures and how its published result can be checked. It deliberately does not carry the material an exam would have to ship to be reusable.",
+  "ownership": {
+    "declaration": "public_source",
+    "declaredBy": "engine registry",
+    "owner": "upstream project + VVDex exam construction",
+    "terms": "Third-party open source: the repository, the bug and the upstream fix are https://github.com/martinblech/xmltodict, issue https://github.com/martinblech/xmltodict/issues/257 under the MIT licence and are reproduced under it. VVDex owns the exam construction around that task \u2014 the hidden grader, the hidden tests, the attack probes and the private evidence \u2014 and that material is not published.",
+    "upstream": {
+      "issue": "https://github.com/martinblech/xmltodict/issues/257",
+      "licence": "MIT",
+      "repo": "https://github.com/martinblech/xmltodict"
+    }
+  },
+  "publicDisclosureLevel": {
+    "class": "public_source",
+    "rule": "public-source disclosure (ownership public_source declared by engine registry, upstream https://github.com/martinblech/xmltodict under MIT; family public_oss_swe): the submitted change is a patch against a public repository, so a redacted excerpt of it is published.",
+    "withheldFromThisExport": [
+      "reference/gold solution",
+      "hidden tests and hidden grader source",
+      "attack probes and canaries",
+      "private evidence bundles"
+    ]
+  },
+  "reportLinks": {
+    "campaignReport": "https://vvdexops.com/reports/fc-d89e429d2781/",
+    "campaignSummaryJson": "https://vvdexops.com/reports/fc-d89e429d2781/summary.json",
+    "certificationReceipt": "https://vvdexops.com/featured/martinblech-xmltodict-issue-257/certification-receipt.json",
+    "examPage": "https://vvdexops.com/featured/martinblech-xmltodict-issue-257/"
+  },
+  "retired_for_future_evaluation": null,
+  "runtimeClass": "container, network deny, memory 512m, cpus 1, read-only root",
+  "schema": "vvdex.forge.public-exam-descriptor/v1",
+  "title": "Streaming items must equal what the full parse would have built",
+  "toolCategories": {
+    "other": [
+      "edit",
+      "test"
+    ]
+  },
+  "version": "0.1.0"
+}

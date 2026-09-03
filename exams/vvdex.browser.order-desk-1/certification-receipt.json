@@ -1,0 +1,77 @@
+{
+  "attackProbes": {
+    "blocked": 10,
+    "passedForPromotion": true,
+    "probes": 10,
+    "recorded": true,
+    "trivialExploits": 0
+  },
+  "baselineFail": {
+    "expected": 0.0,
+    "n": 2,
+    "rate": 0.0,
+    "recorded": true
+  },
+  "certificationEvidenceDigest": "unavailable",
+  "certificationVersion": "unavailable",
+  "certifiedAt": "unavailable",
+  "disclosure": {
+    "class": "state",
+    "rule": "state disclosure (ownership vvdex_proprietary \u2014 engine registry; family browser): the exam is VVDex evaluation IP and the graded output is the application's own state and audit trail, so no submission content, diff or state is published."
+  },
+  "evidence": {
+    "evalId": "fr-20260902-6e618c05",
+    "recordFingerprint": "8d404ee5d5ab71456de3d3df0b8ca69271d8810767a694f71c6e45e72fc347bf"
+  },
+  "examFingerprint": "8d404ee5d5ab71456de3d3df0b8ca69271d8810767a694f71c6e45e72fc347bf",
+  "examId": "vvdex.browser.order-desk-1",
+  "examTitle": "Correct one order in an admin application, through a real browser",
+  "examVersion": "0.1.0",
+  "family": "browser",
+  "frozenTreeSha256": "74a65b68b3c1208a3551cafd3ab1b820b5386164162f16e471dab0be8747a2a1",
+  "graderControls": {
+    "cases": 9,
+    "distinguished": true,
+    "recorded": true
+  },
+  "isolationNote": "Certifying runtime is LocalDockerRuntime on Colima (Linux VM, virtiofs). Isolation is from the Mac host except explicit bind-mounts of the work directory under $HOME/.vvdex/env-work. $HOME, docker.sock and host secrets are not mounted. Runtime network is --network=none.",
+  "note": "Every field above is copied from evidence recorded before this export; a field the recorded evidence does not substantiate is \"unavailable\". No reference solution, hidden test or control-case content is carried here.",
+  "referencePass": {
+    "expected": 1.0,
+    "n": 2,
+    "rate": 1.0,
+    "recorded": true
+  },
+  "retired_for_future_evaluation": null,
+  "runtime": {
+    "browserImageDigest": "sha256:c5587afce7722fb27903862a3f5c115925fa2c4758067f24736343e808bd26d6",
+    "fsPolicy": "agent-tree-only",
+    "imageDigest": "sha256:679b36225a1f83238efba8c71b9cde3c24caaeacc9b682ae92819cb55eec328f",
+    "networkPolicy": "deny",
+    "resourceLimits": {
+      "cpus": "1",
+      "memory": "512m",
+      "network": "none",
+      "pids": 128,
+      "readOnlyRoot": true,
+      "timeoutS": 120
+    }
+  },
+  "schema": "vvdex.forge.certification-receipt/v1",
+  "sources": {
+    "attackProbes": "record.certification.attack",
+    "baselineFail": "record.certification.baselineFails",
+    "disclosure": "vvdex_env.disclosure.DISCLOSURE_POLICY (exam family)",
+    "evidence": "sealed evaluation record",
+    "examFingerprint": "contract.json:fingerprint",
+    "examId": "contract.json:identity",
+    "examTitle": "contract.json:identity",
+    "examVersion": "contract.json:identity",
+    "family": "contract.json",
+    "frozenTreeSha256": "freeze/fingerprint.json",
+    "graderControls": "record.certification.graderControls",
+    "isolationNote": "freeze/fingerprint.json",
+    "referencePass": "record.certification.goldPasses",
+    "runtime": "record.certification.runtime + contract.json:freeze"
+  }
+}

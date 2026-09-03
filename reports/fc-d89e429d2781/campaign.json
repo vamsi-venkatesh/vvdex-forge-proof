@@ -213,11 +213,11 @@
     }
   },
   "certificationReceipts": {
-    "public.swe.martinblech-xmltodict-issue-257": "2daeb9d08e5160da032bc8c7e14901533627ccc5c2cbadd06965f7dc8d823760",
-    "vvdex.browser.order-desk-1": "f50b9f42d3ef6bb120e4dd958f0f06ea85071c5e5fad74b63c3caaeb3d565452",
-    "vvdex.harness.fault-recovery-1": "6041223e74e964d454779901bd61ad2472663ffe1b4f4e236f6aaa8a44b4c96b",
-    "vvdex.knowledge.grounded-rag-1": "207c278bd732d0d88bfabf6928000f179916e06ae222a0a26edbcbeb3cff4575",
-    "vvdex.knowledge.memory-fact-update-1": "6fe1bfe3e2945878bc408a125d6dce8c9a9553bd2ef8384b1aa1abcd93f7d0ee"
+    "public.swe.martinblech-xmltodict-issue-257": "87ba9833637f004939e1a7b2d3a69b2d0e0e37b1040ef5d403eb9c392695bee0",
+    "vvdex.browser.order-desk-1": "a446ba3064d1580c3f2816fe8295226b196eb89fe9da20c1608a186cd1c7856b",
+    "vvdex.harness.fault-recovery-1": "a8c8b313038678a3b8e92f57a8ed0a87f1b389dffe84b4e27e83ee4575648ebc",
+    "vvdex.knowledge.grounded-rag-1": "95deabd2469ddea08d716e0cc5c2c966b874be73743798020aeedaa2fd99d70f",
+    "vvdex.knowledge.memory-fact-update-1": "0e21831617f6d3b3680450adc93ec0aa0367a79dfc6ed07538d8a69a05a104ee"
   },
   "counts": {
     "campaignId": "fc-d89e429d2781",
@@ -257,6 +257,28 @@
     "refused": 0,
     "suspectRecords": [],
     "withheldByHarness": 0
+  },
+  "disclosure": {
+    "public.swe.martinblech-xmltodict-issue-257": {
+      "class": "public_source",
+      "rule": "public-source disclosure (ownership public_source declared by engine registry, upstream https://github.com/martinblech/xmltodict under MIT; family public_oss_swe): the submitted change is a patch against a public repository, so a redacted excerpt of it is published."
+    },
+    "vvdex.browser.order-desk-1": {
+      "class": "state",
+      "rule": "state disclosure (ownership vvdex_proprietary \u2014 engine registry; family browser): the exam is VVDex evaluation IP and the graded output is the application's own state and audit trail, so no submission content, diff or state is published."
+    },
+    "vvdex.harness.fault-recovery-1": {
+      "class": "answer_key",
+      "rule": "answer-key disclosure (ownership vvdex_proprietary \u2014 engine registry; family harness_eval): the exam is VVDex evaluation IP and the graded output is an answer or a keyed value, so no submission content, diff, model claim or hidden-assertion name is published."
+    },
+    "vvdex.knowledge.grounded-rag-1": {
+      "class": "answer_key",
+      "rule": "answer-key disclosure (ownership vvdex_proprietary \u2014 engine registry; family rag_grounding): the exam is VVDex evaluation IP and the graded output is an answer or a keyed value, so no submission content, diff, model claim or hidden-assertion name is published."
+    },
+    "vvdex.knowledge.memory-fact-update-1": {
+      "class": "answer_key",
+      "rule": "answer-key disclosure (ownership vvdex_proprietary \u2014 engine registry; family long_term_memory): the exam is VVDex evaluation IP and the graded output is an answer or a keyed value, so no submission content, diff, model claim or hidden-assertion name is published."
+    }
   },
   "lanes": [
     {
@@ -312,6 +334,22 @@
     }
   ],
   "refused": [],
+  "retired_for_future_evaluation": {
+    "vvdex.knowledge.grounded-rag-1": {
+      "environmentId": "vvdex.knowledge.grounded-rag-1",
+      "historicalResults": "Historical sealed results on this revision are unaffected: the disclosure happened after those runs, so it could not have influenced them.",
+      "reason": "post-run public disclosure of answer-bearing submission content",
+      "retiredOn": "2026-09-02",
+      "version": "0.1.0"
+    },
+    "vvdex.knowledge.memory-fact-update-1": {
+      "environmentId": "vvdex.knowledge.memory-fact-update-1",
+      "historicalResults": "Historical sealed results on this revision are unaffected: the disclosure happened after those runs, so it could not have influenced them.",
+      "reason": "post-run public disclosure of answer-bearing submission content",
+      "retiredOn": "2026-09-02",
+      "version": "0.1.0"
+    }
+  },
   "reviews": {
     "public.swe.martinblech-xmltodict-issue-257": {
       "classification": [],

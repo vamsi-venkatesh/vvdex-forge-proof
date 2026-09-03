@@ -29,7 +29,7 @@ Expected for all five records in campaign `fc-d89e429d2781`:
 
 | Record | Environment | Digest |
 | --- | --- | --- |
-| `fr-20260902-6616b188` | `public.swe.martinblech-xmltodict-issue-257` | `138425da59aabc18aa208c339aa41919f387e1ecb80fb725cfed8f7d6ba78713` |
+| `fr-20260902-6616b188` | `public.swe.martinblech-xmltodict-issue-257` (public source) | `138425da59aabc18aa208c339aa41919f387e1ecb80fb725cfed8f7d6ba78713` |
 | `fr-20260902-2e7f4171` | `vvdex.knowledge.grounded-rag-1` | `157ec324a925c0b10fc8769d01f628b6143c40a00fa2dc70ea309a70e55a37a8` |
 | `fr-20260901-46eb9548` | `vvdex.knowledge.memory-fact-update-1` | `1127e8356d42d31767a3ddc4d6c6cd0a515f5bbf7239ef0a82129e00fc2e6900` |
 | `fr-20260902-a6f12b64` | `vvdex.harness.fault-recovery-1` | `d5a8264aa0c20dd67c14879856a744e2ff1ab79da35ea8bcea92b4ba1ea14d5f` |
@@ -83,10 +83,11 @@ result.
 
 ```bash
 # 1. the certification receipt
-python3 -c "import json;print(json.load(open('environments/public.swe.martinblech-xmltodict-issue-257/certification-receipt.json'))['examFingerprint'])"
+python3 -c "import json;print(json.load(open('exams/public.swe.martinblech-xmltodict-issue-257/certification-receipt.json'))['examFingerprint'])"
 
-# 2. the public contract
-python3 -c "import json;print(json.load(open('environments/public.swe.martinblech-xmltodict-issue-257/contract.public.json'))['fingerprint'])"
+# 2. the public contract (published for this exam because its ownership
+#    declaration names a public upstream repository and its licence)
+python3 -c "import json;print(json.load(open('exams/public.swe.martinblech-xmltodict-issue-257/contract.public.json'))['fingerprint'])"
 
 # 3. the sealed record's canonical bytes
 python3 -c "import json;print(json.load(open('reports/fc-d89e429d2781/records/fr-20260902-6616b188.canonical.json'))['environment']['fingerprint'])"
@@ -97,37 +98,59 @@ python3 -c "import json;print(json.load(open('reports/fc-d89e429d2781/records/fr
 
 All four are `aa41977120e6ecdddb5c4fc603e8ab23cb272726a86750119969ff4dfc90e297`.
 
-The other four exams, receipt and contract and record alike:
+The other four exams are VVDex-authored, so what this repository carries for
+each of them is a proof descriptor: `exam.public.json`, the certification
+receipt, `provenance.public.json` and `VERIFY.md`. The fingerprint join still
+runs — descriptor, receipt, record and live page must all state the same
+value — but there is no `contract.public.json` and no task statement to join
+against, because neither is published for a proprietary exam.
 
-| Environment | Exam fingerprint |
+| Exam | Exam fingerprint |
 | --- | --- |
-| `public.swe.martinblech-xmltodict-issue-257` | `aa41977120e6ecdddb5c4fc603e8ab23cb272726a86750119969ff4dfc90e297` |
+| `public.swe.martinblech-xmltodict-issue-257` (public source) | `aa41977120e6ecdddb5c4fc603e8ab23cb272726a86750119969ff4dfc90e297` |
 | `vvdex.knowledge.grounded-rag-1` | `4880a527ef97ca2f3fe6b57be026c3dc1be51e9e104d79fc13a3e558331dda92` |
 | `vvdex.knowledge.memory-fact-update-1` | `2052eec0ff2d3044dc269e3599ae1bfaa45d0d8cd5df9554796105538d226c21` |
 | `vvdex.harness.fault-recovery-1` | `4a206fbfe8fb70fb3e37943705065a8599fab492e495dca326279781ee960b1e` |
 | `vvdex.browser.order-desk-1` | `8d404ee5d5ab71456de3d3df0b8ca69271d8810767a694f71c6e45e72fc347bf` |
 
 A second join runs through the receipt file itself. `campaign.json` carries a
-`certificationReceipts` map of environment id to the SHA-256 of that exam's
-receipt file, so the receipt in `environments/` and the receipt the campaign was
-built against are provably the same bytes:
+`certificationReceipts` map of exam id to the SHA-256 of that exam's receipt
+file, so the receipt in `exams/` and the receipt the campaign was built against
+are provably the same bytes:
 
 ```bash
-shasum -a 256 environments/public.swe.martinblech-xmltodict-issue-257/certification-receipt.json
+shasum -a 256 exams/public.swe.martinblech-xmltodict-issue-257/certification-receipt.json
 python3 -c "import json;print(json.load(open('reports/fc-d89e429d2781/campaign.json'))['certificationReceipts']['public.swe.martinblech-xmltodict-issue-257'])"
 ```
 
-Both are `2daeb9d08e5160da032bc8c7e14901533627ccc5c2cbadd06965f7dc8d823760`.
+Both are `87ba9833637f004939e1a7b2d3a69b2d0e0e37b1040ef5d403eb9c392695bee0`.
 `summary.json` carries the same map, per record, as
 `records[].certificationReceiptSha256`.
 
-Every file under `environments/` also has its SHA-256 in
-[`environments/MANIFEST.json`](environments/MANIFEST.json):
+Every file in this repository has its SHA-256 in
+[`MANIFEST.json`](MANIFEST.json), and `./verify.sh` checks all of them at once
+and then recomputes every published record digest:
 
 ```bash
-shasum -a 256 environments/vvdex.browser.order-desk-1/TASK.md
-python3 -c "import json;print(json.load(open('environments/MANIFEST.json'))['files']['vvdex.browser.order-desk-1/TASK.md'])"
+./verify.sh
+
+# or one file at a time
+shasum -a 256 exams/vvdex.browser.order-desk-1/exam.public.json
+python3 -c "import json;print(json.load(open('MANIFEST.json'))['files']['exams/vvdex.browser.order-desk-1/exam.public.json'])"
 ```
+
+## Where the bytes are withheld
+
+Four of the five records' canonical bytes are not published. A sealed record
+carries an excerpt of what each rollout submitted, and on an exam whose graded
+output is an answer or a world state that excerpt is the answer. Those records
+ship as `<evalId>.digest.txt` beside a `<evalId>.canonical.WITHHELD.txt` that
+states the digest and the reason. The digest is the digest of the sealed record
+as it exists in the Forge; a holder of that record — the customer who
+commissioned the run, or an auditor under agreement — reproduces it with
+`shasum -a 256` or `vvdex-env records verify` and reaches the printed value.
+`./verify.sh` reports how many were recomputed and how many are withheld, so a
+withheld record is visible as a fact rather than read as a pass.
 
 ## 4. The campaign id
 

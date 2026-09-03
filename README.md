@@ -9,7 +9,7 @@ which are regenerated from the sealed records in
 [`reports/fc-d89e429d2781/records/`](reports/fc-d89e429d2781/records/) and from
 nothing else.
 
-These are task-specific evaluations across the five environments included here.
+These are task-specific evaluations across the five exams described here.
 They are not a universal model leaderboard. A cell below says how one model lane
 did on one exam, ten times, on 2026-09-01 and 2026-09-02, and it says nothing
 about any other task.
@@ -18,10 +18,11 @@ about any other task.
 
 | Where | What it is |
 | --- | --- |
-| [`reports/fc-d89e429d2781/records/`](reports/fc-d89e429d2781/records/) | five sealed evaluation records as canonical bytes, each beside the digest it states about itself |
-| [`reports/fc-d89e429d2781/`](reports/fc-d89e429d2781/) | the campaign executive report, the five standalone executive reports, `campaign.json`, `summary.json` |
-| [`environments/`](environments/) | the five exams: the task statement each model received, the public contract, the provenance, the certification receipt, and `MANIFEST.json` with the SHA-256 of every file |
-| [`reports/historical/`](reports/historical/) | three superseded campaigns: `summary.json` and executive PDF only |
+| [`reports/fc-d89e429d2781/records/`](reports/fc-d89e429d2781/records/) | the digest each of the five sealed evaluation records states about itself, and — for the one exam whose graded artefact is public upstream source — its canonical bytes. The other four records' bytes are withheld: a sealed record carries an excerpt of what each rollout submitted, and on those exams the submission is the graded answer |
+| [`reports/fc-d89e429d2781/`](reports/fc-d89e429d2781/) | the campaign report (full and executive), the five standalone executive reports, `campaign.json`, `summary.json` |
+| [`exams/`](exams/) | one **proof descriptor** per exam: what it measures, its immutable fingerprint, runtime class, tool categories, limits, ownership, disclosure level, and its certification receipt. The exams themselves are not here |
+| [`reports/historical/`](reports/historical/) | three superseded campaigns |
+| [`MANIFEST.json`](MANIFEST.json) | the SHA-256 of every file in this repository. `./verify.sh` checks all of them and recomputes every published record digest |
 
 Check a record in one command:
 
@@ -35,9 +36,36 @@ Print the matrix and the lane totals from the campaign summary:
 python3 examples/inspect-campaign.py reports/fc-d89e429d2781/summary.json
 ```
 
+Check the whole package against its own manifest:
+
+```bash
+./verify.sh
+```
+
 [`examples/reproduce-xmltodict.md`](examples/reproduce-xmltodict.md) walks the
 one public-OSS exam end to end: what an outside reader can reproduce, and where
 the road ends.
+
+## What this repository is not
+
+It is **proof**, not a distribution of exams. VVDex Forge is not an open-source
+exam repository, and publishing a result grants no licence to the instrument
+that produced it.
+
+For the four VVDex-authored exams this repository carries a four-file proof
+descriptor and nothing else: no task statement, no corpus or question set, no
+seed workspace or browser world, no visible or hidden tests, no reference
+solution, no grader, no attack probes, no raw model submissions and no
+answer-bearing diffs. Where a public artifact would otherwise show submitted
+content it says so in as many words — *Submission content withheld —
+proprietary evaluation material.* — rather than leaving a gap that reads as a
+broken document.
+
+One exam is different, and only because its ownership says so: the xmltodict
+task is third-party open source under the upstream MIT licence, so its task
+statement, its upstream `LICENSE` and its public contract travel with it. See
+[TERMS.md](TERMS.md), [OWNERSHIP.md](OWNERSHIP.md) and
+[THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
 
 ## What this is
 
@@ -106,18 +134,18 @@ graded 148, certified passes 93, model fails 55, withheld 0, invalid 0.
 
 | Exam | Family | What it asks |
 | --- | --- | --- |
-| [`public.swe.martinblech-xmltodict-issue-257`](environments/public.swe.martinblech-xmltodict-issue-257/) | software repair (public OSS SWE) | Fix a real defect from `martinblech/xmltodict` issue #257 against a frozen parent tree, graded by a hidden suite written from the upstream fix. |
-| [`vvdex.knowledge.grounded-rag-1`](environments/vvdex.knowledge.grounded-rag-1/) | grounded retrieval | Answer only from the supplied corpus, cite exactly the supporting sources, and say when the corpus has no answer. |
-| [`vvdex.knowledge.memory-fact-update-1`](environments/vvdex.knowledge.memory-fact-update-1/) | cross-session memory | Answer from the newer authoritative roster rather than the stale carried memory, and acknowledge the change. |
-| [`vvdex.harness.fault-recovery-1`](environments/vvdex.harness.fault-recovery-1/) | harness evaluation | Fix a module under a declared fault schedule: a transient tool error, an instruction injected through a project document, and a write silently truncated after a result claiming it whole. |
-| [`vvdex.browser.order-desk-1`](environments/vvdex.browser.order-desk-1/) | browser and computer use | Correct one order in a real admin application, driven through a real headless browser inside the network-none box. |
+| [`public.swe.martinblech-xmltodict-issue-257`](exams/public.swe.martinblech-xmltodict-issue-257/) | software repair (public OSS SWE) | Fix a real defect from `martinblech/xmltodict` issue #257 against a frozen parent tree, graded by a hidden suite written from the upstream fix. |
+| [`vvdex.knowledge.grounded-rag-1`](exams/vvdex.knowledge.grounded-rag-1/) | grounded retrieval | Answer only from the supplied corpus, cite exactly the supporting sources, and say when the corpus has no answer. |
+| [`vvdex.knowledge.memory-fact-update-1`](exams/vvdex.knowledge.memory-fact-update-1/) | cross-session memory | Answer from the newer authoritative roster rather than the stale carried memory, and acknowledge the change. |
+| [`vvdex.harness.fault-recovery-1`](exams/vvdex.harness.fault-recovery-1/) | harness evaluation | Fix a module under a declared fault schedule: a transient tool error, an instruction injected through a project document, and a write silently truncated after a result claiming it whole. |
+| [`vvdex.browser.order-desk-1`](exams/vvdex.browser.order-desk-1/) | browser and computer use | Correct one order in a real admin application, driven through a real headless browser inside the network-none box. |
 
 ## What Forge proves
 
 Only what the records and receipts substantiate.
 
 - **The certification chain ran, per exam, and its results are recorded.** Each
-  receipt in `environments/<envId>/certification-receipt.json` carries the
+  receipt in `exams/<examId>/certification-receipt.json` carries the
   reference-pass rate, the baseline-fail rate, the grader control-case count and
   whether they were distinguished, the attack probe count and how many were
   blocked, the frozen tree's SHA-256, and the runtime policy. Each field names
@@ -132,6 +160,10 @@ Only what the records and receipts substantiate.
 - **The records recompute.** Every `*.canonical.json` here hashes to the digest
   in the `*.digest.txt` beside it, and the campaign id is a digest over the
   sorted record digests, so the same records always name the same campaign.
+  Where the bytes are withheld, the digest is still published and a holder of
+  the sealed record — the customer who commissioned the run, or an auditor
+  under agreement — reproduces it with `shasum -a 256` or `vvdex-env records
+  verify`. `./verify.sh` reports both counts rather than passing silently.
 - **Lane errors are separated from model failures.** A provider or CLI failure
   is a `lane_error` and never enters a capability count in either direction.
 
@@ -203,7 +235,12 @@ benefit.
   the leak controls, and what a verifier can and cannot check.
 - [VERIFICATION.md](VERIFICATION.md) — how to check a record digest, a PDF's
   self-check, the receipt fingerprint joins, and the campaign id.
-- [THIRD_PARTY.md](THIRD_PARTY.md) — attribution and licence per environment.
-- [LICENSE](LICENSE) — CC BY 4.0 for the proof artifacts and documents here.
+- [TERMS.md](TERMS.md) — who owns what is published here and what may be done
+  with it. VVDex-authored evaluation material stays proprietary; publication
+  grants no open-source licence.
+- [OWNERSHIP.md](OWNERSHIP.md) — the file-level ownership and terms map: every
+  path, its owner, and its terms.
+- [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) — the one upstream project,
+  its licence, and the line between its rights and VVDex's exam design.
 
 Built and operated by VVDex (Magdeburg, DE). Contact: vamsi@vamsivenkatesh.com

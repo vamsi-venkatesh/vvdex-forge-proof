@@ -1,0 +1,281 @@
+{
+  "campaignId": "fc-3194f803055c",
+  "cells": {
+    "cli/claude-sonnet|public.swe.martinblech-xmltodict-issue-257": {
+      "certified": null,
+      "certifiedCounts": {
+        "certified_pass": 9,
+        "invalid": 0,
+        "lane_error": 0,
+        "model_fail": 1,
+        "withheld": 0
+      },
+      "evalId": "fr-20260902-6616b188",
+      "grader": null,
+      "integrity": "verified_contained",
+      "withheldBy": null
+    },
+    "cli/claude-sonnet|vvdex.knowledge.grounded-rag-1": {
+      "certified": null,
+      "certifiedCounts": {
+        "certified_pass": 1,
+        "invalid": 0,
+        "lane_error": 0,
+        "model_fail": 9,
+        "withheld": 0
+      },
+      "evalId": "fr-20260902-2e7f4171",
+      "grader": null,
+      "integrity": "verified_contained",
+      "withheldBy": null
+    },
+    "cli/claude-sonnet|vvdex.knowledge.memory-fact-update-1": {
+      "certified": null,
+      "certifiedCounts": {
+        "certified_pass": 10,
+        "invalid": 0,
+        "lane_error": 0,
+        "model_fail": 0,
+        "withheld": 0
+      },
+      "evalId": "fr-20260901-46eb9548",
+      "grader": null,
+      "integrity": "verified_contained",
+      "withheldBy": null
+    },
+    "cli/codex|public.swe.martinblech-xmltodict-issue-257": {
+      "certified": null,
+      "certifiedCounts": {
+        "certified_pass": 10,
+        "invalid": 0,
+        "lane_error": 0,
+        "model_fail": 0,
+        "withheld": 0
+      },
+      "evalId": "fr-20260902-6616b188",
+      "grader": null,
+      "integrity": "verified_contained",
+      "withheldBy": null
+    },
+    "cli/codex|vvdex.knowledge.grounded-rag-1": {
+      "certified": null,
+      "certifiedCounts": {
+        "certified_pass": 10,
+        "invalid": 0,
+        "lane_error": 0,
+        "model_fail": 0,
+        "withheld": 0
+      },
+      "evalId": "fr-20260902-2e7f4171",
+      "grader": null,
+      "integrity": "verified_contained",
+      "withheldBy": null
+    },
+    "cli/codex|vvdex.knowledge.memory-fact-update-1": {
+      "certified": null,
+      "certifiedCounts": {
+        "certified_pass": 10,
+        "invalid": 0,
+        "lane_error": 0,
+        "model_fail": 0,
+        "withheld": 0
+      },
+      "evalId": "fr-20260901-46eb9548",
+      "grader": null,
+      "integrity": "verified_contained",
+      "withheldBy": null
+    },
+    "codestral-latest|public.swe.martinblech-xmltodict-issue-257": {
+      "certified": null,
+      "certifiedCounts": {
+        "certified_pass": 0,
+        "invalid": 0,
+        "lane_error": 0,
+        "model_fail": 10,
+        "withheld": 0
+      },
+      "evalId": "fr-20260902-6616b188",
+      "grader": null,
+      "integrity": "verified_contained",
+      "withheldBy": null
+    },
+    "codestral-latest|vvdex.knowledge.grounded-rag-1": {
+      "certified": null,
+      "certifiedCounts": {
+        "certified_pass": 0,
+        "invalid": 0,
+        "lane_error": 1,
+        "model_fail": 9,
+        "withheld": 0
+      },
+      "evalId": "fr-20260902-2e7f4171",
+      "grader": null,
+      "integrity": "verified_contained",
+      "withheldBy": null
+    },
+    "codestral-latest|vvdex.knowledge.memory-fact-update-1": {
+      "certified": null,
+      "certifiedCounts": {
+        "certified_pass": 2,
+        "invalid": 0,
+        "lane_error": 0,
+        "model_fail": 8,
+        "withheld": 0
+      },
+      "evalId": "fr-20260901-46eb9548",
+      "grader": null,
+      "integrity": "verified_contained",
+      "withheldBy": null
+    }
+  },
+  "certificationReceipts": {
+    "public.swe.martinblech-xmltodict-issue-257": "87ba9833637f004939e1a7b2d3a69b2d0e0e37b1040ef5d403eb9c392695bee0",
+    "vvdex.knowledge.grounded-rag-1": "95deabd2469ddea08d716e0cc5c2c966b874be73743798020aeedaa2fd99d70f",
+    "vvdex.knowledge.memory-fact-update-1": "0e21831617f6d3b3680450adc93ec0aa0367a79dfc6ed07538d8a69a05a104ee"
+  },
+  "counts": {
+    "campaignId": "fc-3194f803055c",
+    "cells": 9,
+    "certifiedPasses": 52,
+    "lanes": {
+      "cli/claude-sonnet": {
+        "certified_pass": 20,
+        "invalid": 0,
+        "lane_error": 0,
+        "model_fail": 10,
+        "withheld": 0
+      },
+      "cli/codex": {
+        "certified_pass": 30,
+        "invalid": 0,
+        "lane_error": 0,
+        "model_fail": 0,
+        "withheld": 0
+      },
+      "codestral-latest": {
+        "certified_pass": 2,
+        "invalid": 0,
+        "lane_error": 1,
+        "model_fail": 27,
+        "withheld": 0
+      }
+    },
+    "recordCount": 3,
+    "recordDigests": [
+      "1127e8356d42d31767a3ddc4d6c6cd0a515f5bbf7239ef0a82129e00fc2e6900",
+      "138425da59aabc18aa208c339aa41919f387e1ecb80fb725cfed8f7d6ba78713",
+      "157ec324a925c0b10fc8769d01f628b6143c40a00fa2dc70ea309a70e55a37a8"
+    ],
+    "refused": 0,
+    "suspectRecords": [],
+    "withheldByHarness": 0
+  },
+  "disclosure": {
+    "public.swe.martinblech-xmltodict-issue-257": {
+      "class": "public_source",
+      "rule": "public-source disclosure (ownership public_source declared by engine registry, upstream https://github.com/martinblech/xmltodict under MIT; family public_oss_swe): the submitted change is a patch against a public repository, so a redacted excerpt of it is published."
+    },
+    "vvdex.knowledge.grounded-rag-1": {
+      "class": "answer_key",
+      "rule": "answer-key disclosure (ownership vvdex_proprietary \u2014 engine registry; family rag_grounding): the exam is VVDex evaluation IP and the graded output is an answer or a keyed value, so no submission content, diff, model claim or hidden-assertion name is published."
+    },
+    "vvdex.knowledge.memory-fact-update-1": {
+      "class": "answer_key",
+      "rule": "answer-key disclosure (ownership vvdex_proprietary \u2014 engine registry; family long_term_memory): the exam is VVDex evaluation IP and the graded output is an answer or a keyed value, so no submission content, diff, model claim or hidden-assertion name is published."
+    }
+  },
+  "lanes": [
+    {
+      "certifiedPasses": 30,
+      "countable": 30,
+      "counts": {
+        "certified_pass": 30,
+        "invalid": 0,
+        "lane_error": 0,
+        "model_fail": 0,
+        "withheld": 0
+      },
+      "lane": "cli/codex",
+      "rate": 1.0,
+      "rateInterval95": [
+        0.8865,
+        1.0
+      ]
+    },
+    {
+      "certifiedPasses": 20,
+      "countable": 30,
+      "counts": {
+        "certified_pass": 20,
+        "invalid": 0,
+        "lane_error": 0,
+        "model_fail": 10,
+        "withheld": 0
+      },
+      "lane": "cli/claude-sonnet",
+      "rate": 0.6666666666666666,
+      "rateInterval95": [
+        0.4878,
+        0.8077
+      ]
+    },
+    {
+      "certifiedPasses": 2,
+      "countable": 29,
+      "counts": {
+        "certified_pass": 2,
+        "invalid": 0,
+        "lane_error": 1,
+        "model_fail": 27,
+        "withheld": 0
+      },
+      "lane": "codestral-latest",
+      "rate": 0.06896551724137931,
+      "rateInterval95": [
+        0.0191,
+        0.2196
+      ]
+    }
+  ],
+  "refused": [],
+  "retired_for_future_evaluation": {
+    "vvdex.knowledge.grounded-rag-1": {
+      "environmentId": "vvdex.knowledge.grounded-rag-1",
+      "historicalResults": "Historical sealed results on this revision are unaffected: the disclosure happened after those runs, so it could not have influenced them.",
+      "reason": "post-run public disclosure of answer-bearing submission content",
+      "retiredOn": "2026-09-02",
+      "version": "0.1.0"
+    },
+    "vvdex.knowledge.memory-fact-update-1": {
+      "environmentId": "vvdex.knowledge.memory-fact-update-1",
+      "historicalResults": "Historical sealed results on this revision are unaffected: the disclosure happened after those runs, so it could not have influenced them.",
+      "reason": "post-run public disclosure of answer-bearing submission content",
+      "retiredOn": "2026-09-02",
+      "version": "0.1.0"
+    }
+  },
+  "reviews": {
+    "public.swe.martinblech-xmltodict-issue-257": {
+      "classification": [],
+      "law": "a suspect examiner may not blame the model: verdict-bearing suspicion not cleared by in-record evidence withholds every model_fail in the run",
+      "suspect": false,
+      "withheld": [],
+      "withheldCount": 0
+    },
+    "vvdex.knowledge.grounded-rag-1": {
+      "classification": [],
+      "law": "a suspect examiner may not blame the model: verdict-bearing suspicion not cleared by in-record evidence withholds every model_fail in the run",
+      "suspect": false,
+      "withheld": [],
+      "withheldCount": 0
+    },
+    "vvdex.knowledge.memory-fact-update-1": {
+      "classification": [],
+      "law": "a suspect examiner may not blame the model: verdict-bearing suspicion not cleared by in-record evidence withholds every model_fail in the run",
+      "suspect": false,
+      "withheld": [],
+      "withheldCount": 0
+    }
+  },
+  "schema": "vvdex.forge.campaign-counts/v1"
+}

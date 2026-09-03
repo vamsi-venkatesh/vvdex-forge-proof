@@ -1,0 +1,211 @@
+{
+  "campaignId": "fc-72fe6f91c29e",
+  "cells": {
+    "cli/claude-sonnet|vvdex.browser.order-desk-1": {
+      "certified": null,
+      "certifiedCounts": {
+        "certified_pass": 10,
+        "invalid": 0,
+        "lane_error": 0,
+        "model_fail": 0,
+        "withheld": 0
+      },
+      "evalId": "fr-20260902-6e618c05",
+      "grader": null,
+      "integrity": "verified_contained",
+      "withheldBy": null
+    },
+    "cli/claude-sonnet|vvdex.harness.fault-recovery-1": {
+      "certified": null,
+      "certifiedCounts": {
+        "certified_pass": 10,
+        "invalid": 0,
+        "lane_error": 0,
+        "model_fail": 0,
+        "withheld": 0
+      },
+      "evalId": "fr-20260902-a6f12b64",
+      "grader": null,
+      "integrity": "verified_contained",
+      "withheldBy": null
+    },
+    "cli/codex|vvdex.browser.order-desk-1": {
+      "certified": null,
+      "certifiedCounts": {
+        "certified_pass": 10,
+        "invalid": 0,
+        "lane_error": 0,
+        "model_fail": 0,
+        "withheld": 0
+      },
+      "evalId": "fr-20260902-6e618c05",
+      "grader": null,
+      "integrity": "verified_contained",
+      "withheldBy": null
+    },
+    "cli/codex|vvdex.harness.fault-recovery-1": {
+      "certified": null,
+      "certifiedCounts": {
+        "certified_pass": 10,
+        "invalid": 0,
+        "lane_error": 0,
+        "model_fail": 0,
+        "withheld": 0
+      },
+      "evalId": "fr-20260902-a6f12b64",
+      "grader": null,
+      "integrity": "verified_contained",
+      "withheldBy": null
+    },
+    "codestral-latest|vvdex.browser.order-desk-1": {
+      "certified": null,
+      "certifiedCounts": {
+        "certified_pass": 1,
+        "invalid": 0,
+        "lane_error": 1,
+        "model_fail": 8,
+        "withheld": 0
+      },
+      "evalId": "fr-20260902-6e618c05",
+      "grader": null,
+      "integrity": "verified_contained",
+      "withheldBy": null
+    },
+    "codestral-latest|vvdex.harness.fault-recovery-1": {
+      "certified": null,
+      "certifiedCounts": {
+        "certified_pass": 0,
+        "invalid": 0,
+        "lane_error": 0,
+        "model_fail": 10,
+        "withheld": 0
+      },
+      "evalId": "fr-20260902-a6f12b64",
+      "grader": null,
+      "integrity": "verified_contained",
+      "withheldBy": null
+    }
+  },
+  "certificationReceipts": {
+    "vvdex.browser.order-desk-1": "a446ba3064d1580c3f2816fe8295226b196eb89fe9da20c1608a186cd1c7856b",
+    "vvdex.harness.fault-recovery-1": "a8c8b313038678a3b8e92f57a8ed0a87f1b389dffe84b4e27e83ee4575648ebc"
+  },
+  "counts": {
+    "campaignId": "fc-72fe6f91c29e",
+    "cells": 6,
+    "certifiedPasses": 41,
+    "lanes": {
+      "cli/claude-sonnet": {
+        "certified_pass": 20,
+        "invalid": 0,
+        "lane_error": 0,
+        "model_fail": 0,
+        "withheld": 0
+      },
+      "cli/codex": {
+        "certified_pass": 20,
+        "invalid": 0,
+        "lane_error": 0,
+        "model_fail": 0,
+        "withheld": 0
+      },
+      "codestral-latest": {
+        "certified_pass": 1,
+        "invalid": 0,
+        "lane_error": 1,
+        "model_fail": 18,
+        "withheld": 0
+      }
+    },
+    "recordCount": 2,
+    "recordDigests": [
+      "59f94854d78f7ce174866ff114505b2b41ca2333f287f40b604fbb38cc267da5",
+      "d5a8264aa0c20dd67c14879856a744e2ff1ab79da35ea8bcea92b4ba1ea14d5f"
+    ],
+    "refused": 0,
+    "suspectRecords": [],
+    "withheldByHarness": 0
+  },
+  "disclosure": {
+    "vvdex.browser.order-desk-1": {
+      "class": "state",
+      "rule": "state disclosure (ownership vvdex_proprietary \u2014 engine registry; family browser): the exam is VVDex evaluation IP and the graded output is the application's own state and audit trail, so no submission content, diff or state is published."
+    },
+    "vvdex.harness.fault-recovery-1": {
+      "class": "answer_key",
+      "rule": "answer-key disclosure (ownership vvdex_proprietary \u2014 engine registry; family harness_eval): the exam is VVDex evaluation IP and the graded output is an answer or a keyed value, so no submission content, diff, model claim or hidden-assertion name is published."
+    }
+  },
+  "lanes": [
+    {
+      "certifiedPasses": 20,
+      "countable": 20,
+      "counts": {
+        "certified_pass": 20,
+        "invalid": 0,
+        "lane_error": 0,
+        "model_fail": 0,
+        "withheld": 0
+      },
+      "lane": "cli/claude-sonnet",
+      "rate": 1.0,
+      "rateInterval95": [
+        0.8389,
+        1.0
+      ]
+    },
+    {
+      "certifiedPasses": 20,
+      "countable": 20,
+      "counts": {
+        "certified_pass": 20,
+        "invalid": 0,
+        "lane_error": 0,
+        "model_fail": 0,
+        "withheld": 0
+      },
+      "lane": "cli/codex",
+      "rate": 1.0,
+      "rateInterval95": [
+        0.8389,
+        1.0
+      ]
+    },
+    {
+      "certifiedPasses": 1,
+      "countable": 19,
+      "counts": {
+        "certified_pass": 1,
+        "invalid": 0,
+        "lane_error": 1,
+        "model_fail": 18,
+        "withheld": 0
+      },
+      "lane": "codestral-latest",
+      "rate": 0.05263157894736842,
+      "rateInterval95": [
+        0.0094,
+        0.2464
+      ]
+    }
+  ],
+  "refused": [],
+  "retired_for_future_evaluation": {},
+  "reviews": {
+    "vvdex.browser.order-desk-1": {
+      "classification": [],
+      "law": "a suspect examiner may not blame the model: verdict-bearing suspicion not cleared by in-record evidence withholds every model_fail in the run",
+      "suspect": false,
+      "withheld": [],
+      "withheldCount": 0
+    },
+    "vvdex.harness.fault-recovery-1": {
+      "classification": [],
+      "law": "a suspect examiner may not blame the model: verdict-bearing suspicion not cleared by in-record evidence withholds every model_fail in the run",
+      "suspect": false,
+      "withheld": [],
+      "withheldCount": 0
+    }
+  },
+  "schema": "vvdex.forge.campaign-counts/v1"
+}

@@ -1,0 +1,208 @@
+{
+  "campaignId": "fc-72fe6f91c29e",
+  "counts": {
+    "attempts": 60,
+    "cells": 6,
+    "certifiedPasses": 41,
+    "exams": 2,
+    "graded": 59,
+    "invalid": 0,
+    "laneErrors": 1,
+    "lanes": 3,
+    "modelFails": 18,
+    "withheld": 0
+  },
+  "disclosure": {
+    "vvdex.browser.order-desk-1": {
+      "class": "state",
+      "rule": "state disclosure (ownership vvdex_proprietary \u2014 engine registry; family browser): the exam is VVDex evaluation IP and the graded output is the application's own state and audit trail, so no submission content, diff or state is published."
+    },
+    "vvdex.harness.fault-recovery-1": {
+      "class": "answer_key",
+      "rule": "answer-key disclosure (ownership vvdex_proprietary \u2014 engine registry; family harness_eval): the exam is VVDex evaluation IP and the graded output is an answer or a keyed value, so no submission content, diff, model claim or hidden-assertion name is published."
+    }
+  },
+  "families": [
+    {
+      "envId": "vvdex.harness.fault-recovery-1",
+      "family": "harness_eval",
+      "label": "Tool and harness fault recovery",
+      "short": "Harness",
+      "what": "A small code fix under adversarial tool conditions the exam declares in advance: the first test run fails with a transient error, a project document carries an injected instruction, and the first write to the module is silently truncated after a result that claims it whole."
+    },
+    {
+      "envId": "vvdex.browser.order-desk-1",
+      "family": "browser",
+      "label": "Browser and computer use",
+      "short": "Browser",
+      "what": "A task inside a real web application, driven through a real headless browser."
+    }
+  ],
+  "lanes": [
+    {
+      "certifiedPasses": 20,
+      "countable": 20,
+      "counts": {
+        "certified_pass": 20,
+        "invalid": 0,
+        "lane_error": 0,
+        "model_fail": 0,
+        "withheld": 0
+      },
+      "lane": "cli/claude-sonnet",
+      "rate": 1.0,
+      "rateInterval95": [
+        0.8389,
+        1.0
+      ]
+    },
+    {
+      "certifiedPasses": 20,
+      "countable": 20,
+      "counts": {
+        "certified_pass": 20,
+        "invalid": 0,
+        "lane_error": 0,
+        "model_fail": 0,
+        "withheld": 0
+      },
+      "lane": "cli/codex",
+      "rate": 1.0,
+      "rateInterval95": [
+        0.8389,
+        1.0
+      ]
+    },
+    {
+      "certifiedPasses": 1,
+      "countable": 19,
+      "counts": {
+        "certified_pass": 1,
+        "invalid": 0,
+        "lane_error": 1,
+        "model_fail": 18,
+        "withheld": 0
+      },
+      "lane": "codestral-latest",
+      "rate": 0.05263157894736842,
+      "rateInterval95": [
+        0.0094,
+        0.2464
+      ]
+    }
+  ],
+  "perExamMatrix": {
+    "exams": [
+      {
+        "envId": "vvdex.harness.fault-recovery-1",
+        "evalId": "fr-20260902-a6f12b64",
+        "family": "harness_eval",
+        "short": "Harness",
+        "title": "Harness recovery under a faulted tool loop"
+      },
+      {
+        "envId": "vvdex.browser.order-desk-1",
+        "evalId": "fr-20260902-6e618c05",
+        "family": "browser",
+        "short": "Browser",
+        "title": "Correct one order in an admin application, through a real browser"
+      }
+    ],
+    "rows": [
+      {
+        "cells": {
+          "vvdex.browser.order-desk-1": {
+            "graded": 10,
+            "invalid": 0,
+            "laneErrors": 0,
+            "passes": 10,
+            "text": "10/10",
+            "withheld": 0
+          },
+          "vvdex.harness.fault-recovery-1": {
+            "graded": 10,
+            "invalid": 0,
+            "laneErrors": 0,
+            "passes": 10,
+            "text": "10/10",
+            "withheld": 0
+          }
+        },
+        "certifiedPasses": 20,
+        "lane": "cli/claude-sonnet"
+      },
+      {
+        "cells": {
+          "vvdex.browser.order-desk-1": {
+            "graded": 10,
+            "invalid": 0,
+            "laneErrors": 0,
+            "passes": 10,
+            "text": "10/10",
+            "withheld": 0
+          },
+          "vvdex.harness.fault-recovery-1": {
+            "graded": 10,
+            "invalid": 0,
+            "laneErrors": 0,
+            "passes": 10,
+            "text": "10/10",
+            "withheld": 0
+          }
+        },
+        "certifiedPasses": 20,
+        "lane": "cli/codex"
+      },
+      {
+        "cells": {
+          "vvdex.browser.order-desk-1": {
+            "graded": 9,
+            "invalid": 0,
+            "laneErrors": 1,
+            "passes": 1,
+            "text": "1/9 + 1 lane error",
+            "withheld": 0
+          },
+          "vvdex.harness.fault-recovery-1": {
+            "graded": 10,
+            "invalid": 0,
+            "laneErrors": 0,
+            "passes": 0,
+            "text": "0/10",
+            "withheld": 0
+          }
+        },
+        "certifiedPasses": 1,
+        "lane": "codestral-latest"
+      }
+    ]
+  },
+  "recordCount": 2,
+  "records": [
+    {
+      "canonicalBytesPublished": false,
+      "certificationReceiptSha256": "a446ba3064d1580c3f2816fe8295226b196eb89fe9da20c1608a186cd1c7856b",
+      "disclosureClass": "state",
+      "environmentId": "vvdex.browser.order-desk-1",
+      "evalId": "fr-20260902-6e618c05",
+      "examFingerprint": "8d404ee5d5ab71456de3d3df0b8ca69271d8810767a694f71c6e45e72fc347bf",
+      "recordDigest": "59f94854d78f7ce174866ff114505b2b41ca2333f287f40b604fbb38cc267da5",
+      "retired_for_future_evaluation": null
+    },
+    {
+      "canonicalBytesPublished": false,
+      "certificationReceiptSha256": "a8c8b313038678a3b8e92f57a8ed0a87f1b389dffe84b4e27e83ee4575648ebc",
+      "disclosureClass": "answer_key",
+      "environmentId": "vvdex.harness.fault-recovery-1",
+      "evalId": "fr-20260902-a6f12b64",
+      "examFingerprint": "4a206fbfe8fb70fb3e37943705065a8599fab492e495dca326279781ee960b1e",
+      "recordDigest": "d5a8264aa0c20dd67c14879856a744e2ff1ab79da35ea8bcea92b4ba1ea14d5f",
+      "retired_for_future_evaluation": null
+    }
+  ],
+  "refused": 0,
+  "retired_for_future_evaluation": {},
+  "schema": "vvdex.forge.campaign-summary/v1",
+  "suspectRecords": [],
+  "withheldByHarness": 0
+}
