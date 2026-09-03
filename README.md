@@ -21,7 +21,7 @@ about any other task.
 | [`reports/fc-d89e429d2781/records/`](reports/fc-d89e429d2781/records/) | the digest each of the five sealed evaluation records states about itself, and — for the one exam whose graded artefact is public upstream source — its canonical bytes. The other four records' bytes are withheld: a sealed record carries an excerpt of what each rollout submitted, and on those exams the submission is the graded answer |
 | [`reports/fc-d89e429d2781/`](reports/fc-d89e429d2781/) | the campaign report (full and executive), the five standalone executive reports, `campaign.json`, `summary.json` |
 | [`exams/`](exams/) | one **proof descriptor** per exam: what it measures, its immutable fingerprint, runtime class, tool categories, limits, ownership, disclosure level, and its certification receipt. The exams themselves are not here |
-| [`reports/historical/`](reports/historical/) | three superseded campaigns |
+| [`reports/fc-3194f803055c/`](reports/fc-3194f803055c/), [`reports/fc-72fe6f91c29e/`](reports/fc-72fe6f91c29e/), [`reports/fc-8626f712e26f/`](reports/fc-8626f712e26f/) | three superseded campaigns, in the same shape as the current one. Each report states HISTORICAL on its own cover |
 | [`MANIFEST.json`](MANIFEST.json) | the SHA-256 of every file in this repository. `./verify.sh` checks all of them and recomputes every published record digest |
 
 Check a record in one command:
