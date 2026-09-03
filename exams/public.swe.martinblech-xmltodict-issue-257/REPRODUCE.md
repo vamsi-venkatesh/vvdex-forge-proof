@@ -17,15 +17,18 @@ tests or the control cases; publishing those would end the exam.
 ## Check the published result
 
 The evaluation this exam appears in is `fr-20260902-6616b188`, in campaign report
-`reports/fc-d89e429d2781/`. Its canonical bytes and the digest it states about
-itself are published beside the report, under `records/`:
+`reports/fc-d89e429d2781/`. The disclosure policy WITHHOLDS this record's
+canonical bytes, because the sealed record names the grader's hidden assertions, and the canonical bytes are the
+sealed record verbatim. What is published beside the report is the digest the
+record states about itself:
 
 ```
-shasum -a 256 records/fr-20260902-6616b188.canonical.json
 cat records/fr-20260902-6616b188.digest.txt
 ```
 
-The two must be equal.
+A holder of the sealed record — the customer who commissioned the run, or an
+auditor under agreement — reproduces that value with `shasum -a 256` over the
+canonical bytes, or with `vvdex-env records verify`.
 
 The exam's public page at `https://vvdexops.com/featured/martinblech-xmltodict-issue-257/` states the same
 digest and the same exam fingerprint as `certification-receipt.json`:

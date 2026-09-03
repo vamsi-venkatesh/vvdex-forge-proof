@@ -35,7 +35,7 @@ Each record ships as three files in `reports/<campaignId>/records/`:
 | --- | --- |
 | `<evalId>.digest.txt` | the digest of the sealed record, immutable |
 | `<evalId>.canonical.WITHHELD.txt` | why the bytes are not here |
-| `<evalId>.record.public.json` | a sanitized projection, where one is published |
+| `<evalId>.record.public.json` | a sanitized projection of the record |
 
 The projection is **not** the record and does not hash to the digest; it says so
 itself, in its own `note` field. It states `sourceRecordDigest`, so a holder of
@@ -85,21 +85,33 @@ above is the check that closes the loop. Each standalone executive PDF states
 its exam's fingerprint, which §3 below joins to the receipt, the contract and
 the record.
 
-Only executive PDFs are published here. **The full campaign PDF is deliberately
-not in this repository.** It embeds per-rollout submission diffs, and on
-answer-key exams a submission diff is the answer: its text contains the RAG and
-memory exams' gold answers verbatim, dozens of times. A proof package must not
-carry the answer key, so it was left out. The full document, its *Verification*
-chapter and its Appendix B artifact-digest table are published with the release,
-not here.
+**Both editions are published here, in sanitized form.** This repository carries
+17 full report PDFs and 17 executive PDFs, and the four campaign reports appear
+as a full and an executive edition in both HTML and PDF. An earlier draft of
+this section said that only executive PDFs were published and that the full
+campaign PDF was deliberately left out. That was true of a superseded package
+shape and is not true of this one.
 
-Those release-side artifacts — the standalone report HTML, the standalone report
-PDF, the run evidence bundle, the per-rollout JSON files, and the
-`*.manifest.json` and `*.verification.txt` files that spell the three-line
-procedure out per report — are checkable against the published release rather
-than against these files, and this repository does not pretend otherwise. The
-certified evidence seal reads *not available in this package*, matching the
-`"unavailable"` on the receipts.
+What makes the full editions publishable is that the withholding happens inside
+them rather than by omitting them. Where a proprietary exam's submission body or
+diff would appear, the document renders the sentence *Submission content
+withheld: proprietary evaluation material* in its place, 17 times across the
+full PDFs in this repository. A diff against public upstream source is a
+different case and may appear where the exam's ownership declaration approves
+it: the xmltodict sections of the five-exam campaign report carry the real
+patch, under the upstream MIT licence named in `OWNERSHIP.md`.
+
+The per-report `*.manifest.json` and `*.verification.txt` files, which spell the
+three-line check out for each report, ship here too: 13 of each, one per record.
+
+What is not here is the material a public package cannot carry. Canonical sealed
+record bodies are not published, for the reason given at the top of this
+document, so a reader checks a record through its digest, its projection and the
+campaign summary rather than through the record's own bytes. The standalone
+report HTML, the per-rollout JSON files and the run evidence bundles are not
+published either; the certified evidence seal reads *not available in this
+package*, matching the `"unavailable"` on the receipts. Those are checkable
+against the published release, and this repository does not pretend otherwise.
 
 ## 3. The exam fingerprint joins
 
@@ -192,7 +204,7 @@ auditor under agreement, reproduces it with `shasum -a 256` or
 through <https://vvdexops.com/connect/>, under agreement; no terms are promised
 in advance.
 
-Where a projection is published, `<evalId>.record.public.json` carries the
+Each `<evalId>.record.public.json` carries the
 record's identity, its lanes, its per-rollout outcome, stage flags, elapsed time
 and tool-name counts, its result counts, its disclosure class and its
 `sourceRecordDigest`. It carries no submission body, no model prose and no name

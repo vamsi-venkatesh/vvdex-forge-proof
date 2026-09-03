@@ -170,9 +170,9 @@ Public in this repository:
 * one proof descriptor per exam: what it measures, its content fingerprint,
   runtime class, tool categories, limits, ownership and disclosure level;
 * the certification receipt for each exam;
-* the sealed record digests, and for the public-source exam a sanitized
-  projection of its record: identity, lanes, per-rollout outcome, stages,
-  elapsed time and tool-name counts, and result counts;
+* the sealed record digests, and for every record a sanitized projection:
+  identity, lanes, per-rollout outcome, stages, elapsed time and tool-name
+  counts, and result counts;
 * the campaign reports, `campaign.json` and `summary.json`;
 * the upstream issue text and licence of the one third-party exam.
 

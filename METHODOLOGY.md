@@ -171,10 +171,9 @@ the number of rollouts actually run: there is no pass@5 in a 2-rollout run.
 
 Below the low-N threshold (10 rollouts) a report shows raw counts and refuses to
 present percentages as stable rates. No record's canonical bytes are published
-here, so this repository substantiates `lowN` only through the published
-projection of `fr-20260902-6616b188`, which carries `lowN: false` per lane; all
-five records carry `lowN` and `lowNThreshold` fields, and a holder of the sealed
-records reads them there. The historical
+here, so this repository substantiates `lowN` through the published projections,
+each of which carries `lowN: false` per lane. `lowNThreshold` is a sealed-record
+field, and a holder of the sealed records reads it there. The historical
 campaign `fc-8626f712e26f` is a one-rollout-per-lane run and its summary carries
 no lane intervals at all.
 

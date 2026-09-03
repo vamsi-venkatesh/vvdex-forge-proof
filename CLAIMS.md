@@ -71,12 +71,12 @@ receipt's own `sources` block names the evidence field it was copied from.
 | --- | --- |
 | 5 sealed records | `<current>summary.json` `recordCount`, and `records` (5 entries) |
 | 0 records with published canonical bytes, 5 withheld | `records[].canonicalBytesPublished` (`false` on every record); on disk, five `*.canonical.WITHHELD.txt` and no `*.canonical.json` in `<current>records/` |
-| 1 record with a published projection, 4 without | `records[].recordProjectionPublished`; on disk, one `*.record.public.json` in `<current>records/` |
+| 5 records with a published projection, 0 without | `records[].recordProjectionPublished` (`true` on every record); on disk, five `*.record.public.json` in `<current>records/` |
 | The five record digests in VERIFICATION.md §1 | `<current>records/<evalId>.digest.txt`, and `records[].recordDigest` |
 | The five exam fingerprints in VERIFICATION.md §3 | `exams/<examId>/exam.public.json` `examFingerprint`, `certification-receipt.json` `examFingerprint`, `<current>summary.json` `records[].examFingerprint` |
 | The receipt SHA-256 values | `<current>campaign.json` `certificationReceipts`, and `summary.json` `records[].certificationReceiptSha256`; recomputable with `shasum -a 256` on the receipt file |
 | Sixty-four `0` characters in the zeroed digest slot | METHODOLOGY, VERIFICATION; the serialization convention a holder of the sealed record hashes against. It is not exercised in this repository, which publishes no canonical body |
-| `lowN: false` per lane | `<current>records/fr-20260902-6616b188.record.public.json` `results.byModel[].lowN`. `lowNThreshold: 10` is a sealed-record field, readable by a holder, not published here |
+| `lowN: false` per lane | `results.byModel[].lowN` in each of the five `<current>records/*.record.public.json`. `lowNThreshold: 10` is a sealed-record field, readable by a holder, not published here |
 | The browser exam's ten advertised tools | `<current>fc-d89e429d2781.html` and the campaign PDF, the record's `limits.advertisedTools` as rendered |
 | 144 files with a SHA-256 | `MANIFEST.json` `files`, checked by `./verify.sh` |
 

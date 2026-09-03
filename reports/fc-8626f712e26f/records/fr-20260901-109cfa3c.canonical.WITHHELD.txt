@@ -1,5 +1,5 @@
 fr-20260901-109cfa3c
 recordDigest sha256: 6354cff6fc47eca13b596d285f805a9f3994d048d69b446166acfeb7f8659929
 
-The canonical record bytes are not published: the sealed record carries submission-derived content this exam's disclosure class withholds (transcripts[].diff.excerpt, rollouts[].failedTests, rollouts[].lastWords), and the canonical bytes are the sealed record verbatim; the record digest is published instead.
+The canonical record bytes are not published: the sealed record carries content the disclosure policy withholds (rollouts[].failedTests, transcripts[].diff.excerpt, rollouts[].lastWords), and the canonical bytes are the sealed record verbatim; the record digest is published instead.
 The digest above is the digest of the sealed record in the Forge; a holder of that record reproduces it with `shasum -a 256` on the canonical bytes or with `vvdex-env records verify`.

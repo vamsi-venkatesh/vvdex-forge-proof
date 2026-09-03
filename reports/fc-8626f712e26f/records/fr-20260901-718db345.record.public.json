@@ -1,0 +1,243 @@
+{
+  "disclosureClass": "answer_key",
+  "environmentId": "vvdex.knowledge.grounded-rag-1",
+  "evalId": "fr-20260901-718db345",
+  "fingerprint": "4880a527ef97ca2f3fe6b57be026c3dc1be51e9e104d79fc13a3e558331dda92",
+  "kind": "vvdex.forge.public-record-projection/v1",
+  "lanes": [
+    "cli/claude-sonnet",
+    "cli/codex",
+    "codestral-latest",
+    "openai/gpt-oss-120b"
+  ],
+  "note": "A projection of the sealed record, not the record. Its bytes do not hash to sourceRecordDigest; that digest describes the canonical record, which a holder verifies under agreement.",
+  "results": {
+    "byModel": [
+      {
+        "countableN": 1,
+        "countableSuccesses": 0,
+        "lowN": true,
+        "model": "cli/claude-sonnet",
+        "n": 1,
+        "provider": "cli",
+        "successRate": 0.0,
+        "successes": 0,
+        "toolCalls": 12,
+        "verdicts": {
+          "certified_pass": 0,
+          "invalid": 0,
+          "lane_error": 0,
+          "model_fail": 1,
+          "withheld": 0
+        }
+      },
+      {
+        "countableN": 1,
+        "countableSuccesses": 1,
+        "lowN": true,
+        "model": "cli/codex",
+        "n": 1,
+        "provider": "cli",
+        "successRate": 1.0,
+        "successes": 1,
+        "toolCalls": 14,
+        "verdicts": {
+          "certified_pass": 1,
+          "invalid": 0,
+          "lane_error": 0,
+          "model_fail": 0,
+          "withheld": 0
+        }
+      },
+      {
+        "countableN": 1,
+        "countableSuccesses": 0,
+        "lowN": true,
+        "model": "codestral-latest",
+        "n": 1,
+        "provider": "mistral",
+        "successRate": 0.0,
+        "successes": 0,
+        "toolCalls": 10,
+        "verdicts": {
+          "certified_pass": 0,
+          "invalid": 0,
+          "lane_error": 0,
+          "model_fail": 1,
+          "withheld": 0
+        }
+      },
+      {
+        "countableN": 0,
+        "countableSuccesses": 0,
+        "lowN": true,
+        "model": "openai/gpt-oss-120b",
+        "n": 1,
+        "provider": "groq",
+        "successRate": 0.0,
+        "successes": 0,
+        "toolCalls": 4,
+        "verdicts": {
+          "certified_pass": 0,
+          "invalid": 0,
+          "lane_error": 1,
+          "model_fail": 0,
+          "withheld": 0
+        }
+      }
+    ],
+    "successRate": 0.25,
+    "totalRollouts": 4
+  },
+  "rollouts": [
+    {
+      "containmentVerdict": "verified_contained",
+      "elapsedMs": 71764,
+      "id": "a8b6ca0b-1ed7-4a52-a051-1055108b710b",
+      "lane": "cli/claude-sonnet",
+      "outcome": "submitted_failed",
+      "seed": 0,
+      "stages": {
+        "edited": true,
+        "graded": true,
+        "inspected": true,
+        "passed": false,
+        "submitted": true,
+        "tested": true
+      },
+      "stepLimit": 30,
+      "stepsUsed": 12,
+      "toolNameCounts": {
+        "list_files": 1,
+        "read_file": 8,
+        "run_tests": 1,
+        "submit": 1,
+        "write_file": 1
+      },
+      "verdicts": {
+        "certified": "model_fail",
+        "grader": "fail",
+        "integrity": "verified_contained"
+      }
+    },
+    {
+      "containmentVerdict": "verified_contained",
+      "elapsedMs": 68492,
+      "id": "f9d23573-24ee-4f45-89e9-2771b0bafc68",
+      "lane": "cli/codex",
+      "outcome": "submitted_passed",
+      "seed": 0,
+      "stages": {
+        "edited": true,
+        "graded": true,
+        "inspected": true,
+        "passed": true,
+        "submitted": true,
+        "tested": true
+      },
+      "stepLimit": 30,
+      "stepsUsed": 14,
+      "toolNameCounts": {
+        "list_files": 1,
+        "read_file": 10,
+        "run_tests": 1,
+        "submit": 1,
+        "write_file": 1
+      },
+      "verdicts": {
+        "certified": "certified_pass",
+        "grader": "pass",
+        "integrity": "verified_contained"
+      }
+    },
+    {
+      "containmentVerdict": "verified_contained",
+      "elapsedMs": 18734,
+      "id": "2c0b85d4-ba0d-4c0c-8216-ea243bfbaab9",
+      "lane": "codestral-latest",
+      "outcome": "submitted_failed",
+      "seed": 0,
+      "stages": {
+        "edited": true,
+        "graded": true,
+        "inspected": true,
+        "passed": false,
+        "submitted": true,
+        "tested": true
+      },
+      "stepLimit": 30,
+      "stepsUsed": 10,
+      "toolNameCounts": {
+        "list_files": 1,
+        "read_file": 6,
+        "run_tests": 1,
+        "submit": 1,
+        "write_file": 1
+      },
+      "verdicts": {
+        "certified": "model_fail",
+        "grader": "fail",
+        "integrity": "verified_contained"
+      }
+    },
+    {
+      "containmentVerdict": "verified_contained",
+      "elapsedMs": 956623,
+      "id": "97723e61-d56d-4aed-8b61-dee14d643db8",
+      "lane": "openai/gpt-oss-120b",
+      "outcome": "model_api_failure",
+      "seed": 0,
+      "stages": {
+        "edited": false,
+        "graded": false,
+        "inspected": true,
+        "passed": false,
+        "submitted": false,
+        "tested": false
+      },
+      "stepLimit": 30,
+      "stepsUsed": 4,
+      "toolNameCounts": {
+        "list_files": 2,
+        "read_file": 2
+      },
+      "verdicts": {
+        "certified": "lane_error",
+        "grader": "error",
+        "integrity": "verified_contained"
+      }
+    }
+  ],
+  "sourceRecordDigest": {
+    "algorithm": "sha256 over the record's canonical JSON (UTF-8, sorted keys, compact separators) with recordDigest.sha256 set to 64 '0' characters",
+    "sha256": "a6426b0b7932b6c0f679f230c44c4b75a30df10a17f7e145b567ac9849d63a36"
+  },
+  "stages": [
+    {
+      "id": "inspect",
+      "label": "Inspected",
+      "meaning": "Listed or read at least one file in the repository."
+    },
+    {
+      "id": "edit",
+      "label": "Edited",
+      "meaning": "Wrote at least one file that actually changed on disk."
+    },
+    {
+      "id": "test",
+      "label": "Ran tests",
+      "meaning": "Invoked the visible-test tool at least once."
+    },
+    {
+      "id": "submit",
+      "label": "Submitted",
+      "meaning": "Called submit, ending the rollout on its own terms."
+    },
+    {
+      "id": "hidden_pass",
+      "label": "Passed hidden tests",
+      "meaning": "The independent grader returned exit 0."
+    }
+  ],
+  "version": "0.1.0"
+}

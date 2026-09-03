@@ -32,11 +32,10 @@ numbers do not apply to it.
 ## Check the published numbers
 
 The evaluation this exam appears in is `fr-20260901-46eb9548`, in campaign report
-`reports/fc-d89e429d2781/`. This exam's disclosure class WITHHOLDS the record's
-canonical bytes: a sealed record carries an excerpt of what each rollout
-submitted, and on this exam the submission is the graded answer, so publishing
-the bytes would publish the answer key. What is published beside the report is
-the digest the record states about itself:
+`reports/fc-d89e429d2781/`. The disclosure policy WITHHOLDS this record's
+canonical bytes, because the sealed record names the grader's hidden assertions, carries the graded answer and quotes the model's own words about it, and the canonical bytes are the
+sealed record verbatim. What is published beside the report is the digest the
+record states about itself:
 
 ```
 cat records/fr-20260901-46eb9548.digest.txt

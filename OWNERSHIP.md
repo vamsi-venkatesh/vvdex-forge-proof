@@ -64,8 +64,10 @@ ownership registry; not typed.
 | `reports/fc-3194f803055c/fr-20260902-6616b188.verification.txt` | VVDex | generated public proof; VVDex proprietary, published as evidence |
 | `reports/fc-3194f803055c/records/fr-20260901-46eb9548.canonical.WITHHELD.txt` | VVDex | generated public proof; VVDex proprietary, published as evidence |
 | `reports/fc-3194f803055c/records/fr-20260901-46eb9548.digest.txt` | VVDex | generated public proof; VVDex proprietary, published as evidence |
+| `reports/fc-3194f803055c/records/fr-20260901-46eb9548.record.public.json` | VVDex | generated public proof; VVDex proprietary, published as evidence |
 | `reports/fc-3194f803055c/records/fr-20260902-2e7f4171.canonical.WITHHELD.txt` | VVDex | generated public proof; VVDex proprietary, published as evidence |
 | `reports/fc-3194f803055c/records/fr-20260902-2e7f4171.digest.txt` | VVDex | generated public proof; VVDex proprietary, published as evidence |
+| `reports/fc-3194f803055c/records/fr-20260902-2e7f4171.record.public.json` | VVDex | generated public proof; VVDex proprietary, published as evidence |
 | `reports/fc-3194f803055c/records/fr-20260902-6616b188.canonical.WITHHELD.txt` | VVDex | generated public proof; VVDex proprietary, published as evidence |
 | `reports/fc-3194f803055c/records/fr-20260902-6616b188.digest.txt` | VVDex | generated public proof; VVDex proprietary, published as evidence |
 | `reports/fc-3194f803055c/records/fr-20260902-6616b188.record.public.json` | VVDex | generated public proof; VVDex proprietary, published as evidence |
@@ -85,8 +87,10 @@ ownership registry; not typed.
 | `reports/fc-72fe6f91c29e/fr-20260902-a6f12b64.verification.txt` | VVDex | generated public proof; VVDex proprietary, published as evidence |
 | `reports/fc-72fe6f91c29e/records/fr-20260902-6e618c05.canonical.WITHHELD.txt` | VVDex | generated public proof; VVDex proprietary, published as evidence |
 | `reports/fc-72fe6f91c29e/records/fr-20260902-6e618c05.digest.txt` | VVDex | generated public proof; VVDex proprietary, published as evidence |
+| `reports/fc-72fe6f91c29e/records/fr-20260902-6e618c05.record.public.json` | VVDex | generated public proof; VVDex proprietary, published as evidence |
 | `reports/fc-72fe6f91c29e/records/fr-20260902-a6f12b64.canonical.WITHHELD.txt` | VVDex | generated public proof; VVDex proprietary, published as evidence |
 | `reports/fc-72fe6f91c29e/records/fr-20260902-a6f12b64.digest.txt` | VVDex | generated public proof; VVDex proprietary, published as evidence |
+| `reports/fc-72fe6f91c29e/records/fr-20260902-a6f12b64.record.public.json` | VVDex | generated public proof; VVDex proprietary, published as evidence |
 | `reports/fc-72fe6f91c29e/summary.json` | VVDex | generated public proof; VVDex proprietary, published as evidence |
 | `reports/fc-8626f712e26f/campaign.json` | VVDex | generated public proof; VVDex proprietary, published as evidence |
 | `reports/fc-8626f712e26f/fc-8626f712e26f-executive.pdf` | VVDex | generated public proof; VVDex proprietary, published as evidence |
@@ -107,8 +111,10 @@ ownership registry; not typed.
 | `reports/fc-8626f712e26f/fr-20260901-a27316a3.verification.txt` | VVDex | generated public proof; VVDex proprietary, published as evidence |
 | `reports/fc-8626f712e26f/records/fr-20260901-109cfa3c.canonical.WITHHELD.txt` | VVDex | generated public proof; VVDex proprietary, published as evidence |
 | `reports/fc-8626f712e26f/records/fr-20260901-109cfa3c.digest.txt` | VVDex | generated public proof; VVDex proprietary, published as evidence |
+| `reports/fc-8626f712e26f/records/fr-20260901-109cfa3c.record.public.json` | VVDex | generated public proof; VVDex proprietary, published as evidence |
 | `reports/fc-8626f712e26f/records/fr-20260901-718db345.canonical.WITHHELD.txt` | VVDex | generated public proof; VVDex proprietary, published as evidence |
 | `reports/fc-8626f712e26f/records/fr-20260901-718db345.digest.txt` | VVDex | generated public proof; VVDex proprietary, published as evidence |
+| `reports/fc-8626f712e26f/records/fr-20260901-718db345.record.public.json` | VVDex | generated public proof; VVDex proprietary, published as evidence |
 | `reports/fc-8626f712e26f/records/fr-20260901-a27316a3.canonical.WITHHELD.txt` | VVDex | generated public proof; VVDex proprietary, published as evidence |
 | `reports/fc-8626f712e26f/records/fr-20260901-a27316a3.digest.txt` | VVDex | generated public proof; VVDex proprietary, published as evidence |
 | `reports/fc-8626f712e26f/records/fr-20260901-a27316a3.record.public.json` | VVDex | generated public proof; VVDex proprietary, published as evidence |
@@ -140,15 +146,19 @@ ownership registry; not typed.
 | `reports/fc-d89e429d2781/fr-20260902-a6f12b64.verification.txt` | VVDex | generated public proof; VVDex proprietary, published as evidence |
 | `reports/fc-d89e429d2781/records/fr-20260901-46eb9548.canonical.WITHHELD.txt` | VVDex | generated public proof; VVDex proprietary, published as evidence |
 | `reports/fc-d89e429d2781/records/fr-20260901-46eb9548.digest.txt` | VVDex | generated public proof; VVDex proprietary, published as evidence |
+| `reports/fc-d89e429d2781/records/fr-20260901-46eb9548.record.public.json` | VVDex | generated public proof; VVDex proprietary, published as evidence |
 | `reports/fc-d89e429d2781/records/fr-20260902-2e7f4171.canonical.WITHHELD.txt` | VVDex | generated public proof; VVDex proprietary, published as evidence |
 | `reports/fc-d89e429d2781/records/fr-20260902-2e7f4171.digest.txt` | VVDex | generated public proof; VVDex proprietary, published as evidence |
+| `reports/fc-d89e429d2781/records/fr-20260902-2e7f4171.record.public.json` | VVDex | generated public proof; VVDex proprietary, published as evidence |
 | `reports/fc-d89e429d2781/records/fr-20260902-6616b188.canonical.WITHHELD.txt` | VVDex | generated public proof; VVDex proprietary, published as evidence |
 | `reports/fc-d89e429d2781/records/fr-20260902-6616b188.digest.txt` | VVDex | generated public proof; VVDex proprietary, published as evidence |
 | `reports/fc-d89e429d2781/records/fr-20260902-6616b188.record.public.json` | VVDex | generated public proof; VVDex proprietary, published as evidence |
 | `reports/fc-d89e429d2781/records/fr-20260902-6e618c05.canonical.WITHHELD.txt` | VVDex | generated public proof; VVDex proprietary, published as evidence |
 | `reports/fc-d89e429d2781/records/fr-20260902-6e618c05.digest.txt` | VVDex | generated public proof; VVDex proprietary, published as evidence |
+| `reports/fc-d89e429d2781/records/fr-20260902-6e618c05.record.public.json` | VVDex | generated public proof; VVDex proprietary, published as evidence |
 | `reports/fc-d89e429d2781/records/fr-20260902-a6f12b64.canonical.WITHHELD.txt` | VVDex | generated public proof; VVDex proprietary, published as evidence |
 | `reports/fc-d89e429d2781/records/fr-20260902-a6f12b64.digest.txt` | VVDex | generated public proof; VVDex proprietary, published as evidence |
+| `reports/fc-d89e429d2781/records/fr-20260902-a6f12b64.record.public.json` | VVDex | generated public proof; VVDex proprietary, published as evidence |
 | `reports/fc-d89e429d2781/summary.json` | VVDex | generated public proof; VVDex proprietary, published as evidence |
 | `verify.sh` | VVDex | VVDex proprietary; published for viewing, evaluation and verification |
 
