@@ -5,6 +5,19 @@ model sits it. Facts here are the ones the published receipts and records carry;
 where a stage is not recorded on the artifacts in this repository, this document
 says so instead of describing it as proven.
 
+## Annotation path
+
+Annotation submissions pass through task-schema validation, type-specific
+metrics and isolated grading. The private reference remains outside the visible
+task. Certification exercises the reference, baseline and adversarial controls;
+public exports contain approved aggregate evidence rather than reference labels
+or reusable grading material. A certification report joins its descriptor and
+receipt through the exam fingerprint and the receipt's SHA-256.
+
+This path supports five modalities within one Annotation family. Its certification
+exports live under `exams/vvdex.annotation.*/`; they are not inserted into model
+campaign records or campaign totals. See [ANNOTATION.md](ANNOTATION.md).
+
 ## The lifecycle
 
 ```mermaid
@@ -36,7 +49,7 @@ later artifact names.
 the untouched tree must fail it, the grader must not be visible to the model,
 and no part of the reference may appear in the tree the model is given. The
 recorded outcome is on each receipt as `referencePass` and `baselineFail`. On
-all five exams here: reference pass rate 1.0 over n=2, baseline fail rate 0.0
+all five historical campaign exams: reference pass rate 1.0 over n=2, baseline fail rate 0.0
 over n=2.
 
 **Grader controls.** A set of submissions that must land on known verdicts:

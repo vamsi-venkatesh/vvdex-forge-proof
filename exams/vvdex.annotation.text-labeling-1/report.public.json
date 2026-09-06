@@ -1,0 +1,54 @@
+{
+  "agreementMetrics": null,
+  "annotation": {
+    "annotationTypes": [
+      "classification",
+      "span"
+    ],
+    "disagreementMetrics": "Available for supplied annotation sets; no multi-annotator study is claimed.",
+    "metricsSupported": [
+      "classificationAccuracy",
+      "classificationF1",
+      "classificationPrecision",
+      "classificationRecall",
+      "spanExactF1",
+      "spanF1",
+      "spanOverlapIoU",
+      "spanPrecision",
+      "spanRecall"
+    ],
+    "modality": "text",
+    "modelCampaign": "not run",
+    "purpose": "An invented message is reviewed for classification and entity spans with consistent offsets.",
+    "rubricVersion": "1.0"
+  },
+  "assetSource": null,
+  "certificationReceiptSha256": "cd09865ac07c85cf1bb3c6eacee46d90754c915788b6101248a284010ddb1d67",
+  "certificationState": "certified",
+  "disclosure": "Aggregate certification evidence only; reference annotations and reusable evaluation material withheld.",
+  "errorClasses": [
+    "malformed input",
+    "schema mismatch",
+    "out of bounds",
+    "missing annotation",
+    "temporal conflict",
+    "inconsistent tracking",
+    "reference mismatch"
+  ],
+  "examFingerprint": "e1abe51398b2d950a3415678aaf8ec796420dfb05ea89b3b64afd33c1e345fd3",
+  "examId": "vvdex.annotation.text-labeling-1",
+  "limitations": "Small constructed engineering fixtures, not a production dataset or professional annotation engagement. Video uses sparse frame boxes, not dense tracking. Audio contains tones and silence, not speech or speakers. CVAT XML 1.1 and Label Studio JSON cover tested box subsets only; unsupported or lossy conversions are refused. Polygon comparison requires the implemented vertex representation. No model performance or annotator population is inferred.",
+  "modelCampaign": null,
+  "referenceMetrics": {
+    "classificationAccuracy": 1.0,
+    "classificationF1": 1.0,
+    "classificationPrecision": 1.0,
+    "classificationRecall": 1.0,
+    "spanExactF1": 1.0,
+    "spanF1": 1.0,
+    "spanOverlapIoU": 1.0,
+    "spanPrecision": 1.0,
+    "spanRecall": 1.0
+  },
+  "schema": "vvdex.forge.annotation-certification-report/v1"
+}

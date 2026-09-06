@@ -1,0 +1,61 @@
+{
+  "agreementMetrics": null,
+  "annotation": {
+    "annotationTypes": [
+      "box",
+      "classification",
+      "keypoint"
+    ],
+    "disagreementMetrics": "Available for supplied annotation sets; no multi-annotator study is claimed.",
+    "metricsSupported": [
+      "boxF1",
+      "boxIoU",
+      "boxPrecision",
+      "boxRecall",
+      "classificationAccuracy",
+      "classificationF1",
+      "classificationPrecision",
+      "classificationRecall",
+      "keypointF1",
+      "keypointNormalizedError",
+      "keypointPrecision",
+      "keypointRecall"
+    ],
+    "modality": "image",
+    "modelCampaign": "not run",
+    "purpose": "A constructed image is reviewed for classification, object boxes, attributes and keypoints.",
+    "rubricVersion": "1.0"
+  },
+  "assetSource": null,
+  "certificationReceiptSha256": "8d95d09c91c90880dcbff221d1a42b6f46bd37a74c025b4eb6f01aa6e0b8919b",
+  "certificationState": "certified",
+  "disclosure": "Aggregate certification evidence only; reference annotations and reusable evaluation material withheld.",
+  "errorClasses": [
+    "malformed input",
+    "schema mismatch",
+    "out of bounds",
+    "missing annotation",
+    "temporal conflict",
+    "inconsistent tracking",
+    "reference mismatch"
+  ],
+  "examFingerprint": "422753713aeb9f41abcc4135d637e3064cae1e770fc8d22ec9dacf260b35a3ef",
+  "examId": "vvdex.annotation.image-object-1",
+  "limitations": "Small constructed engineering fixtures, not a production dataset or professional annotation engagement. Video uses sparse frame boxes, not dense tracking. Audio contains tones and silence, not speech or speakers. CVAT XML 1.1 and Label Studio JSON cover tested box subsets only; unsupported or lossy conversions are refused. Polygon comparison requires the implemented vertex representation. No model performance or annotator population is inferred.",
+  "modelCampaign": null,
+  "referenceMetrics": {
+    "boxF1": 1.0,
+    "boxIoU": 1.0,
+    "boxPrecision": 1.0,
+    "boxRecall": 1.0,
+    "classificationAccuracy": 1.0,
+    "classificationF1": 1.0,
+    "classificationPrecision": 1.0,
+    "classificationRecall": 1.0,
+    "keypointF1": 1.0,
+    "keypointNormalizedError": 0.0,
+    "keypointPrecision": 1.0,
+    "keypointRecall": 1.0
+  },
+  "schema": "vvdex.forge.annotation-certification-report/v1"
+}

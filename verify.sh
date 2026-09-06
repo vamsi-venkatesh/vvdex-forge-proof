@@ -92,7 +92,62 @@ print(f"(b) sealed-record recomputation: not available here | "
       f"{len(proj)} sanitized projection(s) published")
 if canonical:
     print("    UNEXPECTED: this package publishes no canonical record bodies.")
-sys.exit(1 if (missing or bad or extra or disagree or canonical) else 0)
+def verify_annotations(root):
+    from pathlib import Path
+    import hashlib, json, re
+    root = Path(root)
+    expected = {"vvdex.annotation." + name for name in (
+        "robot-video-1", "image-object-1", "text-labeling-1",
+        "structured-data-1", "audio-events-1")}
+    found = {p.name for p in (root / "exams").glob("vvdex.annotation.*")}
+    errors = []
+    if found != expected:
+        errors.append("annotation fixture inventory does not match the five-fixture release")
+    for env_id in sorted(found):
+        folder = root / "exams" / env_id
+        try:
+            docs = {name: json.loads((folder / name).read_text()) for name in (
+                "exam.public.json", "certification-receipt.json", "report.public.json",
+                "provenance.public.json", "digests.json")}
+            desc, receipt, report = (docs[name] for name in (
+                "exam.public.json", "certification-receipt.json", "report.public.json"))
+            fingerprint = desc["examFingerprint"]
+            if not isinstance(fingerprint, str) or not fingerprint or fingerprint == "unavailable":
+                raise ValueError("missing fingerprint")
+            for doc in (desc, receipt, report):
+                if doc["examId"] != env_id or doc["examFingerprint"] != fingerprint:
+                    raise ValueError("identity or fingerprint join failed")
+            if report["schema"] != "vvdex.forge.annotation-certification-report/v1":
+                raise ValueError("unexpected report schema")
+            if report["certificationState"] != "certified" or report["modelCampaign"] is not None:
+                raise ValueError("certification and model campaign boundary failed")
+            if report["annotation"] != desc["annotation"]:
+                raise ValueError("annotation descriptor join failed")
+            actual = hashlib.sha256((folder / "certification-receipt.json").read_bytes()).hexdigest()
+            if report["certificationReceiptSha256"] != actual:
+                raise ValueError("receipt digest join failed")
+            seal = receipt["certificationEvidenceDigest"]
+            if not isinstance(seal, str) or not re.fullmatch(r"[0-9a-f]{64}", seal):
+                raise ValueError("missing private certification bundle digest")
+            digests = docs["digests.json"]
+            present = {p.name for p in folder.iterdir() if p.is_file() and p.name != "digests.json"}
+            if set(digests) != present:
+                raise ValueError("adjacent digest inventory mismatch")
+            for name, want in digests.items():
+                target = folder / name
+                if Path(name).name != name or target.is_symlink() or not target.is_file():
+                    raise ValueError("unsafe digest path")
+                if hashlib.sha256(target.read_bytes()).hexdigest() != want:
+                    raise ValueError("adjacent artifact digest mismatch")
+        except (OSError, ValueError, KeyError, TypeError, AttributeError):
+            errors.append(env_id + ": annotation evidence verification failed")
+    return errors, len(found)
+
+annotation_errors, annotation_count = verify_annotations(".")
+print(f"(a) annotation certification: {annotation_count} fixtures | {len(annotation_errors)} errors")
+for error in annotation_errors:
+    print("    " + error)
+sys.exit(1 if (missing or bad or extra or disagree or canonical or annotation_errors) else 0)
 PY
 echo "OK: every file matches the manifest and every record digest agrees wherever it is stated."
 echo "Recomputing a digest from the sealed record it describes needs the canonical record; see VERIFICATION.md."

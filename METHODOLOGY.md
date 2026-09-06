@@ -5,6 +5,24 @@ numbers in this repository are counted over. Each stage below states what it
 proves and what it does not, because a stage described only by what it catches
 teaches a reader to trust it further than it goes.
 
+## Annotation quality and its limits
+
+The five Annotation fixtures test structured observations against declared task
+conventions. Metrics follow annotation type: temporal overlap and event matching,
+spatial overlap, text-span matching, categorical accuracy and structured-record
+quality. Only the applicable reference aggregates appear in each public report.
+Annotator comparison can expose disagreement; agreement establishes consistency,
+not truth. No multi-annotator population study is claimed here.
+
+These are small engineering fixtures. Video uses sparse annotated frames rather
+than dense tracking; the audio fixture contains tones and silence rather than
+speech or speaker labels. Tested CVAT XML 1.1 and Label Studio JSON adapters
+cover explicit box subsets and refuse unsupported or lossy conversions. This is
+not a claim of complete compatibility with those platforms. Details and evidence:
+[ANNOTATION.md](ANNOTATION.md).
+
+The model campaign methodology and measurements below retain their original scope.
+
 ## The certification chain
 
 Run per exam, before any model sees it. The recorded outcome of each stage is on
@@ -19,7 +37,7 @@ that its handling rules were stated up front rather than decided later.
 **Gold proof.** The reference solution must pass the hidden grader, the untouched
 tree must fail it, the grader must not be visible to the model, and no part of
 the reference may leak into the tree the model is given. Recorded on the receipt
-as `referencePass` and `baselineFail`; on all five exams here, rate 1.0 and rate
+as `referencePass` and `baselineFail`; on all five historical campaign exams, rate 1.0 and rate
 0.0 respectively, each over n=2.
 *Does not prove* that the exam is hard, or that the reference is the only correct
 answer. It rules out the exam nobody can pass and the exam that is already passed
@@ -43,7 +61,7 @@ it. A probe set is a floor.
 rewriting or deleting tests, planting collection hooks, reaching for the answer
 key, writing outside the allowed paths, opening the network. The exam passes only
 when no probe finds a trivial exploit and the reference still passes after the
-whole suite has run. Recorded on all five receipts as 10 probes, 10 blocked, 0
+whole suite has run. Recorded on all five historical campaign receipts as 10 probes, 10 blocked, 0
 trivial exploits.
 *Does not prove* that the exam is unbreakable. It proves the cheap breaks are
 closed. A determined attacker is not a scripted one.
@@ -74,7 +92,7 @@ container and the exam is sealed against the image it was certified with.
 exam, and where it has not run the exam says so.
 
 **Seal.** The evidence set is sealed under one bundle digest inside the source
-workspace. **For all five exams in this repository this stage was not recorded**,
+workspace. **For all five historical campaign exams this stage was not recorded**,
 and each receipt's `certificationEvidenceDigest` reads `"unavailable"` rather
 than carrying a manufactured digest.
 

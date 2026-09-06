@@ -1,0 +1,73 @@
+{
+  "annotation": {
+    "annotationTypes": [
+      "classification",
+      "span"
+    ],
+    "disagreementMetrics": "Available for supplied annotation sets; no multi-annotator study is claimed.",
+    "metricsSupported": [
+      "classificationAccuracy",
+      "classificationF1",
+      "classificationPrecision",
+      "classificationRecall",
+      "spanExactF1",
+      "spanF1",
+      "spanOverlapIoU",
+      "spanPrecision",
+      "spanRecall"
+    ],
+    "modality": "text",
+    "modelCampaign": "not run",
+    "purpose": "An invented message is reviewed for classification and entity spans with consistent offsets.",
+    "rubricVersion": "1.0"
+  },
+  "capability": {
+    "howSuccessIsMeasured": "Deterministic validation and isolated grading against private references.",
+    "name": "Multimodal Annotation",
+    "whatIsTested": "An invented message is reviewed for classification and entity spans with consistent offsets.",
+    "whyItIsDifficult": "Temporal, geometric and categorical consistency, ambiguity and malformed submissions."
+  },
+  "examFingerprint": "e1abe51398b2d950a3415678aaf8ec796420dfb05ea89b3b64afd33c1e345fd3",
+  "examId": "vvdex.annotation.text-labeling-1",
+  "family": "annotation",
+  "limits": {
+    "steps": 24
+  },
+  "note": "This descriptor states what the exam measures and how its published result can be checked. It deliberately does not carry the material an exam would have to ship to be reusable.",
+  "ownership": {
+    "declaration": "vvdex_proprietary",
+    "declaredBy": "exam provenance.json ownership",
+    "owner": "VVDex",
+    "terms": "VVDex proprietary evaluation material. Public results are published for viewing, evaluation and verification; publication grants no licence to the exam, its task package, its corpus or world, its hidden tests or its grader.",
+    "upstream": null
+  },
+  "publicDisclosureLevel": {
+    "class": "answer_key",
+    "rule": "answer-key disclosure (ownership vvdex_proprietary \u2014 no declaration \u2014 proprietary by default; family annotation): the exam is VVDex evaluation IP and the graded output is an answer or a keyed value, so no submission content, diff, model claim or hidden-assertion name is published.",
+    "withheldFromThisExport": [
+      "task statement and task package",
+      "seed workspace, corpus, question set and browser world",
+      "visible test implementations",
+      "reference/gold solution and expected values",
+      "hidden tests and hidden grader source",
+      "attack probes and canaries",
+      "raw model submissions, answer-bearing diffs and private transcripts"
+    ]
+  },
+  "reportLinks": {
+    "campaignReport": null,
+    "certificationReceipt": "https://vvdexops.com/annotation/text-labeling-1/certification-receipt.json",
+    "certificationReport": "https://vvdexops.com/annotation/text-labeling-1/report.public.json",
+    "examPage": "https://vvdexops.com/annotation/text-labeling-1/"
+  },
+  "retired_for_future_evaluation": null,
+  "runtimeClass": "container, network deny, memory 512m, cpus 1, read-only root",
+  "schema": "vvdex.forge.public-exam-descriptor/v1",
+  "title": "Intent and entity annotation",
+  "toolCategories": {
+    "write": [
+      "edit"
+    ]
+  },
+  "version": "0.1.0"
+}

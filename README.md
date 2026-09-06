@@ -20,6 +20,17 @@ are the ones the sealed records state. It is not a distribution of exams and it
 is not a release of the engine. Publishing a result grants no licence to the
 instrument that produced it.
 
+## Annotation certification evidence
+
+Forge also evaluates multimodal annotations: robotic video, image objects, text
+labels, structured records and audio events. Five certified fixtures are
+published as safe descriptors, provenance, certification receipts and aggregate
+reports. Read [ANNOTATION.md](ANNOTATION.md) for their scope and links.
+
+These are fixture certification results. They do not add attempts, model passes,
+or another model lane to the September 1–2 campaign below. The existing matrix
+and campaign arithmetic remain unchanged.
+
 ## 2. The evidence
 
 **5 certified evaluation environments · 5 families · 150 attempts · 148 graded rollouts · 93 certified passes**
@@ -110,7 +121,7 @@ Six stages, each recorded in `exams/<examId>/certification-receipt.json`, and
 each receipt names the evidence field every value came from in its own `sources`
 block.
 
-| Stage | Recorded on all five receipts |
+| Stage | Recorded on all five historical campaign receipts |
 | --- | --- |
 | Reference pass | rate 1.0, expected 1.0, over n=2 |
 | Baseline fail | rate 0.0, expected 0.0, over n=2 |
@@ -286,7 +297,7 @@ Only what the records and the receipts substantiate.
   95% Wilson interval of 72.3% to 100%, and where two lanes' intervals overlap,
   nothing here separates them.
 * **The receipts have unavailable fields.** `certificationEvidenceDigest` reads
-  `"unavailable"` on all five exams, because the seal stage was not recorded on
+  `"unavailable"` on all five historical campaign exams, because the seal stage was not recorded on
   these records and no digest was manufactured to fill the column. On
   `vvdex.browser.order-desk-1` and `vvdex.harness.fault-recovery-1`,
   `certificationVersion` and `certifiedAt` read `"unavailable"` as well.

@@ -1,0 +1,52 @@
+{
+  "agreementMetrics": null,
+  "annotation": {
+    "annotationTypes": [
+      "pair",
+      "row"
+    ],
+    "disagreementMetrics": "Available for supplied annotation sets; no multi-annotator study is claimed.",
+    "metricsSupported": [
+      "pairAccuracy",
+      "pairF1",
+      "pairPrecision",
+      "pairRecall",
+      "rowAccuracy",
+      "rowF1",
+      "rowPrecision",
+      "rowRecall"
+    ],
+    "modality": "structured",
+    "modelCampaign": "not run",
+    "purpose": "Invented tabular records are reviewed for normalization, validity, duplicates, anomalies and relationships.",
+    "rubricVersion": "1.0"
+  },
+  "assetSource": null,
+  "certificationReceiptSha256": "a47956d69ede7d86483f8fbfc8180b93c756e3cfca7824300bd4b3923cc0988d",
+  "certificationState": "certified",
+  "disclosure": "Aggregate certification evidence only; reference annotations and reusable evaluation material withheld.",
+  "errorClasses": [
+    "malformed input",
+    "schema mismatch",
+    "out of bounds",
+    "missing annotation",
+    "temporal conflict",
+    "inconsistent tracking",
+    "reference mismatch"
+  ],
+  "examFingerprint": "5d6b3708dba2cdf08218a44997058413d0a3aae738299bce8c346bb2b309fc28",
+  "examId": "vvdex.annotation.structured-data-1",
+  "limitations": "Small constructed engineering fixtures, not a production dataset or professional annotation engagement. Video uses sparse frame boxes, not dense tracking. Audio contains tones and silence, not speech or speakers. CVAT XML 1.1 and Label Studio JSON cover tested box subsets only; unsupported or lossy conversions are refused. Polygon comparison requires the implemented vertex representation. No model performance or annotator population is inferred.",
+  "modelCampaign": null,
+  "referenceMetrics": {
+    "pairAccuracy": 1.0,
+    "pairF1": 1.0,
+    "pairPrecision": 1.0,
+    "pairRecall": 1.0,
+    "rowAccuracy": 1.0,
+    "rowF1": 1.0,
+    "rowPrecision": 1.0,
+    "rowRecall": 1.0
+  },
+  "schema": "vvdex.forge.annotation-certification-report/v1"
+}

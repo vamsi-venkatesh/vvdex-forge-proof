@@ -4,12 +4,28 @@ Two separate problems. Keeping the taker inside the exam, and keeping the exam's
 answers out of the world. This document states how each is handled, what is
 withheld, and where a verifier's reach ends.
 
+## Annotation publication boundary
+
+Public annotation evidence excludes reference annotations, hidden grading logic,
+raw submissions, exact rubrics and adversarial payloads. Missing asset ownership
+or licensing leaves an export private. Asset reuse rights and ownership of the
+VVDex evaluation materials are separate: the robotic video source retains its
+stated CC BY-SA 4.0 terms, while publishing a descriptor grants no licence to the
+private exam. This package links the source; it does not redistribute the video.
+
+The offline verifier checks the public annotation files and their joins. It
+cannot inspect the private certification bundle merely because its digest is
+published, nor establish that the hidden reference is correct. See
+[ANNOTATION.md](ANNOTATION.md) and [VERIFICATION.md](VERIFICATION.md).
+
+The dated model campaign containment evidence below is not an annotation model run.
+
 ## Isolation and containment
 
 **The agent box.** A rollout runs in a container built from the exam's frozen
-tree. Every public contract in this repository declares the same policy shape:
+tree. Each historical campaign exam declares the same policy shape:
 
-| Field | Value on all five exams |
+| Field | Value on all five historical campaign exams |
 | --- | --- |
 | `freeze.networkPolicy` | `deny` |
 | `freeze.fsPolicy` | `agent-tree-only` |
@@ -196,7 +212,8 @@ Stated plainly, because the list is the honest boundary of this package.
   the exam and it is not shipped here. The hash names it; it does not let you
   recompute it.
 - **The seal.** `certificationEvidenceDigest` reads `"unavailable"` on all five
-  exams. There is no bundle digest to check, and none was invented.
+  historical campaign exams. Those receipts have no bundle digest to check;
+  the annotation receipts separately identify their private certification bundles.
 
 ## Responsible disclosure
 

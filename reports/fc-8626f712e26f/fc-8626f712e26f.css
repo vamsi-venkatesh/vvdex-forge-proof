@@ -1,4 +1,11 @@
 
+.annotation-measurement { max-width: 100%; min-width: 0; overflow-wrap: anywhere; padding: 16px 0; }
+.annotation-summary { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 140px), 1fr)); gap: 12px; }
+.annotation-summary > * { min-width: 0; }
+.annotation-metrics { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr)); gap: 8px 20px; }
+.annotation-metrics > div { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 12px; min-width: 0; border-bottom: 1px solid var(--line); padding: 8px 0; }
+.annotation-metrics dt { min-width: 0; overflow-wrap: anywhere; }
+.annotation-metrics dd { margin: 0; }
 :root {
   /* IRON & FIRE (2026-09-01): the report wears the instrument's identity —
      the same tokens as vvdexops.com. One chroma: the ember. */

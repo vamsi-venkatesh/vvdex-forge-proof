@@ -27,6 +27,21 @@ hidden-test, reference, answer-key or other evaluation internals.
 So the bytes stay in the Forge, and this repository publishes the digest and a
 sanitized projection instead.
 
+## Annotation report verification
+
+Run `./verify.sh` from the repository root. In addition to the existing manifest
+and campaign record checks, it requires the five annotation fixture exports and
+checks each descriptor, receipt and report against the same exam identity and
+fingerprint. It recomputes the receipt SHA-256 against the report's
+`certificationReceiptSha256`, and every adjacent file against `digests.json`.
+The report must state `certificationState: certified` and `modelCampaign: null`.
+
+The receipt's `certificationEvidenceDigest` identifies the private sealed bundle.
+Its presence does not let a public verifier reproduce that bundle or rerun the
+hidden grader. File hashes detect changed artifacts and cross-file mismatches;
+they are not a signature or an independent assessment of reference quality.
+See [ANNOTATION.md](ANNOTATION.md) for the five artifact directories.
+
 ## 1. A sealed record's digest
 
 Each record ships as three files in `reports/<campaignId>/records/`:

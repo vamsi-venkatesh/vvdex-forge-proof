@@ -1,0 +1,78 @@
+{
+  "agreementMetrics": null,
+  "annotation": {
+    "annotationTypes": [
+      "box",
+      "classification",
+      "event",
+      "segment"
+    ],
+    "disagreementMetrics": "Available for supplied annotation sets; no multi-annotator study is claimed.",
+    "metricsSupported": [
+      "boxF1",
+      "boxIoU",
+      "boxPrecision",
+      "boxRecall",
+      "classificationAccuracy",
+      "classificationF1",
+      "classificationPrecision",
+      "classificationRecall",
+      "eventF1",
+      "eventPrecision",
+      "eventRecall",
+      "eventTemporalIoU",
+      "segmentF1",
+      "segmentPrecision",
+      "segmentRecall",
+      "segmentTemporalIoU",
+      "trackingConsistency"
+    ],
+    "modality": "video",
+    "modelCampaign": "not run",
+    "purpose": "A robot-catching video is reviewed for temporal events, frame-level object boxes, track identity and occlusion.",
+    "rubricVersion": "1.0"
+  },
+  "assetSource": {
+    "creator": "Z22",
+    "date": "2012-03-19",
+    "license": "CC-BY-SA-4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "url": "https://commons.wikimedia.org/wiki/File:High-speed_catching_system.webm"
+  },
+  "certificationReceiptSha256": "b6c59b4b3c65581f222eb4c72a8fa61c263dbad4ee15d08232393b74f5870c10",
+  "certificationState": "certified",
+  "disclosure": "Aggregate certification evidence only; reference annotations and reusable evaluation material withheld.",
+  "errorClasses": [
+    "malformed input",
+    "schema mismatch",
+    "out of bounds",
+    "missing annotation",
+    "temporal conflict",
+    "inconsistent tracking",
+    "reference mismatch"
+  ],
+  "examFingerprint": "c3b4773c375c10ad989357bb179cffd62151eccd2a58b52254609a54d434be33",
+  "examId": "vvdex.annotation.robot-video-1",
+  "limitations": "Small constructed engineering fixtures, not a production dataset or professional annotation engagement. Video uses sparse frame boxes, not dense tracking. Audio contains tones and silence, not speech or speakers. CVAT XML 1.1 and Label Studio JSON cover tested box subsets only; unsupported or lossy conversions are refused. Polygon comparison requires the implemented vertex representation. No model performance or annotator population is inferred.",
+  "modelCampaign": null,
+  "referenceMetrics": {
+    "boxF1": 1.0,
+    "boxIoU": 1.0,
+    "boxPrecision": 1.0,
+    "boxRecall": 1.0,
+    "classificationAccuracy": 1.0,
+    "classificationF1": 1.0,
+    "classificationPrecision": 1.0,
+    "classificationRecall": 1.0,
+    "eventF1": 1.0,
+    "eventPrecision": 1.0,
+    "eventRecall": 1.0,
+    "eventTemporalIoU": 1.0,
+    "segmentF1": 1.0,
+    "segmentPrecision": 1.0,
+    "segmentRecall": 1.0,
+    "segmentTemporalIoU": 1.0,
+    "trackingConsistency": 1.0
+  },
+  "schema": "vvdex.forge.annotation-certification-report/v1"
+}

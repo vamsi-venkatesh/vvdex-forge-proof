@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="dark">
+<title>Intent and entity annotation · VVDex Forge</title>
+<meta name="description" content="An invented message is reviewed for classification and entity spans with consistent offsets.">
+<link rel="canonical" href="https://vvdexops.com/annotation/text-labeling-1/">
+<link rel="icon" href="/favicon.svg?v=3" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="stylesheet" href="/app.css?v=5">
+</head>
+<body>
+<a class="skip" href="#main">Skip to the content</a>
+<div class="app doc">
+  <header class="bar">
+    <a class="brand" href="/"><svg class="punch" viewBox="0 0 40 44" aria-hidden="true" focusable="false"><path class="mk-rule" stroke-width="1.6" d="M20 2 37.32 12v20L20 42 2.68 32V12Z"/><path class="mk-face" d="M30 36H80V47H64L62 60H74L78 72H22L26 60H38L36 47H30L8 43Z" transform="translate(5.35 4.4) scale(.333)"/></svg><span class="word">VVDex <i>Forge</i></span></a>
+    <div class="stat"><span class="lamp" aria-hidden="true"></span>
+      <span>Environment certification · no model campaign</span></div>
+  </header>
+  <nav class="rail" aria-label="Documents">
+    <a href="/#overview"><span class="k">&larr;</span>Instrument</a>
+    <a href="/methodology/"><span class="k">&middot;</span>Methodology</a>
+    <a href="/catalog/"><span class="k">&middot;</span>Catalog</a>
+    <a href="/featured/"><span class="k">&middot;</span>Featured exams</a>
+    <a class="on" aria-current="page" href="/annotation/"><span class="k">&middot;</span>Annotation</a>
+    <a href="/reports/"><span class="k">&middot;</span>Reports</a>
+    <a href="/integrity/"><span class="k">&middot;</span>Integrity</a>
+    <a href="/ledger-verify/"><span class="k">&middot;</span>Ledger</a>
+    <a href="/terms/"><span class="k">&middot;</span>Terms</a>
+    <a href="/connect/"><span class="k">&middot;</span>Connect</a>
+  </nav>
+<main class="work docpage" id="main">
+<section class="mast"><div class="wrap">
+<p class="kicker">Multimodal Annotation · text</p>
+<h1>Intent and entity annotation</h1><p class="lede">An invented message is reviewed for classification and entity spans with consistent offsets.</p>
+<p><strong>Environment certification: certified.</strong> No model campaign has been run.</p>
+</div></section><div class="wrap">
+<h2>What is reviewed</h2><p>Annotation types: classification, span. Rubric version 1.0.</p>
+<p>Constructed project fixture. No customer dataset or professional annotation engagement is claimed.</p>
+<h2>Certification evidence</h2><ul>
+<li>Empty baseline: fail; observed pass rate 0.0, 2 independent seeds.</li>
+<li>Private reference: pass; observed pass rate 1.0, 2 independent seeds.</li>
+<li>Controls: 19 cases; distinguished: True.</li>
+<li>Attacks: 9 of 9 blocked; trivial exploits: 0.</li>
+</ul><p>These are environment acceptance checks, not model performance scores.</p>
+<h2>Reference grader metrics</h2><p>Recorded aggregate results of the private reference check. Exact labels, timestamps and geometry are withheld.</p>
+<div class="tablewrap"><table><thead><tr><th>Metric</th><th>Observed value</th></tr></thead><tbody><tr><th scope="row">classificationAccuracy</th><td>1.0</td></tr><tr><th scope="row">classificationF1</th><td>1.0</td></tr><tr><th scope="row">classificationPrecision</th><td>1.0</td></tr><tr><th scope="row">classificationRecall</th><td>1.0</td></tr><tr><th scope="row">spanExactF1</th><td>1.0</td></tr><tr><th scope="row">spanF1</th><td>1.0</td></tr><tr><th scope="row">spanOverlapIoU</th><td>1.0</td></tr><tr><th scope="row">spanPrecision</th><td>1.0</td></tr><tr><th scope="row">spanRecall</th><td>1.0</td></tr></tbody></table></div>
+<h2>Agreement and validation</h2><p>Submitted annotation sets can be compared for agreement, disagreement, ambiguity, missing and invalid annotations. Disagreement alone is not a failed reference grade. No multi-annotator study was run for this release; agreement study metrics are N/A.</p>
+<p>Validation covers malformed input, schema, bounds and modality-specific consistency. Error-class details and supported capabilities are documented in the report JSON.</p>
+<h2>Runtime and isolation</h2><pre>{
+  &quot;fsPolicy&quot;: &quot;agent-tree-only&quot;,
+  &quot;imageDigest&quot;: &quot;sha256:679b36225a1f83238efba8c71b9cde3c24caaeacc9b682ae92819cb55eec328f&quot;,
+  &quot;networkPolicy&quot;: &quot;deny&quot;,
+  &quot;resourceLimits&quot;: {
+    &quot;cpus&quot;: &quot;1&quot;,
+    &quot;memory&quot;: &quot;512m&quot;,
+    &quot;network&quot;: &quot;none&quot;,
+    &quot;pids&quot;: 128,
+    &quot;readOnlyRoot&quot;: true,
+    &quot;timeoutS&quot;: 120
+  }
+}</pre>
+<h2>Verify this evidence</h2><p class="mono">vvdex.annotation.text-labeling-1</p><p>Environment fingerprint:</p><pre>e1abe51398b2d950a3415678aaf8ec796420dfb05ea89b3b64afd33c1e345fd3</pre>
+<p>Certification evidence digest:</p><pre>0f97b9d0560aeb01635959125ac2e126ab1103e0087113deadcb7b4ed5ace282</pre>
+<p><a href="/annotation/text-labeling-1/exam.public.json">Public descriptor</a> · <a href="/annotation/text-labeling-1/certification-receipt.json">Certification receipt</a> · <a href="/annotation/text-labeling-1/provenance.public.json">Provenance</a> · <a href="/annotation/text-labeling-1/report.public.json">Report JSON</a> · <a href="/annotation/text-labeling-1/digests.json">File digests</a> · <a href="/annotation/text-labeling-1/VERIFY.md">Verification instructions</a></p>
+<h2>Limitations and ownership</h2><p>Small constructed engineering fixtures, not a production dataset or professional annotation engagement. Video uses sparse frame boxes, not dense tracking. Audio contains tones and silence, not speech or speakers. CVAT XML 1.1 and Label Studio JSON cover tested box subsets only; unsupported or lossy conversions are refused. Polygon comparison requires the implemented vertex representation. No model performance or annotator population is inferred.</p>
+<p>Public proof demonstrates the result. The reusable evaluation instrument remains private. <a href="/terms/">Terms and ownership</a>.</p>
+<p><a href="/annotation/">All five modalities</a></p></div>
+</main>
+  <footer class="foot">
+    <span class="grow"><b>VVDex Forge</b> — reproducible exams for AI agents. Built and operated by
+    <a href="https://vamsivenkatesh.com">Vamsi Venkatesh</a>.</span>
+    <span>docs: <a href="/methodology/">methodology</a> · <a href="/catalog/">catalog</a> ·
+    <a href="/featured/">featured</a> · <a href="/reports/">reports</a> · <a href="/integrity/">integrity</a> ·
+    <a href="/ledger-verify/">ledger</a> · <a href="/evals/">/evals</a></span>
+    <span>&copy; VVDex. All rights reserved. VVDex-authored evaluation materials remain proprietary; publication grants no open-source licence. Third-party open source keeps its own licence. <a href="/terms/">Terms &amp; ownership</a>.</span>
+  </footer>
+</div>
+</body>
+</html>

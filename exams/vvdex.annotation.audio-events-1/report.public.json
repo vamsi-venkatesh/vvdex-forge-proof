@@ -1,0 +1,61 @@
+{
+  "agreementMetrics": null,
+  "annotation": {
+    "annotationTypes": [
+      "classification",
+      "event",
+      "segment"
+    ],
+    "disagreementMetrics": "Available for supplied annotation sets; no multi-annotator study is claimed.",
+    "metricsSupported": [
+      "classificationAccuracy",
+      "classificationF1",
+      "classificationPrecision",
+      "classificationRecall",
+      "eventF1",
+      "eventPrecision",
+      "eventRecall",
+      "eventTemporalIoU",
+      "segmentF1",
+      "segmentPrecision",
+      "segmentRecall",
+      "segmentTemporalIoU"
+    ],
+    "modality": "audio",
+    "modelCampaign": "not run",
+    "purpose": "Constructed non-speech audio is reviewed for events, temporal segments, silence and category consistency.",
+    "rubricVersion": "1.0"
+  },
+  "assetSource": null,
+  "certificationReceiptSha256": "fb47ef6a8c74b8f8f11767bc58c4a12b14ee25f06ff93dcdc2e13d5c42ed0b38",
+  "certificationState": "certified",
+  "disclosure": "Aggregate certification evidence only; reference annotations and reusable evaluation material withheld.",
+  "errorClasses": [
+    "malformed input",
+    "schema mismatch",
+    "out of bounds",
+    "missing annotation",
+    "temporal conflict",
+    "inconsistent tracking",
+    "reference mismatch"
+  ],
+  "examFingerprint": "7e749a2ffb885355e770a09007a7b2465edf1d8a50768441b8872ff9f951ed5e",
+  "examId": "vvdex.annotation.audio-events-1",
+  "limitations": "Small constructed engineering fixtures, not a production dataset or professional annotation engagement. Video uses sparse frame boxes, not dense tracking. Audio contains tones and silence, not speech or speakers. CVAT XML 1.1 and Label Studio JSON cover tested box subsets only; unsupported or lossy conversions are refused. Polygon comparison requires the implemented vertex representation. No model performance or annotator population is inferred.",
+  "modelCampaign": null,
+  "referenceMetrics": {
+    "classificationAccuracy": 1.0,
+    "classificationF1": 1.0,
+    "classificationPrecision": 1.0,
+    "classificationRecall": 1.0,
+    "eventF1": 1.0,
+    "eventPrecision": 1.0,
+    "eventRecall": 1.0,
+    "eventTemporalIoU": 1.0,
+    "segmentF1": 1.0,
+    "segmentPrecision": 1.0,
+    "segmentRecall": 1.0,
+    "segmentTemporalIoU": 1.0
+  },
+  "schema": "vvdex.forge.annotation-certification-report/v1"
+}

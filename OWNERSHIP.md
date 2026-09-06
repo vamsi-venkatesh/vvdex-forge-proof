@@ -8,6 +8,7 @@ ownership registry; not typed.
 
 | Path | Owner | Terms |
 | --- | --- | --- |
+| `ANNOTATION.md` | VVDex | VVDex proprietary; published for viewing, evaluation and verification |
 | `ARCHITECTURE.md` | VVDex | VVDex proprietary; published for viewing, evaluation and verification |
 | `CLAIMS.md` | VVDex | VVDex proprietary; published for viewing, evaluation and verification |
 | `MANIFEST.json` | VVDex | VVDex proprietary; published for viewing, evaluation and verification |
@@ -31,6 +32,41 @@ ownership registry; not typed.
 | `exams/public.swe.martinblech-xmltodict-issue-257/contract.public.json` | VVDex | VVDex proprietary; a proof descriptor, not the exam |
 | `exams/public.swe.martinblech-xmltodict-issue-257/exam.public.json` | VVDex | VVDex proprietary; a proof descriptor, not the exam |
 | `exams/public.swe.martinblech-xmltodict-issue-257/provenance.public.json` | VVDex | VVDex proprietary; a proof descriptor, not the exam |
+| `exams/vvdex.annotation.audio-events-1/VERIFY.md` | VVDex | VVDex proprietary; a proof descriptor, not the exam |
+| `exams/vvdex.annotation.audio-events-1/certification-receipt.json` | VVDex | VVDex proprietary; a proof descriptor, not the exam |
+| `exams/vvdex.annotation.audio-events-1/digests.json` | VVDex | VVDex proprietary; a proof descriptor, not the exam |
+| `exams/vvdex.annotation.audio-events-1/exam.public.json` | VVDex | VVDex proprietary; a proof descriptor, not the exam |
+| `exams/vvdex.annotation.audio-events-1/index.html` | VVDex | VVDex proprietary; a proof descriptor, not the exam |
+| `exams/vvdex.annotation.audio-events-1/provenance.public.json` | VVDex | VVDex proprietary; a proof descriptor, not the exam |
+| `exams/vvdex.annotation.audio-events-1/report.public.json` | VVDex | VVDex proprietary; a proof descriptor, not the exam |
+| `exams/vvdex.annotation.image-object-1/VERIFY.md` | VVDex | VVDex proprietary; a proof descriptor, not the exam |
+| `exams/vvdex.annotation.image-object-1/certification-receipt.json` | VVDex | VVDex proprietary; a proof descriptor, not the exam |
+| `exams/vvdex.annotation.image-object-1/digests.json` | VVDex | VVDex proprietary; a proof descriptor, not the exam |
+| `exams/vvdex.annotation.image-object-1/exam.public.json` | VVDex | VVDex proprietary; a proof descriptor, not the exam |
+| `exams/vvdex.annotation.image-object-1/index.html` | VVDex | VVDex proprietary; a proof descriptor, not the exam |
+| `exams/vvdex.annotation.image-object-1/provenance.public.json` | VVDex | VVDex proprietary; a proof descriptor, not the exam |
+| `exams/vvdex.annotation.image-object-1/report.public.json` | VVDex | VVDex proprietary; a proof descriptor, not the exam |
+| `exams/vvdex.annotation.robot-video-1/VERIFY.md` | VVDex | VVDex proprietary; a proof descriptor, not the exam |
+| `exams/vvdex.annotation.robot-video-1/certification-receipt.json` | VVDex | VVDex proprietary; a proof descriptor, not the exam |
+| `exams/vvdex.annotation.robot-video-1/digests.json` | VVDex | VVDex proprietary; a proof descriptor, not the exam |
+| `exams/vvdex.annotation.robot-video-1/exam.public.json` | VVDex | VVDex proprietary; a proof descriptor, not the exam |
+| `exams/vvdex.annotation.robot-video-1/index.html` | VVDex | VVDex proprietary; a proof descriptor, not the exam |
+| `exams/vvdex.annotation.robot-video-1/provenance.public.json` | VVDex | VVDex proprietary; a proof descriptor, not the exam |
+| `exams/vvdex.annotation.robot-video-1/report.public.json` | VVDex | VVDex proprietary; a proof descriptor, not the exam |
+| `exams/vvdex.annotation.structured-data-1/VERIFY.md` | VVDex | VVDex proprietary; a proof descriptor, not the exam |
+| `exams/vvdex.annotation.structured-data-1/certification-receipt.json` | VVDex | VVDex proprietary; a proof descriptor, not the exam |
+| `exams/vvdex.annotation.structured-data-1/digests.json` | VVDex | VVDex proprietary; a proof descriptor, not the exam |
+| `exams/vvdex.annotation.structured-data-1/exam.public.json` | VVDex | VVDex proprietary; a proof descriptor, not the exam |
+| `exams/vvdex.annotation.structured-data-1/index.html` | VVDex | VVDex proprietary; a proof descriptor, not the exam |
+| `exams/vvdex.annotation.structured-data-1/provenance.public.json` | VVDex | VVDex proprietary; a proof descriptor, not the exam |
+| `exams/vvdex.annotation.structured-data-1/report.public.json` | VVDex | VVDex proprietary; a proof descriptor, not the exam |
+| `exams/vvdex.annotation.text-labeling-1/VERIFY.md` | VVDex | VVDex proprietary; a proof descriptor, not the exam |
+| `exams/vvdex.annotation.text-labeling-1/certification-receipt.json` | VVDex | VVDex proprietary; a proof descriptor, not the exam |
+| `exams/vvdex.annotation.text-labeling-1/digests.json` | VVDex | VVDex proprietary; a proof descriptor, not the exam |
+| `exams/vvdex.annotation.text-labeling-1/exam.public.json` | VVDex | VVDex proprietary; a proof descriptor, not the exam |
+| `exams/vvdex.annotation.text-labeling-1/index.html` | VVDex | VVDex proprietary; a proof descriptor, not the exam |
+| `exams/vvdex.annotation.text-labeling-1/provenance.public.json` | VVDex | VVDex proprietary; a proof descriptor, not the exam |
+| `exams/vvdex.annotation.text-labeling-1/report.public.json` | VVDex | VVDex proprietary; a proof descriptor, not the exam |
 | `exams/vvdex.browser.order-desk-1/VERIFY.md` | VVDex | VVDex proprietary; a proof descriptor, not the exam |
 | `exams/vvdex.browser.order-desk-1/certification-receipt.json` | VVDex | VVDex proprietary; a proof descriptor, not the exam |
 | `exams/vvdex.browser.order-desk-1/exam.public.json` | VVDex | VVDex proprietary; a proof descriptor, not the exam |

@@ -1,0 +1,74 @@
+{
+  "attackProbes": {
+    "blocked": 9,
+    "passedForPromotion": true,
+    "probes": 9,
+    "recorded": true,
+    "trivialExploits": 0
+  },
+  "baselineFail": {
+    "expected": 0.0,
+    "n": 2,
+    "rate": 0.0,
+    "recorded": true
+  },
+  "certificationEvidenceDigest": "3792d5564b24693e88dc18df97eb13e485bbb63ecc5950209ab92601e06600ae",
+  "certificationVersion": "vvdex.certification-receipts/v1",
+  "certifiedAt": "2026-09-06T00:01:41.535338+00:00",
+  "disclosure": {
+    "class": "answer_key",
+    "rule": "answer-key disclosure (ownership vvdex_proprietary \u2014 no declaration \u2014 proprietary by default; family annotation): the exam is VVDex evaluation IP and the graded output is an answer or a keyed value, so no submission content, diff, model claim or hidden-assertion name is published."
+  },
+  "examFingerprint": "7e749a2ffb885355e770a09007a7b2465edf1d8a50768441b8872ff9f951ed5e",
+  "examId": "vvdex.annotation.audio-events-1",
+  "examTitle": "Audio event and silence annotation",
+  "examVersion": "0.1.0",
+  "family": "annotation",
+  "frozenTreeSha256": "fd755a7a69079e440f6e4ba71cadda11e693b01615350ea754743295ebd0057b",
+  "graderControls": {
+    "cases": 19,
+    "distinguished": true,
+    "recorded": true
+  },
+  "isolationNote": "Certifying runtime is LocalDockerRuntime on Colima (Linux VM, virtiofs). Isolation is from the Mac host except explicit bind-mounts of the work directory under $HOME/.vvdex/env-work. $HOME, docker.sock and host secrets are not mounted. Runtime network is --network=none.",
+  "note": "Every field above is copied from evidence recorded before this export; a field the recorded evidence does not substantiate is \"unavailable\". No reference solution, hidden test or control-case content is carried here.",
+  "referencePass": {
+    "expected": 1.0,
+    "n": 2,
+    "rate": 1.0,
+    "recorded": true
+  },
+  "retired_for_future_evaluation": null,
+  "runtime": {
+    "fsPolicy": "agent-tree-only",
+    "imageDigest": "sha256:679b36225a1f83238efba8c71b9cde3c24caaeacc9b682ae92819cb55eec328f",
+    "networkPolicy": "deny",
+    "resourceLimits": {
+      "cpus": "1",
+      "memory": "512m",
+      "network": "none",
+      "pids": 128,
+      "readOnlyRoot": true,
+      "timeoutS": 120
+    }
+  },
+  "schema": "vvdex.forge.certification-receipt/v1",
+  "sources": {
+    "attackProbes": "certification artifacts:attack",
+    "baselineFail": "certification artifacts:baselineFails",
+    "certificationEvidenceDigest": "certification artifacts:seal.bundleSha256",
+    "certificationVersion": "certification/manifest.json:kind",
+    "certifiedAt": "certification/manifest.json:packagedAt",
+    "disclosure": "vvdex_env.disclosure.DISCLOSURE_POLICY (exam family)",
+    "examFingerprint": "contract.json:fingerprint",
+    "examId": "contract.json:identity",
+    "examTitle": "contract.json:identity",
+    "examVersion": "contract.json:identity",
+    "family": "contract.json",
+    "frozenTreeSha256": "freeze/fingerprint.json",
+    "graderControls": "certification artifacts:graderControls",
+    "isolationNote": "freeze/fingerprint.json",
+    "referencePass": "certification artifacts:goldPasses",
+    "runtime": "certification artifacts:runtime + contract.json:freeze"
+  }
+}

@@ -9,6 +9,19 @@ are relative to the repository root; `<current>` is
 whole matrix from `<current>summary.json` and `<current>campaign.json` and fails
 on any difference.
 
+## Annotation release claims
+
+Annotation certification is separate from the historical model campaign counts.
+
+| Claim | Evidence |
+| --- | --- |
+| Five fixtures in one Annotation family | The five `exams/vvdex.annotation.*/exam.public.json` descriptors; `family` and `annotation.modality` |
+| Each fixture is certified | Adjacent `report.public.json` `certificationState`, joined to `certification-receipt.json` by fingerprint and receipt SHA-256 |
+| No annotation model campaign is claimed | Each annotation report has `modelCampaign: null`; no annotation entry is added to campaign arithmetic |
+| Applicable reference metrics | Each annotation report's `referenceMetrics`; these describe reference certification, not a model or annotator population |
+| Asset provenance and reuse terms | `provenance.public.json` `assetSource` and the report's matching source attribution |
+| Published file integrity | Adjacent `digests.json` and root `MANIFEST.json`, recomputed by `./verify.sh` |
+
 ## The campaign headline and totals
 
 | Number | Where it is stated | Source |
@@ -32,7 +45,7 @@ cross-checked against `campaign.json` `cells["<lane>|<envId>"].certifiedCounts`.
 
 | Lane | Cells as published | Source fields |
 | --- | --- | --- |
-| `cli/codex` | 10/10 on all five exams, 50 of 50 countable | `passes`, `graded`, `laneErrors` per cell; `campaign.json` `counts.lanes["cli/codex"].certified_pass` = 50 |
+| `cli/codex` | 10/10 on all five historical campaign exams, 50 of 50 countable | `passes`, `graded`, `laneErrors` per cell; `campaign.json` `counts.lanes["cli/codex"].certified_pass` = 50 |
 | `cli/claude-sonnet` | 9/10 SWE, 1/10 RAG, 10/10 Memory, 10/10 Harness, 10/10 Browser, 40 of 50 | same fields; lane total 40 |
 | `codestral-latest` | 0/10 SWE, 0/9 + 1 lane error RAG, 2/10 Memory, 0/10 Harness, 1/9 + 1 lane error Browser, 3 of 48 | same fields; lane total 3, `lane_error` 2 |
 
@@ -51,19 +64,19 @@ cross-checked against `campaign.json` `cells["<lane>|<envId>"].certifiedCounts`.
 | `fc-8626f712e26f`, 8 certified passes | `reports/fc-8626f712e26f/summary.json` `counts.certifiedPasses` |
 | `fc-8626f712e26f` carries no lane intervals | that file's `lanes[].rateInterval95` is `null` on all four lanes |
 
-## The certification receipts
+## The historical campaign certification receipts
 
 All fields below are in `exams/<examId>/certification-receipt.json`, and each
 receipt's own `sources` block names the evidence field it was copied from.
 
 | Number | Value | Field |
 | --- | --- | --- |
-| Reference pass | rate 1.0, expected 1.0, n=2, on all five exams | `referencePass` |
-| Baseline fail | rate 0.0, expected 0.0, n=2, on all five exams | `baselineFail` |
+| Reference pass | rate 1.0, expected 1.0, n=2, on all five historical campaign exams | `referencePass` |
+| Baseline fail | rate 0.0, expected 0.0, n=2, on all five historical campaign exams | `baselineFail` |
 | Grader controls | 7 cases on `public.swe.martinblech-xmltodict-issue-257`, `vvdex.knowledge.grounded-rag-1`, `vvdex.knowledge.memory-fact-update-1`; 9 on `vvdex.browser.order-desk-1`; 12 on `vvdex.harness.fault-recovery-1`; `distinguished: true` on all five | `graderControls.cases`, `graderControls.distinguished` |
-| Attack probes | 10 probes, 10 blocked, 0 trivial exploits, on all five exams | `attackProbes.probes`, `.blocked`, `.trivialExploits` |
+| Attack probes | 10 probes, 10 blocked, 0 trivial exploits, on all five historical campaign exams | `attackProbes.probes`, `.blocked`, `.trivialExploits` |
 | Runtime limits | `cpus: "1"`, `memory: 512m`, `pids: 128`, `network: none`, `readOnlyRoot: true`, `timeoutS: 120` | `runtime.resourceLimits` |
-| Unavailable fields | `certificationEvidenceDigest` on all five; `certificationVersion` and `certifiedAt` on `vvdex.browser.order-desk-1` and `vvdex.harness.fault-recovery-1` | those keys, whose value is the string `"unavailable"` |
+| Unavailable fields | `certificationEvidenceDigest` on all five historical campaign exams; `certificationVersion` and `certifiedAt` on `vvdex.browser.order-desk-1` and `vvdex.harness.fault-recovery-1` | those keys, whose value is the string `"unavailable"` |
 
 ## The records and the joins
 
@@ -78,7 +91,7 @@ receipt's own `sources` block names the evidence field it was copied from.
 | Sixty-four `0` characters in the zeroed digest slot | METHODOLOGY, VERIFICATION; the serialization convention a holder of the sealed record hashes against. It is not exercised in this repository, which publishes no canonical body |
 | `lowN: false` per lane | `results.byModel[].lowN` in each of the five `<current>records/*.record.public.json`. `lowNThreshold: 10` is a sealed-record field, readable by a holder, not published here |
 | The browser exam's ten advertised tools | `<current>fc-d89e429d2781.html` and the campaign PDF, the record's `limits.advertisedTools` as rendered |
-| 154 files with a SHA-256 | `MANIFEST.json` `files`, checked by `./verify.sh`, which prints the same count |
+| Every published file with a SHA-256 | `MANIFEST.json` `files`, checked by `./verify.sh`, which prints the same count |
 
 ## The statistics
 

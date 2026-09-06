@@ -64,8 +64,7 @@ real value; what is not is named below and is not claimed.</p>
 <div class="caveat certwarn">
   <p><strong>Certification metadata is not included in this report package for:</strong></p>
   <ul><li>sealed evidence bundle</li></ul>
-  <p>Benchmark results remain valid as run evidence; the pillar(s) above are not substantiated by this
-  document and this report does not claim them.</p>
+  <p>Benchmark results remain valid as run evidence; the pillar(s) above are not substantiated by this document and this report does not claim them.</p>
 </div>
 <p class="lead">
   What the package does carry: the exam fingerprint below is the contract digest this run
@@ -145,14 +144,11 @@ rollouts only.</p>
 </table></div>
 <h4>Deepest stage reached</h4>
 <div class="scroll"><table>
-  <thead><tr><th>Model</th><th>Deepest (any rollout)</th><th>Typical (most rollouts)</th>
+  <thead><tr><th>Model</th><th>Deepest (any attempt)</th><th>Typical (most attempts)</th>
     <th>Hidden-test passes</th><th>Not graded</th></tr></thead>
   <tbody><tr><td>cli:cli/claude-sonnet</td><td>Passed hidden tests</td><td>Passed hidden tests</td><td class="num"><span class="mark" data-v="pass">9 / 10</span></td><td class="num">0</td></tr><tr><td>cli:cli/codex</td><td>Passed hidden tests</td><td>Passed hidden tests</td><td class="num"><span class="mark" data-v="pass">10 / 10</span></td><td class="num">0</td></tr><tr><td>mistral:codestral-latest</td><td>Graded</td><td>Graded</td><td class="num"><span class="mark" data-v="fail">0 / 10</span></td><td class="num">0</td></tr></tbody>
 </table></div>
-<p class="lead">Stage definitions are in Appendix D. The matrix counts evaluable rollouts;
-lane errors are shown beside it, not inside it. The stages are not strictly nested:
-a model can submit without editing, and the matrix shows that rather than hiding it.
-Each rollout's own deepest stage is in Appendix A.</p><h3>Behavioural analysis</h3>
+<p class="lead">Stage definitions are in Appendix D. The matrix counts evaluable rollouts; lane errors are shown beside it, not inside it. The stages are not strictly nested: a model can submit without editing, and the matrix shows that rather than hiding it. Each rollout&#x27;s own deepest stage is in Appendix A. </p><h3>Behavioural analysis</h3>
 <h4>Long-horizon behaviour</h4>
 <p class="lead">Counted off the recorded trace of each rollout. A dead end is a step that moved nothing: a re-read of a slice already returned, a repeat of the previous action, or a call to a tool this exam does not have.</p>
 <div class="scroll"><table>
@@ -232,7 +228,7 @@ Rollout counts here are evaluable rollouts.</p>
 record; it is not the standalone report reproduced byte for byte. Verify the standalone report
 with its own digest, verify the record with <span class="mono">vvdex-env records verify</span>,
 and verify this campaign document as a whole.</p>
-<div class="grid"><dl class="card"><dt>Relationship</dt><dd>campaign-rendered chapter</dd><dd class="lead">Derived from the same sealed evaluation record as the standalone report; these bytes are authenticated by the campaign artifact that contains them.</dd></dl><dl class="card"><dt>Sealed record digest</dt><dd><span class="mono">138425da59aabc18aa208c339aa41919f387e1ecb80fb725cfed8f7d6ba78713</span></dd><dd class="lead">sha256 over the record&#x27;s canonical JSON — the identity every renderer works from.</dd></dl><dl class="card"><dt>Source record file</dt><dd><span class="mono">02b4f83ee15251a5808a83153c9c4590936af23c58cc94d172556e9f983d1909</span></dd><dd class="lead">sha256 of fr-20260902-6616b188.json as written beside the standalone report.</dd></dl><dl class="card"><dt>Source standalone report</dt><dd><span class="mono">fc395492a83645c6f5cd4360e53359fe85eca4fd1a00c005055989ba286694fa</span></dd><dd class="lead">sha256 of fr-20260902-6616b188.html — independently verifiable with its own digest.</dd></dl><dl class="card"><dt>Source standalone PDF</dt><dd><span class="mono">c6a3f43aeaf0686dec3d34e298ffd1f936c3ffe328f62b8dc2601c3b9d2ced4b</span></dd><dd class="lead">sha256 of fr-20260902-6616b188.pdf.</dd></dl><dl class="card"><dt>Run evidence bundle</dt><dd><span class="mono">6616b188f015f52e157bdfb257e8d0f819e1f6cb9bcd3b024b340ac0771e0fd8</span></dd><dd class="lead">The digest the run&#x27;s own bundle computed over itself.</dd></dl><dl class="card"><dt>Certified evidence seal</dt><dd>not available in this package</dd><dd class="lead">The exam&#x27;s sealed evidence, established before this run.</dd></dl></div>
+<div class="grid"><dl class="card"><dt>Relationship</dt><dd>campaign-rendered chapter</dd><dd class="lead">Derived from the same sealed evaluation record as the standalone report; these bytes are authenticated by the campaign artifact that contains them.</dd></dl><dl class="card"><dt>Sealed record digest</dt><dd><span class="mono">138425da59aabc18aa208c339aa41919f387e1ecb80fb725cfed8f7d6ba78713</span></dd><dd class="lead">sha256 over the record&#x27;s canonical JSON — the identity every renderer works from.</dd></dl><dl class="card"><dt>Source record file</dt><dd><span class="mono">02b4f83ee15251a5808a83153c9c4590936af23c58cc94d172556e9f983d1909</span></dd><dd class="lead">sha256 of fr-20260902-6616b188.json as written beside the standalone report.</dd></dl><dl class="card"><dt>Source standalone report</dt><dd><span class="mono">1bf300e86c51f0a627dd4da9210c742932e2b3f81cdfb430cc98abe5846c021c</span></dd><dd class="lead">sha256 of fr-20260902-6616b188.html — independently verifiable with its own digest.</dd></dl><dl class="card"><dt>Source standalone PDF</dt><dd><span class="mono">968faece2febdcd3a42ba22d89a7e8af8e17a40249069ac2d7675ee50c853833</span></dd><dd class="lead">sha256 of fr-20260902-6616b188.pdf.</dd></dl><dl class="card"><dt>Run evidence bundle</dt><dd><span class="mono">6616b188f015f52e157bdfb257e8d0f819e1f6cb9bcd3b024b340ac0771e0fd8</span></dd><dd class="lead">The digest the run&#x27;s own bundle computed over itself.</dd></dl><dl class="card"><dt>Certified evidence seal</dt><dd>not available in this package</dd><dd class="lead">The exam&#x27;s sealed evidence, established before this run.</dd></dl></div>
 <h4>Measurement history</h4>
 <p class="lead">This is the first recorded run on this exam. There is nothing to compare it against yet, and a single measurement is not a trend.</p>
 <p class="lead">The full artifact-by-artifact digest table, and the reproduction protocol,
@@ -1454,8 +1450,7 @@ real value; what is not is named below and is not claimed.</p>
 <div class="caveat certwarn">
   <p><strong>Certification metadata is not included in this report package for:</strong></p>
   <ul><li>sealed evidence bundle</li></ul>
-  <p>Benchmark results remain valid as run evidence; the pillar(s) above are not substantiated by this
-  document and this report does not claim them.</p>
+  <p>Benchmark results remain valid as run evidence; the pillar(s) above are not substantiated by this document and this report does not claim them.</p>
 </div>
 <p class="lead">
   What the package does carry: the exam fingerprint below is the contract digest this run
@@ -1535,14 +1530,11 @@ rollouts only.</p>
 </table></div>
 <h4>Deepest stage reached</h4>
 <div class="scroll"><table>
-  <thead><tr><th>Model</th><th>Deepest (any rollout)</th><th>Typical (most rollouts)</th>
+  <thead><tr><th>Model</th><th>Deepest (any attempt)</th><th>Typical (most attempts)</th>
     <th>Hidden-test passes</th><th>Not graded</th></tr></thead>
   <tbody><tr><td>cli:cli/claude-sonnet</td><td>Passed hidden tests</td><td>Graded</td><td class="num"><span class="mark" data-v="pass">1 / 10</span></td><td class="num">0</td></tr><tr><td>cli:cli/codex</td><td>Passed hidden tests</td><td>Passed hidden tests</td><td class="num"><span class="mark" data-v="pass">10 / 10</span></td><td class="num">0</td></tr><tr><td>mistral:codestral-latest</td><td>Graded</td><td>Graded</td><td class="num"><span class="mark" data-v="fail">0 / 9</span></td><td class="num">1</td></tr></tbody>
 </table></div>
-<p class="lead">Stage definitions are in Appendix D. The matrix counts evaluable rollouts;
-lane errors are shown beside it, not inside it. The stages are not strictly nested:
-a model can submit without editing, and the matrix shows that rather than hiding it.
-Each rollout's own deepest stage is in Appendix A.</p><h3>Behavioural analysis</h3>
+<p class="lead">Stage definitions are in Appendix D. The matrix counts evaluable rollouts; lane errors are shown beside it, not inside it. The stages are not strictly nested: a model can submit without editing, and the matrix shows that rather than hiding it. Each rollout&#x27;s own deepest stage is in Appendix A. </p><h3>Behavioural analysis</h3>
 <h4>Long-horizon behaviour</h4>
 <p class="lead">Counted off the recorded trace of each rollout. A dead end is a step that moved nothing: a re-read of a slice already returned, a repeat of the previous action, or a call to a tool this exam does not have.</p>
 <div class="scroll"><table>
@@ -1634,7 +1626,7 @@ Rollout counts here are evaluable rollouts.</p>
 record; it is not the standalone report reproduced byte for byte. Verify the standalone report
 with its own digest, verify the record with <span class="mono">vvdex-env records verify</span>,
 and verify this campaign document as a whole.</p>
-<div class="grid"><dl class="card"><dt>Relationship</dt><dd>campaign-rendered chapter</dd><dd class="lead">Derived from the same sealed evaluation record as the standalone report; these bytes are authenticated by the campaign artifact that contains them.</dd></dl><dl class="card"><dt>Sealed record digest</dt><dd><span class="mono">157ec324a925c0b10fc8769d01f628b6143c40a00fa2dc70ea309a70e55a37a8</span></dd><dd class="lead">sha256 over the record&#x27;s canonical JSON — the identity every renderer works from.</dd></dl><dl class="card"><dt>Source record file</dt><dd><span class="mono">a3e742fe73fe3667155e22dfc941bdc9e428a4bb1bd47c5c89a0454e299e7eb0</span></dd><dd class="lead">sha256 of fr-20260902-2e7f4171.json as written beside the standalone report.</dd></dl><dl class="card"><dt>Source standalone report</dt><dd><span class="mono">564618c51dddcf7f05d9eb4f806c4ee4191a2e99206b3d952e1664cbef81b3da</span></dd><dd class="lead">sha256 of fr-20260902-2e7f4171.html — independently verifiable with its own digest.</dd></dl><dl class="card"><dt>Source standalone PDF</dt><dd><span class="mono">30de973cceb4b6cdc6799736cc493c32a4b221156136388d27eade5fbd86707c</span></dd><dd class="lead">sha256 of fr-20260902-2e7f4171.pdf.</dd></dl><dl class="card"><dt>Run evidence bundle</dt><dd><span class="mono">2e7f4171f049cced92f7a3aa7ae13b2ee211449e96938e7e6c437f30289db0ff</span></dd><dd class="lead">The digest the run&#x27;s own bundle computed over itself.</dd></dl><dl class="card"><dt>Certified evidence seal</dt><dd>not available in this package</dd><dd class="lead">The exam&#x27;s sealed evidence, established before this run.</dd></dl></div>
+<div class="grid"><dl class="card"><dt>Relationship</dt><dd>campaign-rendered chapter</dd><dd class="lead">Derived from the same sealed evaluation record as the standalone report; these bytes are authenticated by the campaign artifact that contains them.</dd></dl><dl class="card"><dt>Sealed record digest</dt><dd><span class="mono">157ec324a925c0b10fc8769d01f628b6143c40a00fa2dc70ea309a70e55a37a8</span></dd><dd class="lead">sha256 over the record&#x27;s canonical JSON — the identity every renderer works from.</dd></dl><dl class="card"><dt>Source record file</dt><dd><span class="mono">a3e742fe73fe3667155e22dfc941bdc9e428a4bb1bd47c5c89a0454e299e7eb0</span></dd><dd class="lead">sha256 of fr-20260902-2e7f4171.json as written beside the standalone report.</dd></dl><dl class="card"><dt>Source standalone report</dt><dd><span class="mono">e9ec887153f75e4b0dde10c8190ab2960cb917a2622ab5edb5c9b5bff611f66d</span></dd><dd class="lead">sha256 of fr-20260902-2e7f4171.html — independently verifiable with its own digest.</dd></dl><dl class="card"><dt>Source standalone PDF</dt><dd><span class="mono">75bde84fb5e72d3643245fbe0f18addc8adb23526f44031cd55ee0537b008f8f</span></dd><dd class="lead">sha256 of fr-20260902-2e7f4171.pdf.</dd></dl><dl class="card"><dt>Run evidence bundle</dt><dd><span class="mono">2e7f4171f049cced92f7a3aa7ae13b2ee211449e96938e7e6c437f30289db0ff</span></dd><dd class="lead">The digest the run&#x27;s own bundle computed over itself.</dd></dl><dl class="card"><dt>Certified evidence seal</dt><dd>not available in this package</dd><dd class="lead">The exam&#x27;s sealed evidence, established before this run.</dd></dl></div>
 <h4>Measurement history</h4>
 <p class="lead">This is the first recorded run on this exam. There is nothing to compare it against yet, and a single measurement is not a trend.</p>
 <p class="lead">The full artifact-by-artifact digest table, and the reproduction protocol,
@@ -1980,8 +1972,7 @@ real value; what is not is named below and is not claimed.</p>
 <div class="caveat certwarn">
   <p><strong>Certification metadata is not included in this report package for:</strong></p>
   <ul><li>sealed evidence bundle</li></ul>
-  <p>Benchmark results remain valid as run evidence; the pillar(s) above are not substantiated by this
-  document and this report does not claim them.</p>
+  <p>Benchmark results remain valid as run evidence; the pillar(s) above are not substantiated by this document and this report does not claim them.</p>
 </div>
 <p class="lead">
   What the package does carry: the exam fingerprint below is the contract digest this run
@@ -2061,14 +2052,11 @@ rollouts only.</p>
 </table></div>
 <h4>Deepest stage reached</h4>
 <div class="scroll"><table>
-  <thead><tr><th>Model</th><th>Deepest (any rollout)</th><th>Typical (most rollouts)</th>
+  <thead><tr><th>Model</th><th>Deepest (any attempt)</th><th>Typical (most attempts)</th>
     <th>Hidden-test passes</th><th>Not graded</th></tr></thead>
   <tbody><tr><td>cli:cli/claude-sonnet</td><td>Passed hidden tests</td><td>Passed hidden tests</td><td class="num"><span class="mark" data-v="pass">10 / 10</span></td><td class="num">0</td></tr><tr><td>cli:cli/codex</td><td>Passed hidden tests</td><td>Passed hidden tests</td><td class="num"><span class="mark" data-v="pass">10 / 10</span></td><td class="num">0</td></tr><tr><td>mistral:codestral-latest</td><td>Passed hidden tests</td><td>Graded</td><td class="num"><span class="mark" data-v="pass">2 / 10</span></td><td class="num">0</td></tr></tbody>
 </table></div>
-<p class="lead">Stage definitions are in Appendix D. The matrix counts evaluable rollouts;
-lane errors are shown beside it, not inside it. The stages are not strictly nested:
-a model can submit without editing, and the matrix shows that rather than hiding it.
-Each rollout's own deepest stage is in Appendix A.</p><h3>Behavioural analysis</h3>
+<p class="lead">Stage definitions are in Appendix D. The matrix counts evaluable rollouts; lane errors are shown beside it, not inside it. The stages are not strictly nested: a model can submit without editing, and the matrix shows that rather than hiding it. Each rollout&#x27;s own deepest stage is in Appendix A. </p><h3>Behavioural analysis</h3>
 <h4>Long-horizon behaviour</h4>
 <p class="lead">Counted off the recorded trace of each rollout. A dead end is a step that moved nothing: a re-read of a slice already returned, a repeat of the previous action, or a call to a tool this exam does not have.</p>
 <div class="scroll"><table>
@@ -2148,7 +2136,7 @@ Rollout counts here are evaluable rollouts.</p>
 record; it is not the standalone report reproduced byte for byte. Verify the standalone report
 with its own digest, verify the record with <span class="mono">vvdex-env records verify</span>,
 and verify this campaign document as a whole.</p>
-<div class="grid"><dl class="card"><dt>Relationship</dt><dd>campaign-rendered chapter</dd><dd class="lead">Derived from the same sealed evaluation record as the standalone report; these bytes are authenticated by the campaign artifact that contains them.</dd></dl><dl class="card"><dt>Sealed record digest</dt><dd><span class="mono">1127e8356d42d31767a3ddc4d6c6cd0a515f5bbf7239ef0a82129e00fc2e6900</span></dd><dd class="lead">sha256 over the record&#x27;s canonical JSON — the identity every renderer works from.</dd></dl><dl class="card"><dt>Source record file</dt><dd><span class="mono">d3f91221afd12e368b53c09a12eba41633c305d41855842ca6eef918de09e857</span></dd><dd class="lead">sha256 of fr-20260901-46eb9548.json as written beside the standalone report.</dd></dl><dl class="card"><dt>Source standalone report</dt><dd><span class="mono">17b7f5bd9f45aa56a19fd1dec4893b9d1ff83b773eace2cc593a0a828e0baf1f</span></dd><dd class="lead">sha256 of fr-20260901-46eb9548.html — independently verifiable with its own digest.</dd></dl><dl class="card"><dt>Source standalone PDF</dt><dd><span class="mono">0b2cf9181b184b492f780d9f7b9b419093e897329ef9fb98afdfa348c0f88066</span></dd><dd class="lead">sha256 of fr-20260901-46eb9548.pdf.</dd></dl><dl class="card"><dt>Run evidence bundle</dt><dd><span class="mono">46eb954840000beb6e8466f409bb6104c91cd91a0d34efa18a41871246efd142</span></dd><dd class="lead">The digest the run&#x27;s own bundle computed over itself.</dd></dl><dl class="card"><dt>Certified evidence seal</dt><dd>not available in this package</dd><dd class="lead">The exam&#x27;s sealed evidence, established before this run.</dd></dl></div>
+<div class="grid"><dl class="card"><dt>Relationship</dt><dd>campaign-rendered chapter</dd><dd class="lead">Derived from the same sealed evaluation record as the standalone report; these bytes are authenticated by the campaign artifact that contains them.</dd></dl><dl class="card"><dt>Sealed record digest</dt><dd><span class="mono">1127e8356d42d31767a3ddc4d6c6cd0a515f5bbf7239ef0a82129e00fc2e6900</span></dd><dd class="lead">sha256 over the record&#x27;s canonical JSON — the identity every renderer works from.</dd></dl><dl class="card"><dt>Source record file</dt><dd><span class="mono">d3f91221afd12e368b53c09a12eba41633c305d41855842ca6eef918de09e857</span></dd><dd class="lead">sha256 of fr-20260901-46eb9548.json as written beside the standalone report.</dd></dl><dl class="card"><dt>Source standalone report</dt><dd><span class="mono">956735c0334135e15df15d8b9bfab36522bddb6257950d928234f86d855f6035</span></dd><dd class="lead">sha256 of fr-20260901-46eb9548.html — independently verifiable with its own digest.</dd></dl><dl class="card"><dt>Source standalone PDF</dt><dd><span class="mono">68483ecfa36aded13f3f58c9e0dc2307f12f09deb0fe936fc3e1509fed7fba87</span></dd><dd class="lead">sha256 of fr-20260901-46eb9548.pdf.</dd></dl><dl class="card"><dt>Run evidence bundle</dt><dd><span class="mono">46eb954840000beb6e8466f409bb6104c91cd91a0d34efa18a41871246efd142</span></dd><dd class="lead">The digest the run&#x27;s own bundle computed over itself.</dd></dl><dl class="card"><dt>Certified evidence seal</dt><dd>not available in this package</dd><dd class="lead">The exam&#x27;s sealed evidence, established before this run.</dd></dl></div>
 <h4>Measurement history</h4>
 <p class="lead">This is the first recorded run on this exam. There is nothing to compare it against yet, and a single measurement is not a trend.</p>
 <p class="lead">The full artifact-by-artifact digest table, and the reproduction protocol,
