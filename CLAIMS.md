@@ -2,7 +2,7 @@
 
 Every number stated in this repository's documents, and the artifact and field it
 is read from. A number that is not on this list is not in those documents. Paths
-are relative to the repository root; `<current>` is
+are relative to the repository root; `<current>` is the historical AI evaluation campaign
 `reports/fc-d89e429d2781/`.
 
 `python3 examples/check-readme-matrix.py` recomputes the README headline and the
@@ -17,7 +17,7 @@ Annotation certification is separate from the historical model campaign counts.
 | --- | --- |
 | Five fixtures in one Annotation family | The five `exams/vvdex.annotation.*/exam.public.json` descriptors; `family` and `annotation.modality` |
 | Each fixture is certified | Adjacent `report.public.json` `certificationState`, joined to `certification-receipt.json` by fingerprint and receipt SHA-256 |
-| No annotation model campaign is claimed | Each annotation report has `modelCampaign: null`; no annotation entry is added to campaign arithmetic |
+| Fixture reports do not measure model performance | Each fixture certification report has `modelCampaign: null`; separate model campaign outcomes never change the historical campaign arithmetic |
 | Applicable reference metrics | Each annotation report's `referenceMetrics`; these describe reference certification, not a model or annotator population |
 | Asset provenance and reuse terms | `provenance.public.json` `assetSource` and the report's matching source attribution |
 | Published file integrity | Adjacent `digests.json` and root `MANIFEST.json`, recomputed by `./verify.sh` |
@@ -126,3 +126,26 @@ receipt's own `sources` block names the evidence field it was copied from.
 
 `TERMS.md` and `OWNERSHIP.md` state no measurements. Their only counts are the
 row counts of the ownership table itself, which is generated from the file tree.
+
+## Annotation model campaign · September 6, 2026
+
+Campaign `fc-ec21239c00aa` is a separate fixed-task measurement. Its public
+[summary](https://vvdexops.com/reports/fc-ec21239c00aa/summary.json), campaign
+artifacts and record projections support the following claims. None changes
+`<current>` or the historical matrix above.
+
+| Claim | Evidence to inspect |
+| --- | --- |
+| 40 attempts on four fixed tasks, ten each | Campaign coverage and per-task attempt counts; 40 record projections |
+| 25 strict passes, 15 model failures; zero lane errors, withheld and invalid | Campaign outcome totals and each projected outcome |
+| Image 5/10; video 0/10; text 10/10; structured data 10/10 | Per-task outcomes |
+| Mean quality: image 0.995091, video 0.280058, text 1.000000, structured data 1.000000 | Arithmetic means of the ten recorded task quality scores, rounded to six decimals |
+| Actual model GPT-5.5 on `cli/codex-gpt-5.5` | Recorded lane and observed model identity |
+| Native image attachments; sampled still frames for video | Input-delivery audit and media receipt agreement |
+| Audio N/A | Campaign scope excludes unsupported CLI audio delivery |
+| Public projections are not canonical records | Disclosure notices and record-digest joins; canonical bytes remain private |
+
+The model-input audit checked each attempt's exam fingerprint, certified package,
+sealed record digest, raw-rollout hash, media receipts and single-action policy.
+It confirmed the frozen execution sources were unchanged. Private raw inputs and
+reference annotations are not published to substantiate these statements.

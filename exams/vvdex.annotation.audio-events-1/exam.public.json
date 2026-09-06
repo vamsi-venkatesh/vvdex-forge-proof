@@ -21,7 +21,7 @@
       "segmentTemporalIoU"
     ],
     "modality": "audio",
-    "modelCampaign": "not run",
+    "modelCampaign": null,
     "purpose": "Constructed non-speech audio is reviewed for events, temporal segments, silence and category consistency.",
     "rubricVersion": "1.0"
   },

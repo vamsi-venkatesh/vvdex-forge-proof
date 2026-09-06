@@ -119,8 +119,35 @@ def verify_annotations(root):
                     raise ValueError("identity or fingerprint join failed")
             if report["schema"] != "vvdex.forge.annotation-certification-report/v1":
                 raise ValueError("unexpected report schema")
-            if report["certificationState"] != "certified" or report["modelCampaign"] is not None:
-                raise ValueError("certification and model campaign boundary failed")
+            if report["certificationState"] != "certified":
+                raise ValueError("certification boundary failed")
+            campaign = report["modelCampaign"]
+            if campaign is not None:
+                if not isinstance(campaign, dict):
+                    raise ValueError("unbound model campaign")
+                cid = campaign.get("campaignId")
+                if not isinstance(cid, str) or not re.fullmatch(r"fc-[0-9a-f]{8,64}", cid):
+                    raise ValueError("invalid campaign identity")
+                if campaign.get("reportUrl") != "/reports/" + cid + "/" or campaign.get("summaryUrl") != "/reports/" + cid + "/summary.json":
+                    raise ValueError("campaign path join failed")
+                target = root / "reports" / cid / "summary.json"
+                if any(p.is_symlink() for p in (root / "reports", target.parent, target)) or not target.is_file():
+                    raise ValueError("unsafe campaign summary path")
+                raw = target.read_bytes()
+                if hashlib.sha256(raw).hexdigest() != campaign.get("summarySha256"):
+                    raise ValueError("campaign summary digest mismatch")
+                summary = json.loads(raw)
+                block = summary["annotationCampaign"]
+                tasks = [t for t in block["tasks"] if t.get("environmentId") == env_id]
+                if summary.get("campaignId") != cid or len(tasks) != 1:
+                    raise ValueError("campaign task identity mismatch")
+                task = tasks[0]
+                if campaign.get("examFingerprint") != fingerprint or task.get("examFingerprint") != fingerprint:
+                    raise ValueError("campaign fingerprint mismatch")
+                if campaign.get("coverage") != block.get("coverage") or campaign.get("models") != task.get("models"):
+                    raise ValueError("campaign outcome join failed")
+                if desc["annotation"].get("modelCampaign") != campaign:
+                    raise ValueError("descriptor campaign binding mismatch")
             if report["annotation"] != desc["annotation"]:
                 raise ValueError("annotation descriptor join failed")
             actual = hashlib.sha256((folder / "certification-receipt.json").read_bytes()).hexdigest()

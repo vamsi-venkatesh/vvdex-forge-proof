@@ -18,7 +18,107 @@
       "spanRecall"
     ],
     "modality": "text",
-    "modelCampaign": "not run",
+    "modelCampaign": {
+      "campaignId": "fc-ec21239c00aa",
+      "coverage": {
+        "cellsPending": 0,
+        "cellsRun": 4,
+        "complete": true,
+        "completedAttempts": 40,
+        "examsNotStarted": [],
+        "missingAttempts": 0,
+        "note": "Cells run against the cells this campaign declared it would run.",
+        "pending": [],
+        "planDeclared": true,
+        "plannedAttempts": 40,
+        "plannedCells": 4,
+        "plannedExams": [
+          "vvdex.annotation.robot-video-1",
+          "vvdex.annotation.image-object-1",
+          "vvdex.annotation.text-labeling-1",
+          "vvdex.annotation.structured-data-1"
+        ],
+        "plannedModels": [
+          "cli/codex-gpt-5.5"
+        ],
+        "rolloutsPerCell": 10
+      },
+      "examFingerprint": "e1abe51398b2d950a3415678aaf8ec796420dfb05ea89b3b64afd33c1e345fd3",
+      "models": [
+        {
+          "attempts": 10,
+          "delivery": "canonical text tools",
+          "failed": 0,
+          "invalid": 0,
+          "laneErrors": 0,
+          "model": "cli/codex-gpt-5.5",
+          "passed": 10,
+          "quality": {
+            "axes": [
+              {
+                "id": "classificationPrecision",
+                "mean": 1.0,
+                "n": 10
+              },
+              {
+                "id": "classificationRecall",
+                "mean": 1.0,
+                "n": 10
+              },
+              {
+                "id": "classificationF1",
+                "mean": 1.0,
+                "n": 10
+              },
+              {
+                "id": "classificationAccuracy",
+                "mean": 1.0,
+                "n": 10
+              },
+              {
+                "id": "spanPrecision",
+                "mean": 1.0,
+                "n": 10
+              },
+              {
+                "id": "spanRecall",
+                "mean": 1.0,
+                "n": 10
+              },
+              {
+                "id": "spanF1",
+                "mean": 1.0,
+                "n": 10
+              },
+              {
+                "id": "spanOverlapIoU",
+                "mean": 1.0,
+                "n": 10
+              },
+              {
+                "id": "spanExactF1",
+                "mean": 1.0,
+                "n": 10
+              }
+            ],
+            "measuredAttempts": 10,
+            "scoreMean": 1.0
+          },
+          "stages": {
+            "edit": 10,
+            "graded": 10,
+            "hidden_pass": 10,
+            "inspect": 10,
+            "submit": 10,
+            "test": 10
+          },
+          "withheld": 0
+        }
+      ],
+      "reportUrl": "/reports/fc-ec21239c00aa/",
+      "summarySha256": "8ec74ad2f3865f7014f17290e7e7c3199e8a1d597a58f7d0ad095f6c6934cae9",
+      "summaryUrl": "/reports/fc-ec21239c00aa/summary.json"
+    },
     "purpose": "An invented message is reviewed for classification and entity spans with consistent offsets.",
     "rubricVersion": "1.0"
   },
@@ -37,8 +137,108 @@
   ],
   "examFingerprint": "e1abe51398b2d950a3415678aaf8ec796420dfb05ea89b3b64afd33c1e345fd3",
   "examId": "vvdex.annotation.text-labeling-1",
-  "limitations": "Small constructed engineering fixtures, not a production dataset or professional annotation engagement. Video uses sparse frame boxes, not dense tracking. Audio contains tones and silence, not speech or speakers. CVAT XML 1.1 and Label Studio JSON cover tested box subsets only; unsupported or lossy conversions are refused. Polygon comparison requires the implemented vertex representation. No model performance or annotator population is inferred.",
-  "modelCampaign": null,
+  "limitations": "Small constructed engineering fixtures, not a production dataset or professional annotation engagement. Video uses sparse frame boxes, not dense tracking. Audio contains tones and silence, not speech or speakers. CVAT XML 1.1 and Label Studio JSON cover tested box subsets only; unsupported or lossy conversions are refused. Polygon comparison requires the implemented vertex representation. The attached model campaign measures these fixed tasks only; general capability and annotator population performance are not inferred.",
+  "modelCampaign": {
+    "campaignId": "fc-ec21239c00aa",
+    "coverage": {
+      "cellsPending": 0,
+      "cellsRun": 4,
+      "complete": true,
+      "completedAttempts": 40,
+      "examsNotStarted": [],
+      "missingAttempts": 0,
+      "note": "Cells run against the cells this campaign declared it would run.",
+      "pending": [],
+      "planDeclared": true,
+      "plannedAttempts": 40,
+      "plannedCells": 4,
+      "plannedExams": [
+        "vvdex.annotation.robot-video-1",
+        "vvdex.annotation.image-object-1",
+        "vvdex.annotation.text-labeling-1",
+        "vvdex.annotation.structured-data-1"
+      ],
+      "plannedModels": [
+        "cli/codex-gpt-5.5"
+      ],
+      "rolloutsPerCell": 10
+    },
+    "examFingerprint": "e1abe51398b2d950a3415678aaf8ec796420dfb05ea89b3b64afd33c1e345fd3",
+    "models": [
+      {
+        "attempts": 10,
+        "delivery": "canonical text tools",
+        "failed": 0,
+        "invalid": 0,
+        "laneErrors": 0,
+        "model": "cli/codex-gpt-5.5",
+        "passed": 10,
+        "quality": {
+          "axes": [
+            {
+              "id": "classificationPrecision",
+              "mean": 1.0,
+              "n": 10
+            },
+            {
+              "id": "classificationRecall",
+              "mean": 1.0,
+              "n": 10
+            },
+            {
+              "id": "classificationF1",
+              "mean": 1.0,
+              "n": 10
+            },
+            {
+              "id": "classificationAccuracy",
+              "mean": 1.0,
+              "n": 10
+            },
+            {
+              "id": "spanPrecision",
+              "mean": 1.0,
+              "n": 10
+            },
+            {
+              "id": "spanRecall",
+              "mean": 1.0,
+              "n": 10
+            },
+            {
+              "id": "spanF1",
+              "mean": 1.0,
+              "n": 10
+            },
+            {
+              "id": "spanOverlapIoU",
+              "mean": 1.0,
+              "n": 10
+            },
+            {
+              "id": "spanExactF1",
+              "mean": 1.0,
+              "n": 10
+            }
+          ],
+          "measuredAttempts": 10,
+          "scoreMean": 1.0
+        },
+        "stages": {
+          "edit": 10,
+          "graded": 10,
+          "hidden_pass": 10,
+          "inspect": 10,
+          "submit": 10,
+          "test": 10
+        },
+        "withheld": 0
+      }
+    ],
+    "reportUrl": "/reports/fc-ec21239c00aa/",
+    "summarySha256": "8ec74ad2f3865f7014f17290e7e7c3199e8a1d597a58f7d0ad095f6c6934cae9",
+    "summaryUrl": "/reports/fc-ec21239c00aa/summary.json"
+  },
   "referenceMetrics": {
     "classificationAccuracy": 1.0,
     "classificationF1": 1.0,

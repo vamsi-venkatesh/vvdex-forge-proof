@@ -1,0 +1,32 @@
+{
+  "evalId": "fr-20260906-7b7f8fb2",
+  "files": {
+    "executive.html": {
+      "path": "fr-20260906-7b7f8fb2-executive.html",
+      "sha256": "dec949377c92a27cec7ad5381b30e75d4194046ee7a1abaa9d4f829aa4c6db52"
+    },
+    "executive.pdf": {
+      "path": "fr-20260906-7b7f8fb2-executive.pdf",
+      "sha256": "9224397a451ad298b1be82ac0fd2de94a223400ea08c2baf5d38ad032bbe7081"
+    },
+    "full.html": {
+      "path": "fr-20260906-7b7f8fb2.html",
+      "sha256": "d793070fa1fd3c5c1584b6499ec21842b282322d08a4f37ca1c7c1242e7e62b2"
+    },
+    "full.pdf": {
+      "path": "fr-20260906-7b7f8fb2.pdf",
+      "sha256": "02f7b26afe915361c2ff8db21f84d728700b0a1668bfdb3fcf2090850666a187"
+    },
+    "record": {
+      "path": "fr-20260906-7b7f8fb2.json",
+      "sha256": "3f61012ac919be872136fa8abbafc7a56fa249fc6137370619aa377f57be1f88"
+    }
+  },
+  "kind": "vvdex.report-manifest/v1",
+  "recordSha256": "3f61012ac919be872136fa8abbafc7a56fa249fc6137370619aa377f57be1f88",
+  "runId": "live-20260906T035608Z",
+  "selfCheck": {
+    "failures": [],
+    "ok": true
+  }
+}

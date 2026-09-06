@@ -1,0 +1,948 @@
+{
+  "annotationCampaign": {
+    "campaignId": "fc-ec21239c00aa",
+    "coverage": {
+      "cellsPending": 0,
+      "cellsRun": 4,
+      "complete": true,
+      "completedAttempts": 40,
+      "examsNotStarted": [],
+      "missingAttempts": 0,
+      "note": "Cells run against the cells this campaign declared it would run.",
+      "pending": [],
+      "planDeclared": true,
+      "plannedAttempts": 40,
+      "plannedCells": 4,
+      "plannedExams": [
+        "vvdex.annotation.robot-video-1",
+        "vvdex.annotation.image-object-1",
+        "vvdex.annotation.text-labeling-1",
+        "vvdex.annotation.structured-data-1"
+      ],
+      "plannedModels": [
+        "cli/codex-gpt-5.5"
+      ],
+      "rolloutsPerCell": 10
+    },
+    "limitations": [
+      "Repeated attempts on these fixed tasks only; not a broad capability score.",
+      "All outcomes are retained; lane errors, withheld and invalid attempts are not model failures.",
+      "Quality is the existing grader measurement, separate from the pass gate.",
+      "Video uses sampled still images. Audio delivery is unsupported and was not attempted.",
+      "CLI attempt indices do not claim stochastic seed control. Subscription token and monetary usage are unavailable.",
+      "Private references, submissions, exact geometry, frame timestamps and raw sessions are withheld."
+    ],
+    "schema": "vvdex.forge.annotation-model-campaign/v1",
+    "tasks": [
+      {
+        "environmentId": "vvdex.annotation.image-object-1",
+        "examFingerprint": "422753713aeb9f41abcc4135d637e3064cae1e770fc8d22ec9dacf260b35a3ef",
+        "modality": "image",
+        "models": [
+          {
+            "attempts": 10,
+            "delivery": "image attachments",
+            "failed": 5,
+            "invalid": 0,
+            "laneErrors": 0,
+            "model": "cli/codex-gpt-5.5",
+            "passed": 5,
+            "quality": {
+              "axes": [
+                {
+                  "id": "boxPrecision",
+                  "mean": 1.0,
+                  "n": 10
+                },
+                {
+                  "id": "boxRecall",
+                  "mean": 1.0,
+                  "n": 10
+                },
+                {
+                  "id": "boxF1",
+                  "mean": 1.0,
+                  "n": 10
+                },
+                {
+                  "id": "boxIoU",
+                  "mean": 0.9901829268292683,
+                  "n": 10
+                },
+                {
+                  "id": "classificationPrecision",
+                  "mean": 1.0,
+                  "n": 10
+                },
+                {
+                  "id": "classificationRecall",
+                  "mean": 1.0,
+                  "n": 10
+                },
+                {
+                  "id": "classificationF1",
+                  "mean": 1.0,
+                  "n": 10
+                },
+                {
+                  "id": "classificationAccuracy",
+                  "mean": 1.0,
+                  "n": 10
+                },
+                {
+                  "id": "keypointPrecision",
+                  "mean": 1.0,
+                  "n": 10
+                },
+                {
+                  "id": "keypointRecall",
+                  "mean": 1.0,
+                  "n": 10
+                },
+                {
+                  "id": "keypointF1",
+                  "mean": 1.0,
+                  "n": 10
+                }
+              ],
+              "measuredAttempts": 10,
+              "scoreMean": 0.9950914634146344
+            },
+            "stages": {
+              "edit": 10,
+              "graded": 10,
+              "hidden_pass": 5,
+              "inspect": 10,
+              "submit": 10,
+              "test": 10
+            },
+            "withheld": 0
+          }
+        ]
+      },
+      {
+        "environmentId": "vvdex.annotation.robot-video-1",
+        "examFingerprint": "c3b4773c375c10ad989357bb179cffd62151eccd2a58b52254609a54d434be33",
+        "modality": "video",
+        "models": [
+          {
+            "attempts": 10,
+            "delivery": "sampled image frames; no native video",
+            "failed": 10,
+            "invalid": 0,
+            "laneErrors": 0,
+            "model": "cli/codex-gpt-5.5",
+            "passed": 0,
+            "quality": {
+              "axes": [
+                {
+                  "id": "boxPrecision",
+                  "mean": 0.8,
+                  "n": 5
+                },
+                {
+                  "id": "boxRecall",
+                  "mean": 0.8,
+                  "n": 5
+                },
+                {
+                  "id": "boxF1",
+                  "mean": 0.8,
+                  "n": 5
+                },
+                {
+                  "id": "boxIoU",
+                  "mean": 0.5775007320940269,
+                  "n": 5
+                },
+                {
+                  "id": "classificationPrecision",
+                  "mean": 1.0,
+                  "n": 5
+                },
+                {
+                  "id": "classificationRecall",
+                  "mean": 1.0,
+                  "n": 5
+                },
+                {
+                  "id": "classificationF1",
+                  "mean": 1.0,
+                  "n": 5
+                },
+                {
+                  "id": "classificationAccuracy",
+                  "mean": 1.0,
+                  "n": 5
+                },
+                {
+                  "id": "eventPrecision",
+                  "mean": 0.2,
+                  "n": 5
+                },
+                {
+                  "id": "eventRecall",
+                  "mean": 0.2,
+                  "n": 5
+                },
+                {
+                  "id": "eventF1",
+                  "mean": 0.2,
+                  "n": 5
+                },
+                {
+                  "id": "eventTemporalIoU",
+                  "mean": 0.20144998001005981,
+                  "n": 5
+                },
+                {
+                  "id": "segmentPrecision",
+                  "mean": 0.8,
+                  "n": 5
+                },
+                {
+                  "id": "segmentRecall",
+                  "mean": 1.0,
+                  "n": 5
+                },
+                {
+                  "id": "segmentF1",
+                  "mean": 0.8666666666666666,
+                  "n": 5
+                },
+                {
+                  "id": "segmentTemporalIoU",
+                  "mean": 0.6397888999008924,
+                  "n": 5
+                },
+                {
+                  "id": "trackingConsistency",
+                  "mean": 1.0,
+                  "n": 5
+                }
+              ],
+              "measuredAttempts": 10,
+              "scoreMean": 0.2800575270090888
+            },
+            "stages": {
+              "edit": 10,
+              "graded": 10,
+              "hidden_pass": 0,
+              "inspect": 10,
+              "submit": 10,
+              "test": 10
+            },
+            "withheld": 0
+          }
+        ]
+      },
+      {
+        "environmentId": "vvdex.annotation.structured-data-1",
+        "examFingerprint": "5d6b3708dba2cdf08218a44997058413d0a3aae738299bce8c346bb2b309fc28",
+        "modality": "structured",
+        "models": [
+          {
+            "attempts": 10,
+            "delivery": "canonical text tools",
+            "failed": 0,
+            "invalid": 0,
+            "laneErrors": 0,
+            "model": "cli/codex-gpt-5.5",
+            "passed": 10,
+            "quality": {
+              "axes": [
+                {
+                  "id": "pairPrecision",
+                  "mean": 1.0,
+                  "n": 10
+                },
+                {
+                  "id": "pairRecall",
+                  "mean": 1.0,
+                  "n": 10
+                },
+                {
+                  "id": "pairF1",
+                  "mean": 1.0,
+                  "n": 10
+                },
+                {
+                  "id": "pairAccuracy",
+                  "mean": 1.0,
+                  "n": 10
+                },
+                {
+                  "id": "rowPrecision",
+                  "mean": 1.0,
+                  "n": 10
+                },
+                {
+                  "id": "rowRecall",
+                  "mean": 1.0,
+                  "n": 10
+                },
+                {
+                  "id": "rowF1",
+                  "mean": 1.0,
+                  "n": 10
+                },
+                {
+                  "id": "rowAccuracy",
+                  "mean": 1.0,
+                  "n": 10
+                }
+              ],
+              "measuredAttempts": 10,
+              "scoreMean": 1.0
+            },
+            "stages": {
+              "edit": 10,
+              "graded": 10,
+              "hidden_pass": 10,
+              "inspect": 10,
+              "submit": 10,
+              "test": 10
+            },
+            "withheld": 0
+          }
+        ]
+      },
+      {
+        "environmentId": "vvdex.annotation.text-labeling-1",
+        "examFingerprint": "e1abe51398b2d950a3415678aaf8ec796420dfb05ea89b3b64afd33c1e345fd3",
+        "modality": "text",
+        "models": [
+          {
+            "attempts": 10,
+            "delivery": "canonical text tools",
+            "failed": 0,
+            "invalid": 0,
+            "laneErrors": 0,
+            "model": "cli/codex-gpt-5.5",
+            "passed": 10,
+            "quality": {
+              "axes": [
+                {
+                  "id": "classificationPrecision",
+                  "mean": 1.0,
+                  "n": 10
+                },
+                {
+                  "id": "classificationRecall",
+                  "mean": 1.0,
+                  "n": 10
+                },
+                {
+                  "id": "classificationF1",
+                  "mean": 1.0,
+                  "n": 10
+                },
+                {
+                  "id": "classificationAccuracy",
+                  "mean": 1.0,
+                  "n": 10
+                },
+                {
+                  "id": "spanPrecision",
+                  "mean": 1.0,
+                  "n": 10
+                },
+                {
+                  "id": "spanRecall",
+                  "mean": 1.0,
+                  "n": 10
+                },
+                {
+                  "id": "spanF1",
+                  "mean": 1.0,
+                  "n": 10
+                },
+                {
+                  "id": "spanOverlapIoU",
+                  "mean": 1.0,
+                  "n": 10
+                },
+                {
+                  "id": "spanExactF1",
+                  "mean": 1.0,
+                  "n": 10
+                }
+              ],
+              "measuredAttempts": 10,
+              "scoreMean": 1.0
+            },
+            "stages": {
+              "edit": 10,
+              "graded": 10,
+              "hidden_pass": 10,
+              "inspect": 10,
+              "submit": 10,
+              "test": 10
+            },
+            "withheld": 0
+          }
+        ]
+      }
+    ]
+  },
+  "campaignId": "fc-ec21239c00aa",
+  "counts": {
+    "attempts": 40,
+    "cells": 4,
+    "certifiedPasses": 25,
+    "exams": 4,
+    "graded": 40,
+    "invalid": 0,
+    "laneErrors": 0,
+    "lanes": 1,
+    "modelFails": 15,
+    "withheld": 0
+  },
+  "disclosure": {
+    "vvdex.annotation.image-object-1": {
+      "class": "answer_key",
+      "rule": "answer-key disclosure (ownership vvdex_proprietary \u2014 no declaration \u2014 proprietary by default; family annotation): the exam is VVDex evaluation IP and the graded output is an answer or a keyed value, so no submission content, diff, model claim or hidden-assertion name is published."
+    },
+    "vvdex.annotation.robot-video-1": {
+      "class": "answer_key",
+      "rule": "answer-key disclosure (ownership vvdex_proprietary \u2014 no declaration \u2014 proprietary by default; family annotation): the exam is VVDex evaluation IP and the graded output is an answer or a keyed value, so no submission content, diff, model claim or hidden-assertion name is published."
+    },
+    "vvdex.annotation.structured-data-1": {
+      "class": "answer_key",
+      "rule": "answer-key disclosure (ownership vvdex_proprietary \u2014 no declaration \u2014 proprietary by default; family annotation): the exam is VVDex evaluation IP and the graded output is an answer or a keyed value, so no submission content, diff, model claim or hidden-assertion name is published."
+    },
+    "vvdex.annotation.text-labeling-1": {
+      "class": "answer_key",
+      "rule": "answer-key disclosure (ownership vvdex_proprietary \u2014 no declaration \u2014 proprietary by default; family annotation): the exam is VVDex evaluation IP and the graded output is an answer or a keyed value, so no submission content, diff, model claim or hidden-assertion name is published."
+    }
+  },
+  "families": [
+    {
+      "envId": "vvdex.annotation.image-object-1",
+      "family": "annotation",
+      "label": "Multimodal annotation",
+      "short": "Annotation \u00b7 image-object-1",
+      "what": "A constructed image is reviewed for classification, object boxes, attributes and keypoints."
+    },
+    {
+      "envId": "vvdex.annotation.robot-video-1",
+      "family": "annotation",
+      "label": "Multimodal annotation",
+      "short": "Annotation \u00b7 robot-video-1",
+      "what": "A robot-catching video is reviewed for temporal events, frame-level object boxes, track identity and occlusion."
+    },
+    {
+      "envId": "vvdex.annotation.structured-data-1",
+      "family": "annotation",
+      "label": "Multimodal annotation",
+      "short": "Annotation \u00b7 structured-data-1",
+      "what": "Invented tabular records are reviewed for normalization, validity, duplicates, anomalies and relationships."
+    },
+    {
+      "envId": "vvdex.annotation.text-labeling-1",
+      "family": "annotation",
+      "label": "Multimodal annotation",
+      "short": "Annotation \u00b7 text-labeling-1",
+      "what": "An invented message is reviewed for classification and entity spans with consistent offsets."
+    }
+  ],
+  "lanes": [
+    {
+      "certifiedPasses": 25,
+      "countable": 40,
+      "counts": {
+        "certified_pass": 25,
+        "invalid": 0,
+        "lane_error": 0,
+        "model_fail": 15,
+        "withheld": 0
+      },
+      "lane": "cli/codex-gpt-5.5",
+      "rate": 0.625,
+      "rateInterval95": [
+        0.4703,
+        0.7578
+      ]
+    }
+  ],
+  "perExamMatrix": {
+    "exams": [
+      {
+        "envId": "vvdex.annotation.image-object-1",
+        "evalId": "fr-20260906-2d00c77f",
+        "family": "annotation",
+        "short": "Annotation \u00b7 image-object-1",
+        "title": "Object geometry annotation"
+      },
+      {
+        "envId": "vvdex.annotation.robot-video-1",
+        "evalId": "fr-20260906-08cf41e3",
+        "family": "annotation",
+        "short": "Annotation \u00b7 robot-video-1",
+        "title": "Robot catch temporal and tracking annotation"
+      },
+      {
+        "envId": "vvdex.annotation.structured-data-1",
+        "evalId": "fr-20260906-0524b448",
+        "family": "annotation",
+        "short": "Annotation \u00b7 structured-data-1",
+        "title": "Record normalization and duplicate QA"
+      },
+      {
+        "envId": "vvdex.annotation.text-labeling-1",
+        "evalId": "fr-20260906-09f49314",
+        "family": "annotation",
+        "short": "Annotation \u00b7 text-labeling-1",
+        "title": "Intent and entity annotation"
+      }
+    ],
+    "rows": [
+      {
+        "cells": {
+          "vvdex.annotation.image-object-1": {
+            "graded": 10,
+            "invalid": 0,
+            "laneErrors": 0,
+            "passes": 5,
+            "text": "5/10",
+            "withheld": 0
+          },
+          "vvdex.annotation.robot-video-1": {
+            "graded": 10,
+            "invalid": 0,
+            "laneErrors": 0,
+            "passes": 0,
+            "text": "0/10",
+            "withheld": 0
+          },
+          "vvdex.annotation.structured-data-1": {
+            "graded": 10,
+            "invalid": 0,
+            "laneErrors": 0,
+            "passes": 10,
+            "text": "10/10",
+            "withheld": 0
+          },
+          "vvdex.annotation.text-labeling-1": {
+            "graded": 10,
+            "invalid": 0,
+            "laneErrors": 0,
+            "passes": 10,
+            "text": "10/10",
+            "withheld": 0
+          }
+        },
+        "certifiedPasses": 25,
+        "lane": "cli/codex-gpt-5.5"
+      }
+    ]
+  },
+  "recordCount": 40,
+  "records": [
+    {
+      "canonicalBytesPublished": false,
+      "certificationReceiptSha256": "5c4ea7bc65ea8f8f88f44f7d4cb859be1d040f4d9247e8a0dd09c138b088d202",
+      "disclosureClass": "answer_key",
+      "environmentId": "vvdex.annotation.image-object-1",
+      "evalId": "fr-20260906-2d00c77f",
+      "examFingerprint": "422753713aeb9f41abcc4135d637e3064cae1e770fc8d22ec9dacf260b35a3ef",
+      "recordDigest": "648e95b3d571109148c78137d9202e454bec7f03164f20e1ac4d24ca823395e0",
+      "retired_for_future_evaluation": null
+    },
+    {
+      "canonicalBytesPublished": false,
+      "certificationReceiptSha256": "5c4ea7bc65ea8f8f88f44f7d4cb859be1d040f4d9247e8a0dd09c138b088d202",
+      "disclosureClass": "answer_key",
+      "environmentId": "vvdex.annotation.image-object-1",
+      "evalId": "fr-20260906-470625ed",
+      "examFingerprint": "422753713aeb9f41abcc4135d637e3064cae1e770fc8d22ec9dacf260b35a3ef",
+      "recordDigest": "d1c1e3f5eaa431b0b2ae53bccae13895768f3d52b8a7d98ddb2f7f1ee6a53e74",
+      "retired_for_future_evaluation": null
+    },
+    {
+      "canonicalBytesPublished": false,
+      "certificationReceiptSha256": "5c4ea7bc65ea8f8f88f44f7d4cb859be1d040f4d9247e8a0dd09c138b088d202",
+      "disclosureClass": "answer_key",
+      "environmentId": "vvdex.annotation.image-object-1",
+      "evalId": "fr-20260906-4a88a9bf",
+      "examFingerprint": "422753713aeb9f41abcc4135d637e3064cae1e770fc8d22ec9dacf260b35a3ef",
+      "recordDigest": "6947e974ea555f5a7d8f4664650e33c2badab9922358dbac8ee209231413d495",
+      "retired_for_future_evaluation": null
+    },
+    {
+      "canonicalBytesPublished": false,
+      "certificationReceiptSha256": "5c4ea7bc65ea8f8f88f44f7d4cb859be1d040f4d9247e8a0dd09c138b088d202",
+      "disclosureClass": "answer_key",
+      "environmentId": "vvdex.annotation.image-object-1",
+      "evalId": "fr-20260906-62fb1341",
+      "examFingerprint": "422753713aeb9f41abcc4135d637e3064cae1e770fc8d22ec9dacf260b35a3ef",
+      "recordDigest": "7a95898a5f2cd0f0b73c4e885cbbff22d2d90754e7602bb646a68df5f8f5a1e6",
+      "retired_for_future_evaluation": null
+    },
+    {
+      "canonicalBytesPublished": false,
+      "certificationReceiptSha256": "5c4ea7bc65ea8f8f88f44f7d4cb859be1d040f4d9247e8a0dd09c138b088d202",
+      "disclosureClass": "answer_key",
+      "environmentId": "vvdex.annotation.image-object-1",
+      "evalId": "fr-20260906-6dc38b98",
+      "examFingerprint": "422753713aeb9f41abcc4135d637e3064cae1e770fc8d22ec9dacf260b35a3ef",
+      "recordDigest": "a66b51f5da540d99f9ecf6ff3602d204399934d919da8d7a9859684c63d583c9",
+      "retired_for_future_evaluation": null
+    },
+    {
+      "canonicalBytesPublished": false,
+      "certificationReceiptSha256": "5c4ea7bc65ea8f8f88f44f7d4cb859be1d040f4d9247e8a0dd09c138b088d202",
+      "disclosureClass": "answer_key",
+      "environmentId": "vvdex.annotation.image-object-1",
+      "evalId": "fr-20260906-884851f3",
+      "examFingerprint": "422753713aeb9f41abcc4135d637e3064cae1e770fc8d22ec9dacf260b35a3ef",
+      "recordDigest": "37a729b8483f10b49bdd80e7ba918abe57e5ddc3d6ba8be593d23d816e082d9c",
+      "retired_for_future_evaluation": null
+    },
+    {
+      "canonicalBytesPublished": false,
+      "certificationReceiptSha256": "5c4ea7bc65ea8f8f88f44f7d4cb859be1d040f4d9247e8a0dd09c138b088d202",
+      "disclosureClass": "answer_key",
+      "environmentId": "vvdex.annotation.image-object-1",
+      "evalId": "fr-20260906-ad6f18b9",
+      "examFingerprint": "422753713aeb9f41abcc4135d637e3064cae1e770fc8d22ec9dacf260b35a3ef",
+      "recordDigest": "ad3ad73c931070d584cb6d9cb4c645a177b416c9758efe1b62d1bfee32b293b6",
+      "retired_for_future_evaluation": null
+    },
+    {
+      "canonicalBytesPublished": false,
+      "certificationReceiptSha256": "5c4ea7bc65ea8f8f88f44f7d4cb859be1d040f4d9247e8a0dd09c138b088d202",
+      "disclosureClass": "answer_key",
+      "environmentId": "vvdex.annotation.image-object-1",
+      "evalId": "fr-20260906-aef86705",
+      "examFingerprint": "422753713aeb9f41abcc4135d637e3064cae1e770fc8d22ec9dacf260b35a3ef",
+      "recordDigest": "cde2fc42622e4ef27c1a9505f9a81637fcf0e48bb634045dc0dc9f33e4f87ba5",
+      "retired_for_future_evaluation": null
+    },
+    {
+      "canonicalBytesPublished": false,
+      "certificationReceiptSha256": "5c4ea7bc65ea8f8f88f44f7d4cb859be1d040f4d9247e8a0dd09c138b088d202",
+      "disclosureClass": "answer_key",
+      "environmentId": "vvdex.annotation.image-object-1",
+      "evalId": "fr-20260906-af2506a7",
+      "examFingerprint": "422753713aeb9f41abcc4135d637e3064cae1e770fc8d22ec9dacf260b35a3ef",
+      "recordDigest": "b7b6915c0f62d8d5942e7d4d50d86b3967f5e9e4ab77908f010e7f79ecba5497",
+      "retired_for_future_evaluation": null
+    },
+    {
+      "canonicalBytesPublished": false,
+      "certificationReceiptSha256": "5c4ea7bc65ea8f8f88f44f7d4cb859be1d040f4d9247e8a0dd09c138b088d202",
+      "disclosureClass": "answer_key",
+      "environmentId": "vvdex.annotation.image-object-1",
+      "evalId": "fr-20260906-fd180ec1",
+      "examFingerprint": "422753713aeb9f41abcc4135d637e3064cae1e770fc8d22ec9dacf260b35a3ef",
+      "recordDigest": "6a5c91191a02c8ada9bb6fdd380d95e2df6559de255866d09d3af7b2cec1eb23",
+      "retired_for_future_evaluation": null
+    },
+    {
+      "canonicalBytesPublished": false,
+      "certificationReceiptSha256": "1c3f433704b10101599c5115ca7a85e1b364d6ec11b58f9316ca7e5e1f0cc396",
+      "disclosureClass": "answer_key",
+      "environmentId": "vvdex.annotation.robot-video-1",
+      "evalId": "fr-20260906-08cf41e3",
+      "examFingerprint": "c3b4773c375c10ad989357bb179cffd62151eccd2a58b52254609a54d434be33",
+      "recordDigest": "4cb0e73aa85083f8e0ef903fd4d28f277a177b2774a66767e5635c84b75f8213",
+      "retired_for_future_evaluation": null
+    },
+    {
+      "canonicalBytesPublished": false,
+      "certificationReceiptSha256": "1c3f433704b10101599c5115ca7a85e1b364d6ec11b58f9316ca7e5e1f0cc396",
+      "disclosureClass": "answer_key",
+      "environmentId": "vvdex.annotation.robot-video-1",
+      "evalId": "fr-20260906-12f8c6af",
+      "examFingerprint": "c3b4773c375c10ad989357bb179cffd62151eccd2a58b52254609a54d434be33",
+      "recordDigest": "5fdd4fe7918f8689e1ad975912f7241d661247fdccbc3b30aca8b96499b7a427",
+      "retired_for_future_evaluation": null
+    },
+    {
+      "canonicalBytesPublished": false,
+      "certificationReceiptSha256": "1c3f433704b10101599c5115ca7a85e1b364d6ec11b58f9316ca7e5e1f0cc396",
+      "disclosureClass": "answer_key",
+      "environmentId": "vvdex.annotation.robot-video-1",
+      "evalId": "fr-20260906-55c7c9bc",
+      "examFingerprint": "c3b4773c375c10ad989357bb179cffd62151eccd2a58b52254609a54d434be33",
+      "recordDigest": "c50dca52eb4e3d7351d38238b8f67be3139846d39eae70d6fb9f3e7edef1d8da",
+      "retired_for_future_evaluation": null
+    },
+    {
+      "canonicalBytesPublished": false,
+      "certificationReceiptSha256": "1c3f433704b10101599c5115ca7a85e1b364d6ec11b58f9316ca7e5e1f0cc396",
+      "disclosureClass": "answer_key",
+      "environmentId": "vvdex.annotation.robot-video-1",
+      "evalId": "fr-20260906-57451e50",
+      "examFingerprint": "c3b4773c375c10ad989357bb179cffd62151eccd2a58b52254609a54d434be33",
+      "recordDigest": "bde0ebe1b4f14b7989a966b5a11157dc19cb88391c5937324b23d81d9da1a61b",
+      "retired_for_future_evaluation": null
+    },
+    {
+      "canonicalBytesPublished": false,
+      "certificationReceiptSha256": "1c3f433704b10101599c5115ca7a85e1b364d6ec11b58f9316ca7e5e1f0cc396",
+      "disclosureClass": "answer_key",
+      "environmentId": "vvdex.annotation.robot-video-1",
+      "evalId": "fr-20260906-5921101f",
+      "examFingerprint": "c3b4773c375c10ad989357bb179cffd62151eccd2a58b52254609a54d434be33",
+      "recordDigest": "cafc99313b275331a9ae86c70be3f042b7ab7b8d0b442a9d5100f51c3ba81e93",
+      "retired_for_future_evaluation": null
+    },
+    {
+      "canonicalBytesPublished": false,
+      "certificationReceiptSha256": "1c3f433704b10101599c5115ca7a85e1b364d6ec11b58f9316ca7e5e1f0cc396",
+      "disclosureClass": "answer_key",
+      "environmentId": "vvdex.annotation.robot-video-1",
+      "evalId": "fr-20260906-7b7f8fb2",
+      "examFingerprint": "c3b4773c375c10ad989357bb179cffd62151eccd2a58b52254609a54d434be33",
+      "recordDigest": "1879a1fa6919d32cd484a4e39530ec262f54bdc00e7b0b1015ed4d2032245145",
+      "retired_for_future_evaluation": null
+    },
+    {
+      "canonicalBytesPublished": false,
+      "certificationReceiptSha256": "1c3f433704b10101599c5115ca7a85e1b364d6ec11b58f9316ca7e5e1f0cc396",
+      "disclosureClass": "answer_key",
+      "environmentId": "vvdex.annotation.robot-video-1",
+      "evalId": "fr-20260906-7f86cd6e",
+      "examFingerprint": "c3b4773c375c10ad989357bb179cffd62151eccd2a58b52254609a54d434be33",
+      "recordDigest": "6637ce529278ae9c381a7407303cca0aa6aadfa60671a0efdedf2ba76e576f18",
+      "retired_for_future_evaluation": null
+    },
+    {
+      "canonicalBytesPublished": false,
+      "certificationReceiptSha256": "1c3f433704b10101599c5115ca7a85e1b364d6ec11b58f9316ca7e5e1f0cc396",
+      "disclosureClass": "answer_key",
+      "environmentId": "vvdex.annotation.robot-video-1",
+      "evalId": "fr-20260906-c5386852",
+      "examFingerprint": "c3b4773c375c10ad989357bb179cffd62151eccd2a58b52254609a54d434be33",
+      "recordDigest": "014e24edff39b7c34708f0bc5e8f1c826ba7e8ec940bf705cbb0f96f22d7a832",
+      "retired_for_future_evaluation": null
+    },
+    {
+      "canonicalBytesPublished": false,
+      "certificationReceiptSha256": "1c3f433704b10101599c5115ca7a85e1b364d6ec11b58f9316ca7e5e1f0cc396",
+      "disclosureClass": "answer_key",
+      "environmentId": "vvdex.annotation.robot-video-1",
+      "evalId": "fr-20260906-ea40e0a7",
+      "examFingerprint": "c3b4773c375c10ad989357bb179cffd62151eccd2a58b52254609a54d434be33",
+      "recordDigest": "6b7b5285b5fc6dd7c66338dc973344ad8a80f87314711b7aefe95f783f8ad1b5",
+      "retired_for_future_evaluation": null
+    },
+    {
+      "canonicalBytesPublished": false,
+      "certificationReceiptSha256": "1c3f433704b10101599c5115ca7a85e1b364d6ec11b58f9316ca7e5e1f0cc396",
+      "disclosureClass": "answer_key",
+      "environmentId": "vvdex.annotation.robot-video-1",
+      "evalId": "fr-20260906-ee230324",
+      "examFingerprint": "c3b4773c375c10ad989357bb179cffd62151eccd2a58b52254609a54d434be33",
+      "recordDigest": "f041ab53c0abd3fbd8155b14173cb956bb0ccdb8f3abe59c2b0ec260e46b29ed",
+      "retired_for_future_evaluation": null
+    },
+    {
+      "canonicalBytesPublished": false,
+      "certificationReceiptSha256": "b87a309ecbbadef3d81a4007de8151699a6eeeec7058730c6491c9399465094f",
+      "disclosureClass": "answer_key",
+      "environmentId": "vvdex.annotation.structured-data-1",
+      "evalId": "fr-20260906-0524b448",
+      "examFingerprint": "5d6b3708dba2cdf08218a44997058413d0a3aae738299bce8c346bb2b309fc28",
+      "recordDigest": "6c7ef1ad19e86c265db5ca3ae26545f32a3aa7610be592847156999eaad0a613",
+      "retired_for_future_evaluation": null
+    },
+    {
+      "canonicalBytesPublished": false,
+      "certificationReceiptSha256": "b87a309ecbbadef3d81a4007de8151699a6eeeec7058730c6491c9399465094f",
+      "disclosureClass": "answer_key",
+      "environmentId": "vvdex.annotation.structured-data-1",
+      "evalId": "fr-20260906-53c54cfc",
+      "examFingerprint": "5d6b3708dba2cdf08218a44997058413d0a3aae738299bce8c346bb2b309fc28",
+      "recordDigest": "04d2e9b4b28fa343d7827d6cab7a2a40a2b7d60e2a7ebbe6a19df7d214bb1de4",
+      "retired_for_future_evaluation": null
+    },
+    {
+      "canonicalBytesPublished": false,
+      "certificationReceiptSha256": "b87a309ecbbadef3d81a4007de8151699a6eeeec7058730c6491c9399465094f",
+      "disclosureClass": "answer_key",
+      "environmentId": "vvdex.annotation.structured-data-1",
+      "evalId": "fr-20260906-6acfa16c",
+      "examFingerprint": "5d6b3708dba2cdf08218a44997058413d0a3aae738299bce8c346bb2b309fc28",
+      "recordDigest": "79cfd5852be5991c5c7a8e00c6855b01deda4cdd257fa08bb9e1eeb114640a12",
+      "retired_for_future_evaluation": null
+    },
+    {
+      "canonicalBytesPublished": false,
+      "certificationReceiptSha256": "b87a309ecbbadef3d81a4007de8151699a6eeeec7058730c6491c9399465094f",
+      "disclosureClass": "answer_key",
+      "environmentId": "vvdex.annotation.structured-data-1",
+      "evalId": "fr-20260906-81881665",
+      "examFingerprint": "5d6b3708dba2cdf08218a44997058413d0a3aae738299bce8c346bb2b309fc28",
+      "recordDigest": "6d4694530740ae02b13144a46a80351a3fe98fa31d89d3424737da904225ab37",
+      "retired_for_future_evaluation": null
+    },
+    {
+      "canonicalBytesPublished": false,
+      "certificationReceiptSha256": "b87a309ecbbadef3d81a4007de8151699a6eeeec7058730c6491c9399465094f",
+      "disclosureClass": "answer_key",
+      "environmentId": "vvdex.annotation.structured-data-1",
+      "evalId": "fr-20260906-8a3e7827",
+      "examFingerprint": "5d6b3708dba2cdf08218a44997058413d0a3aae738299bce8c346bb2b309fc28",
+      "recordDigest": "1307b28564b6fd0bdaabd143ff60207f7ea1c12dbfe5c387f37bb3f691d44b3a",
+      "retired_for_future_evaluation": null
+    },
+    {
+      "canonicalBytesPublished": false,
+      "certificationReceiptSha256": "b87a309ecbbadef3d81a4007de8151699a6eeeec7058730c6491c9399465094f",
+      "disclosureClass": "answer_key",
+      "environmentId": "vvdex.annotation.structured-data-1",
+      "evalId": "fr-20260906-8e07c82f",
+      "examFingerprint": "5d6b3708dba2cdf08218a44997058413d0a3aae738299bce8c346bb2b309fc28",
+      "recordDigest": "b6767314873b3ff13f6ce7f53682b9c383c88196633b2cdceae9e044e06b1358",
+      "retired_for_future_evaluation": null
+    },
+    {
+      "canonicalBytesPublished": false,
+      "certificationReceiptSha256": "b87a309ecbbadef3d81a4007de8151699a6eeeec7058730c6491c9399465094f",
+      "disclosureClass": "answer_key",
+      "environmentId": "vvdex.annotation.structured-data-1",
+      "evalId": "fr-20260906-a9e8fca4",
+      "examFingerprint": "5d6b3708dba2cdf08218a44997058413d0a3aae738299bce8c346bb2b309fc28",
+      "recordDigest": "c3be15a7ee24dc46e4f61be830b3111cbf48792324238e28295020c33354e496",
+      "retired_for_future_evaluation": null
+    },
+    {
+      "canonicalBytesPublished": false,
+      "certificationReceiptSha256": "b87a309ecbbadef3d81a4007de8151699a6eeeec7058730c6491c9399465094f",
+      "disclosureClass": "answer_key",
+      "environmentId": "vvdex.annotation.structured-data-1",
+      "evalId": "fr-20260906-b9a3013f",
+      "examFingerprint": "5d6b3708dba2cdf08218a44997058413d0a3aae738299bce8c346bb2b309fc28",
+      "recordDigest": "3753722b773d4e4aeee317ea729b2f76946a55af57cdfe71aa5f64727a2c9c1d",
+      "retired_for_future_evaluation": null
+    },
+    {
+      "canonicalBytesPublished": false,
+      "certificationReceiptSha256": "b87a309ecbbadef3d81a4007de8151699a6eeeec7058730c6491c9399465094f",
+      "disclosureClass": "answer_key",
+      "environmentId": "vvdex.annotation.structured-data-1",
+      "evalId": "fr-20260906-ebf6f550",
+      "examFingerprint": "5d6b3708dba2cdf08218a44997058413d0a3aae738299bce8c346bb2b309fc28",
+      "recordDigest": "98cf7408f3accbb7029809751c4723e435e720a77c22a94beb98bf611d5406de",
+      "retired_for_future_evaluation": null
+    },
+    {
+      "canonicalBytesPublished": false,
+      "certificationReceiptSha256": "b87a309ecbbadef3d81a4007de8151699a6eeeec7058730c6491c9399465094f",
+      "disclosureClass": "answer_key",
+      "environmentId": "vvdex.annotation.structured-data-1",
+      "evalId": "fr-20260906-f1d50a1b",
+      "examFingerprint": "5d6b3708dba2cdf08218a44997058413d0a3aae738299bce8c346bb2b309fc28",
+      "recordDigest": "5fec386d9f78f894df537589ca1c3a9470ec13dfbf92b360d28240b91023ee65",
+      "retired_for_future_evaluation": null
+    },
+    {
+      "canonicalBytesPublished": false,
+      "certificationReceiptSha256": "e5c3feb07dd8ea84c5bfea9e682f2f853bd5022092038147a10b148871d86c5a",
+      "disclosureClass": "answer_key",
+      "environmentId": "vvdex.annotation.text-labeling-1",
+      "evalId": "fr-20260906-09f49314",
+      "examFingerprint": "e1abe51398b2d950a3415678aaf8ec796420dfb05ea89b3b64afd33c1e345fd3",
+      "recordDigest": "ad912cc0b1e879202be847d6ff47326a8b769d3913c33c89df9263326287cb48",
+      "retired_for_future_evaluation": null
+    },
+    {
+      "canonicalBytesPublished": false,
+      "certificationReceiptSha256": "e5c3feb07dd8ea84c5bfea9e682f2f853bd5022092038147a10b148871d86c5a",
+      "disclosureClass": "answer_key",
+      "environmentId": "vvdex.annotation.text-labeling-1",
+      "evalId": "fr-20260906-1ac877d5",
+      "examFingerprint": "e1abe51398b2d950a3415678aaf8ec796420dfb05ea89b3b64afd33c1e345fd3",
+      "recordDigest": "b5b01baf361a364761324340a0e7f776d1de9aa5edea6652a2f9bedfe9f7d379",
+      "retired_for_future_evaluation": null
+    },
+    {
+      "canonicalBytesPublished": false,
+      "certificationReceiptSha256": "e5c3feb07dd8ea84c5bfea9e682f2f853bd5022092038147a10b148871d86c5a",
+      "disclosureClass": "answer_key",
+      "environmentId": "vvdex.annotation.text-labeling-1",
+      "evalId": "fr-20260906-3876bd90",
+      "examFingerprint": "e1abe51398b2d950a3415678aaf8ec796420dfb05ea89b3b64afd33c1e345fd3",
+      "recordDigest": "87e2b2d954245b76650d144b5e2ed2cc666cb17d73af83e76c5b3f6a23d0bdbb",
+      "retired_for_future_evaluation": null
+    },
+    {
+      "canonicalBytesPublished": false,
+      "certificationReceiptSha256": "e5c3feb07dd8ea84c5bfea9e682f2f853bd5022092038147a10b148871d86c5a",
+      "disclosureClass": "answer_key",
+      "environmentId": "vvdex.annotation.text-labeling-1",
+      "evalId": "fr-20260906-38dcc889",
+      "examFingerprint": "e1abe51398b2d950a3415678aaf8ec796420dfb05ea89b3b64afd33c1e345fd3",
+      "recordDigest": "003299dc0eca735f784408e749762c887a90832c70bc66439503b7da10333eee",
+      "retired_for_future_evaluation": null
+    },
+    {
+      "canonicalBytesPublished": false,
+      "certificationReceiptSha256": "e5c3feb07dd8ea84c5bfea9e682f2f853bd5022092038147a10b148871d86c5a",
+      "disclosureClass": "answer_key",
+      "environmentId": "vvdex.annotation.text-labeling-1",
+      "evalId": "fr-20260906-49710bdf",
+      "examFingerprint": "e1abe51398b2d950a3415678aaf8ec796420dfb05ea89b3b64afd33c1e345fd3",
+      "recordDigest": "33104a999a0428902401b7ffeaa929b2de537af21b71863d2de01b5868fe21f9",
+      "retired_for_future_evaluation": null
+    },
+    {
+      "canonicalBytesPublished": false,
+      "certificationReceiptSha256": "e5c3feb07dd8ea84c5bfea9e682f2f853bd5022092038147a10b148871d86c5a",
+      "disclosureClass": "answer_key",
+      "environmentId": "vvdex.annotation.text-labeling-1",
+      "evalId": "fr-20260906-50564102",
+      "examFingerprint": "e1abe51398b2d950a3415678aaf8ec796420dfb05ea89b3b64afd33c1e345fd3",
+      "recordDigest": "827e57535e98985d0fbe512136942a78163cd6d2123acab263ca597bdd883077",
+      "retired_for_future_evaluation": null
+    },
+    {
+      "canonicalBytesPublished": false,
+      "certificationReceiptSha256": "e5c3feb07dd8ea84c5bfea9e682f2f853bd5022092038147a10b148871d86c5a",
+      "disclosureClass": "answer_key",
+      "environmentId": "vvdex.annotation.text-labeling-1",
+      "evalId": "fr-20260906-5c3a23d2",
+      "examFingerprint": "e1abe51398b2d950a3415678aaf8ec796420dfb05ea89b3b64afd33c1e345fd3",
+      "recordDigest": "ec06840685b25beaf6b6df8775cc34a377131af1c61026b278359b8f422db04f",
+      "retired_for_future_evaluation": null
+    },
+    {
+      "canonicalBytesPublished": false,
+      "certificationReceiptSha256": "e5c3feb07dd8ea84c5bfea9e682f2f853bd5022092038147a10b148871d86c5a",
+      "disclosureClass": "answer_key",
+      "environmentId": "vvdex.annotation.text-labeling-1",
+      "evalId": "fr-20260906-64a9e783",
+      "examFingerprint": "e1abe51398b2d950a3415678aaf8ec796420dfb05ea89b3b64afd33c1e345fd3",
+      "recordDigest": "314ad299e8c74d9f76a9615eb5054c16c73489e4a87ef0e3506ae7c7bff8993b",
+      "retired_for_future_evaluation": null
+    },
+    {
+      "canonicalBytesPublished": false,
+      "certificationReceiptSha256": "e5c3feb07dd8ea84c5bfea9e682f2f853bd5022092038147a10b148871d86c5a",
+      "disclosureClass": "answer_key",
+      "environmentId": "vvdex.annotation.text-labeling-1",
+      "evalId": "fr-20260906-80719317",
+      "examFingerprint": "e1abe51398b2d950a3415678aaf8ec796420dfb05ea89b3b64afd33c1e345fd3",
+      "recordDigest": "cb2f2d25f460da6d9620639467f41d4824c1c8013c8e7cd679da84a34be70cec",
+      "retired_for_future_evaluation": null
+    },
+    {
+      "canonicalBytesPublished": false,
+      "certificationReceiptSha256": "e5c3feb07dd8ea84c5bfea9e682f2f853bd5022092038147a10b148871d86c5a",
+      "disclosureClass": "answer_key",
+      "environmentId": "vvdex.annotation.text-labeling-1",
+      "evalId": "fr-20260906-8a0a838e",
+      "examFingerprint": "e1abe51398b2d950a3415678aaf8ec796420dfb05ea89b3b64afd33c1e345fd3",
+      "recordDigest": "40b107e6f5a2bc46cb85916a0758419edb7567c61980979e348def9a35e3b9b9",
+      "retired_for_future_evaluation": null
+    }
+  ],
+  "refused": 0,
+  "retired_for_future_evaluation": {},
+  "schema": "vvdex.forge.campaign-summary/v1",
+  "suspectRecords": [],
+  "withheldByHarness": 0
+}

@@ -2,7 +2,8 @@
 
 Forge's Annotation family checks structured observations over video, images,
 text, structured data and audio. The public evidence covers five certified
-engineering fixtures; it is separate from the historical model campaigns.
+engineering fixtures. Their certification is distinct from model performance
+and from the historical software, browser and knowledge campaigns.
 
 | Fixture | Scope | Public evidence |
 | --- | --- | --- |
@@ -38,4 +39,17 @@ Studio JSON interoperability covers tested box subsets, not all platform formats
 Unsupported or lossy conversions are refused. Polygon comparison uses the
 implemented vertex representation. These are small fixtures, not a production
 annotation dataset, professional annotation engagement, or robotics expertise
-credential. No model performance follows from their certification.
+credential. No model performance follows from their certification alone. A model campaign
+must supply its own attempts, outcomes, input conditions and limitations.
+
+## Model performance is reported separately
+
+The September 6, 2026 GPT-5.5 CLI campaign records ten attempts on each of four
+fixed tasks. Image objects passed 5/10, robotic video 0/10, text labeling 10/10
+and structured data 10/10. Audio is N/A because this CLI lane does not support
+audio delivery. Images were supplied as native image attachments; video was
+represented by sampled still frames.
+
+Read [the campaign scope, strict outcomes and quality metrics](ANNOTATION-MODEL-CAMPAIGN.md).
+The fixture receipts above remain certification evidence; their
+`modelCampaign: null` fields do not incorporate these separate model results.

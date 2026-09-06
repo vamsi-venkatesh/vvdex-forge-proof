@@ -22,7 +22,7 @@
       "segmentTemporalIoU"
     ],
     "modality": "audio",
-    "modelCampaign": "not run",
+    "modelCampaign": null,
     "purpose": "Constructed non-speech audio is reviewed for events, temporal segments, silence and category consistency.",
     "rubricVersion": "1.0"
   },
@@ -41,7 +41,7 @@
   ],
   "examFingerprint": "7e749a2ffb885355e770a09007a7b2465edf1d8a50768441b8872ff9f951ed5e",
   "examId": "vvdex.annotation.audio-events-1",
-  "limitations": "Small constructed engineering fixtures, not a production dataset or professional annotation engagement. Video uses sparse frame boxes, not dense tracking. Audio contains tones and silence, not speech or speakers. CVAT XML 1.1 and Label Studio JSON cover tested box subsets only; unsupported or lossy conversions are refused. Polygon comparison requires the implemented vertex representation. No model performance or annotator population is inferred.",
+  "limitations": "Small constructed engineering fixtures, not a production dataset or professional annotation engagement. Video uses sparse frame boxes, not dense tracking. Audio contains tones and silence, not speech or speakers. CVAT XML 1.1 and Label Studio JSON cover tested box subsets only; unsupported or lossy conversions are refused. Polygon comparison requires the implemented vertex representation. Certification alone does not measure model performance or annotator population performance.",
   "modelCampaign": null,
   "referenceMetrics": {
     "classificationAccuracy": 1.0,

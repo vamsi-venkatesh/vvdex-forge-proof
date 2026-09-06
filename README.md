@@ -27,11 +27,27 @@ labels, structured records and audio events. Five certified fixtures are
 published as safe descriptors, provenance, certification receipts and aggregate
 reports. Read [ANNOTATION.md](ANNOTATION.md) for their scope and links.
 
-These are fixture certification results. They do not add attempts, model passes,
-or another model lane to the September 1–2 campaign below. The existing matrix
-and campaign arithmetic remain unchanged.
+Fixture certification and AI model performance answer different questions. The
+certification reports check the fixtures themselves. Annotation model campaigns
+measure submissions to those fixtures and are reported separately. Neither
+changes the September 1–2 matrix below; the campaigns cover different tasks.
 
-## 2. The evidence
+## Annotation model results · September 6, 2026
+
+A separate campaign tested GPT-5.5 through the signed-in Codex CLI on four fixed
+annotation tasks, ten attempts per task: **40 attempts, 25 strict passes and
+15 model failures**. All attempts were graded; lane errors, withheld outcomes
+and invalid outcomes were zero. Image objects passed 5/10, robotic video 0/10,
+text labeling 10/10 and structured data 10/10. Audio was not evaluated.
+
+Image inputs were native image attachments; video inputs were sampled still
+frames, not native video. These repeated fixed-task results do not estimate
+performance across unseen datasets. Quality scores and strict passes are
+reported separately in [ANNOTATION-MODEL-CAMPAIGN.md](ANNOTATION-MODEL-CAMPAIGN.md)
+and the [campaign report](https://vvdexops.com/reports/fc-ec21239c00aa/).
+This disjoint annotation campaign does not supersede the historical matrix.
+
+## 2. Historical AI evaluation evidence
 
 **5 certified evaluation environments · 5 families · 150 attempts · 148 graded rollouts · 93 certified passes**
 
@@ -49,7 +65,7 @@ Three superseded campaigns are kept in the same shape and cited only as history:
 `fc-3194f803055c` (52 certified passes), `fc-72fe6f91c29e` (41) and
 `fc-8626f712e26f` (8). Each of their reports states HISTORICAL on its own cover.
 
-## 3. The matrix
+## 3. Historical campaign matrix
 
 Campaign `fc-d89e429d2781`, three model lanes, five exams, ten rollouts per
 cell. Cells read passes over graded rollouts, and a lane error is stated beside
@@ -286,8 +302,9 @@ Only what the records and the receipts substantiate.
 
 ## 12. What Forge does not claim
 
-* **No universal capability ranking.** These are five task-specific exams on two
-  dates. Nothing here ranks the models in general.
+* **No universal capability ranking.** The historical matrix covers five
+  task-specific AI exams on two dates. Separate annotation campaigns do not
+  extend that matrix or rank models in general.
 * **No claim about models outside these exams**, or about other versions,
   settings, scaffolds or prompts of the same models.
 * **No claim that the exams are unbreakable.** The attack suite proves the

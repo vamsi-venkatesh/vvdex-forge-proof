@@ -1,0 +1,197 @@
+{
+  "campaignId": "fc-ec21239c00aa",
+  "cells": {
+    "cli/codex-gpt-5.5|vvdex.annotation.image-object-1": {
+      "certified": null,
+      "certifiedCounts": {
+        "certified_pass": 5,
+        "invalid": 0,
+        "lane_error": 0,
+        "model_fail": 5,
+        "withheld": 0
+      },
+      "evalId": "fr-20260906-fd180ec1",
+      "grader": null,
+      "integrity": "verified_contained",
+      "withheldBy": null
+    },
+    "cli/codex-gpt-5.5|vvdex.annotation.robot-video-1": {
+      "certified": null,
+      "certifiedCounts": {
+        "certified_pass": 0,
+        "invalid": 0,
+        "lane_error": 0,
+        "model_fail": 10,
+        "withheld": 0
+      },
+      "evalId": "fr-20260906-ee230324",
+      "grader": null,
+      "integrity": "verified_contained",
+      "withheldBy": null
+    },
+    "cli/codex-gpt-5.5|vvdex.annotation.structured-data-1": {
+      "certified": null,
+      "certifiedCounts": {
+        "certified_pass": 10,
+        "invalid": 0,
+        "lane_error": 0,
+        "model_fail": 0,
+        "withheld": 0
+      },
+      "evalId": "fr-20260906-f1d50a1b",
+      "grader": null,
+      "integrity": "verified_contained",
+      "withheldBy": null
+    },
+    "cli/codex-gpt-5.5|vvdex.annotation.text-labeling-1": {
+      "certified": null,
+      "certifiedCounts": {
+        "certified_pass": 10,
+        "invalid": 0,
+        "lane_error": 0,
+        "model_fail": 0,
+        "withheld": 0
+      },
+      "evalId": "fr-20260906-8a0a838e",
+      "grader": null,
+      "integrity": "verified_contained",
+      "withheldBy": null
+    }
+  },
+  "certificationReceipts": {
+    "vvdex.annotation.image-object-1": "5c4ea7bc65ea8f8f88f44f7d4cb859be1d040f4d9247e8a0dd09c138b088d202",
+    "vvdex.annotation.robot-video-1": "1c3f433704b10101599c5115ca7a85e1b364d6ec11b58f9316ca7e5e1f0cc396",
+    "vvdex.annotation.structured-data-1": "b87a309ecbbadef3d81a4007de8151699a6eeeec7058730c6491c9399465094f",
+    "vvdex.annotation.text-labeling-1": "e5c3feb07dd8ea84c5bfea9e682f2f853bd5022092038147a10b148871d86c5a"
+  },
+  "counts": {
+    "campaignId": "fc-ec21239c00aa",
+    "cells": 4,
+    "certifiedPasses": 25,
+    "lanes": {
+      "cli/codex-gpt-5.5": {
+        "certified_pass": 25,
+        "invalid": 0,
+        "lane_error": 0,
+        "model_fail": 15,
+        "withheld": 0
+      }
+    },
+    "recordCount": 40,
+    "recordDigests": [
+      "003299dc0eca735f784408e749762c887a90832c70bc66439503b7da10333eee",
+      "014e24edff39b7c34708f0bc5e8f1c826ba7e8ec940bf705cbb0f96f22d7a832",
+      "04d2e9b4b28fa343d7827d6cab7a2a40a2b7d60e2a7ebbe6a19df7d214bb1de4",
+      "1307b28564b6fd0bdaabd143ff60207f7ea1c12dbfe5c387f37bb3f691d44b3a",
+      "1879a1fa6919d32cd484a4e39530ec262f54bdc00e7b0b1015ed4d2032245145",
+      "314ad299e8c74d9f76a9615eb5054c16c73489e4a87ef0e3506ae7c7bff8993b",
+      "33104a999a0428902401b7ffeaa929b2de537af21b71863d2de01b5868fe21f9",
+      "3753722b773d4e4aeee317ea729b2f76946a55af57cdfe71aa5f64727a2c9c1d",
+      "37a729b8483f10b49bdd80e7ba918abe57e5ddc3d6ba8be593d23d816e082d9c",
+      "40b107e6f5a2bc46cb85916a0758419edb7567c61980979e348def9a35e3b9b9",
+      "4cb0e73aa85083f8e0ef903fd4d28f277a177b2774a66767e5635c84b75f8213",
+      "5fdd4fe7918f8689e1ad975912f7241d661247fdccbc3b30aca8b96499b7a427",
+      "5fec386d9f78f894df537589ca1c3a9470ec13dfbf92b360d28240b91023ee65",
+      "648e95b3d571109148c78137d9202e454bec7f03164f20e1ac4d24ca823395e0",
+      "6637ce529278ae9c381a7407303cca0aa6aadfa60671a0efdedf2ba76e576f18",
+      "6947e974ea555f5a7d8f4664650e33c2badab9922358dbac8ee209231413d495",
+      "6a5c91191a02c8ada9bb6fdd380d95e2df6559de255866d09d3af7b2cec1eb23",
+      "6b7b5285b5fc6dd7c66338dc973344ad8a80f87314711b7aefe95f783f8ad1b5",
+      "6c7ef1ad19e86c265db5ca3ae26545f32a3aa7610be592847156999eaad0a613",
+      "6d4694530740ae02b13144a46a80351a3fe98fa31d89d3424737da904225ab37",
+      "79cfd5852be5991c5c7a8e00c6855b01deda4cdd257fa08bb9e1eeb114640a12",
+      "7a95898a5f2cd0f0b73c4e885cbbff22d2d90754e7602bb646a68df5f8f5a1e6",
+      "827e57535e98985d0fbe512136942a78163cd6d2123acab263ca597bdd883077",
+      "87e2b2d954245b76650d144b5e2ed2cc666cb17d73af83e76c5b3f6a23d0bdbb",
+      "98cf7408f3accbb7029809751c4723e435e720a77c22a94beb98bf611d5406de",
+      "a66b51f5da540d99f9ecf6ff3602d204399934d919da8d7a9859684c63d583c9",
+      "ad3ad73c931070d584cb6d9cb4c645a177b416c9758efe1b62d1bfee32b293b6",
+      "ad912cc0b1e879202be847d6ff47326a8b769d3913c33c89df9263326287cb48",
+      "b5b01baf361a364761324340a0e7f776d1de9aa5edea6652a2f9bedfe9f7d379",
+      "b6767314873b3ff13f6ce7f53682b9c383c88196633b2cdceae9e044e06b1358",
+      "b7b6915c0f62d8d5942e7d4d50d86b3967f5e9e4ab77908f010e7f79ecba5497",
+      "bde0ebe1b4f14b7989a966b5a11157dc19cb88391c5937324b23d81d9da1a61b",
+      "c3be15a7ee24dc46e4f61be830b3111cbf48792324238e28295020c33354e496",
+      "c50dca52eb4e3d7351d38238b8f67be3139846d39eae70d6fb9f3e7edef1d8da",
+      "cafc99313b275331a9ae86c70be3f042b7ab7b8d0b442a9d5100f51c3ba81e93",
+      "cb2f2d25f460da6d9620639467f41d4824c1c8013c8e7cd679da84a34be70cec",
+      "cde2fc42622e4ef27c1a9505f9a81637fcf0e48bb634045dc0dc9f33e4f87ba5",
+      "d1c1e3f5eaa431b0b2ae53bccae13895768f3d52b8a7d98ddb2f7f1ee6a53e74",
+      "ec06840685b25beaf6b6df8775cc34a377131af1c61026b278359b8f422db04f",
+      "f041ab53c0abd3fbd8155b14173cb956bb0ccdb8f3abe59c2b0ec260e46b29ed"
+    ],
+    "refused": 0,
+    "suspectRecords": [],
+    "withheldByHarness": 0
+  },
+  "disclosure": {
+    "vvdex.annotation.image-object-1": {
+      "class": "answer_key",
+      "rule": "answer-key disclosure (ownership vvdex_proprietary \u2014 no declaration \u2014 proprietary by default; family annotation): the exam is VVDex evaluation IP and the graded output is an answer or a keyed value, so no submission content, diff, model claim or hidden-assertion name is published."
+    },
+    "vvdex.annotation.robot-video-1": {
+      "class": "answer_key",
+      "rule": "answer-key disclosure (ownership vvdex_proprietary \u2014 no declaration \u2014 proprietary by default; family annotation): the exam is VVDex evaluation IP and the graded output is an answer or a keyed value, so no submission content, diff, model claim or hidden-assertion name is published."
+    },
+    "vvdex.annotation.structured-data-1": {
+      "class": "answer_key",
+      "rule": "answer-key disclosure (ownership vvdex_proprietary \u2014 no declaration \u2014 proprietary by default; family annotation): the exam is VVDex evaluation IP and the graded output is an answer or a keyed value, so no submission content, diff, model claim or hidden-assertion name is published."
+    },
+    "vvdex.annotation.text-labeling-1": {
+      "class": "answer_key",
+      "rule": "answer-key disclosure (ownership vvdex_proprietary \u2014 no declaration \u2014 proprietary by default; family annotation): the exam is VVDex evaluation IP and the graded output is an answer or a keyed value, so no submission content, diff, model claim or hidden-assertion name is published."
+    }
+  },
+  "lanes": [
+    {
+      "certifiedPasses": 25,
+      "countable": 40,
+      "counts": {
+        "certified_pass": 25,
+        "invalid": 0,
+        "lane_error": 0,
+        "model_fail": 15,
+        "withheld": 0
+      },
+      "lane": "cli/codex-gpt-5.5",
+      "rate": 0.625,
+      "rateInterval95": [
+        0.4703,
+        0.7578
+      ]
+    }
+  ],
+  "refused": [],
+  "retired_for_future_evaluation": {},
+  "reviews": {
+    "vvdex.annotation.image-object-1": {
+      "classification": [],
+      "law": "a suspect examiner may not blame the model: verdict-bearing suspicion not cleared by in-record evidence withholds every model_fail in the run",
+      "suspect": false,
+      "withheld": [],
+      "withheldCount": 0
+    },
+    "vvdex.annotation.robot-video-1": {
+      "classification": [],
+      "law": "a suspect examiner may not blame the model: verdict-bearing suspicion not cleared by in-record evidence withholds every model_fail in the run",
+      "suspect": false,
+      "withheld": [],
+      "withheldCount": 0
+    },
+    "vvdex.annotation.structured-data-1": {
+      "classification": [],
+      "law": "a suspect examiner may not blame the model: verdict-bearing suspicion not cleared by in-record evidence withholds every model_fail in the run",
+      "suspect": false,
+      "withheld": [],
+      "withheldCount": 0
+    },
+    "vvdex.annotation.text-labeling-1": {
+      "classification": [],
+      "law": "a suspect examiner may not blame the model: verdict-bearing suspicion not cleared by in-record evidence withholds every model_fail in the run",
+      "suspect": false,
+      "withheld": [],
+      "withheldCount": 0
+    }
+  },
+  "schema": "vvdex.forge.campaign-counts/v1"
+}

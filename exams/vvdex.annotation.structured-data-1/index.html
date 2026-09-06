@@ -9,37 +9,62 @@
 <link rel="canonical" href="https://vvdexops.com/annotation/structured-data-1/">
 <link rel="icon" href="/favicon.svg?v=3" type="image/svg+xml">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-<link rel="stylesheet" href="/app.css?v=5">
+<link rel="stylesheet" href="/app.css?v=7">
 </head>
 <body>
 <a class="skip" href="#main">Skip to the content</a>
-<div class="app doc">
-  <header class="bar">
+<div class="app doc forge-shell">
+  <header class="bar forge-topbar">
     <a class="brand" href="/"><svg class="punch" viewBox="0 0 40 44" aria-hidden="true" focusable="false"><path class="mk-rule" stroke-width="1.6" d="M20 2 37.32 12v20L20 42 2.68 32V12Z"/><path class="mk-face" d="M30 36H80V47H64L62 60H74L78 72H22L26 60H38L36 47H30L8 43Z" transform="translate(5.35 4.4) scale(.333)"/></svg><span class="word">VVDex <i>Forge</i></span></a>
-    <div class="stat"><span class="lamp" aria-hidden="true"></span>
-      <span>Environment certification · no model campaign</span></div>
+    <span class="forge-topline">AI exams. Evidence. Independent grading.</span><button class="forge-menu" type="button" aria-expanded="false" aria-controls="forge-navigation">Menu <span aria-hidden="true">☰</span></button>
   </header>
-  <nav class="rail" aria-label="Documents">
-    <a href="/#overview"><span class="k">&larr;</span>Instrument</a>
-    <a href="/methodology/"><span class="k">&middot;</span>Methodology</a>
-    <a href="/catalog/"><span class="k">&middot;</span>Catalog</a>
-    <a href="/featured/"><span class="k">&middot;</span>Featured exams</a>
-    <a class="on" aria-current="page" href="/annotation/"><span class="k">&middot;</span>Annotation</a>
-    <a href="/reports/"><span class="k">&middot;</span>Reports</a>
-    <a href="/integrity/"><span class="k">&middot;</span>Integrity</a>
-    <a href="/ledger-verify/"><span class="k">&middot;</span>Ledger</a>
-    <a href="/terms/"><span class="k">&middot;</span>Terms</a>
-    <a href="/connect/"><span class="k">&middot;</span>Connect</a>
+  <button class="forge-nav-shade" type="button" tabindex="-1" aria-label="Close navigation" hidden></button>
+  <nav id="forge-navigation" class="rail forge-navigation" aria-label="Main navigation">
+<div class="forge-nav-mobile"><span>Navigation</span><button class="forge-nav-close" type="button" aria-label="Close navigation">✕</button></div>
+<div class="forge-nav-group">
+<a href="/">Home</a>
+</div>
+<div class="forge-nav-group">
+<p class="forge-nav-label">Explore</p>
+<a href="/ai-exams/">AI exams</a>
+<a class="on" aria-current="page" href="/annotation/">Annotation</a>
+<a href="/reports/">Model results</a>
+<a href="/#studio">Studio</a>
+</div>
+<details class="forge-nav-group forge-nav-secondary forge-nav-exam-design"><summary>Exam design</summary>
+<a href="/#families">Exam families</a>
+<a href="/#chain">Certification chain</a>
+<a href="/#box">Isolated grading</a>
+<a href="/#attack">Attack checks</a>
+</details>
+<div class="forge-nav-group">
+<p class="forge-nav-label">Understand</p>
+<a href="/methodology/">How grading works</a>
+<a href="/integrity/">Integrity</a>
+<a href="/verify/">Verify evidence</a>
+</div>
+<details class="forge-nav-group forge-nav-secondary"><summary>More from Forge</summary>
+<a href="/featured/">Featured AI exams</a>
+<a href="/ledger-verify/">Ledger verification</a>
+<a href="/evals/">Evaluation archive</a>
+</details>
+<div class="forge-nav-group">
+<a href="/connect/">Connect</a>
+<a href="/terms/">Terms &amp; ownership</a>
+</div>
+<p class="forge-nav-note">A result is only as strong as the evidence behind it.</p>
   </nav>
 <main class="work docpage" id="main">
 <section class="mast"><div class="wrap">
 <p class="kicker">Multimodal Annotation · structured</p>
 <h1>Record normalization and duplicate QA</h1><p class="lede">Invented tabular records are reviewed for normalization, validity, duplicates, anomalies and relationships.</p>
-<p><strong>Environment certification: certified.</strong> No model campaign has been run.</p>
+<p><strong>Environment certification: certified.</strong> Certification checks whether the environment grades work reliably.</p>
 </div></section><div class="wrap">
+<nav class="forge-page-nav" aria-label="On this page"><a href="#model-results">Model results</a><a href="#certification-checks">Certification checks</a><a href="#evidence-details">Verify evidence</a></nav>
+<section class="annotation-model-results" id="model-results"><h2>AI agent results on this task</h2><div class="tablewrap"><table><thead><tr><th>AI agent</th><th>Attempts</th><th>Passed</th><th>Failed</th><th>Lane errors</th><th>Withheld</th><th>Invalid</th></tr></thead><tbody><tr><th scope="row">cli/codex-gpt-5.5</th><td>10</td><td>10</td><td>0</td><td>0</td><td>0</td><td>0</td></tr></tbody></table></div><p>Repeated attempts on this fixed task. Quality measurements are separate from the pass gate; sampled video frames do not establish native video capability.</p><p><a href="/reports/fc-ec21239c00aa/">Campaign report and limitations</a> · <a href="/reports/fc-ec21239c00aa/summary.json">Measured results JSON</a></p></section>
 <h2>What is reviewed</h2><p>Annotation types: pair, row. Rubric version 1.0.</p>
 <p>Constructed project fixture. No customer dataset or professional annotation engagement is claimed.</p>
-<h2>Certification evidence</h2><ul>
+<h2 id="certification-checks">Certification evidence</h2><ul>
 <li>Empty baseline: fail; observed pass rate 0.0, 2 independent seeds.</li>
 <li>Private reference: pass; observed pass rate 1.0, 2 independent seeds.</li>
 <li>Controls: 19 cases; distinguished: True.</li>
@@ -49,7 +74,7 @@
 <div class="tablewrap"><table><thead><tr><th>Metric</th><th>Observed value</th></tr></thead><tbody><tr><th scope="row">pairAccuracy</th><td>1.0</td></tr><tr><th scope="row">pairF1</th><td>1.0</td></tr><tr><th scope="row">pairPrecision</th><td>1.0</td></tr><tr><th scope="row">pairRecall</th><td>1.0</td></tr><tr><th scope="row">rowAccuracy</th><td>1.0</td></tr><tr><th scope="row">rowF1</th><td>1.0</td></tr><tr><th scope="row">rowPrecision</th><td>1.0</td></tr><tr><th scope="row">rowRecall</th><td>1.0</td></tr></tbody></table></div>
 <h2>Agreement and validation</h2><p>Submitted annotation sets can be compared for agreement, disagreement, ambiguity, missing and invalid annotations. Disagreement alone is not a failed reference grade. No multi-annotator study was run for this release; agreement study metrics are N/A.</p>
 <p>Validation covers malformed input, schema, bounds and modality-specific consistency. Error-class details and supported capabilities are documented in the report JSON.</p>
-<h2>Runtime and isolation</h2><pre>{
+<details class="annotation-technical" id="evidence-details"><summary>Runtime, fingerprints and verification files</summary><h2>Runtime and isolation</h2><pre>{
   &quot;fsPolicy&quot;: &quot;agent-tree-only&quot;,
   &quot;imageDigest&quot;: &quot;sha256:679b36225a1f83238efba8c71b9cde3c24caaeacc9b682ae92819cb55eec328f&quot;,
   &quot;networkPolicy&quot;: &quot;deny&quot;,
@@ -65,18 +90,20 @@
 <h2>Verify this evidence</h2><p class="mono">vvdex.annotation.structured-data-1</p><p>Environment fingerprint:</p><pre>5d6b3708dba2cdf08218a44997058413d0a3aae738299bce8c346bb2b309fc28</pre>
 <p>Certification evidence digest:</p><pre>6844331643ab3301e2c3cb129edef1ca2bc06b5d0baaa69ba0b3762c6a941c4c</pre>
 <p><a href="/annotation/structured-data-1/exam.public.json">Public descriptor</a> · <a href="/annotation/structured-data-1/certification-receipt.json">Certification receipt</a> · <a href="/annotation/structured-data-1/provenance.public.json">Provenance</a> · <a href="/annotation/structured-data-1/report.public.json">Report JSON</a> · <a href="/annotation/structured-data-1/digests.json">File digests</a> · <a href="/annotation/structured-data-1/VERIFY.md">Verification instructions</a></p>
-<h2>Limitations and ownership</h2><p>Small constructed engineering fixtures, not a production dataset or professional annotation engagement. Video uses sparse frame boxes, not dense tracking. Audio contains tones and silence, not speech or speakers. CVAT XML 1.1 and Label Studio JSON cover tested box subsets only; unsupported or lossy conversions are refused. Polygon comparison requires the implemented vertex representation. No model performance or annotator population is inferred.</p>
+</details><h2>Limitations and ownership</h2><p>Small constructed engineering fixtures, not a production dataset or professional annotation engagement. Video uses sparse frame boxes, not dense tracking. Audio contains tones and silence, not speech or speakers. CVAT XML 1.1 and Label Studio JSON cover tested box subsets only; unsupported or lossy conversions are refused. Polygon comparison requires the implemented vertex representation. The attached model campaign measures these fixed tasks only; general capability and annotator population performance are not inferred.</p>
 <p>Public proof demonstrates the result. The reusable evaluation instrument remains private. <a href="/terms/">Terms and ownership</a>.</p>
 <p><a href="/annotation/">All five modalities</a></p></div>
 </main>
   <footer class="foot">
-    <span class="grow"><b>VVDex Forge</b> — reproducible exams for AI agents. Built and operated by
+    <span class="grow"><b>VVDex Forge</b> — AI exams with verifiable evidence. Built and operated by
     <a href="https://vamsivenkatesh.com">Vamsi Venkatesh</a>.</span>
-    <span>docs: <a href="/methodology/">methodology</a> · <a href="/catalog/">catalog</a> ·
-    <a href="/featured/">featured</a> · <a href="/reports/">reports</a> · <a href="/integrity/">integrity</a> ·
+    <span>docs: <a href="/ai-exams/">AI exams</a> · <a href="/annotation/">annotation</a> ·
+    <a href="/reports/">model results</a> · <a href="/methodology/">methodology</a> · <a href="/catalog/">catalog</a> ·
+    <a href="/featured/">featured</a> · <a href="/integrity/">integrity</a> ·
     <a href="/ledger-verify/">ledger</a> · <a href="/evals/">/evals</a></span>
     <span>&copy; VVDex. All rights reserved. VVDex-authored evaluation materials remain proprietary; publication grants no open-source licence. Third-party open source keeps its own licence. <a href="/terms/">Terms &amp; ownership</a>.</span>
   </footer>
 </div>
+<script src="/navigation.js" defer></script>
 </body>
 </html>

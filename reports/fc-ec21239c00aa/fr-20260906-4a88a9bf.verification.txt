@@ -1,0 +1,12 @@
+VVDex Forge report verification — fr-20260906-4a88a9bf
+
+1. vvdex-env verify-report --report fr-20260906-4a88a9bf.html
+2. or by hand: replace every occurrence of the report digest stated in the
+   document with 64 '0' characters, then sha256 the file — it must equal
+   that digest.
+3. shasum -a 256 fr-20260906-4a88a9bf.json must equal recordSha256 in
+   fr-20260906-4a88a9bf.manifest.json, and the run bundle digest must equal
+   bundleSha256 in the run's own bundle file.
+
+recordSha256: ad894127614870eed695ea5e31e7d0898bde1f4313c597316767bd50d032bd71
+runBundleSha256: 4a88a9bf41b967135b1e1c2779f90b3d240b06f31ea26bb4774179aef1c51394

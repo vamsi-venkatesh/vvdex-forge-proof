@@ -28,7 +28,147 @@
       "trackingConsistency"
     ],
     "modality": "video",
-    "modelCampaign": "not run",
+    "modelCampaign": {
+      "campaignId": "fc-ec21239c00aa",
+      "coverage": {
+        "cellsPending": 0,
+        "cellsRun": 4,
+        "complete": true,
+        "completedAttempts": 40,
+        "examsNotStarted": [],
+        "missingAttempts": 0,
+        "note": "Cells run against the cells this campaign declared it would run.",
+        "pending": [],
+        "planDeclared": true,
+        "plannedAttempts": 40,
+        "plannedCells": 4,
+        "plannedExams": [
+          "vvdex.annotation.robot-video-1",
+          "vvdex.annotation.image-object-1",
+          "vvdex.annotation.text-labeling-1",
+          "vvdex.annotation.structured-data-1"
+        ],
+        "plannedModels": [
+          "cli/codex-gpt-5.5"
+        ],
+        "rolloutsPerCell": 10
+      },
+      "examFingerprint": "c3b4773c375c10ad989357bb179cffd62151eccd2a58b52254609a54d434be33",
+      "models": [
+        {
+          "attempts": 10,
+          "delivery": "sampled image frames; no native video",
+          "failed": 10,
+          "invalid": 0,
+          "laneErrors": 0,
+          "model": "cli/codex-gpt-5.5",
+          "passed": 0,
+          "quality": {
+            "axes": [
+              {
+                "id": "boxPrecision",
+                "mean": 0.8,
+                "n": 5
+              },
+              {
+                "id": "boxRecall",
+                "mean": 0.8,
+                "n": 5
+              },
+              {
+                "id": "boxF1",
+                "mean": 0.8,
+                "n": 5
+              },
+              {
+                "id": "boxIoU",
+                "mean": 0.5775007320940269,
+                "n": 5
+              },
+              {
+                "id": "classificationPrecision",
+                "mean": 1.0,
+                "n": 5
+              },
+              {
+                "id": "classificationRecall",
+                "mean": 1.0,
+                "n": 5
+              },
+              {
+                "id": "classificationF1",
+                "mean": 1.0,
+                "n": 5
+              },
+              {
+                "id": "classificationAccuracy",
+                "mean": 1.0,
+                "n": 5
+              },
+              {
+                "id": "eventPrecision",
+                "mean": 0.2,
+                "n": 5
+              },
+              {
+                "id": "eventRecall",
+                "mean": 0.2,
+                "n": 5
+              },
+              {
+                "id": "eventF1",
+                "mean": 0.2,
+                "n": 5
+              },
+              {
+                "id": "eventTemporalIoU",
+                "mean": 0.20144998001005981,
+                "n": 5
+              },
+              {
+                "id": "segmentPrecision",
+                "mean": 0.8,
+                "n": 5
+              },
+              {
+                "id": "segmentRecall",
+                "mean": 1.0,
+                "n": 5
+              },
+              {
+                "id": "segmentF1",
+                "mean": 0.8666666666666666,
+                "n": 5
+              },
+              {
+                "id": "segmentTemporalIoU",
+                "mean": 0.6397888999008924,
+                "n": 5
+              },
+              {
+                "id": "trackingConsistency",
+                "mean": 1.0,
+                "n": 5
+              }
+            ],
+            "measuredAttempts": 10,
+            "scoreMean": 0.2800575270090888
+          },
+          "stages": {
+            "edit": 10,
+            "graded": 10,
+            "hidden_pass": 0,
+            "inspect": 10,
+            "submit": 10,
+            "test": 10
+          },
+          "withheld": 0
+        }
+      ],
+      "reportUrl": "/reports/fc-ec21239c00aa/",
+      "summarySha256": "8ec74ad2f3865f7014f17290e7e7c3199e8a1d597a58f7d0ad095f6c6934cae9",
+      "summaryUrl": "/reports/fc-ec21239c00aa/summary.json"
+    },
     "purpose": "A robot-catching video is reviewed for temporal events, frame-level object boxes, track identity and occlusion.",
     "rubricVersion": "1.0"
   },
@@ -53,8 +193,148 @@
   ],
   "examFingerprint": "c3b4773c375c10ad989357bb179cffd62151eccd2a58b52254609a54d434be33",
   "examId": "vvdex.annotation.robot-video-1",
-  "limitations": "Small constructed engineering fixtures, not a production dataset or professional annotation engagement. Video uses sparse frame boxes, not dense tracking. Audio contains tones and silence, not speech or speakers. CVAT XML 1.1 and Label Studio JSON cover tested box subsets only; unsupported or lossy conversions are refused. Polygon comparison requires the implemented vertex representation. No model performance or annotator population is inferred.",
-  "modelCampaign": null,
+  "limitations": "Small constructed engineering fixtures, not a production dataset or professional annotation engagement. Video uses sparse frame boxes, not dense tracking. Audio contains tones and silence, not speech or speakers. CVAT XML 1.1 and Label Studio JSON cover tested box subsets only; unsupported or lossy conversions are refused. Polygon comparison requires the implemented vertex representation. The attached model campaign measures these fixed tasks only; general capability and annotator population performance are not inferred.",
+  "modelCampaign": {
+    "campaignId": "fc-ec21239c00aa",
+    "coverage": {
+      "cellsPending": 0,
+      "cellsRun": 4,
+      "complete": true,
+      "completedAttempts": 40,
+      "examsNotStarted": [],
+      "missingAttempts": 0,
+      "note": "Cells run against the cells this campaign declared it would run.",
+      "pending": [],
+      "planDeclared": true,
+      "plannedAttempts": 40,
+      "plannedCells": 4,
+      "plannedExams": [
+        "vvdex.annotation.robot-video-1",
+        "vvdex.annotation.image-object-1",
+        "vvdex.annotation.text-labeling-1",
+        "vvdex.annotation.structured-data-1"
+      ],
+      "plannedModels": [
+        "cli/codex-gpt-5.5"
+      ],
+      "rolloutsPerCell": 10
+    },
+    "examFingerprint": "c3b4773c375c10ad989357bb179cffd62151eccd2a58b52254609a54d434be33",
+    "models": [
+      {
+        "attempts": 10,
+        "delivery": "sampled image frames; no native video",
+        "failed": 10,
+        "invalid": 0,
+        "laneErrors": 0,
+        "model": "cli/codex-gpt-5.5",
+        "passed": 0,
+        "quality": {
+          "axes": [
+            {
+              "id": "boxPrecision",
+              "mean": 0.8,
+              "n": 5
+            },
+            {
+              "id": "boxRecall",
+              "mean": 0.8,
+              "n": 5
+            },
+            {
+              "id": "boxF1",
+              "mean": 0.8,
+              "n": 5
+            },
+            {
+              "id": "boxIoU",
+              "mean": 0.5775007320940269,
+              "n": 5
+            },
+            {
+              "id": "classificationPrecision",
+              "mean": 1.0,
+              "n": 5
+            },
+            {
+              "id": "classificationRecall",
+              "mean": 1.0,
+              "n": 5
+            },
+            {
+              "id": "classificationF1",
+              "mean": 1.0,
+              "n": 5
+            },
+            {
+              "id": "classificationAccuracy",
+              "mean": 1.0,
+              "n": 5
+            },
+            {
+              "id": "eventPrecision",
+              "mean": 0.2,
+              "n": 5
+            },
+            {
+              "id": "eventRecall",
+              "mean": 0.2,
+              "n": 5
+            },
+            {
+              "id": "eventF1",
+              "mean": 0.2,
+              "n": 5
+            },
+            {
+              "id": "eventTemporalIoU",
+              "mean": 0.20144998001005981,
+              "n": 5
+            },
+            {
+              "id": "segmentPrecision",
+              "mean": 0.8,
+              "n": 5
+            },
+            {
+              "id": "segmentRecall",
+              "mean": 1.0,
+              "n": 5
+            },
+            {
+              "id": "segmentF1",
+              "mean": 0.8666666666666666,
+              "n": 5
+            },
+            {
+              "id": "segmentTemporalIoU",
+              "mean": 0.6397888999008924,
+              "n": 5
+            },
+            {
+              "id": "trackingConsistency",
+              "mean": 1.0,
+              "n": 5
+            }
+          ],
+          "measuredAttempts": 10,
+          "scoreMean": 0.2800575270090888
+        },
+        "stages": {
+          "edit": 10,
+          "graded": 10,
+          "hidden_pass": 0,
+          "inspect": 10,
+          "submit": 10,
+          "test": 10
+        },
+        "withheld": 0
+      }
+    ],
+    "reportUrl": "/reports/fc-ec21239c00aa/",
+    "summarySha256": "8ec74ad2f3865f7014f17290e7e7c3199e8a1d597a58f7d0ad095f6c6934cae9",
+    "summaryUrl": "/reports/fc-ec21239c00aa/summary.json"
+  },
   "referenceMetrics": {
     "boxF1": 1.0,
     "boxIoU": 1.0,
