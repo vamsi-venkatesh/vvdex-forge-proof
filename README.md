@@ -372,3 +372,7 @@ controls, [VERIFICATION.md](VERIFICATION.md) for what a reader can check.
 Built and operated by VVDex, Magdeburg, DE. Written permission and access to
 sealed evidence under agreement are arranged through
 <https://vvdexops.com/connect/>.
+
+## Capability evidence
+
+[Capability methodology and taxonomy](CAPABILITIES.md) explain the generated [capability index](capabilities/index.json) and its campaign/attempt references. Explore the same measurements on [VVDex Forge](https://vvdexops.com/capabilities/).

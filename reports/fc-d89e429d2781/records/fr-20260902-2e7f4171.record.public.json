@@ -73,6 +73,7 @@
   "rollouts": [
     {
       "containmentVerdict": "verified_contained",
+      "effectiveCertifiedOutcome": "model_fail",
       "elapsedMs": 25181,
       "id": "8ec5820d-ef88-42c9-9c7f-e5cf9923de8d",
       "lane": "cli/claude-sonnet",
@@ -104,6 +105,7 @@
     },
     {
       "containmentVerdict": "verified_contained",
+      "effectiveCertifiedOutcome": "certified_pass",
       "elapsedMs": 51137,
       "id": "72bcf971-7d06-42c0-9d6f-7f4ab5380c76",
       "lane": "cli/claude-sonnet",
@@ -134,6 +136,7 @@
     },
     {
       "containmentVerdict": "verified_contained",
+      "effectiveCertifiedOutcome": "model_fail",
       "elapsedMs": 52091,
       "id": "62bceaaa-2bf1-4067-8bef-6393b41f4d42",
       "lane": "cli/claude-sonnet",
@@ -164,6 +167,7 @@
     },
     {
       "containmentVerdict": "verified_contained",
+      "effectiveCertifiedOutcome": "model_fail",
       "elapsedMs": 36057,
       "id": "a66f85fd-827a-4d31-b407-6b0983c085ab",
       "lane": "cli/claude-sonnet",
@@ -195,6 +199,7 @@
     },
     {
       "containmentVerdict": "verified_contained",
+      "effectiveCertifiedOutcome": "model_fail",
       "elapsedMs": 59996,
       "id": "3fcba938-b19c-41d4-84fe-6ab6fec3c0a5",
       "lane": "cli/claude-sonnet",
@@ -225,6 +230,7 @@
     },
     {
       "containmentVerdict": "verified_contained",
+      "effectiveCertifiedOutcome": "model_fail",
       "elapsedMs": 56294,
       "id": "70cf5fcc-7581-48bd-a1a9-53b4ce24a3a9",
       "lane": "cli/claude-sonnet",
@@ -255,6 +261,7 @@
     },
     {
       "containmentVerdict": "verified_contained",
+      "effectiveCertifiedOutcome": "model_fail",
       "elapsedMs": 53827,
       "id": "d13f1d97-627d-4353-b467-a02faeff3156",
       "lane": "cli/claude-sonnet",
@@ -285,6 +292,7 @@
     },
     {
       "containmentVerdict": "verified_contained",
+      "effectiveCertifiedOutcome": "model_fail",
       "elapsedMs": 24545,
       "id": "9d47ee0f-e8c3-4eb8-a5cd-ba455bfb80a3",
       "lane": "cli/claude-sonnet",
@@ -316,6 +324,7 @@
     },
     {
       "containmentVerdict": "verified_contained",
+      "effectiveCertifiedOutcome": "model_fail",
       "elapsedMs": 43772,
       "id": "a8cca2fc-949e-4473-a79f-ac3027cab760",
       "lane": "cli/claude-sonnet",
@@ -347,6 +356,7 @@
     },
     {
       "containmentVerdict": "verified_contained",
+      "effectiveCertifiedOutcome": "model_fail",
       "elapsedMs": 55595,
       "id": "153192c8-0932-4da9-bf81-111446fc32a5",
       "lane": "cli/claude-sonnet",
@@ -377,6 +387,7 @@
     },
     {
       "containmentVerdict": "verified_contained",
+      "effectiveCertifiedOutcome": "certified_pass",
       "elapsedMs": 76908,
       "id": "781eb674-aa4a-4b2f-b1bc-502f4710a4fe",
       "lane": "cli/codex",
@@ -407,6 +418,7 @@
     },
     {
       "containmentVerdict": "verified_contained",
+      "effectiveCertifiedOutcome": "certified_pass",
       "elapsedMs": 66035,
       "id": "e71d8908-6f2a-4362-9b6f-bdaf29b367f9",
       "lane": "cli/codex",
@@ -437,6 +449,7 @@
     },
     {
       "containmentVerdict": "verified_contained",
+      "effectiveCertifiedOutcome": "certified_pass",
       "elapsedMs": 69651,
       "id": "2158c4f5-9a18-45cc-82e5-aa84a17c46a2",
       "lane": "cli/codex",
@@ -467,6 +480,7 @@
     },
     {
       "containmentVerdict": "verified_contained",
+      "effectiveCertifiedOutcome": "certified_pass",
       "elapsedMs": 68817,
       "id": "8b6e987c-8ccd-42a0-a076-30800bf7504b",
       "lane": "cli/codex",
@@ -497,6 +511,7 @@
     },
     {
       "containmentVerdict": "verified_contained",
+      "effectiveCertifiedOutcome": "certified_pass",
       "elapsedMs": 68153,
       "id": "fe164929-6cd7-4f59-acbc-ccb6ad02ddb2",
       "lane": "cli/codex",
@@ -527,6 +542,7 @@
     },
     {
       "containmentVerdict": "verified_contained",
+      "effectiveCertifiedOutcome": "certified_pass",
       "elapsedMs": 65614,
       "id": "854f7dae-d4bc-441f-be3f-fc48eb324c71",
       "lane": "cli/codex",
@@ -557,6 +573,7 @@
     },
     {
       "containmentVerdict": "verified_contained",
+      "effectiveCertifiedOutcome": "certified_pass",
       "elapsedMs": 65924,
       "id": "18d03c3a-6629-4250-886e-c73986fdece7",
       "lane": "cli/codex",
@@ -587,6 +604,7 @@
     },
     {
       "containmentVerdict": "verified_contained",
+      "effectiveCertifiedOutcome": "certified_pass",
       "elapsedMs": 66451,
       "id": "854f8510-cc34-4a46-a50f-771c323e3025",
       "lane": "cli/codex",
@@ -617,6 +635,7 @@
     },
     {
       "containmentVerdict": "verified_contained",
+      "effectiveCertifiedOutcome": "certified_pass",
       "elapsedMs": 65720,
       "id": "a111a1ee-81a7-4118-827f-2f8cf436e16c",
       "lane": "cli/codex",
@@ -647,6 +666,7 @@
     },
     {
       "containmentVerdict": "verified_contained",
+      "effectiveCertifiedOutcome": "certified_pass",
       "elapsedMs": 65231,
       "id": "afdb6ff0-9c18-494d-874a-43fce0ae7de7",
       "lane": "cli/codex",
@@ -677,6 +697,7 @@
     },
     {
       "containmentVerdict": "verified_contained",
+      "effectiveCertifiedOutcome": "model_fail",
       "elapsedMs": 18549,
       "id": "ab1db90e-5252-4819-b24b-0770692d26a9",
       "lane": "codestral-latest",
@@ -708,6 +729,7 @@
     },
     {
       "containmentVerdict": "verified_contained",
+      "effectiveCertifiedOutcome": "model_fail",
       "elapsedMs": 13893,
       "id": "6ed36c95-91f9-4e3c-88da-fe17c010d584",
       "lane": "codestral-latest",
@@ -738,6 +760,7 @@
     },
     {
       "containmentVerdict": "verified_contained",
+      "effectiveCertifiedOutcome": "model_fail",
       "elapsedMs": 16477,
       "id": "496ff0a6-9f53-4b50-8c9e-d1939301419c",
       "lane": "codestral-latest",
@@ -768,6 +791,7 @@
     },
     {
       "containmentVerdict": "verified_contained",
+      "effectiveCertifiedOutcome": "model_fail",
       "elapsedMs": 24322,
       "id": "e411d189-390c-40ef-9318-3fbbbfbb44d1",
       "lane": "codestral-latest",
@@ -799,6 +823,7 @@
     },
     {
       "containmentVerdict": "verified_contained",
+      "effectiveCertifiedOutcome": "lane_error",
       "elapsedMs": 9808,
       "id": "acd6942b-ff2c-478b-8fc5-36473631c0db",
       "lane": "codestral-latest",
@@ -827,6 +852,7 @@
     },
     {
       "containmentVerdict": "verified_contained",
+      "effectiveCertifiedOutcome": "model_fail",
       "elapsedMs": 18492,
       "id": "ee5a8bdb-0fe4-4909-a6f1-071b188dee55",
       "lane": "codestral-latest",
@@ -857,6 +883,7 @@
     },
     {
       "containmentVerdict": "verified_contained",
+      "effectiveCertifiedOutcome": "model_fail",
       "elapsedMs": 14057,
       "id": "3897e57e-353e-402d-bb53-bc68259b1aa2",
       "lane": "codestral-latest",
@@ -887,6 +914,7 @@
     },
     {
       "containmentVerdict": "verified_contained",
+      "effectiveCertifiedOutcome": "model_fail",
       "elapsedMs": 14187,
       "id": "f23935c8-c08a-442e-ba1d-ed39ea664b9d",
       "lane": "codestral-latest",
@@ -917,6 +945,7 @@
     },
     {
       "containmentVerdict": "verified_contained",
+      "effectiveCertifiedOutcome": "model_fail",
       "elapsedMs": 29966,
       "id": "9f5bdfb8-69a0-4b45-9c77-2f87b5217ca7",
       "lane": "codestral-latest",
@@ -947,6 +976,7 @@
     },
     {
       "containmentVerdict": "verified_contained",
+      "effectiveCertifiedOutcome": "model_fail",
       "elapsedMs": 12191,
       "id": "f96b96b6-e608-44d7-9f4b-8506d41d456d",
       "lane": "codestral-latest",

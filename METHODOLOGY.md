@@ -256,3 +256,7 @@ model's training cutoff rather than averaging that into a headline. Held-out
 variants are the answer to contamination; the published provenance and contract
 files in this repository carry no held-out-variant claim for any of the five
 exams.
+
+## Capability comparison
+
+The capability taxonomy, deduplication, comparison eligibility, delivery modes and telemetry rules are documented in [CAPABILITIES.md](CAPABILITIES.md).

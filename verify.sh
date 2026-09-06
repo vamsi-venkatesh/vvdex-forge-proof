@@ -174,7 +174,125 @@ annotation_errors, annotation_count = verify_annotations(".")
 print(f"(a) annotation certification: {annotation_count} fixtures | {len(annotation_errors)} errors")
 for error in annotation_errors:
     print("    " + error)
-sys.exit(1 if (missing or bad or extra or disagree or canonical or annotation_errors) else 0)
+def verify_capabilities(root, strict=False):
+    import json
+    import re
+    from pathlib import Path
+    root = Path(root)
+    path = root / 'capabilities/index.json'
+    if not path.is_file():
+        return ['capability index is missing'], 0
+    errors, identities, cells = [], set(), {}
+    referenced_inventories, projected_inventories = {}, {}
+    try:
+        index = json.loads(path.read_text())
+        if index.get('schemaVersion') != 'forge-capabilities/v1' or index.get('projection') != 'public':
+            errors.append('unexpected capability schema or disclosure projection')
+        outcome_keys = {'certified_pass': 'certifiedPasses', 'model_fail': 'modelFailures',
+                        'lane_error': 'laneErrors', 'withheld': 'withheld', 'invalid': 'invalid'}
+        campaigns = {c['id']: set(c['recordDigests']) for c in index['campaigns']}
+        for group in index['taxonomy']:
+            if group.get('composite') is not None:
+                errors.append('unsupported category composite')
+            for cell in group['measurements']:
+                if cell['id'] in cells:
+                    errors.append('duplicate measurement identity')
+                cells[cell['id']] = cell
+                counts = dict.fromkeys(['attempts', 'graded', *outcome_keys.values()], 0)
+                for ref in cell['evidenceRefs']:
+                    href = ref['href']
+                    if not re.fullmatch(r'/reports/fc-[a-z0-9]+/summary.json', href):
+                        errors.append('invalid capability evidence path')
+                        continue
+                    summary = json.loads((root / href.lstrip('/')).read_text())
+                    matching = [r for r in summary['records'] if r['evalId'] == ref['evalId']]
+                    if len(matching) != 1 or matching[0]['recordDigest'] != ref['recordDigest']:
+                        errors.append('capability record commitment disagrees with campaign')
+                    elif matching[0]['environmentId'] != cell['exam']['id']:
+                        errors.append('capability exam disagrees with campaign')
+                    if ref['recordDigest'] not in campaigns.get(summary['campaignId'], set()):
+                        errors.append('capability campaign membership is missing')
+                    projection_path = root / 'capabilities/records' / (ref['evalId'] + '.record.public.json')
+                    if not projection_path.is_file():
+                        projection_path = root / href.lstrip('/').replace('/summary.json', '') / 'records' / (ref['evalId'] + '.record.public.json')
+                    projection_rollouts = None
+                    if projection_path.is_file():
+                        projection = json.loads(projection_path.read_text())
+                        source = projection.get('sourceRecordDigest') or {}
+                        if (projection.get('evalId') != ref['evalId']
+                                or projection.get('environmentId') != cell['exam']['id']
+                                or source.get('sha256') != ref['recordDigest']):
+                            errors.append('capability record projection identity disagrees')
+                        projection_rollouts = {row.get('id'): row for row in projection.get('rollouts') or []}
+                        inventory_key = (ref['recordDigest'], cell['lane']['identity'])
+                        lane_ids = {attempt_id for attempt_id, projected in projection_rollouts.items()
+                                    if projected.get('lane') == cell['lane']['identity']}
+                        previous_inventory = projected_inventories.setdefault(inventory_key, lane_ids)
+                        if previous_inventory != lane_ids:
+                            errors.append('record projection inventory is inconsistent')
+                    elif strict:
+                        errors.append('capability record projection is missing')
+                    ref_attempt_ids = set()
+                    for attempt in ref['attempts']:
+                        ref_attempt_ids.add(attempt['id'])
+                        key = (ref['recordDigest'], attempt['id'])
+                        if key in identities:
+                            errors.append('capability attempt is counted more than once')
+                        identities.add(key)
+                        counts['attempts'] += 1
+                        outcome = outcome_keys.get(attempt['certifiedOutcome'])
+                        if outcome is None:
+                            errors.append('unknown certified outcome')
+                        else:
+                            counts[outcome] += 1
+                        if projection_rollouts is not None:
+                            projected = projection_rollouts.get(attempt['id'])
+                            if projected is None:
+                                errors.append('capability attempt is absent from record projection')
+                            else:
+                                verdicts = projected.get('verdicts') or {}
+                                projected_outcome = projected.get('effectiveCertifiedOutcome', verdicts.get('certified'))
+                                if projected.get('lane') != cell['lane']['identity']:
+                                    errors.append('capability attempt lane disagrees with record projection')
+                                if projected_outcome != attempt['certifiedOutcome']:
+                                    errors.append('capability attempt outcome disagrees with record projection')
+                    inventory_key = (ref['recordDigest'], cell['lane']['identity'])
+                    referenced_inventories.setdefault(inventory_key, set()).update(ref_attempt_ids)
+                counts['graded'] = counts['certifiedPasses'] + counts['modelFailures']
+                if counts != cell['counts']:
+                    errors.append('capability counts disagree with sealed attempt projection')
+                expected_rate = counts['certifiedPasses'] / counts['graded'] if counts['graded'] >= 10 else None
+                if cell['rate'] != expected_rate:
+                    errors.append('capability rate disagrees with stated denominator')
+            for coverage in group.get('coverageItems', []):
+                if any(ref not in cells for ref in coverage['measurementRefs']):
+                    errors.append('coverage references an absent measurement')
+                for lane in coverage.get('laneSummaries', []):
+                    selected = [cells[ref] for ref in lane['measurementRefs']]
+                    expected = {k: sum(c['counts'][k] for c in selected) for k in lane['counts']}
+                    if lane['counts'] != expected:
+                        errors.append('coverage accounting disagrees with measurements')
+        if index['attempts']['unique'] != len(identities):
+            errors.append('unique attempt accounting disagrees')
+        for inventory_key in set(referenced_inventories) | set(projected_inventories):
+            if ((strict or inventory_key in projected_inventories)
+                    and referenced_inventories.get(inventory_key, set()) != projected_inventories.get(inventory_key, set())):
+                errors.append('capability attempt inventory disagrees with record projection')
+        memberships = sum(sum(digest in digests for digests in campaigns.values()) for digest, _ in identities)
+        if index['attempts']['memberships'] != memberships:
+            errors.append('campaign membership accounting disagrees')
+        for pair in index['comparisons']:
+            if pair['left'] not in cells or pair['right'] not in cells:
+                errors.append('comparison references an absent measurement')
+    except (OSError, ValueError, KeyError, TypeError):
+        errors.append('capability evidence is malformed or incomplete')
+    return errors, len(cells)
+
+capability_errors, capability_count = verify_capabilities(".", strict=True)
+print(f"(a) capabilities: {capability_count} measurements | {len(capability_errors)} errors")
+for error in capability_errors:
+    print("    " + error)
+sys.exit(1 if (missing or bad or extra or disagree or canonical or annotation_errors or capability_errors) else 0)
 PY
 echo "OK: every file matches the manifest and every record digest agrees wherever it is stated."
 echo "Recomputing a digest from the sealed record it describes needs the canonical record; see VERIFICATION.md."

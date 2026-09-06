@@ -73,6 +73,7 @@
   "rollouts": [
     {
       "containmentVerdict": "verified_contained",
+      "effectiveCertifiedOutcome": "certified_pass",
       "elapsedMs": 137928,
       "id": "532e1db3-0b8f-4765-808d-9341d00aee8f",
       "lane": "cli/claude-sonnet",
@@ -104,6 +105,7 @@
     },
     {
       "containmentVerdict": "verified_contained",
+      "effectiveCertifiedOutcome": "certified_pass",
       "elapsedMs": 96522,
       "id": "d641f68a-d3a6-45d0-8228-0e8ff30ea176",
       "lane": "cli/claude-sonnet",
@@ -135,6 +137,7 @@
     },
     {
       "containmentVerdict": "verified_contained",
+      "effectiveCertifiedOutcome": "certified_pass",
       "elapsedMs": 89401,
       "id": "b4f9ae08-95c3-41f4-848c-ed0edd82b145",
       "lane": "cli/claude-sonnet",
@@ -166,6 +169,7 @@
     },
     {
       "containmentVerdict": "verified_contained",
+      "effectiveCertifiedOutcome": "certified_pass",
       "elapsedMs": 79459,
       "id": "da5c8bda-9910-4ec7-893d-e4fda9fb617c",
       "lane": "cli/claude-sonnet",
@@ -197,6 +201,7 @@
     },
     {
       "containmentVerdict": "verified_contained",
+      "effectiveCertifiedOutcome": "certified_pass",
       "elapsedMs": 86562,
       "id": "a116d4fa-48b8-47d4-83d9-0d300be62a8b",
       "lane": "cli/claude-sonnet",
@@ -228,6 +233,7 @@
     },
     {
       "containmentVerdict": "verified_contained",
+      "effectiveCertifiedOutcome": "certified_pass",
       "elapsedMs": 75078,
       "id": "d6987896-0e83-4e30-832a-35ae28f5e0e8",
       "lane": "cli/claude-sonnet",
@@ -259,6 +265,7 @@
     },
     {
       "containmentVerdict": "verified_contained",
+      "effectiveCertifiedOutcome": "certified_pass",
       "elapsedMs": 80551,
       "id": "e52d496d-c202-4c0f-9fbc-4c4328dcf0bc",
       "lane": "cli/claude-sonnet",
@@ -290,6 +297,7 @@
     },
     {
       "containmentVerdict": "verified_contained",
+      "effectiveCertifiedOutcome": "certified_pass",
       "elapsedMs": 85926,
       "id": "7f40f719-4f86-464e-a1f9-cadfeeffa559",
       "lane": "cli/claude-sonnet",
@@ -321,6 +329,7 @@
     },
     {
       "containmentVerdict": "verified_contained",
+      "effectiveCertifiedOutcome": "certified_pass",
       "elapsedMs": 79267,
       "id": "9b8db9ca-f53f-4811-bfa9-1a2c618d8fd6",
       "lane": "cli/claude-sonnet",
@@ -352,6 +361,7 @@
     },
     {
       "containmentVerdict": "verified_contained",
+      "effectiveCertifiedOutcome": "certified_pass",
       "elapsedMs": 83081,
       "id": "38d7cace-518a-47c2-9678-318d7791b65f",
       "lane": "cli/claude-sonnet",
@@ -383,6 +393,7 @@
     },
     {
       "containmentVerdict": "verified_contained",
+      "effectiveCertifiedOutcome": "certified_pass",
       "elapsedMs": 109560,
       "id": "6bd00d3c-1064-4c32-8a9c-121373dcfe98",
       "lane": "cli/codex",
@@ -414,6 +425,7 @@
     },
     {
       "containmentVerdict": "verified_contained",
+      "effectiveCertifiedOutcome": "certified_pass",
       "elapsedMs": 120656,
       "id": "b3f86ec4-60d4-40f1-9482-b51bb3f0b2b7",
       "lane": "cli/codex",
@@ -445,6 +457,7 @@
     },
     {
       "containmentVerdict": "verified_contained",
+      "effectiveCertifiedOutcome": "certified_pass",
       "elapsedMs": 147309,
       "id": "0d1dabed-f1a4-464d-8573-6298c4456eba",
       "lane": "cli/codex",
@@ -476,6 +489,7 @@
     },
     {
       "containmentVerdict": "verified_contained",
+      "effectiveCertifiedOutcome": "certified_pass",
       "elapsedMs": 137667,
       "id": "e415a6c4-b070-41d7-be54-c68e5dcefaaa",
       "lane": "cli/codex",
@@ -507,6 +521,7 @@
     },
     {
       "containmentVerdict": "verified_contained",
+      "effectiveCertifiedOutcome": "certified_pass",
       "elapsedMs": 130091,
       "id": "e771f4b2-674d-46db-8f64-ac620c935e3d",
       "lane": "cli/codex",
@@ -538,6 +553,7 @@
     },
     {
       "containmentVerdict": "verified_contained",
+      "effectiveCertifiedOutcome": "certified_pass",
       "elapsedMs": 115904,
       "id": "c8c5c1f3-0c97-4022-8451-127d48f6953a",
       "lane": "cli/codex",
@@ -569,6 +585,7 @@
     },
     {
       "containmentVerdict": "verified_contained",
+      "effectiveCertifiedOutcome": "certified_pass",
       "elapsedMs": 125238,
       "id": "c20efdb4-48a5-42f1-af8a-3fc6df3560ce",
       "lane": "cli/codex",
@@ -600,6 +617,7 @@
     },
     {
       "containmentVerdict": "verified_contained",
+      "effectiveCertifiedOutcome": "certified_pass",
       "elapsedMs": 128917,
       "id": "6015f268-cbda-4c89-a337-78b12414d270",
       "lane": "cli/codex",
@@ -631,6 +649,7 @@
     },
     {
       "containmentVerdict": "verified_contained",
+      "effectiveCertifiedOutcome": "certified_pass",
       "elapsedMs": 121410,
       "id": "bbef3c65-99be-4a8a-83db-ea794108c317",
       "lane": "cli/codex",
@@ -662,6 +681,7 @@
     },
     {
       "containmentVerdict": "verified_contained",
+      "effectiveCertifiedOutcome": "certified_pass",
       "elapsedMs": 114748,
       "id": "3aa7a74b-9c98-4c6e-814d-f759615903f5",
       "lane": "cli/codex",
@@ -693,6 +713,7 @@
     },
     {
       "containmentVerdict": "verified_contained",
+      "effectiveCertifiedOutcome": "certified_pass",
       "elapsedMs": 53463,
       "id": "cc461d13-0b1b-40a2-8903-2d17c8ffe681",
       "lane": "codestral-latest",
@@ -724,6 +745,7 @@
     },
     {
       "containmentVerdict": "verified_contained",
+      "effectiveCertifiedOutcome": "model_fail",
       "elapsedMs": 232972,
       "id": "26427e2b-2379-4a9f-891d-9fac9ff5783d",
       "lane": "codestral-latest",
@@ -755,6 +777,7 @@
     },
     {
       "containmentVerdict": "verified_contained",
+      "effectiveCertifiedOutcome": "lane_error",
       "elapsedMs": 126196,
       "id": "b4a95e09-f935-48d0-b79f-69c45c5dc341",
       "lane": "codestral-latest",
@@ -785,6 +808,7 @@
     },
     {
       "containmentVerdict": "verified_contained",
+      "effectiveCertifiedOutcome": "model_fail",
       "elapsedMs": 31572,
       "id": "4df83755-7cf3-4d09-939f-44245af49dd0",
       "lane": "codestral-latest",
@@ -815,6 +839,7 @@
     },
     {
       "containmentVerdict": "verified_contained",
+      "effectiveCertifiedOutcome": "model_fail",
       "elapsedMs": 77319,
       "id": "3d19affd-3e09-4a9b-be1d-1bc702a87a51",
       "lane": "codestral-latest",
@@ -846,6 +871,7 @@
     },
     {
       "containmentVerdict": "verified_contained",
+      "effectiveCertifiedOutcome": "model_fail",
       "elapsedMs": 76524,
       "id": "7ee376ca-7679-44f3-b428-5e3ad0d7e6f0",
       "lane": "codestral-latest",
@@ -877,6 +903,7 @@
     },
     {
       "containmentVerdict": "verified_contained",
+      "effectiveCertifiedOutcome": "model_fail",
       "elapsedMs": 59443,
       "id": "5ca4b95a-34c3-47a6-92aa-64987001944c",
       "lane": "codestral-latest",
@@ -908,6 +935,7 @@
     },
     {
       "containmentVerdict": "verified_contained",
+      "effectiveCertifiedOutcome": "model_fail",
       "elapsedMs": 67491,
       "id": "fe44cb82-d2b1-4a7e-ac94-c9c086a65d01",
       "lane": "codestral-latest",
@@ -939,6 +967,7 @@
     },
     {
       "containmentVerdict": "verified_contained",
+      "effectiveCertifiedOutcome": "model_fail",
       "elapsedMs": 96265,
       "id": "86e8cb58-b83d-4b8d-83f6-0003ac366fda",
       "lane": "codestral-latest",
@@ -970,6 +999,7 @@
     },
     {
       "containmentVerdict": "verified_contained",
+      "effectiveCertifiedOutcome": "model_fail",
       "elapsedMs": 64276,
       "id": "95636cf6-da8f-48bd-9730-35964ac99fdf",
       "lane": "codestral-latest",
