@@ -62,8 +62,8 @@
 <p><strong>Environment certification: certified.</strong> Certification checks whether the environment grades work reliably.</p>
 </div></section><div class="wrap">
 <nav class="forge-page-nav" aria-label="On this page"><a href="#model-results">Model results</a><a href="#certification-checks">Certification checks</a><a href="#evidence-details">Verify evidence</a></nav>
-<section class="annotation-model-results" id="model-results"><h2>AI agent results on this task</h2><div class="tablewrap"><table><thead><tr><th>AI agent</th><th>Attempts</th><th>Passed</th><th>Failed</th><th>Lane errors</th><th>Withheld</th><th>Invalid</th></tr></thead><tbody><tr><th scope="row">cli/codex-gpt-5.5</th><td>10</td><td>0</td><td>10</td><td>0</td><td>0</td><td>0</td></tr></tbody></table></div><p>Repeated attempts on this fixed task. Quality measurements are separate from the pass gate; sampled video frames do not establish native video capability.</p><p><a href="/reports/fc-ec21239c00aa/">Campaign report and limitations</a> · <a href="/reports/fc-ec21239c00aa/summary.json">Measured results JSON</a></p></section>
-<h2>What is reviewed</h2><p>Annotation types: box, classification, event, segment. Rubric version 1.0.</p>
+<section class="annotation-model-results" id="model-results"><h2>AI agent results on this task</h2><div class="tablewrap"><table><thead><tr><th>AI agent</th><th>Attempts</th><th>Passed</th><th>Failed</th><th>Lane errors</th><th>Withheld</th><th>Invalid</th></tr></thead><tbody><tr><th scope="row">gemini-3.6-flash</th><td>1</td><td>0</td><td>1</td><td>0</td><td>0</td><td>0</td></tr></tbody></table></div><p>Repeated attempts on this fixed task. Quality measurements are separate from the pass gate; sampled video frames do not establish native video capability.</p><p><a href="/reports/fc-403cfc23f9e5/">Campaign report and limitations</a> · <a href="/reports/fc-403cfc23f9e5/summary.json">Measured results JSON</a></p></section>
+<h2>What is reviewed</h2><p>Annotation types: box, classification, event, segment. Rubric version 1.1.</p>
 <p>Source: <a href="https://commons.wikimedia.org/wiki/File:High-speed_catching_system.webm">High-speed catching system</a>, Z22 · 2012-03-19. <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC-BY-SA-4.0</a>. Original recording unchanged. Reference annotations remain private.</p>
 <h2 id="certification-checks">Certification evidence</h2><ul>
 <li>Empty baseline: fail; observed pass rate 0.0, 2 independent seeds.</li>
@@ -88,8 +88,8 @@
     &quot;timeoutS&quot;: 120
   }
 }</pre>
-<h2>Verify this evidence</h2><p class="mono">vvdex.annotation.robot-video-1</p><p>Environment fingerprint:</p><pre>c3b4773c375c10ad989357bb179cffd62151eccd2a58b52254609a54d434be33</pre>
-<p>Certification evidence digest:</p><pre>a0997059eb829c98be90048ef2ed2bbc9debfb0d69af0e51674a13bda168bea1</pre>
+<h2>Verify this evidence</h2><p class="mono">vvdex.annotation.robot-video-1</p><p>Environment fingerprint:</p><pre>85e026007af17db692614084f12ff40c5bbf2348bcfda0a01deb95aad8928f4c</pre>
+<p>Certification evidence digest:</p><pre>0a0a51360cde69737c9b5caef895b8b7c2a5e2d66da89617d8776ac724b019b9</pre>
 <p><a href="/annotation/robot-video-1/exam.public.json">Public descriptor</a> · <a href="/annotation/robot-video-1/certification-receipt.json">Certification receipt</a> · <a href="/annotation/robot-video-1/provenance.public.json">Provenance</a> · <a href="/annotation/robot-video-1/report.public.json">Report JSON</a> · <a href="/annotation/robot-video-1/digests.json">File digests</a> · <a href="/annotation/robot-video-1/VERIFY.md">Verification instructions</a></p>
 </details><h2>Limitations and ownership</h2><p>Small constructed engineering fixtures, not a production dataset or professional annotation engagement. Video uses sparse frame boxes, not dense tracking. Audio contains tones and silence, not speech or speakers. CVAT XML 1.1 and Label Studio JSON cover tested box subsets only; unsupported or lossy conversions are refused. Polygon comparison requires the implemented vertex representation. The attached model campaign measures these fixed tasks only; general capability and annotator population performance are not inferred.</p>
 <p>Public proof demonstrates the result. The reusable evaluation instrument remains private. <a href="/terms/">Terms and ownership</a>.</p>

@@ -3,19 +3,19 @@
   "files": {
     "executive.html": {
       "path": "fr-20260906-55c7c9bc-executive.html",
-      "sha256": "6b2c28507dce368eaab0a0e0f61930509e5c96ce7775c256e890f3004cf19b28"
+      "sha256": "9340fe2251ff27a3ca8cfcc03761d47c59d3ebd2ea82ece18de35276c4b9fcb0"
     },
     "executive.pdf": {
       "path": "fr-20260906-55c7c9bc-executive.pdf",
-      "sha256": "8de7d7d2d234ced549d60f12de3a11153c5ebd97cd012417196e55fbb9934a8c"
+      "sha256": "02607929347f515b8a9f761e55468badc8f49c9c0b428ea7167118ebebfa1600"
     },
     "full.html": {
       "path": "fr-20260906-55c7c9bc.html",
-      "sha256": "eb80633f091a36d3f1658d797dabecc6523548ced3db0056dc21b3c5331ab443"
+      "sha256": "4032259e05ccbd346661038d1ed62a8b74dd96273e8d9473da11cd65f21fa560"
     },
     "full.pdf": {
       "path": "fr-20260906-55c7c9bc.pdf",
-      "sha256": "911b484e158de67f1aa6e0055e05417c51e733212179dd5cd232f3beaa6097a1"
+      "sha256": "4b271a8fecf56f374ed81a4c87d6bbf843f81b54df02398b2048a2ee99b01caa"
     },
     "record": {
       "path": "fr-20260906-55c7c9bc.json",

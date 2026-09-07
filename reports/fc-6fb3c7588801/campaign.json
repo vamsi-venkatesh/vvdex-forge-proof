@@ -1,0 +1,96 @@
+{
+  "campaignId": "fc-6fb3c7588801",
+  "cells": {
+    "gemini-3.8-flash|vvdex.annotation.robot-video-1": {
+      "certified": null,
+      "certifiedCounts": {
+        "certified_pass": 0,
+        "invalid": 0,
+        "lane_error": 3,
+        "model_fail": 0,
+        "withheld": 0
+      },
+      "evalId": "fr-20260906-99a8ead2",
+      "grader": null,
+      "integrity": "verified_contained",
+      "withheldBy": null
+    }
+  },
+  "certificationReceipts": {},
+  "counts": {
+    "campaignId": "fc-6fb3c7588801",
+    "cells": 1,
+    "certifiedPasses": 0,
+    "lanes": {
+      "gemini-3.8-flash": {
+        "certified_pass": 0,
+        "invalid": 0,
+        "lane_error": 3,
+        "model_fail": 0,
+        "withheld": 0
+      }
+    },
+    "recordCount": 3,
+    "recordDigests": [
+      "18e2b7ae2068b318b410dae8b7fe4b708d7995dec3d018510af3d60648261f85",
+      "51bedf34d0f35b8337759d188245153ab277684082c83f1d367ba9586133e917",
+      "b6904bbd74376d6911ded609ccc9d9f27c8fbd000f85f82333568dd479bf8bfc"
+    ],
+    "refused": 0,
+    "suspectRecords": [
+      "vvdex.annotation.robot-video-1"
+    ],
+    "withheldByHarness": 0
+  },
+  "disclosure": {
+    "vvdex.annotation.robot-video-1": {
+      "class": "answer_key",
+      "rule": "answer-key disclosure (ownership vvdex_proprietary \u2014 no declaration \u2014 proprietary by default; family annotation): the exam is VVDex evaluation IP and the graded output is an answer or a keyed value, so no submission content, diff, model claim or hidden-assertion name is published."
+    }
+  },
+  "lanes": [
+    {
+      "certifiedPasses": 0,
+      "countable": 0,
+      "counts": {
+        "certified_pass": 0,
+        "invalid": 0,
+        "lane_error": 3,
+        "model_fail": 0,
+        "withheld": 0
+      },
+      "lane": "gemini-3.8-flash"
+    }
+  ],
+  "refused": [],
+  "retired_for_future_evaluation": {},
+  "reviews": {
+    "vvdex.annotation.robot-video-1": {
+      "classification": [
+        {
+          "class": "diagnostic",
+          "rationale": "an API failure is a per-rollout lane event, already recorded on that rollout as lane_error; it cannot alter another rollout's grading. It lowers coverage, not verdicts.",
+          "reason": "R1 api-failure share 1/1 \u2014 most rollouts never got a working completion",
+          "rule": "R1"
+        },
+        {
+          "class": "diagnostic",
+          "rationale": "an API failure is a per-rollout lane event, already recorded on that rollout as lane_error; it cannot alter another rollout's grading. It lowers coverage, not verdicts.",
+          "reason": "R1 api-failure share 1/1 \u2014 most rollouts never got a working completion",
+          "rule": "R1"
+        },
+        {
+          "class": "diagnostic",
+          "rationale": "an API failure is a per-rollout lane event, already recorded on that rollout as lane_error; it cannot alter another rollout's grading. It lowers coverage, not verdicts.",
+          "reason": "R1 api-failure share 1/1 \u2014 most rollouts never got a working completion",
+          "rule": "R1"
+        }
+      ],
+      "law": "a suspect examiner may not blame the model: verdict-bearing suspicion not cleared by in-record evidence withholds every model_fail in the run",
+      "suspect": true,
+      "withheld": [],
+      "withheldCount": 0
+    }
+  },
+  "schema": "vvdex.forge.campaign-counts/v1"
+}

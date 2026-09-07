@@ -60,7 +60,6 @@
   },
   "certificationReceipts": {
     "vvdex.annotation.image-object-1": "5c4ea7bc65ea8f8f88f44f7d4cb859be1d040f4d9247e8a0dd09c138b088d202",
-    "vvdex.annotation.robot-video-1": "1c3f433704b10101599c5115ca7a85e1b364d6ec11b58f9316ca7e5e1f0cc396",
     "vvdex.annotation.structured-data-1": "b87a309ecbbadef3d81a4007de8151699a6eeeec7058730c6491c9399465094f",
     "vvdex.annotation.text-labeling-1": "e5c3feb07dd8ea84c5bfea9e682f2f853bd5022092038147a10b148871d86c5a"
   },

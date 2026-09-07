@@ -1,30 +1,30 @@
 {
   "disclosureClass": "answer_key",
   "environmentId": "vvdex.annotation.robot-video-1",
-  "evalId": "fr-20260906-08cf41e3",
+  "evalId": "fr-20260906-99a8ead2",
   "fingerprint": "c3b4773c375c10ad989357bb179cffd62151eccd2a58b52254609a54d434be33",
   "kind": "vvdex.forge.public-record-projection/v1",
   "lanes": [
-    "cli/codex-gpt-5.5"
+    "gemini-3.8-flash"
   ],
   "note": "A projection of the sealed record, not the record. Its bytes do not hash to sourceRecordDigest; that digest describes the canonical record, which a holder verifies under agreement.",
   "results": {
     "byModel": [
       {
-        "countableN": 1,
+        "countableN": 0,
         "countableSuccesses": 0,
         "lowN": true,
-        "model": "cli/codex-gpt-5.5",
+        "model": "gemini-3.8-flash",
         "n": 1,
-        "provider": "cli",
+        "provider": "gemini",
         "successRate": 0.0,
         "successes": 0,
-        "toolCalls": 9,
+        "toolCalls": 0,
         "verdicts": {
           "certified_pass": 0,
           "invalid": 0,
-          "lane_error": 0,
-          "model_fail": 1,
+          "lane_error": 1,
+          "model_fail": 0,
           "withheld": 0
         }
       }
@@ -35,39 +35,33 @@
   "rollouts": [
     {
       "containmentVerdict": "verified_contained",
-      "effectiveCertifiedOutcome": "model_fail",
-      "elapsedMs": 265184,
-      "id": "0506c45a-be16-435c-8218-3af3f0d65e92",
-      "lane": "cli/codex-gpt-5.5",
-      "outcome": "submitted_failed",
+      "effectiveCertifiedOutcome": "lane_error",
+      "elapsedMs": 5408,
+      "id": "2e00a715-387c-4270-b307-65899b92f193",
+      "lane": "gemini-3.8-flash",
+      "outcome": "model_api_failure",
       "seed": 0,
       "stages": {
-        "edited": true,
-        "graded": true,
-        "inspected": true,
+        "edited": false,
+        "graded": false,
+        "inspected": false,
         "passed": false,
-        "submitted": true,
-        "tested": true
+        "submitted": false,
+        "tested": false
       },
       "stepLimit": 24,
-      "stepsUsed": 9,
-      "toolNameCounts": {
-        "list_files": 1,
-        "read_file": 5,
-        "run_tests": 1,
-        "submit": 1,
-        "write_file": 1
-      },
+      "stepsUsed": 0,
+      "toolNameCounts": {},
       "verdicts": {
-        "certified": "model_fail",
-        "grader": "fail",
+        "certified": "lane_error",
+        "grader": "error",
         "integrity": "verified_contained"
       }
     }
   ],
   "sourceRecordDigest": {
     "algorithm": "sha256 over the record's canonical JSON (UTF-8, sorted keys, compact separators) with recordDigest.sha256 set to 64 '0' characters",
-    "sha256": "4cb0e73aa85083f8e0ef903fd4d28f277a177b2774a66767e5635c84b75f8213"
+    "sha256": "b6904bbd74376d6911ded609ccc9d9f27c8fbd000f85f82333568dd479bf8bfc"
   },
   "stages": [
     {

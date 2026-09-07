@@ -1,0 +1,171 @@
+{
+  "annotationCampaign": {
+    "campaignId": "fc-6fb3c7588801",
+    "coverage": {
+      "cellsPending": 0,
+      "cellsRun": 1,
+      "complete": true,
+      "completedAttempts": 3,
+      "examsNotStarted": [],
+      "missingAttempts": 0,
+      "note": "Cells run against the cells this campaign declared it would run.",
+      "pending": [],
+      "planDeclared": true,
+      "plannedAttempts": 3,
+      "plannedCells": 1,
+      "plannedExams": [
+        "vvdex.annotation.robot-video-1"
+      ],
+      "plannedModels": [
+        "gemini-3.8-flash"
+      ],
+      "rolloutsPerCell": 3
+    },
+    "limitations": [
+      "Repeated attempts on these fixed tasks only; not a broad capability score.",
+      "All outcomes are retained; lane errors, withheld and invalid attempts are not model failures.",
+      "Quality is the existing grader measurement, separate from the pass gate.",
+      "Video delivery is stated per model from recorded receipts; native files and sampled frames are distinct. Provider-side sampling is not independently observed.",
+      "Provider token usage is recorded where available. Monetary usage is not an invoice, and requested seeds do not establish deterministic replay.",
+      "Private references, submissions, exact geometry, frame timestamps and raw sessions are withheld."
+    ],
+    "schema": "vvdex.forge.annotation-model-campaign/v1",
+    "tasks": [
+      {
+        "environmentId": "vvdex.annotation.robot-video-1",
+        "examFingerprint": "c3b4773c375c10ad989357bb179cffd62151eccd2a58b52254609a54d434be33",
+        "modality": "video",
+        "models": [
+          {
+            "attempts": 3,
+            "delivery": "delivery not established for every attempt",
+            "failed": 0,
+            "invalid": 0,
+            "laneErrors": 3,
+            "model": "gemini-3.8-flash",
+            "passed": 0,
+            "quality": null,
+            "stages": {
+              "edit": 0,
+              "graded": 0,
+              "hidden_pass": 0,
+              "inspect": 0,
+              "submit": 0,
+              "test": 0
+            },
+            "withheld": 0
+          }
+        ]
+      }
+    ]
+  },
+  "campaignId": "fc-6fb3c7588801",
+  "counts": {
+    "attempts": 3,
+    "cells": 1,
+    "certifiedPasses": 0,
+    "exams": 1,
+    "graded": 0,
+    "invalid": 0,
+    "laneErrors": 3,
+    "lanes": 1,
+    "modelFails": 0,
+    "withheld": 0
+  },
+  "disclosure": {
+    "vvdex.annotation.robot-video-1": {
+      "class": "answer_key",
+      "rule": "answer-key disclosure (ownership vvdex_proprietary \u2014 no declaration \u2014 proprietary by default; family annotation): the exam is VVDex evaluation IP and the graded output is an answer or a keyed value, so no submission content, diff, model claim or hidden-assertion name is published."
+    }
+  },
+  "families": [
+    {
+      "envId": "vvdex.annotation.robot-video-1",
+      "family": "annotation",
+      "label": "Multimodal annotation",
+      "short": "Annotation",
+      "what": "A robot-catching video is reviewed for temporal events, frame-level object boxes, track identity and occlusion."
+    }
+  ],
+  "lanes": [
+    {
+      "certifiedPasses": 0,
+      "countable": 0,
+      "counts": {
+        "certified_pass": 0,
+        "invalid": 0,
+        "lane_error": 3,
+        "model_fail": 0,
+        "withheld": 0
+      },
+      "lane": "gemini-3.8-flash"
+    }
+  ],
+  "perExamMatrix": {
+    "exams": [
+      {
+        "envId": "vvdex.annotation.robot-video-1",
+        "evalId": "fr-20260906-29ba262c",
+        "family": "annotation",
+        "short": "Annotation",
+        "title": "Robot catch temporal and tracking annotation"
+      }
+    ],
+    "rows": [
+      {
+        "cells": {
+          "vvdex.annotation.robot-video-1": {
+            "graded": 0,
+            "invalid": 0,
+            "laneErrors": 3,
+            "passes": 0,
+            "text": "0/0 + 3 lane errors",
+            "withheld": 0
+          }
+        },
+        "certifiedPasses": 0,
+        "lane": "gemini-3.8-flash"
+      }
+    ]
+  },
+  "recordCount": 3,
+  "records": [
+    {
+      "canonicalBytesPublished": false,
+      "certificationReceiptSha256": null,
+      "disclosureClass": "answer_key",
+      "environmentId": "vvdex.annotation.robot-video-1",
+      "evalId": "fr-20260906-29ba262c",
+      "examFingerprint": "c3b4773c375c10ad989357bb179cffd62151eccd2a58b52254609a54d434be33",
+      "recordDigest": "51bedf34d0f35b8337759d188245153ab277684082c83f1d367ba9586133e917",
+      "retired_for_future_evaluation": null
+    },
+    {
+      "canonicalBytesPublished": false,
+      "certificationReceiptSha256": null,
+      "disclosureClass": "answer_key",
+      "environmentId": "vvdex.annotation.robot-video-1",
+      "evalId": "fr-20260906-55135e51",
+      "examFingerprint": "c3b4773c375c10ad989357bb179cffd62151eccd2a58b52254609a54d434be33",
+      "recordDigest": "18e2b7ae2068b318b410dae8b7fe4b708d7995dec3d018510af3d60648261f85",
+      "retired_for_future_evaluation": null
+    },
+    {
+      "canonicalBytesPublished": false,
+      "certificationReceiptSha256": null,
+      "disclosureClass": "answer_key",
+      "environmentId": "vvdex.annotation.robot-video-1",
+      "evalId": "fr-20260906-99a8ead2",
+      "examFingerprint": "c3b4773c375c10ad989357bb179cffd62151eccd2a58b52254609a54d434be33",
+      "recordDigest": "b6904bbd74376d6911ded609ccc9d9f27c8fbd000f85f82333568dd479bf8bfc",
+      "retired_for_future_evaluation": null
+    }
+  ],
+  "refused": 0,
+  "retired_for_future_evaluation": {},
+  "schema": "vvdex.forge.campaign-summary/v1",
+  "suspectRecords": [
+    "vvdex.annotation.robot-video-1"
+  ],
+  "withheldByHarness": 0
+}

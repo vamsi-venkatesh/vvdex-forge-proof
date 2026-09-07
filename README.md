@@ -32,6 +32,12 @@ certification reports check the fixtures themselves. Annotation model campaigns
 measure submissions to those fixtures and are reported separately. Neither
 changes the September 1–2 matrix below; the campaigns cover different tasks.
 
+## Gemini video retest · September 7, 2026
+
+Gemini 3.6 Flash completed the robot-video exam with the original video at a requested 10 FPS plus two exact public task frames. All six annotations were valid; the task score was **65.65/100** and the exam verdict remained **failed** because one box missed the detection threshold. This is a fixed-task result under an explicit input condition, not a general capacity ranking.
+
+Earlier setup and contract problems remain disclosed. The prior 42.11/100 native-only result is diagnostic for capacity attribution. Original answers and grading thresholds were not changed to improve the score. See [the new campaign](https://vvdexops.com/reports/fc-403cfc23f9e5/) and [input-condition limitations](CAPABILITIES.md).
+
 ## Annotation model results · September 6, 2026
 
 A separate campaign tested GPT-5.5 through the signed-in Codex CLI on four fixed

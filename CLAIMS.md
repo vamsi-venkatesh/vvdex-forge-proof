@@ -149,3 +149,7 @@ The model-input audit checked each attempt's exam fingerprint, certified package
 sealed record digest, raw-rollout hash, media receipts and single-action policy.
 It confirmed the frozen execution sources were unchanged. Private raw inputs and
 reference annotations are not published to substantiate these statements.
+
+## Gemini corrected-input retest · September 7, 2026
+
+Campaign `fc-403cfc23f9e5` contains one Gemini 3.6 Flash attempt: six valid annotations, task quality 0.6565342913371214, no certified pass and one model failure. Source: `reports/fc-403cfc23f9e5/summary.json` annotation campaign projection. Native video with supplied exact frames is a distinct delivery condition; 10 FPS is a recorded request, not independently observed provider processing. No inherent-capacity or causal-improvement claim is made from the two single-run conditions.

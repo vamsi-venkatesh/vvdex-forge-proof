@@ -12,19 +12,19 @@
     "rate": 0.0,
     "recorded": true
   },
-  "certificationEvidenceDigest": "a0997059eb829c98be90048ef2ed2bbc9debfb0d69af0e51674a13bda168bea1",
+  "certificationEvidenceDigest": "0a0a51360cde69737c9b5caef895b8b7c2a5e2d66da89617d8776ac724b019b9",
   "certificationVersion": "vvdex.certification-receipts/v1",
   "certifiedAt": "2026-09-06T00:01:41.634630+00:00",
   "disclosure": {
     "class": "answer_key",
     "rule": "answer-key disclosure (ownership vvdex_proprietary \u2014 no declaration \u2014 proprietary by default; family annotation): the exam is VVDex evaluation IP and the graded output is an answer or a keyed value, so no submission content, diff, model claim or hidden-assertion name is published."
   },
-  "examFingerprint": "c3b4773c375c10ad989357bb179cffd62151eccd2a58b52254609a54d434be33",
+  "examFingerprint": "85e026007af17db692614084f12ff40c5bbf2348bcfda0a01deb95aad8928f4c",
   "examId": "vvdex.annotation.robot-video-1",
   "examTitle": "Robot catch temporal and tracking annotation",
-  "examVersion": "0.1.0",
+  "examVersion": "0.2.0",
   "family": "annotation",
-  "frozenTreeSha256": "c3828cef1b590db42a7f730b8e5285d0fd467847c3c664d3100e641d664b0aa2",
+  "frozenTreeSha256": "9d4f50d908441daa9570e8e433ba64a78c7a544bb51115b848857d8b36159bc5",
   "graderControls": {
     "cases": 19,
     "distinguished": true,

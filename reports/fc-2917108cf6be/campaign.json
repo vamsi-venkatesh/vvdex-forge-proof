@@ -1,0 +1,73 @@
+{
+  "campaignId": "fc-2917108cf6be",
+  "cells": {
+    "gemini-3.6-flash|vvdex.annotation.robot-video-1": {
+      "certified": "model_fail",
+      "certifiedCounts": {
+        "certified_pass": 0,
+        "invalid": 0,
+        "lane_error": 0,
+        "model_fail": 1,
+        "withheld": 0
+      },
+      "evalId": "fr-20260906-76fdb6cd",
+      "grader": "fail",
+      "integrity": "verified_contained",
+      "withheldBy": null
+    }
+  },
+  "certificationReceipts": {},
+  "counts": {
+    "campaignId": "fc-2917108cf6be",
+    "cells": 1,
+    "certifiedPasses": 0,
+    "lanes": {
+      "gemini-3.6-flash": {
+        "certified_pass": 0,
+        "invalid": 0,
+        "lane_error": 0,
+        "model_fail": 1,
+        "withheld": 0
+      }
+    },
+    "recordCount": 1,
+    "recordDigests": [
+      "59f431f7ed9ec5214737424a5c886cbe65f3caf49b1a11807bc27be17428b613"
+    ],
+    "refused": 0,
+    "suspectRecords": [],
+    "withheldByHarness": 0
+  },
+  "disclosure": {
+    "vvdex.annotation.robot-video-1": {
+      "class": "answer_key",
+      "rule": "answer-key disclosure (ownership vvdex_proprietary \u2014 no declaration \u2014 proprietary by default; family annotation): the exam is VVDex evaluation IP and the graded output is an answer or a keyed value, so no submission content, diff, model claim or hidden-assertion name is published."
+    }
+  },
+  "lanes": [
+    {
+      "certifiedPasses": 0,
+      "countable": 1,
+      "counts": {
+        "certified_pass": 0,
+        "invalid": 0,
+        "lane_error": 0,
+        "model_fail": 1,
+        "withheld": 0
+      },
+      "lane": "gemini-3.6-flash"
+    }
+  ],
+  "refused": [],
+  "retired_for_future_evaluation": {},
+  "reviews": {
+    "vvdex.annotation.robot-video-1": {
+      "classification": [],
+      "law": "a suspect examiner may not blame the model: verdict-bearing suspicion not cleared by in-record evidence withholds every model_fail in the run",
+      "suspect": false,
+      "withheld": [],
+      "withheldCount": 0
+    }
+  },
+  "schema": "vvdex.forge.campaign-counts/v1"
+}

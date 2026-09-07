@@ -14,7 +14,7 @@ it is not a second evaluator or a hand-maintained score database.
 | RAG / Grounding | Grounded question answering; the measured revision is retired |
 | Memory | Cross-session fact update; the measured revision is retired |
 | Agent Reliability | Tool-loop fault recovery |
-| Multimodal Annotation | Image, sampled-video, text and structured-data tasks; native video and audio remain unmeasured |
+| Multimodal Annotation | Image, sampled-video, text and structured-data tasks; native-video evaluation on robot revision 0.2.0; audio remains unmeasured |
 
 This describes published evidence, not the full internal exam inventory or a
 claim of general model competence. Exam certification establishes the evaluation
@@ -43,13 +43,20 @@ remain unproven. A difference in repository cleanliness is disclosed without
 claiming that execution code necessarily changed. Per-task Annotation coverage
 may account for multiple condition cohorts; it is not a pooled comparison rate.
 
+## Gemini video evaluation — September 7, 2026
+
+Gemini 3.6 Flash completed robot-video revision 0.2.0 with native video at a requested 10 FPS plus two exact, publicly requested box frames. All six annotations were valid. The task score was 65.65%; the exam verdict remained model failure. Classification accuracy was 1.0, event temporal IoU 0.5000, segment temporal IoU 0.7143 and box IoU 0.6125. The attempt had no API error. This is one conditional task result, not a general model ranking.
+
+Six prior development attempts are retained as diagnostics. These include provider interruptions, a schema failure, an ambiguous older public contract, and the 42.11% native-only result whose default sampling did not guarantee the needed exact frames or subsecond detail. The corrected condition changes input access and prompt clarification; variation between two runs cannot isolate each cause. Original model answers, reference answers and thresholds were not repaired or rescored. See the [methodology disclosure](https://vvdexops.com/methodology/).
+
+Track consistency is conditioned on box matching, so zero can reflect inaccurate boxes despite correct track IDs. Exam certification and reference spot-checks do not establish independent human validation.
+
 ## Input delivery and telemetry
 
-Image delivery, sampled video frames, native video, native audio, text and
+Image delivery, sampled video frames, native video, native video with exact frames, native audio, text and
 structured data have separate identities. Historical delivery is derived only
 from sealed receipts or a sufficient sealed contract, never from the exam's
-modality label. The existing robot-video result concerns sampled frames. It says
-nothing about native-video performance. Text and structured outcomes remain
+modality label. Historical GPT robot-video results concern sampled frames; the corrected Gemini revision 0.2.0 result concerns native video with supplied exact frames and requested 10 FPS. Provider-side processing is not independently observed. These delivery conditions and exam revisions are distinct. Text and structured outcomes remain
 measured where historical delivery details are unproven.
 
 Elapsed time, steps, tokens and cost are shown only when recorded. Medians use

@@ -1,9 +1,19 @@
 {
   "attempts": {
-    "memberships": 360,
-    "unique": 210
+    "memberships": 365,
+    "unique": 215
   },
   "campaigns": [
+    {
+      "id": "fc-2917108cf6be",
+      "indexed": false,
+      "parentCampaignIds": [],
+      "recordCount": 1,
+      "recordDigests": [
+        "59f431f7ed9ec5214737424a5c886cbe65f3caf49b1a11807bc27be17428b613"
+      ],
+      "relation": "historical"
+    },
     {
       "id": "fc-3194f803055c",
       "indexed": false,
@@ -17,6 +27,28 @@
         "157ec324a925c0b10fc8769d01f628b6143c40a00fa2dc70ea309a70e55a37a8"
       ],
       "relation": "subset"
+    },
+    {
+      "id": "fc-403cfc23f9e5",
+      "indexed": true,
+      "parentCampaignIds": [],
+      "recordCount": 1,
+      "recordDigests": [
+        "f9e6baef1c1acb4e45e2bd7e027b368b5e594f33037c643dc8ee9edb75daa2e9"
+      ],
+      "relation": "primary"
+    },
+    {
+      "id": "fc-6fb3c7588801",
+      "indexed": false,
+      "parentCampaignIds": [],
+      "recordCount": 3,
+      "recordDigests": [
+        "18e2b7ae2068b318b410dae8b7fe4b708d7995dec3d018510af3d60648261f85",
+        "51bedf34d0f35b8337759d188245153ab277684082c83f1d367ba9586133e917",
+        "b6904bbd74376d6911ded609ccc9d9f27c8fbd000f85f82333568dd479bf8bfc"
+      ],
+      "relation": "historical"
     },
     {
       "id": "fc-72fe6f91c29e",
@@ -463,6 +495,122 @@
       "state": "unproven"
     },
     {
+      "left": "cm-713a98dc0c4caafa",
+      "reasons": [
+        "delivery conditions differ"
+      ],
+      "right": "cm-652b57accd2c0af5",
+      "state": "different"
+    },
+    {
+      "left": "cm-713a98dc0c4caafa",
+      "reasons": [
+        "delivery adapter identity, version or configuration is not recorded",
+        "delivery conditions differ",
+        "different exam fingerprint",
+        "lane configuration is not recorded",
+        "repository cleanliness differs; execution equivalence is unproven",
+        "runtime limits differ"
+      ],
+      "right": "cm-802a892ebb03cec4",
+      "state": "unproven"
+    },
+    {
+      "left": "cm-713a98dc0c4caafa",
+      "reasons": [
+        "delivery adapter identity, version or configuration is not recorded",
+        "delivery conditions differ",
+        "different exam fingerprint",
+        "lane configuration is not recorded",
+        "runtime limits differ"
+      ],
+      "right": "cm-e39c48a72e38cffb",
+      "state": "unproven"
+    },
+    {
+      "left": "cm-713a98dc0c4caafa",
+      "reasons": [
+        "delivery conditions differ",
+        "different exam fingerprint"
+      ],
+      "right": "cm-9e5ed49b95df07eb",
+      "state": "different"
+    },
+    {
+      "left": "cm-713a98dc0c4caafa",
+      "reasons": [
+        "delivery conditions differ",
+        "delivery equivalence is unproven",
+        "delivery is not proved",
+        "different exam fingerprint"
+      ],
+      "right": "cm-af700f9311c83fee",
+      "state": "unproven"
+    },
+    {
+      "left": "cm-713a98dc0c4caafa",
+      "reasons": [
+        "delivery conditions differ",
+        "different exam fingerprint"
+      ],
+      "right": "cm-7e738ed5b02e7437",
+      "state": "different"
+    },
+    {
+      "left": "cm-652b57accd2c0af5",
+      "reasons": [
+        "delivery adapter identity, version or configuration is not recorded",
+        "delivery conditions differ",
+        "different exam fingerprint",
+        "lane configuration is not recorded",
+        "repository cleanliness differs; execution equivalence is unproven",
+        "runtime limits differ"
+      ],
+      "right": "cm-802a892ebb03cec4",
+      "state": "unproven"
+    },
+    {
+      "left": "cm-652b57accd2c0af5",
+      "reasons": [
+        "delivery adapter identity, version or configuration is not recorded",
+        "delivery conditions differ",
+        "different exam fingerprint",
+        "lane configuration is not recorded",
+        "runtime limits differ"
+      ],
+      "right": "cm-e39c48a72e38cffb",
+      "state": "unproven"
+    },
+    {
+      "left": "cm-652b57accd2c0af5",
+      "reasons": [
+        "delivery conditions differ",
+        "different exam fingerprint"
+      ],
+      "right": "cm-9e5ed49b95df07eb",
+      "state": "different"
+    },
+    {
+      "left": "cm-652b57accd2c0af5",
+      "reasons": [
+        "delivery conditions differ",
+        "delivery equivalence is unproven",
+        "delivery is not proved",
+        "different exam fingerprint"
+      ],
+      "right": "cm-af700f9311c83fee",
+      "state": "unproven"
+    },
+    {
+      "left": "cm-652b57accd2c0af5",
+      "reasons": [
+        "delivery conditions differ",
+        "different exam fingerprint"
+      ],
+      "right": "cm-7e738ed5b02e7437",
+      "state": "different"
+    },
+    {
       "left": "cm-802a892ebb03cec4",
       "reasons": [
         "delivery adapter identity, version or configuration is not recorded",
@@ -470,6 +618,107 @@
         "repository cleanliness differs; execution equivalence is unproven"
       ],
       "right": "cm-e39c48a72e38cffb",
+      "state": "unproven"
+    },
+    {
+      "left": "cm-802a892ebb03cec4",
+      "reasons": [
+        "delivery adapter identity, version or configuration is not recorded",
+        "delivery conditions differ",
+        "lane configuration is not recorded",
+        "repository cleanliness differs; execution equivalence is unproven",
+        "runtime limits differ"
+      ],
+      "right": "cm-9e5ed49b95df07eb",
+      "state": "unproven"
+    },
+    {
+      "left": "cm-802a892ebb03cec4",
+      "reasons": [
+        "delivery adapter identity, version or configuration is not recorded",
+        "delivery conditions differ",
+        "delivery equivalence is unproven",
+        "delivery is not proved",
+        "lane configuration is not recorded",
+        "repository cleanliness differs; execution equivalence is unproven",
+        "runtime limits differ"
+      ],
+      "right": "cm-af700f9311c83fee",
+      "state": "unproven"
+    },
+    {
+      "left": "cm-802a892ebb03cec4",
+      "reasons": [
+        "delivery adapter identity, version or configuration is not recorded",
+        "delivery conditions differ",
+        "lane configuration is not recorded",
+        "repository cleanliness differs; execution equivalence is unproven",
+        "runtime limits differ"
+      ],
+      "right": "cm-7e738ed5b02e7437",
+      "state": "unproven"
+    },
+    {
+      "left": "cm-e39c48a72e38cffb",
+      "reasons": [
+        "delivery adapter identity, version or configuration is not recorded",
+        "delivery conditions differ",
+        "lane configuration is not recorded",
+        "runtime limits differ"
+      ],
+      "right": "cm-9e5ed49b95df07eb",
+      "state": "unproven"
+    },
+    {
+      "left": "cm-e39c48a72e38cffb",
+      "reasons": [
+        "delivery adapter identity, version or configuration is not recorded",
+        "delivery conditions differ",
+        "delivery equivalence is unproven",
+        "delivery is not proved",
+        "lane configuration is not recorded",
+        "runtime limits differ"
+      ],
+      "right": "cm-af700f9311c83fee",
+      "state": "unproven"
+    },
+    {
+      "left": "cm-e39c48a72e38cffb",
+      "reasons": [
+        "delivery adapter identity, version or configuration is not recorded",
+        "delivery conditions differ",
+        "lane configuration is not recorded",
+        "runtime limits differ"
+      ],
+      "right": "cm-7e738ed5b02e7437",
+      "state": "unproven"
+    },
+    {
+      "left": "cm-9e5ed49b95df07eb",
+      "reasons": [
+        "delivery conditions differ",
+        "delivery equivalence is unproven",
+        "delivery is not proved"
+      ],
+      "right": "cm-af700f9311c83fee",
+      "state": "unproven"
+    },
+    {
+      "left": "cm-9e5ed49b95df07eb",
+      "reasons": [
+        "delivery conditions differ"
+      ],
+      "right": "cm-7e738ed5b02e7437",
+      "state": "different"
+    },
+    {
+      "left": "cm-af700f9311c83fee",
+      "reasons": [
+        "delivery conditions differ",
+        "delivery equivalence is unproven",
+        "delivery is not proved"
+      ],
+      "right": "cm-7e738ed5b02e7437",
       "state": "unproven"
     },
     {
@@ -994,6 +1243,30 @@
       "version": "unavailable"
     },
     {
+      "configurationFingerprint": "sha256:2aa72198beeae75750a8c648f76dbcb6681f5c5a7dd7b7ddf9d0b75ff2bb0fbc",
+      "configurationRecorded": true,
+      "identity": "gemini-3.6-flash",
+      "model": "gemini-3.6-flash",
+      "provider": "gemini",
+      "version": "gemini-3.6-flash"
+    },
+    {
+      "configurationFingerprint": "sha256:65f85f7052a799aad93909daea14373093bbe1c659ecaccb40f147836f02c5e2",
+      "configurationRecorded": true,
+      "identity": "gemini-3.8-flash",
+      "model": "gemini-3.8-flash",
+      "provider": "gemini",
+      "version": "gemini-3.8-flash"
+    },
+    {
+      "configurationFingerprint": "sha256:8d3dbdbf1fe5d50806349ee1bde5d35cd0471030dc0ce1aa32a6c64fffc7456a",
+      "configurationRecorded": true,
+      "identity": "gemini-3.8-flash",
+      "model": "gemini-3.8-flash",
+      "provider": "gemini",
+      "version": "unavailable"
+    },
+    {
       "configurationFingerprint": "sha256:93d6a3cb68ac2fe53f0bd88cbc0c52195ac23b0b98c24147a8c8d5e8de08de6e",
       "configurationRecorded": false,
       "identity": "cli/claude-sonnet",
@@ -1002,12 +1275,28 @@
       "version": "unavailable"
     },
     {
+      "configurationFingerprint": "sha256:b871298089f4669f3089beb1fd3fef54ceba94a0281d6d8028e25585eb8ca6e5",
+      "configurationRecorded": true,
+      "identity": "gemini-3.6-flash",
+      "model": "gemini-3.6-flash",
+      "provider": "gemini",
+      "version": "gemini-3.6-flash"
+    },
+    {
       "configurationFingerprint": "sha256:be42557c83ba54e243736a0262fbb5c7f7272c7e69a3408737b4640f2cf0011c",
       "configurationRecorded": false,
       "identity": "cli/codex-gpt-5.5",
       "model": "cli/codex-gpt-5.5",
       "provider": "cli",
       "version": "unavailable"
+    },
+    {
+      "configurationFingerprint": "sha256:d25f1fdfc41b0d6de1ea4f69dc408e12ca7f1d03d049d79f353256790f975a38",
+      "configurationRecorded": true,
+      "identity": "gemini-3.8-flash",
+      "model": "gemini-3.8-flash",
+      "provider": "gemini",
+      "version": "gemini-3.8-flash"
     },
     {
       "configurationFingerprint": "sha256:d7fb62f2f86f97d8f60ff8b5cf676452b562acc62ff1bf45d9d47d9d7f2733ac",
@@ -5713,9 +6002,82 @@
           "counts": null,
           "id": "native_video",
           "label": "Video \u2014 native",
-          "laneSummaries": [],
-          "measurementRefs": [],
-          "state": "not_evaluated"
+          "laneSummaries": [
+            {
+              "conditionCount": 1,
+              "counts": {
+                "attempts": 1,
+                "certifiedPasses": 0,
+                "graded": 1,
+                "invalid": 0,
+                "laneErrors": 0,
+                "modelFailures": 1,
+                "withheld": 0
+              },
+              "lane": "gemini-3.6-flash",
+              "measurementRefs": [
+                "cm-713a98dc0c4caafa"
+              ]
+            },
+            {
+              "conditionCount": 2,
+              "counts": {
+                "attempts": 2,
+                "certifiedPasses": 0,
+                "graded": 0,
+                "invalid": 0,
+                "laneErrors": 2,
+                "modelFailures": 0,
+                "withheld": 0
+              },
+              "lane": "gemini-3.8-flash",
+              "measurementRefs": [
+                "cm-9e5ed49b95df07eb",
+                "cm-7e738ed5b02e7437"
+              ]
+            }
+          ],
+          "measurementRefs": [
+            "cm-713a98dc0c4caafa",
+            "cm-9e5ed49b95df07eb",
+            "cm-7e738ed5b02e7437"
+          ],
+          "state": "measured"
+        },
+        {
+          "counts": {
+            "attempts": 1,
+            "certifiedPasses": 0,
+            "graded": 1,
+            "invalid": 0,
+            "laneErrors": 0,
+            "modelFailures": 1,
+            "withheld": 0
+          },
+          "id": "native_video_with_frames",
+          "label": "Video \u2014 native + exact frames",
+          "laneSummaries": [
+            {
+              "conditionCount": 1,
+              "counts": {
+                "attempts": 1,
+                "certifiedPasses": 0,
+                "graded": 1,
+                "invalid": 0,
+                "laneErrors": 0,
+                "modelFailures": 1,
+                "withheld": 0
+              },
+              "lane": "gemini-3.6-flash",
+              "measurementRefs": [
+                "cm-652b57accd2c0af5"
+              ]
+            }
+          ],
+          "measurementRefs": [
+            "cm-652b57accd2c0af5"
+          ],
+          "state": "measured"
         },
         {
           "counts": {
@@ -6239,13 +6601,448 @@
         },
         {
           "campaignRefs": [
+            "fc-2917108cf6be"
+          ],
+          "comparability": {
+            "reasons": [
+              "delivery adapter identity, version or configuration is not recorded",
+              "delivery conditions differ",
+              "delivery equivalence is unproven",
+              "delivery is not proved",
+              "different exam fingerprint",
+              "lane configuration is not recorded",
+              "repository cleanliness differs; execution equivalence is unproven",
+              "runtime limits differ"
+            ],
+            "state": "unproven"
+          },
+          "conditionFields": {
+            "delivery": {
+              "adapter": {
+                "id": "vvdex-gemini-native-video",
+                "version": "1"
+              },
+              "configurationCommitment": "sha256:b132477a267d052d7dd6e17606ead6fd3a2bda9aa011c358b250afce0c33a066",
+              "mode": "native_video",
+              "state": "proved"
+            },
+            "engine": {
+              "gitCommit": "6bec6c44522d43fdb5296322d91ef2ff71d581b9",
+              "gitDirty": false,
+              "verifiersPin": "c521e4146026a164038b670372ad7f14edd45250",
+              "version": "0.1.0",
+              "worker": "vvdex-env"
+            },
+            "examFingerprint": "85e026007af17db692614084f12ff40c5bbf2348bcfda0a01deb95aad8928f4c",
+            "limits": {
+              "advertisedTools": [
+                "list_files",
+                "read_file",
+                "write_file",
+                "edit_file",
+                "run_tests",
+                "submit"
+              ],
+              "commandBudget": 0,
+              "maxOutputTokens": 2048,
+              "maxSteps": 24,
+              "retryPolicy": "none",
+              "temperature": 0.2,
+              "toolLimit": 24,
+              "wallClockLimitS": 2280
+            },
+            "runtime": "docker"
+          },
+          "conditionFingerprint": "sha256:487f73c0b3e16aaefaa2cabdd83d38f299e9b801f4654e819288159ef1385230",
+          "counts": {
+            "attempts": 1,
+            "certifiedPasses": 0,
+            "graded": 1,
+            "invalid": 0,
+            "laneErrors": 0,
+            "modelFailures": 1,
+            "withheld": 0
+          },
+          "delivery": {
+            "adapter": {
+              "id": "vvdex-gemini-native-video",
+              "version": "1"
+            },
+            "configurationCommitment": "sha256:b132477a267d052d7dd6e17606ead6fd3a2bda9aa011c358b250afce0c33a066",
+            "mode": "native_video",
+            "provenanceRefs": [],
+            "state": "proved"
+          },
+          "efficiency": {
+            "costUsd": null,
+            "elapsedMs": {
+              "eligible": 1,
+              "median": 96832,
+              "observed": 1
+            },
+            "steps": {
+              "eligible": 1,
+              "median": 7,
+              "observed": 1
+            },
+            "tokens": {
+              "eligible": 1,
+              "median": 23820,
+              "observed": 1
+            }
+          },
+          "evidenceRefs": [
+            {
+              "attempts": [
+                {
+                  "certifiedOutcome": "model_fail",
+                  "id": "9fa86ff8-9ca9-4227-9817-2eecbc425dd7"
+                }
+              ],
+              "evalId": "fr-20260906-76fdb6cd",
+              "href": "/reports/fc-2917108cf6be/summary.json",
+              "kind": "sealed-record",
+              "recordDigest": "59f431f7ed9ec5214737424a5c886cbe65f3caf49b1a11807bc27be17428b613"
+            }
+          ],
+          "exam": {
+            "fingerprint": "85e026007af17db692614084f12ff40c5bbf2348bcfda0a01deb95aad8928f4c",
+            "id": "vvdex.annotation.robot-video-1",
+            "retired": false,
+            "version": "0.2.0"
+          },
+          "family": "annotation",
+          "id": "cm-713a98dc0c4caafa",
+          "lane": {
+            "configurationFingerprint": "sha256:2aa72198beeae75750a8c648f76dbcb6681f5c5a7dd7b7ddf9d0b75ff2bb0fbc",
+            "configurationRecorded": true,
+            "identity": "gemini-3.6-flash",
+            "model": "gemini-3.6-flash",
+            "provider": "gemini",
+            "version": "gemini-3.6-flash"
+          },
+          "measuredDate": "2026-09-06",
+          "modality": "video",
+          "quality": {
+            "axes": [
+              {
+                "id": "boxF1",
+                "median": 0.0,
+                "observed": 1
+              },
+              {
+                "id": "boxIoU",
+                "median": 0.0,
+                "observed": 1
+              },
+              {
+                "id": "boxPrecision",
+                "median": 0.0,
+                "observed": 1
+              },
+              {
+                "id": "boxRecall",
+                "median": 0.0,
+                "observed": 1
+              },
+              {
+                "id": "classificationAccuracy",
+                "median": 1.0,
+                "observed": 1
+              },
+              {
+                "id": "classificationF1",
+                "median": 1.0,
+                "observed": 1
+              },
+              {
+                "id": "classificationPrecision",
+                "median": 1.0,
+                "observed": 1
+              },
+              {
+                "id": "classificationRecall",
+                "median": 1.0,
+                "observed": 1
+              },
+              {
+                "id": "eventF1",
+                "median": 0.5,
+                "observed": 1
+              },
+              {
+                "id": "eventPrecision",
+                "median": 0.5,
+                "observed": 1
+              },
+              {
+                "id": "eventRecall",
+                "median": 0.5,
+                "observed": 1
+              },
+              {
+                "id": "eventTemporalIoU",
+                "median": 0.31315789473684225,
+                "observed": 1
+              },
+              {
+                "id": "segmentF1",
+                "median": 1.0,
+                "observed": 1
+              },
+              {
+                "id": "segmentPrecision",
+                "median": 1.0,
+                "observed": 1
+              },
+              {
+                "id": "segmentRecall",
+                "median": 1.0,
+                "observed": 1
+              },
+              {
+                "id": "segmentTemporalIoU",
+                "median": 0.9000000000000004,
+                "observed": 1
+              },
+              {
+                "id": "trackingConsistency",
+                "median": 0.0,
+                "observed": 1
+              }
+            ]
+          },
+          "rate": null
+        },
+        {
+          "campaignRefs": [
+            "fc-403cfc23f9e5"
+          ],
+          "comparability": {
+            "reasons": [
+              "delivery adapter identity, version or configuration is not recorded",
+              "delivery conditions differ",
+              "delivery equivalence is unproven",
+              "delivery is not proved",
+              "different exam fingerprint",
+              "lane configuration is not recorded",
+              "repository cleanliness differs; execution equivalence is unproven",
+              "runtime limits differ"
+            ],
+            "state": "unproven"
+          },
+          "conditionFields": {
+            "delivery": {
+              "adapter": {
+                "id": "vvdex-gemini-native-video",
+                "version": "2"
+              },
+              "configurationCommitment": "sha256:ef08aa2f0cf8c9612b2ff3eda75da45ec74b436fbda7313e247f2c895e83842b",
+              "mode": "native_video_with_frames",
+              "state": "proved"
+            },
+            "engine": {
+              "gitCommit": "29a914ca852b6aaa96e0670e23641120aee931e1",
+              "gitDirty": false,
+              "verifiersPin": "c521e4146026a164038b670372ad7f14edd45250",
+              "version": "0.1.0",
+              "worker": "vvdex-env"
+            },
+            "examFingerprint": "85e026007af17db692614084f12ff40c5bbf2348bcfda0a01deb95aad8928f4c",
+            "limits": {
+              "advertisedTools": [
+                "list_files",
+                "read_file",
+                "write_file",
+                "edit_file",
+                "run_tests",
+                "submit"
+              ],
+              "commandBudget": 0,
+              "maxOutputTokens": 2048,
+              "maxSteps": 24,
+              "retryPolicy": "none",
+              "temperature": 0.2,
+              "toolLimit": 24,
+              "wallClockLimitS": 2280
+            },
+            "runtime": "docker"
+          },
+          "conditionFingerprint": "sha256:e8576e66ae006544013de2d590a2bda1a3aaeb1d30dd346c942f1fdd536750f2",
+          "counts": {
+            "attempts": 1,
+            "certifiedPasses": 0,
+            "graded": 1,
+            "invalid": 0,
+            "laneErrors": 0,
+            "modelFailures": 1,
+            "withheld": 0
+          },
+          "delivery": {
+            "adapter": {
+              "id": "vvdex-gemini-native-video",
+              "version": "2"
+            },
+            "configurationCommitment": "sha256:ef08aa2f0cf8c9612b2ff3eda75da45ec74b436fbda7313e247f2c895e83842b",
+            "mode": "native_video_with_frames",
+            "provenanceRefs": [],
+            "state": "proved"
+          },
+          "efficiency": {
+            "costUsd": null,
+            "elapsedMs": {
+              "eligible": 1,
+              "median": 125259,
+              "observed": 1
+            },
+            "steps": {
+              "eligible": 1,
+              "median": 7,
+              "observed": 1
+            },
+            "tokens": {
+              "eligible": 1,
+              "median": 94460,
+              "observed": 1
+            }
+          },
+          "evidenceRefs": [
+            {
+              "attempts": [
+                {
+                  "certifiedOutcome": "model_fail",
+                  "id": "ea220a7a-f64e-4a3d-b266-8e9e0e57a791"
+                }
+              ],
+              "evalId": "fr-20260906-92669fc1",
+              "href": "/reports/fc-403cfc23f9e5/summary.json",
+              "kind": "sealed-record",
+              "recordDigest": "f9e6baef1c1acb4e45e2bd7e027b368b5e594f33037c643dc8ee9edb75daa2e9"
+            }
+          ],
+          "exam": {
+            "fingerprint": "85e026007af17db692614084f12ff40c5bbf2348bcfda0a01deb95aad8928f4c",
+            "id": "vvdex.annotation.robot-video-1",
+            "retired": false,
+            "version": "0.2.0"
+          },
+          "family": "annotation",
+          "id": "cm-652b57accd2c0af5",
+          "lane": {
+            "configurationFingerprint": "sha256:b871298089f4669f3089beb1fd3fef54ceba94a0281d6d8028e25585eb8ca6e5",
+            "configurationRecorded": true,
+            "identity": "gemini-3.6-flash",
+            "model": "gemini-3.6-flash",
+            "provider": "gemini",
+            "version": "gemini-3.6-flash"
+          },
+          "measuredDate": "2026-09-06",
+          "modality": "video",
+          "quality": {
+            "axes": [
+              {
+                "id": "boxF1",
+                "median": 0.5,
+                "observed": 1
+              },
+              {
+                "id": "boxIoU",
+                "median": 0.6124600168685053,
+                "observed": 1
+              },
+              {
+                "id": "boxPrecision",
+                "median": 0.5,
+                "observed": 1
+              },
+              {
+                "id": "boxRecall",
+                "median": 0.5,
+                "observed": 1
+              },
+              {
+                "id": "classificationAccuracy",
+                "median": 1.0,
+                "observed": 1
+              },
+              {
+                "id": "classificationF1",
+                "median": 1.0,
+                "observed": 1
+              },
+              {
+                "id": "classificationPrecision",
+                "median": 1.0,
+                "observed": 1
+              },
+              {
+                "id": "classificationRecall",
+                "median": 1.0,
+                "observed": 1
+              },
+              {
+                "id": "eventF1",
+                "median": 1.0,
+                "observed": 1
+              },
+              {
+                "id": "eventPrecision",
+                "median": 1.0,
+                "observed": 1
+              },
+              {
+                "id": "eventRecall",
+                "median": 1.0,
+                "observed": 1
+              },
+              {
+                "id": "eventTemporalIoU",
+                "median": 0.5000000000000017,
+                "observed": 1
+              },
+              {
+                "id": "segmentF1",
+                "median": 1.0,
+                "observed": 1
+              },
+              {
+                "id": "segmentPrecision",
+                "median": 1.0,
+                "observed": 1
+              },
+              {
+                "id": "segmentRecall",
+                "median": 1.0,
+                "observed": 1
+              },
+              {
+                "id": "segmentTemporalIoU",
+                "median": 0.7142857142857145,
+                "observed": 1
+              },
+              {
+                "id": "trackingConsistency",
+                "median": 1.0,
+                "observed": 1
+              }
+            ]
+          },
+          "rate": null
+        },
+        {
+          "campaignRefs": [
             "fc-ec21239c00aa"
           ],
           "comparability": {
             "reasons": [
               "delivery adapter identity, version or configuration is not recorded",
+              "delivery conditions differ",
+              "delivery equivalence is unproven",
+              "delivery is not proved",
+              "different exam fingerprint",
               "lane configuration is not recorded",
-              "repository cleanliness differs; execution equivalence is unproven"
+              "repository cleanliness differs; execution equivalence is unproven",
+              "runtime limits differ"
             ],
             "state": "unproven"
           },
@@ -6540,8 +7337,13 @@
           "comparability": {
             "reasons": [
               "delivery adapter identity, version or configuration is not recorded",
+              "delivery conditions differ",
+              "delivery equivalence is unproven",
+              "delivery is not proved",
+              "different exam fingerprint",
               "lane configuration is not recorded",
-              "repository cleanliness differs; execution equivalence is unproven"
+              "repository cleanliness differs; execution equivalence is unproven",
+              "runtime limits differ"
             ],
             "state": "unproven"
           },
@@ -6731,6 +7533,345 @@
               }
             ]
           },
+          "rate": null
+        },
+        {
+          "campaignRefs": [
+            "fc-6fb3c7588801"
+          ],
+          "comparability": {
+            "reasons": [
+              "delivery adapter identity, version or configuration is not recorded",
+              "delivery conditions differ",
+              "delivery equivalence is unproven",
+              "delivery is not proved",
+              "different exam fingerprint",
+              "lane configuration is not recorded",
+              "repository cleanliness differs; execution equivalence is unproven",
+              "runtime limits differ"
+            ],
+            "state": "unproven"
+          },
+          "conditionFields": {
+            "delivery": {
+              "adapter": {
+                "id": "vvdex-gemini-native-video",
+                "version": "1"
+              },
+              "configurationCommitment": "sha256:328a48497223023373a07e56273526c16cf1401d8dda54eef681242a7fec3915",
+              "mode": "native_video",
+              "state": "proved"
+            },
+            "engine": {
+              "gitCommit": "92105f53b094a097a1f1799e4d5f3647eaba9d83",
+              "gitDirty": false,
+              "verifiersPin": "c521e4146026a164038b670372ad7f14edd45250",
+              "version": "0.1.0",
+              "worker": "vvdex-env"
+            },
+            "examFingerprint": "c3b4773c375c10ad989357bb179cffd62151eccd2a58b52254609a54d434be33",
+            "limits": {
+              "advertisedTools": [
+                "list_files",
+                "read_file",
+                "write_file",
+                "edit_file",
+                "run_tests",
+                "submit"
+              ],
+              "commandBudget": 0,
+              "maxOutputTokens": 2048,
+              "maxSteps": 24,
+              "retryPolicy": "none",
+              "temperature": 0.2,
+              "toolLimit": 24,
+              "wallClockLimitS": 2280
+            },
+            "runtime": "docker"
+          },
+          "conditionFingerprint": "sha256:acba5c7b9ce2d46d7be3e5261a6c52e919ce9ad8cd51ad625db6505970eaa0f9",
+          "counts": {
+            "attempts": 1,
+            "certifiedPasses": 0,
+            "graded": 0,
+            "invalid": 0,
+            "laneErrors": 1,
+            "modelFailures": 0,
+            "withheld": 0
+          },
+          "delivery": {
+            "adapter": {
+              "id": "vvdex-gemini-native-video",
+              "version": "1"
+            },
+            "configurationCommitment": "sha256:328a48497223023373a07e56273526c16cf1401d8dda54eef681242a7fec3915",
+            "mode": "native_video",
+            "provenanceRefs": [],
+            "state": "proved"
+          },
+          "efficiency": {
+            "costUsd": null,
+            "elapsedMs": null,
+            "steps": null,
+            "tokens": null
+          },
+          "evidenceRefs": [
+            {
+              "attempts": [
+                {
+                  "certifiedOutcome": "lane_error",
+                  "id": "5ee39184-faa8-43f2-a4e9-5d96772a0be8"
+                }
+              ],
+              "evalId": "fr-20260906-29ba262c",
+              "href": "/reports/fc-6fb3c7588801/summary.json",
+              "kind": "sealed-record",
+              "recordDigest": "51bedf34d0f35b8337759d188245153ab277684082c83f1d367ba9586133e917"
+            }
+          ],
+          "exam": {
+            "fingerprint": "c3b4773c375c10ad989357bb179cffd62151eccd2a58b52254609a54d434be33",
+            "id": "vvdex.annotation.robot-video-1",
+            "retired": false,
+            "version": "0.1.0"
+          },
+          "family": "annotation",
+          "id": "cm-9e5ed49b95df07eb",
+          "lane": {
+            "configurationFingerprint": "sha256:65f85f7052a799aad93909daea14373093bbe1c659ecaccb40f147836f02c5e2",
+            "configurationRecorded": true,
+            "identity": "gemini-3.8-flash",
+            "model": "gemini-3.8-flash",
+            "provider": "gemini",
+            "version": "gemini-3.8-flash"
+          },
+          "measuredDate": "2026-09-06",
+          "modality": "video",
+          "quality": null,
+          "rate": null
+        },
+        {
+          "campaignRefs": [
+            "fc-6fb3c7588801"
+          ],
+          "comparability": {
+            "reasons": [
+              "delivery adapter identity, version or configuration is not recorded",
+              "delivery conditions differ",
+              "delivery equivalence is unproven",
+              "delivery is not proved",
+              "different exam fingerprint",
+              "lane configuration is not recorded",
+              "repository cleanliness differs; execution equivalence is unproven",
+              "runtime limits differ"
+            ],
+            "state": "unproven"
+          },
+          "conditionFields": {
+            "delivery": {
+              "adapter": null,
+              "configurationCommitment": null,
+              "mode": "unknown",
+              "state": "unproven"
+            },
+            "engine": {
+              "gitCommit": "92105f53b094a097a1f1799e4d5f3647eaba9d83",
+              "gitDirty": false,
+              "verifiersPin": "c521e4146026a164038b670372ad7f14edd45250",
+              "version": "0.1.0",
+              "worker": "vvdex-env"
+            },
+            "examFingerprint": "c3b4773c375c10ad989357bb179cffd62151eccd2a58b52254609a54d434be33",
+            "limits": {
+              "advertisedTools": [
+                "list_files",
+                "read_file",
+                "write_file",
+                "edit_file",
+                "run_tests",
+                "submit"
+              ],
+              "commandBudget": 0,
+              "maxOutputTokens": 2048,
+              "maxSteps": 24,
+              "retryPolicy": "none",
+              "temperature": 0.2,
+              "toolLimit": 24,
+              "wallClockLimitS": 2280
+            },
+            "runtime": "docker"
+          },
+          "conditionFingerprint": "sha256:0a545bb1d679d851a7835d5b0a0b1d5e7812e78fdb81f394419f6822e9fc1422",
+          "counts": {
+            "attempts": 1,
+            "certifiedPasses": 0,
+            "graded": 0,
+            "invalid": 0,
+            "laneErrors": 1,
+            "modelFailures": 0,
+            "withheld": 0
+          },
+          "delivery": {
+            "adapter": null,
+            "configurationCommitment": null,
+            "mode": "unknown",
+            "provenanceRefs": [],
+            "state": "unproven"
+          },
+          "efficiency": {
+            "costUsd": null,
+            "elapsedMs": null,
+            "steps": null,
+            "tokens": null
+          },
+          "evidenceRefs": [
+            {
+              "attempts": [
+                {
+                  "certifiedOutcome": "lane_error",
+                  "id": "2e00a715-387c-4270-b307-65899b92f193"
+                }
+              ],
+              "evalId": "fr-20260906-99a8ead2",
+              "href": "/reports/fc-6fb3c7588801/summary.json",
+              "kind": "sealed-record",
+              "recordDigest": "b6904bbd74376d6911ded609ccc9d9f27c8fbd000f85f82333568dd479bf8bfc"
+            }
+          ],
+          "exam": {
+            "fingerprint": "c3b4773c375c10ad989357bb179cffd62151eccd2a58b52254609a54d434be33",
+            "id": "vvdex.annotation.robot-video-1",
+            "retired": false,
+            "version": "0.1.0"
+          },
+          "family": "annotation",
+          "id": "cm-af700f9311c83fee",
+          "lane": {
+            "configurationFingerprint": "sha256:8d3dbdbf1fe5d50806349ee1bde5d35cd0471030dc0ce1aa32a6c64fffc7456a",
+            "configurationRecorded": true,
+            "identity": "gemini-3.8-flash",
+            "model": "gemini-3.8-flash",
+            "provider": "gemini",
+            "version": "unavailable"
+          },
+          "measuredDate": "2026-09-06",
+          "modality": "video",
+          "quality": null,
+          "rate": null
+        },
+        {
+          "campaignRefs": [
+            "fc-6fb3c7588801"
+          ],
+          "comparability": {
+            "reasons": [
+              "delivery adapter identity, version or configuration is not recorded",
+              "delivery conditions differ",
+              "delivery equivalence is unproven",
+              "delivery is not proved",
+              "different exam fingerprint",
+              "lane configuration is not recorded",
+              "repository cleanliness differs; execution equivalence is unproven",
+              "runtime limits differ"
+            ],
+            "state": "unproven"
+          },
+          "conditionFields": {
+            "delivery": {
+              "adapter": {
+                "id": "vvdex-gemini-native-video",
+                "version": "1"
+              },
+              "configurationCommitment": "sha256:b1aae4a723b5ee8bde21c3de061f070298c5e55ee45a33c09f9999c6ab692a38",
+              "mode": "native_video",
+              "state": "proved"
+            },
+            "engine": {
+              "gitCommit": "d704a2f91d43ce883db8267b0174ae09af31fa0e",
+              "gitDirty": false,
+              "verifiersPin": "c521e4146026a164038b670372ad7f14edd45250",
+              "version": "0.1.0",
+              "worker": "vvdex-env"
+            },
+            "examFingerprint": "c3b4773c375c10ad989357bb179cffd62151eccd2a58b52254609a54d434be33",
+            "limits": {
+              "advertisedTools": [
+                "list_files",
+                "read_file",
+                "write_file",
+                "edit_file",
+                "run_tests",
+                "submit"
+              ],
+              "commandBudget": 0,
+              "maxOutputTokens": 2048,
+              "maxSteps": 24,
+              "retryPolicy": "none",
+              "temperature": 0.2,
+              "toolLimit": 24,
+              "wallClockLimitS": 2280
+            },
+            "runtime": "docker"
+          },
+          "conditionFingerprint": "sha256:88603b7600e87a0aa4b9c5689c76f8d6a3d9c6e806fb076fee7476c11afd259d",
+          "counts": {
+            "attempts": 1,
+            "certifiedPasses": 0,
+            "graded": 0,
+            "invalid": 0,
+            "laneErrors": 1,
+            "modelFailures": 0,
+            "withheld": 0
+          },
+          "delivery": {
+            "adapter": {
+              "id": "vvdex-gemini-native-video",
+              "version": "1"
+            },
+            "configurationCommitment": "sha256:b1aae4a723b5ee8bde21c3de061f070298c5e55ee45a33c09f9999c6ab692a38",
+            "mode": "native_video",
+            "provenanceRefs": [],
+            "state": "proved"
+          },
+          "efficiency": {
+            "costUsd": null,
+            "elapsedMs": null,
+            "steps": null,
+            "tokens": null
+          },
+          "evidenceRefs": [
+            {
+              "attempts": [
+                {
+                  "certifiedOutcome": "lane_error",
+                  "id": "119cd262-bb93-49f5-925e-3e50a2970c08"
+                }
+              ],
+              "evalId": "fr-20260906-55135e51",
+              "href": "/reports/fc-6fb3c7588801/summary.json",
+              "kind": "sealed-record",
+              "recordDigest": "18e2b7ae2068b318b410dae8b7fe4b708d7995dec3d018510af3d60648261f85"
+            }
+          ],
+          "exam": {
+            "fingerprint": "c3b4773c375c10ad989357bb179cffd62151eccd2a58b52254609a54d434be33",
+            "id": "vvdex.annotation.robot-video-1",
+            "retired": false,
+            "version": "0.1.0"
+          },
+          "family": "annotation",
+          "id": "cm-7e738ed5b02e7437",
+          "lane": {
+            "configurationFingerprint": "sha256:d25f1fdfc41b0d6de1ea4f69dc408e12ca7f1d03d049d79f353256790f975a38",
+            "configurationRecorded": true,
+            "identity": "gemini-3.8-flash",
+            "model": "gemini-3.8-flash",
+            "provider": "gemini",
+            "version": "gemini-3.8-flash"
+          },
+          "measuredDate": "2026-09-06",
+          "modality": "video",
+          "quality": null,
           "rate": null
         },
         {

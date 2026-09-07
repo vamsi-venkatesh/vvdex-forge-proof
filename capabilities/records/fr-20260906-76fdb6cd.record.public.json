@@ -1,0 +1,111 @@
+{
+  "disclosureClass": "answer_key",
+  "environmentId": "vvdex.annotation.robot-video-1",
+  "evalId": "fr-20260906-76fdb6cd",
+  "fingerprint": "85e026007af17db692614084f12ff40c5bbf2348bcfda0a01deb95aad8928f4c",
+  "kind": "vvdex.forge.public-record-projection/v1",
+  "lanes": [
+    "gemini-3.6-flash"
+  ],
+  "note": "A projection of the sealed record, not the record. Its bytes do not hash to sourceRecordDigest; that digest describes the canonical record, which a holder verifies under agreement.",
+  "results": {
+    "byModel": [
+      {
+        "countableN": 1,
+        "countableSuccesses": 0,
+        "lowN": true,
+        "model": "gemini-3.6-flash",
+        "n": 1,
+        "provider": "gemini",
+        "successRate": 0.0,
+        "successes": 0,
+        "toolCalls": 7,
+        "verdicts": {
+          "certified_pass": 0,
+          "invalid": 0,
+          "lane_error": 0,
+          "model_fail": 1,
+          "withheld": 0
+        }
+      }
+    ],
+    "successRate": 0.0,
+    "totalRollouts": 1
+  },
+  "rollouts": [
+    {
+      "containmentVerdict": "verified_contained",
+      "effectiveCertifiedOutcome": "model_fail",
+      "elapsedMs": 96832,
+      "id": "9fa86ff8-9ca9-4227-9817-2eecbc425dd7",
+      "lane": "gemini-3.6-flash",
+      "outcome": "submitted_failed",
+      "seed": 0,
+      "stages": {
+        "edited": true,
+        "graded": true,
+        "inspected": true,
+        "passed": false,
+        "submitted": true,
+        "tested": true
+      },
+      "stepLimit": 24,
+      "stepsUsed": 7,
+      "toolNameCounts": {
+        "list_files": 1,
+        "read_file": 3,
+        "run_tests": 1,
+        "submit": 1,
+        "write_file": 1
+      },
+      "verdicts": {
+        "certified": "model_fail",
+        "grader": "fail",
+        "integrity": "verified_contained"
+      }
+    }
+  ],
+  "sourceRecordDigest": {
+    "algorithm": "sha256 over the record's canonical JSON (UTF-8, sorted keys, compact separators) with recordDigest.sha256 set to 64 '0' characters",
+    "sha256": "59f431f7ed9ec5214737424a5c886cbe65f3caf49b1a11807bc27be17428b613"
+  },
+  "stages": [
+    {
+      "applicable": true,
+      "id": "inspect",
+      "label": "Inspected",
+      "meaning": "Listed or read at least one file in the repository \u2014 or, on a browser exam, opened or snapshotted the page."
+    },
+    {
+      "applicable": true,
+      "id": "edit",
+      "label": "Edited",
+      "meaning": "Wrote at least one file that actually changed on disk."
+    },
+    {
+      "applicable": true,
+      "id": "test",
+      "label": "Ran tests",
+      "meaning": "Invoked the visible-test tool at least once."
+    },
+    {
+      "applicable": true,
+      "id": "submit",
+      "label": "Submitted",
+      "meaning": "Called submit, ending the rollout on its own terms."
+    },
+    {
+      "applicable": true,
+      "id": "graded",
+      "label": "Graded",
+      "meaning": "The independent hidden grader ran on the submission and returned a verdict."
+    },
+    {
+      "applicable": true,
+      "id": "hidden_pass",
+      "label": "Passed hidden tests",
+      "meaning": "The hidden grader returned exit 0 and the rollout was certified."
+    }
+  ],
+  "version": "0.2.0"
+}

@@ -110,7 +110,7 @@
         }
       ],
       "reportUrl": "/reports/fc-ec21239c00aa/",
-      "summarySha256": "8ec74ad2f3865f7014f17290e7e7c3199e8a1d597a58f7d0ad095f6c6934cae9",
+      "summarySha256": "6c39d4e589a4cc509345dc1dfa46d1d5a422d43104300465591c1f402b89bdf6",
       "summaryUrl": "/reports/fc-ec21239c00aa/summary.json"
     },
     "purpose": "Invented tabular records are reviewed for normalization, validity, duplicates, anomalies and relationships.",
@@ -225,7 +225,7 @@
       }
     ],
     "reportUrl": "/reports/fc-ec21239c00aa/",
-    "summarySha256": "8ec74ad2f3865f7014f17290e7e7c3199e8a1d597a58f7d0ad095f6c6934cae9",
+    "summarySha256": "6c39d4e589a4cc509345dc1dfa46d1d5a422d43104300465591c1f402b89bdf6",
     "summaryUrl": "/reports/fc-ec21239c00aa/summary.json"
   },
   "referenceMetrics": {

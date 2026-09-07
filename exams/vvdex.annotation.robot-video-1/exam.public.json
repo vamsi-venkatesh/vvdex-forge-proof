@@ -28,148 +28,145 @@
     ],
     "modality": "video",
     "modelCampaign": {
-      "campaignId": "fc-ec21239c00aa",
+      "campaignId": "fc-403cfc23f9e5",
       "coverage": {
         "cellsPending": 0,
-        "cellsRun": 4,
+        "cellsRun": 1,
         "complete": true,
-        "completedAttempts": 40,
+        "completedAttempts": 1,
         "examsNotStarted": [],
         "missingAttempts": 0,
         "note": "Cells run against the cells this campaign declared it would run.",
         "pending": [],
         "planDeclared": true,
-        "plannedAttempts": 40,
-        "plannedCells": 4,
+        "plannedAttempts": 1,
+        "plannedCells": 1,
         "plannedExams": [
-          "vvdex.annotation.robot-video-1",
-          "vvdex.annotation.image-object-1",
-          "vvdex.annotation.text-labeling-1",
-          "vvdex.annotation.structured-data-1"
+          "vvdex.annotation.robot-video-1"
         ],
         "plannedModels": [
-          "cli/codex-gpt-5.5"
+          "gemini-3.6-flash"
         ],
-        "rolloutsPerCell": 10
+        "rolloutsPerCell": 1
       },
-      "examFingerprint": "c3b4773c375c10ad989357bb179cffd62151eccd2a58b52254609a54d434be33",
+      "examFingerprint": "85e026007af17db692614084f12ff40c5bbf2348bcfda0a01deb95aad8928f4c",
       "models": [
         {
-          "attempts": 10,
-          "delivery": "sampled image frames; no native video",
-          "failed": 10,
+          "attempts": 1,
+          "delivery": "native video with supplied exact-frame images; provider-side processing is not independently observed",
+          "failed": 1,
           "invalid": 0,
           "laneErrors": 0,
-          "model": "cli/codex-gpt-5.5",
+          "model": "gemini-3.6-flash",
           "passed": 0,
           "quality": {
             "axes": [
               {
                 "id": "boxPrecision",
-                "mean": 0.8,
-                "n": 5
+                "mean": 0.5,
+                "n": 1
               },
               {
                 "id": "boxRecall",
-                "mean": 0.8,
-                "n": 5
+                "mean": 0.5,
+                "n": 1
               },
               {
                 "id": "boxF1",
-                "mean": 0.8,
-                "n": 5
+                "mean": 0.5,
+                "n": 1
               },
               {
                 "id": "boxIoU",
-                "mean": 0.5775007320940269,
-                "n": 5
+                "mean": 0.6124600168685053,
+                "n": 1
               },
               {
                 "id": "classificationPrecision",
                 "mean": 1.0,
-                "n": 5
+                "n": 1
               },
               {
                 "id": "classificationRecall",
                 "mean": 1.0,
-                "n": 5
+                "n": 1
               },
               {
                 "id": "classificationF1",
                 "mean": 1.0,
-                "n": 5
+                "n": 1
               },
               {
                 "id": "classificationAccuracy",
                 "mean": 1.0,
-                "n": 5
+                "n": 1
               },
               {
                 "id": "eventPrecision",
-                "mean": 0.2,
-                "n": 5
+                "mean": 1.0,
+                "n": 1
               },
               {
                 "id": "eventRecall",
-                "mean": 0.2,
-                "n": 5
+                "mean": 1.0,
+                "n": 1
               },
               {
                 "id": "eventF1",
-                "mean": 0.2,
-                "n": 5
+                "mean": 1.0,
+                "n": 1
               },
               {
                 "id": "eventTemporalIoU",
-                "mean": 0.20144998001005981,
-                "n": 5
+                "mean": 0.5000000000000017,
+                "n": 1
               },
               {
                 "id": "segmentPrecision",
-                "mean": 0.8,
-                "n": 5
+                "mean": 1.0,
+                "n": 1
               },
               {
                 "id": "segmentRecall",
                 "mean": 1.0,
-                "n": 5
+                "n": 1
               },
               {
                 "id": "segmentF1",
-                "mean": 0.8666666666666666,
-                "n": 5
+                "mean": 1.0,
+                "n": 1
               },
               {
                 "id": "segmentTemporalIoU",
-                "mean": 0.6397888999008924,
-                "n": 5
+                "mean": 0.7142857142857145,
+                "n": 1
               },
               {
                 "id": "trackingConsistency",
                 "mean": 1.0,
-                "n": 5
+                "n": 1
               }
             ],
-            "measuredAttempts": 10,
-            "scoreMean": 0.2800575270090888
+            "measuredAttempts": 1,
+            "scoreMean": 0.6565342913371214
           },
           "stages": {
-            "edit": 10,
-            "graded": 10,
+            "edit": 1,
+            "graded": 1,
             "hidden_pass": 0,
-            "inspect": 10,
-            "submit": 10,
-            "test": 10
+            "inspect": 1,
+            "submit": 1,
+            "test": 1
           },
           "withheld": 0
         }
       ],
-      "reportUrl": "/reports/fc-ec21239c00aa/",
-      "summarySha256": "8ec74ad2f3865f7014f17290e7e7c3199e8a1d597a58f7d0ad095f6c6934cae9",
-      "summaryUrl": "/reports/fc-ec21239c00aa/summary.json"
+      "reportUrl": "/reports/fc-403cfc23f9e5/",
+      "summarySha256": "3fdf3d92f81428c54af4f2b44405a8ec0e891ee60e3d67960264786f5dd804c2",
+      "summaryUrl": "/reports/fc-403cfc23f9e5/summary.json"
     },
     "purpose": "A robot-catching video is reviewed for temporal events, frame-level object boxes, track identity and occlusion.",
-    "rubricVersion": "1.0"
+    "rubricVersion": "1.1"
   },
   "capability": {
     "howSuccessIsMeasured": "Deterministic validation and isolated grading against private references.",
@@ -177,7 +174,7 @@
     "whatIsTested": "A robot-catching video is reviewed for temporal events, frame-level object boxes, track identity and occlusion.",
     "whyItIsDifficult": "Temporal, geometric and categorical consistency, ambiguity and malformed submissions."
   },
-  "examFingerprint": "c3b4773c375c10ad989357bb179cffd62151eccd2a58b52254609a54d434be33",
+  "examFingerprint": "85e026007af17db692614084f12ff40c5bbf2348bcfda0a01deb95aad8928f4c",
   "examId": "vvdex.annotation.robot-video-1",
   "family": "annotation",
   "limits": {
@@ -205,7 +202,7 @@
     ]
   },
   "reportLinks": {
-    "campaignReport": "/reports/fc-ec21239c00aa/",
+    "campaignReport": "/reports/fc-403cfc23f9e5/",
     "certificationReceipt": "https://vvdexops.com/annotation/robot-video-1/certification-receipt.json",
     "certificationReport": "https://vvdexops.com/annotation/robot-video-1/report.public.json",
     "examPage": "https://vvdexops.com/annotation/robot-video-1/"
@@ -219,5 +216,5 @@
       "edit"
     ]
   },
-  "version": "0.1.0"
+  "version": "0.2.0"
 }
