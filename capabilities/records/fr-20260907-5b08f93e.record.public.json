@@ -1,0 +1,209 @@
+{
+  "disclosureClass": "answer_key",
+  "environmentId": "vvdex.annotation.text-labeling-1",
+  "evalId": "fr-20260907-5b08f93e",
+  "fingerprint": "e1abe51398b2d950a3415678aaf8ec796420dfb05ea89b3b64afd33c1e345fd3",
+  "kind": "vvdex.forge.public-record-projection/v1",
+  "lanes": [
+    "cli/codex",
+    "cli/claude-sonnet",
+    "cli/cursor-grok"
+  ],
+  "note": "A projection of the sealed record, not the record. Its bytes do not hash to sourceRecordDigest; that digest describes the canonical record, which a holder verifies under agreement.",
+  "results": {
+    "byModel": [
+      {
+        "countableN": 1,
+        "countableSuccesses": 1,
+        "lowN": true,
+        "model": "cli/codex",
+        "n": 1,
+        "provider": "cli",
+        "successRate": 1.0,
+        "successes": 1,
+        "toolCalls": 6,
+        "verdicts": {
+          "certified_pass": 1,
+          "invalid": 0,
+          "lane_error": 0,
+          "model_fail": 0,
+          "withheld": 0
+        }
+      },
+      {
+        "countableN": 1,
+        "countableSuccesses": 1,
+        "lowN": true,
+        "model": "cli/claude-sonnet",
+        "n": 1,
+        "provider": "cli",
+        "successRate": 1.0,
+        "successes": 1,
+        "toolCalls": 5,
+        "verdicts": {
+          "certified_pass": 1,
+          "invalid": 0,
+          "lane_error": 0,
+          "model_fail": 0,
+          "withheld": 0
+        }
+      },
+      {
+        "countableN": 0,
+        "countableSuccesses": 0,
+        "lowN": true,
+        "model": "cli/cursor-grok",
+        "n": 1,
+        "provider": "cli",
+        "successRate": 0.0,
+        "successes": 0,
+        "toolCalls": 7,
+        "verdicts": {
+          "certified_pass": 0,
+          "invalid": 1,
+          "lane_error": 0,
+          "model_fail": 0,
+          "withheld": 0
+        }
+      }
+    ],
+    "successRate": 0.6666666666666666,
+    "totalRollouts": 3
+  },
+  "rollouts": [
+    {
+      "containmentVerdict": "verified_contained",
+      "effectiveCertifiedOutcome": "certified_pass",
+      "elapsedMs": 53738,
+      "id": "2757d4d7-6e2d-4143-9398-99d53fc87f75",
+      "lane": "cli/codex",
+      "outcome": "submitted_passed",
+      "seed": 0,
+      "stages": {
+        "edited": true,
+        "graded": true,
+        "inspected": true,
+        "passed": true,
+        "submitted": true,
+        "tested": true
+      },
+      "stepLimit": 24,
+      "stepsUsed": 6,
+      "toolNameCounts": {
+        "read_file": 3,
+        "run_tests": 1,
+        "submit": 1,
+        "write_file": 1
+      },
+      "verdicts": {
+        "certified": "certified_pass",
+        "grader": "pass",
+        "integrity": "verified_contained"
+      }
+    },
+    {
+      "containmentVerdict": "verified_contained",
+      "effectiveCertifiedOutcome": "certified_pass",
+      "elapsedMs": 25042,
+      "id": "f545d679-7f7e-45d3-8b62-5fd258d4b75a",
+      "lane": "cli/claude-sonnet",
+      "outcome": "submitted_passed",
+      "seed": 0,
+      "stages": {
+        "edited": true,
+        "graded": true,
+        "inspected": true,
+        "passed": true,
+        "submitted": true,
+        "tested": true
+      },
+      "stepLimit": 24,
+      "stepsUsed": 5,
+      "toolNameCounts": {
+        "read_file": 2,
+        "run_tests": 1,
+        "submit": 1,
+        "write_file": 1
+      },
+      "verdicts": {
+        "certified": "certified_pass",
+        "grader": "pass",
+        "integrity": "verified_contained"
+      }
+    },
+    {
+      "containmentVerdict": "breached",
+      "effectiveCertifiedOutcome": "invalid",
+      "elapsedMs": 81417,
+      "id": "6e28ca24-2c21-4e3d-8c5b-84a576a5b1b8",
+      "lane": "cli/cursor-grok",
+      "outcome": "submitted_passed",
+      "seed": 0,
+      "stages": {
+        "edited": true,
+        "graded": true,
+        "inspected": true,
+        "passed": false,
+        "submitted": true,
+        "tested": true
+      },
+      "stepLimit": 24,
+      "stepsUsed": 7,
+      "toolNameCounts": {
+        "list_files": 1,
+        "read_file": 3,
+        "run_tests": 1,
+        "submit": 1,
+        "write_file": 1
+      },
+      "verdicts": {
+        "certified": "invalid",
+        "grader": "pass",
+        "integrity": "breached"
+      }
+    }
+  ],
+  "sourceRecordDigest": {
+    "algorithm": "sha256 over the record's canonical JSON (UTF-8, sorted keys, compact separators) with recordDigest.sha256 set to 64 '0' characters",
+    "sha256": "b8a5d79aaefa53e7c5be413210df59f8d994e411b9f71ccaaea2b78a135503e0"
+  },
+  "stages": [
+    {
+      "applicable": true,
+      "id": "inspect",
+      "label": "Inspected",
+      "meaning": "Listed or read at least one file in the repository \u2014 or, on a browser exam, opened or snapshotted the page."
+    },
+    {
+      "applicable": true,
+      "id": "edit",
+      "label": "Edited",
+      "meaning": "Wrote at least one file that actually changed on disk."
+    },
+    {
+      "applicable": true,
+      "id": "test",
+      "label": "Ran tests",
+      "meaning": "Invoked the visible-test tool at least once."
+    },
+    {
+      "applicable": true,
+      "id": "submit",
+      "label": "Submitted",
+      "meaning": "Called submit, ending the rollout on its own terms."
+    },
+    {
+      "applicable": true,
+      "id": "graded",
+      "label": "Graded",
+      "meaning": "The independent hidden grader ran on the submission and returned a verdict."
+    },
+    {
+      "applicable": true,
+      "id": "hidden_pass",
+      "label": "Passed hidden tests",
+      "meaning": "The hidden grader returned exit 0 and the rollout was certified."
+    }
+  ],
+  "version": "0.1.0"
+}

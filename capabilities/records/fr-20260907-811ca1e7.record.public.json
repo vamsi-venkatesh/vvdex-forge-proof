@@ -1,0 +1,1052 @@
+{
+  "disclosureClass": "answer_key",
+  "environmentId": "vvdex.annotation.structured-data-1",
+  "evalId": "fr-20260907-811ca1e7",
+  "fingerprint": "5d6b3708dba2cdf08218a44997058413d0a3aae738299bce8c346bb2b309fc28",
+  "kind": "vvdex.forge.public-record-projection/v1",
+  "lanes": [
+    "openai/gpt-oss-20b",
+    "openai/gpt-oss-120b",
+    "@cf/openai/gpt-oss-20b"
+  ],
+  "note": "A projection of the sealed record, not the record. Its bytes do not hash to sourceRecordDigest; that digest describes the canonical record, which a holder verifies under agreement.",
+  "results": {
+    "byModel": [
+      {
+        "countableN": 10,
+        "countableSuccesses": 10,
+        "lowN": false,
+        "model": "openai/gpt-oss-20b",
+        "n": 10,
+        "provider": "groq",
+        "successRate": 1.0,
+        "successes": 10,
+        "toolCalls": 71,
+        "verdicts": {
+          "certified_pass": 10,
+          "invalid": 0,
+          "lane_error": 0,
+          "model_fail": 0,
+          "withheld": 0
+        }
+      },
+      {
+        "countableN": 10,
+        "countableSuccesses": 7,
+        "lowN": false,
+        "model": "openai/gpt-oss-120b",
+        "n": 10,
+        "provider": "groq",
+        "successRate": 0.7,
+        "successes": 7,
+        "toolCalls": 87,
+        "verdicts": {
+          "certified_pass": 7,
+          "invalid": 0,
+          "lane_error": 0,
+          "model_fail": 3,
+          "withheld": 0
+        }
+      },
+      {
+        "countableN": 10,
+        "countableSuccesses": 9,
+        "lowN": false,
+        "model": "@cf/openai/gpt-oss-20b",
+        "n": 10,
+        "provider": "cloudflare",
+        "successRate": 0.9,
+        "successes": 9,
+        "toolCalls": 70,
+        "verdicts": {
+          "certified_pass": 9,
+          "invalid": 0,
+          "lane_error": 0,
+          "model_fail": 1,
+          "withheld": 0
+        }
+      }
+    ],
+    "successRate": 0.8666666666666667,
+    "totalRollouts": 30
+  },
+  "rollouts": [
+    {
+      "containmentVerdict": "verified_contained",
+      "effectiveCertifiedOutcome": "certified_pass",
+      "elapsedMs": 12105,
+      "id": "b99939d9-d884-423e-8d6d-e7dce1134325",
+      "lane": "openai/gpt-oss-20b",
+      "outcome": "submitted_passed",
+      "seed": 0,
+      "stages": {
+        "edited": true,
+        "graded": true,
+        "inspected": true,
+        "passed": true,
+        "submitted": true,
+        "tested": true
+      },
+      "stepLimit": 24,
+      "stepsUsed": 6,
+      "toolNameCounts": {
+        "list_files": 1,
+        "read_file": 2,
+        "run_tests": 1,
+        "submit": 1,
+        "write_file": 1
+      },
+      "verdicts": {
+        "certified": "certified_pass",
+        "grader": "pass",
+        "integrity": "verified_contained"
+      }
+    },
+    {
+      "containmentVerdict": "verified_contained",
+      "effectiveCertifiedOutcome": "certified_pass",
+      "elapsedMs": 46435,
+      "id": "79a654b1-bdb8-42f9-9c4b-20dd953c5627",
+      "lane": "openai/gpt-oss-20b",
+      "outcome": "submitted_passed",
+      "seed": 1,
+      "stages": {
+        "edited": true,
+        "graded": true,
+        "inspected": true,
+        "passed": true,
+        "submitted": true,
+        "tested": true
+      },
+      "stepLimit": 24,
+      "stepsUsed": 6,
+      "toolNameCounts": {
+        "list_files": 1,
+        "read_file": 2,
+        "run_tests": 1,
+        "submit": 1,
+        "write_file": 1
+      },
+      "verdicts": {
+        "certified": "certified_pass",
+        "grader": "pass",
+        "integrity": "verified_contained"
+      }
+    },
+    {
+      "containmentVerdict": "verified_contained",
+      "effectiveCertifiedOutcome": "certified_pass",
+      "elapsedMs": 97014,
+      "id": "769d77be-3d37-454d-aa1c-1b65c80e77ff",
+      "lane": "openai/gpt-oss-20b",
+      "outcome": "submitted_passed",
+      "seed": 2,
+      "stages": {
+        "edited": true,
+        "graded": true,
+        "inspected": true,
+        "passed": true,
+        "submitted": true,
+        "tested": true
+      },
+      "stepLimit": 24,
+      "stepsUsed": 8,
+      "toolNameCounts": {
+        "list_files": 1,
+        "read_file": 4,
+        "run_tests": 1,
+        "submit": 1,
+        "write_file": 1
+      },
+      "verdicts": {
+        "certified": "certified_pass",
+        "grader": "pass",
+        "integrity": "verified_contained"
+      }
+    },
+    {
+      "containmentVerdict": "verified_contained",
+      "effectiveCertifiedOutcome": "certified_pass",
+      "elapsedMs": 70404,
+      "id": "e650c011-9065-4a93-961b-1e4dab65ba55",
+      "lane": "openai/gpt-oss-20b",
+      "outcome": "submitted_passed",
+      "seed": 3,
+      "stages": {
+        "edited": true,
+        "graded": true,
+        "inspected": true,
+        "passed": true,
+        "submitted": true,
+        "tested": true
+      },
+      "stepLimit": 24,
+      "stepsUsed": 8,
+      "toolNameCounts": {
+        "list_files": 1,
+        "read_file": 4,
+        "run_tests": 1,
+        "submit": 1,
+        "write_file": 1
+      },
+      "verdicts": {
+        "certified": "certified_pass",
+        "grader": "pass",
+        "integrity": "verified_contained"
+      }
+    },
+    {
+      "containmentVerdict": "verified_contained",
+      "effectiveCertifiedOutcome": "certified_pass",
+      "elapsedMs": 86464,
+      "id": "ae7a3122-fd75-4b14-b8f5-fd6069493b36",
+      "lane": "openai/gpt-oss-20b",
+      "outcome": "submitted_passed",
+      "seed": 4,
+      "stages": {
+        "edited": true,
+        "graded": true,
+        "inspected": true,
+        "passed": true,
+        "submitted": true,
+        "tested": true
+      },
+      "stepLimit": 24,
+      "stepsUsed": 8,
+      "toolNameCounts": {
+        "list_files": 1,
+        "read_file": 4,
+        "run_tests": 1,
+        "submit": 1,
+        "write_file": 1
+      },
+      "verdicts": {
+        "certified": "certified_pass",
+        "grader": "pass",
+        "integrity": "verified_contained"
+      }
+    },
+    {
+      "containmentVerdict": "verified_contained",
+      "effectiveCertifiedOutcome": "certified_pass",
+      "elapsedMs": 54345,
+      "id": "d8479248-5aa4-41f2-8773-a16295e57890",
+      "lane": "openai/gpt-oss-20b",
+      "outcome": "submitted_passed",
+      "seed": 5,
+      "stages": {
+        "edited": true,
+        "graded": true,
+        "inspected": true,
+        "passed": true,
+        "submitted": true,
+        "tested": true
+      },
+      "stepLimit": 24,
+      "stepsUsed": 7,
+      "toolNameCounts": {
+        "list_files": 1,
+        "read_file": 3,
+        "run_tests": 1,
+        "submit": 1,
+        "write_file": 1
+      },
+      "verdicts": {
+        "certified": "certified_pass",
+        "grader": "pass",
+        "integrity": "verified_contained"
+      }
+    },
+    {
+      "containmentVerdict": "verified_contained",
+      "effectiveCertifiedOutcome": "certified_pass",
+      "elapsedMs": 88388,
+      "id": "6a3337e7-1d52-493e-b53a-8a6f30257d35",
+      "lane": "openai/gpt-oss-20b",
+      "outcome": "submitted_passed",
+      "seed": 6,
+      "stages": {
+        "edited": true,
+        "graded": true,
+        "inspected": true,
+        "passed": true,
+        "submitted": true,
+        "tested": true
+      },
+      "stepLimit": 24,
+      "stepsUsed": 8,
+      "toolNameCounts": {
+        "list_files": 1,
+        "read_file": 4,
+        "run_tests": 1,
+        "submit": 1,
+        "write_file": 1
+      },
+      "verdicts": {
+        "certified": "certified_pass",
+        "grader": "pass",
+        "integrity": "verified_contained"
+      }
+    },
+    {
+      "containmentVerdict": "verified_contained",
+      "effectiveCertifiedOutcome": "certified_pass",
+      "elapsedMs": 63941,
+      "id": "2da20181-72a7-4832-ac72-cb549fc99df9",
+      "lane": "openai/gpt-oss-20b",
+      "outcome": "submitted_passed",
+      "seed": 7,
+      "stages": {
+        "edited": true,
+        "graded": true,
+        "inspected": true,
+        "passed": true,
+        "submitted": true,
+        "tested": true
+      },
+      "stepLimit": 24,
+      "stepsUsed": 7,
+      "toolNameCounts": {
+        "list_files": 1,
+        "read_file": 2,
+        "run_tests": 2,
+        "submit": 1,
+        "write_file": 1
+      },
+      "verdicts": {
+        "certified": "certified_pass",
+        "grader": "pass",
+        "integrity": "verified_contained"
+      }
+    },
+    {
+      "containmentVerdict": "verified_contained",
+      "effectiveCertifiedOutcome": "certified_pass",
+      "elapsedMs": 64185,
+      "id": "97a444e5-8609-4a78-b30a-23a72f8fa5bb",
+      "lane": "openai/gpt-oss-20b",
+      "outcome": "submitted_passed",
+      "seed": 8,
+      "stages": {
+        "edited": true,
+        "graded": true,
+        "inspected": true,
+        "passed": true,
+        "submitted": true,
+        "tested": true
+      },
+      "stepLimit": 24,
+      "stepsUsed": 7,
+      "toolNameCounts": {
+        "list_files": 1,
+        "read_file": 3,
+        "run_tests": 1,
+        "submit": 1,
+        "write_file": 1
+      },
+      "verdicts": {
+        "certified": "certified_pass",
+        "grader": "pass",
+        "integrity": "verified_contained"
+      }
+    },
+    {
+      "containmentVerdict": "verified_contained",
+      "effectiveCertifiedOutcome": "certified_pass",
+      "elapsedMs": 42111,
+      "id": "8e22d41b-ccf9-4a19-a4b6-16caf07741d1",
+      "lane": "openai/gpt-oss-20b",
+      "outcome": "submitted_passed",
+      "seed": 9,
+      "stages": {
+        "edited": true,
+        "graded": true,
+        "inspected": true,
+        "passed": true,
+        "submitted": true,
+        "tested": true
+      },
+      "stepLimit": 24,
+      "stepsUsed": 6,
+      "toolNameCounts": {
+        "list_files": 1,
+        "read_file": 2,
+        "run_tests": 1,
+        "submit": 1,
+        "write_file": 1
+      },
+      "verdicts": {
+        "certified": "certified_pass",
+        "grader": "pass",
+        "integrity": "verified_contained"
+      }
+    },
+    {
+      "containmentVerdict": "verified_contained",
+      "effectiveCertifiedOutcome": "model_fail",
+      "elapsedMs": 49959,
+      "id": "f655f3c1-963f-47d4-8835-605b93026762",
+      "lane": "openai/gpt-oss-120b",
+      "outcome": "submitted_failed",
+      "seed": 0,
+      "stages": {
+        "edited": true,
+        "graded": true,
+        "inspected": true,
+        "passed": false,
+        "submitted": true,
+        "tested": true
+      },
+      "stepLimit": 24,
+      "stepsUsed": 8,
+      "toolNameCounts": {
+        "edit_file": 1,
+        "list_files": 1,
+        "read_file": 4,
+        "run_tests": 1,
+        "submit": 1
+      },
+      "verdicts": {
+        "certified": "model_fail",
+        "grader": "fail",
+        "integrity": "verified_contained"
+      }
+    },
+    {
+      "containmentVerdict": "verified_contained",
+      "effectiveCertifiedOutcome": "certified_pass",
+      "elapsedMs": 62438,
+      "id": "8d664dab-d3e1-43af-b30a-765f9beb9135",
+      "lane": "openai/gpt-oss-120b",
+      "outcome": "submitted_passed",
+      "seed": 1,
+      "stages": {
+        "edited": true,
+        "graded": true,
+        "inspected": true,
+        "passed": true,
+        "submitted": true,
+        "tested": true
+      },
+      "stepLimit": 24,
+      "stepsUsed": 8,
+      "toolNameCounts": {
+        "list_files": 1,
+        "read_file": 4,
+        "run_tests": 1,
+        "submit": 1,
+        "write_file": 1
+      },
+      "verdicts": {
+        "certified": "certified_pass",
+        "grader": "pass",
+        "integrity": "verified_contained"
+      }
+    },
+    {
+      "containmentVerdict": "verified_contained",
+      "effectiveCertifiedOutcome": "certified_pass",
+      "elapsedMs": 103497,
+      "id": "6061e717-ae4b-466f-9b21-ded38e70c8c5",
+      "lane": "openai/gpt-oss-120b",
+      "outcome": "submitted_passed",
+      "seed": 2,
+      "stages": {
+        "edited": true,
+        "graded": true,
+        "inspected": true,
+        "passed": true,
+        "submitted": true,
+        "tested": true
+      },
+      "stepLimit": 24,
+      "stepsUsed": 9,
+      "toolNameCounts": {
+        "edit_file": 2,
+        "list_files": 1,
+        "read_file": 4,
+        "run_tests": 1,
+        "submit": 1
+      },
+      "verdicts": {
+        "certified": "certified_pass",
+        "grader": "pass",
+        "integrity": "verified_contained"
+      }
+    },
+    {
+      "containmentVerdict": "verified_contained",
+      "effectiveCertifiedOutcome": "model_fail",
+      "elapsedMs": 90494,
+      "id": "6ff0c5ed-b4c7-4e40-806d-bfb4a370c138",
+      "lane": "openai/gpt-oss-120b",
+      "outcome": "submitted_failed",
+      "seed": 3,
+      "stages": {
+        "edited": true,
+        "graded": true,
+        "inspected": true,
+        "passed": false,
+        "submitted": true,
+        "tested": true
+      },
+      "stepLimit": 24,
+      "stepsUsed": 9,
+      "toolNameCounts": {
+        "edit_file": 1,
+        "list_files": 1,
+        "read_file": 4,
+        "run_tests": 1,
+        "submit": 1,
+        "write_file": 1
+      },
+      "verdicts": {
+        "certified": "model_fail",
+        "grader": "fail",
+        "integrity": "verified_contained"
+      }
+    },
+    {
+      "containmentVerdict": "verified_contained",
+      "effectiveCertifiedOutcome": "model_fail",
+      "elapsedMs": 87466,
+      "id": "7b8cbba4-90c3-415e-b94d-6d780b42f8ba",
+      "lane": "openai/gpt-oss-120b",
+      "outcome": "submitted_failed",
+      "seed": 4,
+      "stages": {
+        "edited": true,
+        "graded": true,
+        "inspected": true,
+        "passed": false,
+        "submitted": true,
+        "tested": true
+      },
+      "stepLimit": 24,
+      "stepsUsed": 9,
+      "toolNameCounts": {
+        "edit_file": 1,
+        "list_files": 1,
+        "read_file": 3,
+        "run_tests": 2,
+        "submit": 1,
+        "write_file": 1
+      },
+      "verdicts": {
+        "certified": "model_fail",
+        "grader": "fail",
+        "integrity": "verified_contained"
+      }
+    },
+    {
+      "containmentVerdict": "verified_contained",
+      "effectiveCertifiedOutcome": "certified_pass",
+      "elapsedMs": 80323,
+      "id": "21cc70ac-4c9e-4974-8dc7-55777ba722b3",
+      "lane": "openai/gpt-oss-120b",
+      "outcome": "submitted_passed",
+      "seed": 5,
+      "stages": {
+        "edited": true,
+        "graded": true,
+        "inspected": true,
+        "passed": true,
+        "submitted": true,
+        "tested": true
+      },
+      "stepLimit": 24,
+      "stepsUsed": 9,
+      "toolNameCounts": {
+        "edit_file": 2,
+        "list_files": 1,
+        "read_file": 4,
+        "run_tests": 1,
+        "submit": 1
+      },
+      "verdicts": {
+        "certified": "certified_pass",
+        "grader": "pass",
+        "integrity": "verified_contained"
+      }
+    },
+    {
+      "containmentVerdict": "verified_contained",
+      "effectiveCertifiedOutcome": "certified_pass",
+      "elapsedMs": 68836,
+      "id": "5756f518-8d8e-497b-8bb3-9d98305faa66",
+      "lane": "openai/gpt-oss-120b",
+      "outcome": "submitted_passed",
+      "seed": 6,
+      "stages": {
+        "edited": true,
+        "graded": true,
+        "inspected": true,
+        "passed": true,
+        "submitted": true,
+        "tested": true
+      },
+      "stepLimit": 24,
+      "stepsUsed": 8,
+      "toolNameCounts": {
+        "edit_file": 1,
+        "list_files": 1,
+        "read_file": 4,
+        "run_tests": 1,
+        "submit": 1
+      },
+      "verdicts": {
+        "certified": "certified_pass",
+        "grader": "pass",
+        "integrity": "verified_contained"
+      }
+    },
+    {
+      "containmentVerdict": "verified_contained",
+      "effectiveCertifiedOutcome": "certified_pass",
+      "elapsedMs": 66914,
+      "id": "a5066bc6-9497-4d5d-9f5f-732e79d9dcbf",
+      "lane": "openai/gpt-oss-120b",
+      "outcome": "submitted_passed",
+      "seed": 7,
+      "stages": {
+        "edited": true,
+        "graded": true,
+        "inspected": true,
+        "passed": true,
+        "submitted": true,
+        "tested": true
+      },
+      "stepLimit": 24,
+      "stepsUsed": 8,
+      "toolNameCounts": {
+        "edit_file": 1,
+        "list_files": 1,
+        "read_file": 3,
+        "run_tests": 2,
+        "submit": 1
+      },
+      "verdicts": {
+        "certified": "certified_pass",
+        "grader": "pass",
+        "integrity": "verified_contained"
+      }
+    },
+    {
+      "containmentVerdict": "verified_contained",
+      "effectiveCertifiedOutcome": "certified_pass",
+      "elapsedMs": 48439,
+      "id": "b2db85b4-95ce-4917-9a9f-05ddf0e47ee4",
+      "lane": "openai/gpt-oss-120b",
+      "outcome": "submitted_passed",
+      "seed": 8,
+      "stages": {
+        "edited": true,
+        "graded": true,
+        "inspected": true,
+        "passed": true,
+        "submitted": true,
+        "tested": true
+      },
+      "stepLimit": 24,
+      "stepsUsed": 8,
+      "toolNameCounts": {
+        "edit_file": 1,
+        "list_files": 1,
+        "read_file": 4,
+        "run_tests": 1,
+        "submit": 1
+      },
+      "verdicts": {
+        "certified": "certified_pass",
+        "grader": "pass",
+        "integrity": "verified_contained"
+      }
+    },
+    {
+      "containmentVerdict": "verified_contained",
+      "effectiveCertifiedOutcome": "certified_pass",
+      "elapsedMs": 111200,
+      "id": "0fb1ed25-19d4-434b-accf-9850cc322cd4",
+      "lane": "openai/gpt-oss-120b",
+      "outcome": "submitted_passed",
+      "seed": 9,
+      "stages": {
+        "edited": true,
+        "graded": true,
+        "inspected": true,
+        "passed": true,
+        "submitted": true,
+        "tested": true
+      },
+      "stepLimit": 24,
+      "stepsUsed": 11,
+      "toolNameCounts": {
+        "edit_file": 2,
+        "list_files": 1,
+        "read_file": 5,
+        "run_tests": 2,
+        "submit": 1
+      },
+      "verdicts": {
+        "certified": "certified_pass",
+        "grader": "pass",
+        "integrity": "verified_contained"
+      }
+    },
+    {
+      "containmentVerdict": "verified_contained",
+      "effectiveCertifiedOutcome": "certified_pass",
+      "elapsedMs": 21965,
+      "id": "55c7a7d4-6651-4565-b585-75ee1e4d3a51",
+      "lane": "@cf/openai/gpt-oss-20b",
+      "outcome": "submitted_passed",
+      "seed": 0,
+      "stages": {
+        "edited": true,
+        "graded": true,
+        "inspected": true,
+        "passed": true,
+        "submitted": true,
+        "tested": true
+      },
+      "stepLimit": 24,
+      "stepsUsed": 8,
+      "toolNameCounts": {
+        "edit_file": 1,
+        "list_files": 1,
+        "read_file": 4,
+        "run_tests": 1,
+        "submit": 1
+      },
+      "verdicts": {
+        "certified": "certified_pass",
+        "grader": "pass",
+        "integrity": "verified_contained"
+      }
+    },
+    {
+      "containmentVerdict": "verified_contained",
+      "effectiveCertifiedOutcome": "certified_pass",
+      "elapsedMs": 17273,
+      "id": "8f0b2bac-c328-4f5c-b28c-4283f200c96d",
+      "lane": "@cf/openai/gpt-oss-20b",
+      "outcome": "submitted_passed",
+      "seed": 1,
+      "stages": {
+        "edited": true,
+        "graded": true,
+        "inspected": true,
+        "passed": true,
+        "submitted": true,
+        "tested": true
+      },
+      "stepLimit": 24,
+      "stepsUsed": 7,
+      "toolNameCounts": {
+        "list_files": 1,
+        "read_file": 3,
+        "run_tests": 1,
+        "submit": 1,
+        "write_file": 1
+      },
+      "verdicts": {
+        "certified": "certified_pass",
+        "grader": "pass",
+        "integrity": "verified_contained"
+      }
+    },
+    {
+      "containmentVerdict": "verified_contained",
+      "effectiveCertifiedOutcome": "certified_pass",
+      "elapsedMs": 20706,
+      "id": "9f158050-2fba-4365-8f99-ea5b029a1338",
+      "lane": "@cf/openai/gpt-oss-20b",
+      "outcome": "submitted_passed",
+      "seed": 2,
+      "stages": {
+        "edited": true,
+        "graded": true,
+        "inspected": true,
+        "passed": true,
+        "submitted": true,
+        "tested": true
+      },
+      "stepLimit": 24,
+      "stepsUsed": 7,
+      "toolNameCounts": {
+        "list_files": 1,
+        "read_file": 3,
+        "run_tests": 1,
+        "submit": 1,
+        "write_file": 1
+      },
+      "verdicts": {
+        "certified": "certified_pass",
+        "grader": "pass",
+        "integrity": "verified_contained"
+      }
+    },
+    {
+      "containmentVerdict": "verified_contained",
+      "effectiveCertifiedOutcome": "certified_pass",
+      "elapsedMs": 19044,
+      "id": "77a79aab-2c86-4caa-91e7-975403752155",
+      "lane": "@cf/openai/gpt-oss-20b",
+      "outcome": "submitted_passed",
+      "seed": 3,
+      "stages": {
+        "edited": true,
+        "graded": true,
+        "inspected": true,
+        "passed": true,
+        "submitted": true,
+        "tested": true
+      },
+      "stepLimit": 24,
+      "stepsUsed": 7,
+      "toolNameCounts": {
+        "list_files": 1,
+        "read_file": 3,
+        "run_tests": 1,
+        "submit": 1,
+        "write_file": 1
+      },
+      "verdicts": {
+        "certified": "certified_pass",
+        "grader": "pass",
+        "integrity": "verified_contained"
+      }
+    },
+    {
+      "containmentVerdict": "verified_contained",
+      "effectiveCertifiedOutcome": "certified_pass",
+      "elapsedMs": 16022,
+      "id": "faa01cab-e8cf-46ae-900d-77237c7d9145",
+      "lane": "@cf/openai/gpt-oss-20b",
+      "outcome": "submitted_passed",
+      "seed": 4,
+      "stages": {
+        "edited": true,
+        "graded": true,
+        "inspected": true,
+        "passed": true,
+        "submitted": true,
+        "tested": true
+      },
+      "stepLimit": 24,
+      "stepsUsed": 7,
+      "toolNameCounts": {
+        "list_files": 1,
+        "read_file": 3,
+        "run_tests": 1,
+        "submit": 1,
+        "write_file": 1
+      },
+      "verdicts": {
+        "certified": "certified_pass",
+        "grader": "pass",
+        "integrity": "verified_contained"
+      }
+    },
+    {
+      "containmentVerdict": "verified_contained",
+      "effectiveCertifiedOutcome": "certified_pass",
+      "elapsedMs": 26786,
+      "id": "53f368f1-d8f0-4e27-91b8-f648abda7fc2",
+      "lane": "@cf/openai/gpt-oss-20b",
+      "outcome": "submitted_passed",
+      "seed": 5,
+      "stages": {
+        "edited": true,
+        "graded": true,
+        "inspected": true,
+        "passed": true,
+        "submitted": true,
+        "tested": true
+      },
+      "stepLimit": 24,
+      "stepsUsed": 7,
+      "toolNameCounts": {
+        "invalid_tool_call": 1,
+        "list_files": 1,
+        "read_file": 2,
+        "run_tests": 1,
+        "submit": 1,
+        "write_file": 1
+      },
+      "verdicts": {
+        "certified": "certified_pass",
+        "grader": "pass",
+        "integrity": "verified_contained"
+      }
+    },
+    {
+      "containmentVerdict": "verified_contained",
+      "effectiveCertifiedOutcome": "model_fail",
+      "elapsedMs": 15283,
+      "id": "d2421f8c-0dfa-41d9-8f54-dbda8a1c5320",
+      "lane": "@cf/openai/gpt-oss-20b",
+      "outcome": "submitted_failed",
+      "seed": 6,
+      "stages": {
+        "edited": true,
+        "graded": true,
+        "inspected": true,
+        "passed": false,
+        "submitted": true,
+        "tested": true
+      },
+      "stepLimit": 24,
+      "stepsUsed": 6,
+      "toolNameCounts": {
+        "list_files": 1,
+        "read_file": 2,
+        "run_tests": 1,
+        "submit": 1,
+        "write_file": 1
+      },
+      "verdicts": {
+        "certified": "model_fail",
+        "grader": "fail",
+        "integrity": "verified_contained"
+      }
+    },
+    {
+      "containmentVerdict": "verified_contained",
+      "effectiveCertifiedOutcome": "certified_pass",
+      "elapsedMs": 11799,
+      "id": "b30cd68a-718e-4b9e-b6f6-3763dfccb9d0",
+      "lane": "@cf/openai/gpt-oss-20b",
+      "outcome": "submitted_passed",
+      "seed": 7,
+      "stages": {
+        "edited": true,
+        "graded": true,
+        "inspected": true,
+        "passed": true,
+        "submitted": true,
+        "tested": true
+      },
+      "stepLimit": 24,
+      "stepsUsed": 6,
+      "toolNameCounts": {
+        "list_files": 1,
+        "read_file": 2,
+        "run_tests": 1,
+        "submit": 1,
+        "write_file": 1
+      },
+      "verdicts": {
+        "certified": "certified_pass",
+        "grader": "pass",
+        "integrity": "verified_contained"
+      }
+    },
+    {
+      "containmentVerdict": "verified_contained",
+      "effectiveCertifiedOutcome": "certified_pass",
+      "elapsedMs": 25991,
+      "id": "1f2c4f23-71e3-4f6d-a2c9-c83665971442",
+      "lane": "@cf/openai/gpt-oss-20b",
+      "outcome": "submitted_passed",
+      "seed": 8,
+      "stages": {
+        "edited": true,
+        "graded": true,
+        "inspected": true,
+        "passed": true,
+        "submitted": true,
+        "tested": true
+      },
+      "stepLimit": 24,
+      "stepsUsed": 8,
+      "toolNameCounts": {
+        "invalid_tool_call": 1,
+        "list_files": 1,
+        "read_file": 3,
+        "run_tests": 1,
+        "submit": 1,
+        "write_file": 1
+      },
+      "verdicts": {
+        "certified": "certified_pass",
+        "grader": "pass",
+        "integrity": "verified_contained"
+      }
+    },
+    {
+      "containmentVerdict": "verified_contained",
+      "effectiveCertifiedOutcome": "certified_pass",
+      "elapsedMs": 15334,
+      "id": "833bcaa3-8d47-48e5-a300-8aaedb7bccfd",
+      "lane": "@cf/openai/gpt-oss-20b",
+      "outcome": "submitted_passed",
+      "seed": 9,
+      "stages": {
+        "edited": true,
+        "graded": true,
+        "inspected": true,
+        "passed": true,
+        "submitted": true,
+        "tested": true
+      },
+      "stepLimit": 24,
+      "stepsUsed": 7,
+      "toolNameCounts": {
+        "list_files": 1,
+        "read_file": 3,
+        "run_tests": 1,
+        "submit": 1,
+        "write_file": 1
+      },
+      "verdicts": {
+        "certified": "certified_pass",
+        "grader": "pass",
+        "integrity": "verified_contained"
+      }
+    }
+  ],
+  "sourceRecordDigest": {
+    "algorithm": "sha256 over the record's canonical JSON (UTF-8, sorted keys, compact separators) with recordDigest.sha256 set to 64 '0' characters",
+    "sha256": "50cbe9a820d64927b58510039c580bbed3bd161565d085363f841eb867181fab"
+  },
+  "stages": [
+    {
+      "applicable": true,
+      "id": "inspect",
+      "label": "Inspected",
+      "meaning": "Listed or read at least one file in the repository \u2014 or, on a browser exam, opened or snapshotted the page."
+    },
+    {
+      "applicable": true,
+      "id": "edit",
+      "label": "Edited",
+      "meaning": "Wrote at least one file that actually changed on disk."
+    },
+    {
+      "applicable": true,
+      "id": "test",
+      "label": "Ran tests",
+      "meaning": "Invoked the visible-test tool at least once."
+    },
+    {
+      "applicable": true,
+      "id": "submit",
+      "label": "Submitted",
+      "meaning": "Called submit, ending the rollout on its own terms."
+    },
+    {
+      "applicable": true,
+      "id": "graded",
+      "label": "Graded",
+      "meaning": "The independent hidden grader ran on the submission and returned a verdict."
+    },
+    {
+      "applicable": true,
+      "id": "hidden_pass",
+      "label": "Passed hidden tests",
+      "meaning": "The hidden grader returned exit 0 and the rollout was certified."
+    }
+  ],
+  "version": "0.1.0"
+}

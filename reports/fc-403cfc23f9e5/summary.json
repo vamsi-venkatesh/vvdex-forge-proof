@@ -222,7 +222,7 @@
   "records": [
     {
       "canonicalBytesPublished": false,
-      "certificationReceiptSha256": "9723e935536d880edb0123c49da1fbe701a1ce162d2425cf152c51402e987c80",
+      "certificationReceiptSha256": "a4150483a75e35669c9b6d2f1f50b1c325acb05600be439914b57dc88c1ad5f3",
       "disclosureClass": "answer_key",
       "environmentId": "vvdex.annotation.robot-video-1",
       "evalId": "fr-20260906-92669fc1",

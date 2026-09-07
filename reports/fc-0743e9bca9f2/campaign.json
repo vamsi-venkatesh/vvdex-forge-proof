@@ -1,0 +1,75 @@
+{
+  "campaignId": "fc-0743e9bca9f2",
+  "cells": {
+    "meta/muse-spark-1.3|vvdex.annotation.robot-video-1": {
+      "certified": "certified_pass",
+      "certifiedCounts": {
+        "certified_pass": 1,
+        "invalid": 0,
+        "lane_error": 0,
+        "model_fail": 0,
+        "withheld": 0
+      },
+      "evalId": "fr-20260907-5062e5f2",
+      "grader": "pass",
+      "integrity": "verified_contained",
+      "withheldBy": null
+    }
+  },
+  "certificationReceipts": {
+    "vvdex.annotation.robot-video-1": "a4150483a75e35669c9b6d2f1f50b1c325acb05600be439914b57dc88c1ad5f3"
+  },
+  "counts": {
+    "campaignId": "fc-0743e9bca9f2",
+    "cells": 1,
+    "certifiedPasses": 1,
+    "lanes": {
+      "meta/muse-spark-1.3": {
+        "certified_pass": 1,
+        "invalid": 0,
+        "lane_error": 0,
+        "model_fail": 0,
+        "withheld": 0
+      }
+    },
+    "recordCount": 1,
+    "recordDigests": [
+      "edfc0d11ce81b7330082ea045ecb8a3ef11f4ee79bdf1e433f3970015ecea5be"
+    ],
+    "refused": 0,
+    "suspectRecords": [],
+    "withheldByHarness": 0
+  },
+  "disclosure": {
+    "vvdex.annotation.robot-video-1": {
+      "class": "answer_key",
+      "rule": "answer-key disclosure (ownership vvdex_proprietary \u2014 no declaration \u2014 proprietary by default; family annotation): the exam is VVDex evaluation IP and the graded output is an answer or a keyed value, so no submission content, diff, model claim or hidden-assertion name is published."
+    }
+  },
+  "lanes": [
+    {
+      "certifiedPasses": 1,
+      "countable": 1,
+      "counts": {
+        "certified_pass": 1,
+        "invalid": 0,
+        "lane_error": 0,
+        "model_fail": 0,
+        "withheld": 0
+      },
+      "lane": "meta/muse-spark-1.3"
+    }
+  ],
+  "refused": [],
+  "retired_for_future_evaluation": {},
+  "reviews": {
+    "vvdex.annotation.robot-video-1": {
+      "classification": [],
+      "law": "a suspect examiner may not blame the model: verdict-bearing suspicion not cleared by in-record evidence withholds every model_fail in the run",
+      "suspect": false,
+      "withheld": [],
+      "withheldCount": 0
+    }
+  },
+  "schema": "vvdex.forge.campaign-counts/v1"
+}

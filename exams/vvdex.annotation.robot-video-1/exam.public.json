@@ -28,142 +28,142 @@
     ],
     "modality": "video",
     "modelCampaign": {
-      "campaignId": "fc-403cfc23f9e5",
+      "campaignId": "fc-89575ed5687d",
       "coverage": {
         "cellsPending": 0,
         "cellsRun": 1,
         "complete": true,
-        "completedAttempts": 1,
+        "completedAttempts": 12,
         "examsNotStarted": [],
         "missingAttempts": 0,
         "note": "Cells run against the cells this campaign declared it would run.",
         "pending": [],
         "planDeclared": true,
-        "plannedAttempts": 1,
+        "plannedAttempts": 12,
         "plannedCells": 1,
         "plannedExams": [
           "vvdex.annotation.robot-video-1"
         ],
         "plannedModels": [
-          "gemini-3.6-flash"
+          "meta/muse-spark-1.3"
         ],
-        "rolloutsPerCell": 1
+        "rolloutsPerCell": 12
       },
       "examFingerprint": "85e026007af17db692614084f12ff40c5bbf2348bcfda0a01deb95aad8928f4c",
       "models": [
         {
-          "attempts": 1,
-          "delivery": "native video with supplied exact-frame images; provider-side processing is not independently observed",
-          "failed": 1,
+          "attempts": 12,
+          "delivery": "native video with supplied exact-frame images; provider-side processing is not independently observed; video re-encoded to MP4 H.264 CRF 18 because the provider accepts MP4 only; frame count, frame rate and timing preserved; exact inspection frames delivered as lossless PNG from the original file",
+          "failed": 6,
           "invalid": 0,
-          "laneErrors": 0,
-          "model": "gemini-3.6-flash",
-          "passed": 0,
+          "laneErrors": 2,
+          "model": "meta/muse-spark-1.3",
+          "passed": 4,
           "quality": {
             "axes": [
               {
                 "id": "boxPrecision",
-                "mean": 0.5,
-                "n": 1
+                "mean": 0.7,
+                "n": 10
               },
               {
                 "id": "boxRecall",
-                "mean": 0.5,
-                "n": 1
+                "mean": 0.7,
+                "n": 10
               },
               {
                 "id": "boxF1",
-                "mean": 0.5,
-                "n": 1
+                "mean": 0.7,
+                "n": 10
               },
               {
                 "id": "boxIoU",
-                "mean": 0.6124600168685053,
-                "n": 1
+                "mean": 0.5562112041045896,
+                "n": 10
               },
               {
                 "id": "classificationPrecision",
                 "mean": 1.0,
-                "n": 1
+                "n": 10
               },
               {
                 "id": "classificationRecall",
                 "mean": 1.0,
-                "n": 1
+                "n": 10
               },
               {
                 "id": "classificationF1",
                 "mean": 1.0,
-                "n": 1
+                "n": 10
               },
               {
                 "id": "classificationAccuracy",
                 "mean": 1.0,
-                "n": 1
+                "n": 10
               },
               {
                 "id": "eventPrecision",
-                "mean": 1.0,
-                "n": 1
+                "mean": 0.9,
+                "n": 10
               },
               {
                 "id": "eventRecall",
-                "mean": 1.0,
-                "n": 1
+                "mean": 0.9,
+                "n": 10
               },
               {
                 "id": "eventF1",
-                "mean": 1.0,
-                "n": 1
+                "mean": 0.9,
+                "n": 10
               },
               {
                 "id": "eventTemporalIoU",
-                "mean": 0.5000000000000017,
-                "n": 1
+                "mean": 0.7069047619047618,
+                "n": 10
               },
               {
                 "id": "segmentPrecision",
                 "mean": 1.0,
-                "n": 1
+                "n": 10
               },
               {
                 "id": "segmentRecall",
                 "mean": 1.0,
-                "n": 1
+                "n": 10
               },
               {
                 "id": "segmentF1",
                 "mean": 1.0,
-                "n": 1
+                "n": 10
               },
               {
                 "id": "segmentTemporalIoU",
-                "mean": 0.7142857142857145,
-                "n": 1
+                "mean": 0.9652380952380953,
+                "n": 10
               },
               {
                 "id": "trackingConsistency",
                 "mean": 1.0,
-                "n": 1
+                "n": 10
               }
             ],
-            "measuredAttempts": 1,
-            "scoreMean": 0.6565342913371214
+            "measuredAttempts": 10,
+            "scoreMean": 0.7485783378761329
           },
           "stages": {
-            "edit": 1,
-            "graded": 1,
-            "hidden_pass": 0,
-            "inspect": 1,
-            "submit": 1,
-            "test": 1
+            "edit": 10,
+            "graded": 10,
+            "hidden_pass": 4,
+            "inspect": 10,
+            "submit": 10,
+            "test": 10
           },
           "withheld": 0
         }
       ],
-      "reportUrl": "/reports/fc-403cfc23f9e5/",
-      "summarySha256": "3fdf3d92f81428c54af4f2b44405a8ec0e891ee60e3d67960264786f5dd804c2",
-      "summaryUrl": "/reports/fc-403cfc23f9e5/summary.json"
+      "reportUrl": "/reports/fc-89575ed5687d/",
+      "summarySha256": "0858a91d8b94661a60f73497d9cf8484c61587b64036aa18c0a6b122309b21d3",
+      "summaryUrl": "/reports/fc-89575ed5687d/summary.json"
     },
     "purpose": "A robot-catching video is reviewed for temporal events, frame-level object boxes, track identity and occlusion.",
     "rubricVersion": "1.1"
@@ -202,7 +202,7 @@
     ]
   },
   "reportLinks": {
-    "campaignReport": "/reports/fc-403cfc23f9e5/",
+    "campaignReport": "/reports/fc-89575ed5687d/",
     "certificationReceipt": "https://vvdexops.com/annotation/robot-video-1/certification-receipt.json",
     "certificationReport": "https://vvdexops.com/annotation/robot-video-1/report.public.json",
     "examPage": "https://vvdexops.com/annotation/robot-video-1/"

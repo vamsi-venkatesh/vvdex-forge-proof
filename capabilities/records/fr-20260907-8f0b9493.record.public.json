@@ -1,0 +1,706 @@
+{
+  "disclosureClass": "answer_key",
+  "environmentId": "vvdex.annotation.text-labeling-1",
+  "evalId": "fr-20260907-8f0b9493",
+  "fingerprint": "e1abe51398b2d950a3415678aaf8ec796420dfb05ea89b3b64afd33c1e345fd3",
+  "kind": "vvdex.forge.public-record-projection/v1",
+  "lanes": [
+    "cli/codex",
+    "cli/claude-sonnet"
+  ],
+  "note": "A projection of the sealed record, not the record. Its bytes do not hash to sourceRecordDigest; that digest describes the canonical record, which a holder verifies under agreement.",
+  "results": {
+    "byModel": [
+      {
+        "countableN": 10,
+        "countableSuccesses": 10,
+        "lowN": false,
+        "model": "cli/codex",
+        "n": 10,
+        "provider": "cli",
+        "successRate": 1.0,
+        "successes": 10,
+        "toolCalls": 73,
+        "verdicts": {
+          "certified_pass": 10,
+          "invalid": 0,
+          "lane_error": 0,
+          "model_fail": 0,
+          "withheld": 0
+        }
+      },
+      {
+        "countableN": 10,
+        "countableSuccesses": 10,
+        "lowN": false,
+        "model": "cli/claude-sonnet",
+        "n": 10,
+        "provider": "cli",
+        "successRate": 1.0,
+        "successes": 10,
+        "toolCalls": 50,
+        "verdicts": {
+          "certified_pass": 10,
+          "invalid": 0,
+          "lane_error": 0,
+          "model_fail": 0,
+          "withheld": 0
+        }
+      }
+    ],
+    "successRate": 1.0,
+    "totalRollouts": 20
+  },
+  "rollouts": [
+    {
+      "containmentVerdict": "verified_contained",
+      "effectiveCertifiedOutcome": "certified_pass",
+      "elapsedMs": 57482,
+      "id": "6562b25a-1eda-40c0-a03f-9e1f8ba8f0af",
+      "lane": "cli/codex",
+      "outcome": "submitted_passed",
+      "seed": 0,
+      "stages": {
+        "edited": true,
+        "graded": true,
+        "inspected": true,
+        "passed": true,
+        "submitted": true,
+        "tested": true
+      },
+      "stepLimit": 24,
+      "stepsUsed": 8,
+      "toolNameCounts": {
+        "list_files": 1,
+        "read_file": 4,
+        "run_tests": 1,
+        "submit": 1,
+        "write_file": 1
+      },
+      "verdicts": {
+        "certified": "certified_pass",
+        "grader": "pass",
+        "integrity": "verified_contained"
+      }
+    },
+    {
+      "containmentVerdict": "verified_contained",
+      "effectiveCertifiedOutcome": "certified_pass",
+      "elapsedMs": 68606,
+      "id": "1ac06c7b-b00e-424c-b953-ff4eb6624879",
+      "lane": "cli/codex",
+      "outcome": "submitted_passed",
+      "seed": 1,
+      "stages": {
+        "edited": true,
+        "graded": true,
+        "inspected": true,
+        "passed": true,
+        "submitted": true,
+        "tested": true
+      },
+      "stepLimit": 24,
+      "stepsUsed": 8,
+      "toolNameCounts": {
+        "list_files": 1,
+        "read_file": 4,
+        "run_tests": 1,
+        "submit": 1,
+        "write_file": 1
+      },
+      "verdicts": {
+        "certified": "certified_pass",
+        "grader": "pass",
+        "integrity": "verified_contained"
+      }
+    },
+    {
+      "containmentVerdict": "verified_contained",
+      "effectiveCertifiedOutcome": "certified_pass",
+      "elapsedMs": 55538,
+      "id": "bc443e0e-e6ed-4a27-921c-329f22a985fb",
+      "lane": "cli/codex",
+      "outcome": "submitted_passed",
+      "seed": 2,
+      "stages": {
+        "edited": true,
+        "graded": true,
+        "inspected": true,
+        "passed": true,
+        "submitted": true,
+        "tested": true
+      },
+      "stepLimit": 24,
+      "stepsUsed": 8,
+      "toolNameCounts": {
+        "list_files": 1,
+        "read_file": 4,
+        "run_tests": 1,
+        "submit": 1,
+        "write_file": 1
+      },
+      "verdicts": {
+        "certified": "certified_pass",
+        "grader": "pass",
+        "integrity": "verified_contained"
+      }
+    },
+    {
+      "containmentVerdict": "verified_contained",
+      "effectiveCertifiedOutcome": "certified_pass",
+      "elapsedMs": 58850,
+      "id": "8506c33c-683b-4b15-9d42-ccb7e48f647f",
+      "lane": "cli/codex",
+      "outcome": "submitted_passed",
+      "seed": 3,
+      "stages": {
+        "edited": true,
+        "graded": true,
+        "inspected": true,
+        "passed": true,
+        "submitted": true,
+        "tested": true
+      },
+      "stepLimit": 24,
+      "stepsUsed": 7,
+      "toolNameCounts": {
+        "list_files": 1,
+        "read_file": 3,
+        "run_tests": 1,
+        "submit": 1,
+        "write_file": 1
+      },
+      "verdicts": {
+        "certified": "certified_pass",
+        "grader": "pass",
+        "integrity": "verified_contained"
+      }
+    },
+    {
+      "containmentVerdict": "verified_contained",
+      "effectiveCertifiedOutcome": "certified_pass",
+      "elapsedMs": 44911,
+      "id": "4f40821b-cd6e-463a-a147-adefe0a9f363",
+      "lane": "cli/codex",
+      "outcome": "submitted_passed",
+      "seed": 4,
+      "stages": {
+        "edited": true,
+        "graded": true,
+        "inspected": true,
+        "passed": true,
+        "submitted": true,
+        "tested": true
+      },
+      "stepLimit": 24,
+      "stepsUsed": 6,
+      "toolNameCounts": {
+        "read_file": 3,
+        "run_tests": 1,
+        "submit": 1,
+        "write_file": 1
+      },
+      "verdicts": {
+        "certified": "certified_pass",
+        "grader": "pass",
+        "integrity": "verified_contained"
+      }
+    },
+    {
+      "containmentVerdict": "verified_contained",
+      "effectiveCertifiedOutcome": "certified_pass",
+      "elapsedMs": 45160,
+      "id": "26f398a6-2b2f-4472-9f97-92b5f39556d1",
+      "lane": "cli/codex",
+      "outcome": "submitted_passed",
+      "seed": 5,
+      "stages": {
+        "edited": true,
+        "graded": true,
+        "inspected": true,
+        "passed": true,
+        "submitted": true,
+        "tested": true
+      },
+      "stepLimit": 24,
+      "stepsUsed": 6,
+      "toolNameCounts": {
+        "read_file": 3,
+        "run_tests": 1,
+        "submit": 1,
+        "write_file": 1
+      },
+      "verdicts": {
+        "certified": "certified_pass",
+        "grader": "pass",
+        "integrity": "verified_contained"
+      }
+    },
+    {
+      "containmentVerdict": "verified_contained",
+      "effectiveCertifiedOutcome": "certified_pass",
+      "elapsedMs": 46622,
+      "id": "db5157cc-dd4a-4d52-9ee6-1d092d7fd934",
+      "lane": "cli/codex",
+      "outcome": "submitted_passed",
+      "seed": 6,
+      "stages": {
+        "edited": true,
+        "graded": true,
+        "inspected": true,
+        "passed": true,
+        "submitted": true,
+        "tested": true
+      },
+      "stepLimit": 24,
+      "stepsUsed": 6,
+      "toolNameCounts": {
+        "read_file": 3,
+        "run_tests": 1,
+        "submit": 1,
+        "write_file": 1
+      },
+      "verdicts": {
+        "certified": "certified_pass",
+        "grader": "pass",
+        "integrity": "verified_contained"
+      }
+    },
+    {
+      "containmentVerdict": "verified_contained",
+      "effectiveCertifiedOutcome": "certified_pass",
+      "elapsedMs": 60786,
+      "id": "1ba34a8d-93bc-4bc1-8192-75375a5fab9e",
+      "lane": "cli/codex",
+      "outcome": "submitted_passed",
+      "seed": 7,
+      "stages": {
+        "edited": true,
+        "graded": true,
+        "inspected": true,
+        "passed": true,
+        "submitted": true,
+        "tested": true
+      },
+      "stepLimit": 24,
+      "stepsUsed": 8,
+      "toolNameCounts": {
+        "list_files": 1,
+        "read_file": 4,
+        "run_tests": 1,
+        "submit": 1,
+        "write_file": 1
+      },
+      "verdicts": {
+        "certified": "certified_pass",
+        "grader": "pass",
+        "integrity": "verified_contained"
+      }
+    },
+    {
+      "containmentVerdict": "verified_contained",
+      "effectiveCertifiedOutcome": "certified_pass",
+      "elapsedMs": 61528,
+      "id": "afea3a7c-3add-4776-b178-b17336e18472",
+      "lane": "cli/codex",
+      "outcome": "submitted_passed",
+      "seed": 8,
+      "stages": {
+        "edited": true,
+        "graded": true,
+        "inspected": true,
+        "passed": true,
+        "submitted": true,
+        "tested": true
+      },
+      "stepLimit": 24,
+      "stepsUsed": 8,
+      "toolNameCounts": {
+        "list_files": 1,
+        "read_file": 4,
+        "run_tests": 1,
+        "submit": 1,
+        "write_file": 1
+      },
+      "verdicts": {
+        "certified": "certified_pass",
+        "grader": "pass",
+        "integrity": "verified_contained"
+      }
+    },
+    {
+      "containmentVerdict": "verified_contained",
+      "effectiveCertifiedOutcome": "certified_pass",
+      "elapsedMs": 52617,
+      "id": "1e91b362-e78f-414e-9623-3fb6631635a1",
+      "lane": "cli/codex",
+      "outcome": "submitted_passed",
+      "seed": 9,
+      "stages": {
+        "edited": true,
+        "graded": true,
+        "inspected": true,
+        "passed": true,
+        "submitted": true,
+        "tested": true
+      },
+      "stepLimit": 24,
+      "stepsUsed": 8,
+      "toolNameCounts": {
+        "list_files": 1,
+        "read_file": 4,
+        "run_tests": 1,
+        "submit": 1,
+        "write_file": 1
+      },
+      "verdicts": {
+        "certified": "certified_pass",
+        "grader": "pass",
+        "integrity": "verified_contained"
+      }
+    },
+    {
+      "containmentVerdict": "verified_contained",
+      "effectiveCertifiedOutcome": "certified_pass",
+      "elapsedMs": 22094,
+      "id": "c7c0b5b1-593a-454b-8b33-a5640dc80522",
+      "lane": "cli/claude-sonnet",
+      "outcome": "submitted_passed",
+      "seed": 0,
+      "stages": {
+        "edited": true,
+        "graded": true,
+        "inspected": true,
+        "passed": true,
+        "submitted": true,
+        "tested": true
+      },
+      "stepLimit": 24,
+      "stepsUsed": 5,
+      "toolNameCounts": {
+        "read_file": 2,
+        "run_tests": 1,
+        "submit": 1,
+        "write_file": 1
+      },
+      "verdicts": {
+        "certified": "certified_pass",
+        "grader": "pass",
+        "integrity": "verified_contained"
+      }
+    },
+    {
+      "containmentVerdict": "verified_contained",
+      "effectiveCertifiedOutcome": "certified_pass",
+      "elapsedMs": 26293,
+      "id": "1956f3b9-0fb8-44b0-864f-43a3710414b0",
+      "lane": "cli/claude-sonnet",
+      "outcome": "submitted_passed",
+      "seed": 1,
+      "stages": {
+        "edited": true,
+        "graded": true,
+        "inspected": true,
+        "passed": true,
+        "submitted": true,
+        "tested": true
+      },
+      "stepLimit": 24,
+      "stepsUsed": 5,
+      "toolNameCounts": {
+        "read_file": 2,
+        "run_tests": 1,
+        "submit": 1,
+        "write_file": 1
+      },
+      "verdicts": {
+        "certified": "certified_pass",
+        "grader": "pass",
+        "integrity": "verified_contained"
+      }
+    },
+    {
+      "containmentVerdict": "verified_contained",
+      "effectiveCertifiedOutcome": "certified_pass",
+      "elapsedMs": 23951,
+      "id": "5540d66f-90f0-44f4-a346-9a4b15dcc7bf",
+      "lane": "cli/claude-sonnet",
+      "outcome": "submitted_passed",
+      "seed": 2,
+      "stages": {
+        "edited": true,
+        "graded": true,
+        "inspected": true,
+        "passed": true,
+        "submitted": true,
+        "tested": true
+      },
+      "stepLimit": 24,
+      "stepsUsed": 5,
+      "toolNameCounts": {
+        "read_file": 2,
+        "run_tests": 1,
+        "submit": 1,
+        "write_file": 1
+      },
+      "verdicts": {
+        "certified": "certified_pass",
+        "grader": "pass",
+        "integrity": "verified_contained"
+      }
+    },
+    {
+      "containmentVerdict": "verified_contained",
+      "effectiveCertifiedOutcome": "certified_pass",
+      "elapsedMs": 22934,
+      "id": "f75f7ffd-0c16-420a-9b5c-eb061c52de51",
+      "lane": "cli/claude-sonnet",
+      "outcome": "submitted_passed",
+      "seed": 3,
+      "stages": {
+        "edited": true,
+        "graded": true,
+        "inspected": true,
+        "passed": true,
+        "submitted": true,
+        "tested": true
+      },
+      "stepLimit": 24,
+      "stepsUsed": 5,
+      "toolNameCounts": {
+        "read_file": 2,
+        "run_tests": 1,
+        "submit": 1,
+        "write_file": 1
+      },
+      "verdicts": {
+        "certified": "certified_pass",
+        "grader": "pass",
+        "integrity": "verified_contained"
+      }
+    },
+    {
+      "containmentVerdict": "verified_contained",
+      "effectiveCertifiedOutcome": "certified_pass",
+      "elapsedMs": 29006,
+      "id": "fc30d37d-23e9-43ce-ac04-874bc7b40d89",
+      "lane": "cli/claude-sonnet",
+      "outcome": "submitted_passed",
+      "seed": 4,
+      "stages": {
+        "edited": true,
+        "graded": true,
+        "inspected": true,
+        "passed": true,
+        "submitted": true,
+        "tested": true
+      },
+      "stepLimit": 24,
+      "stepsUsed": 5,
+      "toolNameCounts": {
+        "read_file": 2,
+        "run_tests": 1,
+        "submit": 1,
+        "write_file": 1
+      },
+      "verdicts": {
+        "certified": "certified_pass",
+        "grader": "pass",
+        "integrity": "verified_contained"
+      }
+    },
+    {
+      "containmentVerdict": "verified_contained",
+      "effectiveCertifiedOutcome": "certified_pass",
+      "elapsedMs": 20071,
+      "id": "7cf58734-0777-469e-943f-6754f9df87d6",
+      "lane": "cli/claude-sonnet",
+      "outcome": "submitted_passed",
+      "seed": 5,
+      "stages": {
+        "edited": true,
+        "graded": true,
+        "inspected": true,
+        "passed": true,
+        "submitted": true,
+        "tested": true
+      },
+      "stepLimit": 24,
+      "stepsUsed": 5,
+      "toolNameCounts": {
+        "read_file": 2,
+        "run_tests": 1,
+        "submit": 1,
+        "write_file": 1
+      },
+      "verdicts": {
+        "certified": "certified_pass",
+        "grader": "pass",
+        "integrity": "verified_contained"
+      }
+    },
+    {
+      "containmentVerdict": "verified_contained",
+      "effectiveCertifiedOutcome": "certified_pass",
+      "elapsedMs": 34743,
+      "id": "cafe5c18-54b9-4474-9744-04aa14532fab",
+      "lane": "cli/claude-sonnet",
+      "outcome": "submitted_passed",
+      "seed": 6,
+      "stages": {
+        "edited": true,
+        "graded": true,
+        "inspected": true,
+        "passed": true,
+        "submitted": true,
+        "tested": true
+      },
+      "stepLimit": 24,
+      "stepsUsed": 5,
+      "toolNameCounts": {
+        "read_file": 2,
+        "run_tests": 1,
+        "submit": 1,
+        "write_file": 1
+      },
+      "verdicts": {
+        "certified": "certified_pass",
+        "grader": "pass",
+        "integrity": "verified_contained"
+      }
+    },
+    {
+      "containmentVerdict": "verified_contained",
+      "effectiveCertifiedOutcome": "certified_pass",
+      "elapsedMs": 20128,
+      "id": "272dafb0-9d9d-43cd-8631-520dbcb64663",
+      "lane": "cli/claude-sonnet",
+      "outcome": "submitted_passed",
+      "seed": 7,
+      "stages": {
+        "edited": true,
+        "graded": true,
+        "inspected": true,
+        "passed": true,
+        "submitted": true,
+        "tested": true
+      },
+      "stepLimit": 24,
+      "stepsUsed": 5,
+      "toolNameCounts": {
+        "read_file": 2,
+        "run_tests": 1,
+        "submit": 1,
+        "write_file": 1
+      },
+      "verdicts": {
+        "certified": "certified_pass",
+        "grader": "pass",
+        "integrity": "verified_contained"
+      }
+    },
+    {
+      "containmentVerdict": "verified_contained",
+      "effectiveCertifiedOutcome": "certified_pass",
+      "elapsedMs": 38379,
+      "id": "8052afd0-5e12-46f8-8721-696df6b94426",
+      "lane": "cli/claude-sonnet",
+      "outcome": "submitted_passed",
+      "seed": 8,
+      "stages": {
+        "edited": true,
+        "graded": true,
+        "inspected": true,
+        "passed": true,
+        "submitted": true,
+        "tested": true
+      },
+      "stepLimit": 24,
+      "stepsUsed": 5,
+      "toolNameCounts": {
+        "read_file": 2,
+        "run_tests": 1,
+        "submit": 1,
+        "write_file": 1
+      },
+      "verdicts": {
+        "certified": "certified_pass",
+        "grader": "pass",
+        "integrity": "verified_contained"
+      }
+    },
+    {
+      "containmentVerdict": "verified_contained",
+      "effectiveCertifiedOutcome": "certified_pass",
+      "elapsedMs": 23408,
+      "id": "a5be9e58-491f-47fc-a268-b5bfec370d0a",
+      "lane": "cli/claude-sonnet",
+      "outcome": "submitted_passed",
+      "seed": 9,
+      "stages": {
+        "edited": true,
+        "graded": true,
+        "inspected": true,
+        "passed": true,
+        "submitted": true,
+        "tested": true
+      },
+      "stepLimit": 24,
+      "stepsUsed": 5,
+      "toolNameCounts": {
+        "read_file": 2,
+        "run_tests": 1,
+        "submit": 1,
+        "write_file": 1
+      },
+      "verdicts": {
+        "certified": "certified_pass",
+        "grader": "pass",
+        "integrity": "verified_contained"
+      }
+    }
+  ],
+  "sourceRecordDigest": {
+    "algorithm": "sha256 over the record's canonical JSON (UTF-8, sorted keys, compact separators) with recordDigest.sha256 set to 64 '0' characters",
+    "sha256": "61073e4730b6a0ec35b5bcd8e984e7382e6646a911b99bcfa88c145d7756e8fa"
+  },
+  "stages": [
+    {
+      "applicable": true,
+      "id": "inspect",
+      "label": "Inspected",
+      "meaning": "Listed or read at least one file in the repository \u2014 or, on a browser exam, opened or snapshotted the page."
+    },
+    {
+      "applicable": true,
+      "id": "edit",
+      "label": "Edited",
+      "meaning": "Wrote at least one file that actually changed on disk."
+    },
+    {
+      "applicable": true,
+      "id": "test",
+      "label": "Ran tests",
+      "meaning": "Invoked the visible-test tool at least once."
+    },
+    {
+      "applicable": true,
+      "id": "submit",
+      "label": "Submitted",
+      "meaning": "Called submit, ending the rollout on its own terms."
+    },
+    {
+      "applicable": true,
+      "id": "graded",
+      "label": "Graded",
+      "meaning": "The independent hidden grader ran on the submission and returned a verdict."
+    },
+    {
+      "applicable": true,
+      "id": "hidden_pass",
+      "label": "Passed hidden tests",
+      "meaning": "The hidden grader returned exit 0 and the rollout was certified."
+    }
+  ],
+  "version": "0.1.0"
+}

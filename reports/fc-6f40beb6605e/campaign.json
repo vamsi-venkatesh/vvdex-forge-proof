@@ -1,0 +1,269 @@
+{
+  "campaignId": "fc-6f40beb6605e",
+  "cells": {
+    "cli/opencode-muse-spark|vvdex.annotation.image-object-1": {
+      "certified": null,
+      "certifiedCounts": {
+        "certified_pass": 0,
+        "invalid": 0,
+        "lane_error": 0,
+        "model_fail": 1,
+        "withheld": 1
+      },
+      "evalId": "fr-20260907-e2134530",
+      "grader": null,
+      "integrity": "unverified",
+      "withheldBy": null
+    },
+    "cli/opencode-muse-spark|vvdex.annotation.structured-data-1": {
+      "certified": null,
+      "certifiedCounts": {
+        "certified_pass": 1,
+        "invalid": 0,
+        "lane_error": 0,
+        "model_fail": 0,
+        "withheld": 1
+      },
+      "evalId": "fr-20260907-34fc1989",
+      "grader": null,
+      "integrity": "unverified",
+      "withheldBy": null
+    },
+    "cli/opencode-muse-spark|vvdex.annotation.text-labeling-1": {
+      "certified": null,
+      "certifiedCounts": {
+        "certified_pass": 1,
+        "invalid": 0,
+        "lane_error": 0,
+        "model_fail": 0,
+        "withheld": 1
+      },
+      "evalId": "fr-20260907-f200668c",
+      "grader": null,
+      "integrity": "unverified",
+      "withheldBy": null
+    },
+    "gemini-3.6-flash|vvdex.annotation.audio-events-1": {
+      "certified": "lane_error",
+      "certifiedCounts": {
+        "certified_pass": 0,
+        "invalid": 0,
+        "lane_error": 1,
+        "model_fail": 0,
+        "withheld": 0
+      },
+      "evalId": "fr-20260907-67c07cce",
+      "grader": "error",
+      "integrity": "verified_contained",
+      "withheldBy": null
+    },
+    "gemini-3.6-flash|vvdex.annotation.image-object-1": {
+      "certified": "lane_error",
+      "certifiedCounts": {
+        "certified_pass": 0,
+        "invalid": 0,
+        "lane_error": 1,
+        "model_fail": 0,
+        "withheld": 0
+      },
+      "evalId": "fr-20260907-54b8ff2d",
+      "grader": "error",
+      "integrity": "verified_contained",
+      "withheldBy": null
+    },
+    "gemini-3.6-flash|vvdex.annotation.structured-data-1": {
+      "certified": "lane_error",
+      "certifiedCounts": {
+        "certified_pass": 0,
+        "invalid": 0,
+        "lane_error": 1,
+        "model_fail": 0,
+        "withheld": 0
+      },
+      "evalId": "fr-20260907-f20a63a7",
+      "grader": "error",
+      "integrity": "verified_contained",
+      "withheldBy": null
+    },
+    "gemini-3.6-flash|vvdex.annotation.text-labeling-1": {
+      "certified": "lane_error",
+      "certifiedCounts": {
+        "certified_pass": 0,
+        "invalid": 0,
+        "lane_error": 1,
+        "model_fail": 0,
+        "withheld": 0
+      },
+      "evalId": "fr-20260907-55873dc4",
+      "grader": "error",
+      "integrity": "verified_contained",
+      "withheldBy": null
+    }
+  },
+  "certificationReceipts": {},
+  "counts": {
+    "campaignId": "fc-6f40beb6605e",
+    "cells": 7,
+    "certifiedPasses": 2,
+    "lanes": {
+      "cli/opencode-muse-spark": {
+        "certified_pass": 2,
+        "invalid": 0,
+        "lane_error": 0,
+        "model_fail": 1,
+        "withheld": 3
+      },
+      "gemini-3.6-flash": {
+        "certified_pass": 0,
+        "invalid": 0,
+        "lane_error": 4,
+        "model_fail": 0,
+        "withheld": 0
+      }
+    },
+    "recordCount": 10,
+    "recordDigests": [
+      "020983794ee70906ee3c9162e3326cb5575cbf75cd4963d811d1378a966c732c",
+      "1f595aa9846136ff6fcd075c0a6f491a969633f119bb0c63505f70a92e0e6a02",
+      "668ec8bd2ec34cacaff740b1495750d90b0052a493bb9f1b15a2b10341870c78",
+      "6e75dd966f50b3e231b7ec7219e394760a634bc3a2a9b6ea6e80c60d39e1e737",
+      "7d7ffa735d76c02249d6f8a115660a1873f1b2c39cafe2af4dacd4afddd74db8",
+      "80e72cacb9087660e9efeab8e1ab8c7635a7463c8d2b7be1d7900839ea280dd8",
+      "9bcf06ca2f1d923f9b41bfb101fa96c67fa2cf601b2efd7a02d92c2e7279d19f",
+      "a8f1f033b396a079639a3b4c4147e651b099ff45a7ac4a2a8f0d60d253139572",
+      "b08ceac9eef6a1d09760e410f2b09a12c6de4c221c95cdc8aef20a6fc5ef776f",
+      "bcff1c08997a086933b905833db2746bf7460572b7642ccdc9b565917c352e34"
+    ],
+    "refused": 0,
+    "suspectRecords": [
+      "vvdex.annotation.audio-events-1",
+      "vvdex.annotation.image-object-1",
+      "vvdex.annotation.structured-data-1",
+      "vvdex.annotation.text-labeling-1"
+    ],
+    "withheldByHarness": 0
+  },
+  "disclosure": {
+    "vvdex.annotation.audio-events-1": {
+      "class": "answer_key",
+      "rule": "answer-key disclosure (ownership vvdex_proprietary \u2014 no declaration \u2014 proprietary by default; family annotation): the exam is VVDex evaluation IP and the graded output is an answer or a keyed value, so no submission content, diff, model claim or hidden-assertion name is published."
+    },
+    "vvdex.annotation.image-object-1": {
+      "class": "answer_key",
+      "rule": "answer-key disclosure (ownership vvdex_proprietary \u2014 no declaration \u2014 proprietary by default; family annotation): the exam is VVDex evaluation IP and the graded output is an answer or a keyed value, so no submission content, diff, model claim or hidden-assertion name is published."
+    },
+    "vvdex.annotation.structured-data-1": {
+      "class": "answer_key",
+      "rule": "answer-key disclosure (ownership vvdex_proprietary \u2014 no declaration \u2014 proprietary by default; family annotation): the exam is VVDex evaluation IP and the graded output is an answer or a keyed value, so no submission content, diff, model claim or hidden-assertion name is published."
+    },
+    "vvdex.annotation.text-labeling-1": {
+      "class": "answer_key",
+      "rule": "answer-key disclosure (ownership vvdex_proprietary \u2014 no declaration \u2014 proprietary by default; family annotation): the exam is VVDex evaluation IP and the graded output is an answer or a keyed value, so no submission content, diff, model claim or hidden-assertion name is published."
+    }
+  },
+  "lanes": [
+    {
+      "certifiedPasses": 2,
+      "countable": 3,
+      "counts": {
+        "certified_pass": 2,
+        "invalid": 0,
+        "lane_error": 0,
+        "model_fail": 1,
+        "withheld": 3
+      },
+      "lane": "cli/opencode-muse-spark"
+    },
+    {
+      "certifiedPasses": 0,
+      "countable": 0,
+      "counts": {
+        "certified_pass": 0,
+        "invalid": 0,
+        "lane_error": 4,
+        "model_fail": 0,
+        "withheld": 0
+      },
+      "lane": "gemini-3.6-flash"
+    }
+  ],
+  "refused": [],
+  "retired_for_future_evaluation": {},
+  "reviews": {
+    "vvdex.annotation.audio-events-1": {
+      "classification": [
+        {
+          "class": "diagnostic",
+          "rationale": "an API failure is a per-rollout lane event, already recorded on that rollout as lane_error; it cannot alter another rollout's grading. It lowers coverage, not verdicts.",
+          "reason": "R1 api-failure share 1/1 \u2014 most rollouts never got a working completion",
+          "rule": "R1"
+        }
+      ],
+      "law": "a suspect examiner may not blame the model: verdict-bearing suspicion not cleared by in-record evidence withholds every model_fail in the run",
+      "suspect": true,
+      "withheld": [],
+      "withheldCount": 0
+    },
+    "vvdex.annotation.image-object-1": {
+      "classification": [
+        {
+          "class": "diagnostic",
+          "rationale": "an API failure is a per-rollout lane event, already recorded on that rollout as lane_error; it cannot alter another rollout's grading. It lowers coverage, not verdicts.",
+          "reason": "R1 api-failure share 1/1 \u2014 most rollouts never got a working completion",
+          "rule": "R1"
+        },
+        {
+          "class": "row-level",
+          "rationale": "containment verdicts are already enforced on every rollout; the run-level flag adds no further adjustment.",
+          "reason": "R4 containment unproven in 1/1 rollouts (lanes ['cli/opencode-muse-spark']) \u2014 no evidence the taker was confined to the exam channel",
+          "rule": "R4"
+        }
+      ],
+      "law": "a suspect examiner may not blame the model: verdict-bearing suspicion not cleared by in-record evidence withholds every model_fail in the run",
+      "suspect": true,
+      "withheld": [],
+      "withheldCount": 0
+    },
+    "vvdex.annotation.structured-data-1": {
+      "classification": [
+        {
+          "class": "row-level",
+          "rationale": "containment verdicts are already enforced on every rollout; the run-level flag adds no further adjustment.",
+          "reason": "R4 containment unproven in 1/1 rollouts (lanes ['cli/opencode-muse-spark']) \u2014 no evidence the taker was confined to the exam channel",
+          "rule": "R4"
+        },
+        {
+          "class": "diagnostic",
+          "rationale": "an API failure is a per-rollout lane event, already recorded on that rollout as lane_error; it cannot alter another rollout's grading. It lowers coverage, not verdicts.",
+          "reason": "R1 api-failure share 1/1 \u2014 most rollouts never got a working completion",
+          "rule": "R1"
+        }
+      ],
+      "law": "a suspect examiner may not blame the model: verdict-bearing suspicion not cleared by in-record evidence withholds every model_fail in the run",
+      "suspect": true,
+      "withheld": [],
+      "withheldCount": 0
+    },
+    "vvdex.annotation.text-labeling-1": {
+      "classification": [
+        {
+          "class": "diagnostic",
+          "rationale": "an API failure is a per-rollout lane event, already recorded on that rollout as lane_error; it cannot alter another rollout's grading. It lowers coverage, not verdicts.",
+          "reason": "R1 api-failure share 1/1 \u2014 most rollouts never got a working completion",
+          "rule": "R1"
+        },
+        {
+          "class": "row-level",
+          "rationale": "containment verdicts are already enforced on every rollout; the run-level flag adds no further adjustment.",
+          "reason": "R4 containment unproven in 1/1 rollouts (lanes ['cli/opencode-muse-spark']) \u2014 no evidence the taker was confined to the exam channel",
+          "rule": "R4"
+        }
+      ],
+      "law": "a suspect examiner may not blame the model: verdict-bearing suspicion not cleared by in-record evidence withholds every model_fail in the run",
+      "suspect": true,
+      "withheld": [],
+      "withheldCount": 0
+    }
+  },
+  "schema": "vvdex.forge.campaign-counts/v1"
+}

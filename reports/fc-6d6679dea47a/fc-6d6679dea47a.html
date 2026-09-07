@@ -1,0 +1,1117 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>fc-6d6679dea47a — VVDex Forge campaign report</title><meta name="description" content="VVDex Forge campaign fc-6d6679dea47a: 2 fixed annotation task(s), 2 sealed attempt record(s), 2 model lane(s), 40 certified pass(es) in 4 cells — every number recomputable from the sealed records."><link rel="stylesheet" href="./fc-6d6679dea47a.css"></head><body><main><section class="cover"><div class="coverhead"><p class="coverword">VVDex Forge</p><p class="covertag">Certified evaluation campaign</p><div class="heatrule"></div></div><div class="coverbody"><h1>Codex and Claude Sonnet CLIs — text and structured, ten attempts each</h1><p class="coversub">2 fixed tasks · 2 sealed attempt records · 40 graded attempts · 40 certified passes</p><p class="coverstatus"><strong>CURRENT</strong></p><p class="coverdoc">Campaign Report</p><p class="coverdate">2026-09-07</p><div class="coverspacer"></div><div class="coverwho"><p><em>Evaluation scope:</em><br><strong>cli/codex<br>cli/claude-sonnet</strong></p><p><em>Prepared by:</em><br><strong>VVDex Forge</strong> — regenerated from verified sealed records only</p></div><p class="coverref"><span class="mono">fc-6d6679dea47a</span> · 2 record(s) · every value recomputable</p></div></section><h2 class="front">Contents</h2><nav class="toc"><ol><li><span class="toctitle">Executive summary</span><span class="tocpage">3</span></li><li><span class="toctitle">Per-exam results</span><span class="tocpage">4</span></li><li><span class="toctitle">Environment families</span><span class="tocpage">5</span></li><li><span class="toctitle">Campaign aggregate across these two exams</span><span class="tocpage">6</span></li><li><span class="toctitle">Harness status</span><span class="tocpage">7</span></li><li><span class="toctitle">Cells excluded from capability</span><span class="tocpage">8</span></li><li><span class="toctitle">What the outcomes mean</span><span class="tocpage">9</span></li><li><span class="toctitle">What this report withholds, and why</span><span class="tocpage">10</span></li><li><span class="toctitle">Attempt record 1 of 1 · structured-data-1</span><span class="tocpage">11</span></li><li><span class="toctitle">Attempt record 1 of 1 · text-labeling-1</span><span class="tocpage">41</span></li><li><span class="toctitle">Evidence</span><span class="tocpage">71</span></li><li><span class="toctitle">Attestation</span><span class="tocpage">72</span></li></ol></nav><h2>Executive summary</h2><p class="lead"><strong>Release status: CURRENT.</strong> This is the campaign the published featured index carries; its exams&#x27; public pages state these numbers.</p><div class="grid"><dl class="card"><dt>Fixed tasks</dt><dd>2</dd></dl><dl class="card"><dt>Sealed records</dt><dd>2</dd></dl><dl class="card"><dt>Model lanes</dt><dd>2</dd></dl><dl class="card"><dt>Attempts</dt><dd>40</dd></dl><dl class="card"><dt>Graded attempts</dt><dd>40</dd></dl><dl class="card" data-state="pass"><dt>Certified passes</dt><dd>40</dd></dl><dl class="card" data-state="unknown"><dt>Lane errors (not graded)</dt><dd>0</dd></dl><dl class="card" data-state="unknown"><dt>Withheld / invalid</dt><dd>0</dd></dl></div><h3>Purpose</h3><p>This report presents a controlled evaluation of 2 model lane(s) against 2 fixed certified annotation tasks, one sealed attempt record on each task. For each task, every lane received that task's frozen workspace, tool contract and limits; grading ran afterwards, in isolation, against hidden tests no lane ever saw; and every rollout carries three separate outcomes — grader, integrity, certified — of which only the certified outcome is counted. Each sealed attempt record is rendered below as a chapter derived from the same record as its standalone report: the chapter&#x27;s bytes are authenticated by this campaign document, the standalone report by its own digest.</p><p class="lead"><strong>Annotation campaign scope.</strong> This campaign evaluates two fixed annotation tasks with one sealed attempt record on each task (2 sealed attempts in total). The sealed tasks cover structured, text inputs. Audio is N/A because no audio task appears in this campaign&#x27;s sealed records. CLI temperature and stochastic-seed controls are not established by these records; attempt indices are bookkeeping. Token use and per-attempt cost are N/A because every recorded lane result marks token telemetry unavailable and no cost measurement is attached. Quality measurements are reported per task and remain separate from the strict certified-pass gate.</p><h3>Outcome</h3><div class="verdict"><strong>40</strong><span>certified pass(es) across 40 graded attempts (40 attempts, 0 lane error(s) not graded) in 4 cells — counted only where the grader accepted the submission AND containment was verified AND provenance is complete AND no integrity invariant or verdict-bearing harness suspicion applies.</span></div><p class="id">fc-6d6679dea47a · generated from 2 verified sealed record(s)</p><h3>Key findings across the campaign</h3><ul><li><span class="mono">structured-data-1 · cli/codex</span> · <b>PASS</b> — 10 certified passes / 10 graded attempts; 0 model failures; 0 excluded (0 lane errors, 0 withheld, 0 invalid).</li><li><span class="mono">structured-data-1 · cli/claude-sonnet</span> · <b>PASS</b> — 10 certified passes / 10 graded attempts; 0 model failures; 0 excluded (0 lane errors, 0 withheld, 0 invalid).</li><li><span class="mono">text-labeling-1 · cli/codex</span> · <b>PASS</b> — 10 certified passes / 10 graded attempts; 0 model failures; 0 excluded (0 lane errors, 0 withheld, 0 invalid).</li><li><span class="mono">text-labeling-1 · cli/claude-sonnet</span> · <b>PASS</b> — 10 certified passes / 10 graded attempts; 0 model failures; 0 excluded (0 lane errors, 0 withheld, 0 invalid).</li></ul><h2>Per-exam results</h2><table><thead><tr><th>Model lane</th><th>Annotation · structured-data-1<br><span class="mono">vvdex.annotation.structured-data-1</span></th><th>Annotation · text-labeling-1<br><span class="mono">vvdex.annotation.text-labeling-1</span></th></tr></thead><tbody><tr><td class="mono">cli/claude-sonnet</td><td data-state="pass" class="nowrap">10/10</td><td data-state="pass" class="nowrap">10/10</td></tr><tr><td class="mono">cli/codex</td><td data-state="pass" class="nowrap">10/10</td><td data-state="pass" class="nowrap">10/10</td></tr></tbody></table><p class="lead">Each cell is <em>certified passes / graded attempts</em> for that lane on that exam. An attempt the lane ended before grading is reported beside the cell — <span class="mono">1/9 + 1 lane error</span>, never <span class="mono">1/10</span> — and is outside the denominator; withheld and invalid attempts are reported the same way. A cell whose graded attempts all passed but which also holds such an attempt is shown as <em>passes with attempts outside the denominator</em>, not as a clean sweep — the clean-sweep state is reserved for a cell where every attempt was graded and every graded attempt certified. No cell here carries a percentage: these are separate exams, not one score.</p><h2>Environment families</h2><p>This campaign covers two exam(s) drawn from one environment family(ies). The sentence in each row is the family's own description of what the exam tests; nothing is claimed here that the exam does not.</p><table><thead><tr><th>Family</th><th>Exam</th><th>What it tests</th></tr></thead><tbody><tr><td>Multimodal annotation</td><td class="mono">vvdex.annotation.structured-data-1</td><td>Invented tabular records are reviewed for normalization, validity, duplicates, anomalies and relationships.</td></tr><tr><td>Multimodal annotation</td><td class="mono">vvdex.annotation.text-labeling-1</td><td>An invented message is reviewed for classification and entity spans with consistent offsets.</td></tr></tbody></table><h2>Campaign aggregate across these two exams</h2><table><thead><tr><th>Model lane</th><th>Certified passes</th><th>Graded attempts</th><th>Lane errors</th><th>Withheld</th><th>Invalid</th></tr></thead><tbody><tr><td class="mono">cli/claude-sonnet</td><td data-col="passes"><strong>20</strong></td><td data-col="countable">20</td><td data-col="lane">0</td><td data-col="withheld">0</td><td data-col="invalid">0</td></tr><tr><td class="mono">cli/codex</td><td data-col="passes"><strong>20</strong></td><td data-col="countable">20</td><td data-col="lane">0</td><td data-col="withheld">0</td><td data-col="invalid">0</td></tr></tbody></table><p class="lead">Raw counts first. <em>Graded attempts</em> = certified passes + model fails; lane errors, withheld and invalid cells are outside capability arithmetic in both directions. These two fixed annotation tasks measure different work, so no combined rate or confidence interval is reported. The totals are accounting counts only; the per-task results above carry the quality claims.</p><h2>Harness status</h2><p>No record in this campaign fired a harness self-suspicion rule. Every countable cell is a grader outcome under verified containment.</p><h2>Cells excluded from capability</h2><p>An attempt is excluded from capability only when the lane, not the model, ended it (lane error), when the run cannot prove its own conditions (withheld), or when an integrity invariant fired (INVALID). A submission the hidden grader failed is a model result and is counted, never listed here.</p><p>No attempt in this campaign was excluded: every attempt produced a countable model result.</p><h2>What the outcomes mean</h2><ul><li><strong>CERTIFIED PASS</strong>: the grader accepted the submission, containment was verified, provenance is complete and no integrity invariant fired.</li><li><strong>model fail</strong>: the submission failed the hidden tests under verified containment; a real, attributable model result.</li><li><strong>lane error</strong>: the provider or CLI lane failed (rate limit, quota, transport) before an attributable measurement existed; not a model result.</li><li><strong>withheld</strong>: the run cannot prove its own conditions (containment unproven, provenance incomplete, or a harness suspicion the record cannot clear); neither a pass nor a model failure.</li><li><strong>INVALID</strong>: an integrity invariant fired (isolation breach, evidence mismatch); the row is not a model result.</li><li><strong>harness suspect</strong>: the run&#x27;s own self-check fired; each rule is classified as verdict-bearing or diagnostic, and verdict-bearing suspicion withholds the affected cells.</li></ul><h2>What this report withholds, and why</h2><p class="lead">What a public document may print about a rollout is decided by what the exam GRADES, not case by case. Where the graded artefact is a change to a public upstream repository, a bounded redacted excerpt of the model's own diff is published. Where the graded output is an answer, a keyed value or the state of an application, nothing derived from the submission is published — no diff, no answer value, no model claim, and not the names of the hidden assertions a rollout failed, because a grader's name can carry the value it asserts. Withheld on every exam without exception: the contents of tool results, the hidden tests, the reference solution, host paths and keys. The counts, verdicts and intervals in this report are the grader's and are unaffected by what is withheld.</p><table><thead><tr><th>Exam</th><th>Disclosure class</th><th>Rule applied</th></tr></thead><tbody><tr><td>structured-data-1</td><td class="mono">answer_key</td><td><span class="mono">Applied consistently to 1 sealed records.</span> answer-key disclosure (ownership vvdex_proprietary — no declaration — proprietary by default; family annotation): the exam is VVDex evaluation IP and the graded output is an answer or a keyed value, so no submission content, diff, model claim or hidden-assertion name is published.</td></tr><tr><td>text-labeling-1</td><td class="mono">answer_key</td><td><span class="mono">Applied consistently to 1 sealed records.</span> answer-key disclosure (ownership vvdex_proprietary — no declaration — proprietary by default; family annotation): the exam is VVDex evaluation IP and the graded output is an answer or a keyed value, so no submission content, diff, model claim or hidden-assertion name is published.</td></tr></tbody></table><div class="chapter"><h2>Attempt record 1 of 1 · structured-data-1</h2><p class="mono">vvdex.annotation.structured-data-1 · record fr-20260907-cd08adce · record digest 3596e3de9ba226bc… · harness clean · containment clean</p><h3>Executive summary</h3>
+<div class="grid metrics">
+  <dl class="card"><dt>Models tested</dt><dd>2</dd></dl>
+  <dl class="card"><dt>Certified passes</dt><dd><span class="mark" data-v="pass">20</span></dd><dd class="lead">of 20 graded rollouts</dd></dl>
+  <dl class="card"><dt>Submitted</dt><dd>20 of 20</dd><dd class="lead">graded rollouts that called submit</dd></dl>
+  <dl class="card"><dt>Not graded — lane errors</dt><dd><span class="mark" data-v="pass">0</span></dd><dd class="lead">of 20 attempts</dd></dl>
+</div>
+<h4>Purpose</h4>
+<p class="lead">This report presents a controlled evaluation of 2 model lane(s) against the certified exam <span class="mono">vvdex.annotation.structured-data-1</span> (v0.1.0, family annotation). Every lane received the identical frozen workspace, tool contract and limits; grading ran afterwards, in isolation, against hidden tests no lane ever saw. The purpose is to state, with reproducible evidence, what each lane did and where it stopped.</p>
+<h4>Outcome</h4>
+<div class="verdict">
+  <strong>20 of 20</strong>
+  <span>graded rollouts passed the independent hidden tests and were certified</span>
+</div>
+<p class="lead">20 of 20 graded rollouts passed. cli/claude-sonnet, cli/codex completed the applicable annotation workflow and were accepted by the independent annotation grader. </p>
+<h4>Key findings</h4>
+<ul class="keyfindings"><li><span class="fid">F-01</span> cli/claude-sonnet, cli/codex passed the independent hidden tests</li></ul>
+<p class="lead">Each finding is stated in full, with evidence, in the Findings section;
+recommendations for acting on them follow it. Elapsed wall clock for the whole engagement:
+787.7s.</p><h3>Exam definition</h3>
+<p class="lead">
+  <strong>In scope.</strong> The ability of each configured model lane to complete this one
+  certified task end to end — inspect the asset, annotate against the declared rubric, validate, submit, and be accepted by the independent annotation grader — within 24 tool steps and 14520s
+  of wall clock, at 10 rollout(s) per lane. Behavioural
+  measurements along the way (tool discipline, grounding, overclaim) are in scope because they
+  are read from the recorded trace, not judged by another model.
+</p>
+<p class="lead">
+  <strong>Out of scope.</strong> General model quality, performance on other task families,
+  prompt-tuning on the lane's behalf, and any comparison this run's sample size cannot support.
+  A lane's API failure is reported as infrastructure, never as model capability.
+</p>
+<p class="lead">
+  <strong>The instrument.</strong> Exam <span class="mono">vvdex.annotation.structured-data-1</span>
+  was certified before this run: its reference solution passes, an empty submission fails, its
+  grader distinguishes near-misses, and its sealed evidence is unchanged by this evaluation
+  (see Certification evidence).
+</p>
+<h4>What was measured</h4>
+<div class="grid">
+  <dl class="card"><dt>Exam</dt><dd>vvdex.annotation.structured-data-1</dd></dl>
+  <dl class="card"><dt>Version</dt><dd>0.1.0</dd></dl>
+  <dl class="card"><dt>Family</dt><dd>annotation</dd></dl>
+  <dl class="card"><dt>Rollouts</dt><dd>20 (10 per model)</dd></dl>
+</div>
+<h4>Where the defect came from</h4>
+<p class="lead">This exam has no upstream repository to credit: the defect, the reference solution and the hidden suite are VVDex's own.</p><h3>Certification evidence</h3>
+<p class="lead"><strong>Why this exam is trustworthy.</strong> Every pillar below was
+established before any model saw the exam, loaded from the sealed evidence matching this
+run's exam fingerprint, and unchanged by this evaluation.</p>
+<div class="certpair">
+  <div class="certhalf" data-state="fail">
+    <p class="certlabel">Frozen baseline</p>
+    <p class="certverdict">FAIL</p>
+    <p class="certnote">expected — an empty submission over 2 run(s) must not pass</p>
+  </div>
+  <div class="certarrow">→</div>
+  <div class="certhalf" data-state="pass">
+    <p class="certlabel">Gold / reference</p>
+    <p class="certverdict">PASS</p>
+    <p class="certnote">expected — the reference solution over 2 run(s) must pass</p>
+  </div>
+</div>
+<div class="grid">
+  <dl class="card" data-state="pass"><dt>Grader controls</dt><dd><span class="mark" data-v="pass">19 / 19</span></dd><dd class="lead">The grader accepted the reference and rejected every near-miss.</dd></dl>
+  <dl class="card" data-state="pass"><dt>Attack probes</dt><dd><span class="mark" data-v="pass">9 / 9 blocked</span></dd><dd class="lead">0 trivial exploit(s) found.</dd></dl>
+  <dl class="card" data-state="pass"><dt>Sealed evidence</dt><dd><span class="mark" data-v="pass">verified</span></dd><dd class="lead">Sealed 2026-09-06 over 13 artifact(s).</dd></dl>
+  <dl class="card"><dt>Runtime</dt><dd>sha256:679b36225a1f83238efba8c71b9cde3c24caaeacc9b682ae92819cb55eec328f</dd><dd class="lead">network policy: deny</dd></dl>
+</div>
+<div class="grid" style="margin-top:12px">
+  <dl class="card"><dt>Certification bundle digest</dt><dd><span class="mono">6844331643ab3301e2c3cb129edef1ca2bc06b5d0baaa69ba0b3762c6a941c4c</span></dd></dl>
+  <dl class="card"><dt>Exam fingerprint</dt><dd><span class="mono">5d6b3708dba2cdf08218a449…</span></dd><dd class="lead">Full value in Appendix B; the contract digest this run was executed against.</dd></dl>
+</div><h3>Evaluation configuration</h3>
+<div class="meta"><div class="mrow"><span class="mlabel">Report</span><span class="mvalue">fr-20260907-cd08adce</span></div><div class="mrow"><span class="mlabel">Issued</span><span class="mvalue">2026-09-07</span></div><div class="mrow"><span class="mlabel">Subject exam</span><span class="mvalue">vvdex.annotation.structured-data-1 · v0.1.0</span></div><div class="mrow"><span class="mlabel">Family</span><span class="mvalue">annotation</span></div><div class="mrow"><span class="mlabel">Prepared by</span><span class="mvalue">VVDex Forge engine vvdex-env 0.1.0</span></div><div class="mrow"><span class="mlabel">Classification</span><span class="mvalue">Independent model evaluation report — independently verifiable</span></div><div class="mrow"><span class="mlabel">Certification</span><span class="mvalue">Exam certification: recorded and passing (see Certification evidence)</span></div><div class="mrow"><span class="mlabel">Status</span><span class="mvalue">FINAL · report sealed against its own digest</span></div></div>
+<h4>Timeline</h4>
+<div class="scroll"><table class="timeline">
+  <thead><tr><th>When (UTC)</th><th>Event</th></tr></thead>
+  <tbody><tr><td class="mono">2026-09-06 00:01:41</td><td>Exam evidence sealed (before any model saw the exam)</td></tr><tr><td class="mono">2026-09-07 09:02:22</td><td>Evaluation run started</td></tr><tr><td class="mono">2026-09-07 09:15:29</td><td>Evaluation run finished</td></tr><tr><td class="mono">2026-09-07 09:15:29</td><td>Report generated from the sealed run evidence</td></tr></tbody>
+</table></div>
+<h4>Models under test</h4>
+<div class="scroll"><table>
+  <thead><tr><th>Model</th><th>Provider</th><th>Endpoint</th><th>Billing</th></tr></thead>
+  <tbody><tr><td>Codex CLI (GPT, subscription)</td><td>cli</td><td class="mono">local runtime</td><td>operator subscription, flat — not billed per token</td></tr><tr><td>Claude Code CLI (Sonnet, subscription)</td><td>cli</td><td class="mono">local runtime</td><td>operator subscription, flat — not billed per token</td></tr></tbody>
+</table></div>
+<p class="lead">A customer endpoint is recorded by origin only — never its port, its path, or its key.</p>
+<h4>Limits</h4>
+<div class="grid">
+  <dl class="card"><dt>Runtime</dt><dd>docker</dd></dl>
+  <dl class="card"><dt>Step limit</dt><dd>24</dd></dl>
+  <dl class="card"><dt>Wall-clock limit</dt><dd>14520s</dd></dl>
+  <dl class="card"><dt>Max output tokens</dt><dd>2048</dd></dl>
+  <dl class="card"><dt>Temperature</dt><dd>0.2</dd></dl>
+  <dl class="card"><dt>Retry policy</dt><dd>none</dd></dl>
+  <dl class="card"><dt>Command budget</dt><dd>0</dd></dl>
+  <dl class="card"><dt>Tools offered</dt><dd>list_files, read_file, write_file, edit_file, run_tests, submit</dd></dl>
+</div>
+<p class="lead">The evaluated model never saw the hidden tests or the reference solution, and could not
+change its result. Grading ran in a separate step, after submission, on a container with no network.</p><h3>Model outcomes</h3>
+<p class="lead"><strong>Denominators.</strong> Attempts requested: 20. Graded (evaluable) rollouts: 20. Not graded — lane errors: 0. A lane error is a rollout the API or the runtime ended before the hidden grader ran: it is listed, excluded from every rate and pass@k, and never silently dropped. Passes are certified passes: hidden grader exit 0 with integrity verified.</p>
+<div class="scroll"><table class="primary">
+  <thead><tr><th>Model</th><th>Attempts</th><th>Graded</th><th>Passed</th><th>Model fails</th>
+    <th>Lane errors</th><th>Submitted</th><th>Mean time</th><th>Typical deepest stage</th></tr></thead>
+  <tbody><tr class="row-pass"><td><strong>Codex CLI (GPT, subscription)</strong><br><span class="mono subid">cli/codex</span></td><td class="num">10</td><td class="num">10</td><td><span class="mark" data-v="pass">10 / 10</span></td><td class="num">0</td><td class="num"><span class="mark" data-v="pass">0</span></td><td class="num">10 / 10</td><td class="num">56.9s</td><td>Passed</td></tr><tr class="row-pass"><td><strong>Claude Code CLI (Sonnet, subscription)</strong><br><span class="mono subid">cli/claude-sonnet</span></td><td class="num">10</td><td class="num">10</td><td><span class="mark" data-v="pass">10 / 10</span></td><td class="num">0</td><td class="num"><span class="mark" data-v="pass">0</span></td><td class="num">10 / 10</td><td class="num">20.2s</td><td>Passed</td></tr></tbody>
+</table></div>
+<p class="lead">Every rollout, with its own deepest stage and grade, is in Appendix A.</p>
+
+<h4>Success rate, confidence and pass@k</h4>
+<p class="lead">
+  Every rate on this page is a measurement of a finite number of rollouts, so every rate
+  carries the interval that measurement actually supports. n is the evaluable count —
+  attempts minus rollouts the lane ended before grading; those are listed under
+  "not graded" and sit in no rate, interval or pass@k.
+</p>
+<div class="scroll"><table>
+  <thead><tr><th>Model</th><th>Attempts</th><th>n</th><th>Not graded</th><th>Passes</th><th>Rate</th>
+    <th>95% interval</th><th>Seeds</th><th>pass@1</th><th>pass@3</th><th>pass@5</th><th>pass@10</th></tr></thead>
+  <tbody><tr class="row-pass"><td>cli/codex</td><td class="num">10</td><td class="num">10</td><td class="num">0</td><td class="num">10</td><td class="num">100.0%</td><td class="num">[72%, 100%]</td><td class="num">0–9</td><td class="num">100.0%</td><td class="num">100.0%</td><td class="num">100.0%</td><td class="num">100.0%</td></tr><tr class="row-pass"><td>cli/claude-sonnet</td><td class="num">10</td><td class="num">10</td><td class="num">0</td><td class="num">10</td><td class="num">100.0%</td><td class="num">[72%, 100%]</td><td class="num">0–9</td><td class="num">100.0%</td><td class="num">100.0%</td><td class="num">100.0%</td><td class="num">100.0%</td></tr></tbody>
+</table></div>
+<p class="lead">Interval and pass@k methods are stated in full in Appendix D. pass@k is shown for
+k = 1, 3, 5, 10; the sealed record carries every k up to n.</p>
+
+<h4>Model comparison</h4>
+<div class="scroll"><table>
+  <thead><tr><th>Model</th><th>pass@1</th><th>95% interval</th><th>Tokens</th><th>Cost</th>
+    <th>Mean rollout</th><th>Overclaim rate</th><th>Top failure class</th></tr></thead>
+  <tbody><tr><td>cli/codex</td><td class="num">100.0%</td><td class="num">[72%, 100%]</td><td class="num">n/a</td><td class="num">n/a</td><td class="num">56.9s</td><td class="num">0.0%</td><td>none</td></tr><tr><td>cli/claude-sonnet</td><td class="num">100.0%</td><td class="num">[72%, 100%]</td><td class="num">n/a</td><td class="num">n/a</td><td class="num">20.2s</td><td class="num">0.0%</td><td>none</td></tr></tbody>
+</table></div>
+<p class="lead">Tokens and cost read n/a where a lane reports no telemetry (a flat-rate
+CLI) — an absent measurement, not zero. pass@1 and its interval are over evaluable
+rollouts only.</p>
+<div class="caveat">
+  <p>This is not a leaderboard. Not separated (intervals overlap): cli/codex vs cli/claude-sonnet.
+  The primary comparison in this report is the stage funnel below — where a model stops
+  is a finding; a percentage over this many rollouts is not.</p>
+</div>
+<h3>Stage funnel</h3>
+<p class="lead">Recorded annotation actions and independent grader verdicts. Missing capabilities are N/A; each stage is measured independently.</p>
+<div class="scroll"><table class="matrix">
+  <thead><tr><th>Stage</th><th>cli:cli/codex</th><th>cli:cli/claude-sonnet</th></tr></thead>
+  <tbody><tr><td>Inspect</td><td class="num"><span class="mark" data-v="warn">10 / 10</span></td><td class="num"><span class="mark" data-v="warn">10 / 10</span></td></tr><tr><td>Annotate</td><td class="num"><span class="mark" data-v="warn">10 / 10</span></td><td class="num"><span class="mark" data-v="warn">10 / 10</span></td></tr><tr><td>Validate</td><td class="num"><span class="mark" data-v="warn">10 / 10</span></td><td class="num"><span class="mark" data-v="warn">10 / 10</span></td></tr><tr><td>Submit</td><td class="num"><span class="mark" data-v="warn">10 / 10</span></td><td class="num"><span class="mark" data-v="warn">10 / 10</span></td></tr><tr><td>Graded</td><td class="num"><span class="mark" data-v="warn">10 / 10</span></td><td class="num"><span class="mark" data-v="warn">10 / 10</span></td></tr><tr><td>Passed</td><td class="num"><span class="mark" data-v="pass">10 / 10</span></td><td class="num"><span class="mark" data-v="pass">10 / 10</span></td></tr></tbody>
+</table></div>
+<h4>Deepest stage reached</h4>
+<div class="scroll"><table>
+  <thead><tr><th>Model</th><th>Deepest (any attempt)</th><th>Typical (most attempts)</th>
+    <th>Annotation QA passes</th><th>Not graded</th></tr></thead>
+  <tbody><tr><td>cli:cli/codex</td><td>Passed</td><td>Passed</td><td class="num"><span class="mark" data-v="pass">10 / 10</span></td><td class="num">0</td></tr><tr><td>cli:cli/claude-sonnet</td><td>Passed</td><td>Passed</td><td class="num"><span class="mark" data-v="pass">10 / 10</span></td><td class="num">0</td></tr></tbody>
+</table></div>
+<p class="lead">The matrix counts evaluable annotation attempts; lane errors are shown separately. Successful recorded actions establish each stage independently. </p><h3>Annotation evidence</h3><p><strong>Modality:</strong> structured. <strong>Rubric:</strong> 1.0.</p>
+<p>Invented tabular records are reviewed for normalization, validity, duplicates, anomalies and relationships.</p><article class="annotation-measurement"><h4>Submission b8eda0e7-467a-47b0-a562-e998a3c58062</h4>
+<div class="annotation-summary"><p><strong>Score</strong><br>1</p><p><strong>Items</strong><br>4</p>
+<p><strong>Valid / invalid</strong><br>4 / 0</p>
+<p><strong>Types</strong><br>pair, row</p></div>
+<h4>Measured metrics</h4><dl class="annotation-metrics"><div><dt>annotationCount</dt><dd>4</dd></div><div><dt>matchedCount</dt><dd>4</dd></div><div><dt>mismatchCount</dt><dd>0</dd></div><div><dt>pairAccuracy</dt><dd>1</dd></div><div><dt>pairF1</dt><dd>1</dd></div><div><dt>pairPrecision</dt><dd>1</dd></div><div><dt>pairRecall</dt><dd>1</dd></div><div><dt>rowAccuracy</dt><dd>1</dd></div><div><dt>rowF1</dt><dd>1</dd></div><div><dt>rowPrecision</dt><dd>1</dd></div><div><dt>rowRecall</dt><dd>1</dd></div></dl>
+<p>Track consistency depends on successful box matching. A zero can reflect inaccurate boxes even when track IDs are correct.</p>
+<h4>Validation error codes</h4><p>None recorded</p>
+<h4>Disagreement</h4><dl class="annotation-metrics"><div><dt>Agreement review</dt><dd>Not measured</dd></div></dl></article><article class="annotation-measurement"><h4>Submission 1477727f-dbc3-450e-b2ed-e82f6d69d655</h4>
+<div class="annotation-summary"><p><strong>Score</strong><br>1</p><p><strong>Items</strong><br>4</p>
+<p><strong>Valid / invalid</strong><br>4 / 0</p>
+<p><strong>Types</strong><br>pair, row</p></div>
+<h4>Measured metrics</h4><dl class="annotation-metrics"><div><dt>annotationCount</dt><dd>4</dd></div><div><dt>matchedCount</dt><dd>4</dd></div><div><dt>mismatchCount</dt><dd>0</dd></div><div><dt>pairAccuracy</dt><dd>1</dd></div><div><dt>pairF1</dt><dd>1</dd></div><div><dt>pairPrecision</dt><dd>1</dd></div><div><dt>pairRecall</dt><dd>1</dd></div><div><dt>rowAccuracy</dt><dd>1</dd></div><div><dt>rowF1</dt><dd>1</dd></div><div><dt>rowPrecision</dt><dd>1</dd></div><div><dt>rowRecall</dt><dd>1</dd></div></dl>
+<p>Track consistency depends on successful box matching. A zero can reflect inaccurate boxes even when track IDs are correct.</p>
+<h4>Validation error codes</h4><p>None recorded</p>
+<h4>Disagreement</h4><dl class="annotation-metrics"><div><dt>Agreement review</dt><dd>Not measured</dd></div></dl></article><article class="annotation-measurement"><h4>Submission e59a52e2-a69f-4f07-aa02-26d91aaa3214</h4>
+<div class="annotation-summary"><p><strong>Score</strong><br>1</p><p><strong>Items</strong><br>4</p>
+<p><strong>Valid / invalid</strong><br>4 / 0</p>
+<p><strong>Types</strong><br>pair, row</p></div>
+<h4>Measured metrics</h4><dl class="annotation-metrics"><div><dt>annotationCount</dt><dd>4</dd></div><div><dt>matchedCount</dt><dd>4</dd></div><div><dt>mismatchCount</dt><dd>0</dd></div><div><dt>pairAccuracy</dt><dd>1</dd></div><div><dt>pairF1</dt><dd>1</dd></div><div><dt>pairPrecision</dt><dd>1</dd></div><div><dt>pairRecall</dt><dd>1</dd></div><div><dt>rowAccuracy</dt><dd>1</dd></div><div><dt>rowF1</dt><dd>1</dd></div><div><dt>rowPrecision</dt><dd>1</dd></div><div><dt>rowRecall</dt><dd>1</dd></div></dl>
+<p>Track consistency depends on successful box matching. A zero can reflect inaccurate boxes even when track IDs are correct.</p>
+<h4>Validation error codes</h4><p>None recorded</p>
+<h4>Disagreement</h4><dl class="annotation-metrics"><div><dt>Agreement review</dt><dd>Not measured</dd></div></dl></article><article class="annotation-measurement"><h4>Submission d0fcd4ea-b3f8-4112-a47e-faec759104c8</h4>
+<div class="annotation-summary"><p><strong>Score</strong><br>1</p><p><strong>Items</strong><br>4</p>
+<p><strong>Valid / invalid</strong><br>4 / 0</p>
+<p><strong>Types</strong><br>pair, row</p></div>
+<h4>Measured metrics</h4><dl class="annotation-metrics"><div><dt>annotationCount</dt><dd>4</dd></div><div><dt>matchedCount</dt><dd>4</dd></div><div><dt>mismatchCount</dt><dd>0</dd></div><div><dt>pairAccuracy</dt><dd>1</dd></div><div><dt>pairF1</dt><dd>1</dd></div><div><dt>pairPrecision</dt><dd>1</dd></div><div><dt>pairRecall</dt><dd>1</dd></div><div><dt>rowAccuracy</dt><dd>1</dd></div><div><dt>rowF1</dt><dd>1</dd></div><div><dt>rowPrecision</dt><dd>1</dd></div><div><dt>rowRecall</dt><dd>1</dd></div></dl>
+<p>Track consistency depends on successful box matching. A zero can reflect inaccurate boxes even when track IDs are correct.</p>
+<h4>Validation error codes</h4><p>None recorded</p>
+<h4>Disagreement</h4><dl class="annotation-metrics"><div><dt>Agreement review</dt><dd>Not measured</dd></div></dl></article><article class="annotation-measurement"><h4>Submission 8645fc4a-bece-44c1-80d3-b45f6f94ac09</h4>
+<div class="annotation-summary"><p><strong>Score</strong><br>1</p><p><strong>Items</strong><br>4</p>
+<p><strong>Valid / invalid</strong><br>4 / 0</p>
+<p><strong>Types</strong><br>pair, row</p></div>
+<h4>Measured metrics</h4><dl class="annotation-metrics"><div><dt>annotationCount</dt><dd>4</dd></div><div><dt>matchedCount</dt><dd>4</dd></div><div><dt>mismatchCount</dt><dd>0</dd></div><div><dt>pairAccuracy</dt><dd>1</dd></div><div><dt>pairF1</dt><dd>1</dd></div><div><dt>pairPrecision</dt><dd>1</dd></div><div><dt>pairRecall</dt><dd>1</dd></div><div><dt>rowAccuracy</dt><dd>1</dd></div><div><dt>rowF1</dt><dd>1</dd></div><div><dt>rowPrecision</dt><dd>1</dd></div><div><dt>rowRecall</dt><dd>1</dd></div></dl>
+<p>Track consistency depends on successful box matching. A zero can reflect inaccurate boxes even when track IDs are correct.</p>
+<h4>Validation error codes</h4><p>None recorded</p>
+<h4>Disagreement</h4><dl class="annotation-metrics"><div><dt>Agreement review</dt><dd>Not measured</dd></div></dl></article><article class="annotation-measurement"><h4>Submission 4f6607c4-6b85-41fd-a939-f33bae3d7b00</h4>
+<div class="annotation-summary"><p><strong>Score</strong><br>1</p><p><strong>Items</strong><br>4</p>
+<p><strong>Valid / invalid</strong><br>4 / 0</p>
+<p><strong>Types</strong><br>pair, row</p></div>
+<h4>Measured metrics</h4><dl class="annotation-metrics"><div><dt>annotationCount</dt><dd>4</dd></div><div><dt>matchedCount</dt><dd>4</dd></div><div><dt>mismatchCount</dt><dd>0</dd></div><div><dt>pairAccuracy</dt><dd>1</dd></div><div><dt>pairF1</dt><dd>1</dd></div><div><dt>pairPrecision</dt><dd>1</dd></div><div><dt>pairRecall</dt><dd>1</dd></div><div><dt>rowAccuracy</dt><dd>1</dd></div><div><dt>rowF1</dt><dd>1</dd></div><div><dt>rowPrecision</dt><dd>1</dd></div><div><dt>rowRecall</dt><dd>1</dd></div></dl>
+<p>Track consistency depends on successful box matching. A zero can reflect inaccurate boxes even when track IDs are correct.</p>
+<h4>Validation error codes</h4><p>None recorded</p>
+<h4>Disagreement</h4><dl class="annotation-metrics"><div><dt>Agreement review</dt><dd>Not measured</dd></div></dl></article><article class="annotation-measurement"><h4>Submission ca2be4a6-e749-469d-b98a-93dc066e6acc</h4>
+<div class="annotation-summary"><p><strong>Score</strong><br>1</p><p><strong>Items</strong><br>4</p>
+<p><strong>Valid / invalid</strong><br>4 / 0</p>
+<p><strong>Types</strong><br>pair, row</p></div>
+<h4>Measured metrics</h4><dl class="annotation-metrics"><div><dt>annotationCount</dt><dd>4</dd></div><div><dt>matchedCount</dt><dd>4</dd></div><div><dt>mismatchCount</dt><dd>0</dd></div><div><dt>pairAccuracy</dt><dd>1</dd></div><div><dt>pairF1</dt><dd>1</dd></div><div><dt>pairPrecision</dt><dd>1</dd></div><div><dt>pairRecall</dt><dd>1</dd></div><div><dt>rowAccuracy</dt><dd>1</dd></div><div><dt>rowF1</dt><dd>1</dd></div><div><dt>rowPrecision</dt><dd>1</dd></div><div><dt>rowRecall</dt><dd>1</dd></div></dl>
+<p>Track consistency depends on successful box matching. A zero can reflect inaccurate boxes even when track IDs are correct.</p>
+<h4>Validation error codes</h4><p>None recorded</p>
+<h4>Disagreement</h4><dl class="annotation-metrics"><div><dt>Agreement review</dt><dd>Not measured</dd></div></dl></article><article class="annotation-measurement"><h4>Submission 54e94bfb-577b-4579-8ed8-eb88ad186676</h4>
+<div class="annotation-summary"><p><strong>Score</strong><br>1</p><p><strong>Items</strong><br>4</p>
+<p><strong>Valid / invalid</strong><br>4 / 0</p>
+<p><strong>Types</strong><br>pair, row</p></div>
+<h4>Measured metrics</h4><dl class="annotation-metrics"><div><dt>annotationCount</dt><dd>4</dd></div><div><dt>matchedCount</dt><dd>4</dd></div><div><dt>mismatchCount</dt><dd>0</dd></div><div><dt>pairAccuracy</dt><dd>1</dd></div><div><dt>pairF1</dt><dd>1</dd></div><div><dt>pairPrecision</dt><dd>1</dd></div><div><dt>pairRecall</dt><dd>1</dd></div><div><dt>rowAccuracy</dt><dd>1</dd></div><div><dt>rowF1</dt><dd>1</dd></div><div><dt>rowPrecision</dt><dd>1</dd></div><div><dt>rowRecall</dt><dd>1</dd></div></dl>
+<p>Track consistency depends on successful box matching. A zero can reflect inaccurate boxes even when track IDs are correct.</p>
+<h4>Validation error codes</h4><p>None recorded</p>
+<h4>Disagreement</h4><dl class="annotation-metrics"><div><dt>Agreement review</dt><dd>Not measured</dd></div></dl></article><article class="annotation-measurement"><h4>Submission 8ec7d239-f799-438e-8fe9-1bb6394a49a7</h4>
+<div class="annotation-summary"><p><strong>Score</strong><br>1</p><p><strong>Items</strong><br>4</p>
+<p><strong>Valid / invalid</strong><br>4 / 0</p>
+<p><strong>Types</strong><br>pair, row</p></div>
+<h4>Measured metrics</h4><dl class="annotation-metrics"><div><dt>annotationCount</dt><dd>4</dd></div><div><dt>matchedCount</dt><dd>4</dd></div><div><dt>mismatchCount</dt><dd>0</dd></div><div><dt>pairAccuracy</dt><dd>1</dd></div><div><dt>pairF1</dt><dd>1</dd></div><div><dt>pairPrecision</dt><dd>1</dd></div><div><dt>pairRecall</dt><dd>1</dd></div><div><dt>rowAccuracy</dt><dd>1</dd></div><div><dt>rowF1</dt><dd>1</dd></div><div><dt>rowPrecision</dt><dd>1</dd></div><div><dt>rowRecall</dt><dd>1</dd></div></dl>
+<p>Track consistency depends on successful box matching. A zero can reflect inaccurate boxes even when track IDs are correct.</p>
+<h4>Validation error codes</h4><p>None recorded</p>
+<h4>Disagreement</h4><dl class="annotation-metrics"><div><dt>Agreement review</dt><dd>Not measured</dd></div></dl></article><article class="annotation-measurement"><h4>Submission 6146c764-8fe6-4a86-8046-7778477f2ce7</h4>
+<div class="annotation-summary"><p><strong>Score</strong><br>1</p><p><strong>Items</strong><br>4</p>
+<p><strong>Valid / invalid</strong><br>4 / 0</p>
+<p><strong>Types</strong><br>pair, row</p></div>
+<h4>Measured metrics</h4><dl class="annotation-metrics"><div><dt>annotationCount</dt><dd>4</dd></div><div><dt>matchedCount</dt><dd>4</dd></div><div><dt>mismatchCount</dt><dd>0</dd></div><div><dt>pairAccuracy</dt><dd>1</dd></div><div><dt>pairF1</dt><dd>1</dd></div><div><dt>pairPrecision</dt><dd>1</dd></div><div><dt>pairRecall</dt><dd>1</dd></div><div><dt>rowAccuracy</dt><dd>1</dd></div><div><dt>rowF1</dt><dd>1</dd></div><div><dt>rowPrecision</dt><dd>1</dd></div><div><dt>rowRecall</dt><dd>1</dd></div></dl>
+<p>Track consistency depends on successful box matching. A zero can reflect inaccurate boxes even when track IDs are correct.</p>
+<h4>Validation error codes</h4><p>None recorded</p>
+<h4>Disagreement</h4><dl class="annotation-metrics"><div><dt>Agreement review</dt><dd>Not measured</dd></div></dl></article><article class="annotation-measurement"><h4>Submission 3950adf9-665f-44d1-bb33-8e78bdb713d0</h4>
+<div class="annotation-summary"><p><strong>Score</strong><br>1</p><p><strong>Items</strong><br>4</p>
+<p><strong>Valid / invalid</strong><br>4 / 0</p>
+<p><strong>Types</strong><br>pair, row</p></div>
+<h4>Measured metrics</h4><dl class="annotation-metrics"><div><dt>annotationCount</dt><dd>4</dd></div><div><dt>matchedCount</dt><dd>4</dd></div><div><dt>mismatchCount</dt><dd>0</dd></div><div><dt>pairAccuracy</dt><dd>1</dd></div><div><dt>pairF1</dt><dd>1</dd></div><div><dt>pairPrecision</dt><dd>1</dd></div><div><dt>pairRecall</dt><dd>1</dd></div><div><dt>rowAccuracy</dt><dd>1</dd></div><div><dt>rowF1</dt><dd>1</dd></div><div><dt>rowPrecision</dt><dd>1</dd></div><div><dt>rowRecall</dt><dd>1</dd></div></dl>
+<p>Track consistency depends on successful box matching. A zero can reflect inaccurate boxes even when track IDs are correct.</p>
+<h4>Validation error codes</h4><p>None recorded</p>
+<h4>Disagreement</h4><dl class="annotation-metrics"><div><dt>Agreement review</dt><dd>Not measured</dd></div></dl></article><article class="annotation-measurement"><h4>Submission f6899f85-7249-4408-bd32-80529c4def1f</h4>
+<div class="annotation-summary"><p><strong>Score</strong><br>1</p><p><strong>Items</strong><br>4</p>
+<p><strong>Valid / invalid</strong><br>4 / 0</p>
+<p><strong>Types</strong><br>pair, row</p></div>
+<h4>Measured metrics</h4><dl class="annotation-metrics"><div><dt>annotationCount</dt><dd>4</dd></div><div><dt>matchedCount</dt><dd>4</dd></div><div><dt>mismatchCount</dt><dd>0</dd></div><div><dt>pairAccuracy</dt><dd>1</dd></div><div><dt>pairF1</dt><dd>1</dd></div><div><dt>pairPrecision</dt><dd>1</dd></div><div><dt>pairRecall</dt><dd>1</dd></div><div><dt>rowAccuracy</dt><dd>1</dd></div><div><dt>rowF1</dt><dd>1</dd></div><div><dt>rowPrecision</dt><dd>1</dd></div><div><dt>rowRecall</dt><dd>1</dd></div></dl>
+<p>Track consistency depends on successful box matching. A zero can reflect inaccurate boxes even when track IDs are correct.</p>
+<h4>Validation error codes</h4><p>None recorded</p>
+<h4>Disagreement</h4><dl class="annotation-metrics"><div><dt>Agreement review</dt><dd>Not measured</dd></div></dl></article><article class="annotation-measurement"><h4>Submission 4ce52860-fcb9-404f-867d-db6ffc0f94dc</h4>
+<div class="annotation-summary"><p><strong>Score</strong><br>1</p><p><strong>Items</strong><br>4</p>
+<p><strong>Valid / invalid</strong><br>4 / 0</p>
+<p><strong>Types</strong><br>pair, row</p></div>
+<h4>Measured metrics</h4><dl class="annotation-metrics"><div><dt>annotationCount</dt><dd>4</dd></div><div><dt>matchedCount</dt><dd>4</dd></div><div><dt>mismatchCount</dt><dd>0</dd></div><div><dt>pairAccuracy</dt><dd>1</dd></div><div><dt>pairF1</dt><dd>1</dd></div><div><dt>pairPrecision</dt><dd>1</dd></div><div><dt>pairRecall</dt><dd>1</dd></div><div><dt>rowAccuracy</dt><dd>1</dd></div><div><dt>rowF1</dt><dd>1</dd></div><div><dt>rowPrecision</dt><dd>1</dd></div><div><dt>rowRecall</dt><dd>1</dd></div></dl>
+<p>Track consistency depends on successful box matching. A zero can reflect inaccurate boxes even when track IDs are correct.</p>
+<h4>Validation error codes</h4><p>None recorded</p>
+<h4>Disagreement</h4><dl class="annotation-metrics"><div><dt>Agreement review</dt><dd>Not measured</dd></div></dl></article><article class="annotation-measurement"><h4>Submission b9e9d7f7-5ce5-47b0-a67b-78da031148c0</h4>
+<div class="annotation-summary"><p><strong>Score</strong><br>1</p><p><strong>Items</strong><br>4</p>
+<p><strong>Valid / invalid</strong><br>4 / 0</p>
+<p><strong>Types</strong><br>pair, row</p></div>
+<h4>Measured metrics</h4><dl class="annotation-metrics"><div><dt>annotationCount</dt><dd>4</dd></div><div><dt>matchedCount</dt><dd>4</dd></div><div><dt>mismatchCount</dt><dd>0</dd></div><div><dt>pairAccuracy</dt><dd>1</dd></div><div><dt>pairF1</dt><dd>1</dd></div><div><dt>pairPrecision</dt><dd>1</dd></div><div><dt>pairRecall</dt><dd>1</dd></div><div><dt>rowAccuracy</dt><dd>1</dd></div><div><dt>rowF1</dt><dd>1</dd></div><div><dt>rowPrecision</dt><dd>1</dd></div><div><dt>rowRecall</dt><dd>1</dd></div></dl>
+<p>Track consistency depends on successful box matching. A zero can reflect inaccurate boxes even when track IDs are correct.</p>
+<h4>Validation error codes</h4><p>None recorded</p>
+<h4>Disagreement</h4><dl class="annotation-metrics"><div><dt>Agreement review</dt><dd>Not measured</dd></div></dl></article><article class="annotation-measurement"><h4>Submission 8ae4a7c0-97cd-447a-9c58-7f4e39c0f014</h4>
+<div class="annotation-summary"><p><strong>Score</strong><br>1</p><p><strong>Items</strong><br>4</p>
+<p><strong>Valid / invalid</strong><br>4 / 0</p>
+<p><strong>Types</strong><br>pair, row</p></div>
+<h4>Measured metrics</h4><dl class="annotation-metrics"><div><dt>annotationCount</dt><dd>4</dd></div><div><dt>matchedCount</dt><dd>4</dd></div><div><dt>mismatchCount</dt><dd>0</dd></div><div><dt>pairAccuracy</dt><dd>1</dd></div><div><dt>pairF1</dt><dd>1</dd></div><div><dt>pairPrecision</dt><dd>1</dd></div><div><dt>pairRecall</dt><dd>1</dd></div><div><dt>rowAccuracy</dt><dd>1</dd></div><div><dt>rowF1</dt><dd>1</dd></div><div><dt>rowPrecision</dt><dd>1</dd></div><div><dt>rowRecall</dt><dd>1</dd></div></dl>
+<p>Track consistency depends on successful box matching. A zero can reflect inaccurate boxes even when track IDs are correct.</p>
+<h4>Validation error codes</h4><p>None recorded</p>
+<h4>Disagreement</h4><dl class="annotation-metrics"><div><dt>Agreement review</dt><dd>Not measured</dd></div></dl></article><article class="annotation-measurement"><h4>Submission 0667cb37-cd47-49cf-93a1-47698ca729fc</h4>
+<div class="annotation-summary"><p><strong>Score</strong><br>1</p><p><strong>Items</strong><br>4</p>
+<p><strong>Valid / invalid</strong><br>4 / 0</p>
+<p><strong>Types</strong><br>pair, row</p></div>
+<h4>Measured metrics</h4><dl class="annotation-metrics"><div><dt>annotationCount</dt><dd>4</dd></div><div><dt>matchedCount</dt><dd>4</dd></div><div><dt>mismatchCount</dt><dd>0</dd></div><div><dt>pairAccuracy</dt><dd>1</dd></div><div><dt>pairF1</dt><dd>1</dd></div><div><dt>pairPrecision</dt><dd>1</dd></div><div><dt>pairRecall</dt><dd>1</dd></div><div><dt>rowAccuracy</dt><dd>1</dd></div><div><dt>rowF1</dt><dd>1</dd></div><div><dt>rowPrecision</dt><dd>1</dd></div><div><dt>rowRecall</dt><dd>1</dd></div></dl>
+<p>Track consistency depends on successful box matching. A zero can reflect inaccurate boxes even when track IDs are correct.</p>
+<h4>Validation error codes</h4><p>None recorded</p>
+<h4>Disagreement</h4><dl class="annotation-metrics"><div><dt>Agreement review</dt><dd>Not measured</dd></div></dl></article><article class="annotation-measurement"><h4>Submission 4012da48-6b0d-48ba-862a-9252d599d87b</h4>
+<div class="annotation-summary"><p><strong>Score</strong><br>1</p><p><strong>Items</strong><br>4</p>
+<p><strong>Valid / invalid</strong><br>4 / 0</p>
+<p><strong>Types</strong><br>pair, row</p></div>
+<h4>Measured metrics</h4><dl class="annotation-metrics"><div><dt>annotationCount</dt><dd>4</dd></div><div><dt>matchedCount</dt><dd>4</dd></div><div><dt>mismatchCount</dt><dd>0</dd></div><div><dt>pairAccuracy</dt><dd>1</dd></div><div><dt>pairF1</dt><dd>1</dd></div><div><dt>pairPrecision</dt><dd>1</dd></div><div><dt>pairRecall</dt><dd>1</dd></div><div><dt>rowAccuracy</dt><dd>1</dd></div><div><dt>rowF1</dt><dd>1</dd></div><div><dt>rowPrecision</dt><dd>1</dd></div><div><dt>rowRecall</dt><dd>1</dd></div></dl>
+<p>Track consistency depends on successful box matching. A zero can reflect inaccurate boxes even when track IDs are correct.</p>
+<h4>Validation error codes</h4><p>None recorded</p>
+<h4>Disagreement</h4><dl class="annotation-metrics"><div><dt>Agreement review</dt><dd>Not measured</dd></div></dl></article><article class="annotation-measurement"><h4>Submission e625725f-ecc0-4baf-b968-bdce899125d1</h4>
+<div class="annotation-summary"><p><strong>Score</strong><br>1</p><p><strong>Items</strong><br>4</p>
+<p><strong>Valid / invalid</strong><br>4 / 0</p>
+<p><strong>Types</strong><br>pair, row</p></div>
+<h4>Measured metrics</h4><dl class="annotation-metrics"><div><dt>annotationCount</dt><dd>4</dd></div><div><dt>matchedCount</dt><dd>4</dd></div><div><dt>mismatchCount</dt><dd>0</dd></div><div><dt>pairAccuracy</dt><dd>1</dd></div><div><dt>pairF1</dt><dd>1</dd></div><div><dt>pairPrecision</dt><dd>1</dd></div><div><dt>pairRecall</dt><dd>1</dd></div><div><dt>rowAccuracy</dt><dd>1</dd></div><div><dt>rowF1</dt><dd>1</dd></div><div><dt>rowPrecision</dt><dd>1</dd></div><div><dt>rowRecall</dt><dd>1</dd></div></dl>
+<p>Track consistency depends on successful box matching. A zero can reflect inaccurate boxes even when track IDs are correct.</p>
+<h4>Validation error codes</h4><p>None recorded</p>
+<h4>Disagreement</h4><dl class="annotation-metrics"><div><dt>Agreement review</dt><dd>Not measured</dd></div></dl></article><article class="annotation-measurement"><h4>Submission fbad5bb3-f112-4f8a-bb9e-9def207856ff</h4>
+<div class="annotation-summary"><p><strong>Score</strong><br>1</p><p><strong>Items</strong><br>4</p>
+<p><strong>Valid / invalid</strong><br>4 / 0</p>
+<p><strong>Types</strong><br>pair, row</p></div>
+<h4>Measured metrics</h4><dl class="annotation-metrics"><div><dt>annotationCount</dt><dd>4</dd></div><div><dt>matchedCount</dt><dd>4</dd></div><div><dt>mismatchCount</dt><dd>0</dd></div><div><dt>pairAccuracy</dt><dd>1</dd></div><div><dt>pairF1</dt><dd>1</dd></div><div><dt>pairPrecision</dt><dd>1</dd></div><div><dt>pairRecall</dt><dd>1</dd></div><div><dt>rowAccuracy</dt><dd>1</dd></div><div><dt>rowF1</dt><dd>1</dd></div><div><dt>rowPrecision</dt><dd>1</dd></div><div><dt>rowRecall</dt><dd>1</dd></div></dl>
+<p>Track consistency depends on successful box matching. A zero can reflect inaccurate boxes even when track IDs are correct.</p>
+<h4>Validation error codes</h4><p>None recorded</p>
+<h4>Disagreement</h4><dl class="annotation-metrics"><div><dt>Agreement review</dt><dd>Not measured</dd></div></dl></article><article class="annotation-measurement"><h4>Submission 1a963341-3836-4e59-b927-3e25494a79cd</h4>
+<div class="annotation-summary"><p><strong>Score</strong><br>1</p><p><strong>Items</strong><br>4</p>
+<p><strong>Valid / invalid</strong><br>4 / 0</p>
+<p><strong>Types</strong><br>pair, row</p></div>
+<h4>Measured metrics</h4><dl class="annotation-metrics"><div><dt>annotationCount</dt><dd>4</dd></div><div><dt>matchedCount</dt><dd>4</dd></div><div><dt>mismatchCount</dt><dd>0</dd></div><div><dt>pairAccuracy</dt><dd>1</dd></div><div><dt>pairF1</dt><dd>1</dd></div><div><dt>pairPrecision</dt><dd>1</dd></div><div><dt>pairRecall</dt><dd>1</dd></div><div><dt>rowAccuracy</dt><dd>1</dd></div><div><dt>rowF1</dt><dd>1</dd></div><div><dt>rowPrecision</dt><dd>1</dd></div><div><dt>rowRecall</dt><dd>1</dd></div></dl>
+<p>Track consistency depends on successful box matching. A zero can reflect inaccurate boxes even when track IDs are correct.</p>
+<h4>Validation error codes</h4><p>None recorded</p>
+<h4>Disagreement</h4><dl class="annotation-metrics"><div><dt>Agreement review</dt><dd>Not measured</dd></div></dl></article>
+<p>Measured grader aggregates only. Missing metrics or disagreement are not measured, never zero. Reference answers and item-level labels are excluded. Certification and the evidence digest are recorded in this report's verification sections.</p><h3>Quality axes</h3>
+<p class="lead">Each axis was measured inside the grade box, on the submitted workspace, by the same deterministic script for every rollout. The reward is the conjunction of the required axes; the score is a weighted reading beside it, not the gate.</p>
+<div class="scroll"><table>
+  <thead><tr>
+    <th>Axis</th><th>Gate</th><th>Rollouts passing</th><th>Measured</th>
+    <th>Budget</th><th>Weight</th><th>What it measures</th>
+  </tr></thead>
+  <tbody><tr><td>pairPrecision</td><td><span class="mark" data-v="unknown">recorded</span></td><td class="num">N/A</td><td class="num">1</td><td class="num">—</td><td class="num">—</td><td></td></tr><tr><td>pairRecall</td><td><span class="mark" data-v="unknown">recorded</span></td><td class="num">N/A</td><td class="num">1</td><td class="num">—</td><td class="num">—</td><td></td></tr><tr><td>pairF1</td><td><span class="mark" data-v="unknown">recorded</span></td><td class="num">N/A</td><td class="num">1</td><td class="num">—</td><td class="num">—</td><td></td></tr><tr><td>pairAccuracy</td><td><span class="mark" data-v="unknown">recorded</span></td><td class="num">N/A</td><td class="num">1</td><td class="num">—</td><td class="num">—</td><td></td></tr><tr><td>rowPrecision</td><td><span class="mark" data-v="unknown">recorded</span></td><td class="num">N/A</td><td class="num">1</td><td class="num">—</td><td class="num">—</td><td></td></tr><tr><td>rowRecall</td><td><span class="mark" data-v="unknown">recorded</span></td><td class="num">N/A</td><td class="num">1</td><td class="num">—</td><td class="num">—</td><td></td></tr><tr><td>rowF1</td><td><span class="mark" data-v="unknown">recorded</span></td><td class="num">N/A</td><td class="num">1</td><td class="num">—</td><td class="num">—</td><td></td></tr><tr><td>rowAccuracy</td><td><span class="mark" data-v="unknown">recorded</span></td><td class="num">N/A</td><td class="num">1</td><td class="num">—</td><td class="num">—</td><td></td></tr></tbody>
+</table></div>
+<div class="grid" style="margin-top:12px">
+  <dl class="card"><dt>Quality score (mean)</dt><dd>1</dd><dd class="lead">Weighted reading over the axes. It is not the reward.</dd></dl>
+  <dl class="card"><dt>Reward composition</dt><dd>Withheld from the public report.</dd></dl>
+</div><h3>Behavioural analysis</h3>
+<h4>Long-horizon behaviour</h4>
+<p class="lead">Counted off the recorded trace of each rollout. A dead end is a step that moved nothing: a re-read of a slice already returned, a repeat of the previous action, or a call to a tool this exam does not have.</p>
+<div class="scroll"><table>
+  <thead><tr>
+    <th>Model</th><th>N</th><th>Steps used</th><th>Ran out of steps</th>
+    <th>Commands</th><th>Changed the tree</th><th>Refused (over budget)</th>
+    <th>Revisits</th><th>Dead ends / rollout</th>
+  </tr></thead>
+  <tbody><tr><td>cli:cli/codex</td><td class="num">10</td><td class="num">7 / 24</td><td class="num">0</td><td class="num">0 / 0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td></tr><tr><td>cli:cli/claude-sonnet</td><td class="num">10</td><td class="num">5 / 24</td><td class="num">0</td><td class="num">0 / 0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td></tr></tbody>
+</table></div>
+<p class="lead">Each column is defined in Appendix D.</p>
+
+<h4>Hallucination &amp; overclaim</h4>
+<p class="lead">
+  Three measurements, each with a stated definition. None of them is a judgement of the
+  model's prose by another model — every number below comes from comparing what the model
+  wrote against what was on disk, or against what the independent grader returned.
+</p>
+<div class="scroll"><table>
+  <thead><tr><th>Model</th><th>n</th><th>Grounding failures</th><th>Kinds</th>
+    <th>Rollouts affected</th><th>Overclaims</th><th>Overclaim rate</th><th>Re-reads</th></tr></thead>
+  <tbody><tr><td>cli:cli/codex</td><td class="num">10</td><td class="num">0</td><td>none</td><td class="num">0 / 10</td><td class="num">0 / 10</td><td class="num">0.0%</td><td class="num">0</td></tr><tr><td>cli:cli/claude-sonnet</td><td class="num">10</td><td class="num">0</td><td>none</td><td class="num">0 / 10</td><td class="num">0 / 10</td><td class="num">0.0%</td><td class="num">0</td></tr></tbody>
+</table></div>
+<div class="caveat"><p>No grounding failures and no false pass claims were detected across these 20 rollout(s). No lane re-read material it had already been given.</p></div>
+<p class="lead">Every term above is defined in Appendix D.</p><h3>Findings</h3>
+<p class="lead">
+  Every finding below is derived from the recorded data of this run — none is an opinion.
+  Severity: <span class="chip" data-sev="pass">PASS</span> a lane succeeded ·
+  <span class="chip" data-sev="attention">ATTENTION</span> a capability gap ·
+  <span class="chip" data-sev="lane">LANE / INFRA</span> infrastructure, not capability ·
+  <span class="chip" data-sev="info">NOTE</span> a property of the measurement.
+</p>
+<div class="findings"><div class="finding" data-sev="pass">
+  <div class="fhead">
+    <span class="fid">F-01</span>
+    <span class="chip" data-sev="pass">PASS</span>
+  </div>
+  <p class="ftitle">cli/claude-sonnet, cli/codex passed the independent hidden tests</p>
+  <div class="fsev">
+    <div class="sevcell" data-sev="pass">Severity: PASS</div>
+    <div>Evidence: Model outcomes · Stage funnel · Appendix A</div>
+  </div>
+  <p class="fbody">20 of 20 graded rollouts completed the applicable annotation workflow and were accepted by the independent annotation grader. This demonstrates the task is solvable under the published limits.</p>
+  <p class="fev">F-01 · derived from the recorded run data</p>
+</div></div><h3>Recommendations</h3>
+<p class="lead">Every rollout in this run passed; there is nothing to recommend beyond re-measuring on a harder exam.</p><h3>Verification</h3>
+<div class="grid">
+  <dl class="card"><dt>Run id</dt><dd>live-20260907T090222Z</dd></dl>
+  <dl class="card"><dt>Exam fingerprint</dt><dd><span class="mono">5d6b3708dba2cdf08218a44997058413d0a3aae738299bce8c346bb2b309fc28</span></dd><dd class="lead">The contract digest this run was executed against.</dd></dl>
+</div>
+
+<h4>Provenance of this chapter</h4>
+<p class="lead">This chapter was rendered by the campaign generator from the sealed evaluation
+record; it is not the standalone report reproduced byte for byte. Verify the standalone report
+with its own digest, verify the record with <span class="mono">vvdex-env records verify</span>,
+and verify this campaign document as a whole.</p>
+<div class="grid"><dl class="card"><dt>Relationship</dt><dd>campaign-rendered chapter</dd><dd class="lead">Derived from the same sealed evaluation record as the standalone report; these bytes are authenticated by the campaign artifact that contains them.</dd></dl><dl class="card"><dt>Sealed record digest</dt><dd><span class="mono">3596e3de9ba226bcd00ca746e26e31a8c0cd85b88f82b93d51ab27fd24af6877</span></dd><dd class="lead">sha256 over the record&#x27;s canonical JSON — the identity every renderer works from.</dd></dl><dl class="card"><dt>Source record file</dt><dd><span class="mono">c67d426d290550b675391326f2941e25021b96275e8b3d0d01cd064c7189197a</span></dd><dd class="lead">sha256 of fr-20260907-cd08adce.json as written beside the standalone report.</dd></dl><dl class="card"><dt>Source standalone report</dt><dd><span class="mono">a609b424b13bd6faacc4379295cea88b0ec677bd3b285832daa135ec76fa8d11</span></dd><dd class="lead">sha256 of fr-20260907-cd08adce.html — independently verifiable with its own digest.</dd></dl><dl class="card"><dt>Source standalone PDF</dt><dd><span class="mono">e40ef33940015815bdb26849b535417e759c1daadcb073fb9bb7802fbda7e6d7</span></dd><dd class="lead">sha256 of fr-20260907-cd08adce.pdf.</dd></dl><dl class="card"><dt>Run evidence bundle</dt><dd><span class="mono">cd08adce2a28569943c9ef42d4002456036f7ce669e26c4801160ddedfdafdac</span></dd><dd class="lead">The digest the run&#x27;s own bundle computed over itself.</dd></dl><dl class="card"><dt>Certified evidence seal</dt><dd><span class="mono">6844331643ab3301e2c3cb129edef1ca2bc06b5d0baaa69ba0b3762c6a941c4c</span></dd><dd class="lead">The exam&#x27;s sealed evidence, established before this run.</dd></dl></div>
+<h4>Measurement history</h4>
+<p class="lead">This is the first recorded run on this exam. There is nothing to compare it against yet, and a single measurement is not a trend.</p>
+<p class="lead">The full artifact-by-artifact digest table, and the reproduction protocol,
+are in Appendix B.</p><h3 class="appendix">Appendix A — every rollout</h3>
+<div class="scroll"><table>
+  <thead><tr>
+    <th>Rollout</th><th>Model</th><th>Seed</th><th>Outcome</th><th>Submitted</th>
+    <th>Deepest stage</th><th>Hidden tests</th><th>Files</th><th>Tokens</th><th>Elapsed</th>
+  </tr></thead>
+  <tbody><tr class="row-pass"><td class="mono">b8eda0e7</td><td>cli/codex</td><td class="num">0</td><td>submitted_passed</td><td><span class="mark" data-v="pass">yes</span></td><td>Passed</td><td><span class="mark" data-v="pass">pass</span></td><td class="num">1</td><td class="num">n/a</td><td class="num">66.2s</td></tr><tr class="row-pass"><td class="mono">1477727f</td><td>cli/codex</td><td class="num">1</td><td>submitted_passed</td><td><span class="mark" data-v="pass">yes</span></td><td>Passed</td><td><span class="mark" data-v="pass">pass</span></td><td class="num">1</td><td class="num">n/a</td><td class="num">57.2s</td></tr><tr class="row-pass"><td class="mono">e59a52e2</td><td>cli/codex</td><td class="num">2</td><td>submitted_passed</td><td><span class="mark" data-v="pass">yes</span></td><td>Passed</td><td><span class="mark" data-v="pass">pass</span></td><td class="num">1</td><td class="num">n/a</td><td class="num">57.1s</td></tr><tr class="row-pass"><td class="mono">d0fcd4ea</td><td>cli/codex</td><td class="num">3</td><td>submitted_passed</td><td><span class="mark" data-v="pass">yes</span></td><td>Passed</td><td><span class="mark" data-v="pass">pass</span></td><td class="num">1</td><td class="num">n/a</td><td class="num">46.2s</td></tr><tr class="row-pass"><td class="mono">8645fc4a</td><td>cli/codex</td><td class="num">4</td><td>submitted_passed</td><td><span class="mark" data-v="pass">yes</span></td><td>Passed</td><td><span class="mark" data-v="pass">pass</span></td><td class="num">1</td><td class="num">n/a</td><td class="num">63.5s</td></tr><tr class="row-pass"><td class="mono">4f6607c4</td><td>cli/codex</td><td class="num">5</td><td>submitted_passed</td><td><span class="mark" data-v="pass">yes</span></td><td>Passed</td><td><span class="mark" data-v="pass">pass</span></td><td class="num">1</td><td class="num">n/a</td><td class="num">60.5s</td></tr><tr class="row-pass"><td class="mono">ca2be4a6</td><td>cli/codex</td><td class="num">6</td><td>submitted_passed</td><td><span class="mark" data-v="pass">yes</span></td><td>Passed</td><td><span class="mark" data-v="pass">pass</span></td><td class="num">1</td><td class="num">n/a</td><td class="num">57.8s</td></tr><tr class="row-pass"><td class="mono">54e94bfb</td><td>cli/codex</td><td class="num">7</td><td>submitted_passed</td><td><span class="mark" data-v="pass">yes</span></td><td>Passed</td><td><span class="mark" data-v="pass">pass</span></td><td class="num">1</td><td class="num">n/a</td><td class="num">53.8s</td></tr><tr class="row-pass"><td class="mono">8ec7d239</td><td>cli/codex</td><td class="num">8</td><td>submitted_passed</td><td><span class="mark" data-v="pass">yes</span></td><td>Passed</td><td><span class="mark" data-v="pass">pass</span></td><td class="num">1</td><td class="num">n/a</td><td class="num">56.8s</td></tr><tr class="row-pass"><td class="mono">6146c764</td><td>cli/codex</td><td class="num">9</td><td>submitted_passed</td><td><span class="mark" data-v="pass">yes</span></td><td>Passed</td><td><span class="mark" data-v="pass">pass</span></td><td class="num">1</td><td class="num">n/a</td><td class="num">50.3s</td></tr><tr class="row-pass"><td class="mono">3950adf9</td><td>cli/claude-sonnet</td><td class="num">0</td><td>submitted_passed</td><td><span class="mark" data-v="pass">yes</span></td><td>Passed</td><td><span class="mark" data-v="pass">pass</span></td><td class="num">1</td><td class="num">n/a</td><td class="num">24.2s</td></tr><tr class="row-pass"><td class="mono">f6899f85</td><td>cli/claude-sonnet</td><td class="num">1</td><td>submitted_passed</td><td><span class="mark" data-v="pass">yes</span></td><td>Passed</td><td><span class="mark" data-v="pass">pass</span></td><td class="num">1</td><td class="num">n/a</td><td class="num">22.1s</td></tr><tr class="row-pass"><td class="mono">4ce52860</td><td>cli/claude-sonnet</td><td class="num">2</td><td>submitted_passed</td><td><span class="mark" data-v="pass">yes</span></td><td>Passed</td><td><span class="mark" data-v="pass">pass</span></td><td class="num">1</td><td class="num">n/a</td><td class="num">17.0s</td></tr><tr class="row-pass"><td class="mono">b9e9d7f7</td><td>cli/claude-sonnet</td><td class="num">3</td><td>submitted_passed</td><td><span class="mark" data-v="pass">yes</span></td><td>Passed</td><td><span class="mark" data-v="pass">pass</span></td><td class="num">1</td><td class="num">n/a</td><td class="num">21.9s</td></tr><tr class="row-pass"><td class="mono">8ae4a7c0</td><td>cli/claude-sonnet</td><td class="num">4</td><td>submitted_passed</td><td><span class="mark" data-v="pass">yes</span></td><td>Passed</td><td><span class="mark" data-v="pass">pass</span></td><td class="num">1</td><td class="num">n/a</td><td class="num">21.4s</td></tr><tr class="row-pass"><td class="mono">0667cb37</td><td>cli/claude-sonnet</td><td class="num">5</td><td>submitted_passed</td><td><span class="mark" data-v="pass">yes</span></td><td>Passed</td><td><span class="mark" data-v="pass">pass</span></td><td class="num">1</td><td class="num">n/a</td><td class="num">15.6s</td></tr><tr class="row-pass"><td class="mono">4012da48</td><td>cli/claude-sonnet</td><td class="num">6</td><td>submitted_passed</td><td><span class="mark" data-v="pass">yes</span></td><td>Passed</td><td><span class="mark" data-v="pass">pass</span></td><td class="num">1</td><td class="num">n/a</td><td class="num">18.2s</td></tr><tr class="row-pass"><td class="mono">e625725f</td><td>cli/claude-sonnet</td><td class="num">7</td><td>submitted_passed</td><td><span class="mark" data-v="pass">yes</span></td><td>Passed</td><td><span class="mark" data-v="pass">pass</span></td><td class="num">1</td><td class="num">n/a</td><td class="num">18.9s</td></tr><tr class="row-pass"><td class="mono">fbad5bb3</td><td>cli/claude-sonnet</td><td class="num">8</td><td>submitted_passed</td><td><span class="mark" data-v="pass">yes</span></td><td>Passed</td><td><span class="mark" data-v="pass">pass</span></td><td class="num">1</td><td class="num">n/a</td><td class="num">16.4s</td></tr><tr class="row-pass"><td class="mono">1a963341</td><td>cli/claude-sonnet</td><td class="num">9</td><td>submitted_passed</td><td><span class="mark" data-v="pass">yes</span></td><td>Passed</td><td><span class="mark" data-v="pass">pass</span></td><td class="num">1</td><td class="num">n/a</td><td class="num">26.3s</td></tr></tbody>
+</table></div>
+
+<h4>Failure taxonomy</h4>
+<div class="scroll"><table>
+  <thead><tr><th>Class</th><th>Count</th><th>What it means</th></tr></thead>
+  <tbody><tr><td colspan="3">No failures recorded in this run.</td></tr></tbody>
+</table></div><h3 class="appendix">Appendix B — evidence and artifact digests</h3>
+<div class="grid">
+  <dl class="card"><dt>Run bundle digest</dt><dd><span class="mono">cd08adce2a28569943c9ef42d4002456036f7ce669e26c4801160ddedfdafdac</span></dd></dl>
+  <dl class="card"><dt>Run id</dt><dd>live-20260907T090222Z</dd></dl>
+  <dl class="card"><dt>Started</dt><dd>2026-09-07T09:02:22.053916+00:00</dd></dl>
+  <dl class="card"><dt>Finished</dt><dd>2026-09-07T09:15:29.780105+00:00</dd></dl>
+</div>
+<h4>Artifact digests</h4>
+<div class="scroll"><table>
+  <thead><tr><th>Artifact</th><th>SHA-256</th></tr></thead>
+  <tbody><tr><td class="mono">publicSummary</td><td class="mono">4d50fc6ef69cc9adaa0033e397f56fc5d0eaeaa26cfac97ea2914ce3b96ed5b1</td></tr><tr><td class="mono">rollouts/0667cb37-cd47-49cf-93a1-47698ca729fc.json</td><td class="mono">2092dab814f297b26b3030470861b0da26ab9643f444e2ad412a50c08f6dca11</td></tr><tr><td class="mono">rollouts/1477727f-dbc3-450e-b2ed-e82f6d69d655.json</td><td class="mono">865a5df98ffa14b929a640031a62a287766dc7ab02ce83d43d77163552eb504f</td></tr><tr><td class="mono">rollouts/1a963341-3836-4e59-b927-3e25494a79cd.json</td><td class="mono">6845bef96afe967be4f21e26561b7dd7e2098486f53deac650d9aee968ca725e</td></tr><tr><td class="mono">rollouts/3950adf9-665f-44d1-bb33-8e78bdb713d0.json</td><td class="mono">f2a1936905cb4ebfeb283a0a72f31514d35563397d31bd4bf0406d323bbf954d</td></tr><tr><td class="mono">rollouts/4012da48-6b0d-48ba-862a-9252d599d87b.json</td><td class="mono">2cc7b2a5966189cca577594791cc04ca7305dd7a439b12be22c122d7735b94b9</td></tr><tr><td class="mono">rollouts/4ce52860-fcb9-404f-867d-db6ffc0f94dc.json</td><td class="mono">7fecf3a9e9897a2bcb3eb38ccaf3ed5ce9bee012e7539633c103e055c59b442f</td></tr><tr><td class="mono">rollouts/4f6607c4-6b85-41fd-a939-f33bae3d7b00.json</td><td class="mono">1d39c61936b8f9069704f1ba4e6090ea68e650702229f4b80e78b0bfda3bafe7</td></tr><tr><td class="mono">rollouts/54e94bfb-577b-4579-8ed8-eb88ad186676.json</td><td class="mono">e7334209c42ddd8846b0c2a43b63edc01629896517f0f78a6faea2a942679ede</td></tr><tr><td class="mono">rollouts/6146c764-8fe6-4a86-8046-7778477f2ce7.json</td><td class="mono">3ffd3da00db0b55e6d337804e6668c87d5d662ac30054d3e32be362550fe921f</td></tr><tr><td class="mono">rollouts/8645fc4a-bece-44c1-80d3-b45f6f94ac09.json</td><td class="mono">4324ad56d93f96cb414eebd24d1af5ed07689a75e46599adb8acccbffc83b4f2</td></tr><tr><td class="mono">rollouts/8ae4a7c0-97cd-447a-9c58-7f4e39c0f014.json</td><td class="mono">b2c1daa80dbfc283e2a682566f0212edb97d1260e0ff1b0cddb5d044d5f08caa</td></tr><tr><td class="mono">rollouts/8ec7d239-f799-438e-8fe9-1bb6394a49a7.json</td><td class="mono">813adf4fedba739e90830d1cd70a3c07853adba06e3b9fd429b7080df93a487a</td></tr><tr><td class="mono">rollouts/b8eda0e7-467a-47b0-a562-e998a3c58062.json</td><td class="mono">287b27a0a1eebe22c403cb16d23ce4908c0d06a09e9e6eaece7f2a230d1a596b</td></tr><tr><td class="mono">rollouts/b9e9d7f7-5ce5-47b0-a67b-78da031148c0.json</td><td class="mono">7326e64fa8e27c12b9acf57ac531a9d4a8255caeb40f3d839735a5c93a4f2f57</td></tr><tr><td class="mono">rollouts/ca2be4a6-e749-469d-b98a-93dc066e6acc.json</td><td class="mono">9f268e0e3613f786b65bcf627de81000ddb0049798a036d5be066827ecbf3069</td></tr><tr><td class="mono">rollouts/d0fcd4ea-b3f8-4112-a47e-faec759104c8.json</td><td class="mono">46b356221f8b1f9cdc8e183e04f64797183d9f400831d99dd3312ae1ba68891b</td></tr><tr><td class="mono">rollouts/e59a52e2-a69f-4f07-aa02-26d91aaa3214.json</td><td class="mono">18b36e3eeff4e889e7e65e459f7392605cdb713b5eca1a033538d98594c74be9</td></tr><tr><td class="mono">rollouts/e625725f-ecc0-4baf-b968-bdce899125d1.json</td><td class="mono">c00eca8107b6fedf0b5f8c76b0bccb2cb6ac1265fe625da2c2461456f57fcc76</td></tr><tr><td class="mono">rollouts/f6899f85-7249-4408-bd32-80529c4def1f.json</td><td class="mono">a695ece0af7783b68fd4e1aefd2beea82cb479e275bed5fa1cd7211bb6dd868c</td></tr><tr><td class="mono">rollouts/fbad5bb3-f112-4f8a-bb9e-9def207856ff.json</td><td class="mono">b7a61de5b09fb53f44728d12845f179865b1865e1eefa37f4fb0aeeffc5f7730</td></tr><tr><td class="mono">spec</td><td class="mono">26fc48c29ae61b08841c8f2b906ca64cdfe05650e26452f759f052c5d995e78b</td></tr><tr><td class="mono">summary</td><td class="mono">4c9a2c9cf1c77ac1fd4a255f2a2b2390fec187ca3712ba3a5a0323e976218346</td></tr></tbody>
+</table></div>
+<h4>Reproducing this run</h4>
+<p class="lead">
+  Every rollout can be re-derived: the exam is frozen (fingerprint above), the grader ran in
+  the recorded container image, and each rollout's full trace — every tool call, every result,
+  every word — is in the evidence bundle at its <span class="mono">rollouts/&lt;id&gt;.json</span>
+  path. A re-run uses the same job shape: the exam id, your endpoint, n, and the runtime. The
+  record id names this run forever.
+</p>
+<h3 class="appendix">Appendix C — redacted transcripts</h3>
+<p class="lead">For each rollout: the tool calls it made, in order — which tool, on which of the model&#x27;s own paths, whether the call succeeded, and how many characters came back. What a tool returned is not here, and neither is the submission: on this exam the submitted content is the graded answer, so no diff, no answer value and no model claim is printed. A request for the reference solution or the hidden tests is recorded as a request; the path it asked for is replaced by a label. See Appendix D, “What this report withholds and why”.</p>
+<p class="lead">Disclosure class applied to this exam: answer-key disclosure (ownership vvdex_proprietary — no declaration — proprietary by default; family annotation): the exam is VVDex evaluation IP and the graded output is an answer or a keyed value, so no submission content, diff, model claim or hidden-assertion name is published.</p>
+
+<div class="trace">
+  <h4>b8eda0e7 · cli:cli/codex · seed 0 · submitted_passed</h4>
+  <div class="scroll"><table>
+    <thead><tr><th>Step</th><th>Tool</th><th>Path</th><th>Result</th><th>Chars</th></tr></thead>
+    <tbody><tr><td class="num">0</td><td>list_files</td><td class="mono">.</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">81</td></tr><tr><td class="num">1</td><td>read_file</td><td class="mono">TASK.md</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">520</td></tr><tr><td class="num">2</td><td>read_file</td><td class="mono">annotation-task.json</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">3 290</td></tr><tr><td class="num">3</td><td>read_file</td><td class="mono">assets/records.json</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">295</td></tr><tr><td class="num">4</td><td>read_file</td><td class="mono">submission.json</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">74</td></tr><tr><td class="num">5</td><td>edit_file</td><td class="mono">submission.json</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">53</td></tr><tr><td class="num">6</td><td>run_tests</td><td class="mono">—</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">160</td></tr><tr><td class="num">7</td><td>submit</td><td class="mono">—</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">85</td></tr></tbody>
+  </table></div>
+  <p class="lead">Submission diff withheld by the public-disclosure policy (37 line(s) changed). Submission content withheld — proprietary evaluation material. On this exam the submitted change is the graded answer, so publishing an excerpt of it would publish the answer key.</p>
+</div>
+<div class="trace">
+  <h4>1477727f · cli:cli/codex · seed 1 · submitted_passed</h4>
+  <div class="scroll"><table>
+    <thead><tr><th>Step</th><th>Tool</th><th>Path</th><th>Result</th><th>Chars</th></tr></thead>
+    <tbody><tr><td class="num">0</td><td>list_files</td><td class="mono">.</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">81</td></tr><tr><td class="num">1</td><td>read_file</td><td class="mono">TASK.md</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">520</td></tr><tr><td class="num">2</td><td>read_file</td><td class="mono">annotation-task.json</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">3 290</td></tr><tr><td class="num">3</td><td>read_file</td><td class="mono">assets/records.json</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">295</td></tr><tr><td class="num">4</td><td>read_file</td><td class="mono">submission.json</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">74</td></tr><tr><td class="num">5</td><td>write_file</td><td class="mono">submission.json</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">64</td></tr><tr><td class="num">6</td><td>run_tests</td><td class="mono">—</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">160</td></tr><tr><td class="num">7</td><td>submit</td><td class="mono">—</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">85</td></tr></tbody>
+  </table></div>
+  <p class="lead">Submission diff withheld by the public-disclosure policy (38 line(s) changed). Submission content withheld — proprietary evaluation material. On this exam the submitted change is the graded answer, so publishing an excerpt of it would publish the answer key.</p>
+</div>
+<div class="trace">
+  <h4>e59a52e2 · cli:cli/codex · seed 2 · submitted_passed</h4>
+  <div class="scroll"><table>
+    <thead><tr><th>Step</th><th>Tool</th><th>Path</th><th>Result</th><th>Chars</th></tr></thead>
+    <tbody><tr><td class="num">0</td><td>list_files</td><td class="mono">.</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">81</td></tr><tr><td class="num">1</td><td>read_file</td><td class="mono">TASK.md</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">520</td></tr><tr><td class="num">2</td><td>read_file</td><td class="mono">annotation-task.json</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">3 290</td></tr><tr><td class="num">3</td><td>read_file</td><td class="mono">assets/records.json</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">295</td></tr><tr><td class="num">4</td><td>read_file</td><td class="mono">submission.json</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">74</td></tr><tr><td class="num">5</td><td>write_file</td><td class="mono">submission.json</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">64</td></tr><tr><td class="num">6</td><td>run_tests</td><td class="mono">—</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">160</td></tr><tr><td class="num">7</td><td>submit</td><td class="mono">—</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">85</td></tr></tbody>
+  </table></div>
+  <p class="lead">Submission diff withheld by the public-disclosure policy (39 line(s) changed). Submission content withheld — proprietary evaluation material. On this exam the submitted change is the graded answer, so publishing an excerpt of it would publish the answer key.</p>
+</div>
+<div class="trace">
+  <h4>d0fcd4ea · cli:cli/codex · seed 3 · submitted_passed</h4>
+  <div class="scroll"><table>
+    <thead><tr><th>Step</th><th>Tool</th><th>Path</th><th>Result</th><th>Chars</th></tr></thead>
+    <tbody><tr><td class="num">0</td><td>read_file</td><td class="mono">TASK.md</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">520</td></tr><tr><td class="num">1</td><td>read_file</td><td class="mono">annotation-task.json</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">3 290</td></tr><tr><td class="num">2</td><td>read_file</td><td class="mono">assets/records.json</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">295</td></tr><tr><td class="num">3</td><td>write_file</td><td class="mono">submission.json</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">64</td></tr><tr><td class="num">4</td><td>run_tests</td><td class="mono">—</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">160</td></tr><tr><td class="num">5</td><td>submit</td><td class="mono">—</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">85</td></tr></tbody>
+  </table></div>
+  <p class="lead">Submission diff withheld by the public-disclosure policy (9 line(s) changed). Submission content withheld — proprietary evaluation material. On this exam the submitted change is the graded answer, so publishing an excerpt of it would publish the answer key.</p>
+</div>
+<div class="trace">
+  <h4>8645fc4a · cli:cli/codex · seed 4 · submitted_passed</h4>
+  <div class="scroll"><table>
+    <thead><tr><th>Step</th><th>Tool</th><th>Path</th><th>Result</th><th>Chars</th></tr></thead>
+    <tbody><tr><td class="num">0</td><td>list_files</td><td class="mono">.</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">81</td></tr><tr><td class="num">1</td><td>read_file</td><td class="mono">TASK.md</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">520</td></tr><tr><td class="num">2</td><td>read_file</td><td class="mono">annotation-task.json</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">3 290</td></tr><tr><td class="num">3</td><td>read_file</td><td class="mono">assets/records.json</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">295</td></tr><tr><td class="num">4</td><td>read_file</td><td class="mono">submission.json</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">74</td></tr><tr><td class="num">5</td><td>write_file</td><td class="mono">submission.json</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">64</td></tr><tr><td class="num">6</td><td>run_tests</td><td class="mono">—</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">160</td></tr><tr><td class="num">7</td><td>submit</td><td class="mono">—</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">85</td></tr></tbody>
+  </table></div>
+  <p class="lead">Submission diff withheld by the public-disclosure policy (41 line(s) changed). Submission content withheld — proprietary evaluation material. On this exam the submitted change is the graded answer, so publishing an excerpt of it would publish the answer key.</p>
+</div>
+<div class="trace">
+  <h4>4f6607c4 · cli:cli/codex · seed 5 · submitted_passed</h4>
+  <div class="scroll"><table>
+    <thead><tr><th>Step</th><th>Tool</th><th>Path</th><th>Result</th><th>Chars</th></tr></thead>
+    <tbody><tr><td class="num">0</td><td>list_files</td><td class="mono">.</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">81</td></tr><tr><td class="num">1</td><td>read_file</td><td class="mono">TASK.md</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">520</td></tr><tr><td class="num">2</td><td>read_file</td><td class="mono">annotation-task.json</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">3 290</td></tr><tr><td class="num">3</td><td>read_file</td><td class="mono">assets/records.json</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">295</td></tr><tr><td class="num">4</td><td>read_file</td><td class="mono">submission.json</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">74</td></tr><tr><td class="num">5</td><td>write_file</td><td class="mono">submission.json</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">64</td></tr><tr><td class="num">6</td><td>run_tests</td><td class="mono">—</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">160</td></tr><tr><td class="num">7</td><td>submit</td><td class="mono">—</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">85</td></tr></tbody>
+  </table></div>
+  <p class="lead">Submission diff withheld by the public-disclosure policy (38 line(s) changed). Submission content withheld — proprietary evaluation material. On this exam the submitted change is the graded answer, so publishing an excerpt of it would publish the answer key.</p>
+</div>
+<div class="trace">
+  <h4>ca2be4a6 · cli:cli/codex · seed 6 · submitted_passed</h4>
+  <div class="scroll"><table>
+    <thead><tr><th>Step</th><th>Tool</th><th>Path</th><th>Result</th><th>Chars</th></tr></thead>
+    <tbody><tr><td class="num">0</td><td>list_files</td><td class="mono">.</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">81</td></tr><tr><td class="num">1</td><td>read_file</td><td class="mono">TASK.md</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">520</td></tr><tr><td class="num">2</td><td>read_file</td><td class="mono">annotation-task.json</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">3 290</td></tr><tr><td class="num">3</td><td>read_file</td><td class="mono">assets/records.json</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">295</td></tr><tr><td class="num">4</td><td>read_file</td><td class="mono">submission.json</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">74</td></tr><tr><td class="num">5</td><td>write_file</td><td class="mono">submission.json</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">64</td></tr><tr><td class="num">6</td><td>run_tests</td><td class="mono">—</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">160</td></tr><tr><td class="num">7</td><td>submit</td><td class="mono">—</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">85</td></tr></tbody>
+  </table></div>
+  <p class="lead">Submission diff withheld by the public-disclosure policy (38 line(s) changed). Submission content withheld — proprietary evaluation material. On this exam the submitted change is the graded answer, so publishing an excerpt of it would publish the answer key.</p>
+</div>
+<div class="trace">
+  <h4>54e94bfb · cli:cli/codex · seed 7 · submitted_passed</h4>
+  <div class="scroll"><table>
+    <thead><tr><th>Step</th><th>Tool</th><th>Path</th><th>Result</th><th>Chars</th></tr></thead>
+    <tbody><tr><td class="num">0</td><td>list_files</td><td class="mono">.</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">81</td></tr><tr><td class="num">1</td><td>read_file</td><td class="mono">TASK.md</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">520</td></tr><tr><td class="num">2</td><td>read_file</td><td class="mono">annotation-task.json</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">3 290</td></tr><tr><td class="num">3</td><td>read_file</td><td class="mono">assets/records.json</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">295</td></tr><tr><td class="num">4</td><td>read_file</td><td class="mono">submission.json</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">74</td></tr><tr><td class="num">5</td><td>write_file</td><td class="mono">submission.json</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">64</td></tr><tr><td class="num">6</td><td>run_tests</td><td class="mono">—</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">160</td></tr><tr><td class="num">7</td><td>submit</td><td class="mono">—</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">85</td></tr></tbody>
+  </table></div>
+  <p class="lead">Submission diff withheld by the public-disclosure policy (38 line(s) changed). Submission content withheld — proprietary evaluation material. On this exam the submitted change is the graded answer, so publishing an excerpt of it would publish the answer key.</p>
+</div>
+<div class="trace">
+  <h4>8ec7d239 · cli:cli/codex · seed 8 · submitted_passed</h4>
+  <div class="scroll"><table>
+    <thead><tr><th>Step</th><th>Tool</th><th>Path</th><th>Result</th><th>Chars</th></tr></thead>
+    <tbody><tr><td class="num">0</td><td>list_files</td><td class="mono">.</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">81</td></tr><tr><td class="num">1</td><td>read_file</td><td class="mono">TASK.md</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">520</td></tr><tr><td class="num">2</td><td>read_file</td><td class="mono">annotation-task.json</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">3 290</td></tr><tr><td class="num">3</td><td>read_file</td><td class="mono">assets/records.json</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">295</td></tr><tr><td class="num">4</td><td>read_file</td><td class="mono">submission.json</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">74</td></tr><tr><td class="num">5</td><td>write_file</td><td class="mono">submission.json</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">64</td></tr><tr><td class="num">6</td><td>run_tests</td><td class="mono">—</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">160</td></tr><tr><td class="num">7</td><td>submit</td><td class="mono">—</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">85</td></tr></tbody>
+  </table></div>
+  <p class="lead">Submission diff withheld by the public-disclosure policy (38 line(s) changed). Submission content withheld — proprietary evaluation material. On this exam the submitted change is the graded answer, so publishing an excerpt of it would publish the answer key.</p>
+</div>
+<div class="trace">
+  <h4>6146c764 · cli:cli/codex · seed 9 · submitted_passed</h4>
+  <div class="scroll"><table>
+    <thead><tr><th>Step</th><th>Tool</th><th>Path</th><th>Result</th><th>Chars</th></tr></thead>
+    <tbody><tr><td class="num">0</td><td>list_files</td><td class="mono">.</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">81</td></tr><tr><td class="num">1</td><td>read_file</td><td class="mono">TASK.md</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">520</td></tr><tr><td class="num">2</td><td>read_file</td><td class="mono">annotation-task.json</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">3 290</td></tr><tr><td class="num">3</td><td>read_file</td><td class="mono">assets/records.json</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">295</td></tr><tr><td class="num">4</td><td>read_file</td><td class="mono">submission.json</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">74</td></tr><tr><td class="num">5</td><td>write_file</td><td class="mono">submission.json</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">64</td></tr><tr><td class="num">6</td><td>run_tests</td><td class="mono">—</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">160</td></tr><tr><td class="num">7</td><td>submit</td><td class="mono">—</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">85</td></tr></tbody>
+  </table></div>
+  <p class="lead">Submission diff withheld by the public-disclosure policy (39 line(s) changed). Submission content withheld — proprietary evaluation material. On this exam the submitted change is the graded answer, so publishing an excerpt of it would publish the answer key.</p>
+</div>
+<div class="trace">
+  <h4>3950adf9 · cli:cli/claude-sonnet · seed 0 · submitted_passed</h4>
+  <div class="scroll"><table>
+    <thead><tr><th>Step</th><th>Tool</th><th>Path</th><th>Result</th><th>Chars</th></tr></thead>
+    <tbody><tr><td class="num">0</td><td>read_file</td><td class="mono">TASK.md</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">520</td></tr><tr><td class="num">1</td><td>read_file</td><td class="mono">annotation-task.json</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">3 290</td></tr><tr><td class="num">2</td><td>write_file</td><td class="mono">submission.json</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">64</td></tr><tr><td class="num">3</td><td>run_tests</td><td class="mono">—</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">160</td></tr><tr><td class="num">4</td><td>submit</td><td class="mono">—</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">85</td></tr></tbody>
+  </table></div>
+  <p class="lead">Submission diff withheld by the public-disclosure policy (39 line(s) changed). Submission content withheld — proprietary evaluation material. On this exam the submitted change is the graded answer, so publishing an excerpt of it would publish the answer key.</p>
+</div>
+<div class="trace">
+  <h4>f6899f85 · cli:cli/claude-sonnet · seed 1 · submitted_passed</h4>
+  <div class="scroll"><table>
+    <thead><tr><th>Step</th><th>Tool</th><th>Path</th><th>Result</th><th>Chars</th></tr></thead>
+    <tbody><tr><td class="num">0</td><td>read_file</td><td class="mono">TASK.md</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">520</td></tr><tr><td class="num">1</td><td>read_file</td><td class="mono">annotation-task.json</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">3 290</td></tr><tr><td class="num">2</td><td>write_file</td><td class="mono">submission.json</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">64</td></tr><tr><td class="num">3</td><td>run_tests</td><td class="mono">—</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">160</td></tr><tr><td class="num">4</td><td>submit</td><td class="mono">—</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">85</td></tr></tbody>
+  </table></div>
+  <p class="lead">Submission diff withheld by the public-disclosure policy (39 line(s) changed). Submission content withheld — proprietary evaluation material. On this exam the submitted change is the graded answer, so publishing an excerpt of it would publish the answer key.</p>
+</div>
+<div class="trace">
+  <h4>4ce52860 · cli:cli/claude-sonnet · seed 2 · submitted_passed</h4>
+  <div class="scroll"><table>
+    <thead><tr><th>Step</th><th>Tool</th><th>Path</th><th>Result</th><th>Chars</th></tr></thead>
+    <tbody><tr><td class="num">0</td><td>read_file</td><td class="mono">TASK.md</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">520</td></tr><tr><td class="num">1</td><td>read_file</td><td class="mono">annotation-task.json</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">3 290</td></tr><tr><td class="num">2</td><td>write_file</td><td class="mono">submission.json</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">64</td></tr><tr><td class="num">3</td><td>run_tests</td><td class="mono">—</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">160</td></tr><tr><td class="num">4</td><td>submit</td><td class="mono">—</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">85</td></tr></tbody>
+  </table></div>
+  <p class="lead">Submission diff withheld by the public-disclosure policy (39 line(s) changed). Submission content withheld — proprietary evaluation material. On this exam the submitted change is the graded answer, so publishing an excerpt of it would publish the answer key.</p>
+</div>
+<div class="trace">
+  <h4>b9e9d7f7 · cli:cli/claude-sonnet · seed 3 · submitted_passed</h4>
+  <div class="scroll"><table>
+    <thead><tr><th>Step</th><th>Tool</th><th>Path</th><th>Result</th><th>Chars</th></tr></thead>
+    <tbody><tr><td class="num">0</td><td>read_file</td><td class="mono">TASK.md</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">520</td></tr><tr><td class="num">1</td><td>read_file</td><td class="mono">annotation-task.json</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">3 290</td></tr><tr><td class="num">2</td><td>write_file</td><td class="mono">submission.json</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">64</td></tr><tr><td class="num">3</td><td>run_tests</td><td class="mono">—</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">160</td></tr><tr><td class="num">4</td><td>submit</td><td class="mono">—</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">85</td></tr></tbody>
+  </table></div>
+  <p class="lead">Submission diff withheld by the public-disclosure policy (39 line(s) changed). Submission content withheld — proprietary evaluation material. On this exam the submitted change is the graded answer, so publishing an excerpt of it would publish the answer key.</p>
+</div>
+<div class="trace">
+  <h4>8ae4a7c0 · cli:cli/claude-sonnet · seed 4 · submitted_passed</h4>
+  <div class="scroll"><table>
+    <thead><tr><th>Step</th><th>Tool</th><th>Path</th><th>Result</th><th>Chars</th></tr></thead>
+    <tbody><tr><td class="num">0</td><td>read_file</td><td class="mono">TASK.md</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">520</td></tr><tr><td class="num">1</td><td>read_file</td><td class="mono">annotation-task.json</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">3 290</td></tr><tr><td class="num">2</td><td>write_file</td><td class="mono">submission.json</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">64</td></tr><tr><td class="num">3</td><td>run_tests</td><td class="mono">—</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">160</td></tr><tr><td class="num">4</td><td>submit</td><td class="mono">—</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">85</td></tr></tbody>
+  </table></div>
+  <p class="lead">Submission diff withheld by the public-disclosure policy (39 line(s) changed). Submission content withheld — proprietary evaluation material. On this exam the submitted change is the graded answer, so publishing an excerpt of it would publish the answer key.</p>
+</div>
+<div class="trace">
+  <h4>0667cb37 · cli:cli/claude-sonnet · seed 5 · submitted_passed</h4>
+  <div class="scroll"><table>
+    <thead><tr><th>Step</th><th>Tool</th><th>Path</th><th>Result</th><th>Chars</th></tr></thead>
+    <tbody><tr><td class="num">0</td><td>read_file</td><td class="mono">TASK.md</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">520</td></tr><tr><td class="num">1</td><td>read_file</td><td class="mono">annotation-task.json</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">3 290</td></tr><tr><td class="num">2</td><td>write_file</td><td class="mono">submission.json</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">64</td></tr><tr><td class="num">3</td><td>run_tests</td><td class="mono">—</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">160</td></tr><tr><td class="num">4</td><td>submit</td><td class="mono">—</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">85</td></tr></tbody>
+  </table></div>
+  <p class="lead">Submission diff withheld by the public-disclosure policy (39 line(s) changed). Submission content withheld — proprietary evaluation material. On this exam the submitted change is the graded answer, so publishing an excerpt of it would publish the answer key.</p>
+</div>
+<div class="trace">
+  <h4>4012da48 · cli:cli/claude-sonnet · seed 6 · submitted_passed</h4>
+  <div class="scroll"><table>
+    <thead><tr><th>Step</th><th>Tool</th><th>Path</th><th>Result</th><th>Chars</th></tr></thead>
+    <tbody><tr><td class="num">0</td><td>read_file</td><td class="mono">TASK.md</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">520</td></tr><tr><td class="num">1</td><td>read_file</td><td class="mono">annotation-task.json</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">3 290</td></tr><tr><td class="num">2</td><td>write_file</td><td class="mono">submission.json</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">64</td></tr><tr><td class="num">3</td><td>run_tests</td><td class="mono">—</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">160</td></tr><tr><td class="num">4</td><td>submit</td><td class="mono">—</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">85</td></tr></tbody>
+  </table></div>
+  <p class="lead">Submission diff withheld by the public-disclosure policy (39 line(s) changed). Submission content withheld — proprietary evaluation material. On this exam the submitted change is the graded answer, so publishing an excerpt of it would publish the answer key.</p>
+</div>
+<div class="trace">
+  <h4>e625725f · cli:cli/claude-sonnet · seed 7 · submitted_passed</h4>
+  <div class="scroll"><table>
+    <thead><tr><th>Step</th><th>Tool</th><th>Path</th><th>Result</th><th>Chars</th></tr></thead>
+    <tbody><tr><td class="num">0</td><td>read_file</td><td class="mono">TASK.md</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">520</td></tr><tr><td class="num">1</td><td>read_file</td><td class="mono">annotation-task.json</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">3 290</td></tr><tr><td class="num">2</td><td>write_file</td><td class="mono">submission.json</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">64</td></tr><tr><td class="num">3</td><td>run_tests</td><td class="mono">—</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">160</td></tr><tr><td class="num">4</td><td>submit</td><td class="mono">—</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">85</td></tr></tbody>
+  </table></div>
+  <p class="lead">Submission diff withheld by the public-disclosure policy (39 line(s) changed). Submission content withheld — proprietary evaluation material. On this exam the submitted change is the graded answer, so publishing an excerpt of it would publish the answer key.</p>
+</div>
+<div class="trace">
+  <h4>fbad5bb3 · cli:cli/claude-sonnet · seed 8 · submitted_passed</h4>
+  <div class="scroll"><table>
+    <thead><tr><th>Step</th><th>Tool</th><th>Path</th><th>Result</th><th>Chars</th></tr></thead>
+    <tbody><tr><td class="num">0</td><td>read_file</td><td class="mono">TASK.md</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">520</td></tr><tr><td class="num">1</td><td>read_file</td><td class="mono">annotation-task.json</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">3 290</td></tr><tr><td class="num">2</td><td>write_file</td><td class="mono">submission.json</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">64</td></tr><tr><td class="num">3</td><td>run_tests</td><td class="mono">—</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">160</td></tr><tr><td class="num">4</td><td>submit</td><td class="mono">—</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">85</td></tr></tbody>
+  </table></div>
+  <p class="lead">Submission diff withheld by the public-disclosure policy (39 line(s) changed). Submission content withheld — proprietary evaluation material. On this exam the submitted change is the graded answer, so publishing an excerpt of it would publish the answer key.</p>
+</div>
+<div class="trace">
+  <h4>1a963341 · cli:cli/claude-sonnet · seed 9 · submitted_passed</h4>
+  <div class="scroll"><table>
+    <thead><tr><th>Step</th><th>Tool</th><th>Path</th><th>Result</th><th>Chars</th></tr></thead>
+    <tbody><tr><td class="num">0</td><td>read_file</td><td class="mono">TASK.md</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">520</td></tr><tr><td class="num">1</td><td>read_file</td><td class="mono">annotation-task.json</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">3 290</td></tr><tr><td class="num">2</td><td>write_file</td><td class="mono">submission.json</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">64</td></tr><tr><td class="num">3</td><td>run_tests</td><td class="mono">—</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">160</td></tr><tr><td class="num">4</td><td>submit</td><td class="mono">—</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">85</td></tr></tbody>
+  </table></div>
+  <p class="lead">Submission diff withheld by the public-disclosure policy (39 line(s) changed). Submission content withheld — proprietary evaluation material. On this exam the submitted change is the graded answer, so publishing an excerpt of it would publish the answer key.</p>
+</div></div><div class="chapter"><h2>Attempt record 1 of 1 · text-labeling-1</h2><p class="mono">vvdex.annotation.text-labeling-1 · record fr-20260907-8f0b9493 · record digest 61073e4730b6a0ec… · harness clean · containment clean</p><h3>Executive summary</h3>
+<div class="grid metrics">
+  <dl class="card"><dt>Models tested</dt><dd>2</dd></dl>
+  <dl class="card"><dt>Certified passes</dt><dd><span class="mark" data-v="pass">20</span></dd><dd class="lead">of 20 graded rollouts</dd></dl>
+  <dl class="card"><dt>Submitted</dt><dd>20 of 20</dd><dd class="lead">graded rollouts that called submit</dd></dl>
+  <dl class="card"><dt>Not graded — lane errors</dt><dd><span class="mark" data-v="pass">0</span></dd><dd class="lead">of 20 attempts</dd></dl>
+</div>
+<h4>Purpose</h4>
+<p class="lead">This report presents a controlled evaluation of 2 model lane(s) against the certified exam <span class="mono">vvdex.annotation.text-labeling-1</span> (v0.1.0, family annotation). Every lane received the identical frozen workspace, tool contract and limits; grading ran afterwards, in isolation, against hidden tests no lane ever saw. The purpose is to state, with reproducible evidence, what each lane did and where it stopped.</p>
+<h4>Outcome</h4>
+<div class="verdict">
+  <strong>20 of 20</strong>
+  <span>graded rollouts passed the independent hidden tests and were certified</span>
+</div>
+<p class="lead">20 of 20 graded rollouts passed. cli/claude-sonnet, cli/codex completed the applicable annotation workflow and were accepted by the independent annotation grader. </p>
+<h4>Key findings</h4>
+<ul class="keyfindings"><li><span class="fid">F-01</span> cli/claude-sonnet, cli/codex passed the independent hidden tests</li></ul>
+<p class="lead">Each finding is stated in full, with evidence, in the Findings section;
+recommendations for acting on them follow it. Elapsed wall clock for the whole engagement:
+827.6s.</p><h3>Exam definition</h3>
+<p class="lead">
+  <strong>In scope.</strong> The ability of each configured model lane to complete this one
+  certified task end to end — inspect the asset, annotate against the declared rubric, validate, submit, and be accepted by the independent annotation grader — within 24 tool steps and 14520s
+  of wall clock, at 10 rollout(s) per lane. Behavioural
+  measurements along the way (tool discipline, grounding, overclaim) are in scope because they
+  are read from the recorded trace, not judged by another model.
+</p>
+<p class="lead">
+  <strong>Out of scope.</strong> General model quality, performance on other task families,
+  prompt-tuning on the lane's behalf, and any comparison this run's sample size cannot support.
+  A lane's API failure is reported as infrastructure, never as model capability.
+</p>
+<p class="lead">
+  <strong>The instrument.</strong> Exam <span class="mono">vvdex.annotation.text-labeling-1</span>
+  was certified before this run: its reference solution passes, an empty submission fails, its
+  grader distinguishes near-misses, and its sealed evidence is unchanged by this evaluation
+  (see Certification evidence).
+</p>
+<h4>What was measured</h4>
+<div class="grid">
+  <dl class="card"><dt>Exam</dt><dd>vvdex.annotation.text-labeling-1</dd></dl>
+  <dl class="card"><dt>Version</dt><dd>0.1.0</dd></dl>
+  <dl class="card"><dt>Family</dt><dd>annotation</dd></dl>
+  <dl class="card"><dt>Rollouts</dt><dd>20 (10 per model)</dd></dl>
+</div>
+<h4>Where the defect came from</h4>
+<p class="lead">This exam has no upstream repository to credit: the defect, the reference solution and the hidden suite are VVDex's own.</p><h3>Certification evidence</h3>
+<p class="lead"><strong>Why this exam is trustworthy.</strong> Every pillar below was
+established before any model saw the exam, loaded from the sealed evidence matching this
+run's exam fingerprint, and unchanged by this evaluation.</p>
+<div class="certpair">
+  <div class="certhalf" data-state="fail">
+    <p class="certlabel">Frozen baseline</p>
+    <p class="certverdict">FAIL</p>
+    <p class="certnote">expected — an empty submission over 2 run(s) must not pass</p>
+  </div>
+  <div class="certarrow">→</div>
+  <div class="certhalf" data-state="pass">
+    <p class="certlabel">Gold / reference</p>
+    <p class="certverdict">PASS</p>
+    <p class="certnote">expected — the reference solution over 2 run(s) must pass</p>
+  </div>
+</div>
+<div class="grid">
+  <dl class="card" data-state="pass"><dt>Grader controls</dt><dd><span class="mark" data-v="pass">19 / 19</span></dd><dd class="lead">The grader accepted the reference and rejected every near-miss.</dd></dl>
+  <dl class="card" data-state="pass"><dt>Attack probes</dt><dd><span class="mark" data-v="pass">9 / 9 blocked</span></dd><dd class="lead">0 trivial exploit(s) found.</dd></dl>
+  <dl class="card" data-state="pass"><dt>Sealed evidence</dt><dd><span class="mark" data-v="pass">verified</span></dd><dd class="lead">Sealed 2026-09-06 over 13 artifact(s).</dd></dl>
+  <dl class="card"><dt>Runtime</dt><dd>sha256:679b36225a1f83238efba8c71b9cde3c24caaeacc9b682ae92819cb55eec328f</dd><dd class="lead">network policy: deny</dd></dl>
+</div>
+<div class="grid" style="margin-top:12px">
+  <dl class="card"><dt>Certification bundle digest</dt><dd><span class="mono">0f97b9d0560aeb01635959125ac2e126ab1103e0087113deadcb7b4ed5ace282</span></dd></dl>
+  <dl class="card"><dt>Exam fingerprint</dt><dd><span class="mono">e1abe51398b2d950a3415678…</span></dd><dd class="lead">Full value in Appendix B; the contract digest this run was executed against.</dd></dl>
+</div><h3>Evaluation configuration</h3>
+<div class="meta"><div class="mrow"><span class="mlabel">Report</span><span class="mvalue">fr-20260907-8f0b9493</span></div><div class="mrow"><span class="mlabel">Issued</span><span class="mvalue">2026-09-07</span></div><div class="mrow"><span class="mlabel">Subject exam</span><span class="mvalue">vvdex.annotation.text-labeling-1 · v0.1.0</span></div><div class="mrow"><span class="mlabel">Family</span><span class="mvalue">annotation</span></div><div class="mrow"><span class="mlabel">Prepared by</span><span class="mvalue">VVDex Forge engine vvdex-env 0.1.0</span></div><div class="mrow"><span class="mlabel">Classification</span><span class="mvalue">Independent model evaluation report — independently verifiable</span></div><div class="mrow"><span class="mlabel">Certification</span><span class="mvalue">Exam certification: recorded and passing (see Certification evidence)</span></div><div class="mrow"><span class="mlabel">Status</span><span class="mvalue">FINAL · report sealed against its own digest</span></div></div>
+<h4>Timeline</h4>
+<div class="scroll"><table class="timeline">
+  <thead><tr><th>When (UTC)</th><th>Event</th></tr></thead>
+  <tbody><tr><td class="mono">2026-09-06 00:01:41</td><td>Exam evidence sealed (before any model saw the exam)</td></tr><tr><td class="mono">2026-09-07 08:48:26</td><td>Evaluation run started</td></tr><tr><td class="mono">2026-09-07 09:02:14</td><td>Evaluation run finished</td></tr><tr><td class="mono">2026-09-07 09:02:14</td><td>Report generated from the sealed run evidence</td></tr></tbody>
+</table></div>
+<h4>Models under test</h4>
+<div class="scroll"><table>
+  <thead><tr><th>Model</th><th>Provider</th><th>Endpoint</th><th>Billing</th></tr></thead>
+  <tbody><tr><td>Codex CLI (GPT, subscription)</td><td>cli</td><td class="mono">local runtime</td><td>operator subscription, flat — not billed per token</td></tr><tr><td>Claude Code CLI (Sonnet, subscription)</td><td>cli</td><td class="mono">local runtime</td><td>operator subscription, flat — not billed per token</td></tr></tbody>
+</table></div>
+<p class="lead">A customer endpoint is recorded by origin only — never its port, its path, or its key.</p>
+<h4>Limits</h4>
+<div class="grid">
+  <dl class="card"><dt>Runtime</dt><dd>docker</dd></dl>
+  <dl class="card"><dt>Step limit</dt><dd>24</dd></dl>
+  <dl class="card"><dt>Wall-clock limit</dt><dd>14520s</dd></dl>
+  <dl class="card"><dt>Max output tokens</dt><dd>2048</dd></dl>
+  <dl class="card"><dt>Temperature</dt><dd>0.2</dd></dl>
+  <dl class="card"><dt>Retry policy</dt><dd>none</dd></dl>
+  <dl class="card"><dt>Command budget</dt><dd>0</dd></dl>
+  <dl class="card"><dt>Tools offered</dt><dd>list_files, read_file, write_file, edit_file, run_tests, submit</dd></dl>
+</div>
+<p class="lead">The evaluated model never saw the hidden tests or the reference solution, and could not
+change its result. Grading ran in a separate step, after submission, on a container with no network.</p><h3>Model outcomes</h3>
+<p class="lead"><strong>Denominators.</strong> Attempts requested: 20. Graded (evaluable) rollouts: 20. Not graded — lane errors: 0. A lane error is a rollout the API or the runtime ended before the hidden grader ran: it is listed, excluded from every rate and pass@k, and never silently dropped. Passes are certified passes: hidden grader exit 0 with integrity verified.</p>
+<div class="scroll"><table class="primary">
+  <thead><tr><th>Model</th><th>Attempts</th><th>Graded</th><th>Passed</th><th>Model fails</th>
+    <th>Lane errors</th><th>Submitted</th><th>Mean time</th><th>Typical deepest stage</th></tr></thead>
+  <tbody><tr class="row-pass"><td><strong>Codex CLI (GPT, subscription)</strong><br><span class="mono subid">cli/codex</span></td><td class="num">10</td><td class="num">10</td><td><span class="mark" data-v="pass">10 / 10</span></td><td class="num">0</td><td class="num"><span class="mark" data-v="pass">0</span></td><td class="num">10 / 10</td><td class="num">55.2s</td><td>Passed</td></tr><tr class="row-pass"><td><strong>Claude Code CLI (Sonnet, subscription)</strong><br><span class="mono subid">cli/claude-sonnet</span></td><td class="num">10</td><td class="num">10</td><td><span class="mark" data-v="pass">10 / 10</span></td><td class="num">0</td><td class="num"><span class="mark" data-v="pass">0</span></td><td class="num">10 / 10</td><td class="num">26.1s</td><td>Passed</td></tr></tbody>
+</table></div>
+<p class="lead">Every rollout, with its own deepest stage and grade, is in Appendix A.</p>
+
+<h4>Success rate, confidence and pass@k</h4>
+<p class="lead">
+  Every rate on this page is a measurement of a finite number of rollouts, so every rate
+  carries the interval that measurement actually supports. n is the evaluable count —
+  attempts minus rollouts the lane ended before grading; those are listed under
+  "not graded" and sit in no rate, interval or pass@k.
+</p>
+<div class="scroll"><table>
+  <thead><tr><th>Model</th><th>Attempts</th><th>n</th><th>Not graded</th><th>Passes</th><th>Rate</th>
+    <th>95% interval</th><th>Seeds</th><th>pass@1</th><th>pass@3</th><th>pass@5</th><th>pass@10</th></tr></thead>
+  <tbody><tr class="row-pass"><td>cli/codex</td><td class="num">10</td><td class="num">10</td><td class="num">0</td><td class="num">10</td><td class="num">100.0%</td><td class="num">[72%, 100%]</td><td class="num">0–9</td><td class="num">100.0%</td><td class="num">100.0%</td><td class="num">100.0%</td><td class="num">100.0%</td></tr><tr class="row-pass"><td>cli/claude-sonnet</td><td class="num">10</td><td class="num">10</td><td class="num">0</td><td class="num">10</td><td class="num">100.0%</td><td class="num">[72%, 100%]</td><td class="num">0–9</td><td class="num">100.0%</td><td class="num">100.0%</td><td class="num">100.0%</td><td class="num">100.0%</td></tr></tbody>
+</table></div>
+<p class="lead">Interval and pass@k methods are stated in full in Appendix D. pass@k is shown for
+k = 1, 3, 5, 10; the sealed record carries every k up to n.</p>
+
+<h4>Model comparison</h4>
+<div class="scroll"><table>
+  <thead><tr><th>Model</th><th>pass@1</th><th>95% interval</th><th>Tokens</th><th>Cost</th>
+    <th>Mean rollout</th><th>Overclaim rate</th><th>Top failure class</th></tr></thead>
+  <tbody><tr><td>cli/codex</td><td class="num">100.0%</td><td class="num">[72%, 100%]</td><td class="num">n/a</td><td class="num">n/a</td><td class="num">55.2s</td><td class="num">0.0%</td><td>none</td></tr><tr><td>cli/claude-sonnet</td><td class="num">100.0%</td><td class="num">[72%, 100%]</td><td class="num">n/a</td><td class="num">n/a</td><td class="num">26.1s</td><td class="num">0.0%</td><td>none</td></tr></tbody>
+</table></div>
+<p class="lead">Tokens and cost read n/a where a lane reports no telemetry (a flat-rate
+CLI) — an absent measurement, not zero. pass@1 and its interval are over evaluable
+rollouts only.</p>
+<div class="caveat">
+  <p>This is not a leaderboard. Not separated (intervals overlap): cli/codex vs cli/claude-sonnet.
+  The primary comparison in this report is the stage funnel below — where a model stops
+  is a finding; a percentage over this many rollouts is not.</p>
+</div>
+<h3>Stage funnel</h3>
+<p class="lead">Recorded annotation actions and independent grader verdicts. Missing capabilities are N/A; each stage is measured independently.</p>
+<div class="scroll"><table class="matrix">
+  <thead><tr><th>Stage</th><th>cli:cli/codex</th><th>cli:cli/claude-sonnet</th></tr></thead>
+  <tbody><tr><td>Inspect</td><td class="num"><span class="mark" data-v="warn">10 / 10</span></td><td class="num"><span class="mark" data-v="warn">10 / 10</span></td></tr><tr><td>Annotate</td><td class="num"><span class="mark" data-v="warn">10 / 10</span></td><td class="num"><span class="mark" data-v="warn">10 / 10</span></td></tr><tr><td>Validate</td><td class="num"><span class="mark" data-v="warn">10 / 10</span></td><td class="num"><span class="mark" data-v="warn">10 / 10</span></td></tr><tr><td>Submit</td><td class="num"><span class="mark" data-v="warn">10 / 10</span></td><td class="num"><span class="mark" data-v="warn">10 / 10</span></td></tr><tr><td>Graded</td><td class="num"><span class="mark" data-v="warn">10 / 10</span></td><td class="num"><span class="mark" data-v="warn">10 / 10</span></td></tr><tr><td>Passed</td><td class="num"><span class="mark" data-v="pass">10 / 10</span></td><td class="num"><span class="mark" data-v="pass">10 / 10</span></td></tr></tbody>
+</table></div>
+<h4>Deepest stage reached</h4>
+<div class="scroll"><table>
+  <thead><tr><th>Model</th><th>Deepest (any attempt)</th><th>Typical (most attempts)</th>
+    <th>Annotation QA passes</th><th>Not graded</th></tr></thead>
+  <tbody><tr><td>cli:cli/codex</td><td>Passed</td><td>Passed</td><td class="num"><span class="mark" data-v="pass">10 / 10</span></td><td class="num">0</td></tr><tr><td>cli:cli/claude-sonnet</td><td>Passed</td><td>Passed</td><td class="num"><span class="mark" data-v="pass">10 / 10</span></td><td class="num">0</td></tr></tbody>
+</table></div>
+<p class="lead">The matrix counts evaluable annotation attempts; lane errors are shown separately. Successful recorded actions establish each stage independently. </p><h3>Annotation evidence</h3><p><strong>Modality:</strong> text. <strong>Rubric:</strong> 1.0.</p>
+<p>An invented message is reviewed for classification and entity spans with consistent offsets.</p><article class="annotation-measurement"><h4>Submission 6562b25a-1eda-40c0-a03f-9e1f8ba8f0af</h4>
+<div class="annotation-summary"><p><strong>Score</strong><br>1</p><p><strong>Items</strong><br>3</p>
+<p><strong>Valid / invalid</strong><br>3 / 0</p>
+<p><strong>Types</strong><br>classification, span</p></div>
+<h4>Measured metrics</h4><dl class="annotation-metrics"><div><dt>annotationCount</dt><dd>3</dd></div><div><dt>classificationAccuracy</dt><dd>1</dd></div><div><dt>classificationF1</dt><dd>1</dd></div><div><dt>classificationPrecision</dt><dd>1</dd></div><div><dt>classificationRecall</dt><dd>1</dd></div><div><dt>matchedCount</dt><dd>3</dd></div><div><dt>mismatchCount</dt><dd>0</dd></div><div><dt>spanExactF1</dt><dd>1</dd></div><div><dt>spanF1</dt><dd>1</dd></div><div><dt>spanOverlapIoU</dt><dd>1</dd></div><div><dt>spanPrecision</dt><dd>1</dd></div><div><dt>spanRecall</dt><dd>1</dd></div></dl>
+<p>Track consistency depends on successful box matching. A zero can reflect inaccurate boxes even when track IDs are correct.</p>
+<h4>Validation error codes</h4><p>None recorded</p>
+<h4>Disagreement</h4><dl class="annotation-metrics"><div><dt>Agreement review</dt><dd>Not measured</dd></div></dl></article><article class="annotation-measurement"><h4>Submission 1ac06c7b-b00e-424c-b953-ff4eb6624879</h4>
+<div class="annotation-summary"><p><strong>Score</strong><br>1</p><p><strong>Items</strong><br>3</p>
+<p><strong>Valid / invalid</strong><br>3 / 0</p>
+<p><strong>Types</strong><br>classification, span</p></div>
+<h4>Measured metrics</h4><dl class="annotation-metrics"><div><dt>annotationCount</dt><dd>3</dd></div><div><dt>classificationAccuracy</dt><dd>1</dd></div><div><dt>classificationF1</dt><dd>1</dd></div><div><dt>classificationPrecision</dt><dd>1</dd></div><div><dt>classificationRecall</dt><dd>1</dd></div><div><dt>matchedCount</dt><dd>3</dd></div><div><dt>mismatchCount</dt><dd>0</dd></div><div><dt>spanExactF1</dt><dd>1</dd></div><div><dt>spanF1</dt><dd>1</dd></div><div><dt>spanOverlapIoU</dt><dd>1</dd></div><div><dt>spanPrecision</dt><dd>1</dd></div><div><dt>spanRecall</dt><dd>1</dd></div></dl>
+<p>Track consistency depends on successful box matching. A zero can reflect inaccurate boxes even when track IDs are correct.</p>
+<h4>Validation error codes</h4><p>None recorded</p>
+<h4>Disagreement</h4><dl class="annotation-metrics"><div><dt>Agreement review</dt><dd>Not measured</dd></div></dl></article><article class="annotation-measurement"><h4>Submission bc443e0e-e6ed-4a27-921c-329f22a985fb</h4>
+<div class="annotation-summary"><p><strong>Score</strong><br>1</p><p><strong>Items</strong><br>3</p>
+<p><strong>Valid / invalid</strong><br>3 / 0</p>
+<p><strong>Types</strong><br>classification, span</p></div>
+<h4>Measured metrics</h4><dl class="annotation-metrics"><div><dt>annotationCount</dt><dd>3</dd></div><div><dt>classificationAccuracy</dt><dd>1</dd></div><div><dt>classificationF1</dt><dd>1</dd></div><div><dt>classificationPrecision</dt><dd>1</dd></div><div><dt>classificationRecall</dt><dd>1</dd></div><div><dt>matchedCount</dt><dd>3</dd></div><div><dt>mismatchCount</dt><dd>0</dd></div><div><dt>spanExactF1</dt><dd>1</dd></div><div><dt>spanF1</dt><dd>1</dd></div><div><dt>spanOverlapIoU</dt><dd>1</dd></div><div><dt>spanPrecision</dt><dd>1</dd></div><div><dt>spanRecall</dt><dd>1</dd></div></dl>
+<p>Track consistency depends on successful box matching. A zero can reflect inaccurate boxes even when track IDs are correct.</p>
+<h4>Validation error codes</h4><p>None recorded</p>
+<h4>Disagreement</h4><dl class="annotation-metrics"><div><dt>Agreement review</dt><dd>Not measured</dd></div></dl></article><article class="annotation-measurement"><h4>Submission 8506c33c-683b-4b15-9d42-ccb7e48f647f</h4>
+<div class="annotation-summary"><p><strong>Score</strong><br>1</p><p><strong>Items</strong><br>3</p>
+<p><strong>Valid / invalid</strong><br>3 / 0</p>
+<p><strong>Types</strong><br>classification, span</p></div>
+<h4>Measured metrics</h4><dl class="annotation-metrics"><div><dt>annotationCount</dt><dd>3</dd></div><div><dt>classificationAccuracy</dt><dd>1</dd></div><div><dt>classificationF1</dt><dd>1</dd></div><div><dt>classificationPrecision</dt><dd>1</dd></div><div><dt>classificationRecall</dt><dd>1</dd></div><div><dt>matchedCount</dt><dd>3</dd></div><div><dt>mismatchCount</dt><dd>0</dd></div><div><dt>spanExactF1</dt><dd>1</dd></div><div><dt>spanF1</dt><dd>1</dd></div><div><dt>spanOverlapIoU</dt><dd>1</dd></div><div><dt>spanPrecision</dt><dd>1</dd></div><div><dt>spanRecall</dt><dd>1</dd></div></dl>
+<p>Track consistency depends on successful box matching. A zero can reflect inaccurate boxes even when track IDs are correct.</p>
+<h4>Validation error codes</h4><p>None recorded</p>
+<h4>Disagreement</h4><dl class="annotation-metrics"><div><dt>Agreement review</dt><dd>Not measured</dd></div></dl></article><article class="annotation-measurement"><h4>Submission 4f40821b-cd6e-463a-a147-adefe0a9f363</h4>
+<div class="annotation-summary"><p><strong>Score</strong><br>1</p><p><strong>Items</strong><br>3</p>
+<p><strong>Valid / invalid</strong><br>3 / 0</p>
+<p><strong>Types</strong><br>classification, span</p></div>
+<h4>Measured metrics</h4><dl class="annotation-metrics"><div><dt>annotationCount</dt><dd>3</dd></div><div><dt>classificationAccuracy</dt><dd>1</dd></div><div><dt>classificationF1</dt><dd>1</dd></div><div><dt>classificationPrecision</dt><dd>1</dd></div><div><dt>classificationRecall</dt><dd>1</dd></div><div><dt>matchedCount</dt><dd>3</dd></div><div><dt>mismatchCount</dt><dd>0</dd></div><div><dt>spanExactF1</dt><dd>1</dd></div><div><dt>spanF1</dt><dd>1</dd></div><div><dt>spanOverlapIoU</dt><dd>1</dd></div><div><dt>spanPrecision</dt><dd>1</dd></div><div><dt>spanRecall</dt><dd>1</dd></div></dl>
+<p>Track consistency depends on successful box matching. A zero can reflect inaccurate boxes even when track IDs are correct.</p>
+<h4>Validation error codes</h4><p>None recorded</p>
+<h4>Disagreement</h4><dl class="annotation-metrics"><div><dt>Agreement review</dt><dd>Not measured</dd></div></dl></article><article class="annotation-measurement"><h4>Submission 26f398a6-2b2f-4472-9f97-92b5f39556d1</h4>
+<div class="annotation-summary"><p><strong>Score</strong><br>1</p><p><strong>Items</strong><br>3</p>
+<p><strong>Valid / invalid</strong><br>3 / 0</p>
+<p><strong>Types</strong><br>classification, span</p></div>
+<h4>Measured metrics</h4><dl class="annotation-metrics"><div><dt>annotationCount</dt><dd>3</dd></div><div><dt>classificationAccuracy</dt><dd>1</dd></div><div><dt>classificationF1</dt><dd>1</dd></div><div><dt>classificationPrecision</dt><dd>1</dd></div><div><dt>classificationRecall</dt><dd>1</dd></div><div><dt>matchedCount</dt><dd>3</dd></div><div><dt>mismatchCount</dt><dd>0</dd></div><div><dt>spanExactF1</dt><dd>1</dd></div><div><dt>spanF1</dt><dd>1</dd></div><div><dt>spanOverlapIoU</dt><dd>1</dd></div><div><dt>spanPrecision</dt><dd>1</dd></div><div><dt>spanRecall</dt><dd>1</dd></div></dl>
+<p>Track consistency depends on successful box matching. A zero can reflect inaccurate boxes even when track IDs are correct.</p>
+<h4>Validation error codes</h4><p>None recorded</p>
+<h4>Disagreement</h4><dl class="annotation-metrics"><div><dt>Agreement review</dt><dd>Not measured</dd></div></dl></article><article class="annotation-measurement"><h4>Submission db5157cc-dd4a-4d52-9ee6-1d092d7fd934</h4>
+<div class="annotation-summary"><p><strong>Score</strong><br>1</p><p><strong>Items</strong><br>3</p>
+<p><strong>Valid / invalid</strong><br>3 / 0</p>
+<p><strong>Types</strong><br>classification, span</p></div>
+<h4>Measured metrics</h4><dl class="annotation-metrics"><div><dt>annotationCount</dt><dd>3</dd></div><div><dt>classificationAccuracy</dt><dd>1</dd></div><div><dt>classificationF1</dt><dd>1</dd></div><div><dt>classificationPrecision</dt><dd>1</dd></div><div><dt>classificationRecall</dt><dd>1</dd></div><div><dt>matchedCount</dt><dd>3</dd></div><div><dt>mismatchCount</dt><dd>0</dd></div><div><dt>spanExactF1</dt><dd>1</dd></div><div><dt>spanF1</dt><dd>1</dd></div><div><dt>spanOverlapIoU</dt><dd>1</dd></div><div><dt>spanPrecision</dt><dd>1</dd></div><div><dt>spanRecall</dt><dd>1</dd></div></dl>
+<p>Track consistency depends on successful box matching. A zero can reflect inaccurate boxes even when track IDs are correct.</p>
+<h4>Validation error codes</h4><p>None recorded</p>
+<h4>Disagreement</h4><dl class="annotation-metrics"><div><dt>Agreement review</dt><dd>Not measured</dd></div></dl></article><article class="annotation-measurement"><h4>Submission 1ba34a8d-93bc-4bc1-8192-75375a5fab9e</h4>
+<div class="annotation-summary"><p><strong>Score</strong><br>1</p><p><strong>Items</strong><br>3</p>
+<p><strong>Valid / invalid</strong><br>3 / 0</p>
+<p><strong>Types</strong><br>classification, span</p></div>
+<h4>Measured metrics</h4><dl class="annotation-metrics"><div><dt>annotationCount</dt><dd>3</dd></div><div><dt>classificationAccuracy</dt><dd>1</dd></div><div><dt>classificationF1</dt><dd>1</dd></div><div><dt>classificationPrecision</dt><dd>1</dd></div><div><dt>classificationRecall</dt><dd>1</dd></div><div><dt>matchedCount</dt><dd>3</dd></div><div><dt>mismatchCount</dt><dd>0</dd></div><div><dt>spanExactF1</dt><dd>1</dd></div><div><dt>spanF1</dt><dd>1</dd></div><div><dt>spanOverlapIoU</dt><dd>1</dd></div><div><dt>spanPrecision</dt><dd>1</dd></div><div><dt>spanRecall</dt><dd>1</dd></div></dl>
+<p>Track consistency depends on successful box matching. A zero can reflect inaccurate boxes even when track IDs are correct.</p>
+<h4>Validation error codes</h4><p>None recorded</p>
+<h4>Disagreement</h4><dl class="annotation-metrics"><div><dt>Agreement review</dt><dd>Not measured</dd></div></dl></article><article class="annotation-measurement"><h4>Submission afea3a7c-3add-4776-b178-b17336e18472</h4>
+<div class="annotation-summary"><p><strong>Score</strong><br>1</p><p><strong>Items</strong><br>3</p>
+<p><strong>Valid / invalid</strong><br>3 / 0</p>
+<p><strong>Types</strong><br>classification, span</p></div>
+<h4>Measured metrics</h4><dl class="annotation-metrics"><div><dt>annotationCount</dt><dd>3</dd></div><div><dt>classificationAccuracy</dt><dd>1</dd></div><div><dt>classificationF1</dt><dd>1</dd></div><div><dt>classificationPrecision</dt><dd>1</dd></div><div><dt>classificationRecall</dt><dd>1</dd></div><div><dt>matchedCount</dt><dd>3</dd></div><div><dt>mismatchCount</dt><dd>0</dd></div><div><dt>spanExactF1</dt><dd>1</dd></div><div><dt>spanF1</dt><dd>1</dd></div><div><dt>spanOverlapIoU</dt><dd>1</dd></div><div><dt>spanPrecision</dt><dd>1</dd></div><div><dt>spanRecall</dt><dd>1</dd></div></dl>
+<p>Track consistency depends on successful box matching. A zero can reflect inaccurate boxes even when track IDs are correct.</p>
+<h4>Validation error codes</h4><p>None recorded</p>
+<h4>Disagreement</h4><dl class="annotation-metrics"><div><dt>Agreement review</dt><dd>Not measured</dd></div></dl></article><article class="annotation-measurement"><h4>Submission 1e91b362-e78f-414e-9623-3fb6631635a1</h4>
+<div class="annotation-summary"><p><strong>Score</strong><br>1</p><p><strong>Items</strong><br>3</p>
+<p><strong>Valid / invalid</strong><br>3 / 0</p>
+<p><strong>Types</strong><br>classification, span</p></div>
+<h4>Measured metrics</h4><dl class="annotation-metrics"><div><dt>annotationCount</dt><dd>3</dd></div><div><dt>classificationAccuracy</dt><dd>1</dd></div><div><dt>classificationF1</dt><dd>1</dd></div><div><dt>classificationPrecision</dt><dd>1</dd></div><div><dt>classificationRecall</dt><dd>1</dd></div><div><dt>matchedCount</dt><dd>3</dd></div><div><dt>mismatchCount</dt><dd>0</dd></div><div><dt>spanExactF1</dt><dd>1</dd></div><div><dt>spanF1</dt><dd>1</dd></div><div><dt>spanOverlapIoU</dt><dd>1</dd></div><div><dt>spanPrecision</dt><dd>1</dd></div><div><dt>spanRecall</dt><dd>1</dd></div></dl>
+<p>Track consistency depends on successful box matching. A zero can reflect inaccurate boxes even when track IDs are correct.</p>
+<h4>Validation error codes</h4><p>None recorded</p>
+<h4>Disagreement</h4><dl class="annotation-metrics"><div><dt>Agreement review</dt><dd>Not measured</dd></div></dl></article><article class="annotation-measurement"><h4>Submission c7c0b5b1-593a-454b-8b33-a5640dc80522</h4>
+<div class="annotation-summary"><p><strong>Score</strong><br>1</p><p><strong>Items</strong><br>3</p>
+<p><strong>Valid / invalid</strong><br>3 / 0</p>
+<p><strong>Types</strong><br>classification, span</p></div>
+<h4>Measured metrics</h4><dl class="annotation-metrics"><div><dt>annotationCount</dt><dd>3</dd></div><div><dt>classificationAccuracy</dt><dd>1</dd></div><div><dt>classificationF1</dt><dd>1</dd></div><div><dt>classificationPrecision</dt><dd>1</dd></div><div><dt>classificationRecall</dt><dd>1</dd></div><div><dt>matchedCount</dt><dd>3</dd></div><div><dt>mismatchCount</dt><dd>0</dd></div><div><dt>spanExactF1</dt><dd>1</dd></div><div><dt>spanF1</dt><dd>1</dd></div><div><dt>spanOverlapIoU</dt><dd>1</dd></div><div><dt>spanPrecision</dt><dd>1</dd></div><div><dt>spanRecall</dt><dd>1</dd></div></dl>
+<p>Track consistency depends on successful box matching. A zero can reflect inaccurate boxes even when track IDs are correct.</p>
+<h4>Validation error codes</h4><p>None recorded</p>
+<h4>Disagreement</h4><dl class="annotation-metrics"><div><dt>Agreement review</dt><dd>Not measured</dd></div></dl></article><article class="annotation-measurement"><h4>Submission 1956f3b9-0fb8-44b0-864f-43a3710414b0</h4>
+<div class="annotation-summary"><p><strong>Score</strong><br>1</p><p><strong>Items</strong><br>3</p>
+<p><strong>Valid / invalid</strong><br>3 / 0</p>
+<p><strong>Types</strong><br>classification, span</p></div>
+<h4>Measured metrics</h4><dl class="annotation-metrics"><div><dt>annotationCount</dt><dd>3</dd></div><div><dt>classificationAccuracy</dt><dd>1</dd></div><div><dt>classificationF1</dt><dd>1</dd></div><div><dt>classificationPrecision</dt><dd>1</dd></div><div><dt>classificationRecall</dt><dd>1</dd></div><div><dt>matchedCount</dt><dd>3</dd></div><div><dt>mismatchCount</dt><dd>0</dd></div><div><dt>spanExactF1</dt><dd>1</dd></div><div><dt>spanF1</dt><dd>1</dd></div><div><dt>spanOverlapIoU</dt><dd>1</dd></div><div><dt>spanPrecision</dt><dd>1</dd></div><div><dt>spanRecall</dt><dd>1</dd></div></dl>
+<p>Track consistency depends on successful box matching. A zero can reflect inaccurate boxes even when track IDs are correct.</p>
+<h4>Validation error codes</h4><p>None recorded</p>
+<h4>Disagreement</h4><dl class="annotation-metrics"><div><dt>Agreement review</dt><dd>Not measured</dd></div></dl></article><article class="annotation-measurement"><h4>Submission 5540d66f-90f0-44f4-a346-9a4b15dcc7bf</h4>
+<div class="annotation-summary"><p><strong>Score</strong><br>1</p><p><strong>Items</strong><br>3</p>
+<p><strong>Valid / invalid</strong><br>3 / 0</p>
+<p><strong>Types</strong><br>classification, span</p></div>
+<h4>Measured metrics</h4><dl class="annotation-metrics"><div><dt>annotationCount</dt><dd>3</dd></div><div><dt>classificationAccuracy</dt><dd>1</dd></div><div><dt>classificationF1</dt><dd>1</dd></div><div><dt>classificationPrecision</dt><dd>1</dd></div><div><dt>classificationRecall</dt><dd>1</dd></div><div><dt>matchedCount</dt><dd>3</dd></div><div><dt>mismatchCount</dt><dd>0</dd></div><div><dt>spanExactF1</dt><dd>1</dd></div><div><dt>spanF1</dt><dd>1</dd></div><div><dt>spanOverlapIoU</dt><dd>1</dd></div><div><dt>spanPrecision</dt><dd>1</dd></div><div><dt>spanRecall</dt><dd>1</dd></div></dl>
+<p>Track consistency depends on successful box matching. A zero can reflect inaccurate boxes even when track IDs are correct.</p>
+<h4>Validation error codes</h4><p>None recorded</p>
+<h4>Disagreement</h4><dl class="annotation-metrics"><div><dt>Agreement review</dt><dd>Not measured</dd></div></dl></article><article class="annotation-measurement"><h4>Submission f75f7ffd-0c16-420a-9b5c-eb061c52de51</h4>
+<div class="annotation-summary"><p><strong>Score</strong><br>1</p><p><strong>Items</strong><br>3</p>
+<p><strong>Valid / invalid</strong><br>3 / 0</p>
+<p><strong>Types</strong><br>classification, span</p></div>
+<h4>Measured metrics</h4><dl class="annotation-metrics"><div><dt>annotationCount</dt><dd>3</dd></div><div><dt>classificationAccuracy</dt><dd>1</dd></div><div><dt>classificationF1</dt><dd>1</dd></div><div><dt>classificationPrecision</dt><dd>1</dd></div><div><dt>classificationRecall</dt><dd>1</dd></div><div><dt>matchedCount</dt><dd>3</dd></div><div><dt>mismatchCount</dt><dd>0</dd></div><div><dt>spanExactF1</dt><dd>1</dd></div><div><dt>spanF1</dt><dd>1</dd></div><div><dt>spanOverlapIoU</dt><dd>1</dd></div><div><dt>spanPrecision</dt><dd>1</dd></div><div><dt>spanRecall</dt><dd>1</dd></div></dl>
+<p>Track consistency depends on successful box matching. A zero can reflect inaccurate boxes even when track IDs are correct.</p>
+<h4>Validation error codes</h4><p>None recorded</p>
+<h4>Disagreement</h4><dl class="annotation-metrics"><div><dt>Agreement review</dt><dd>Not measured</dd></div></dl></article><article class="annotation-measurement"><h4>Submission fc30d37d-23e9-43ce-ac04-874bc7b40d89</h4>
+<div class="annotation-summary"><p><strong>Score</strong><br>1</p><p><strong>Items</strong><br>3</p>
+<p><strong>Valid / invalid</strong><br>3 / 0</p>
+<p><strong>Types</strong><br>classification, span</p></div>
+<h4>Measured metrics</h4><dl class="annotation-metrics"><div><dt>annotationCount</dt><dd>3</dd></div><div><dt>classificationAccuracy</dt><dd>1</dd></div><div><dt>classificationF1</dt><dd>1</dd></div><div><dt>classificationPrecision</dt><dd>1</dd></div><div><dt>classificationRecall</dt><dd>1</dd></div><div><dt>matchedCount</dt><dd>3</dd></div><div><dt>mismatchCount</dt><dd>0</dd></div><div><dt>spanExactF1</dt><dd>1</dd></div><div><dt>spanF1</dt><dd>1</dd></div><div><dt>spanOverlapIoU</dt><dd>1</dd></div><div><dt>spanPrecision</dt><dd>1</dd></div><div><dt>spanRecall</dt><dd>1</dd></div></dl>
+<p>Track consistency depends on successful box matching. A zero can reflect inaccurate boxes even when track IDs are correct.</p>
+<h4>Validation error codes</h4><p>None recorded</p>
+<h4>Disagreement</h4><dl class="annotation-metrics"><div><dt>Agreement review</dt><dd>Not measured</dd></div></dl></article><article class="annotation-measurement"><h4>Submission 7cf58734-0777-469e-943f-6754f9df87d6</h4>
+<div class="annotation-summary"><p><strong>Score</strong><br>1</p><p><strong>Items</strong><br>3</p>
+<p><strong>Valid / invalid</strong><br>3 / 0</p>
+<p><strong>Types</strong><br>classification, span</p></div>
+<h4>Measured metrics</h4><dl class="annotation-metrics"><div><dt>annotationCount</dt><dd>3</dd></div><div><dt>classificationAccuracy</dt><dd>1</dd></div><div><dt>classificationF1</dt><dd>1</dd></div><div><dt>classificationPrecision</dt><dd>1</dd></div><div><dt>classificationRecall</dt><dd>1</dd></div><div><dt>matchedCount</dt><dd>3</dd></div><div><dt>mismatchCount</dt><dd>0</dd></div><div><dt>spanExactF1</dt><dd>1</dd></div><div><dt>spanF1</dt><dd>1</dd></div><div><dt>spanOverlapIoU</dt><dd>1</dd></div><div><dt>spanPrecision</dt><dd>1</dd></div><div><dt>spanRecall</dt><dd>1</dd></div></dl>
+<p>Track consistency depends on successful box matching. A zero can reflect inaccurate boxes even when track IDs are correct.</p>
+<h4>Validation error codes</h4><p>None recorded</p>
+<h4>Disagreement</h4><dl class="annotation-metrics"><div><dt>Agreement review</dt><dd>Not measured</dd></div></dl></article><article class="annotation-measurement"><h4>Submission cafe5c18-54b9-4474-9744-04aa14532fab</h4>
+<div class="annotation-summary"><p><strong>Score</strong><br>1</p><p><strong>Items</strong><br>3</p>
+<p><strong>Valid / invalid</strong><br>3 / 0</p>
+<p><strong>Types</strong><br>classification, span</p></div>
+<h4>Measured metrics</h4><dl class="annotation-metrics"><div><dt>annotationCount</dt><dd>3</dd></div><div><dt>classificationAccuracy</dt><dd>1</dd></div><div><dt>classificationF1</dt><dd>1</dd></div><div><dt>classificationPrecision</dt><dd>1</dd></div><div><dt>classificationRecall</dt><dd>1</dd></div><div><dt>matchedCount</dt><dd>3</dd></div><div><dt>mismatchCount</dt><dd>0</dd></div><div><dt>spanExactF1</dt><dd>1</dd></div><div><dt>spanF1</dt><dd>1</dd></div><div><dt>spanOverlapIoU</dt><dd>1</dd></div><div><dt>spanPrecision</dt><dd>1</dd></div><div><dt>spanRecall</dt><dd>1</dd></div></dl>
+<p>Track consistency depends on successful box matching. A zero can reflect inaccurate boxes even when track IDs are correct.</p>
+<h4>Validation error codes</h4><p>None recorded</p>
+<h4>Disagreement</h4><dl class="annotation-metrics"><div><dt>Agreement review</dt><dd>Not measured</dd></div></dl></article><article class="annotation-measurement"><h4>Submission 272dafb0-9d9d-43cd-8631-520dbcb64663</h4>
+<div class="annotation-summary"><p><strong>Score</strong><br>1</p><p><strong>Items</strong><br>3</p>
+<p><strong>Valid / invalid</strong><br>3 / 0</p>
+<p><strong>Types</strong><br>classification, span</p></div>
+<h4>Measured metrics</h4><dl class="annotation-metrics"><div><dt>annotationCount</dt><dd>3</dd></div><div><dt>classificationAccuracy</dt><dd>1</dd></div><div><dt>classificationF1</dt><dd>1</dd></div><div><dt>classificationPrecision</dt><dd>1</dd></div><div><dt>classificationRecall</dt><dd>1</dd></div><div><dt>matchedCount</dt><dd>3</dd></div><div><dt>mismatchCount</dt><dd>0</dd></div><div><dt>spanExactF1</dt><dd>1</dd></div><div><dt>spanF1</dt><dd>1</dd></div><div><dt>spanOverlapIoU</dt><dd>1</dd></div><div><dt>spanPrecision</dt><dd>1</dd></div><div><dt>spanRecall</dt><dd>1</dd></div></dl>
+<p>Track consistency depends on successful box matching. A zero can reflect inaccurate boxes even when track IDs are correct.</p>
+<h4>Validation error codes</h4><p>None recorded</p>
+<h4>Disagreement</h4><dl class="annotation-metrics"><div><dt>Agreement review</dt><dd>Not measured</dd></div></dl></article><article class="annotation-measurement"><h4>Submission 8052afd0-5e12-46f8-8721-696df6b94426</h4>
+<div class="annotation-summary"><p><strong>Score</strong><br>1</p><p><strong>Items</strong><br>3</p>
+<p><strong>Valid / invalid</strong><br>3 / 0</p>
+<p><strong>Types</strong><br>classification, span</p></div>
+<h4>Measured metrics</h4><dl class="annotation-metrics"><div><dt>annotationCount</dt><dd>3</dd></div><div><dt>classificationAccuracy</dt><dd>1</dd></div><div><dt>classificationF1</dt><dd>1</dd></div><div><dt>classificationPrecision</dt><dd>1</dd></div><div><dt>classificationRecall</dt><dd>1</dd></div><div><dt>matchedCount</dt><dd>3</dd></div><div><dt>mismatchCount</dt><dd>0</dd></div><div><dt>spanExactF1</dt><dd>1</dd></div><div><dt>spanF1</dt><dd>1</dd></div><div><dt>spanOverlapIoU</dt><dd>1</dd></div><div><dt>spanPrecision</dt><dd>1</dd></div><div><dt>spanRecall</dt><dd>1</dd></div></dl>
+<p>Track consistency depends on successful box matching. A zero can reflect inaccurate boxes even when track IDs are correct.</p>
+<h4>Validation error codes</h4><p>None recorded</p>
+<h4>Disagreement</h4><dl class="annotation-metrics"><div><dt>Agreement review</dt><dd>Not measured</dd></div></dl></article><article class="annotation-measurement"><h4>Submission a5be9e58-491f-47fc-a268-b5bfec370d0a</h4>
+<div class="annotation-summary"><p><strong>Score</strong><br>1</p><p><strong>Items</strong><br>3</p>
+<p><strong>Valid / invalid</strong><br>3 / 0</p>
+<p><strong>Types</strong><br>classification, span</p></div>
+<h4>Measured metrics</h4><dl class="annotation-metrics"><div><dt>annotationCount</dt><dd>3</dd></div><div><dt>classificationAccuracy</dt><dd>1</dd></div><div><dt>classificationF1</dt><dd>1</dd></div><div><dt>classificationPrecision</dt><dd>1</dd></div><div><dt>classificationRecall</dt><dd>1</dd></div><div><dt>matchedCount</dt><dd>3</dd></div><div><dt>mismatchCount</dt><dd>0</dd></div><div><dt>spanExactF1</dt><dd>1</dd></div><div><dt>spanF1</dt><dd>1</dd></div><div><dt>spanOverlapIoU</dt><dd>1</dd></div><div><dt>spanPrecision</dt><dd>1</dd></div><div><dt>spanRecall</dt><dd>1</dd></div></dl>
+<p>Track consistency depends on successful box matching. A zero can reflect inaccurate boxes even when track IDs are correct.</p>
+<h4>Validation error codes</h4><p>None recorded</p>
+<h4>Disagreement</h4><dl class="annotation-metrics"><div><dt>Agreement review</dt><dd>Not measured</dd></div></dl></article>
+<p>Measured grader aggregates only. Missing metrics or disagreement are not measured, never zero. Reference answers and item-level labels are excluded. Certification and the evidence digest are recorded in this report's verification sections.</p><h3>Quality axes</h3>
+<p class="lead">Each axis was measured inside the grade box, on the submitted workspace, by the same deterministic script for every rollout. The reward is the conjunction of the required axes; the score is a weighted reading beside it, not the gate.</p>
+<div class="scroll"><table>
+  <thead><tr>
+    <th>Axis</th><th>Gate</th><th>Rollouts passing</th><th>Measured</th>
+    <th>Budget</th><th>Weight</th><th>What it measures</th>
+  </tr></thead>
+  <tbody><tr><td>classificationPrecision</td><td><span class="mark" data-v="unknown">recorded</span></td><td class="num">N/A</td><td class="num">1</td><td class="num">—</td><td class="num">—</td><td></td></tr><tr><td>classificationRecall</td><td><span class="mark" data-v="unknown">recorded</span></td><td class="num">N/A</td><td class="num">1</td><td class="num">—</td><td class="num">—</td><td></td></tr><tr><td>classificationF1</td><td><span class="mark" data-v="unknown">recorded</span></td><td class="num">N/A</td><td class="num">1</td><td class="num">—</td><td class="num">—</td><td></td></tr><tr><td>classificationAccuracy</td><td><span class="mark" data-v="unknown">recorded</span></td><td class="num">N/A</td><td class="num">1</td><td class="num">—</td><td class="num">—</td><td></td></tr><tr><td>spanPrecision</td><td><span class="mark" data-v="unknown">recorded</span></td><td class="num">N/A</td><td class="num">1</td><td class="num">—</td><td class="num">—</td><td></td></tr><tr><td>spanRecall</td><td><span class="mark" data-v="unknown">recorded</span></td><td class="num">N/A</td><td class="num">1</td><td class="num">—</td><td class="num">—</td><td></td></tr><tr><td>spanF1</td><td><span class="mark" data-v="unknown">recorded</span></td><td class="num">N/A</td><td class="num">1</td><td class="num">—</td><td class="num">—</td><td></td></tr><tr><td>spanOverlapIoU</td><td><span class="mark" data-v="unknown">recorded</span></td><td class="num">N/A</td><td class="num">1</td><td class="num">—</td><td class="num">—</td><td></td></tr><tr><td>spanExactF1</td><td><span class="mark" data-v="unknown">recorded</span></td><td class="num">N/A</td><td class="num">1</td><td class="num">—</td><td class="num">—</td><td></td></tr></tbody>
+</table></div>
+<div class="grid" style="margin-top:12px">
+  <dl class="card"><dt>Quality score (mean)</dt><dd>1</dd><dd class="lead">Weighted reading over the axes. It is not the reward.</dd></dl>
+  <dl class="card"><dt>Reward composition</dt><dd>Withheld from the public report.</dd></dl>
+</div><h3>Behavioural analysis</h3>
+<h4>Long-horizon behaviour</h4>
+<p class="lead">Counted off the recorded trace of each rollout. A dead end is a step that moved nothing: a re-read of a slice already returned, a repeat of the previous action, or a call to a tool this exam does not have.</p>
+<div class="scroll"><table>
+  <thead><tr>
+    <th>Model</th><th>N</th><th>Steps used</th><th>Ran out of steps</th>
+    <th>Commands</th><th>Changed the tree</th><th>Refused (over budget)</th>
+    <th>Revisits</th><th>Dead ends / rollout</th>
+  </tr></thead>
+  <tbody><tr><td>cli:cli/codex</td><td class="num">10</td><td class="num">7 / 24</td><td class="num">0</td><td class="num">0 / 0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td></tr><tr><td>cli:cli/claude-sonnet</td><td class="num">10</td><td class="num">5 / 24</td><td class="num">0</td><td class="num">0 / 0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td></tr></tbody>
+</table></div>
+<p class="lead">Each column is defined in Appendix D.</p>
+
+<h4>Hallucination &amp; overclaim</h4>
+<p class="lead">
+  Three measurements, each with a stated definition. None of them is a judgement of the
+  model's prose by another model — every number below comes from comparing what the model
+  wrote against what was on disk, or against what the independent grader returned.
+</p>
+<div class="scroll"><table>
+  <thead><tr><th>Model</th><th>n</th><th>Grounding failures</th><th>Kinds</th>
+    <th>Rollouts affected</th><th>Overclaims</th><th>Overclaim rate</th><th>Re-reads</th></tr></thead>
+  <tbody><tr><td>cli:cli/codex</td><td class="num">10</td><td class="num">0</td><td>none</td><td class="num">0 / 10</td><td class="num">0 / 10</td><td class="num">0.0%</td><td class="num">0</td></tr><tr><td>cli:cli/claude-sonnet</td><td class="num">10</td><td class="num">0</td><td>none</td><td class="num">0 / 10</td><td class="num">0 / 10</td><td class="num">0.0%</td><td class="num">0</td></tr></tbody>
+</table></div>
+<div class="caveat"><p>No grounding failures and no false pass claims were detected across these 20 rollout(s). No lane re-read material it had already been given.</p></div>
+<p class="lead">Every term above is defined in Appendix D.</p><h3>Findings</h3>
+<p class="lead">
+  Every finding below is derived from the recorded data of this run — none is an opinion.
+  Severity: <span class="chip" data-sev="pass">PASS</span> a lane succeeded ·
+  <span class="chip" data-sev="attention">ATTENTION</span> a capability gap ·
+  <span class="chip" data-sev="lane">LANE / INFRA</span> infrastructure, not capability ·
+  <span class="chip" data-sev="info">NOTE</span> a property of the measurement.
+</p>
+<div class="findings"><div class="finding" data-sev="pass">
+  <div class="fhead">
+    <span class="fid">F-01</span>
+    <span class="chip" data-sev="pass">PASS</span>
+  </div>
+  <p class="ftitle">cli/claude-sonnet, cli/codex passed the independent hidden tests</p>
+  <div class="fsev">
+    <div class="sevcell" data-sev="pass">Severity: PASS</div>
+    <div>Evidence: Model outcomes · Stage funnel · Appendix A</div>
+  </div>
+  <p class="fbody">20 of 20 graded rollouts completed the applicable annotation workflow and were accepted by the independent annotation grader. This demonstrates the task is solvable under the published limits.</p>
+  <p class="fev">F-01 · derived from the recorded run data</p>
+</div></div><h3>Recommendations</h3>
+<p class="lead">Every rollout in this run passed; there is nothing to recommend beyond re-measuring on a harder exam.</p><h3>Verification</h3>
+<div class="grid">
+  <dl class="card"><dt>Run id</dt><dd>live-20260907T084826Z</dd></dl>
+  <dl class="card"><dt>Exam fingerprint</dt><dd><span class="mono">e1abe51398b2d950a3415678aaf8ec796420dfb05ea89b3b64afd33c1e345fd3</span></dd><dd class="lead">The contract digest this run was executed against.</dd></dl>
+</div>
+
+<h4>Provenance of this chapter</h4>
+<p class="lead">This chapter was rendered by the campaign generator from the sealed evaluation
+record; it is not the standalone report reproduced byte for byte. Verify the standalone report
+with its own digest, verify the record with <span class="mono">vvdex-env records verify</span>,
+and verify this campaign document as a whole.</p>
+<div class="grid"><dl class="card"><dt>Relationship</dt><dd>campaign-rendered chapter</dd><dd class="lead">Derived from the same sealed evaluation record as the standalone report; these bytes are authenticated by the campaign artifact that contains them.</dd></dl><dl class="card"><dt>Sealed record digest</dt><dd><span class="mono">61073e4730b6a0ec35b5bcd8e984e7382e6646a911b99bcfa88c145d7756e8fa</span></dd><dd class="lead">sha256 over the record&#x27;s canonical JSON — the identity every renderer works from.</dd></dl><dl class="card"><dt>Source record file</dt><dd><span class="mono">7e1edb3e0a187b4c0dadd8214949203d2c4f540944f94e4e4633375dd2a07b35</span></dd><dd class="lead">sha256 of fr-20260907-8f0b9493.json as written beside the standalone report.</dd></dl><dl class="card"><dt>Source standalone report</dt><dd><span class="mono">e8ae6e8b4f97c922fda03428ba4d00d3ef36aa242ddbafc8576c3a7ecb1c69ea</span></dd><dd class="lead">sha256 of fr-20260907-8f0b9493.html — independently verifiable with its own digest.</dd></dl><dl class="card"><dt>Source standalone PDF</dt><dd><span class="mono">b45e241c24b5f1fda385cca59e7ea72c6f3a1ced2f671d7aee0b0f76ebf1dba4</span></dd><dd class="lead">sha256 of fr-20260907-8f0b9493.pdf.</dd></dl><dl class="card"><dt>Run evidence bundle</dt><dd><span class="mono">8f0b94935fb71c5af554bddd6c2332990bbdfeee1b5f2275b97e4f490a04c9da</span></dd><dd class="lead">The digest the run&#x27;s own bundle computed over itself.</dd></dl><dl class="card"><dt>Certified evidence seal</dt><dd><span class="mono">0f97b9d0560aeb01635959125ac2e126ab1103e0087113deadcb7b4ed5ace282</span></dd><dd class="lead">The exam&#x27;s sealed evidence, established before this run.</dd></dl></div>
+<h4>Measurement history</h4>
+<p class="lead">This is the first recorded run on this exam. There is nothing to compare it against yet, and a single measurement is not a trend.</p>
+<p class="lead">The full artifact-by-artifact digest table, and the reproduction protocol,
+are in Appendix B.</p><h3 class="appendix">Appendix A — every rollout</h3>
+<div class="scroll"><table>
+  <thead><tr>
+    <th>Rollout</th><th>Model</th><th>Seed</th><th>Outcome</th><th>Submitted</th>
+    <th>Deepest stage</th><th>Hidden tests</th><th>Files</th><th>Tokens</th><th>Elapsed</th>
+  </tr></thead>
+  <tbody><tr class="row-pass"><td class="mono">6562b25a</td><td>cli/codex</td><td class="num">0</td><td>submitted_passed</td><td><span class="mark" data-v="pass">yes</span></td><td>Passed</td><td><span class="mark" data-v="pass">pass</span></td><td class="num">1</td><td class="num">n/a</td><td class="num">57.5s</td></tr><tr class="row-pass"><td class="mono">1ac06c7b</td><td>cli/codex</td><td class="num">1</td><td>submitted_passed</td><td><span class="mark" data-v="pass">yes</span></td><td>Passed</td><td><span class="mark" data-v="pass">pass</span></td><td class="num">1</td><td class="num">n/a</td><td class="num">68.6s</td></tr><tr class="row-pass"><td class="mono">bc443e0e</td><td>cli/codex</td><td class="num">2</td><td>submitted_passed</td><td><span class="mark" data-v="pass">yes</span></td><td>Passed</td><td><span class="mark" data-v="pass">pass</span></td><td class="num">1</td><td class="num">n/a</td><td class="num">55.5s</td></tr><tr class="row-pass"><td class="mono">8506c33c</td><td>cli/codex</td><td class="num">3</td><td>submitted_passed</td><td><span class="mark" data-v="pass">yes</span></td><td>Passed</td><td><span class="mark" data-v="pass">pass</span></td><td class="num">1</td><td class="num">n/a</td><td class="num">58.9s</td></tr><tr class="row-pass"><td class="mono">4f40821b</td><td>cli/codex</td><td class="num">4</td><td>submitted_passed</td><td><span class="mark" data-v="pass">yes</span></td><td>Passed</td><td><span class="mark" data-v="pass">pass</span></td><td class="num">1</td><td class="num">n/a</td><td class="num">44.9s</td></tr><tr class="row-pass"><td class="mono">26f398a6</td><td>cli/codex</td><td class="num">5</td><td>submitted_passed</td><td><span class="mark" data-v="pass">yes</span></td><td>Passed</td><td><span class="mark" data-v="pass">pass</span></td><td class="num">1</td><td class="num">n/a</td><td class="num">45.2s</td></tr><tr class="row-pass"><td class="mono">db5157cc</td><td>cli/codex</td><td class="num">6</td><td>submitted_passed</td><td><span class="mark" data-v="pass">yes</span></td><td>Passed</td><td><span class="mark" data-v="pass">pass</span></td><td class="num">1</td><td class="num">n/a</td><td class="num">46.6s</td></tr><tr class="row-pass"><td class="mono">1ba34a8d</td><td>cli/codex</td><td class="num">7</td><td>submitted_passed</td><td><span class="mark" data-v="pass">yes</span></td><td>Passed</td><td><span class="mark" data-v="pass">pass</span></td><td class="num">1</td><td class="num">n/a</td><td class="num">60.8s</td></tr><tr class="row-pass"><td class="mono">afea3a7c</td><td>cli/codex</td><td class="num">8</td><td>submitted_passed</td><td><span class="mark" data-v="pass">yes</span></td><td>Passed</td><td><span class="mark" data-v="pass">pass</span></td><td class="num">1</td><td class="num">n/a</td><td class="num">61.5s</td></tr><tr class="row-pass"><td class="mono">1e91b362</td><td>cli/codex</td><td class="num">9</td><td>submitted_passed</td><td><span class="mark" data-v="pass">yes</span></td><td>Passed</td><td><span class="mark" data-v="pass">pass</span></td><td class="num">1</td><td class="num">n/a</td><td class="num">52.6s</td></tr><tr class="row-pass"><td class="mono">c7c0b5b1</td><td>cli/claude-sonnet</td><td class="num">0</td><td>submitted_passed</td><td><span class="mark" data-v="pass">yes</span></td><td>Passed</td><td><span class="mark" data-v="pass">pass</span></td><td class="num">1</td><td class="num">n/a</td><td class="num">22.1s</td></tr><tr class="row-pass"><td class="mono">1956f3b9</td><td>cli/claude-sonnet</td><td class="num">1</td><td>submitted_passed</td><td><span class="mark" data-v="pass">yes</span></td><td>Passed</td><td><span class="mark" data-v="pass">pass</span></td><td class="num">1</td><td class="num">n/a</td><td class="num">26.3s</td></tr><tr class="row-pass"><td class="mono">5540d66f</td><td>cli/claude-sonnet</td><td class="num">2</td><td>submitted_passed</td><td><span class="mark" data-v="pass">yes</span></td><td>Passed</td><td><span class="mark" data-v="pass">pass</span></td><td class="num">1</td><td class="num">n/a</td><td class="num">24.0s</td></tr><tr class="row-pass"><td class="mono">f75f7ffd</td><td>cli/claude-sonnet</td><td class="num">3</td><td>submitted_passed</td><td><span class="mark" data-v="pass">yes</span></td><td>Passed</td><td><span class="mark" data-v="pass">pass</span></td><td class="num">1</td><td class="num">n/a</td><td class="num">22.9s</td></tr><tr class="row-pass"><td class="mono">fc30d37d</td><td>cli/claude-sonnet</td><td class="num">4</td><td>submitted_passed</td><td><span class="mark" data-v="pass">yes</span></td><td>Passed</td><td><span class="mark" data-v="pass">pass</span></td><td class="num">1</td><td class="num">n/a</td><td class="num">29.0s</td></tr><tr class="row-pass"><td class="mono">7cf58734</td><td>cli/claude-sonnet</td><td class="num">5</td><td>submitted_passed</td><td><span class="mark" data-v="pass">yes</span></td><td>Passed</td><td><span class="mark" data-v="pass">pass</span></td><td class="num">1</td><td class="num">n/a</td><td class="num">20.1s</td></tr><tr class="row-pass"><td class="mono">cafe5c18</td><td>cli/claude-sonnet</td><td class="num">6</td><td>submitted_passed</td><td><span class="mark" data-v="pass">yes</span></td><td>Passed</td><td><span class="mark" data-v="pass">pass</span></td><td class="num">1</td><td class="num">n/a</td><td class="num">34.7s</td></tr><tr class="row-pass"><td class="mono">272dafb0</td><td>cli/claude-sonnet</td><td class="num">7</td><td>submitted_passed</td><td><span class="mark" data-v="pass">yes</span></td><td>Passed</td><td><span class="mark" data-v="pass">pass</span></td><td class="num">1</td><td class="num">n/a</td><td class="num">20.1s</td></tr><tr class="row-pass"><td class="mono">8052afd0</td><td>cli/claude-sonnet</td><td class="num">8</td><td>submitted_passed</td><td><span class="mark" data-v="pass">yes</span></td><td>Passed</td><td><span class="mark" data-v="pass">pass</span></td><td class="num">1</td><td class="num">n/a</td><td class="num">38.4s</td></tr><tr class="row-pass"><td class="mono">a5be9e58</td><td>cli/claude-sonnet</td><td class="num">9</td><td>submitted_passed</td><td><span class="mark" data-v="pass">yes</span></td><td>Passed</td><td><span class="mark" data-v="pass">pass</span></td><td class="num">1</td><td class="num">n/a</td><td class="num">23.4s</td></tr></tbody>
+</table></div>
+
+<h4>Failure taxonomy</h4>
+<div class="scroll"><table>
+  <thead><tr><th>Class</th><th>Count</th><th>What it means</th></tr></thead>
+  <tbody><tr><td colspan="3">No failures recorded in this run.</td></tr></tbody>
+</table></div><h3 class="appendix">Appendix B — evidence and artifact digests</h3>
+<div class="grid">
+  <dl class="card"><dt>Run bundle digest</dt><dd><span class="mono">8f0b94935fb71c5af554bddd6c2332990bbdfeee1b5f2275b97e4f490a04c9da</span></dd></dl>
+  <dl class="card"><dt>Run id</dt><dd>live-20260907T084826Z</dd></dl>
+  <dl class="card"><dt>Started</dt><dd>2026-09-07T08:48:26.572120+00:00</dd></dl>
+  <dl class="card"><dt>Finished</dt><dd>2026-09-07T09:02:14.183999+00:00</dd></dl>
+</div>
+<h4>Artifact digests</h4>
+<div class="scroll"><table>
+  <thead><tr><th>Artifact</th><th>SHA-256</th></tr></thead>
+  <tbody><tr><td class="mono">publicSummary</td><td class="mono">e6c9b5eb366aa21d11f6cbee5cd0815fa1ff132f0aec3375a7f4c496a5841521</td></tr><tr><td class="mono">rollouts/1956f3b9-0fb8-44b0-864f-43a3710414b0.json</td><td class="mono">a7d2880c3191fe4c43ba416ee9dc6e027562691680da70061087a1b2ada6ae14</td></tr><tr><td class="mono">rollouts/1ac06c7b-b00e-424c-b953-ff4eb6624879.json</td><td class="mono">08d4173073f7a28c467ce25c54acdbc4d6340581ac2c7cd4b6562f7e54061831</td></tr><tr><td class="mono">rollouts/1ba34a8d-93bc-4bc1-8192-75375a5fab9e.json</td><td class="mono">dca606bea0745c91d966efb8e9f07270e07e7ce0c878b1b20ea22155cb5b6128</td></tr><tr><td class="mono">rollouts/1e91b362-e78f-414e-9623-3fb6631635a1.json</td><td class="mono">88a6ef6c4144931c13f50a08495972059bce3eba0ddf8247aa699f226231c3de</td></tr><tr><td class="mono">rollouts/26f398a6-2b2f-4472-9f97-92b5f39556d1.json</td><td class="mono">261e5a7dbef802a2e1ea18a27fc48b74c02f2ec63ab034cfa0e671057e996983</td></tr><tr><td class="mono">rollouts/272dafb0-9d9d-43cd-8631-520dbcb64663.json</td><td class="mono">21016aa58d232a44b460fb0afde3240a400cceb4807017579d53a268c16e37dc</td></tr><tr><td class="mono">rollouts/4f40821b-cd6e-463a-a147-adefe0a9f363.json</td><td class="mono">08d529ff305b17544bd425196141d4b0413e923fdaed64573acced7e98bfa1b6</td></tr><tr><td class="mono">rollouts/5540d66f-90f0-44f4-a346-9a4b15dcc7bf.json</td><td class="mono">fa4f452cef6c28c17ffb8cb60e2e93c13d85eb9744e432bebc4bf8fbb6d7a6bc</td></tr><tr><td class="mono">rollouts/6562b25a-1eda-40c0-a03f-9e1f8ba8f0af.json</td><td class="mono">5bb5c4fefe605934cd5955d8bf3a312564586025d73414c936d9e2eb0b76bfd4</td></tr><tr><td class="mono">rollouts/7cf58734-0777-469e-943f-6754f9df87d6.json</td><td class="mono">b44c596aec0c7f500328d8cca02667909a339d976a5c85270f69af899835939a</td></tr><tr><td class="mono">rollouts/8052afd0-5e12-46f8-8721-696df6b94426.json</td><td class="mono">26ff4e7b0440454950d391189e98b7943fa5691d2b899d3c2e9b83bf35e6c618</td></tr><tr><td class="mono">rollouts/8506c33c-683b-4b15-9d42-ccb7e48f647f.json</td><td class="mono">4216f197805c890501bb14a1a4908612cc8f87f1c4d99d68cc2e03033a7848b1</td></tr><tr><td class="mono">rollouts/a5be9e58-491f-47fc-a268-b5bfec370d0a.json</td><td class="mono">61fc84cbc5252cee0c3fb491ca6db65dde6fb7ed704666901635290b18106edf</td></tr><tr><td class="mono">rollouts/afea3a7c-3add-4776-b178-b17336e18472.json</td><td class="mono">95ad233c81673df2209b0cb12000ab7d529bb831ada55648e4887714fe72bee5</td></tr><tr><td class="mono">rollouts/bc443e0e-e6ed-4a27-921c-329f22a985fb.json</td><td class="mono">c5673fd4a59a46e624c8a30e471a67907aa9885fcd306cd07d73f414be659fb7</td></tr><tr><td class="mono">rollouts/c7c0b5b1-593a-454b-8b33-a5640dc80522.json</td><td class="mono">262062126a8185eebe8ad8009d9ebc9b09678c06ff0963e4c4d0e03d226f72cf</td></tr><tr><td class="mono">rollouts/cafe5c18-54b9-4474-9744-04aa14532fab.json</td><td class="mono">955f877e94c47490eae8c70f4d1d95806bb44e10ba9070fdd5bc3c101415c0b6</td></tr><tr><td class="mono">rollouts/db5157cc-dd4a-4d52-9ee6-1d092d7fd934.json</td><td class="mono">f0710dce9305b7cbdf36e3d47bb4625294c963cb4b32df8ba04c9146351467ca</td></tr><tr><td class="mono">rollouts/f75f7ffd-0c16-420a-9b5c-eb061c52de51.json</td><td class="mono">9a8c4f3f24835c636c23283a5ab41420509717f21073f3cea583b3ab8e3fb134</td></tr><tr><td class="mono">rollouts/fc30d37d-23e9-43ce-ac04-874bc7b40d89.json</td><td class="mono">86a3b74661d28b3d262ee2434e84c28fb8796138b2d1fd42a4a47f8df7188096</td></tr><tr><td class="mono">spec</td><td class="mono">1b78e911fd84bed7461339a27fab18bd6e6fd4af0de55461facb4de33b134f17</td></tr><tr><td class="mono">summary</td><td class="mono">b38dc46ddf3a8de87a818ebf55223d8a9d9174c026c0f5afc41460e6543b33bd</td></tr></tbody>
+</table></div>
+<h4>Reproducing this run</h4>
+<p class="lead">
+  Every rollout can be re-derived: the exam is frozen (fingerprint above), the grader ran in
+  the recorded container image, and each rollout's full trace — every tool call, every result,
+  every word — is in the evidence bundle at its <span class="mono">rollouts/&lt;id&gt;.json</span>
+  path. A re-run uses the same job shape: the exam id, your endpoint, n, and the runtime. The
+  record id names this run forever.
+</p>
+<h3 class="appendix">Appendix C — redacted transcripts</h3>
+<p class="lead">For each rollout: the tool calls it made, in order — which tool, on which of the model&#x27;s own paths, whether the call succeeded, and how many characters came back. What a tool returned is not here, and neither is the submission: on this exam the submitted content is the graded answer, so no diff, no answer value and no model claim is printed. A request for the reference solution or the hidden tests is recorded as a request; the path it asked for is replaced by a label. See Appendix D, “What this report withholds and why”.</p>
+<p class="lead">Disclosure class applied to this exam: answer-key disclosure (ownership vvdex_proprietary — no declaration — proprietary by default; family annotation): the exam is VVDex evaluation IP and the graded output is an answer or a keyed value, so no submission content, diff, model claim or hidden-assertion name is published.</p>
+
+<div class="trace">
+  <h4>6562b25a · cli:cli/codex · seed 0 · submitted_passed</h4>
+  <div class="scroll"><table>
+    <thead><tr><th>Step</th><th>Tool</th><th>Path</th><th>Result</th><th>Chars</th></tr></thead>
+    <tbody><tr><td class="num">0</td><td>list_files</td><td class="mono">.</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">80</td></tr><tr><td class="num">1</td><td>read_file</td><td class="mono">TASK.md</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">409</td></tr><tr><td class="num">2</td><td>read_file</td><td class="mono">annotation-task.json</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">2 826</td></tr><tr><td class="num">3</td><td>read_file</td><td class="mono">assets/message.txt</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">69</td></tr><tr><td class="num">4</td><td>read_file</td><td class="mono">submission.json</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">74</td></tr><tr><td class="num">5</td><td>write_file</td><td class="mono">submission.json</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">64</td></tr><tr><td class="num">6</td><td>run_tests</td><td class="mono">—</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">160</td></tr><tr><td class="num">7</td><td>submit</td><td class="mono">—</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">85</td></tr></tbody>
+  </table></div>
+  <p class="lead">Submission diff withheld by the public-disclosure policy (30 line(s) changed). Submission content withheld — proprietary evaluation material. On this exam the submitted change is the graded answer, so publishing an excerpt of it would publish the answer key.</p>
+</div>
+<div class="trace">
+  <h4>1ac06c7b · cli:cli/codex · seed 1 · submitted_passed</h4>
+  <div class="scroll"><table>
+    <thead><tr><th>Step</th><th>Tool</th><th>Path</th><th>Result</th><th>Chars</th></tr></thead>
+    <tbody><tr><td class="num">0</td><td>read_file</td><td class="mono">TASK.md</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">409</td></tr><tr><td class="num">1</td><td>read_file</td><td class="mono">annotation-task.json</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">2 826</td></tr><tr><td class="num">2</td><td>list_files</td><td class="mono">.</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">80</td></tr><tr><td class="num">3</td><td>read_file</td><td class="mono">assets/message.txt</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">69</td></tr><tr><td class="num">4</td><td>read_file</td><td class="mono">submission.json</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">74</td></tr><tr><td class="num">5</td><td>write_file</td><td class="mono">submission.json</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">64</td></tr><tr><td class="num">6</td><td>run_tests</td><td class="mono">—</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">160</td></tr><tr><td class="num">7</td><td>submit</td><td class="mono">—</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">85</td></tr></tbody>
+  </table></div>
+  <p class="lead">Submission diff withheld by the public-disclosure policy (30 line(s) changed). Submission content withheld — proprietary evaluation material. On this exam the submitted change is the graded answer, so publishing an excerpt of it would publish the answer key.</p>
+</div>
+<div class="trace">
+  <h4>bc443e0e · cli:cli/codex · seed 2 · submitted_passed</h4>
+  <div class="scroll"><table>
+    <thead><tr><th>Step</th><th>Tool</th><th>Path</th><th>Result</th><th>Chars</th></tr></thead>
+    <tbody><tr><td class="num">0</td><td>list_files</td><td class="mono">.</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">80</td></tr><tr><td class="num">1</td><td>read_file</td><td class="mono">TASK.md</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">409</td></tr><tr><td class="num">2</td><td>read_file</td><td class="mono">annotation-task.json</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">2 826</td></tr><tr><td class="num">3</td><td>read_file</td><td class="mono">assets/message.txt</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">69</td></tr><tr><td class="num">4</td><td>read_file</td><td class="mono">submission.json</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">74</td></tr><tr><td class="num">5</td><td>write_file</td><td class="mono">submission.json</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">64</td></tr><tr><td class="num">6</td><td>run_tests</td><td class="mono">—</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">160</td></tr><tr><td class="num">7</td><td>submit</td><td class="mono">—</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">85</td></tr></tbody>
+  </table></div>
+  <p class="lead">Submission diff withheld by the public-disclosure policy (30 line(s) changed). Submission content withheld — proprietary evaluation material. On this exam the submitted change is the graded answer, so publishing an excerpt of it would publish the answer key.</p>
+</div>
+<div class="trace">
+  <h4>8506c33c · cli:cli/codex · seed 3 · submitted_passed</h4>
+  <div class="scroll"><table>
+    <thead><tr><th>Step</th><th>Tool</th><th>Path</th><th>Result</th><th>Chars</th></tr></thead>
+    <tbody><tr><td class="num">0</td><td>read_file</td><td class="mono">TASK.md</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">409</td></tr><tr><td class="num">1</td><td>read_file</td><td class="mono">annotation-task.json</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">2 826</td></tr><tr><td class="num">2</td><td>list_files</td><td class="mono">assets</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">18</td></tr><tr><td class="num">3</td><td>read_file</td><td class="mono">assets/message.txt</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">69</td></tr><tr><td class="num">4</td><td>write_file</td><td class="mono">submission.json</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">64</td></tr><tr><td class="num">5</td><td>run_tests</td><td class="mono">—</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">160</td></tr><tr><td class="num">6</td><td>submit</td><td class="mono">—</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">85</td></tr></tbody>
+  </table></div>
+  <p class="lead">Submission diff withheld by the public-disclosure policy (9 line(s) changed). Submission content withheld — proprietary evaluation material. On this exam the submitted change is the graded answer, so publishing an excerpt of it would publish the answer key.</p>
+</div>
+<div class="trace">
+  <h4>4f40821b · cli:cli/codex · seed 4 · submitted_passed</h4>
+  <div class="scroll"><table>
+    <thead><tr><th>Step</th><th>Tool</th><th>Path</th><th>Result</th><th>Chars</th></tr></thead>
+    <tbody><tr><td class="num">0</td><td>read_file</td><td class="mono">TASK.md</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">409</td></tr><tr><td class="num">1</td><td>read_file</td><td class="mono">annotation-task.json</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">2 826</td></tr><tr><td class="num">2</td><td>read_file</td><td class="mono">assets/message.txt</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">69</td></tr><tr><td class="num">3</td><td>write_file</td><td class="mono">submission.json</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">64</td></tr><tr><td class="num">4</td><td>run_tests</td><td class="mono">—</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">160</td></tr><tr><td class="num">5</td><td>submit</td><td class="mono">—</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">85</td></tr></tbody>
+  </table></div>
+  <p class="lead">Submission diff withheld by the public-disclosure policy (9 line(s) changed). Submission content withheld — proprietary evaluation material. On this exam the submitted change is the graded answer, so publishing an excerpt of it would publish the answer key.</p>
+</div>
+<div class="trace">
+  <h4>26f398a6 · cli:cli/codex · seed 5 · submitted_passed</h4>
+  <div class="scroll"><table>
+    <thead><tr><th>Step</th><th>Tool</th><th>Path</th><th>Result</th><th>Chars</th></tr></thead>
+    <tbody><tr><td class="num">0</td><td>read_file</td><td class="mono">TASK.md</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">409</td></tr><tr><td class="num">1</td><td>read_file</td><td class="mono">annotation-task.json</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">2 826</td></tr><tr><td class="num">2</td><td>read_file</td><td class="mono">assets/message.txt</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">69</td></tr><tr><td class="num">3</td><td>write_file</td><td class="mono">submission.json</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">64</td></tr><tr><td class="num">4</td><td>run_tests</td><td class="mono">—</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">160</td></tr><tr><td class="num">5</td><td>submit</td><td class="mono">—</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">85</td></tr></tbody>
+  </table></div>
+  <p class="lead">Submission diff withheld by the public-disclosure policy (9 line(s) changed). Submission content withheld — proprietary evaluation material. On this exam the submitted change is the graded answer, so publishing an excerpt of it would publish the answer key.</p>
+</div>
+<div class="trace">
+  <h4>db5157cc · cli:cli/codex · seed 6 · submitted_passed</h4>
+  <div class="scroll"><table>
+    <thead><tr><th>Step</th><th>Tool</th><th>Path</th><th>Result</th><th>Chars</th></tr></thead>
+    <tbody><tr><td class="num">0</td><td>read_file</td><td class="mono">TASK.md</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">409</td></tr><tr><td class="num">1</td><td>read_file</td><td class="mono">annotation-task.json</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">2 826</td></tr><tr><td class="num">2</td><td>read_file</td><td class="mono">assets/message.txt</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">69</td></tr><tr><td class="num">3</td><td>write_file</td><td class="mono">submission.json</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">64</td></tr><tr><td class="num">4</td><td>run_tests</td><td class="mono">—</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">160</td></tr><tr><td class="num">5</td><td>submit</td><td class="mono">—</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">85</td></tr></tbody>
+  </table></div>
+  <p class="lead">Submission diff withheld by the public-disclosure policy (31 line(s) changed). Submission content withheld — proprietary evaluation material. On this exam the submitted change is the graded answer, so publishing an excerpt of it would publish the answer key.</p>
+</div>
+<div class="trace">
+  <h4>1ba34a8d · cli:cli/codex · seed 7 · submitted_passed</h4>
+  <div class="scroll"><table>
+    <thead><tr><th>Step</th><th>Tool</th><th>Path</th><th>Result</th><th>Chars</th></tr></thead>
+    <tbody><tr><td class="num">0</td><td>list_files</td><td class="mono">.</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">80</td></tr><tr><td class="num">1</td><td>read_file</td><td class="mono">TASK.md</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">409</td></tr><tr><td class="num">2</td><td>read_file</td><td class="mono">annotation-task.json</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">2 826</td></tr><tr><td class="num">3</td><td>read_file</td><td class="mono">assets/message.txt</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">69</td></tr><tr><td class="num">4</td><td>read_file</td><td class="mono">submission.json</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">74</td></tr><tr><td class="num">5</td><td>write_file</td><td class="mono">submission.json</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">64</td></tr><tr><td class="num">6</td><td>run_tests</td><td class="mono">—</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">160</td></tr><tr><td class="num">7</td><td>submit</td><td class="mono">—</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">85</td></tr></tbody>
+  </table></div>
+  <p class="lead">Submission diff withheld by the public-disclosure policy (30 line(s) changed). Submission content withheld — proprietary evaluation material. On this exam the submitted change is the graded answer, so publishing an excerpt of it would publish the answer key.</p>
+</div>
+<div class="trace">
+  <h4>afea3a7c · cli:cli/codex · seed 8 · submitted_passed</h4>
+  <div class="scroll"><table>
+    <thead><tr><th>Step</th><th>Tool</th><th>Path</th><th>Result</th><th>Chars</th></tr></thead>
+    <tbody><tr><td class="num">0</td><td>list_files</td><td class="mono">.</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">80</td></tr><tr><td class="num">1</td><td>read_file</td><td class="mono">TASK.md</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">409</td></tr><tr><td class="num">2</td><td>read_file</td><td class="mono">annotation-task.json</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">2 826</td></tr><tr><td class="num">3</td><td>read_file</td><td class="mono">assets/message.txt</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">69</td></tr><tr><td class="num">4</td><td>read_file</td><td class="mono">submission.json</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">74</td></tr><tr><td class="num">5</td><td>write_file</td><td class="mono">submission.json</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">64</td></tr><tr><td class="num">6</td><td>run_tests</td><td class="mono">—</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">160</td></tr><tr><td class="num">7</td><td>submit</td><td class="mono">—</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">85</td></tr></tbody>
+  </table></div>
+  <p class="lead">Submission diff withheld by the public-disclosure policy (29 line(s) changed). Submission content withheld — proprietary evaluation material. On this exam the submitted change is the graded answer, so publishing an excerpt of it would publish the answer key.</p>
+</div>
+<div class="trace">
+  <h4>1e91b362 · cli:cli/codex · seed 9 · submitted_passed</h4>
+  <div class="scroll"><table>
+    <thead><tr><th>Step</th><th>Tool</th><th>Path</th><th>Result</th><th>Chars</th></tr></thead>
+    <tbody><tr><td class="num">0</td><td>list_files</td><td class="mono">.</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">80</td></tr><tr><td class="num">1</td><td>read_file</td><td class="mono">TASK.md</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">409</td></tr><tr><td class="num">2</td><td>read_file</td><td class="mono">annotation-task.json</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">2 826</td></tr><tr><td class="num">3</td><td>read_file</td><td class="mono">assets/message.txt</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">69</td></tr><tr><td class="num">4</td><td>read_file</td><td class="mono">submission.json</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">74</td></tr><tr><td class="num">5</td><td>write_file</td><td class="mono">submission.json</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">64</td></tr><tr><td class="num">6</td><td>run_tests</td><td class="mono">—</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">160</td></tr><tr><td class="num">7</td><td>submit</td><td class="mono">—</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">85</td></tr></tbody>
+  </table></div>
+  <p class="lead">Submission diff withheld by the public-disclosure policy (30 line(s) changed). Submission content withheld — proprietary evaluation material. On this exam the submitted change is the graded answer, so publishing an excerpt of it would publish the answer key.</p>
+</div>
+<div class="trace">
+  <h4>c7c0b5b1 · cli:cli/claude-sonnet · seed 0 · submitted_passed</h4>
+  <div class="scroll"><table>
+    <thead><tr><th>Step</th><th>Tool</th><th>Path</th><th>Result</th><th>Chars</th></tr></thead>
+    <tbody><tr><td class="num">0</td><td>read_file</td><td class="mono">TASK.md</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">409</td></tr><tr><td class="num">1</td><td>read_file</td><td class="mono">annotation-task.json</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">2 826</td></tr><tr><td class="num">2</td><td>write_file</td><td class="mono">submission.json</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">64</td></tr><tr><td class="num">3</td><td>run_tests</td><td class="mono">—</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">160</td></tr><tr><td class="num">4</td><td>submit</td><td class="mono">—</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">85</td></tr></tbody>
+  </table></div>
+  <p class="lead">Submission diff withheld by the public-disclosure policy (31 line(s) changed). Submission content withheld — proprietary evaluation material. On this exam the submitted change is the graded answer, so publishing an excerpt of it would publish the answer key.</p>
+</div>
+<div class="trace">
+  <h4>1956f3b9 · cli:cli/claude-sonnet · seed 1 · submitted_passed</h4>
+  <div class="scroll"><table>
+    <thead><tr><th>Step</th><th>Tool</th><th>Path</th><th>Result</th><th>Chars</th></tr></thead>
+    <tbody><tr><td class="num">0</td><td>read_file</td><td class="mono">TASK.md</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">409</td></tr><tr><td class="num">1</td><td>read_file</td><td class="mono">annotation-task.json</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">2 826</td></tr><tr><td class="num">2</td><td>write_file</td><td class="mono">submission.json</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">64</td></tr><tr><td class="num">3</td><td>run_tests</td><td class="mono">—</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">160</td></tr><tr><td class="num">4</td><td>submit</td><td class="mono">—</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">85</td></tr></tbody>
+  </table></div>
+  <p class="lead">Submission diff withheld by the public-disclosure policy (31 line(s) changed). Submission content withheld — proprietary evaluation material. On this exam the submitted change is the graded answer, so publishing an excerpt of it would publish the answer key.</p>
+</div>
+<div class="trace">
+  <h4>5540d66f · cli:cli/claude-sonnet · seed 2 · submitted_passed</h4>
+  <div class="scroll"><table>
+    <thead><tr><th>Step</th><th>Tool</th><th>Path</th><th>Result</th><th>Chars</th></tr></thead>
+    <tbody><tr><td class="num">0</td><td>read_file</td><td class="mono">TASK.md</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">409</td></tr><tr><td class="num">1</td><td>read_file</td><td class="mono">annotation-task.json</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">2 826</td></tr><tr><td class="num">2</td><td>write_file</td><td class="mono">submission.json</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">64</td></tr><tr><td class="num">3</td><td>run_tests</td><td class="mono">—</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">160</td></tr><tr><td class="num">4</td><td>submit</td><td class="mono">—</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">85</td></tr></tbody>
+  </table></div>
+  <p class="lead">Submission diff withheld by the public-disclosure policy (30 line(s) changed). Submission content withheld — proprietary evaluation material. On this exam the submitted change is the graded answer, so publishing an excerpt of it would publish the answer key.</p>
+</div>
+<div class="trace">
+  <h4>f75f7ffd · cli:cli/claude-sonnet · seed 3 · submitted_passed</h4>
+  <div class="scroll"><table>
+    <thead><tr><th>Step</th><th>Tool</th><th>Path</th><th>Result</th><th>Chars</th></tr></thead>
+    <tbody><tr><td class="num">0</td><td>read_file</td><td class="mono">TASK.md</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">409</td></tr><tr><td class="num">1</td><td>read_file</td><td class="mono">annotation-task.json</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">2 826</td></tr><tr><td class="num">2</td><td>write_file</td><td class="mono">submission.json</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">64</td></tr><tr><td class="num">3</td><td>run_tests</td><td class="mono">—</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">160</td></tr><tr><td class="num">4</td><td>submit</td><td class="mono">—</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">85</td></tr></tbody>
+  </table></div>
+  <p class="lead">Submission diff withheld by the public-disclosure policy (30 line(s) changed). Submission content withheld — proprietary evaluation material. On this exam the submitted change is the graded answer, so publishing an excerpt of it would publish the answer key.</p>
+</div>
+<div class="trace">
+  <h4>fc30d37d · cli:cli/claude-sonnet · seed 4 · submitted_passed</h4>
+  <div class="scroll"><table>
+    <thead><tr><th>Step</th><th>Tool</th><th>Path</th><th>Result</th><th>Chars</th></tr></thead>
+    <tbody><tr><td class="num">0</td><td>read_file</td><td class="mono">TASK.md</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">409</td></tr><tr><td class="num">1</td><td>read_file</td><td class="mono">annotation-task.json</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">2 826</td></tr><tr><td class="num">2</td><td>write_file</td><td class="mono">submission.json</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">64</td></tr><tr><td class="num">3</td><td>run_tests</td><td class="mono">—</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">160</td></tr><tr><td class="num">4</td><td>submit</td><td class="mono">—</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">85</td></tr></tbody>
+  </table></div>
+  <p class="lead">Submission diff withheld by the public-disclosure policy (31 line(s) changed). Submission content withheld — proprietary evaluation material. On this exam the submitted change is the graded answer, so publishing an excerpt of it would publish the answer key.</p>
+</div>
+<div class="trace">
+  <h4>7cf58734 · cli:cli/claude-sonnet · seed 5 · submitted_passed</h4>
+  <div class="scroll"><table>
+    <thead><tr><th>Step</th><th>Tool</th><th>Path</th><th>Result</th><th>Chars</th></tr></thead>
+    <tbody><tr><td class="num">0</td><td>read_file</td><td class="mono">TASK.md</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">409</td></tr><tr><td class="num">1</td><td>read_file</td><td class="mono">annotation-task.json</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">2 826</td></tr><tr><td class="num">2</td><td>write_file</td><td class="mono">submission.json</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">64</td></tr><tr><td class="num">3</td><td>run_tests</td><td class="mono">—</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">160</td></tr><tr><td class="num">4</td><td>submit</td><td class="mono">—</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">85</td></tr></tbody>
+  </table></div>
+  <p class="lead">Submission diff withheld by the public-disclosure policy (31 line(s) changed). Submission content withheld — proprietary evaluation material. On this exam the submitted change is the graded answer, so publishing an excerpt of it would publish the answer key.</p>
+</div>
+<div class="trace">
+  <h4>cafe5c18 · cli:cli/claude-sonnet · seed 6 · submitted_passed</h4>
+  <div class="scroll"><table>
+    <thead><tr><th>Step</th><th>Tool</th><th>Path</th><th>Result</th><th>Chars</th></tr></thead>
+    <tbody><tr><td class="num">0</td><td>read_file</td><td class="mono">TASK.md</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">409</td></tr><tr><td class="num">1</td><td>read_file</td><td class="mono">annotation-task.json</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">2 826</td></tr><tr><td class="num">2</td><td>write_file</td><td class="mono">submission.json</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">64</td></tr><tr><td class="num">3</td><td>run_tests</td><td class="mono">—</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">160</td></tr><tr><td class="num">4</td><td>submit</td><td class="mono">—</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">85</td></tr></tbody>
+  </table></div>
+  <p class="lead">Submission diff withheld by the public-disclosure policy (30 line(s) changed). Submission content withheld — proprietary evaluation material. On this exam the submitted change is the graded answer, so publishing an excerpt of it would publish the answer key.</p>
+</div>
+<div class="trace">
+  <h4>272dafb0 · cli:cli/claude-sonnet · seed 7 · submitted_passed</h4>
+  <div class="scroll"><table>
+    <thead><tr><th>Step</th><th>Tool</th><th>Path</th><th>Result</th><th>Chars</th></tr></thead>
+    <tbody><tr><td class="num">0</td><td>read_file</td><td class="mono">TASK.md</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">409</td></tr><tr><td class="num">1</td><td>read_file</td><td class="mono">annotation-task.json</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">2 826</td></tr><tr><td class="num">2</td><td>write_file</td><td class="mono">submission.json</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">64</td></tr><tr><td class="num">3</td><td>run_tests</td><td class="mono">—</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">160</td></tr><tr><td class="num">4</td><td>submit</td><td class="mono">—</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">85</td></tr></tbody>
+  </table></div>
+  <p class="lead">Submission diff withheld by the public-disclosure policy (30 line(s) changed). Submission content withheld — proprietary evaluation material. On this exam the submitted change is the graded answer, so publishing an excerpt of it would publish the answer key.</p>
+</div>
+<div class="trace">
+  <h4>8052afd0 · cli:cli/claude-sonnet · seed 8 · submitted_passed</h4>
+  <div class="scroll"><table>
+    <thead><tr><th>Step</th><th>Tool</th><th>Path</th><th>Result</th><th>Chars</th></tr></thead>
+    <tbody><tr><td class="num">0</td><td>read_file</td><td class="mono">TASK.md</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">409</td></tr><tr><td class="num">1</td><td>read_file</td><td class="mono">annotation-task.json</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">2 826</td></tr><tr><td class="num">2</td><td>write_file</td><td class="mono">submission.json</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">64</td></tr><tr><td class="num">3</td><td>run_tests</td><td class="mono">—</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">160</td></tr><tr><td class="num">4</td><td>submit</td><td class="mono">—</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">85</td></tr></tbody>
+  </table></div>
+  <p class="lead">Submission diff withheld by the public-disclosure policy (31 line(s) changed). Submission content withheld — proprietary evaluation material. On this exam the submitted change is the graded answer, so publishing an excerpt of it would publish the answer key.</p>
+</div>
+<div class="trace">
+  <h4>a5be9e58 · cli:cli/claude-sonnet · seed 9 · submitted_passed</h4>
+  <div class="scroll"><table>
+    <thead><tr><th>Step</th><th>Tool</th><th>Path</th><th>Result</th><th>Chars</th></tr></thead>
+    <tbody><tr><td class="num">0</td><td>read_file</td><td class="mono">TASK.md</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">409</td></tr><tr><td class="num">1</td><td>read_file</td><td class="mono">annotation-task.json</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">2 826</td></tr><tr><td class="num">2</td><td>write_file</td><td class="mono">submission.json</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">64</td></tr><tr><td class="num">3</td><td>run_tests</td><td class="mono">—</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">160</td></tr><tr><td class="num">4</td><td>submit</td><td class="mono">—</td><td><span class="mark" data-v="pass">ok</span></td><td class="num">85</td></tr></tbody>
+  </table></div>
+  <p class="lead">Submission diff withheld by the public-disclosure policy (30 line(s) changed). Submission content withheld — proprietary evaluation material. On this exam the submitted change is the graded answer, so publishing an excerpt of it would publish the answer key.</p>
+</div></div><h2>Evidence</h2><p>Every number above is recomputable from the sealed records below; each record verifies itself with <code>vvdex-env records verify</code>, and this document was regenerated from them with <code>vvdex-env records campaign</code>.</p><ul><li class="mono">vvdex.annotation.structured-data-1 → fr-20260907-cd08adce · recordDigest 3596e3de9ba226bcd00ca746e26e31a8c0cd85b88f82b93d51ab27fd24af6877</li><li class="mono">vvdex.annotation.text-labeling-1 → fr-20260907-8f0b9493 · recordDigest 61073e4730b6a0ec35b5bcd8e984e7382e6646a911b99bcfa88c145d7756e8fa</li></ul><section class="closing"><h2>Attestation</h2><p>Certified results appear only where evidence proves them. Withheld, invalid and lane-error cells are never presented as model results, and no historical evidence was modified in producing this document. Counts are exact; below ten rollouts per cell no rate or ranking beyond the counts is asserted.</p><p>© VVDex. All rights reserved. Public materials are provided for viewing, evaluation and verification. Reuse, redistribution, derivative benchmark creation, training use, republication or commercial use requires written permission unless a specific file states otherwise. Full terms: <a href="https://vvdexops.com/terms/">vvdexops.com/terms/</a>. Third-party open source reproduced in an exam keeps its own licence.</p></section></main></body></html>

@@ -40,6 +40,39 @@ Gemini 3.6 Flash completed the robot-video exam with the original video at a req
 
 Earlier setup and contract problems remain disclosed. The prior 42.11/100 native-only result is diagnostic for capacity attribution. Original answers and grading thresholds were not changed to improve the score. See [the new campaign](https://vvdexops.com/reports/fc-403cfc23f9e5/) and [input-condition limitations](CAPABILITIES.md).
 
+## Annotation lane campaigns · September 7, 2026
+
+The same five certified annotation fixtures were run against every model lane
+the operator could reach, with one pilot attempt per cell and ten repeated
+attempts where the pilot was clean. Provider refusals, rate limits and
+containment breaches stay recorded as lane errors, withheld or invalid attempts
+and are never counted as model failures; unsupported cells are not measured.
+
+* **Muse Spark 1.3 (OpenRouter, native video re-encoded to MP4 with exact frames):**
+  robotic video, one pilot pass ([campaign](reports/fc-0743e9bca9f2/)) plus a
+  twelve-attempt campaign of 4 certified passes, 6 model failures and 2 lane
+  errors ([campaign](reports/fc-89575ed5687d/)). Across both: 5 certified passes
+  in 11 graded attempts. Every failure was a bounding box or event boundary at
+  the acceptance line, not a provider or runtime error.
+* **Muse Spark 1.3 through the OpenCode CLI (free tier, image attachments,
+  no native video):** text 10/10, structured data 10/10, image objects 0/10
+  ([campaign](reports/fc-e4d7e6adab0f/)).
+* **Codex CLI and Claude Sonnet CLI:** text 10/10 and structured data 10/10 each
+  ([campaign](reports/fc-6d6679dea47a/)).
+* **Free API lanes (Groq, Cloudflare, Mistral):** ten attempts each on text and
+  structured data ([campaign](reports/fc-3377c49ce724/)); Groq's GPT-OSS-20B
+  text cell is mostly provider rejections and reads as lane errors.
+* **Pilots:** seventeen lanes on text and structured data
+  ([campaign](reports/fc-0c7e7c67a231/)) and Gemini/OpenCode pilots on image,
+  audio, text and structured data ([campaign](reports/fc-6f40beb6605e/)).
+  Gemini attempts are lane errors (provider credits depleted); audio therefore
+  has no graded attempt.
+
+Delivery conditions stay separate: native video with exact frames, sampled
+frames and image attachments are distinct measurements and are never pooled.
+The public [Capabilities](https://vvdexops.com/capabilities/) view compares
+these per exam, campaign and condition; there is no overall model score.
+
 ## Annotation model results · September 6, 2026
 
 A separate campaign tested GPT-5.5 through the signed-in Codex CLI on four fixed

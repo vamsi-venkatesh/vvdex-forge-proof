@@ -22,27 +22,26 @@
     ],
     "modality": "image",
     "modelCampaign": {
-      "campaignId": "fc-ec21239c00aa",
+      "campaignId": "fc-e4d7e6adab0f",
       "coverage": {
         "cellsPending": 0,
-        "cellsRun": 4,
+        "cellsRun": 3,
         "complete": true,
-        "completedAttempts": 40,
+        "completedAttempts": 30,
         "examsNotStarted": [],
         "missingAttempts": 0,
         "note": "Cells run against the cells this campaign declared it would run.",
         "pending": [],
         "planDeclared": true,
-        "plannedAttempts": 40,
-        "plannedCells": 4,
+        "plannedAttempts": 30,
+        "plannedCells": 3,
         "plannedExams": [
-          "vvdex.annotation.robot-video-1",
-          "vvdex.annotation.image-object-1",
           "vvdex.annotation.text-labeling-1",
-          "vvdex.annotation.structured-data-1"
+          "vvdex.annotation.structured-data-1",
+          "vvdex.annotation.image-object-1"
         ],
         "plannedModels": [
-          "cli/codex-gpt-5.5"
+          "cli/opencode-muse-spark"
         ],
         "rolloutsPerCell": 10
       },
@@ -51,31 +50,31 @@
         {
           "attempts": 10,
           "delivery": "image attachments",
-          "failed": 5,
+          "failed": 10,
           "invalid": 0,
           "laneErrors": 0,
-          "model": "cli/codex-gpt-5.5",
-          "passed": 5,
+          "model": "cli/opencode-muse-spark",
+          "passed": 0,
           "quality": {
             "axes": [
               {
                 "id": "boxPrecision",
-                "mean": 1.0,
+                "mean": 0.6,
                 "n": 10
               },
               {
                 "id": "boxRecall",
-                "mean": 1.0,
+                "mean": 0.6,
                 "n": 10
               },
               {
                 "id": "boxF1",
-                "mean": 1.0,
+                "mean": 0.6,
                 "n": 10
               },
               {
                 "id": "boxIoU",
-                "mean": 0.9901829268292683,
+                "mean": 0.513139362881007,
                 "n": 10
               },
               {
@@ -115,12 +114,12 @@
               }
             ],
             "measuredAttempts": 10,
-            "scoreMean": 0.9950914634146344
+            "scoreMean": 0.7494434198874845
           },
           "stages": {
             "edit": 10,
             "graded": 10,
-            "hidden_pass": 5,
+            "hidden_pass": 0,
             "inspect": 10,
             "submit": 10,
             "test": 10
@@ -128,9 +127,9 @@
           "withheld": 0
         }
       ],
-      "reportUrl": "/reports/fc-ec21239c00aa/",
-      "summarySha256": "6c39d4e589a4cc509345dc1dfa46d1d5a422d43104300465591c1f402b89bdf6",
-      "summaryUrl": "/reports/fc-ec21239c00aa/summary.json"
+      "reportUrl": "/reports/fc-e4d7e6adab0f/",
+      "summarySha256": "7a5d1a00820ffb56bc51c8728e14c9b9d5e5348c962d902e6b673a63873f6b15",
+      "summaryUrl": "/reports/fc-e4d7e6adab0f/summary.json"
     },
     "purpose": "A constructed image is reviewed for classification, object boxes, attributes and keypoints.",
     "rubricVersion": "1.0"
@@ -169,7 +168,7 @@
     ]
   },
   "reportLinks": {
-    "campaignReport": "/reports/fc-ec21239c00aa/",
+    "campaignReport": "/reports/fc-e4d7e6adab0f/",
     "certificationReceipt": "https://vvdexops.com/annotation/image-object-1/certification-receipt.json",
     "certificationReport": "https://vvdexops.com/annotation/image-object-1/report.public.json",
     "examPage": "https://vvdexops.com/annotation/image-object-1/"

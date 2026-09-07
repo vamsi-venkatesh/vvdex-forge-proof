@@ -1,0 +1,111 @@
+{
+  "disclosureClass": "answer_key",
+  "environmentId": "vvdex.annotation.image-object-1",
+  "evalId": "fr-20260907-9bee4b48",
+  "fingerprint": "422753713aeb9f41abcc4135d637e3064cae1e770fc8d22ec9dacf260b35a3ef",
+  "kind": "vvdex.forge.public-record-projection/v1",
+  "lanes": [
+    "cli/opencode-muse-spark"
+  ],
+  "note": "A projection of the sealed record, not the record. Its bytes do not hash to sourceRecordDigest; that digest describes the canonical record, which a holder verifies under agreement.",
+  "results": {
+    "byModel": [
+      {
+        "countableN": 0,
+        "countableSuccesses": 0,
+        "lowN": true,
+        "model": "cli/opencode-muse-spark",
+        "n": 1,
+        "provider": "cli",
+        "successRate": 0.0,
+        "successes": 0,
+        "toolCalls": 8,
+        "verdicts": {
+          "certified_pass": 0,
+          "invalid": 0,
+          "lane_error": 0,
+          "model_fail": 0,
+          "withheld": 1
+        }
+      }
+    ],
+    "successRate": 0.0,
+    "totalRollouts": 1
+  },
+  "rollouts": [
+    {
+      "containmentVerdict": "unverified",
+      "effectiveCertifiedOutcome": "withheld",
+      "elapsedMs": 165976,
+      "id": "6e0dd6df-38ce-4cd1-84c5-7700eb5ecfc5",
+      "lane": "cli/opencode-muse-spark",
+      "outcome": "submitted_failed",
+      "seed": 0,
+      "stages": {
+        "edited": true,
+        "graded": true,
+        "inspected": true,
+        "passed": false,
+        "submitted": true,
+        "tested": true
+      },
+      "stepLimit": 24,
+      "stepsUsed": 8,
+      "toolNameCounts": {
+        "list_files": 1,
+        "read_file": 4,
+        "run_tests": 1,
+        "submit": 1,
+        "write_file": 1
+      },
+      "verdicts": {
+        "certified": "withheld",
+        "grader": "fail",
+        "integrity": "unverified"
+      }
+    }
+  ],
+  "sourceRecordDigest": {
+    "algorithm": "sha256 over the record's canonical JSON (UTF-8, sorted keys, compact separators) with recordDigest.sha256 set to 64 '0' characters",
+    "sha256": "b08ceac9eef6a1d09760e410f2b09a12c6de4c221c95cdc8aef20a6fc5ef776f"
+  },
+  "stages": [
+    {
+      "applicable": true,
+      "id": "inspect",
+      "label": "Inspected",
+      "meaning": "Listed or read at least one file in the repository \u2014 or, on a browser exam, opened or snapshotted the page."
+    },
+    {
+      "applicable": true,
+      "id": "edit",
+      "label": "Edited",
+      "meaning": "Wrote at least one file that actually changed on disk."
+    },
+    {
+      "applicable": true,
+      "id": "test",
+      "label": "Ran tests",
+      "meaning": "Invoked the visible-test tool at least once."
+    },
+    {
+      "applicable": true,
+      "id": "submit",
+      "label": "Submitted",
+      "meaning": "Called submit, ending the rollout on its own terms."
+    },
+    {
+      "applicable": true,
+      "id": "graded",
+      "label": "Graded",
+      "meaning": "The independent hidden grader ran on the submission and returned a verdict."
+    },
+    {
+      "applicable": true,
+      "id": "hidden_pass",
+      "label": "Passed hidden tests",
+      "meaning": "The hidden grader returned exit 0 and the rollout was certified."
+    }
+  ],
+  "version": "0.1.0"
+}

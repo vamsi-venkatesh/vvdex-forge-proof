@@ -1,0 +1,390 @@
+{
+  "disclosureClass": "answer_key",
+  "environmentId": "vvdex.annotation.image-object-1",
+  "evalId": "fr-20260907-d8051665",
+  "fingerprint": "422753713aeb9f41abcc4135d637e3064cae1e770fc8d22ec9dacf260b35a3ef",
+  "kind": "vvdex.forge.public-record-projection/v1",
+  "lanes": [
+    "cli/opencode-muse-spark"
+  ],
+  "note": "A projection of the sealed record, not the record. Its bytes do not hash to sourceRecordDigest; that digest describes the canonical record, which a holder verifies under agreement.",
+  "results": {
+    "byModel": [
+      {
+        "countableN": 10,
+        "countableSuccesses": 0,
+        "lowN": false,
+        "model": "cli/opencode-muse-spark",
+        "n": 10,
+        "provider": "cli",
+        "successRate": 0.0,
+        "successes": 0,
+        "toolCalls": 80,
+        "verdicts": {
+          "certified_pass": 0,
+          "invalid": 0,
+          "lane_error": 0,
+          "model_fail": 10,
+          "withheld": 0
+        }
+      }
+    ],
+    "successRate": 0.0,
+    "totalRollouts": 10
+  },
+  "rollouts": [
+    {
+      "containmentVerdict": "verified_contained",
+      "effectiveCertifiedOutcome": "model_fail",
+      "elapsedMs": 185568,
+      "id": "9db02f79-274f-45a0-a7cf-01688f594b74",
+      "lane": "cli/opencode-muse-spark",
+      "outcome": "submitted_failed",
+      "seed": 0,
+      "stages": {
+        "edited": true,
+        "graded": true,
+        "inspected": true,
+        "passed": false,
+        "submitted": true,
+        "tested": true
+      },
+      "stepLimit": 24,
+      "stepsUsed": 8,
+      "toolNameCounts": {
+        "list_files": 1,
+        "read_file": 4,
+        "run_tests": 1,
+        "submit": 1,
+        "write_file": 1
+      },
+      "verdicts": {
+        "certified": "model_fail",
+        "grader": "fail",
+        "integrity": "verified_contained"
+      }
+    },
+    {
+      "containmentVerdict": "verified_contained",
+      "effectiveCertifiedOutcome": "model_fail",
+      "elapsedMs": 178708,
+      "id": "98dc8366-ab16-4e8a-8248-0a8744219763",
+      "lane": "cli/opencode-muse-spark",
+      "outcome": "submitted_failed",
+      "seed": 1,
+      "stages": {
+        "edited": true,
+        "graded": true,
+        "inspected": true,
+        "passed": false,
+        "submitted": true,
+        "tested": true
+      },
+      "stepLimit": 24,
+      "stepsUsed": 8,
+      "toolNameCounts": {
+        "list_files": 1,
+        "read_file": 4,
+        "run_tests": 1,
+        "submit": 1,
+        "write_file": 1
+      },
+      "verdicts": {
+        "certified": "model_fail",
+        "grader": "fail",
+        "integrity": "verified_contained"
+      }
+    },
+    {
+      "containmentVerdict": "verified_contained",
+      "effectiveCertifiedOutcome": "model_fail",
+      "elapsedMs": 108968,
+      "id": "cd13432b-0846-4185-838b-f137051967d2",
+      "lane": "cli/opencode-muse-spark",
+      "outcome": "submitted_failed",
+      "seed": 2,
+      "stages": {
+        "edited": true,
+        "graded": true,
+        "inspected": true,
+        "passed": false,
+        "submitted": true,
+        "tested": true
+      },
+      "stepLimit": 24,
+      "stepsUsed": 8,
+      "toolNameCounts": {
+        "list_files": 1,
+        "read_file": 4,
+        "run_tests": 1,
+        "submit": 1,
+        "write_file": 1
+      },
+      "verdicts": {
+        "certified": "model_fail",
+        "grader": "fail",
+        "integrity": "verified_contained"
+      }
+    },
+    {
+      "containmentVerdict": "verified_contained",
+      "effectiveCertifiedOutcome": "model_fail",
+      "elapsedMs": 209310,
+      "id": "f9fb75d2-0eec-4ba0-81ab-695ee86a4636",
+      "lane": "cli/opencode-muse-spark",
+      "outcome": "submitted_failed",
+      "seed": 3,
+      "stages": {
+        "edited": true,
+        "graded": true,
+        "inspected": true,
+        "passed": false,
+        "submitted": true,
+        "tested": true
+      },
+      "stepLimit": 24,
+      "stepsUsed": 8,
+      "toolNameCounts": {
+        "list_files": 1,
+        "read_file": 4,
+        "run_tests": 1,
+        "submit": 1,
+        "write_file": 1
+      },
+      "verdicts": {
+        "certified": "model_fail",
+        "grader": "fail",
+        "integrity": "verified_contained"
+      }
+    },
+    {
+      "containmentVerdict": "verified_contained",
+      "effectiveCertifiedOutcome": "model_fail",
+      "elapsedMs": 254846,
+      "id": "1ee5c074-df9c-4794-afbf-3fedbc6f95a6",
+      "lane": "cli/opencode-muse-spark",
+      "outcome": "submitted_failed",
+      "seed": 4,
+      "stages": {
+        "edited": true,
+        "graded": true,
+        "inspected": true,
+        "passed": false,
+        "submitted": true,
+        "tested": true
+      },
+      "stepLimit": 24,
+      "stepsUsed": 8,
+      "toolNameCounts": {
+        "list_files": 1,
+        "read_file": 4,
+        "run_tests": 1,
+        "submit": 1,
+        "write_file": 1
+      },
+      "verdicts": {
+        "certified": "model_fail",
+        "grader": "fail",
+        "integrity": "verified_contained"
+      }
+    },
+    {
+      "containmentVerdict": "verified_contained",
+      "effectiveCertifiedOutcome": "model_fail",
+      "elapsedMs": 263568,
+      "id": "49ed0958-99cc-4547-aeb4-c318448239d5",
+      "lane": "cli/opencode-muse-spark",
+      "outcome": "submitted_failed",
+      "seed": 5,
+      "stages": {
+        "edited": true,
+        "graded": true,
+        "inspected": true,
+        "passed": false,
+        "submitted": true,
+        "tested": true
+      },
+      "stepLimit": 24,
+      "stepsUsed": 8,
+      "toolNameCounts": {
+        "list_files": 1,
+        "read_file": 4,
+        "run_tests": 1,
+        "submit": 1,
+        "write_file": 1
+      },
+      "verdicts": {
+        "certified": "model_fail",
+        "grader": "fail",
+        "integrity": "verified_contained"
+      }
+    },
+    {
+      "containmentVerdict": "verified_contained",
+      "effectiveCertifiedOutcome": "model_fail",
+      "elapsedMs": 252059,
+      "id": "5799a6ce-4c73-4f24-87bc-28d78bbf8a34",
+      "lane": "cli/opencode-muse-spark",
+      "outcome": "submitted_failed",
+      "seed": 6,
+      "stages": {
+        "edited": true,
+        "graded": true,
+        "inspected": true,
+        "passed": false,
+        "submitted": true,
+        "tested": true
+      },
+      "stepLimit": 24,
+      "stepsUsed": 8,
+      "toolNameCounts": {
+        "list_files": 1,
+        "read_file": 4,
+        "run_tests": 1,
+        "submit": 1,
+        "write_file": 1
+      },
+      "verdicts": {
+        "certified": "model_fail",
+        "grader": "fail",
+        "integrity": "verified_contained"
+      }
+    },
+    {
+      "containmentVerdict": "verified_contained",
+      "effectiveCertifiedOutcome": "model_fail",
+      "elapsedMs": 220648,
+      "id": "a415324f-6938-49f1-ad2c-52d5ae792312",
+      "lane": "cli/opencode-muse-spark",
+      "outcome": "submitted_failed",
+      "seed": 7,
+      "stages": {
+        "edited": true,
+        "graded": true,
+        "inspected": true,
+        "passed": false,
+        "submitted": true,
+        "tested": true
+      },
+      "stepLimit": 24,
+      "stepsUsed": 8,
+      "toolNameCounts": {
+        "list_files": 1,
+        "read_file": 4,
+        "run_tests": 1,
+        "submit": 1,
+        "write_file": 1
+      },
+      "verdicts": {
+        "certified": "model_fail",
+        "grader": "fail",
+        "integrity": "verified_contained"
+      }
+    },
+    {
+      "containmentVerdict": "verified_contained",
+      "effectiveCertifiedOutcome": "model_fail",
+      "elapsedMs": 213299,
+      "id": "f167b53b-0192-475d-bd23-e232731d9262",
+      "lane": "cli/opencode-muse-spark",
+      "outcome": "submitted_failed",
+      "seed": 8,
+      "stages": {
+        "edited": true,
+        "graded": true,
+        "inspected": true,
+        "passed": false,
+        "submitted": true,
+        "tested": true
+      },
+      "stepLimit": 24,
+      "stepsUsed": 8,
+      "toolNameCounts": {
+        "list_files": 1,
+        "read_file": 4,
+        "run_tests": 1,
+        "submit": 1,
+        "write_file": 1
+      },
+      "verdicts": {
+        "certified": "model_fail",
+        "grader": "fail",
+        "integrity": "verified_contained"
+      }
+    },
+    {
+      "containmentVerdict": "verified_contained",
+      "effectiveCertifiedOutcome": "model_fail",
+      "elapsedMs": 136362,
+      "id": "b9192f49-2bc8-4a99-8d26-fd0abba684f6",
+      "lane": "cli/opencode-muse-spark",
+      "outcome": "submitted_failed",
+      "seed": 9,
+      "stages": {
+        "edited": true,
+        "graded": true,
+        "inspected": true,
+        "passed": false,
+        "submitted": true,
+        "tested": true
+      },
+      "stepLimit": 24,
+      "stepsUsed": 8,
+      "toolNameCounts": {
+        "list_files": 1,
+        "read_file": 4,
+        "run_tests": 1,
+        "submit": 1,
+        "write_file": 1
+      },
+      "verdicts": {
+        "certified": "model_fail",
+        "grader": "fail",
+        "integrity": "verified_contained"
+      }
+    }
+  ],
+  "sourceRecordDigest": {
+    "algorithm": "sha256 over the record's canonical JSON (UTF-8, sorted keys, compact separators) with recordDigest.sha256 set to 64 '0' characters",
+    "sha256": "533b6d1f4d350c544088d42f0a3f3f3943d6e17c1095ac620bfe52406a8aeb5b"
+  },
+  "stages": [
+    {
+      "applicable": true,
+      "id": "inspect",
+      "label": "Inspected",
+      "meaning": "Listed or read at least one file in the repository \u2014 or, on a browser exam, opened or snapshotted the page."
+    },
+    {
+      "applicable": true,
+      "id": "edit",
+      "label": "Edited",
+      "meaning": "Wrote at least one file that actually changed on disk."
+    },
+    {
+      "applicable": true,
+      "id": "test",
+      "label": "Ran tests",
+      "meaning": "Invoked the visible-test tool at least once."
+    },
+    {
+      "applicable": true,
+      "id": "submit",
+      "label": "Submitted",
+      "meaning": "Called submit, ending the rollout on its own terms."
+    },
+    {
+      "applicable": true,
+      "id": "graded",
+      "label": "Graded",
+      "meaning": "The independent hidden grader ran on the submission and returned a verdict."
+    },
+    {
+      "applicable": true,
+      "id": "hidden_pass",
+      "label": "Passed hidden tests",
+      "meaning": "The hidden grader returned exit 0 and the rollout was certified."
+    }
+  ],
+  "version": "0.1.0"
+}

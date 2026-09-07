@@ -1,0 +1,193 @@
+{
+  "disclosureClass": "answer_key",
+  "environmentId": "vvdex.annotation.structured-data-1",
+  "evalId": "fr-20260907-29701401",
+  "fingerprint": "5d6b3708dba2cdf08218a44997058413d0a3aae738299bce8c346bb2b309fc28",
+  "kind": "vvdex.forge.public-record-projection/v1",
+  "lanes": [
+    "mistral-small-latest",
+    "mistral-medium-latest",
+    "magistral-small-latest"
+  ],
+  "note": "A projection of the sealed record, not the record. Its bytes do not hash to sourceRecordDigest; that digest describes the canonical record, which a holder verifies under agreement.",
+  "results": {
+    "byModel": [
+      {
+        "countableN": 0,
+        "countableSuccesses": 0,
+        "lowN": true,
+        "model": "mistral-small-latest",
+        "n": 1,
+        "provider": "mistral",
+        "successRate": 0.0,
+        "successes": 0,
+        "toolCalls": 0,
+        "verdicts": {
+          "certified_pass": 0,
+          "invalid": 0,
+          "lane_error": 1,
+          "model_fail": 0,
+          "withheld": 0
+        }
+      },
+      {
+        "countableN": 0,
+        "countableSuccesses": 0,
+        "lowN": true,
+        "model": "mistral-medium-latest",
+        "n": 1,
+        "provider": "mistral",
+        "successRate": 0.0,
+        "successes": 0,
+        "toolCalls": 0,
+        "verdicts": {
+          "certified_pass": 0,
+          "invalid": 0,
+          "lane_error": 1,
+          "model_fail": 0,
+          "withheld": 0
+        }
+      },
+      {
+        "countableN": 0,
+        "countableSuccesses": 0,
+        "lowN": true,
+        "model": "magistral-small-latest",
+        "n": 1,
+        "provider": "mistral",
+        "successRate": 0.0,
+        "successes": 0,
+        "toolCalls": 0,
+        "verdicts": {
+          "certified_pass": 0,
+          "invalid": 0,
+          "lane_error": 1,
+          "model_fail": 0,
+          "withheld": 0
+        }
+      }
+    ],
+    "successRate": 0.0,
+    "totalRollouts": 3
+  },
+  "rollouts": [
+    {
+      "containmentVerdict": "verified_contained",
+      "effectiveCertifiedOutcome": "lane_error",
+      "elapsedMs": 58240,
+      "id": "5325ee0d-5a54-44a7-bd13-f93292b6e6b3",
+      "lane": "mistral-small-latest",
+      "outcome": "model_api_failure",
+      "seed": 0,
+      "stages": {
+        "edited": false,
+        "graded": false,
+        "inspected": false,
+        "passed": false,
+        "submitted": false,
+        "tested": false
+      },
+      "stepLimit": 24,
+      "stepsUsed": 0,
+      "toolNameCounts": {},
+      "verdicts": {
+        "certified": "lane_error",
+        "grader": "error",
+        "integrity": "verified_contained"
+      }
+    },
+    {
+      "containmentVerdict": "verified_contained",
+      "effectiveCertifiedOutcome": "lane_error",
+      "elapsedMs": 58267,
+      "id": "ba4b5d6d-3b72-42ef-b268-e03d0b28d4be",
+      "lane": "mistral-medium-latest",
+      "outcome": "model_api_failure",
+      "seed": 0,
+      "stages": {
+        "edited": false,
+        "graded": false,
+        "inspected": false,
+        "passed": false,
+        "submitted": false,
+        "tested": false
+      },
+      "stepLimit": 24,
+      "stepsUsed": 0,
+      "toolNameCounts": {},
+      "verdicts": {
+        "certified": "lane_error",
+        "grader": "error",
+        "integrity": "verified_contained"
+      }
+    },
+    {
+      "containmentVerdict": "verified_contained",
+      "effectiveCertifiedOutcome": "lane_error",
+      "elapsedMs": 59289,
+      "id": "348b5a59-2461-4db4-bda8-14986f536fed",
+      "lane": "magistral-small-latest",
+      "outcome": "model_api_failure",
+      "seed": 0,
+      "stages": {
+        "edited": false,
+        "graded": false,
+        "inspected": false,
+        "passed": false,
+        "submitted": false,
+        "tested": false
+      },
+      "stepLimit": 24,
+      "stepsUsed": 0,
+      "toolNameCounts": {},
+      "verdicts": {
+        "certified": "lane_error",
+        "grader": "error",
+        "integrity": "verified_contained"
+      }
+    }
+  ],
+  "sourceRecordDigest": {
+    "algorithm": "sha256 over the record's canonical JSON (UTF-8, sorted keys, compact separators) with recordDigest.sha256 set to 64 '0' characters",
+    "sha256": "4d674e21c58427397f8b9b5918e587f9111427e72eaa2281bb7d0fcfa7bd7848"
+  },
+  "stages": [
+    {
+      "applicable": true,
+      "id": "inspect",
+      "label": "Inspected",
+      "meaning": "Listed or read at least one file in the repository \u2014 or, on a browser exam, opened or snapshotted the page."
+    },
+    {
+      "applicable": true,
+      "id": "edit",
+      "label": "Edited",
+      "meaning": "Wrote at least one file that actually changed on disk."
+    },
+    {
+      "applicable": true,
+      "id": "test",
+      "label": "Ran tests",
+      "meaning": "Invoked the visible-test tool at least once."
+    },
+    {
+      "applicable": true,
+      "id": "submit",
+      "label": "Submitted",
+      "meaning": "Called submit, ending the rollout on its own terms."
+    },
+    {
+      "applicable": true,
+      "id": "graded",
+      "label": "Graded",
+      "meaning": "The independent hidden grader ran on the submission and returned a verdict."
+    },
+    {
+      "applicable": true,
+      "id": "hidden_pass",
+      "label": "Passed hidden tests",
+      "meaning": "The hidden grader returned exit 0 and the rollout was certified."
+    }
+  ],
+  "version": "0.1.0"
+}

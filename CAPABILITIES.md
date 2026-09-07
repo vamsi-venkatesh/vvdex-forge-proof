@@ -51,6 +51,23 @@ Six prior development attempts are retained as diagnostics. These include provid
 
 Track consistency is conditioned on box matching, so zero can reflect inaccurate boxes despite correct track IDs. Exam certification and reference spot-checks do not establish independent human validation.
 
+## Annotation lane campaigns — September 7, 2026
+
+Muse Spark 1.3 via OpenRouter took robot-video revision 0.2.0 with the original
+video re-encoded to MP4 (the provider accepts MP4 only; frame count, rate and
+timing preserved) plus the two exact requested frames as lossless PNGs from the
+original file. The re-encode is stated in every sealed delivery receipt and on
+the campaign page. Result: 5 certified passes in 11 graded attempts across the
+pilot and the twelve-attempt campaign, with 2 lane errors caused by the
+harness's own request cap. Failures were boxes or event boundaries at the 0.5
+acceptance line. This is a fixed-task result under one recorded input condition.
+
+The same fixtures were also measured through the OpenCode CLI (Muse Spark,
+image attachments only), the Codex and Claude Sonnet CLIs (text and structured
+data) and free API lanes. Each lane, exam and delivery condition is a separate
+measurement on the Capabilities pages; audio has no graded attempt because the
+only lane that reached it returned provider errors.
+
 ## Input delivery and telemetry
 
 Image delivery, sampled video frames, native video, native video with exact frames, native audio, text and

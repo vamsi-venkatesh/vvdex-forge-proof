@@ -22,7 +22,66 @@
       "segmentTemporalIoU"
     ],
     "modality": "audio",
-    "modelCampaign": null,
+    "modelCampaign": {
+      "campaignId": "fc-6f40beb6605e",
+      "coverage": {
+        "cellsPending": 1,
+        "cellsRun": 7,
+        "complete": false,
+        "completedAttempts": 10,
+        "examsNotStarted": [],
+        "missingAttempts": 1,
+        "note": "Cells run against the cells this campaign declared it would run.",
+        "pending": [
+          {
+            "completedAttempts": 0,
+            "environmentId": "vvdex.annotation.audio-events-1",
+            "missingAttempts": 1,
+            "model": "cli/opencode-muse-spark",
+            "plannedAttempts": 1
+          }
+        ],
+        "planDeclared": true,
+        "plannedAttempts": 8,
+        "plannedCells": 8,
+        "plannedExams": [
+          "vvdex.annotation.image-object-1",
+          "vvdex.annotation.audio-events-1",
+          "vvdex.annotation.text-labeling-1",
+          "vvdex.annotation.structured-data-1"
+        ],
+        "plannedModels": [
+          "gemini-3.6-flash",
+          "cli/opencode-muse-spark"
+        ],
+        "rolloutsPerCell": 1
+      },
+      "examFingerprint": "7e749a2ffb885355e770a09007a7b2465edf1d8a50768441b8872ff9f951ed5e",
+      "models": [
+        {
+          "attempts": 1,
+          "delivery": "delivery not established for every attempt",
+          "failed": 0,
+          "invalid": 0,
+          "laneErrors": 1,
+          "model": "gemini-3.6-flash",
+          "passed": 0,
+          "quality": null,
+          "stages": {
+            "edit": 0,
+            "graded": 0,
+            "hidden_pass": 0,
+            "inspect": 0,
+            "submit": 0,
+            "test": 0
+          },
+          "withheld": 0
+        }
+      ],
+      "reportUrl": "/reports/fc-6f40beb6605e/",
+      "summarySha256": "8061b885340333f8cf88fa17dcd36b90dedd8eb247741c1117b2e17a0ffce190",
+      "summaryUrl": "/reports/fc-6f40beb6605e/summary.json"
+    },
     "purpose": "Constructed non-speech audio is reviewed for events, temporal segments, silence and category consistency.",
     "rubricVersion": "1.0"
   },
@@ -41,8 +100,67 @@
   ],
   "examFingerprint": "7e749a2ffb885355e770a09007a7b2465edf1d8a50768441b8872ff9f951ed5e",
   "examId": "vvdex.annotation.audio-events-1",
-  "limitations": "Small constructed engineering fixtures, not a production dataset or professional annotation engagement. Video uses sparse frame boxes, not dense tracking. Audio contains tones and silence, not speech or speakers. CVAT XML 1.1 and Label Studio JSON cover tested box subsets only; unsupported or lossy conversions are refused. Polygon comparison requires the implemented vertex representation. Certification alone does not measure model performance or annotator population performance.",
-  "modelCampaign": null,
+  "limitations": "Small constructed engineering fixtures, not a production dataset or professional annotation engagement. Video uses sparse frame boxes, not dense tracking. Audio contains tones and silence, not speech or speakers. CVAT XML 1.1 and Label Studio JSON cover tested box subsets only; unsupported or lossy conversions are refused. Polygon comparison requires the implemented vertex representation. The attached model campaign measures these fixed tasks only; general capability and annotator population performance are not inferred.",
+  "modelCampaign": {
+    "campaignId": "fc-6f40beb6605e",
+    "coverage": {
+      "cellsPending": 1,
+      "cellsRun": 7,
+      "complete": false,
+      "completedAttempts": 10,
+      "examsNotStarted": [],
+      "missingAttempts": 1,
+      "note": "Cells run against the cells this campaign declared it would run.",
+      "pending": [
+        {
+          "completedAttempts": 0,
+          "environmentId": "vvdex.annotation.audio-events-1",
+          "missingAttempts": 1,
+          "model": "cli/opencode-muse-spark",
+          "plannedAttempts": 1
+        }
+      ],
+      "planDeclared": true,
+      "plannedAttempts": 8,
+      "plannedCells": 8,
+      "plannedExams": [
+        "vvdex.annotation.image-object-1",
+        "vvdex.annotation.audio-events-1",
+        "vvdex.annotation.text-labeling-1",
+        "vvdex.annotation.structured-data-1"
+      ],
+      "plannedModels": [
+        "gemini-3.6-flash",
+        "cli/opencode-muse-spark"
+      ],
+      "rolloutsPerCell": 1
+    },
+    "examFingerprint": "7e749a2ffb885355e770a09007a7b2465edf1d8a50768441b8872ff9f951ed5e",
+    "models": [
+      {
+        "attempts": 1,
+        "delivery": "delivery not established for every attempt",
+        "failed": 0,
+        "invalid": 0,
+        "laneErrors": 1,
+        "model": "gemini-3.6-flash",
+        "passed": 0,
+        "quality": null,
+        "stages": {
+          "edit": 0,
+          "graded": 0,
+          "hidden_pass": 0,
+          "inspect": 0,
+          "submit": 0,
+          "test": 0
+        },
+        "withheld": 0
+      }
+    ],
+    "reportUrl": "/reports/fc-6f40beb6605e/",
+    "summarySha256": "8061b885340333f8cf88fa17dcd36b90dedd8eb247741c1117b2e17a0ffce190",
+    "summaryUrl": "/reports/fc-6f40beb6605e/summary.json"
+  },
   "referenceMetrics": {
     "classificationAccuracy": 1.0,
     "classificationF1": 1.0,

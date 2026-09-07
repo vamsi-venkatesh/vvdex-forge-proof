@@ -1,0 +1,105 @@
+{
+  "disclosureClass": "answer_key",
+  "environmentId": "vvdex.annotation.audio-events-1",
+  "evalId": "fr-20260907-67c07cce",
+  "fingerprint": "7e749a2ffb885355e770a09007a7b2465edf1d8a50768441b8872ff9f951ed5e",
+  "kind": "vvdex.forge.public-record-projection/v1",
+  "lanes": [
+    "gemini-3.6-flash"
+  ],
+  "note": "A projection of the sealed record, not the record. Its bytes do not hash to sourceRecordDigest; that digest describes the canonical record, which a holder verifies under agreement.",
+  "results": {
+    "byModel": [
+      {
+        "countableN": 0,
+        "countableSuccesses": 0,
+        "lowN": true,
+        "model": "gemini-3.6-flash",
+        "n": 1,
+        "provider": "gemini",
+        "successRate": 0.0,
+        "successes": 0,
+        "toolCalls": 0,
+        "verdicts": {
+          "certified_pass": 0,
+          "invalid": 0,
+          "lane_error": 1,
+          "model_fail": 0,
+          "withheld": 0
+        }
+      }
+    ],
+    "successRate": 0.0,
+    "totalRollouts": 1
+  },
+  "rollouts": [
+    {
+      "containmentVerdict": "verified_contained",
+      "effectiveCertifiedOutcome": "lane_error",
+      "elapsedMs": 891,
+      "id": "e78fec44-66e6-4b28-bdcc-38963d93efbd",
+      "lane": "gemini-3.6-flash",
+      "outcome": "model_api_failure",
+      "seed": 0,
+      "stages": {
+        "edited": false,
+        "graded": false,
+        "inspected": false,
+        "passed": false,
+        "submitted": false,
+        "tested": false
+      },
+      "stepLimit": 24,
+      "stepsUsed": 0,
+      "toolNameCounts": {},
+      "verdicts": {
+        "certified": "lane_error",
+        "grader": "error",
+        "integrity": "verified_contained"
+      }
+    }
+  ],
+  "sourceRecordDigest": {
+    "algorithm": "sha256 over the record's canonical JSON (UTF-8, sorted keys, compact separators) with recordDigest.sha256 set to 64 '0' characters",
+    "sha256": "1f595aa9846136ff6fcd075c0a6f491a969633f119bb0c63505f70a92e0e6a02"
+  },
+  "stages": [
+    {
+      "applicable": true,
+      "id": "inspect",
+      "label": "Inspected",
+      "meaning": "Listed or read at least one file in the repository \u2014 or, on a browser exam, opened or snapshotted the page."
+    },
+    {
+      "applicable": true,
+      "id": "edit",
+      "label": "Edited",
+      "meaning": "Wrote at least one file that actually changed on disk."
+    },
+    {
+      "applicable": true,
+      "id": "test",
+      "label": "Ran tests",
+      "meaning": "Invoked the visible-test tool at least once."
+    },
+    {
+      "applicable": true,
+      "id": "submit",
+      "label": "Submitted",
+      "meaning": "Called submit, ending the rollout on its own terms."
+    },
+    {
+      "applicable": true,
+      "id": "graded",
+      "label": "Graded",
+      "meaning": "The independent hidden grader ran on the submission and returned a verdict."
+    },
+    {
+      "applicable": true,
+      "id": "hidden_pass",
+      "label": "Passed hidden tests",
+      "meaning": "The hidden grader returned exit 0 and the rollout was certified."
+    }
+  ],
+  "version": "0.1.0"
+}

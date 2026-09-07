@@ -1,0 +1,743 @@
+{
+  "disclosureClass": "answer_key",
+  "environmentId": "vvdex.annotation.structured-data-1",
+  "evalId": "fr-20260907-7c027ac8",
+  "fingerprint": "5d6b3708dba2cdf08218a44997058413d0a3aae738299bce8c346bb2b309fc28",
+  "kind": "vvdex.forge.public-record-projection/v1",
+  "lanes": [
+    "openai/gpt-oss-20b",
+    "openai/gpt-oss-120b",
+    "mistral-small-latest",
+    "codestral-latest",
+    "mistral-code-latest",
+    "mistral-medium-latest",
+    "magistral-small-latest",
+    "ministral-14b-latest",
+    "ministral-8b-latest",
+    "@cf/openai/gpt-oss-20b",
+    "nvidia/nemotron-3-super-120b-a12b:free",
+    "cohere/north-mini-code:free",
+    "minimax/minimax-m3:free",
+    "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free"
+  ],
+  "note": "A projection of the sealed record, not the record. Its bytes do not hash to sourceRecordDigest; that digest describes the canonical record, which a holder verifies under agreement.",
+  "results": {
+    "byModel": [
+      {
+        "countableN": 1,
+        "countableSuccesses": 1,
+        "lowN": true,
+        "model": "openai/gpt-oss-20b",
+        "n": 1,
+        "provider": "groq",
+        "successRate": 1.0,
+        "successes": 1,
+        "toolCalls": 6,
+        "verdicts": {
+          "certified_pass": 1,
+          "invalid": 0,
+          "lane_error": 0,
+          "model_fail": 0,
+          "withheld": 0
+        }
+      },
+      {
+        "countableN": 1,
+        "countableSuccesses": 1,
+        "lowN": true,
+        "model": "openai/gpt-oss-120b",
+        "n": 1,
+        "provider": "groq",
+        "successRate": 1.0,
+        "successes": 1,
+        "toolCalls": 9,
+        "verdicts": {
+          "certified_pass": 1,
+          "invalid": 0,
+          "lane_error": 0,
+          "model_fail": 0,
+          "withheld": 0
+        }
+      },
+      {
+        "countableN": 0,
+        "countableSuccesses": 0,
+        "lowN": true,
+        "model": "mistral-small-latest",
+        "n": 1,
+        "provider": "mistral",
+        "successRate": 0.0,
+        "successes": 0,
+        "toolCalls": 0,
+        "verdicts": {
+          "certified_pass": 0,
+          "invalid": 0,
+          "lane_error": 1,
+          "model_fail": 0,
+          "withheld": 0
+        }
+      },
+      {
+        "countableN": 1,
+        "countableSuccesses": 1,
+        "lowN": true,
+        "model": "codestral-latest",
+        "n": 1,
+        "provider": "mistral",
+        "successRate": 1.0,
+        "successes": 1,
+        "toolCalls": 6,
+        "verdicts": {
+          "certified_pass": 1,
+          "invalid": 0,
+          "lane_error": 0,
+          "model_fail": 0,
+          "withheld": 0
+        }
+      },
+      {
+        "countableN": 1,
+        "countableSuccesses": 1,
+        "lowN": true,
+        "model": "mistral-code-latest",
+        "n": 1,
+        "provider": "mistral",
+        "successRate": 1.0,
+        "successes": 1,
+        "toolCalls": 6,
+        "verdicts": {
+          "certified_pass": 1,
+          "invalid": 0,
+          "lane_error": 0,
+          "model_fail": 0,
+          "withheld": 0
+        }
+      },
+      {
+        "countableN": 0,
+        "countableSuccesses": 0,
+        "lowN": true,
+        "model": "mistral-medium-latest",
+        "n": 1,
+        "provider": "mistral",
+        "successRate": 0.0,
+        "successes": 0,
+        "toolCalls": 0,
+        "verdicts": {
+          "certified_pass": 0,
+          "invalid": 0,
+          "lane_error": 1,
+          "model_fail": 0,
+          "withheld": 0
+        }
+      },
+      {
+        "countableN": 0,
+        "countableSuccesses": 0,
+        "lowN": true,
+        "model": "magistral-small-latest",
+        "n": 1,
+        "provider": "mistral",
+        "successRate": 0.0,
+        "successes": 0,
+        "toolCalls": 0,
+        "verdicts": {
+          "certified_pass": 0,
+          "invalid": 0,
+          "lane_error": 1,
+          "model_fail": 0,
+          "withheld": 0
+        }
+      },
+      {
+        "countableN": 1,
+        "countableSuccesses": 0,
+        "lowN": true,
+        "model": "ministral-14b-latest",
+        "n": 1,
+        "provider": "mistral",
+        "successRate": 0.0,
+        "successes": 0,
+        "toolCalls": 24,
+        "verdicts": {
+          "certified_pass": 0,
+          "invalid": 0,
+          "lane_error": 0,
+          "model_fail": 1,
+          "withheld": 0
+        }
+      },
+      {
+        "countableN": 1,
+        "countableSuccesses": 0,
+        "lowN": true,
+        "model": "ministral-8b-latest",
+        "n": 1,
+        "provider": "mistral",
+        "successRate": 0.0,
+        "successes": 0,
+        "toolCalls": 8,
+        "verdicts": {
+          "certified_pass": 0,
+          "invalid": 0,
+          "lane_error": 0,
+          "model_fail": 1,
+          "withheld": 0
+        }
+      },
+      {
+        "countableN": 1,
+        "countableSuccesses": 1,
+        "lowN": true,
+        "model": "@cf/openai/gpt-oss-20b",
+        "n": 1,
+        "provider": "cloudflare",
+        "successRate": 1.0,
+        "successes": 1,
+        "toolCalls": 9,
+        "verdicts": {
+          "certified_pass": 1,
+          "invalid": 0,
+          "lane_error": 0,
+          "model_fail": 0,
+          "withheld": 0
+        }
+      },
+      {
+        "countableN": 0,
+        "countableSuccesses": 0,
+        "lowN": true,
+        "model": "nvidia/nemotron-3-super-120b-a12b:free",
+        "n": 1,
+        "provider": "openrouter",
+        "successRate": 0.0,
+        "successes": 0,
+        "toolCalls": 9,
+        "verdicts": {
+          "certified_pass": 0,
+          "invalid": 0,
+          "lane_error": 0,
+          "model_fail": 0,
+          "withheld": 1
+        }
+      },
+      {
+        "countableN": 0,
+        "countableSuccesses": 0,
+        "lowN": true,
+        "model": "cohere/north-mini-code:free",
+        "n": 1,
+        "provider": "openrouter",
+        "successRate": 0.0,
+        "successes": 0,
+        "toolCalls": 7,
+        "verdicts": {
+          "certified_pass": 0,
+          "invalid": 0,
+          "lane_error": 0,
+          "model_fail": 0,
+          "withheld": 1
+        }
+      },
+      {
+        "countableN": 1,
+        "countableSuccesses": 1,
+        "lowN": true,
+        "model": "minimax/minimax-m3:free",
+        "n": 1,
+        "provider": "openrouter",
+        "successRate": 1.0,
+        "successes": 1,
+        "toolCalls": 8,
+        "verdicts": {
+          "certified_pass": 1,
+          "invalid": 0,
+          "lane_error": 0,
+          "model_fail": 0,
+          "withheld": 0
+        }
+      },
+      {
+        "countableN": 0,
+        "countableSuccesses": 0,
+        "lowN": true,
+        "model": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
+        "n": 1,
+        "provider": "openrouter",
+        "successRate": 0.0,
+        "successes": 0,
+        "toolCalls": 3,
+        "verdicts": {
+          "certified_pass": 0,
+          "invalid": 0,
+          "lane_error": 1,
+          "model_fail": 0,
+          "withheld": 0
+        }
+      }
+    ],
+    "successRate": 0.42857142857142855,
+    "totalRollouts": 14
+  },
+  "rollouts": [
+    {
+      "containmentVerdict": "verified_contained",
+      "effectiveCertifiedOutcome": "certified_pass",
+      "elapsedMs": 74250,
+      "id": "ca520eff-c0a5-44e8-aee7-030142adc283",
+      "lane": "openai/gpt-oss-20b",
+      "outcome": "submitted_passed",
+      "seed": 0,
+      "stages": {
+        "edited": true,
+        "graded": true,
+        "inspected": true,
+        "passed": true,
+        "submitted": true,
+        "tested": true
+      },
+      "stepLimit": 24,
+      "stepsUsed": 6,
+      "toolNameCounts": {
+        "list_files": 1,
+        "read_file": 2,
+        "run_tests": 1,
+        "submit": 1,
+        "write_file": 1
+      },
+      "verdicts": {
+        "certified": "certified_pass",
+        "grader": "pass",
+        "integrity": "verified_contained"
+      }
+    },
+    {
+      "containmentVerdict": "verified_contained",
+      "effectiveCertifiedOutcome": "certified_pass",
+      "elapsedMs": 134765,
+      "id": "35e13207-d339-46f7-914e-c4d126d632a4",
+      "lane": "openai/gpt-oss-120b",
+      "outcome": "submitted_passed",
+      "seed": 0,
+      "stages": {
+        "edited": true,
+        "graded": true,
+        "inspected": true,
+        "passed": true,
+        "submitted": true,
+        "tested": true
+      },
+      "stepLimit": 24,
+      "stepsUsed": 9,
+      "toolNameCounts": {
+        "invalid_tool_call": 1,
+        "list_files": 1,
+        "read_file": 4,
+        "run_tests": 1,
+        "submit": 1,
+        "write_file": 1
+      },
+      "verdicts": {
+        "certified": "certified_pass",
+        "grader": "pass",
+        "integrity": "verified_contained"
+      }
+    },
+    {
+      "containmentVerdict": "verified_contained",
+      "effectiveCertifiedOutcome": "lane_error",
+      "elapsedMs": 58050,
+      "id": "4b1037c6-2090-4042-9eea-21363eab8aca",
+      "lane": "mistral-small-latest",
+      "outcome": "model_api_failure",
+      "seed": 0,
+      "stages": {
+        "edited": false,
+        "graded": false,
+        "inspected": false,
+        "passed": false,
+        "submitted": false,
+        "tested": false
+      },
+      "stepLimit": 24,
+      "stepsUsed": 0,
+      "toolNameCounts": {},
+      "verdicts": {
+        "certified": "lane_error",
+        "grader": "error",
+        "integrity": "verified_contained"
+      }
+    },
+    {
+      "containmentVerdict": "verified_contained",
+      "effectiveCertifiedOutcome": "certified_pass",
+      "elapsedMs": 10020,
+      "id": "498af3be-8f81-4796-a913-b35bcf697d94",
+      "lane": "codestral-latest",
+      "outcome": "submitted_passed",
+      "seed": 0,
+      "stages": {
+        "edited": true,
+        "graded": true,
+        "inspected": true,
+        "passed": true,
+        "submitted": true,
+        "tested": true
+      },
+      "stepLimit": 24,
+      "stepsUsed": 6,
+      "toolNameCounts": {
+        "edit_file": 1,
+        "read_file": 3,
+        "run_tests": 1,
+        "submit": 1
+      },
+      "verdicts": {
+        "certified": "certified_pass",
+        "grader": "pass",
+        "integrity": "verified_contained"
+      }
+    },
+    {
+      "containmentVerdict": "verified_contained",
+      "effectiveCertifiedOutcome": "certified_pass",
+      "elapsedMs": 9503,
+      "id": "b9022701-959b-45bb-bf63-62f5ac576957",
+      "lane": "mistral-code-latest",
+      "outcome": "submitted_passed",
+      "seed": 0,
+      "stages": {
+        "edited": true,
+        "graded": true,
+        "inspected": true,
+        "passed": true,
+        "submitted": true,
+        "tested": true
+      },
+      "stepLimit": 24,
+      "stepsUsed": 6,
+      "toolNameCounts": {
+        "edit_file": 1,
+        "read_file": 3,
+        "run_tests": 1,
+        "submit": 1
+      },
+      "verdicts": {
+        "certified": "certified_pass",
+        "grader": "pass",
+        "integrity": "verified_contained"
+      }
+    },
+    {
+      "containmentVerdict": "verified_contained",
+      "effectiveCertifiedOutcome": "lane_error",
+      "elapsedMs": 58949,
+      "id": "3f6a408f-4702-4663-afa1-6d55199953a6",
+      "lane": "mistral-medium-latest",
+      "outcome": "model_api_failure",
+      "seed": 0,
+      "stages": {
+        "edited": false,
+        "graded": false,
+        "inspected": false,
+        "passed": false,
+        "submitted": false,
+        "tested": false
+      },
+      "stepLimit": 24,
+      "stepsUsed": 0,
+      "toolNameCounts": {},
+      "verdicts": {
+        "certified": "lane_error",
+        "grader": "error",
+        "integrity": "verified_contained"
+      }
+    },
+    {
+      "containmentVerdict": "verified_contained",
+      "effectiveCertifiedOutcome": "lane_error",
+      "elapsedMs": 58226,
+      "id": "c556bdb6-5897-44fa-8706-44b5e1c84622",
+      "lane": "magistral-small-latest",
+      "outcome": "model_api_failure",
+      "seed": 0,
+      "stages": {
+        "edited": false,
+        "graded": false,
+        "inspected": false,
+        "passed": false,
+        "submitted": false,
+        "tested": false
+      },
+      "stepLimit": 24,
+      "stepsUsed": 0,
+      "toolNameCounts": {},
+      "verdicts": {
+        "certified": "lane_error",
+        "grader": "error",
+        "integrity": "verified_contained"
+      }
+    },
+    {
+      "containmentVerdict": "verified_contained",
+      "effectiveCertifiedOutcome": "model_fail",
+      "elapsedMs": 78708,
+      "id": "d91a7efb-333e-4d3e-a95e-539f29e34d52",
+      "lane": "ministral-14b-latest",
+      "outcome": "submitted_failed",
+      "seed": 0,
+      "stages": {
+        "edited": true,
+        "graded": true,
+        "inspected": true,
+        "passed": false,
+        "submitted": true,
+        "tested": true
+      },
+      "stepLimit": 24,
+      "stepsUsed": 24,
+      "toolNameCounts": {
+        "edit_file": 2,
+        "invalid_tool_call": 1,
+        "list_files": 1,
+        "read_file": 3,
+        "run_tests": 8,
+        "submit": 1,
+        "write_file": 8
+      },
+      "verdicts": {
+        "certified": "model_fail",
+        "grader": "fail",
+        "integrity": "verified_contained"
+      }
+    },
+    {
+      "containmentVerdict": "verified_contained",
+      "effectiveCertifiedOutcome": "model_fail",
+      "elapsedMs": 20905,
+      "id": "33a5ee20-e744-43c0-8104-ffe80f003ae4",
+      "lane": "ministral-8b-latest",
+      "outcome": "submitted_failed",
+      "seed": 0,
+      "stages": {
+        "edited": true,
+        "graded": true,
+        "inspected": true,
+        "passed": false,
+        "submitted": true,
+        "tested": true
+      },
+      "stepLimit": 24,
+      "stepsUsed": 8,
+      "toolNameCounts": {
+        "edit_file": 1,
+        "list_files": 1,
+        "read_file": 3,
+        "run_tests": 1,
+        "submit": 1,
+        "write_file": 1
+      },
+      "verdicts": {
+        "certified": "model_fail",
+        "grader": "fail",
+        "integrity": "verified_contained"
+      }
+    },
+    {
+      "containmentVerdict": "verified_contained",
+      "effectiveCertifiedOutcome": "certified_pass",
+      "elapsedMs": 27684,
+      "id": "715ad3d1-a119-4a60-b124-4d5627f6e142",
+      "lane": "@cf/openai/gpt-oss-20b",
+      "outcome": "submitted_passed",
+      "seed": 0,
+      "stages": {
+        "edited": true,
+        "graded": true,
+        "inspected": true,
+        "passed": true,
+        "submitted": true,
+        "tested": true
+      },
+      "stepLimit": 24,
+      "stepsUsed": 9,
+      "toolNameCounts": {
+        "edit_file": 1,
+        "list_files": 1,
+        "read_file": 4,
+        "run_tests": 1,
+        "submit": 1,
+        "write_file": 1
+      },
+      "verdicts": {
+        "certified": "certified_pass",
+        "grader": "pass",
+        "integrity": "verified_contained"
+      }
+    },
+    {
+      "containmentVerdict": "verified_contained",
+      "effectiveCertifiedOutcome": "withheld",
+      "elapsedMs": 111843,
+      "id": "ca70ae26-cc53-4c91-ae73-ee4051aaa7f1",
+      "lane": "nvidia/nemotron-3-super-120b-a12b:free",
+      "outcome": "invalid_tool_loop",
+      "seed": 0,
+      "stages": {
+        "edited": true,
+        "graded": true,
+        "inspected": true,
+        "passed": false,
+        "submitted": false,
+        "tested": false
+      },
+      "stepLimit": 24,
+      "stepsUsed": 9,
+      "toolNameCounts": {
+        "invalid_tool_call": 4,
+        "list_files": 1,
+        "read_file": 3,
+        "write_file": 1
+      },
+      "verdicts": {
+        "certified": "withheld",
+        "grader": "pass",
+        "integrity": "verified_contained",
+        "protocol": "withheld: json-in-text protocol failure (invalid_tool_loop) \u2014 a completion condition native-tool lanes do not face; not counted for or against the model"
+      }
+    },
+    {
+      "containmentVerdict": "verified_contained",
+      "effectiveCertifiedOutcome": "withheld",
+      "elapsedMs": 29710,
+      "id": "ddc4df0b-b41f-4576-97ea-94cc584c6b13",
+      "lane": "cohere/north-mini-code:free",
+      "outcome": "invalid_tool_loop",
+      "seed": 0,
+      "stages": {
+        "edited": false,
+        "graded": true,
+        "inspected": true,
+        "passed": false,
+        "submitted": false,
+        "tested": false
+      },
+      "stepLimit": 24,
+      "stepsUsed": 7,
+      "toolNameCounts": {
+        "invalid_tool_call": 4,
+        "list_files": 1,
+        "read_file": 2
+      },
+      "verdicts": {
+        "certified": "withheld",
+        "grader": "fail",
+        "integrity": "verified_contained",
+        "protocol": "withheld: json-in-text protocol failure (invalid_tool_loop) \u2014 a completion condition native-tool lanes do not face; not counted for or against the model"
+      }
+    },
+    {
+      "containmentVerdict": "verified_contained",
+      "effectiveCertifiedOutcome": "certified_pass",
+      "elapsedMs": 38481,
+      "id": "0640a190-81f0-4eb8-8ac9-dba23a2e9de8",
+      "lane": "minimax/minimax-m3:free",
+      "outcome": "submitted_passed",
+      "seed": 0,
+      "stages": {
+        "edited": true,
+        "graded": true,
+        "inspected": true,
+        "passed": true,
+        "submitted": true,
+        "tested": true
+      },
+      "stepLimit": 24,
+      "stepsUsed": 8,
+      "toolNameCounts": {
+        "list_files": 1,
+        "read_file": 4,
+        "run_tests": 1,
+        "submit": 1,
+        "write_file": 1
+      },
+      "verdicts": {
+        "certified": "certified_pass",
+        "grader": "pass",
+        "integrity": "verified_contained"
+      }
+    },
+    {
+      "containmentVerdict": "verified_contained",
+      "effectiveCertifiedOutcome": "lane_error",
+      "elapsedMs": 72161,
+      "id": "97eecf9c-dc83-4fa7-97c4-59b37fc653aa",
+      "lane": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
+      "outcome": "model_api_failure",
+      "seed": 0,
+      "stages": {
+        "edited": false,
+        "graded": false,
+        "inspected": true,
+        "passed": false,
+        "submitted": false,
+        "tested": false
+      },
+      "stepLimit": 24,
+      "stepsUsed": 3,
+      "toolNameCounts": {
+        "invalid_tool_call": 1,
+        "list_files": 1,
+        "read_file": 1
+      },
+      "verdicts": {
+        "certified": "lane_error",
+        "grader": "error",
+        "integrity": "verified_contained"
+      }
+    }
+  ],
+  "sourceRecordDigest": {
+    "algorithm": "sha256 over the record's canonical JSON (UTF-8, sorted keys, compact separators) with recordDigest.sha256 set to 64 '0' characters",
+    "sha256": "4eb1c3548b8b094ded1a52d98f0179131be2555b821d9eea7b5fc519b0f684ce"
+  },
+  "stages": [
+    {
+      "applicable": true,
+      "id": "inspect",
+      "label": "Inspected",
+      "meaning": "Listed or read at least one file in the repository \u2014 or, on a browser exam, opened or snapshotted the page."
+    },
+    {
+      "applicable": true,
+      "id": "edit",
+      "label": "Edited",
+      "meaning": "Wrote at least one file that actually changed on disk."
+    },
+    {
+      "applicable": true,
+      "id": "test",
+      "label": "Ran tests",
+      "meaning": "Invoked the visible-test tool at least once."
+    },
+    {
+      "applicable": true,
+      "id": "submit",
+      "label": "Submitted",
+      "meaning": "Called submit, ending the rollout on its own terms."
+    },
+    {
+      "applicable": true,
+      "id": "graded",
+      "label": "Graded",
+      "meaning": "The independent hidden grader ran on the submission and returned a verdict."
+    },
+    {
+      "applicable": true,
+      "id": "hidden_pass",
+      "label": "Passed hidden tests",
+      "meaning": "The hidden grader returned exit 0 and the rollout was certified."
+    }
+  ],
+  "version": "0.1.0"
+}

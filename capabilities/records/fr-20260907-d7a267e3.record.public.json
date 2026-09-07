@@ -1,0 +1,1387 @@
+{
+  "disclosureClass": "answer_key",
+  "environmentId": "vvdex.annotation.text-labeling-1",
+  "evalId": "fr-20260907-d7a267e3",
+  "fingerprint": "e1abe51398b2d950a3415678aaf8ec796420dfb05ea89b3b64afd33c1e345fd3",
+  "kind": "vvdex.forge.public-record-projection/v1",
+  "lanes": [
+    "codestral-latest",
+    "mistral-code-latest",
+    "ministral-14b-latest",
+    "ministral-8b-latest"
+  ],
+  "note": "A projection of the sealed record, not the record. Its bytes do not hash to sourceRecordDigest; that digest describes the canonical record, which a holder verifies under agreement.",
+  "results": {
+    "byModel": [
+      {
+        "countableN": 10,
+        "countableSuccesses": 0,
+        "lowN": false,
+        "model": "codestral-latest",
+        "n": 10,
+        "provider": "mistral",
+        "successRate": 0.0,
+        "successes": 0,
+        "toolCalls": 106,
+        "verdicts": {
+          "certified_pass": 0,
+          "invalid": 0,
+          "lane_error": 0,
+          "model_fail": 10,
+          "withheld": 0
+        }
+      },
+      {
+        "countableN": 10,
+        "countableSuccesses": 0,
+        "lowN": false,
+        "model": "mistral-code-latest",
+        "n": 10,
+        "provider": "mistral",
+        "successRate": 0.0,
+        "successes": 0,
+        "toolCalls": 114,
+        "verdicts": {
+          "certified_pass": 0,
+          "invalid": 0,
+          "lane_error": 0,
+          "model_fail": 10,
+          "withheld": 0
+        }
+      },
+      {
+        "countableN": 10,
+        "countableSuccesses": 0,
+        "lowN": false,
+        "model": "ministral-14b-latest",
+        "n": 10,
+        "provider": "mistral",
+        "successRate": 0.0,
+        "successes": 0,
+        "toolCalls": 97,
+        "verdicts": {
+          "certified_pass": 0,
+          "invalid": 0,
+          "lane_error": 0,
+          "model_fail": 10,
+          "withheld": 0
+        }
+      },
+      {
+        "countableN": 10,
+        "countableSuccesses": 0,
+        "lowN": false,
+        "model": "ministral-8b-latest",
+        "n": 10,
+        "provider": "mistral",
+        "successRate": 0.0,
+        "successes": 0,
+        "toolCalls": 74,
+        "verdicts": {
+          "certified_pass": 0,
+          "invalid": 0,
+          "lane_error": 0,
+          "model_fail": 10,
+          "withheld": 0
+        }
+      }
+    ],
+    "successRate": 0.0,
+    "totalRollouts": 40
+  },
+  "rollouts": [
+    {
+      "containmentVerdict": "verified_contained",
+      "effectiveCertifiedOutcome": "model_fail",
+      "elapsedMs": 14601,
+      "id": "4fb67ece-f618-40fc-90cb-f807f6edda26",
+      "lane": "codestral-latest",
+      "outcome": "submitted_failed",
+      "seed": 0,
+      "stages": {
+        "edited": true,
+        "graded": true,
+        "inspected": true,
+        "passed": false,
+        "submitted": true,
+        "tested": true
+      },
+      "stepLimit": 24,
+      "stepsUsed": 8,
+      "toolNameCounts": {
+        "invalid_tool_call": 1,
+        "read_file": 3,
+        "run_tests": 2,
+        "submit": 1,
+        "write_file": 1
+      },
+      "verdicts": {
+        "certified": "model_fail",
+        "grader": "fail",
+        "integrity": "verified_contained"
+      }
+    },
+    {
+      "containmentVerdict": "verified_contained",
+      "effectiveCertifiedOutcome": "model_fail",
+      "elapsedMs": 13073,
+      "id": "46dde59d-7038-40a9-8c30-73021519998c",
+      "lane": "codestral-latest",
+      "outcome": "submitted_failed",
+      "seed": 1,
+      "stages": {
+        "edited": true,
+        "graded": true,
+        "inspected": true,
+        "passed": false,
+        "submitted": true,
+        "tested": true
+      },
+      "stepLimit": 24,
+      "stepsUsed": 8,
+      "toolNameCounts": {
+        "edit_file": 1,
+        "list_files": 1,
+        "read_file": 4,
+        "run_tests": 1,
+        "submit": 1
+      },
+      "verdicts": {
+        "certified": "model_fail",
+        "grader": "fail",
+        "integrity": "verified_contained"
+      }
+    },
+    {
+      "containmentVerdict": "verified_contained",
+      "effectiveCertifiedOutcome": "model_fail",
+      "elapsedMs": 37501,
+      "id": "4b3a4997-e625-4169-994c-81c7c48aa711",
+      "lane": "codestral-latest",
+      "outcome": "invalid_tool_loop",
+      "seed": 2,
+      "stages": {
+        "edited": true,
+        "graded": true,
+        "inspected": true,
+        "passed": false,
+        "submitted": false,
+        "tested": true
+      },
+      "stepLimit": 24,
+      "stepsUsed": 17,
+      "toolNameCounts": {
+        "edit_file": 4,
+        "invalid_tool_call": 4,
+        "list_files": 1,
+        "read_file": 4,
+        "run_tests": 4
+      },
+      "verdicts": {
+        "certified": "model_fail",
+        "grader": "fail",
+        "integrity": "verified_contained"
+      }
+    },
+    {
+      "containmentVerdict": "verified_contained",
+      "effectiveCertifiedOutcome": "model_fail",
+      "elapsedMs": 14066,
+      "id": "feede671-eed3-490f-b85a-92ded7aa1659",
+      "lane": "codestral-latest",
+      "outcome": "submitted_failed",
+      "seed": 3,
+      "stages": {
+        "edited": true,
+        "graded": true,
+        "inspected": true,
+        "passed": false,
+        "submitted": true,
+        "tested": true
+      },
+      "stepLimit": 24,
+      "stepsUsed": 8,
+      "toolNameCounts": {
+        "edit_file": 1,
+        "list_files": 1,
+        "read_file": 4,
+        "run_tests": 1,
+        "submit": 1
+      },
+      "verdicts": {
+        "certified": "model_fail",
+        "grader": "fail",
+        "integrity": "verified_contained"
+      }
+    },
+    {
+      "containmentVerdict": "verified_contained",
+      "effectiveCertifiedOutcome": "model_fail",
+      "elapsedMs": 14233,
+      "id": "090fd6e1-c44b-4c68-9d54-bd6102534e6a",
+      "lane": "codestral-latest",
+      "outcome": "submitted_failed",
+      "seed": 4,
+      "stages": {
+        "edited": true,
+        "graded": true,
+        "inspected": true,
+        "passed": false,
+        "submitted": true,
+        "tested": true
+      },
+      "stepLimit": 24,
+      "stepsUsed": 8,
+      "toolNameCounts": {
+        "edit_file": 1,
+        "list_files": 1,
+        "read_file": 4,
+        "run_tests": 1,
+        "submit": 1
+      },
+      "verdicts": {
+        "certified": "model_fail",
+        "grader": "fail",
+        "integrity": "verified_contained"
+      }
+    },
+    {
+      "containmentVerdict": "verified_contained",
+      "effectiveCertifiedOutcome": "model_fail",
+      "elapsedMs": 14710,
+      "id": "3601758c-ae6b-401e-890a-dfd8c696676c",
+      "lane": "codestral-latest",
+      "outcome": "submitted_failed",
+      "seed": 5,
+      "stages": {
+        "edited": true,
+        "graded": true,
+        "inspected": true,
+        "passed": false,
+        "submitted": true,
+        "tested": true
+      },
+      "stepLimit": 24,
+      "stepsUsed": 8,
+      "toolNameCounts": {
+        "list_files": 1,
+        "read_file": 4,
+        "run_tests": 1,
+        "submit": 1,
+        "write_file": 1
+      },
+      "verdicts": {
+        "certified": "model_fail",
+        "grader": "fail",
+        "integrity": "verified_contained"
+      }
+    },
+    {
+      "containmentVerdict": "verified_contained",
+      "effectiveCertifiedOutcome": "model_fail",
+      "elapsedMs": 38085,
+      "id": "34f7baf1-b120-44a7-9e5c-45c30e1c80cc",
+      "lane": "codestral-latest",
+      "outcome": "invalid_tool_loop",
+      "seed": 6,
+      "stages": {
+        "edited": true,
+        "graded": true,
+        "inspected": true,
+        "passed": false,
+        "submitted": false,
+        "tested": true
+      },
+      "stepLimit": 24,
+      "stepsUsed": 17,
+      "toolNameCounts": {
+        "edit_file": 4,
+        "invalid_tool_call": 4,
+        "list_files": 1,
+        "read_file": 4,
+        "run_tests": 4
+      },
+      "verdicts": {
+        "certified": "model_fail",
+        "grader": "fail",
+        "integrity": "verified_contained"
+      }
+    },
+    {
+      "containmentVerdict": "verified_contained",
+      "effectiveCertifiedOutcome": "model_fail",
+      "elapsedMs": 11310,
+      "id": "4a293e0d-9686-4397-935f-55a7cb75d856",
+      "lane": "codestral-latest",
+      "outcome": "submitted_failed",
+      "seed": 7,
+      "stages": {
+        "edited": true,
+        "graded": true,
+        "inspected": true,
+        "passed": false,
+        "submitted": true,
+        "tested": true
+      },
+      "stepLimit": 24,
+      "stepsUsed": 7,
+      "toolNameCounts": {
+        "list_files": 1,
+        "read_file": 3,
+        "run_tests": 1,
+        "submit": 1,
+        "write_file": 1
+      },
+      "verdicts": {
+        "certified": "model_fail",
+        "grader": "fail",
+        "integrity": "verified_contained"
+      }
+    },
+    {
+      "containmentVerdict": "verified_contained",
+      "effectiveCertifiedOutcome": "model_fail",
+      "elapsedMs": 39225,
+      "id": "3b259417-ef73-4f01-acb8-498dad01f946",
+      "lane": "codestral-latest",
+      "outcome": "invalid_tool_loop",
+      "seed": 8,
+      "stages": {
+        "edited": true,
+        "graded": true,
+        "inspected": true,
+        "passed": false,
+        "submitted": false,
+        "tested": true
+      },
+      "stepLimit": 24,
+      "stepsUsed": 17,
+      "toolNameCounts": {
+        "edit_file": 4,
+        "invalid_tool_call": 4,
+        "list_files": 1,
+        "read_file": 4,
+        "run_tests": 4
+      },
+      "verdicts": {
+        "certified": "model_fail",
+        "grader": "fail",
+        "integrity": "verified_contained"
+      }
+    },
+    {
+      "containmentVerdict": "verified_contained",
+      "effectiveCertifiedOutcome": "model_fail",
+      "elapsedMs": 12709,
+      "id": "28d8283a-33c9-4999-bb23-43d932a1925b",
+      "lane": "codestral-latest",
+      "outcome": "submitted_failed",
+      "seed": 9,
+      "stages": {
+        "edited": true,
+        "graded": true,
+        "inspected": true,
+        "passed": false,
+        "submitted": true,
+        "tested": true
+      },
+      "stepLimit": 24,
+      "stepsUsed": 8,
+      "toolNameCounts": {
+        "edit_file": 1,
+        "list_files": 1,
+        "read_file": 4,
+        "run_tests": 1,
+        "submit": 1
+      },
+      "verdicts": {
+        "certified": "model_fail",
+        "grader": "fail",
+        "integrity": "verified_contained"
+      }
+    },
+    {
+      "containmentVerdict": "verified_contained",
+      "effectiveCertifiedOutcome": "model_fail",
+      "elapsedMs": 35263,
+      "id": "16d1434c-af78-41d6-8321-f1ad78315751",
+      "lane": "mistral-code-latest",
+      "outcome": "invalid_tool_loop",
+      "seed": 0,
+      "stages": {
+        "edited": true,
+        "graded": true,
+        "inspected": true,
+        "passed": false,
+        "submitted": false,
+        "tested": true
+      },
+      "stepLimit": 24,
+      "stepsUsed": 17,
+      "toolNameCounts": {
+        "edit_file": 4,
+        "invalid_tool_call": 4,
+        "list_files": 1,
+        "read_file": 4,
+        "run_tests": 4
+      },
+      "verdicts": {
+        "certified": "model_fail",
+        "grader": "fail",
+        "integrity": "verified_contained"
+      }
+    },
+    {
+      "containmentVerdict": "verified_contained",
+      "effectiveCertifiedOutcome": "model_fail",
+      "elapsedMs": 38503,
+      "id": "a16db4f7-7a7b-4611-a7f3-83241222d312",
+      "lane": "mistral-code-latest",
+      "outcome": "invalid_tool_loop",
+      "seed": 1,
+      "stages": {
+        "edited": true,
+        "graded": true,
+        "inspected": true,
+        "passed": false,
+        "submitted": false,
+        "tested": true
+      },
+      "stepLimit": 24,
+      "stepsUsed": 17,
+      "toolNameCounts": {
+        "edit_file": 4,
+        "invalid_tool_call": 4,
+        "list_files": 1,
+        "read_file": 4,
+        "run_tests": 4
+      },
+      "verdicts": {
+        "certified": "model_fail",
+        "grader": "fail",
+        "integrity": "verified_contained"
+      }
+    },
+    {
+      "containmentVerdict": "verified_contained",
+      "effectiveCertifiedOutcome": "model_fail",
+      "elapsedMs": 12715,
+      "id": "74bd076b-7c7e-4d7b-9552-92b390ef7bb5",
+      "lane": "mistral-code-latest",
+      "outcome": "submitted_failed",
+      "seed": 2,
+      "stages": {
+        "edited": true,
+        "graded": true,
+        "inspected": true,
+        "passed": false,
+        "submitted": true,
+        "tested": true
+      },
+      "stepLimit": 24,
+      "stepsUsed": 8,
+      "toolNameCounts": {
+        "edit_file": 1,
+        "list_files": 1,
+        "read_file": 4,
+        "run_tests": 1,
+        "submit": 1
+      },
+      "verdicts": {
+        "certified": "model_fail",
+        "grader": "fail",
+        "integrity": "verified_contained"
+      }
+    },
+    {
+      "containmentVerdict": "verified_contained",
+      "effectiveCertifiedOutcome": "model_fail",
+      "elapsedMs": 13376,
+      "id": "2437b75e-39b3-4199-a239-dc53b2bcc9e3",
+      "lane": "mistral-code-latest",
+      "outcome": "submitted_failed",
+      "seed": 3,
+      "stages": {
+        "edited": true,
+        "graded": true,
+        "inspected": true,
+        "passed": false,
+        "submitted": true,
+        "tested": true
+      },
+      "stepLimit": 24,
+      "stepsUsed": 8,
+      "toolNameCounts": {
+        "edit_file": 1,
+        "list_files": 1,
+        "read_file": 4,
+        "run_tests": 1,
+        "submit": 1
+      },
+      "verdicts": {
+        "certified": "model_fail",
+        "grader": "fail",
+        "integrity": "verified_contained"
+      }
+    },
+    {
+      "containmentVerdict": "verified_contained",
+      "effectiveCertifiedOutcome": "model_fail",
+      "elapsedMs": 11595,
+      "id": "3117ef54-8d17-4d7d-8abd-e908000bf940",
+      "lane": "mistral-code-latest",
+      "outcome": "submitted_failed",
+      "seed": 4,
+      "stages": {
+        "edited": true,
+        "graded": true,
+        "inspected": true,
+        "passed": false,
+        "submitted": true,
+        "tested": true
+      },
+      "stepLimit": 24,
+      "stepsUsed": 7,
+      "toolNameCounts": {
+        "read_file": 4,
+        "run_tests": 1,
+        "submit": 1,
+        "write_file": 1
+      },
+      "verdicts": {
+        "certified": "model_fail",
+        "grader": "fail",
+        "integrity": "verified_contained"
+      }
+    },
+    {
+      "containmentVerdict": "verified_contained",
+      "effectiveCertifiedOutcome": "model_fail",
+      "elapsedMs": 11615,
+      "id": "4af302af-b01d-4d7b-8020-96ed6ae774c3",
+      "lane": "mistral-code-latest",
+      "outcome": "submitted_failed",
+      "seed": 5,
+      "stages": {
+        "edited": true,
+        "graded": true,
+        "inspected": true,
+        "passed": false,
+        "submitted": true,
+        "tested": true
+      },
+      "stepLimit": 24,
+      "stepsUsed": 7,
+      "toolNameCounts": {
+        "read_file": 4,
+        "run_tests": 1,
+        "submit": 1,
+        "write_file": 1
+      },
+      "verdicts": {
+        "certified": "model_fail",
+        "grader": "fail",
+        "integrity": "verified_contained"
+      }
+    },
+    {
+      "containmentVerdict": "verified_contained",
+      "effectiveCertifiedOutcome": "model_fail",
+      "elapsedMs": 12842,
+      "id": "55ed4113-5dd7-4032-89d5-2fe58129718f",
+      "lane": "mistral-code-latest",
+      "outcome": "submitted_failed",
+      "seed": 6,
+      "stages": {
+        "edited": true,
+        "graded": true,
+        "inspected": true,
+        "passed": false,
+        "submitted": true,
+        "tested": true
+      },
+      "stepLimit": 24,
+      "stepsUsed": 8,
+      "toolNameCounts": {
+        "edit_file": 1,
+        "list_files": 1,
+        "read_file": 4,
+        "run_tests": 1,
+        "submit": 1
+      },
+      "verdicts": {
+        "certified": "model_fail",
+        "grader": "fail",
+        "integrity": "verified_contained"
+      }
+    },
+    {
+      "containmentVerdict": "verified_contained",
+      "effectiveCertifiedOutcome": "model_fail",
+      "elapsedMs": 34948,
+      "id": "5e5adee1-05c5-468e-8e36-7135ddfa5bff",
+      "lane": "mistral-code-latest",
+      "outcome": "invalid_tool_loop",
+      "seed": 7,
+      "stages": {
+        "edited": true,
+        "graded": true,
+        "inspected": true,
+        "passed": false,
+        "submitted": false,
+        "tested": true
+      },
+      "stepLimit": 24,
+      "stepsUsed": 17,
+      "toolNameCounts": {
+        "edit_file": 4,
+        "invalid_tool_call": 4,
+        "list_files": 1,
+        "read_file": 4,
+        "run_tests": 4
+      },
+      "verdicts": {
+        "certified": "model_fail",
+        "grader": "fail",
+        "integrity": "verified_contained"
+      }
+    },
+    {
+      "containmentVerdict": "verified_contained",
+      "effectiveCertifiedOutcome": "model_fail",
+      "elapsedMs": 12918,
+      "id": "af78b2c5-103f-43f7-8995-3796e8302817",
+      "lane": "mistral-code-latest",
+      "outcome": "submitted_failed",
+      "seed": 8,
+      "stages": {
+        "edited": true,
+        "graded": true,
+        "inspected": true,
+        "passed": false,
+        "submitted": true,
+        "tested": true
+      },
+      "stepLimit": 24,
+      "stepsUsed": 8,
+      "toolNameCounts": {
+        "edit_file": 1,
+        "list_files": 1,
+        "read_file": 4,
+        "run_tests": 1,
+        "submit": 1
+      },
+      "verdicts": {
+        "certified": "model_fail",
+        "grader": "fail",
+        "integrity": "verified_contained"
+      }
+    },
+    {
+      "containmentVerdict": "verified_contained",
+      "effectiveCertifiedOutcome": "model_fail",
+      "elapsedMs": 35955,
+      "id": "8636ebd4-5455-4cf7-95bb-54b521b33d2d",
+      "lane": "mistral-code-latest",
+      "outcome": "invalid_tool_loop",
+      "seed": 9,
+      "stages": {
+        "edited": true,
+        "graded": true,
+        "inspected": true,
+        "passed": false,
+        "submitted": false,
+        "tested": true
+      },
+      "stepLimit": 24,
+      "stepsUsed": 17,
+      "toolNameCounts": {
+        "edit_file": 4,
+        "invalid_tool_call": 4,
+        "list_files": 1,
+        "read_file": 4,
+        "run_tests": 4
+      },
+      "verdicts": {
+        "certified": "model_fail",
+        "grader": "fail",
+        "integrity": "verified_contained"
+      }
+    },
+    {
+      "containmentVerdict": "verified_contained",
+      "effectiveCertifiedOutcome": "model_fail",
+      "elapsedMs": 16008,
+      "id": "9e02c738-f1a0-4401-8fa2-6dca03be24d0",
+      "lane": "ministral-14b-latest",
+      "outcome": "submitted_failed",
+      "seed": 0,
+      "stages": {
+        "edited": true,
+        "graded": true,
+        "inspected": true,
+        "passed": false,
+        "submitted": true,
+        "tested": true
+      },
+      "stepLimit": 24,
+      "stepsUsed": 9,
+      "toolNameCounts": {
+        "edit_file": 1,
+        "invalid_tool_call": 2,
+        "list_files": 1,
+        "read_file": 3,
+        "run_tests": 1,
+        "submit": 1
+      },
+      "verdicts": {
+        "certified": "model_fail",
+        "grader": "fail",
+        "integrity": "verified_contained"
+      }
+    },
+    {
+      "containmentVerdict": "verified_contained",
+      "effectiveCertifiedOutcome": "model_fail",
+      "elapsedMs": 16747,
+      "id": "a6768239-65c2-4a3c-a948-e58967a2dc32",
+      "lane": "ministral-14b-latest",
+      "outcome": "submitted_failed",
+      "seed": 1,
+      "stages": {
+        "edited": true,
+        "graded": true,
+        "inspected": true,
+        "passed": false,
+        "submitted": true,
+        "tested": true
+      },
+      "stepLimit": 24,
+      "stepsUsed": 9,
+      "toolNameCounts": {
+        "edit_file": 1,
+        "invalid_tool_call": 2,
+        "list_files": 1,
+        "read_file": 3,
+        "run_tests": 1,
+        "submit": 1
+      },
+      "verdicts": {
+        "certified": "model_fail",
+        "grader": "fail",
+        "integrity": "verified_contained"
+      }
+    },
+    {
+      "containmentVerdict": "verified_contained",
+      "effectiveCertifiedOutcome": "model_fail",
+      "elapsedMs": 16040,
+      "id": "be56bf5c-45b6-4792-8b7d-0b4e670bf546",
+      "lane": "ministral-14b-latest",
+      "outcome": "submitted_failed",
+      "seed": 2,
+      "stages": {
+        "edited": true,
+        "graded": true,
+        "inspected": true,
+        "passed": false,
+        "submitted": true,
+        "tested": true
+      },
+      "stepLimit": 24,
+      "stepsUsed": 9,
+      "toolNameCounts": {
+        "edit_file": 1,
+        "invalid_tool_call": 2,
+        "list_files": 1,
+        "read_file": 3,
+        "run_tests": 1,
+        "submit": 1
+      },
+      "verdicts": {
+        "certified": "model_fail",
+        "grader": "fail",
+        "integrity": "verified_contained"
+      }
+    },
+    {
+      "containmentVerdict": "verified_contained",
+      "effectiveCertifiedOutcome": "model_fail",
+      "elapsedMs": 18508,
+      "id": "3464f41e-2621-4a30-b422-9e6d8aa0e1a4",
+      "lane": "ministral-14b-latest",
+      "outcome": "submitted_failed",
+      "seed": 3,
+      "stages": {
+        "edited": true,
+        "graded": true,
+        "inspected": true,
+        "passed": false,
+        "submitted": true,
+        "tested": true
+      },
+      "stepLimit": 24,
+      "stepsUsed": 9,
+      "toolNameCounts": {
+        "edit_file": 1,
+        "invalid_tool_call": 2,
+        "list_files": 1,
+        "read_file": 3,
+        "run_tests": 1,
+        "submit": 1
+      },
+      "verdicts": {
+        "certified": "model_fail",
+        "grader": "fail",
+        "integrity": "verified_contained"
+      }
+    },
+    {
+      "containmentVerdict": "verified_contained",
+      "effectiveCertifiedOutcome": "model_fail",
+      "elapsedMs": 45957,
+      "id": "91250030-853b-4704-a6d4-664ff8e784b5",
+      "lane": "ministral-14b-latest",
+      "outcome": "submitted_failed",
+      "seed": 4,
+      "stages": {
+        "edited": true,
+        "graded": true,
+        "inspected": true,
+        "passed": false,
+        "submitted": true,
+        "tested": true
+      },
+      "stepLimit": 24,
+      "stepsUsed": 13,
+      "toolNameCounts": {
+        "edit_file": 2,
+        "list_files": 1,
+        "read_file": 3,
+        "run_tests": 6,
+        "submit": 1
+      },
+      "verdicts": {
+        "certified": "model_fail",
+        "grader": "fail",
+        "integrity": "verified_contained"
+      }
+    },
+    {
+      "containmentVerdict": "verified_contained",
+      "effectiveCertifiedOutcome": "model_fail",
+      "elapsedMs": 44784,
+      "id": "df3f8d8e-7e6b-4a23-b0bf-a96058870cf5",
+      "lane": "ministral-14b-latest",
+      "outcome": "submitted_failed",
+      "seed": 5,
+      "stages": {
+        "edited": true,
+        "graded": true,
+        "inspected": true,
+        "passed": false,
+        "submitted": true,
+        "tested": true
+      },
+      "stepLimit": 24,
+      "stepsUsed": 12,
+      "toolNameCounts": {
+        "edit_file": 1,
+        "list_files": 1,
+        "read_file": 3,
+        "run_tests": 6,
+        "submit": 1
+      },
+      "verdicts": {
+        "certified": "model_fail",
+        "grader": "fail",
+        "integrity": "verified_contained"
+      }
+    },
+    {
+      "containmentVerdict": "verified_contained",
+      "effectiveCertifiedOutcome": "model_fail",
+      "elapsedMs": 16950,
+      "id": "f023a2fe-8944-4cc5-b869-2bb26e03a526",
+      "lane": "ministral-14b-latest",
+      "outcome": "submitted_failed",
+      "seed": 6,
+      "stages": {
+        "edited": true,
+        "graded": true,
+        "inspected": true,
+        "passed": false,
+        "submitted": true,
+        "tested": true
+      },
+      "stepLimit": 24,
+      "stepsUsed": 9,
+      "toolNameCounts": {
+        "edit_file": 1,
+        "invalid_tool_call": 2,
+        "list_files": 1,
+        "read_file": 3,
+        "run_tests": 1,
+        "submit": 1
+      },
+      "verdicts": {
+        "certified": "model_fail",
+        "grader": "fail",
+        "integrity": "verified_contained"
+      }
+    },
+    {
+      "containmentVerdict": "verified_contained",
+      "effectiveCertifiedOutcome": "model_fail",
+      "elapsedMs": 17977,
+      "id": "9cf78363-721c-4437-88ff-1c2b47dd0642",
+      "lane": "ministral-14b-latest",
+      "outcome": "submitted_failed",
+      "seed": 7,
+      "stages": {
+        "edited": true,
+        "graded": true,
+        "inspected": true,
+        "passed": false,
+        "submitted": true,
+        "tested": true
+      },
+      "stepLimit": 24,
+      "stepsUsed": 9,
+      "toolNameCounts": {
+        "edit_file": 1,
+        "invalid_tool_call": 2,
+        "list_files": 1,
+        "read_file": 3,
+        "run_tests": 1,
+        "submit": 1
+      },
+      "verdicts": {
+        "certified": "model_fail",
+        "grader": "fail",
+        "integrity": "verified_contained"
+      }
+    },
+    {
+      "containmentVerdict": "verified_contained",
+      "effectiveCertifiedOutcome": "model_fail",
+      "elapsedMs": 17419,
+      "id": "0d2a6c37-bf17-41ed-a550-26a98fbcfe03",
+      "lane": "ministral-14b-latest",
+      "outcome": "submitted_failed",
+      "seed": 8,
+      "stages": {
+        "edited": true,
+        "graded": true,
+        "inspected": true,
+        "passed": false,
+        "submitted": true,
+        "tested": true
+      },
+      "stepLimit": 24,
+      "stepsUsed": 9,
+      "toolNameCounts": {
+        "edit_file": 1,
+        "invalid_tool_call": 2,
+        "list_files": 1,
+        "read_file": 3,
+        "run_tests": 1,
+        "submit": 1
+      },
+      "verdicts": {
+        "certified": "model_fail",
+        "grader": "fail",
+        "integrity": "verified_contained"
+      }
+    },
+    {
+      "containmentVerdict": "verified_contained",
+      "effectiveCertifiedOutcome": "model_fail",
+      "elapsedMs": 18493,
+      "id": "f1a58bb4-02eb-4a2c-ac8c-8753fed20912",
+      "lane": "ministral-14b-latest",
+      "outcome": "submitted_failed",
+      "seed": 9,
+      "stages": {
+        "edited": true,
+        "graded": true,
+        "inspected": true,
+        "passed": false,
+        "submitted": true,
+        "tested": true
+      },
+      "stepLimit": 24,
+      "stepsUsed": 9,
+      "toolNameCounts": {
+        "edit_file": 1,
+        "invalid_tool_call": 2,
+        "list_files": 1,
+        "read_file": 3,
+        "run_tests": 1,
+        "submit": 1
+      },
+      "verdicts": {
+        "certified": "model_fail",
+        "grader": "fail",
+        "integrity": "verified_contained"
+      }
+    },
+    {
+      "containmentVerdict": "verified_contained",
+      "effectiveCertifiedOutcome": "model_fail",
+      "elapsedMs": 14099,
+      "id": "62a4ee4a-3939-4f29-9f6e-05fd4616082d",
+      "lane": "ministral-8b-latest",
+      "outcome": "submitted_failed",
+      "seed": 0,
+      "stages": {
+        "edited": true,
+        "graded": true,
+        "inspected": true,
+        "passed": false,
+        "submitted": true,
+        "tested": true
+      },
+      "stepLimit": 24,
+      "stepsUsed": 7,
+      "toolNameCounts": {
+        "list_files": 1,
+        "read_file": 3,
+        "run_tests": 1,
+        "submit": 1,
+        "write_file": 1
+      },
+      "verdicts": {
+        "certified": "model_fail",
+        "grader": "fail",
+        "integrity": "verified_contained"
+      }
+    },
+    {
+      "containmentVerdict": "verified_contained",
+      "effectiveCertifiedOutcome": "model_fail",
+      "elapsedMs": 18274,
+      "id": "6fbfe8a0-608a-4695-8af0-c5c62cedc58d",
+      "lane": "ministral-8b-latest",
+      "outcome": "submitted_failed",
+      "seed": 1,
+      "stages": {
+        "edited": true,
+        "graded": true,
+        "inspected": true,
+        "passed": false,
+        "submitted": true,
+        "tested": true
+      },
+      "stepLimit": 24,
+      "stepsUsed": 8,
+      "toolNameCounts": {
+        "edit_file": 1,
+        "list_files": 1,
+        "read_file": 3,
+        "run_tests": 1,
+        "submit": 1,
+        "write_file": 1
+      },
+      "verdicts": {
+        "certified": "model_fail",
+        "grader": "fail",
+        "integrity": "verified_contained"
+      }
+    },
+    {
+      "containmentVerdict": "verified_contained",
+      "effectiveCertifiedOutcome": "model_fail",
+      "elapsedMs": 16657,
+      "id": "08812716-b8e5-4030-a026-cc3084208b70",
+      "lane": "ministral-8b-latest",
+      "outcome": "submitted_failed",
+      "seed": 2,
+      "stages": {
+        "edited": true,
+        "graded": true,
+        "inspected": true,
+        "passed": false,
+        "submitted": true,
+        "tested": true
+      },
+      "stepLimit": 24,
+      "stepsUsed": 8,
+      "toolNameCounts": {
+        "edit_file": 1,
+        "list_files": 1,
+        "read_file": 3,
+        "run_tests": 1,
+        "submit": 1,
+        "write_file": 1
+      },
+      "verdicts": {
+        "certified": "model_fail",
+        "grader": "fail",
+        "integrity": "verified_contained"
+      }
+    },
+    {
+      "containmentVerdict": "verified_contained",
+      "effectiveCertifiedOutcome": "model_fail",
+      "elapsedMs": 15455,
+      "id": "9d7ad755-c10d-435e-acf6-1a3dcc9acc40",
+      "lane": "ministral-8b-latest",
+      "outcome": "submitted_failed",
+      "seed": 3,
+      "stages": {
+        "edited": true,
+        "graded": true,
+        "inspected": true,
+        "passed": false,
+        "submitted": true,
+        "tested": true
+      },
+      "stepLimit": 24,
+      "stepsUsed": 7,
+      "toolNameCounts": {
+        "list_files": 1,
+        "read_file": 3,
+        "run_tests": 1,
+        "submit": 1,
+        "write_file": 1
+      },
+      "verdicts": {
+        "certified": "model_fail",
+        "grader": "fail",
+        "integrity": "verified_contained"
+      }
+    },
+    {
+      "containmentVerdict": "verified_contained",
+      "effectiveCertifiedOutcome": "model_fail",
+      "elapsedMs": 15034,
+      "id": "63b96b38-1638-4808-9181-714f29805b89",
+      "lane": "ministral-8b-latest",
+      "outcome": "submitted_failed",
+      "seed": 4,
+      "stages": {
+        "edited": true,
+        "graded": true,
+        "inspected": true,
+        "passed": false,
+        "submitted": true,
+        "tested": true
+      },
+      "stepLimit": 24,
+      "stepsUsed": 7,
+      "toolNameCounts": {
+        "list_files": 1,
+        "read_file": 3,
+        "run_tests": 1,
+        "submit": 1,
+        "write_file": 1
+      },
+      "verdicts": {
+        "certified": "model_fail",
+        "grader": "fail",
+        "integrity": "verified_contained"
+      }
+    },
+    {
+      "containmentVerdict": "verified_contained",
+      "effectiveCertifiedOutcome": "model_fail",
+      "elapsedMs": 21646,
+      "id": "2ece3e4a-a003-4f83-b933-fcdcd9ee97aa",
+      "lane": "ministral-8b-latest",
+      "outcome": "submitted_failed",
+      "seed": 5,
+      "stages": {
+        "edited": true,
+        "graded": true,
+        "inspected": true,
+        "passed": false,
+        "submitted": true,
+        "tested": true
+      },
+      "stepLimit": 24,
+      "stepsUsed": 8,
+      "toolNameCounts": {
+        "edit_file": 1,
+        "list_files": 1,
+        "read_file": 3,
+        "run_tests": 1,
+        "submit": 1,
+        "write_file": 1
+      },
+      "verdicts": {
+        "certified": "model_fail",
+        "grader": "fail",
+        "integrity": "verified_contained"
+      }
+    },
+    {
+      "containmentVerdict": "verified_contained",
+      "effectiveCertifiedOutcome": "model_fail",
+      "elapsedMs": 16053,
+      "id": "5270ce3e-c1dc-4cb9-87ca-3ee4c0f629bc",
+      "lane": "ministral-8b-latest",
+      "outcome": "submitted_failed",
+      "seed": 6,
+      "stages": {
+        "edited": true,
+        "graded": true,
+        "inspected": true,
+        "passed": false,
+        "submitted": true,
+        "tested": true
+      },
+      "stepLimit": 24,
+      "stepsUsed": 7,
+      "toolNameCounts": {
+        "list_files": 1,
+        "read_file": 3,
+        "run_tests": 1,
+        "submit": 1,
+        "write_file": 1
+      },
+      "verdicts": {
+        "certified": "model_fail",
+        "grader": "fail",
+        "integrity": "verified_contained"
+      }
+    },
+    {
+      "containmentVerdict": "verified_contained",
+      "effectiveCertifiedOutcome": "model_fail",
+      "elapsedMs": 15403,
+      "id": "ae91a5d7-cff3-4bf2-8f78-2c2e8254b3bd",
+      "lane": "ministral-8b-latest",
+      "outcome": "submitted_failed",
+      "seed": 7,
+      "stages": {
+        "edited": true,
+        "graded": true,
+        "inspected": true,
+        "passed": false,
+        "submitted": true,
+        "tested": true
+      },
+      "stepLimit": 24,
+      "stepsUsed": 7,
+      "toolNameCounts": {
+        "list_files": 1,
+        "read_file": 3,
+        "run_tests": 1,
+        "submit": 1,
+        "write_file": 1
+      },
+      "verdicts": {
+        "certified": "model_fail",
+        "grader": "fail",
+        "integrity": "verified_contained"
+      }
+    },
+    {
+      "containmentVerdict": "verified_contained",
+      "effectiveCertifiedOutcome": "model_fail",
+      "elapsedMs": 16387,
+      "id": "a326a97c-2a26-4cce-8dbb-c41b71e52ef7",
+      "lane": "ministral-8b-latest",
+      "outcome": "submitted_failed",
+      "seed": 8,
+      "stages": {
+        "edited": true,
+        "graded": true,
+        "inspected": true,
+        "passed": false,
+        "submitted": true,
+        "tested": true
+      },
+      "stepLimit": 24,
+      "stepsUsed": 7,
+      "toolNameCounts": {
+        "list_files": 1,
+        "read_file": 3,
+        "run_tests": 1,
+        "submit": 1,
+        "write_file": 1
+      },
+      "verdicts": {
+        "certified": "model_fail",
+        "grader": "fail",
+        "integrity": "verified_contained"
+      }
+    },
+    {
+      "containmentVerdict": "verified_contained",
+      "effectiveCertifiedOutcome": "model_fail",
+      "elapsedMs": 20623,
+      "id": "701f1252-1b73-45a8-a393-b4e6328f2784",
+      "lane": "ministral-8b-latest",
+      "outcome": "submitted_failed",
+      "seed": 9,
+      "stages": {
+        "edited": true,
+        "graded": true,
+        "inspected": true,
+        "passed": false,
+        "submitted": true,
+        "tested": true
+      },
+      "stepLimit": 24,
+      "stepsUsed": 8,
+      "toolNameCounts": {
+        "edit_file": 1,
+        "list_files": 1,
+        "read_file": 3,
+        "run_tests": 1,
+        "submit": 1,
+        "write_file": 1
+      },
+      "verdicts": {
+        "certified": "model_fail",
+        "grader": "fail",
+        "integrity": "verified_contained"
+      }
+    }
+  ],
+  "sourceRecordDigest": {
+    "algorithm": "sha256 over the record's canonical JSON (UTF-8, sorted keys, compact separators) with recordDigest.sha256 set to 64 '0' characters",
+    "sha256": "7286bf674cfcf3482e06f76daaf1f68a1db1cbf89725833b7c3eb0f9f76e8009"
+  },
+  "stages": [
+    {
+      "applicable": true,
+      "id": "inspect",
+      "label": "Inspected",
+      "meaning": "Listed or read at least one file in the repository \u2014 or, on a browser exam, opened or snapshotted the page."
+    },
+    {
+      "applicable": true,
+      "id": "edit",
+      "label": "Edited",
+      "meaning": "Wrote at least one file that actually changed on disk."
+    },
+    {
+      "applicable": true,
+      "id": "test",
+      "label": "Ran tests",
+      "meaning": "Invoked the visible-test tool at least once."
+    },
+    {
+      "applicable": true,
+      "id": "submit",
+      "label": "Submitted",
+      "meaning": "Called submit, ending the rollout on its own terms."
+    },
+    {
+      "applicable": true,
+      "id": "graded",
+      "label": "Graded",
+      "meaning": "The independent hidden grader ran on the submission and returned a verdict."
+    },
+    {
+      "applicable": true,
+      "id": "hidden_pass",
+      "label": "Passed hidden tests",
+      "meaning": "The hidden grader returned exit 0 and the rollout was certified."
+    }
+  ],
+  "version": "0.1.0"
+}

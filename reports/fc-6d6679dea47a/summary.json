@@ -1,0 +1,485 @@
+{
+  "annotationCampaign": {
+    "campaignId": "fc-6d6679dea47a",
+    "coverage": {
+      "cellsPending": 0,
+      "cellsRun": 4,
+      "complete": true,
+      "completedAttempts": 40,
+      "examsNotStarted": [],
+      "missingAttempts": 0,
+      "note": "Cells run against the cells this campaign declared it would run.",
+      "pending": [],
+      "planDeclared": true,
+      "plannedAttempts": 40,
+      "plannedCells": 4,
+      "plannedExams": [
+        "vvdex.annotation.text-labeling-1",
+        "vvdex.annotation.structured-data-1"
+      ],
+      "plannedModels": [
+        "cli/codex",
+        "cli/claude-sonnet"
+      ],
+      "rolloutsPerCell": 10
+    },
+    "limitations": [
+      "Repeated attempts on these fixed tasks only; not a broad capability score.",
+      "All outcomes are retained; lane errors, withheld and invalid attempts are not model failures.",
+      "Quality is the existing grader measurement, separate from the pass gate.",
+      "Video uses sampled still images. Audio delivery is unsupported and was not attempted.",
+      "CLI attempt indices do not claim stochastic seed control. Subscription token and monetary usage are unavailable.",
+      "Private references, submissions, exact geometry, frame timestamps and raw sessions are withheld."
+    ],
+    "schema": "vvdex.forge.annotation-model-campaign/v1",
+    "tasks": [
+      {
+        "environmentId": "vvdex.annotation.structured-data-1",
+        "examFingerprint": "5d6b3708dba2cdf08218a44997058413d0a3aae738299bce8c346bb2b309fc28",
+        "modality": "structured",
+        "models": [
+          {
+            "attempts": 10,
+            "delivery": "canonical text tools",
+            "failed": 0,
+            "invalid": 0,
+            "laneErrors": 0,
+            "model": "cli/codex",
+            "passed": 10,
+            "quality": {
+              "axes": [
+                {
+                  "id": "pairPrecision",
+                  "mean": 1.0,
+                  "n": 10
+                },
+                {
+                  "id": "pairRecall",
+                  "mean": 1.0,
+                  "n": 10
+                },
+                {
+                  "id": "pairF1",
+                  "mean": 1.0,
+                  "n": 10
+                },
+                {
+                  "id": "pairAccuracy",
+                  "mean": 1.0,
+                  "n": 10
+                },
+                {
+                  "id": "rowPrecision",
+                  "mean": 1.0,
+                  "n": 10
+                },
+                {
+                  "id": "rowRecall",
+                  "mean": 1.0,
+                  "n": 10
+                },
+                {
+                  "id": "rowF1",
+                  "mean": 1.0,
+                  "n": 10
+                },
+                {
+                  "id": "rowAccuracy",
+                  "mean": 1.0,
+                  "n": 10
+                }
+              ],
+              "measuredAttempts": 10,
+              "scoreMean": 1.0
+            },
+            "stages": {
+              "edit": 10,
+              "graded": 10,
+              "hidden_pass": 10,
+              "inspect": 10,
+              "submit": 10,
+              "test": 10
+            },
+            "withheld": 0
+          },
+          {
+            "attempts": 10,
+            "delivery": "canonical text tools",
+            "failed": 0,
+            "invalid": 0,
+            "laneErrors": 0,
+            "model": "cli/claude-sonnet",
+            "passed": 10,
+            "quality": {
+              "axes": [
+                {
+                  "id": "pairPrecision",
+                  "mean": 1.0,
+                  "n": 10
+                },
+                {
+                  "id": "pairRecall",
+                  "mean": 1.0,
+                  "n": 10
+                },
+                {
+                  "id": "pairF1",
+                  "mean": 1.0,
+                  "n": 10
+                },
+                {
+                  "id": "pairAccuracy",
+                  "mean": 1.0,
+                  "n": 10
+                },
+                {
+                  "id": "rowPrecision",
+                  "mean": 1.0,
+                  "n": 10
+                },
+                {
+                  "id": "rowRecall",
+                  "mean": 1.0,
+                  "n": 10
+                },
+                {
+                  "id": "rowF1",
+                  "mean": 1.0,
+                  "n": 10
+                },
+                {
+                  "id": "rowAccuracy",
+                  "mean": 1.0,
+                  "n": 10
+                }
+              ],
+              "measuredAttempts": 10,
+              "scoreMean": 1.0
+            },
+            "stages": {
+              "edit": 10,
+              "graded": 10,
+              "hidden_pass": 10,
+              "inspect": 10,
+              "submit": 10,
+              "test": 10
+            },
+            "withheld": 0
+          }
+        ]
+      },
+      {
+        "environmentId": "vvdex.annotation.text-labeling-1",
+        "examFingerprint": "e1abe51398b2d950a3415678aaf8ec796420dfb05ea89b3b64afd33c1e345fd3",
+        "modality": "text",
+        "models": [
+          {
+            "attempts": 10,
+            "delivery": "canonical text tools",
+            "failed": 0,
+            "invalid": 0,
+            "laneErrors": 0,
+            "model": "cli/codex",
+            "passed": 10,
+            "quality": {
+              "axes": [
+                {
+                  "id": "classificationPrecision",
+                  "mean": 1.0,
+                  "n": 10
+                },
+                {
+                  "id": "classificationRecall",
+                  "mean": 1.0,
+                  "n": 10
+                },
+                {
+                  "id": "classificationF1",
+                  "mean": 1.0,
+                  "n": 10
+                },
+                {
+                  "id": "classificationAccuracy",
+                  "mean": 1.0,
+                  "n": 10
+                },
+                {
+                  "id": "spanPrecision",
+                  "mean": 1.0,
+                  "n": 10
+                },
+                {
+                  "id": "spanRecall",
+                  "mean": 1.0,
+                  "n": 10
+                },
+                {
+                  "id": "spanF1",
+                  "mean": 1.0,
+                  "n": 10
+                },
+                {
+                  "id": "spanOverlapIoU",
+                  "mean": 1.0,
+                  "n": 10
+                },
+                {
+                  "id": "spanExactF1",
+                  "mean": 1.0,
+                  "n": 10
+                }
+              ],
+              "measuredAttempts": 10,
+              "scoreMean": 1.0
+            },
+            "stages": {
+              "edit": 10,
+              "graded": 10,
+              "hidden_pass": 10,
+              "inspect": 10,
+              "submit": 10,
+              "test": 10
+            },
+            "withheld": 0
+          },
+          {
+            "attempts": 10,
+            "delivery": "canonical text tools",
+            "failed": 0,
+            "invalid": 0,
+            "laneErrors": 0,
+            "model": "cli/claude-sonnet",
+            "passed": 10,
+            "quality": {
+              "axes": [
+                {
+                  "id": "classificationPrecision",
+                  "mean": 1.0,
+                  "n": 10
+                },
+                {
+                  "id": "classificationRecall",
+                  "mean": 1.0,
+                  "n": 10
+                },
+                {
+                  "id": "classificationF1",
+                  "mean": 1.0,
+                  "n": 10
+                },
+                {
+                  "id": "classificationAccuracy",
+                  "mean": 1.0,
+                  "n": 10
+                },
+                {
+                  "id": "spanPrecision",
+                  "mean": 1.0,
+                  "n": 10
+                },
+                {
+                  "id": "spanRecall",
+                  "mean": 1.0,
+                  "n": 10
+                },
+                {
+                  "id": "spanF1",
+                  "mean": 1.0,
+                  "n": 10
+                },
+                {
+                  "id": "spanOverlapIoU",
+                  "mean": 1.0,
+                  "n": 10
+                },
+                {
+                  "id": "spanExactF1",
+                  "mean": 1.0,
+                  "n": 10
+                }
+              ],
+              "measuredAttempts": 10,
+              "scoreMean": 1.0
+            },
+            "stages": {
+              "edit": 10,
+              "graded": 10,
+              "hidden_pass": 10,
+              "inspect": 10,
+              "submit": 10,
+              "test": 10
+            },
+            "withheld": 0
+          }
+        ]
+      }
+    ]
+  },
+  "campaignId": "fc-6d6679dea47a",
+  "counts": {
+    "attempts": 40,
+    "cells": 4,
+    "certifiedPasses": 40,
+    "exams": 2,
+    "graded": 40,
+    "invalid": 0,
+    "laneErrors": 0,
+    "lanes": 2,
+    "modelFails": 0,
+    "withheld": 0
+  },
+  "disclosure": {
+    "vvdex.annotation.structured-data-1": {
+      "class": "answer_key",
+      "rule": "answer-key disclosure (ownership vvdex_proprietary \u2014 no declaration \u2014 proprietary by default; family annotation): the exam is VVDex evaluation IP and the graded output is an answer or a keyed value, so no submission content, diff, model claim or hidden-assertion name is published."
+    },
+    "vvdex.annotation.text-labeling-1": {
+      "class": "answer_key",
+      "rule": "answer-key disclosure (ownership vvdex_proprietary \u2014 no declaration \u2014 proprietary by default; family annotation): the exam is VVDex evaluation IP and the graded output is an answer or a keyed value, so no submission content, diff, model claim or hidden-assertion name is published."
+    }
+  },
+  "families": [
+    {
+      "envId": "vvdex.annotation.structured-data-1",
+      "family": "annotation",
+      "label": "Multimodal annotation",
+      "short": "Annotation \u00b7 structured-data-1",
+      "what": "Invented tabular records are reviewed for normalization, validity, duplicates, anomalies and relationships."
+    },
+    {
+      "envId": "vvdex.annotation.text-labeling-1",
+      "family": "annotation",
+      "label": "Multimodal annotation",
+      "short": "Annotation \u00b7 text-labeling-1",
+      "what": "An invented message is reviewed for classification and entity spans with consistent offsets."
+    }
+  ],
+  "lanes": [
+    {
+      "certifiedPasses": 20,
+      "countable": 20,
+      "counts": {
+        "certified_pass": 20,
+        "invalid": 0,
+        "lane_error": 0,
+        "model_fail": 0,
+        "withheld": 0
+      },
+      "lane": "cli/claude-sonnet",
+      "rate": 1.0,
+      "rateInterval95": [
+        0.8389,
+        1.0
+      ]
+    },
+    {
+      "certifiedPasses": 20,
+      "countable": 20,
+      "counts": {
+        "certified_pass": 20,
+        "invalid": 0,
+        "lane_error": 0,
+        "model_fail": 0,
+        "withheld": 0
+      },
+      "lane": "cli/codex",
+      "rate": 1.0,
+      "rateInterval95": [
+        0.8389,
+        1.0
+      ]
+    }
+  ],
+  "perExamMatrix": {
+    "exams": [
+      {
+        "envId": "vvdex.annotation.structured-data-1",
+        "evalId": "fr-20260907-cd08adce",
+        "family": "annotation",
+        "short": "Annotation \u00b7 structured-data-1",
+        "title": "Record normalization and duplicate QA"
+      },
+      {
+        "envId": "vvdex.annotation.text-labeling-1",
+        "evalId": "fr-20260907-8f0b9493",
+        "family": "annotation",
+        "short": "Annotation \u00b7 text-labeling-1",
+        "title": "Intent and entity annotation"
+      }
+    ],
+    "rows": [
+      {
+        "cells": {
+          "vvdex.annotation.structured-data-1": {
+            "graded": 10,
+            "invalid": 0,
+            "laneErrors": 0,
+            "passes": 10,
+            "text": "10/10",
+            "withheld": 0
+          },
+          "vvdex.annotation.text-labeling-1": {
+            "graded": 10,
+            "invalid": 0,
+            "laneErrors": 0,
+            "passes": 10,
+            "text": "10/10",
+            "withheld": 0
+          }
+        },
+        "certifiedPasses": 20,
+        "lane": "cli/claude-sonnet"
+      },
+      {
+        "cells": {
+          "vvdex.annotation.structured-data-1": {
+            "graded": 10,
+            "invalid": 0,
+            "laneErrors": 0,
+            "passes": 10,
+            "text": "10/10",
+            "withheld": 0
+          },
+          "vvdex.annotation.text-labeling-1": {
+            "graded": 10,
+            "invalid": 0,
+            "laneErrors": 0,
+            "passes": 10,
+            "text": "10/10",
+            "withheld": 0
+          }
+        },
+        "certifiedPasses": 20,
+        "lane": "cli/codex"
+      }
+    ]
+  },
+  "recordCount": 2,
+  "records": [
+    {
+      "canonicalBytesPublished": false,
+      "certificationReceiptSha256": null,
+      "disclosureClass": "answer_key",
+      "environmentId": "vvdex.annotation.structured-data-1",
+      "evalId": "fr-20260907-cd08adce",
+      "examFingerprint": "5d6b3708dba2cdf08218a44997058413d0a3aae738299bce8c346bb2b309fc28",
+      "recordDigest": "3596e3de9ba226bcd00ca746e26e31a8c0cd85b88f82b93d51ab27fd24af6877",
+      "retired_for_future_evaluation": null
+    },
+    {
+      "canonicalBytesPublished": false,
+      "certificationReceiptSha256": null,
+      "disclosureClass": "answer_key",
+      "environmentId": "vvdex.annotation.text-labeling-1",
+      "evalId": "fr-20260907-8f0b9493",
+      "examFingerprint": "e1abe51398b2d950a3415678aaf8ec796420dfb05ea89b3b64afd33c1e345fd3",
+      "recordDigest": "61073e4730b6a0ec35b5bcd8e984e7382e6646a911b99bcfa88c145d7756e8fa",
+      "retired_for_future_evaluation": null
+    }
+  ],
+  "refused": 0,
+  "retired_for_future_evaluation": {},
+  "schema": "vvdex.forge.campaign-summary/v1",
+  "suspectRecords": [],
+  "withheldByHarness": 0
+}

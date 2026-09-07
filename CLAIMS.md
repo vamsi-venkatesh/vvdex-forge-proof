@@ -153,3 +153,19 @@ reference annotations are not published to substantiate these statements.
 ## Gemini corrected-input retest · September 7, 2026
 
 Campaign `fc-403cfc23f9e5` contains one Gemini 3.6 Flash attempt: six valid annotations, task quality 0.6565342913371214, no certified pass and one model failure. Source: `reports/fc-403cfc23f9e5/summary.json` annotation campaign projection. Native video with supplied exact frames is a distinct delivery condition; 10 FPS is a recorded request, not independently observed provider processing. No inherent-capacity or causal-improvement claim is made from the two single-run conditions.
+
+## Annotation lane campaigns · September 7, 2026
+
+Each row is read from the named campaign's `campaign.json` cell counts
+(`certifiedCounts`) and `summary.json` annotation projection under `reports/`.
+
+| Claim | Evidence to inspect |
+| --- | --- |
+| Muse Spark 1.3 (OpenRouter, native video re-encoded to MP4 + exact frames): 1/1 pilot pass | `reports/fc-0743e9bca9f2/campaign.json` cell `meta/muse-spark-1.3|vvdex.annotation.robot-video-1` |
+| Muse Spark 1.3: 4 certified passes, 6 model failures, 2 lane errors in 12 attempts | `reports/fc-89575ed5687d/campaign.json` same cell |
+| Muse Spark 1.3: 5 certified passes in 11 graded attempts across both campaigns | Sum of the two cells above; lane errors are outside the denominator |
+| Video re-encoded to MP4 H.264 CRF 18, exact frames from the original | `summary.json` annotation delivery label of both campaigns (transformations) |
+| Muse Spark via OpenCode CLI: text 10/10, structured 10/10, image 0/10 | `reports/fc-e4d7e6adab0f/campaign.json` cells |
+| Codex CLI and Claude Sonnet CLI: text 10/10, structured 10/10 each | `reports/fc-6d6679dea47a/campaign.json` cells |
+| Free API lanes, ten attempts per cell; Groq GPT-OSS-20B text 1 pass + 9 lane errors | `reports/fc-3377c49ce724/campaign.json` cells |
+| Cursor Grok pilots invalid (containment breached); Gemini pilots lane errors; audio no graded attempt | `reports/fc-0c7e7c67a231/campaign.json` and `reports/fc-6f40beb6605e/campaign.json` cells |

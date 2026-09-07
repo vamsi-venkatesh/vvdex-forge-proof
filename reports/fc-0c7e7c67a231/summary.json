@@ -1,0 +1,2373 @@
+{
+  "annotationCampaign": {
+    "campaignId": "fc-0c7e7c67a231",
+    "coverage": {
+      "cellsPending": 0,
+      "cellsRun": 34,
+      "complete": true,
+      "completedAttempts": 40,
+      "examsNotStarted": [],
+      "missingAttempts": 0,
+      "note": "Cells run against the cells this campaign declared it would run.",
+      "pending": [],
+      "planDeclared": true,
+      "plannedAttempts": 34,
+      "plannedCells": 34,
+      "plannedExams": [
+        "vvdex.annotation.text-labeling-1",
+        "vvdex.annotation.structured-data-1"
+      ],
+      "plannedModels": [
+        "openai/gpt-oss-20b",
+        "openai/gpt-oss-120b",
+        "mistral-small-latest",
+        "codestral-latest",
+        "mistral-code-latest",
+        "mistral-medium-latest",
+        "magistral-small-latest",
+        "ministral-14b-latest",
+        "ministral-8b-latest",
+        "@cf/openai/gpt-oss-20b",
+        "nvidia/nemotron-3-super-120b-a12b:free",
+        "cohere/north-mini-code:free",
+        "minimax/minimax-m3:free",
+        "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
+        "cli/codex",
+        "cli/claude-sonnet",
+        "cli/cursor-grok"
+      ],
+      "rolloutsPerCell": 1
+    },
+    "limitations": [
+      "Repeated attempts on these fixed tasks only; not a broad capability score.",
+      "All outcomes are retained; lane errors, withheld and invalid attempts are not model failures.",
+      "Quality is the existing grader measurement, separate from the pass gate.",
+      "Video delivery is stated per model from recorded receipts; native files and sampled frames are distinct. Provider-side sampling is not independently observed.",
+      "Provider token usage is recorded where available. Monetary usage is not an invoice, and requested seeds do not establish deterministic replay.",
+      "Private references, submissions, exact geometry, frame timestamps and raw sessions are withheld."
+    ],
+    "schema": "vvdex.forge.annotation-model-campaign/v1",
+    "tasks": [
+      {
+        "environmentId": "vvdex.annotation.structured-data-1",
+        "examFingerprint": "5d6b3708dba2cdf08218a44997058413d0a3aae738299bce8c346bb2b309fc28",
+        "modality": "structured",
+        "models": [
+          {
+            "attempts": 1,
+            "delivery": "canonical text tools",
+            "failed": 0,
+            "invalid": 0,
+            "laneErrors": 0,
+            "model": "cli/codex",
+            "passed": 1,
+            "quality": {
+              "axes": [
+                {
+                  "id": "pairPrecision",
+                  "mean": 1.0,
+                  "n": 1
+                },
+                {
+                  "id": "pairRecall",
+                  "mean": 1.0,
+                  "n": 1
+                },
+                {
+                  "id": "pairF1",
+                  "mean": 1.0,
+                  "n": 1
+                },
+                {
+                  "id": "pairAccuracy",
+                  "mean": 1.0,
+                  "n": 1
+                },
+                {
+                  "id": "rowPrecision",
+                  "mean": 1.0,
+                  "n": 1
+                },
+                {
+                  "id": "rowRecall",
+                  "mean": 1.0,
+                  "n": 1
+                },
+                {
+                  "id": "rowF1",
+                  "mean": 1.0,
+                  "n": 1
+                },
+                {
+                  "id": "rowAccuracy",
+                  "mean": 1.0,
+                  "n": 1
+                }
+              ],
+              "measuredAttempts": 1,
+              "scoreMean": 1.0
+            },
+            "stages": {
+              "edit": 1,
+              "graded": 1,
+              "hidden_pass": 1,
+              "inspect": 1,
+              "submit": 1,
+              "test": 1
+            },
+            "withheld": 0
+          },
+          {
+            "attempts": 1,
+            "delivery": "canonical text tools",
+            "failed": 0,
+            "invalid": 0,
+            "laneErrors": 0,
+            "model": "cli/claude-sonnet",
+            "passed": 1,
+            "quality": {
+              "axes": [
+                {
+                  "id": "pairPrecision",
+                  "mean": 1.0,
+                  "n": 1
+                },
+                {
+                  "id": "pairRecall",
+                  "mean": 1.0,
+                  "n": 1
+                },
+                {
+                  "id": "pairF1",
+                  "mean": 1.0,
+                  "n": 1
+                },
+                {
+                  "id": "pairAccuracy",
+                  "mean": 1.0,
+                  "n": 1
+                },
+                {
+                  "id": "rowPrecision",
+                  "mean": 1.0,
+                  "n": 1
+                },
+                {
+                  "id": "rowRecall",
+                  "mean": 1.0,
+                  "n": 1
+                },
+                {
+                  "id": "rowF1",
+                  "mean": 1.0,
+                  "n": 1
+                },
+                {
+                  "id": "rowAccuracy",
+                  "mean": 1.0,
+                  "n": 1
+                }
+              ],
+              "measuredAttempts": 1,
+              "scoreMean": 1.0
+            },
+            "stages": {
+              "edit": 1,
+              "graded": 1,
+              "hidden_pass": 1,
+              "inspect": 1,
+              "submit": 1,
+              "test": 1
+            },
+            "withheld": 0
+          },
+          {
+            "attempts": 1,
+            "delivery": "canonical text tools",
+            "failed": 0,
+            "invalid": 1,
+            "laneErrors": 0,
+            "model": "cli/cursor-grok",
+            "passed": 0,
+            "quality": null,
+            "stages": {
+              "edit": 1,
+              "graded": 1,
+              "hidden_pass": 0,
+              "inspect": 1,
+              "submit": 1,
+              "test": 1
+            },
+            "withheld": 0
+          },
+          {
+            "attempts": 2,
+            "delivery": "canonical text tools",
+            "failed": 0,
+            "invalid": 0,
+            "laneErrors": 2,
+            "model": "mistral-small-latest",
+            "passed": 0,
+            "quality": null,
+            "stages": {
+              "edit": 0,
+              "graded": 0,
+              "hidden_pass": 0,
+              "inspect": 0,
+              "submit": 0,
+              "test": 0
+            },
+            "withheld": 0
+          },
+          {
+            "attempts": 2,
+            "delivery": "canonical text tools",
+            "failed": 0,
+            "invalid": 0,
+            "laneErrors": 2,
+            "model": "mistral-medium-latest",
+            "passed": 0,
+            "quality": null,
+            "stages": {
+              "edit": 0,
+              "graded": 0,
+              "hidden_pass": 0,
+              "inspect": 0,
+              "submit": 0,
+              "test": 0
+            },
+            "withheld": 0
+          },
+          {
+            "attempts": 2,
+            "delivery": "canonical text tools",
+            "failed": 0,
+            "invalid": 0,
+            "laneErrors": 2,
+            "model": "magistral-small-latest",
+            "passed": 0,
+            "quality": null,
+            "stages": {
+              "edit": 0,
+              "graded": 0,
+              "hidden_pass": 0,
+              "inspect": 0,
+              "submit": 0,
+              "test": 0
+            },
+            "withheld": 0
+          },
+          {
+            "attempts": 1,
+            "delivery": "canonical text tools",
+            "failed": 0,
+            "invalid": 0,
+            "laneErrors": 0,
+            "model": "openai/gpt-oss-20b",
+            "passed": 1,
+            "quality": {
+              "axes": [
+                {
+                  "id": "pairPrecision",
+                  "mean": 1.0,
+                  "n": 1
+                },
+                {
+                  "id": "pairRecall",
+                  "mean": 1.0,
+                  "n": 1
+                },
+                {
+                  "id": "pairF1",
+                  "mean": 1.0,
+                  "n": 1
+                },
+                {
+                  "id": "pairAccuracy",
+                  "mean": 1.0,
+                  "n": 1
+                },
+                {
+                  "id": "rowPrecision",
+                  "mean": 1.0,
+                  "n": 1
+                },
+                {
+                  "id": "rowRecall",
+                  "mean": 1.0,
+                  "n": 1
+                },
+                {
+                  "id": "rowF1",
+                  "mean": 1.0,
+                  "n": 1
+                },
+                {
+                  "id": "rowAccuracy",
+                  "mean": 1.0,
+                  "n": 1
+                }
+              ],
+              "measuredAttempts": 1,
+              "scoreMean": 1.0
+            },
+            "stages": {
+              "edit": 1,
+              "graded": 1,
+              "hidden_pass": 1,
+              "inspect": 1,
+              "submit": 1,
+              "test": 1
+            },
+            "withheld": 0
+          },
+          {
+            "attempts": 1,
+            "delivery": "canonical text tools",
+            "failed": 0,
+            "invalid": 0,
+            "laneErrors": 0,
+            "model": "openai/gpt-oss-120b",
+            "passed": 1,
+            "quality": {
+              "axes": [
+                {
+                  "id": "pairPrecision",
+                  "mean": 1.0,
+                  "n": 1
+                },
+                {
+                  "id": "pairRecall",
+                  "mean": 1.0,
+                  "n": 1
+                },
+                {
+                  "id": "pairF1",
+                  "mean": 1.0,
+                  "n": 1
+                },
+                {
+                  "id": "pairAccuracy",
+                  "mean": 1.0,
+                  "n": 1
+                },
+                {
+                  "id": "rowPrecision",
+                  "mean": 1.0,
+                  "n": 1
+                },
+                {
+                  "id": "rowRecall",
+                  "mean": 1.0,
+                  "n": 1
+                },
+                {
+                  "id": "rowF1",
+                  "mean": 1.0,
+                  "n": 1
+                },
+                {
+                  "id": "rowAccuracy",
+                  "mean": 1.0,
+                  "n": 1
+                }
+              ],
+              "measuredAttempts": 1,
+              "scoreMean": 1.0
+            },
+            "stages": {
+              "edit": 1,
+              "graded": 1,
+              "hidden_pass": 1,
+              "inspect": 1,
+              "submit": 1,
+              "test": 1
+            },
+            "withheld": 0
+          },
+          {
+            "attempts": 1,
+            "delivery": "canonical text tools",
+            "failed": 0,
+            "invalid": 0,
+            "laneErrors": 0,
+            "model": "codestral-latest",
+            "passed": 1,
+            "quality": {
+              "axes": [
+                {
+                  "id": "pairPrecision",
+                  "mean": 1.0,
+                  "n": 1
+                },
+                {
+                  "id": "pairRecall",
+                  "mean": 1.0,
+                  "n": 1
+                },
+                {
+                  "id": "pairF1",
+                  "mean": 1.0,
+                  "n": 1
+                },
+                {
+                  "id": "pairAccuracy",
+                  "mean": 1.0,
+                  "n": 1
+                },
+                {
+                  "id": "rowPrecision",
+                  "mean": 1.0,
+                  "n": 1
+                },
+                {
+                  "id": "rowRecall",
+                  "mean": 1.0,
+                  "n": 1
+                },
+                {
+                  "id": "rowF1",
+                  "mean": 1.0,
+                  "n": 1
+                },
+                {
+                  "id": "rowAccuracy",
+                  "mean": 1.0,
+                  "n": 1
+                }
+              ],
+              "measuredAttempts": 1,
+              "scoreMean": 1.0
+            },
+            "stages": {
+              "edit": 1,
+              "graded": 1,
+              "hidden_pass": 1,
+              "inspect": 1,
+              "submit": 1,
+              "test": 1
+            },
+            "withheld": 0
+          },
+          {
+            "attempts": 1,
+            "delivery": "canonical text tools",
+            "failed": 0,
+            "invalid": 0,
+            "laneErrors": 0,
+            "model": "mistral-code-latest",
+            "passed": 1,
+            "quality": {
+              "axes": [
+                {
+                  "id": "pairPrecision",
+                  "mean": 1.0,
+                  "n": 1
+                },
+                {
+                  "id": "pairRecall",
+                  "mean": 1.0,
+                  "n": 1
+                },
+                {
+                  "id": "pairF1",
+                  "mean": 1.0,
+                  "n": 1
+                },
+                {
+                  "id": "pairAccuracy",
+                  "mean": 1.0,
+                  "n": 1
+                },
+                {
+                  "id": "rowPrecision",
+                  "mean": 1.0,
+                  "n": 1
+                },
+                {
+                  "id": "rowRecall",
+                  "mean": 1.0,
+                  "n": 1
+                },
+                {
+                  "id": "rowF1",
+                  "mean": 1.0,
+                  "n": 1
+                },
+                {
+                  "id": "rowAccuracy",
+                  "mean": 1.0,
+                  "n": 1
+                }
+              ],
+              "measuredAttempts": 1,
+              "scoreMean": 1.0
+            },
+            "stages": {
+              "edit": 1,
+              "graded": 1,
+              "hidden_pass": 1,
+              "inspect": 1,
+              "submit": 1,
+              "test": 1
+            },
+            "withheld": 0
+          },
+          {
+            "attempts": 1,
+            "delivery": "canonical text tools",
+            "failed": 1,
+            "invalid": 0,
+            "laneErrors": 0,
+            "model": "ministral-14b-latest",
+            "passed": 0,
+            "quality": {
+              "axes": [
+                {
+                  "id": "pairPrecision",
+                  "mean": 1.0,
+                  "n": 1
+                },
+                {
+                  "id": "pairRecall",
+                  "mean": 1.0,
+                  "n": 1
+                },
+                {
+                  "id": "pairF1",
+                  "mean": 1.0,
+                  "n": 1
+                },
+                {
+                  "id": "pairAccuracy",
+                  "mean": 1.0,
+                  "n": 1
+                },
+                {
+                  "id": "rowPrecision",
+                  "mean": 0.6666666666666666,
+                  "n": 1
+                },
+                {
+                  "id": "rowRecall",
+                  "mean": 0.6666666666666666,
+                  "n": 1
+                },
+                {
+                  "id": "rowF1",
+                  "mean": 0.6666666666666666,
+                  "n": 1
+                },
+                {
+                  "id": "rowAccuracy",
+                  "mean": 0.6666666666666666,
+                  "n": 1
+                }
+              ],
+              "measuredAttempts": 1,
+              "scoreMean": 0.75
+            },
+            "stages": {
+              "edit": 1,
+              "graded": 1,
+              "hidden_pass": 0,
+              "inspect": 1,
+              "submit": 1,
+              "test": 1
+            },
+            "withheld": 0
+          },
+          {
+            "attempts": 1,
+            "delivery": "canonical text tools",
+            "failed": 1,
+            "invalid": 0,
+            "laneErrors": 0,
+            "model": "ministral-8b-latest",
+            "passed": 0,
+            "quality": {
+              "axes": [
+                {
+                  "id": "pairPrecision",
+                  "mean": 1.0,
+                  "n": 1
+                },
+                {
+                  "id": "pairRecall",
+                  "mean": 1.0,
+                  "n": 1
+                },
+                {
+                  "id": "pairF1",
+                  "mean": 1.0,
+                  "n": 1
+                },
+                {
+                  "id": "pairAccuracy",
+                  "mean": 1.0,
+                  "n": 1
+                },
+                {
+                  "id": "rowPrecision",
+                  "mean": 0.6666666666666666,
+                  "n": 1
+                },
+                {
+                  "id": "rowRecall",
+                  "mean": 0.6666666666666666,
+                  "n": 1
+                },
+                {
+                  "id": "rowF1",
+                  "mean": 0.6666666666666666,
+                  "n": 1
+                },
+                {
+                  "id": "rowAccuracy",
+                  "mean": 0.6666666666666666,
+                  "n": 1
+                }
+              ],
+              "measuredAttempts": 1,
+              "scoreMean": 0.75
+            },
+            "stages": {
+              "edit": 1,
+              "graded": 1,
+              "hidden_pass": 0,
+              "inspect": 1,
+              "submit": 1,
+              "test": 1
+            },
+            "withheld": 0
+          },
+          {
+            "attempts": 1,
+            "delivery": "canonical text tools",
+            "failed": 0,
+            "invalid": 0,
+            "laneErrors": 0,
+            "model": "@cf/openai/gpt-oss-20b",
+            "passed": 1,
+            "quality": {
+              "axes": [
+                {
+                  "id": "pairPrecision",
+                  "mean": 1.0,
+                  "n": 1
+                },
+                {
+                  "id": "pairRecall",
+                  "mean": 1.0,
+                  "n": 1
+                },
+                {
+                  "id": "pairF1",
+                  "mean": 1.0,
+                  "n": 1
+                },
+                {
+                  "id": "pairAccuracy",
+                  "mean": 1.0,
+                  "n": 1
+                },
+                {
+                  "id": "rowPrecision",
+                  "mean": 1.0,
+                  "n": 1
+                },
+                {
+                  "id": "rowRecall",
+                  "mean": 1.0,
+                  "n": 1
+                },
+                {
+                  "id": "rowF1",
+                  "mean": 1.0,
+                  "n": 1
+                },
+                {
+                  "id": "rowAccuracy",
+                  "mean": 1.0,
+                  "n": 1
+                }
+              ],
+              "measuredAttempts": 1,
+              "scoreMean": 1.0
+            },
+            "stages": {
+              "edit": 1,
+              "graded": 1,
+              "hidden_pass": 1,
+              "inspect": 1,
+              "submit": 1,
+              "test": 1
+            },
+            "withheld": 0
+          },
+          {
+            "attempts": 1,
+            "delivery": "canonical text tools",
+            "failed": 0,
+            "invalid": 0,
+            "laneErrors": 0,
+            "model": "nvidia/nemotron-3-super-120b-a12b:free",
+            "passed": 0,
+            "quality": null,
+            "stages": {
+              "edit": 1,
+              "graded": 1,
+              "hidden_pass": 0,
+              "inspect": 1,
+              "submit": 0,
+              "test": 0
+            },
+            "withheld": 1
+          },
+          {
+            "attempts": 1,
+            "delivery": "canonical text tools",
+            "failed": 0,
+            "invalid": 0,
+            "laneErrors": 0,
+            "model": "cohere/north-mini-code:free",
+            "passed": 0,
+            "quality": null,
+            "stages": {
+              "edit": 0,
+              "graded": 1,
+              "hidden_pass": 0,
+              "inspect": 1,
+              "submit": 0,
+              "test": 0
+            },
+            "withheld": 1
+          },
+          {
+            "attempts": 1,
+            "delivery": "canonical text tools",
+            "failed": 0,
+            "invalid": 0,
+            "laneErrors": 0,
+            "model": "minimax/minimax-m3:free",
+            "passed": 1,
+            "quality": {
+              "axes": [
+                {
+                  "id": "pairPrecision",
+                  "mean": 1.0,
+                  "n": 1
+                },
+                {
+                  "id": "pairRecall",
+                  "mean": 1.0,
+                  "n": 1
+                },
+                {
+                  "id": "pairF1",
+                  "mean": 1.0,
+                  "n": 1
+                },
+                {
+                  "id": "pairAccuracy",
+                  "mean": 1.0,
+                  "n": 1
+                },
+                {
+                  "id": "rowPrecision",
+                  "mean": 1.0,
+                  "n": 1
+                },
+                {
+                  "id": "rowRecall",
+                  "mean": 1.0,
+                  "n": 1
+                },
+                {
+                  "id": "rowF1",
+                  "mean": 1.0,
+                  "n": 1
+                },
+                {
+                  "id": "rowAccuracy",
+                  "mean": 1.0,
+                  "n": 1
+                }
+              ],
+              "measuredAttempts": 1,
+              "scoreMean": 1.0
+            },
+            "stages": {
+              "edit": 1,
+              "graded": 1,
+              "hidden_pass": 1,
+              "inspect": 1,
+              "submit": 1,
+              "test": 1
+            },
+            "withheld": 0
+          },
+          {
+            "attempts": 1,
+            "delivery": "canonical text tools",
+            "failed": 0,
+            "invalid": 0,
+            "laneErrors": 1,
+            "model": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
+            "passed": 0,
+            "quality": null,
+            "stages": {
+              "edit": 0,
+              "graded": 0,
+              "hidden_pass": 0,
+              "inspect": 0,
+              "submit": 0,
+              "test": 0
+            },
+            "withheld": 0
+          }
+        ]
+      },
+      {
+        "environmentId": "vvdex.annotation.text-labeling-1",
+        "examFingerprint": "e1abe51398b2d950a3415678aaf8ec796420dfb05ea89b3b64afd33c1e345fd3",
+        "modality": "text",
+        "models": [
+          {
+            "attempts": 1,
+            "delivery": "canonical text tools",
+            "failed": 0,
+            "invalid": 0,
+            "laneErrors": 0,
+            "model": "cli/codex",
+            "passed": 1,
+            "quality": {
+              "axes": [
+                {
+                  "id": "classificationPrecision",
+                  "mean": 1.0,
+                  "n": 1
+                },
+                {
+                  "id": "classificationRecall",
+                  "mean": 1.0,
+                  "n": 1
+                },
+                {
+                  "id": "classificationF1",
+                  "mean": 1.0,
+                  "n": 1
+                },
+                {
+                  "id": "classificationAccuracy",
+                  "mean": 1.0,
+                  "n": 1
+                },
+                {
+                  "id": "spanPrecision",
+                  "mean": 1.0,
+                  "n": 1
+                },
+                {
+                  "id": "spanRecall",
+                  "mean": 1.0,
+                  "n": 1
+                },
+                {
+                  "id": "spanF1",
+                  "mean": 1.0,
+                  "n": 1
+                },
+                {
+                  "id": "spanOverlapIoU",
+                  "mean": 1.0,
+                  "n": 1
+                },
+                {
+                  "id": "spanExactF1",
+                  "mean": 1.0,
+                  "n": 1
+                }
+              ],
+              "measuredAttempts": 1,
+              "scoreMean": 1.0
+            },
+            "stages": {
+              "edit": 1,
+              "graded": 1,
+              "hidden_pass": 1,
+              "inspect": 1,
+              "submit": 1,
+              "test": 1
+            },
+            "withheld": 0
+          },
+          {
+            "attempts": 1,
+            "delivery": "canonical text tools",
+            "failed": 0,
+            "invalid": 0,
+            "laneErrors": 0,
+            "model": "cli/claude-sonnet",
+            "passed": 1,
+            "quality": {
+              "axes": [
+                {
+                  "id": "classificationPrecision",
+                  "mean": 1.0,
+                  "n": 1
+                },
+                {
+                  "id": "classificationRecall",
+                  "mean": 1.0,
+                  "n": 1
+                },
+                {
+                  "id": "classificationF1",
+                  "mean": 1.0,
+                  "n": 1
+                },
+                {
+                  "id": "classificationAccuracy",
+                  "mean": 1.0,
+                  "n": 1
+                },
+                {
+                  "id": "spanPrecision",
+                  "mean": 1.0,
+                  "n": 1
+                },
+                {
+                  "id": "spanRecall",
+                  "mean": 1.0,
+                  "n": 1
+                },
+                {
+                  "id": "spanF1",
+                  "mean": 1.0,
+                  "n": 1
+                },
+                {
+                  "id": "spanOverlapIoU",
+                  "mean": 1.0,
+                  "n": 1
+                },
+                {
+                  "id": "spanExactF1",
+                  "mean": 1.0,
+                  "n": 1
+                }
+              ],
+              "measuredAttempts": 1,
+              "scoreMean": 1.0
+            },
+            "stages": {
+              "edit": 1,
+              "graded": 1,
+              "hidden_pass": 1,
+              "inspect": 1,
+              "submit": 1,
+              "test": 1
+            },
+            "withheld": 0
+          },
+          {
+            "attempts": 1,
+            "delivery": "canonical text tools",
+            "failed": 0,
+            "invalid": 1,
+            "laneErrors": 0,
+            "model": "cli/cursor-grok",
+            "passed": 0,
+            "quality": null,
+            "stages": {
+              "edit": 1,
+              "graded": 1,
+              "hidden_pass": 0,
+              "inspect": 1,
+              "submit": 1,
+              "test": 1
+            },
+            "withheld": 0
+          },
+          {
+            "attempts": 2,
+            "delivery": "canonical text tools",
+            "failed": 0,
+            "invalid": 0,
+            "laneErrors": 2,
+            "model": "mistral-small-latest",
+            "passed": 0,
+            "quality": null,
+            "stages": {
+              "edit": 0,
+              "graded": 0,
+              "hidden_pass": 0,
+              "inspect": 0,
+              "submit": 0,
+              "test": 0
+            },
+            "withheld": 0
+          },
+          {
+            "attempts": 2,
+            "delivery": "canonical text tools",
+            "failed": 0,
+            "invalid": 0,
+            "laneErrors": 2,
+            "model": "mistral-medium-latest",
+            "passed": 0,
+            "quality": null,
+            "stages": {
+              "edit": 0,
+              "graded": 0,
+              "hidden_pass": 0,
+              "inspect": 0,
+              "submit": 0,
+              "test": 0
+            },
+            "withheld": 0
+          },
+          {
+            "attempts": 2,
+            "delivery": "canonical text tools",
+            "failed": 0,
+            "invalid": 0,
+            "laneErrors": 2,
+            "model": "magistral-small-latest",
+            "passed": 0,
+            "quality": null,
+            "stages": {
+              "edit": 0,
+              "graded": 0,
+              "hidden_pass": 0,
+              "inspect": 0,
+              "submit": 0,
+              "test": 0
+            },
+            "withheld": 0
+          },
+          {
+            "attempts": 1,
+            "delivery": "canonical text tools",
+            "failed": 0,
+            "invalid": 0,
+            "laneErrors": 1,
+            "model": "openai/gpt-oss-20b",
+            "passed": 0,
+            "quality": null,
+            "stages": {
+              "edit": 0,
+              "graded": 0,
+              "hidden_pass": 0,
+              "inspect": 0,
+              "submit": 0,
+              "test": 0
+            },
+            "withheld": 0
+          },
+          {
+            "attempts": 1,
+            "delivery": "canonical text tools",
+            "failed": 0,
+            "invalid": 0,
+            "laneErrors": 0,
+            "model": "openai/gpt-oss-120b",
+            "passed": 1,
+            "quality": {
+              "axes": [
+                {
+                  "id": "classificationPrecision",
+                  "mean": 1.0,
+                  "n": 1
+                },
+                {
+                  "id": "classificationRecall",
+                  "mean": 1.0,
+                  "n": 1
+                },
+                {
+                  "id": "classificationF1",
+                  "mean": 1.0,
+                  "n": 1
+                },
+                {
+                  "id": "classificationAccuracy",
+                  "mean": 1.0,
+                  "n": 1
+                },
+                {
+                  "id": "spanPrecision",
+                  "mean": 1.0,
+                  "n": 1
+                },
+                {
+                  "id": "spanRecall",
+                  "mean": 1.0,
+                  "n": 1
+                },
+                {
+                  "id": "spanF1",
+                  "mean": 1.0,
+                  "n": 1
+                },
+                {
+                  "id": "spanOverlapIoU",
+                  "mean": 1.0,
+                  "n": 1
+                },
+                {
+                  "id": "spanExactF1",
+                  "mean": 1.0,
+                  "n": 1
+                }
+              ],
+              "measuredAttempts": 1,
+              "scoreMean": 1.0
+            },
+            "stages": {
+              "edit": 1,
+              "graded": 1,
+              "hidden_pass": 1,
+              "inspect": 1,
+              "submit": 1,
+              "test": 1
+            },
+            "withheld": 0
+          },
+          {
+            "attempts": 1,
+            "delivery": "canonical text tools",
+            "failed": 1,
+            "invalid": 0,
+            "laneErrors": 0,
+            "model": "codestral-latest",
+            "passed": 0,
+            "quality": {
+              "axes": [
+                {
+                  "id": "classificationPrecision",
+                  "mean": 1.0,
+                  "n": 1
+                },
+                {
+                  "id": "classificationRecall",
+                  "mean": 1.0,
+                  "n": 1
+                },
+                {
+                  "id": "classificationF1",
+                  "mean": 1.0,
+                  "n": 1
+                },
+                {
+                  "id": "classificationAccuracy",
+                  "mean": 1.0,
+                  "n": 1
+                },
+                {
+                  "id": "spanPrecision",
+                  "mean": 0.5,
+                  "n": 1
+                },
+                {
+                  "id": "spanRecall",
+                  "mean": 0.5,
+                  "n": 1
+                },
+                {
+                  "id": "spanF1",
+                  "mean": 0.5,
+                  "n": 1
+                },
+                {
+                  "id": "spanOverlapIoU",
+                  "mean": 0.625,
+                  "n": 1
+                },
+                {
+                  "id": "spanExactF1",
+                  "mean": 0.5,
+                  "n": 1
+                }
+              ],
+              "measuredAttempts": 1,
+              "scoreMean": 0.75
+            },
+            "stages": {
+              "edit": 1,
+              "graded": 1,
+              "hidden_pass": 0,
+              "inspect": 1,
+              "submit": 1,
+              "test": 1
+            },
+            "withheld": 0
+          },
+          {
+            "attempts": 1,
+            "delivery": "canonical text tools",
+            "failed": 1,
+            "invalid": 0,
+            "laneErrors": 0,
+            "model": "mistral-code-latest",
+            "passed": 0,
+            "quality": {
+              "axes": [
+                {
+                  "id": "classificationPrecision",
+                  "mean": 1.0,
+                  "n": 1
+                },
+                {
+                  "id": "classificationRecall",
+                  "mean": 1.0,
+                  "n": 1
+                },
+                {
+                  "id": "classificationF1",
+                  "mean": 1.0,
+                  "n": 1
+                },
+                {
+                  "id": "classificationAccuracy",
+                  "mean": 1.0,
+                  "n": 1
+                },
+                {
+                  "id": "spanPrecision",
+                  "mean": 0.5,
+                  "n": 1
+                },
+                {
+                  "id": "spanRecall",
+                  "mean": 0.5,
+                  "n": 1
+                },
+                {
+                  "id": "spanF1",
+                  "mean": 0.5,
+                  "n": 1
+                },
+                {
+                  "id": "spanOverlapIoU",
+                  "mean": 0.5555555555555556,
+                  "n": 1
+                },
+                {
+                  "id": "spanExactF1",
+                  "mean": 0.5,
+                  "n": 1
+                }
+              ],
+              "measuredAttempts": 1,
+              "scoreMean": 0.7037037037037037
+            },
+            "stages": {
+              "edit": 1,
+              "graded": 1,
+              "hidden_pass": 0,
+              "inspect": 1,
+              "submit": 1,
+              "test": 1
+            },
+            "withheld": 0
+          },
+          {
+            "attempts": 1,
+            "delivery": "canonical text tools",
+            "failed": 1,
+            "invalid": 0,
+            "laneErrors": 0,
+            "model": "ministral-14b-latest",
+            "passed": 0,
+            "quality": {
+              "axes": [
+                {
+                  "id": "classificationPrecision",
+                  "mean": 1.0,
+                  "n": 1
+                },
+                {
+                  "id": "classificationRecall",
+                  "mean": 1.0,
+                  "n": 1
+                },
+                {
+                  "id": "classificationF1",
+                  "mean": 1.0,
+                  "n": 1
+                },
+                {
+                  "id": "classificationAccuracy",
+                  "mean": 1.0,
+                  "n": 1
+                },
+                {
+                  "id": "spanPrecision",
+                  "mean": 0.5,
+                  "n": 1
+                },
+                {
+                  "id": "spanRecall",
+                  "mean": 0.5,
+                  "n": 1
+                },
+                {
+                  "id": "spanF1",
+                  "mean": 0.5,
+                  "n": 1
+                },
+                {
+                  "id": "spanOverlapIoU",
+                  "mean": 0.5,
+                  "n": 1
+                },
+                {
+                  "id": "spanExactF1",
+                  "mean": 0.5,
+                  "n": 1
+                }
+              ],
+              "measuredAttempts": 1,
+              "scoreMean": 0.6666666666666666
+            },
+            "stages": {
+              "edit": 1,
+              "graded": 1,
+              "hidden_pass": 0,
+              "inspect": 1,
+              "submit": 1,
+              "test": 1
+            },
+            "withheld": 0
+          },
+          {
+            "attempts": 1,
+            "delivery": "canonical text tools",
+            "failed": 1,
+            "invalid": 0,
+            "laneErrors": 0,
+            "model": "ministral-8b-latest",
+            "passed": 0,
+            "quality": {
+              "axes": [
+                {
+                  "id": "classificationPrecision",
+                  "mean": 1.0,
+                  "n": 1
+                },
+                {
+                  "id": "classificationRecall",
+                  "mean": 1.0,
+                  "n": 1
+                },
+                {
+                  "id": "classificationF1",
+                  "mean": 1.0,
+                  "n": 1
+                },
+                {
+                  "id": "classificationAccuracy",
+                  "mean": 1.0,
+                  "n": 1
+                },
+                {
+                  "id": "spanPrecision",
+                  "mean": 0.5,
+                  "n": 1
+                },
+                {
+                  "id": "spanRecall",
+                  "mean": 0.5,
+                  "n": 1
+                },
+                {
+                  "id": "spanF1",
+                  "mean": 0.5,
+                  "n": 1
+                },
+                {
+                  "id": "spanOverlapIoU",
+                  "mean": 0.4,
+                  "n": 1
+                },
+                {
+                  "id": "spanExactF1",
+                  "mean": 0.0,
+                  "n": 1
+                }
+              ],
+              "measuredAttempts": 1,
+              "scoreMean": 0.6
+            },
+            "stages": {
+              "edit": 1,
+              "graded": 1,
+              "hidden_pass": 0,
+              "inspect": 1,
+              "submit": 1,
+              "test": 1
+            },
+            "withheld": 0
+          },
+          {
+            "attempts": 1,
+            "delivery": "canonical text tools",
+            "failed": 0,
+            "invalid": 0,
+            "laneErrors": 0,
+            "model": "@cf/openai/gpt-oss-20b",
+            "passed": 1,
+            "quality": {
+              "axes": [
+                {
+                  "id": "classificationPrecision",
+                  "mean": 1.0,
+                  "n": 1
+                },
+                {
+                  "id": "classificationRecall",
+                  "mean": 1.0,
+                  "n": 1
+                },
+                {
+                  "id": "classificationF1",
+                  "mean": 1.0,
+                  "n": 1
+                },
+                {
+                  "id": "classificationAccuracy",
+                  "mean": 1.0,
+                  "n": 1
+                },
+                {
+                  "id": "spanPrecision",
+                  "mean": 1.0,
+                  "n": 1
+                },
+                {
+                  "id": "spanRecall",
+                  "mean": 1.0,
+                  "n": 1
+                },
+                {
+                  "id": "spanF1",
+                  "mean": 1.0,
+                  "n": 1
+                },
+                {
+                  "id": "spanOverlapIoU",
+                  "mean": 1.0,
+                  "n": 1
+                },
+                {
+                  "id": "spanExactF1",
+                  "mean": 1.0,
+                  "n": 1
+                }
+              ],
+              "measuredAttempts": 1,
+              "scoreMean": 1.0
+            },
+            "stages": {
+              "edit": 1,
+              "graded": 1,
+              "hidden_pass": 1,
+              "inspect": 1,
+              "submit": 1,
+              "test": 1
+            },
+            "withheld": 0
+          },
+          {
+            "attempts": 1,
+            "delivery": "canonical text tools",
+            "failed": 0,
+            "invalid": 0,
+            "laneErrors": 0,
+            "model": "nvidia/nemotron-3-super-120b-a12b:free",
+            "passed": 1,
+            "quality": {
+              "axes": [
+                {
+                  "id": "classificationPrecision",
+                  "mean": 1.0,
+                  "n": 1
+                },
+                {
+                  "id": "classificationRecall",
+                  "mean": 1.0,
+                  "n": 1
+                },
+                {
+                  "id": "classificationF1",
+                  "mean": 1.0,
+                  "n": 1
+                },
+                {
+                  "id": "classificationAccuracy",
+                  "mean": 1.0,
+                  "n": 1
+                },
+                {
+                  "id": "spanPrecision",
+                  "mean": 1.0,
+                  "n": 1
+                },
+                {
+                  "id": "spanRecall",
+                  "mean": 1.0,
+                  "n": 1
+                },
+                {
+                  "id": "spanF1",
+                  "mean": 1.0,
+                  "n": 1
+                },
+                {
+                  "id": "spanOverlapIoU",
+                  "mean": 1.0,
+                  "n": 1
+                },
+                {
+                  "id": "spanExactF1",
+                  "mean": 1.0,
+                  "n": 1
+                }
+              ],
+              "measuredAttempts": 1,
+              "scoreMean": 1.0
+            },
+            "stages": {
+              "edit": 1,
+              "graded": 1,
+              "hidden_pass": 1,
+              "inspect": 1,
+              "submit": 1,
+              "test": 1
+            },
+            "withheld": 0
+          },
+          {
+            "attempts": 1,
+            "delivery": "canonical text tools",
+            "failed": 0,
+            "invalid": 0,
+            "laneErrors": 0,
+            "model": "cohere/north-mini-code:free",
+            "passed": 0,
+            "quality": null,
+            "stages": {
+              "edit": 0,
+              "graded": 1,
+              "hidden_pass": 0,
+              "inspect": 1,
+              "submit": 0,
+              "test": 0
+            },
+            "withheld": 1
+          },
+          {
+            "attempts": 1,
+            "delivery": "canonical text tools",
+            "failed": 1,
+            "invalid": 0,
+            "laneErrors": 0,
+            "model": "minimax/minimax-m3:free",
+            "passed": 0,
+            "quality": {
+              "axes": [
+                {
+                  "id": "classificationPrecision",
+                  "mean": 1.0,
+                  "n": 1
+                },
+                {
+                  "id": "classificationRecall",
+                  "mean": 1.0,
+                  "n": 1
+                },
+                {
+                  "id": "classificationF1",
+                  "mean": 1.0,
+                  "n": 1
+                },
+                {
+                  "id": "classificationAccuracy",
+                  "mean": 1.0,
+                  "n": 1
+                },
+                {
+                  "id": "spanPrecision",
+                  "mean": 0.5,
+                  "n": 1
+                },
+                {
+                  "id": "spanRecall",
+                  "mean": 0.5,
+                  "n": 1
+                },
+                {
+                  "id": "spanF1",
+                  "mean": 0.5,
+                  "n": 1
+                },
+                {
+                  "id": "spanOverlapIoU",
+                  "mean": 0.625,
+                  "n": 1
+                },
+                {
+                  "id": "spanExactF1",
+                  "mean": 0.5,
+                  "n": 1
+                }
+              ],
+              "measuredAttempts": 1,
+              "scoreMean": 0.75
+            },
+            "stages": {
+              "edit": 1,
+              "graded": 1,
+              "hidden_pass": 0,
+              "inspect": 1,
+              "submit": 1,
+              "test": 1
+            },
+            "withheld": 0
+          },
+          {
+            "attempts": 1,
+            "delivery": "canonical text tools",
+            "failed": 0,
+            "invalid": 0,
+            "laneErrors": 1,
+            "model": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
+            "passed": 0,
+            "quality": null,
+            "stages": {
+              "edit": 0,
+              "graded": 0,
+              "hidden_pass": 0,
+              "inspect": 0,
+              "submit": 0,
+              "test": 0
+            },
+            "withheld": 0
+          }
+        ]
+      }
+    ]
+  },
+  "campaignId": "fc-0c7e7c67a231",
+  "counts": {
+    "attempts": 40,
+    "cells": 34,
+    "certifiedPasses": 13,
+    "exams": 2,
+    "graded": 20,
+    "invalid": 2,
+    "laneErrors": 15,
+    "lanes": 17,
+    "modelFails": 7,
+    "withheld": 3
+  },
+  "disclosure": {
+    "vvdex.annotation.structured-data-1": {
+      "class": "answer_key",
+      "rule": "answer-key disclosure (ownership vvdex_proprietary \u2014 no declaration \u2014 proprietary by default; family annotation): the exam is VVDex evaluation IP and the graded output is an answer or a keyed value, so no submission content, diff, model claim or hidden-assertion name is published."
+    },
+    "vvdex.annotation.text-labeling-1": {
+      "class": "answer_key",
+      "rule": "answer-key disclosure (ownership vvdex_proprietary \u2014 no declaration \u2014 proprietary by default; family annotation): the exam is VVDex evaluation IP and the graded output is an answer or a keyed value, so no submission content, diff, model claim or hidden-assertion name is published."
+    }
+  },
+  "families": [
+    {
+      "envId": "vvdex.annotation.structured-data-1",
+      "family": "annotation",
+      "label": "Multimodal annotation",
+      "short": "Annotation \u00b7 structured-data-1",
+      "what": "Invented tabular records are reviewed for normalization, validity, duplicates, anomalies and relationships."
+    },
+    {
+      "envId": "vvdex.annotation.text-labeling-1",
+      "family": "annotation",
+      "label": "Multimodal annotation",
+      "short": "Annotation \u00b7 text-labeling-1",
+      "what": "An invented message is reviewed for classification and entity spans with consistent offsets."
+    }
+  ],
+  "lanes": [
+    {
+      "certifiedPasses": 2,
+      "countable": 2,
+      "counts": {
+        "certified_pass": 2,
+        "invalid": 0,
+        "lane_error": 0,
+        "model_fail": 0,
+        "withheld": 0
+      },
+      "lane": "@cf/openai/gpt-oss-20b"
+    },
+    {
+      "certifiedPasses": 2,
+      "countable": 2,
+      "counts": {
+        "certified_pass": 2,
+        "invalid": 0,
+        "lane_error": 0,
+        "model_fail": 0,
+        "withheld": 0
+      },
+      "lane": "cli/claude-sonnet"
+    },
+    {
+      "certifiedPasses": 2,
+      "countable": 2,
+      "counts": {
+        "certified_pass": 2,
+        "invalid": 0,
+        "lane_error": 0,
+        "model_fail": 0,
+        "withheld": 0
+      },
+      "lane": "cli/codex"
+    },
+    {
+      "certifiedPasses": 2,
+      "countable": 2,
+      "counts": {
+        "certified_pass": 2,
+        "invalid": 0,
+        "lane_error": 0,
+        "model_fail": 0,
+        "withheld": 0
+      },
+      "lane": "openai/gpt-oss-120b"
+    },
+    {
+      "certifiedPasses": 1,
+      "countable": 2,
+      "counts": {
+        "certified_pass": 1,
+        "invalid": 0,
+        "lane_error": 0,
+        "model_fail": 1,
+        "withheld": 0
+      },
+      "lane": "codestral-latest"
+    },
+    {
+      "certifiedPasses": 1,
+      "countable": 2,
+      "counts": {
+        "certified_pass": 1,
+        "invalid": 0,
+        "lane_error": 0,
+        "model_fail": 1,
+        "withheld": 0
+      },
+      "lane": "minimax/minimax-m3:free"
+    },
+    {
+      "certifiedPasses": 1,
+      "countable": 2,
+      "counts": {
+        "certified_pass": 1,
+        "invalid": 0,
+        "lane_error": 0,
+        "model_fail": 1,
+        "withheld": 0
+      },
+      "lane": "mistral-code-latest"
+    },
+    {
+      "certifiedPasses": 1,
+      "countable": 1,
+      "counts": {
+        "certified_pass": 1,
+        "invalid": 0,
+        "lane_error": 0,
+        "model_fail": 0,
+        "withheld": 1
+      },
+      "lane": "nvidia/nemotron-3-super-120b-a12b:free"
+    },
+    {
+      "certifiedPasses": 1,
+      "countable": 1,
+      "counts": {
+        "certified_pass": 1,
+        "invalid": 0,
+        "lane_error": 1,
+        "model_fail": 0,
+        "withheld": 0
+      },
+      "lane": "openai/gpt-oss-20b"
+    },
+    {
+      "certifiedPasses": 0,
+      "countable": 0,
+      "counts": {
+        "certified_pass": 0,
+        "invalid": 2,
+        "lane_error": 0,
+        "model_fail": 0,
+        "withheld": 0
+      },
+      "lane": "cli/cursor-grok"
+    },
+    {
+      "certifiedPasses": 0,
+      "countable": 0,
+      "counts": {
+        "certified_pass": 0,
+        "invalid": 0,
+        "lane_error": 0,
+        "model_fail": 0,
+        "withheld": 2
+      },
+      "lane": "cohere/north-mini-code:free"
+    },
+    {
+      "certifiedPasses": 0,
+      "countable": 0,
+      "counts": {
+        "certified_pass": 0,
+        "invalid": 0,
+        "lane_error": 4,
+        "model_fail": 0,
+        "withheld": 0
+      },
+      "lane": "magistral-small-latest"
+    },
+    {
+      "certifiedPasses": 0,
+      "countable": 2,
+      "counts": {
+        "certified_pass": 0,
+        "invalid": 0,
+        "lane_error": 0,
+        "model_fail": 2,
+        "withheld": 0
+      },
+      "lane": "ministral-14b-latest"
+    },
+    {
+      "certifiedPasses": 0,
+      "countable": 2,
+      "counts": {
+        "certified_pass": 0,
+        "invalid": 0,
+        "lane_error": 0,
+        "model_fail": 2,
+        "withheld": 0
+      },
+      "lane": "ministral-8b-latest"
+    },
+    {
+      "certifiedPasses": 0,
+      "countable": 0,
+      "counts": {
+        "certified_pass": 0,
+        "invalid": 0,
+        "lane_error": 4,
+        "model_fail": 0,
+        "withheld": 0
+      },
+      "lane": "mistral-medium-latest"
+    },
+    {
+      "certifiedPasses": 0,
+      "countable": 0,
+      "counts": {
+        "certified_pass": 0,
+        "invalid": 0,
+        "lane_error": 4,
+        "model_fail": 0,
+        "withheld": 0
+      },
+      "lane": "mistral-small-latest"
+    },
+    {
+      "certifiedPasses": 0,
+      "countable": 0,
+      "counts": {
+        "certified_pass": 0,
+        "invalid": 0,
+        "lane_error": 2,
+        "model_fail": 0,
+        "withheld": 0
+      },
+      "lane": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free"
+    }
+  ],
+  "perExamMatrix": {
+    "exams": [
+      {
+        "envId": "vvdex.annotation.structured-data-1",
+        "evalId": "fr-20260907-15d51112",
+        "family": "annotation",
+        "short": "Annotation \u00b7 structured-data-1",
+        "title": "Record normalization and duplicate QA"
+      },
+      {
+        "envId": "vvdex.annotation.text-labeling-1",
+        "evalId": "fr-20260907-0626d700",
+        "family": "annotation",
+        "short": "Annotation \u00b7 text-labeling-1",
+        "title": "Intent and entity annotation"
+      }
+    ],
+    "rows": [
+      {
+        "cells": {
+          "vvdex.annotation.structured-data-1": {
+            "graded": 1,
+            "invalid": 0,
+            "laneErrors": 0,
+            "passes": 1,
+            "text": "1/1",
+            "withheld": 0
+          },
+          "vvdex.annotation.text-labeling-1": {
+            "graded": 1,
+            "invalid": 0,
+            "laneErrors": 0,
+            "passes": 1,
+            "text": "1/1",
+            "withheld": 0
+          }
+        },
+        "certifiedPasses": 2,
+        "lane": "@cf/openai/gpt-oss-20b"
+      },
+      {
+        "cells": {
+          "vvdex.annotation.structured-data-1": {
+            "graded": 1,
+            "invalid": 0,
+            "laneErrors": 0,
+            "passes": 1,
+            "text": "1/1",
+            "withheld": 0
+          },
+          "vvdex.annotation.text-labeling-1": {
+            "graded": 1,
+            "invalid": 0,
+            "laneErrors": 0,
+            "passes": 1,
+            "text": "1/1",
+            "withheld": 0
+          }
+        },
+        "certifiedPasses": 2,
+        "lane": "cli/claude-sonnet"
+      },
+      {
+        "cells": {
+          "vvdex.annotation.structured-data-1": {
+            "graded": 1,
+            "invalid": 0,
+            "laneErrors": 0,
+            "passes": 1,
+            "text": "1/1",
+            "withheld": 0
+          },
+          "vvdex.annotation.text-labeling-1": {
+            "graded": 1,
+            "invalid": 0,
+            "laneErrors": 0,
+            "passes": 1,
+            "text": "1/1",
+            "withheld": 0
+          }
+        },
+        "certifiedPasses": 2,
+        "lane": "cli/codex"
+      },
+      {
+        "cells": {
+          "vvdex.annotation.structured-data-1": {
+            "graded": 1,
+            "invalid": 0,
+            "laneErrors": 0,
+            "passes": 1,
+            "text": "1/1",
+            "withheld": 0
+          },
+          "vvdex.annotation.text-labeling-1": {
+            "graded": 1,
+            "invalid": 0,
+            "laneErrors": 0,
+            "passes": 1,
+            "text": "1/1",
+            "withheld": 0
+          }
+        },
+        "certifiedPasses": 2,
+        "lane": "openai/gpt-oss-120b"
+      },
+      {
+        "cells": {
+          "vvdex.annotation.structured-data-1": {
+            "graded": 1,
+            "invalid": 0,
+            "laneErrors": 0,
+            "passes": 1,
+            "text": "1/1",
+            "withheld": 0
+          },
+          "vvdex.annotation.text-labeling-1": {
+            "graded": 1,
+            "invalid": 0,
+            "laneErrors": 0,
+            "passes": 0,
+            "text": "0/1",
+            "withheld": 0
+          }
+        },
+        "certifiedPasses": 1,
+        "lane": "codestral-latest"
+      },
+      {
+        "cells": {
+          "vvdex.annotation.structured-data-1": {
+            "graded": 1,
+            "invalid": 0,
+            "laneErrors": 0,
+            "passes": 1,
+            "text": "1/1",
+            "withheld": 0
+          },
+          "vvdex.annotation.text-labeling-1": {
+            "graded": 1,
+            "invalid": 0,
+            "laneErrors": 0,
+            "passes": 0,
+            "text": "0/1",
+            "withheld": 0
+          }
+        },
+        "certifiedPasses": 1,
+        "lane": "minimax/minimax-m3:free"
+      },
+      {
+        "cells": {
+          "vvdex.annotation.structured-data-1": {
+            "graded": 1,
+            "invalid": 0,
+            "laneErrors": 0,
+            "passes": 1,
+            "text": "1/1",
+            "withheld": 0
+          },
+          "vvdex.annotation.text-labeling-1": {
+            "graded": 1,
+            "invalid": 0,
+            "laneErrors": 0,
+            "passes": 0,
+            "text": "0/1",
+            "withheld": 0
+          }
+        },
+        "certifiedPasses": 1,
+        "lane": "mistral-code-latest"
+      },
+      {
+        "cells": {
+          "vvdex.annotation.structured-data-1": {
+            "graded": 0,
+            "invalid": 0,
+            "laneErrors": 0,
+            "passes": 0,
+            "text": "0/0 + 1 withheld",
+            "withheld": 1
+          },
+          "vvdex.annotation.text-labeling-1": {
+            "graded": 1,
+            "invalid": 0,
+            "laneErrors": 0,
+            "passes": 1,
+            "text": "1/1",
+            "withheld": 0
+          }
+        },
+        "certifiedPasses": 1,
+        "lane": "nvidia/nemotron-3-super-120b-a12b:free"
+      },
+      {
+        "cells": {
+          "vvdex.annotation.structured-data-1": {
+            "graded": 1,
+            "invalid": 0,
+            "laneErrors": 0,
+            "passes": 1,
+            "text": "1/1",
+            "withheld": 0
+          },
+          "vvdex.annotation.text-labeling-1": {
+            "graded": 0,
+            "invalid": 0,
+            "laneErrors": 1,
+            "passes": 0,
+            "text": "0/0 + 1 lane error",
+            "withheld": 0
+          }
+        },
+        "certifiedPasses": 1,
+        "lane": "openai/gpt-oss-20b"
+      },
+      {
+        "cells": {
+          "vvdex.annotation.structured-data-1": {
+            "graded": 0,
+            "invalid": 1,
+            "laneErrors": 0,
+            "passes": 0,
+            "text": "0/0 + 1 invalid",
+            "withheld": 0
+          },
+          "vvdex.annotation.text-labeling-1": {
+            "graded": 0,
+            "invalid": 1,
+            "laneErrors": 0,
+            "passes": 0,
+            "text": "0/0 + 1 invalid",
+            "withheld": 0
+          }
+        },
+        "certifiedPasses": 0,
+        "lane": "cli/cursor-grok"
+      },
+      {
+        "cells": {
+          "vvdex.annotation.structured-data-1": {
+            "graded": 0,
+            "invalid": 0,
+            "laneErrors": 0,
+            "passes": 0,
+            "text": "0/0 + 1 withheld",
+            "withheld": 1
+          },
+          "vvdex.annotation.text-labeling-1": {
+            "graded": 0,
+            "invalid": 0,
+            "laneErrors": 0,
+            "passes": 0,
+            "text": "0/0 + 1 withheld",
+            "withheld": 1
+          }
+        },
+        "certifiedPasses": 0,
+        "lane": "cohere/north-mini-code:free"
+      },
+      {
+        "cells": {
+          "vvdex.annotation.structured-data-1": {
+            "graded": 0,
+            "invalid": 0,
+            "laneErrors": 2,
+            "passes": 0,
+            "text": "0/0 + 2 lane errors",
+            "withheld": 0
+          },
+          "vvdex.annotation.text-labeling-1": {
+            "graded": 0,
+            "invalid": 0,
+            "laneErrors": 2,
+            "passes": 0,
+            "text": "0/0 + 2 lane errors",
+            "withheld": 0
+          }
+        },
+        "certifiedPasses": 0,
+        "lane": "magistral-small-latest"
+      },
+      {
+        "cells": {
+          "vvdex.annotation.structured-data-1": {
+            "graded": 1,
+            "invalid": 0,
+            "laneErrors": 0,
+            "passes": 0,
+            "text": "0/1",
+            "withheld": 0
+          },
+          "vvdex.annotation.text-labeling-1": {
+            "graded": 1,
+            "invalid": 0,
+            "laneErrors": 0,
+            "passes": 0,
+            "text": "0/1",
+            "withheld": 0
+          }
+        },
+        "certifiedPasses": 0,
+        "lane": "ministral-14b-latest"
+      },
+      {
+        "cells": {
+          "vvdex.annotation.structured-data-1": {
+            "graded": 1,
+            "invalid": 0,
+            "laneErrors": 0,
+            "passes": 0,
+            "text": "0/1",
+            "withheld": 0
+          },
+          "vvdex.annotation.text-labeling-1": {
+            "graded": 1,
+            "invalid": 0,
+            "laneErrors": 0,
+            "passes": 0,
+            "text": "0/1",
+            "withheld": 0
+          }
+        },
+        "certifiedPasses": 0,
+        "lane": "ministral-8b-latest"
+      },
+      {
+        "cells": {
+          "vvdex.annotation.structured-data-1": {
+            "graded": 0,
+            "invalid": 0,
+            "laneErrors": 2,
+            "passes": 0,
+            "text": "0/0 + 2 lane errors",
+            "withheld": 0
+          },
+          "vvdex.annotation.text-labeling-1": {
+            "graded": 0,
+            "invalid": 0,
+            "laneErrors": 2,
+            "passes": 0,
+            "text": "0/0 + 2 lane errors",
+            "withheld": 0
+          }
+        },
+        "certifiedPasses": 0,
+        "lane": "mistral-medium-latest"
+      },
+      {
+        "cells": {
+          "vvdex.annotation.structured-data-1": {
+            "graded": 0,
+            "invalid": 0,
+            "laneErrors": 2,
+            "passes": 0,
+            "text": "0/0 + 2 lane errors",
+            "withheld": 0
+          },
+          "vvdex.annotation.text-labeling-1": {
+            "graded": 0,
+            "invalid": 0,
+            "laneErrors": 2,
+            "passes": 0,
+            "text": "0/0 + 2 lane errors",
+            "withheld": 0
+          }
+        },
+        "certifiedPasses": 0,
+        "lane": "mistral-small-latest"
+      },
+      {
+        "cells": {
+          "vvdex.annotation.structured-data-1": {
+            "graded": 0,
+            "invalid": 0,
+            "laneErrors": 1,
+            "passes": 0,
+            "text": "0/0 + 1 lane error",
+            "withheld": 0
+          },
+          "vvdex.annotation.text-labeling-1": {
+            "graded": 0,
+            "invalid": 0,
+            "laneErrors": 1,
+            "passes": 0,
+            "text": "0/0 + 1 lane error",
+            "withheld": 0
+          }
+        },
+        "certifiedPasses": 0,
+        "lane": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free"
+      }
+    ]
+  },
+  "recordCount": 6,
+  "records": [
+    {
+      "canonicalBytesPublished": false,
+      "certificationReceiptSha256": null,
+      "disclosureClass": "answer_key",
+      "environmentId": "vvdex.annotation.structured-data-1",
+      "evalId": "fr-20260907-15d51112",
+      "examFingerprint": "5d6b3708dba2cdf08218a44997058413d0a3aae738299bce8c346bb2b309fc28",
+      "recordDigest": "d074d0dd0c2e7a855207c95b302bfcb08bc7a092265803601f8a19c28ea6a2bb",
+      "retired_for_future_evaluation": null
+    },
+    {
+      "canonicalBytesPublished": false,
+      "certificationReceiptSha256": null,
+      "disclosureClass": "answer_key",
+      "environmentId": "vvdex.annotation.structured-data-1",
+      "evalId": "fr-20260907-29701401",
+      "examFingerprint": "5d6b3708dba2cdf08218a44997058413d0a3aae738299bce8c346bb2b309fc28",
+      "recordDigest": "4d674e21c58427397f8b9b5918e587f9111427e72eaa2281bb7d0fcfa7bd7848",
+      "retired_for_future_evaluation": null
+    },
+    {
+      "canonicalBytesPublished": false,
+      "certificationReceiptSha256": null,
+      "disclosureClass": "answer_key",
+      "environmentId": "vvdex.annotation.structured-data-1",
+      "evalId": "fr-20260907-7c027ac8",
+      "examFingerprint": "5d6b3708dba2cdf08218a44997058413d0a3aae738299bce8c346bb2b309fc28",
+      "recordDigest": "4eb1c3548b8b094ded1a52d98f0179131be2555b821d9eea7b5fc519b0f684ce",
+      "retired_for_future_evaluation": null
+    },
+    {
+      "canonicalBytesPublished": false,
+      "certificationReceiptSha256": null,
+      "disclosureClass": "answer_key",
+      "environmentId": "vvdex.annotation.text-labeling-1",
+      "evalId": "fr-20260907-0626d700",
+      "examFingerprint": "e1abe51398b2d950a3415678aaf8ec796420dfb05ea89b3b64afd33c1e345fd3",
+      "recordDigest": "1bef7c56731085366e1774b7eaef75d81f12d3b2afeb9276f028c23ae441b421",
+      "retired_for_future_evaluation": null
+    },
+    {
+      "canonicalBytesPublished": false,
+      "certificationReceiptSha256": null,
+      "disclosureClass": "answer_key",
+      "environmentId": "vvdex.annotation.text-labeling-1",
+      "evalId": "fr-20260907-5b08f93e",
+      "examFingerprint": "e1abe51398b2d950a3415678aaf8ec796420dfb05ea89b3b64afd33c1e345fd3",
+      "recordDigest": "b8a5d79aaefa53e7c5be413210df59f8d994e411b9f71ccaaea2b78a135503e0",
+      "retired_for_future_evaluation": null
+    },
+    {
+      "canonicalBytesPublished": false,
+      "certificationReceiptSha256": null,
+      "disclosureClass": "answer_key",
+      "environmentId": "vvdex.annotation.text-labeling-1",
+      "evalId": "fr-20260907-f7b0a094",
+      "examFingerprint": "e1abe51398b2d950a3415678aaf8ec796420dfb05ea89b3b64afd33c1e345fd3",
+      "recordDigest": "cb855a9a633a7a6172ac2dbab698cf69f3de94376eca921aad3451254036599e",
+      "retired_for_future_evaluation": null
+    }
+  ],
+  "refused": 0,
+  "retired_for_future_evaluation": {},
+  "schema": "vvdex.forge.campaign-summary/v1",
+  "suspectRecords": [
+    "vvdex.annotation.structured-data-1",
+    "vvdex.annotation.text-labeling-1"
+  ],
+  "withheldByHarness": 0
+}

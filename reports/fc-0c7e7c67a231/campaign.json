@@ -1,0 +1,890 @@
+{
+  "campaignId": "fc-0c7e7c67a231",
+  "cells": {
+    "@cf/openai/gpt-oss-20b|vvdex.annotation.structured-data-1": {
+      "certified": "certified_pass",
+      "certifiedCounts": {
+        "certified_pass": 1,
+        "invalid": 0,
+        "lane_error": 0,
+        "model_fail": 0,
+        "withheld": 0
+      },
+      "evalId": "fr-20260907-7c027ac8",
+      "grader": "pass",
+      "integrity": "verified_contained",
+      "withheldBy": null
+    },
+    "@cf/openai/gpt-oss-20b|vvdex.annotation.text-labeling-1": {
+      "certified": "certified_pass",
+      "certifiedCounts": {
+        "certified_pass": 1,
+        "invalid": 0,
+        "lane_error": 0,
+        "model_fail": 0,
+        "withheld": 0
+      },
+      "evalId": "fr-20260907-0626d700",
+      "grader": "pass",
+      "integrity": "verified_contained",
+      "withheldBy": null
+    },
+    "cli/claude-sonnet|vvdex.annotation.structured-data-1": {
+      "certified": "certified_pass",
+      "certifiedCounts": {
+        "certified_pass": 1,
+        "invalid": 0,
+        "lane_error": 0,
+        "model_fail": 0,
+        "withheld": 0
+      },
+      "evalId": "fr-20260907-15d51112",
+      "grader": "pass",
+      "integrity": "verified_contained",
+      "withheldBy": null
+    },
+    "cli/claude-sonnet|vvdex.annotation.text-labeling-1": {
+      "certified": "certified_pass",
+      "certifiedCounts": {
+        "certified_pass": 1,
+        "invalid": 0,
+        "lane_error": 0,
+        "model_fail": 0,
+        "withheld": 0
+      },
+      "evalId": "fr-20260907-5b08f93e",
+      "grader": "pass",
+      "integrity": "verified_contained",
+      "withheldBy": null
+    },
+    "cli/codex|vvdex.annotation.structured-data-1": {
+      "certified": "certified_pass",
+      "certifiedCounts": {
+        "certified_pass": 1,
+        "invalid": 0,
+        "lane_error": 0,
+        "model_fail": 0,
+        "withheld": 0
+      },
+      "evalId": "fr-20260907-15d51112",
+      "grader": "pass",
+      "integrity": "verified_contained",
+      "withheldBy": null
+    },
+    "cli/codex|vvdex.annotation.text-labeling-1": {
+      "certified": "certified_pass",
+      "certifiedCounts": {
+        "certified_pass": 1,
+        "invalid": 0,
+        "lane_error": 0,
+        "model_fail": 0,
+        "withheld": 0
+      },
+      "evalId": "fr-20260907-5b08f93e",
+      "grader": "pass",
+      "integrity": "verified_contained",
+      "withheldBy": null
+    },
+    "cli/cursor-grok|vvdex.annotation.structured-data-1": {
+      "certified": "invalid",
+      "certifiedCounts": {
+        "certified_pass": 0,
+        "invalid": 1,
+        "lane_error": 0,
+        "model_fail": 0,
+        "withheld": 0
+      },
+      "evalId": "fr-20260907-15d51112",
+      "grader": "pass",
+      "integrity": "breached",
+      "withheldBy": null
+    },
+    "cli/cursor-grok|vvdex.annotation.text-labeling-1": {
+      "certified": "invalid",
+      "certifiedCounts": {
+        "certified_pass": 0,
+        "invalid": 1,
+        "lane_error": 0,
+        "model_fail": 0,
+        "withheld": 0
+      },
+      "evalId": "fr-20260907-5b08f93e",
+      "grader": "pass",
+      "integrity": "breached",
+      "withheldBy": null
+    },
+    "codestral-latest|vvdex.annotation.structured-data-1": {
+      "certified": "certified_pass",
+      "certifiedCounts": {
+        "certified_pass": 1,
+        "invalid": 0,
+        "lane_error": 0,
+        "model_fail": 0,
+        "withheld": 0
+      },
+      "evalId": "fr-20260907-7c027ac8",
+      "grader": "pass",
+      "integrity": "verified_contained",
+      "withheldBy": null
+    },
+    "codestral-latest|vvdex.annotation.text-labeling-1": {
+      "certified": "model_fail",
+      "certifiedCounts": {
+        "certified_pass": 0,
+        "invalid": 0,
+        "lane_error": 0,
+        "model_fail": 1,
+        "withheld": 0
+      },
+      "evalId": "fr-20260907-0626d700",
+      "grader": "fail",
+      "integrity": "verified_contained",
+      "withheldBy": null
+    },
+    "cohere/north-mini-code:free|vvdex.annotation.structured-data-1": {
+      "certified": "withheld",
+      "certifiedCounts": {
+        "certified_pass": 0,
+        "invalid": 0,
+        "lane_error": 0,
+        "model_fail": 0,
+        "withheld": 1
+      },
+      "evalId": "fr-20260907-7c027ac8",
+      "grader": "fail",
+      "integrity": "verified_contained",
+      "withheldBy": null
+    },
+    "cohere/north-mini-code:free|vvdex.annotation.text-labeling-1": {
+      "certified": "withheld",
+      "certifiedCounts": {
+        "certified_pass": 0,
+        "invalid": 0,
+        "lane_error": 0,
+        "model_fail": 0,
+        "withheld": 1
+      },
+      "evalId": "fr-20260907-0626d700",
+      "grader": "fail",
+      "integrity": "verified_contained",
+      "withheldBy": null
+    },
+    "magistral-small-latest|vvdex.annotation.structured-data-1": {
+      "certified": null,
+      "certifiedCounts": {
+        "certified_pass": 0,
+        "invalid": 0,
+        "lane_error": 2,
+        "model_fail": 0,
+        "withheld": 0
+      },
+      "evalId": "fr-20260907-7c027ac8",
+      "grader": null,
+      "integrity": "verified_contained",
+      "withheldBy": null
+    },
+    "magistral-small-latest|vvdex.annotation.text-labeling-1": {
+      "certified": null,
+      "certifiedCounts": {
+        "certified_pass": 0,
+        "invalid": 0,
+        "lane_error": 2,
+        "model_fail": 0,
+        "withheld": 0
+      },
+      "evalId": "fr-20260907-f7b0a094",
+      "grader": null,
+      "integrity": "verified_contained",
+      "withheldBy": null
+    },
+    "minimax/minimax-m3:free|vvdex.annotation.structured-data-1": {
+      "certified": "certified_pass",
+      "certifiedCounts": {
+        "certified_pass": 1,
+        "invalid": 0,
+        "lane_error": 0,
+        "model_fail": 0,
+        "withheld": 0
+      },
+      "evalId": "fr-20260907-7c027ac8",
+      "grader": "pass",
+      "integrity": "verified_contained",
+      "withheldBy": null
+    },
+    "minimax/minimax-m3:free|vvdex.annotation.text-labeling-1": {
+      "certified": "model_fail",
+      "certifiedCounts": {
+        "certified_pass": 0,
+        "invalid": 0,
+        "lane_error": 0,
+        "model_fail": 1,
+        "withheld": 0
+      },
+      "evalId": "fr-20260907-0626d700",
+      "grader": "fail",
+      "integrity": "verified_contained",
+      "withheldBy": null
+    },
+    "ministral-14b-latest|vvdex.annotation.structured-data-1": {
+      "certified": "model_fail",
+      "certifiedCounts": {
+        "certified_pass": 0,
+        "invalid": 0,
+        "lane_error": 0,
+        "model_fail": 1,
+        "withheld": 0
+      },
+      "evalId": "fr-20260907-7c027ac8",
+      "grader": "fail",
+      "integrity": "verified_contained",
+      "withheldBy": null
+    },
+    "ministral-14b-latest|vvdex.annotation.text-labeling-1": {
+      "certified": "model_fail",
+      "certifiedCounts": {
+        "certified_pass": 0,
+        "invalid": 0,
+        "lane_error": 0,
+        "model_fail": 1,
+        "withheld": 0
+      },
+      "evalId": "fr-20260907-0626d700",
+      "grader": "fail",
+      "integrity": "verified_contained",
+      "withheldBy": null
+    },
+    "ministral-8b-latest|vvdex.annotation.structured-data-1": {
+      "certified": "model_fail",
+      "certifiedCounts": {
+        "certified_pass": 0,
+        "invalid": 0,
+        "lane_error": 0,
+        "model_fail": 1,
+        "withheld": 0
+      },
+      "evalId": "fr-20260907-7c027ac8",
+      "grader": "fail",
+      "integrity": "verified_contained",
+      "withheldBy": null
+    },
+    "ministral-8b-latest|vvdex.annotation.text-labeling-1": {
+      "certified": "model_fail",
+      "certifiedCounts": {
+        "certified_pass": 0,
+        "invalid": 0,
+        "lane_error": 0,
+        "model_fail": 1,
+        "withheld": 0
+      },
+      "evalId": "fr-20260907-0626d700",
+      "grader": "fail",
+      "integrity": "verified_contained",
+      "withheldBy": null
+    },
+    "mistral-code-latest|vvdex.annotation.structured-data-1": {
+      "certified": "certified_pass",
+      "certifiedCounts": {
+        "certified_pass": 1,
+        "invalid": 0,
+        "lane_error": 0,
+        "model_fail": 0,
+        "withheld": 0
+      },
+      "evalId": "fr-20260907-7c027ac8",
+      "grader": "pass",
+      "integrity": "verified_contained",
+      "withheldBy": null
+    },
+    "mistral-code-latest|vvdex.annotation.text-labeling-1": {
+      "certified": "model_fail",
+      "certifiedCounts": {
+        "certified_pass": 0,
+        "invalid": 0,
+        "lane_error": 0,
+        "model_fail": 1,
+        "withheld": 0
+      },
+      "evalId": "fr-20260907-0626d700",
+      "grader": "fail",
+      "integrity": "verified_contained",
+      "withheldBy": null
+    },
+    "mistral-medium-latest|vvdex.annotation.structured-data-1": {
+      "certified": null,
+      "certifiedCounts": {
+        "certified_pass": 0,
+        "invalid": 0,
+        "lane_error": 2,
+        "model_fail": 0,
+        "withheld": 0
+      },
+      "evalId": "fr-20260907-7c027ac8",
+      "grader": null,
+      "integrity": "verified_contained",
+      "withheldBy": null
+    },
+    "mistral-medium-latest|vvdex.annotation.text-labeling-1": {
+      "certified": null,
+      "certifiedCounts": {
+        "certified_pass": 0,
+        "invalid": 0,
+        "lane_error": 2,
+        "model_fail": 0,
+        "withheld": 0
+      },
+      "evalId": "fr-20260907-f7b0a094",
+      "grader": null,
+      "integrity": "verified_contained",
+      "withheldBy": null
+    },
+    "mistral-small-latest|vvdex.annotation.structured-data-1": {
+      "certified": null,
+      "certifiedCounts": {
+        "certified_pass": 0,
+        "invalid": 0,
+        "lane_error": 2,
+        "model_fail": 0,
+        "withheld": 0
+      },
+      "evalId": "fr-20260907-7c027ac8",
+      "grader": null,
+      "integrity": "verified_contained",
+      "withheldBy": null
+    },
+    "mistral-small-latest|vvdex.annotation.text-labeling-1": {
+      "certified": null,
+      "certifiedCounts": {
+        "certified_pass": 0,
+        "invalid": 0,
+        "lane_error": 2,
+        "model_fail": 0,
+        "withheld": 0
+      },
+      "evalId": "fr-20260907-f7b0a094",
+      "grader": null,
+      "integrity": "verified_contained",
+      "withheldBy": null
+    },
+    "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free|vvdex.annotation.structured-data-1": {
+      "certified": "lane_error",
+      "certifiedCounts": {
+        "certified_pass": 0,
+        "invalid": 0,
+        "lane_error": 1,
+        "model_fail": 0,
+        "withheld": 0
+      },
+      "evalId": "fr-20260907-7c027ac8",
+      "grader": "error",
+      "integrity": "verified_contained",
+      "withheldBy": null
+    },
+    "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free|vvdex.annotation.text-labeling-1": {
+      "certified": "lane_error",
+      "certifiedCounts": {
+        "certified_pass": 0,
+        "invalid": 0,
+        "lane_error": 1,
+        "model_fail": 0,
+        "withheld": 0
+      },
+      "evalId": "fr-20260907-0626d700",
+      "grader": "error",
+      "integrity": "verified_contained",
+      "withheldBy": null
+    },
+    "nvidia/nemotron-3-super-120b-a12b:free|vvdex.annotation.structured-data-1": {
+      "certified": "withheld",
+      "certifiedCounts": {
+        "certified_pass": 0,
+        "invalid": 0,
+        "lane_error": 0,
+        "model_fail": 0,
+        "withheld": 1
+      },
+      "evalId": "fr-20260907-7c027ac8",
+      "grader": "pass",
+      "integrity": "verified_contained",
+      "withheldBy": null
+    },
+    "nvidia/nemotron-3-super-120b-a12b:free|vvdex.annotation.text-labeling-1": {
+      "certified": "certified_pass",
+      "certifiedCounts": {
+        "certified_pass": 1,
+        "invalid": 0,
+        "lane_error": 0,
+        "model_fail": 0,
+        "withheld": 0
+      },
+      "evalId": "fr-20260907-0626d700",
+      "grader": "pass",
+      "integrity": "verified_contained",
+      "withheldBy": null
+    },
+    "openai/gpt-oss-120b|vvdex.annotation.structured-data-1": {
+      "certified": "certified_pass",
+      "certifiedCounts": {
+        "certified_pass": 1,
+        "invalid": 0,
+        "lane_error": 0,
+        "model_fail": 0,
+        "withheld": 0
+      },
+      "evalId": "fr-20260907-7c027ac8",
+      "grader": "pass",
+      "integrity": "verified_contained",
+      "withheldBy": null
+    },
+    "openai/gpt-oss-120b|vvdex.annotation.text-labeling-1": {
+      "certified": "certified_pass",
+      "certifiedCounts": {
+        "certified_pass": 1,
+        "invalid": 0,
+        "lane_error": 0,
+        "model_fail": 0,
+        "withheld": 0
+      },
+      "evalId": "fr-20260907-0626d700",
+      "grader": "pass",
+      "integrity": "verified_contained",
+      "withheldBy": null
+    },
+    "openai/gpt-oss-20b|vvdex.annotation.structured-data-1": {
+      "certified": "certified_pass",
+      "certifiedCounts": {
+        "certified_pass": 1,
+        "invalid": 0,
+        "lane_error": 0,
+        "model_fail": 0,
+        "withheld": 0
+      },
+      "evalId": "fr-20260907-7c027ac8",
+      "grader": "pass",
+      "integrity": "verified_contained",
+      "withheldBy": null
+    },
+    "openai/gpt-oss-20b|vvdex.annotation.text-labeling-1": {
+      "certified": "lane_error",
+      "certifiedCounts": {
+        "certified_pass": 0,
+        "invalid": 0,
+        "lane_error": 1,
+        "model_fail": 0,
+        "withheld": 0
+      },
+      "evalId": "fr-20260907-0626d700",
+      "grader": "error",
+      "integrity": "verified_contained",
+      "withheldBy": null
+    }
+  },
+  "certificationReceipts": {},
+  "counts": {
+    "campaignId": "fc-0c7e7c67a231",
+    "cells": 34,
+    "certifiedPasses": 13,
+    "lanes": {
+      "@cf/openai/gpt-oss-20b": {
+        "certified_pass": 2,
+        "invalid": 0,
+        "lane_error": 0,
+        "model_fail": 0,
+        "withheld": 0
+      },
+      "cli/claude-sonnet": {
+        "certified_pass": 2,
+        "invalid": 0,
+        "lane_error": 0,
+        "model_fail": 0,
+        "withheld": 0
+      },
+      "cli/codex": {
+        "certified_pass": 2,
+        "invalid": 0,
+        "lane_error": 0,
+        "model_fail": 0,
+        "withheld": 0
+      },
+      "cli/cursor-grok": {
+        "certified_pass": 0,
+        "invalid": 2,
+        "lane_error": 0,
+        "model_fail": 0,
+        "withheld": 0
+      },
+      "codestral-latest": {
+        "certified_pass": 1,
+        "invalid": 0,
+        "lane_error": 0,
+        "model_fail": 1,
+        "withheld": 0
+      },
+      "cohere/north-mini-code:free": {
+        "certified_pass": 0,
+        "invalid": 0,
+        "lane_error": 0,
+        "model_fail": 0,
+        "withheld": 2
+      },
+      "magistral-small-latest": {
+        "certified_pass": 0,
+        "invalid": 0,
+        "lane_error": 4,
+        "model_fail": 0,
+        "withheld": 0
+      },
+      "minimax/minimax-m3:free": {
+        "certified_pass": 1,
+        "invalid": 0,
+        "lane_error": 0,
+        "model_fail": 1,
+        "withheld": 0
+      },
+      "ministral-14b-latest": {
+        "certified_pass": 0,
+        "invalid": 0,
+        "lane_error": 0,
+        "model_fail": 2,
+        "withheld": 0
+      },
+      "ministral-8b-latest": {
+        "certified_pass": 0,
+        "invalid": 0,
+        "lane_error": 0,
+        "model_fail": 2,
+        "withheld": 0
+      },
+      "mistral-code-latest": {
+        "certified_pass": 1,
+        "invalid": 0,
+        "lane_error": 0,
+        "model_fail": 1,
+        "withheld": 0
+      },
+      "mistral-medium-latest": {
+        "certified_pass": 0,
+        "invalid": 0,
+        "lane_error": 4,
+        "model_fail": 0,
+        "withheld": 0
+      },
+      "mistral-small-latest": {
+        "certified_pass": 0,
+        "invalid": 0,
+        "lane_error": 4,
+        "model_fail": 0,
+        "withheld": 0
+      },
+      "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free": {
+        "certified_pass": 0,
+        "invalid": 0,
+        "lane_error": 2,
+        "model_fail": 0,
+        "withheld": 0
+      },
+      "nvidia/nemotron-3-super-120b-a12b:free": {
+        "certified_pass": 1,
+        "invalid": 0,
+        "lane_error": 0,
+        "model_fail": 0,
+        "withheld": 1
+      },
+      "openai/gpt-oss-120b": {
+        "certified_pass": 2,
+        "invalid": 0,
+        "lane_error": 0,
+        "model_fail": 0,
+        "withheld": 0
+      },
+      "openai/gpt-oss-20b": {
+        "certified_pass": 1,
+        "invalid": 0,
+        "lane_error": 1,
+        "model_fail": 0,
+        "withheld": 0
+      }
+    },
+    "recordCount": 6,
+    "recordDigests": [
+      "1bef7c56731085366e1774b7eaef75d81f12d3b2afeb9276f028c23ae441b421",
+      "4d674e21c58427397f8b9b5918e587f9111427e72eaa2281bb7d0fcfa7bd7848",
+      "4eb1c3548b8b094ded1a52d98f0179131be2555b821d9eea7b5fc519b0f684ce",
+      "b8a5d79aaefa53e7c5be413210df59f8d994e411b9f71ccaaea2b78a135503e0",
+      "cb855a9a633a7a6172ac2dbab698cf69f3de94376eca921aad3451254036599e",
+      "d074d0dd0c2e7a855207c95b302bfcb08bc7a092265803601f8a19c28ea6a2bb"
+    ],
+    "refused": 0,
+    "suspectRecords": [
+      "vvdex.annotation.structured-data-1",
+      "vvdex.annotation.text-labeling-1"
+    ],
+    "withheldByHarness": 0
+  },
+  "disclosure": {
+    "vvdex.annotation.structured-data-1": {
+      "class": "answer_key",
+      "rule": "answer-key disclosure (ownership vvdex_proprietary \u2014 no declaration \u2014 proprietary by default; family annotation): the exam is VVDex evaluation IP and the graded output is an answer or a keyed value, so no submission content, diff, model claim or hidden-assertion name is published."
+    },
+    "vvdex.annotation.text-labeling-1": {
+      "class": "answer_key",
+      "rule": "answer-key disclosure (ownership vvdex_proprietary \u2014 no declaration \u2014 proprietary by default; family annotation): the exam is VVDex evaluation IP and the graded output is an answer or a keyed value, so no submission content, diff, model claim or hidden-assertion name is published."
+    }
+  },
+  "lanes": [
+    {
+      "certifiedPasses": 2,
+      "countable": 2,
+      "counts": {
+        "certified_pass": 2,
+        "invalid": 0,
+        "lane_error": 0,
+        "model_fail": 0,
+        "withheld": 0
+      },
+      "lane": "@cf/openai/gpt-oss-20b"
+    },
+    {
+      "certifiedPasses": 2,
+      "countable": 2,
+      "counts": {
+        "certified_pass": 2,
+        "invalid": 0,
+        "lane_error": 0,
+        "model_fail": 0,
+        "withheld": 0
+      },
+      "lane": "cli/claude-sonnet"
+    },
+    {
+      "certifiedPasses": 2,
+      "countable": 2,
+      "counts": {
+        "certified_pass": 2,
+        "invalid": 0,
+        "lane_error": 0,
+        "model_fail": 0,
+        "withheld": 0
+      },
+      "lane": "cli/codex"
+    },
+    {
+      "certifiedPasses": 2,
+      "countable": 2,
+      "counts": {
+        "certified_pass": 2,
+        "invalid": 0,
+        "lane_error": 0,
+        "model_fail": 0,
+        "withheld": 0
+      },
+      "lane": "openai/gpt-oss-120b"
+    },
+    {
+      "certifiedPasses": 1,
+      "countable": 2,
+      "counts": {
+        "certified_pass": 1,
+        "invalid": 0,
+        "lane_error": 0,
+        "model_fail": 1,
+        "withheld": 0
+      },
+      "lane": "codestral-latest"
+    },
+    {
+      "certifiedPasses": 1,
+      "countable": 2,
+      "counts": {
+        "certified_pass": 1,
+        "invalid": 0,
+        "lane_error": 0,
+        "model_fail": 1,
+        "withheld": 0
+      },
+      "lane": "minimax/minimax-m3:free"
+    },
+    {
+      "certifiedPasses": 1,
+      "countable": 2,
+      "counts": {
+        "certified_pass": 1,
+        "invalid": 0,
+        "lane_error": 0,
+        "model_fail": 1,
+        "withheld": 0
+      },
+      "lane": "mistral-code-latest"
+    },
+    {
+      "certifiedPasses": 1,
+      "countable": 1,
+      "counts": {
+        "certified_pass": 1,
+        "invalid": 0,
+        "lane_error": 0,
+        "model_fail": 0,
+        "withheld": 1
+      },
+      "lane": "nvidia/nemotron-3-super-120b-a12b:free"
+    },
+    {
+      "certifiedPasses": 1,
+      "countable": 1,
+      "counts": {
+        "certified_pass": 1,
+        "invalid": 0,
+        "lane_error": 1,
+        "model_fail": 0,
+        "withheld": 0
+      },
+      "lane": "openai/gpt-oss-20b"
+    },
+    {
+      "certifiedPasses": 0,
+      "countable": 0,
+      "counts": {
+        "certified_pass": 0,
+        "invalid": 2,
+        "lane_error": 0,
+        "model_fail": 0,
+        "withheld": 0
+      },
+      "lane": "cli/cursor-grok"
+    },
+    {
+      "certifiedPasses": 0,
+      "countable": 0,
+      "counts": {
+        "certified_pass": 0,
+        "invalid": 0,
+        "lane_error": 0,
+        "model_fail": 0,
+        "withheld": 2
+      },
+      "lane": "cohere/north-mini-code:free"
+    },
+    {
+      "certifiedPasses": 0,
+      "countable": 0,
+      "counts": {
+        "certified_pass": 0,
+        "invalid": 0,
+        "lane_error": 4,
+        "model_fail": 0,
+        "withheld": 0
+      },
+      "lane": "magistral-small-latest"
+    },
+    {
+      "certifiedPasses": 0,
+      "countable": 2,
+      "counts": {
+        "certified_pass": 0,
+        "invalid": 0,
+        "lane_error": 0,
+        "model_fail": 2,
+        "withheld": 0
+      },
+      "lane": "ministral-14b-latest"
+    },
+    {
+      "certifiedPasses": 0,
+      "countable": 2,
+      "counts": {
+        "certified_pass": 0,
+        "invalid": 0,
+        "lane_error": 0,
+        "model_fail": 2,
+        "withheld": 0
+      },
+      "lane": "ministral-8b-latest"
+    },
+    {
+      "certifiedPasses": 0,
+      "countable": 0,
+      "counts": {
+        "certified_pass": 0,
+        "invalid": 0,
+        "lane_error": 4,
+        "model_fail": 0,
+        "withheld": 0
+      },
+      "lane": "mistral-medium-latest"
+    },
+    {
+      "certifiedPasses": 0,
+      "countable": 0,
+      "counts": {
+        "certified_pass": 0,
+        "invalid": 0,
+        "lane_error": 4,
+        "model_fail": 0,
+        "withheld": 0
+      },
+      "lane": "mistral-small-latest"
+    },
+    {
+      "certifiedPasses": 0,
+      "countable": 0,
+      "counts": {
+        "certified_pass": 0,
+        "invalid": 0,
+        "lane_error": 2,
+        "model_fail": 0,
+        "withheld": 0
+      },
+      "lane": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free"
+    }
+  ],
+  "refused": [],
+  "retired_for_future_evaluation": {},
+  "reviews": {
+    "vvdex.annotation.structured-data-1": {
+      "classification": [
+        {
+          "class": "row-level",
+          "rationale": "containment verdicts are already enforced on every rollout; the run-level flag adds no further adjustment.",
+          "reason": "R4 containment breach in 1/3 rollouts (lanes ['cli/cursor-grok']) \u2014 takers acted outside the exam channel; those rows are not model results",
+          "rule": "R4"
+        },
+        {
+          "class": "diagnostic",
+          "rationale": "an API failure is a per-rollout lane event, already recorded on that rollout as lane_error; it cannot alter another rollout's grading. It lowers coverage, not verdicts.",
+          "reason": "R1 api-failure share 3/3 \u2014 most rollouts never got a working completion",
+          "rule": "R1"
+        }
+      ],
+      "law": "a suspect examiner may not blame the model: verdict-bearing suspicion not cleared by in-record evidence withholds every model_fail in the run",
+      "suspect": true,
+      "withheld": [],
+      "withheldCount": 0
+    },
+    "vvdex.annotation.text-labeling-1": {
+      "classification": [
+        {
+          "class": "diagnostic",
+          "rationale": "an API failure is a per-rollout lane event, already recorded on that rollout as lane_error; it cannot alter another rollout's grading. It lowers coverage, not verdicts.",
+          "reason": "R1 api-failure share 5/14 \u2014 most rollouts never got a working completion",
+          "rule": "R1"
+        },
+        {
+          "class": "row-level",
+          "rationale": "containment verdicts are already enforced on every rollout; the run-level flag adds no further adjustment.",
+          "reason": "R4 containment breach in 1/3 rollouts (lanes ['cli/cursor-grok']) \u2014 takers acted outside the exam channel; those rows are not model results",
+          "rule": "R4"
+        },
+        {
+          "class": "diagnostic",
+          "rationale": "an API failure is a per-rollout lane event, already recorded on that rollout as lane_error; it cannot alter another rollout's grading. It lowers coverage, not verdicts.",
+          "reason": "R1 api-failure share 3/3 \u2014 most rollouts never got a working completion",
+          "rule": "R1"
+        }
+      ],
+      "law": "a suspect examiner may not blame the model: verdict-bearing suspicion not cleared by in-record evidence withholds every model_fail in the run",
+      "suspect": true,
+      "withheld": [],
+      "withheldCount": 0
+    }
+  },
+  "schema": "vvdex.forge.campaign-counts/v1"
+}

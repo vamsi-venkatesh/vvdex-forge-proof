@@ -359,7 +359,11 @@ h2.appendix::before { content: none; }
 
 .coverstatus{margin:10px 0 0;letter-spacing:.08em;text-transform:uppercase;font-size:12px}
 .nowrap{white-space:nowrap}
+td[data-state='pass']{color:var(--sage)}
+td[data-state='mixed']{color:var(--brass-ink);border-left:3px solid var(--brass)}
 @media print{.verdict span{max-width:none}
+td[data-state='pass']{color:#1e6e3f}
+td[data-state='mixed']{color:#a33005;border-left:3px solid #c93d12}
 .chapter h3{break-before:page;break-after:avoid}
 .chapter h3:first-of-type{break-before:auto}
 .chapter h4{break-after:avoid}

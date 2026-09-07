@@ -1,0 +1,254 @@
+{
+  "annotationCampaign": {
+    "campaignId": "fc-89575ed5687d",
+    "coverage": {
+      "cellsPending": 0,
+      "cellsRun": 1,
+      "complete": true,
+      "completedAttempts": 12,
+      "examsNotStarted": [],
+      "missingAttempts": 0,
+      "note": "Cells run against the cells this campaign declared it would run.",
+      "pending": [],
+      "planDeclared": true,
+      "plannedAttempts": 12,
+      "plannedCells": 1,
+      "plannedExams": [
+        "vvdex.annotation.robot-video-1"
+      ],
+      "plannedModels": [
+        "meta/muse-spark-1.3"
+      ],
+      "rolloutsPerCell": 12
+    },
+    "limitations": [
+      "Repeated attempts on these fixed tasks only; not a broad capability score.",
+      "All outcomes are retained; lane errors, withheld and invalid attempts are not model failures.",
+      "Quality is the existing grader measurement, separate from the pass gate.",
+      "Video delivery is stated per model from recorded receipts; native files and sampled frames are distinct. Provider-side sampling is not independently observed.",
+      "Provider token usage is recorded where available. Monetary usage is not an invoice, and requested seeds do not establish deterministic replay.",
+      "Private references, submissions, exact geometry, frame timestamps and raw sessions are withheld."
+    ],
+    "schema": "vvdex.forge.annotation-model-campaign/v1",
+    "tasks": [
+      {
+        "environmentId": "vvdex.annotation.robot-video-1",
+        "examFingerprint": "85e026007af17db692614084f12ff40c5bbf2348bcfda0a01deb95aad8928f4c",
+        "modality": "video",
+        "models": [
+          {
+            "attempts": 12,
+            "delivery": "native video with supplied exact-frame images; provider-side processing is not independently observed; video re-encoded to MP4 H.264 CRF 18 because the provider accepts MP4 only; frame count, frame rate and timing preserved; exact inspection frames delivered as lossless PNG from the original file",
+            "failed": 6,
+            "invalid": 0,
+            "laneErrors": 2,
+            "model": "meta/muse-spark-1.3",
+            "passed": 4,
+            "quality": {
+              "axes": [
+                {
+                  "id": "boxPrecision",
+                  "mean": 0.7,
+                  "n": 10
+                },
+                {
+                  "id": "boxRecall",
+                  "mean": 0.7,
+                  "n": 10
+                },
+                {
+                  "id": "boxF1",
+                  "mean": 0.7,
+                  "n": 10
+                },
+                {
+                  "id": "boxIoU",
+                  "mean": 0.5562112041045896,
+                  "n": 10
+                },
+                {
+                  "id": "classificationPrecision",
+                  "mean": 1.0,
+                  "n": 10
+                },
+                {
+                  "id": "classificationRecall",
+                  "mean": 1.0,
+                  "n": 10
+                },
+                {
+                  "id": "classificationF1",
+                  "mean": 1.0,
+                  "n": 10
+                },
+                {
+                  "id": "classificationAccuracy",
+                  "mean": 1.0,
+                  "n": 10
+                },
+                {
+                  "id": "eventPrecision",
+                  "mean": 0.9,
+                  "n": 10
+                },
+                {
+                  "id": "eventRecall",
+                  "mean": 0.9,
+                  "n": 10
+                },
+                {
+                  "id": "eventF1",
+                  "mean": 0.9,
+                  "n": 10
+                },
+                {
+                  "id": "eventTemporalIoU",
+                  "mean": 0.7069047619047618,
+                  "n": 10
+                },
+                {
+                  "id": "segmentPrecision",
+                  "mean": 1.0,
+                  "n": 10
+                },
+                {
+                  "id": "segmentRecall",
+                  "mean": 1.0,
+                  "n": 10
+                },
+                {
+                  "id": "segmentF1",
+                  "mean": 1.0,
+                  "n": 10
+                },
+                {
+                  "id": "segmentTemporalIoU",
+                  "mean": 0.9652380952380953,
+                  "n": 10
+                },
+                {
+                  "id": "trackingConsistency",
+                  "mean": 1.0,
+                  "n": 10
+                }
+              ],
+              "measuredAttempts": 10,
+              "scoreMean": 0.7485783378761329
+            },
+            "stages": {
+              "edit": 10,
+              "graded": 10,
+              "hidden_pass": 4,
+              "inspect": 10,
+              "submit": 10,
+              "test": 10
+            },
+            "withheld": 0
+          }
+        ]
+      }
+    ]
+  },
+  "campaignId": "fc-89575ed5687d",
+  "counts": {
+    "attempts": 12,
+    "cells": 1,
+    "certifiedPasses": 4,
+    "exams": 1,
+    "graded": 10,
+    "invalid": 0,
+    "laneErrors": 2,
+    "lanes": 1,
+    "modelFails": 6,
+    "withheld": 0
+  },
+  "disclosure": {
+    "vvdex.annotation.robot-video-1": {
+      "class": "answer_key",
+      "rule": "answer-key disclosure (ownership vvdex_proprietary \u2014 no declaration \u2014 proprietary by default; family annotation): the exam is VVDex evaluation IP and the graded output is an answer or a keyed value, so no submission content, diff, model claim or hidden-assertion name is published."
+    }
+  },
+  "families": [
+    {
+      "envId": "vvdex.annotation.robot-video-1",
+      "family": "annotation",
+      "label": "Multimodal annotation",
+      "short": "Annotation",
+      "what": "A robot-catching video is reviewed for temporal events, frame-level object boxes, track identity and occlusion."
+    }
+  ],
+  "lanes": [
+    {
+      "certifiedPasses": 4,
+      "countable": 10,
+      "counts": {
+        "certified_pass": 4,
+        "invalid": 0,
+        "lane_error": 2,
+        "model_fail": 6,
+        "withheld": 0
+      },
+      "lane": "meta/muse-spark-1.3",
+      "rate": 0.4,
+      "rateInterval95": [
+        0.1682,
+        0.6873
+      ]
+    }
+  ],
+  "perExamMatrix": {
+    "exams": [
+      {
+        "envId": "vvdex.annotation.robot-video-1",
+        "evalId": "fr-20260907-01cca689",
+        "family": "annotation",
+        "short": "Annotation",
+        "title": "Robot catch temporal and tracking annotation"
+      }
+    ],
+    "rows": [
+      {
+        "cells": {
+          "vvdex.annotation.robot-video-1": {
+            "graded": 10,
+            "invalid": 0,
+            "laneErrors": 2,
+            "passes": 4,
+            "text": "4/10 + 2 lane errors",
+            "withheld": 0
+          }
+        },
+        "certifiedPasses": 4,
+        "lane": "meta/muse-spark-1.3"
+      }
+    ]
+  },
+  "recordCount": 2,
+  "records": [
+    {
+      "canonicalBytesPublished": false,
+      "certificationReceiptSha256": "a4150483a75e35669c9b6d2f1f50b1c325acb05600be439914b57dc88c1ad5f3",
+      "disclosureClass": "answer_key",
+      "environmentId": "vvdex.annotation.robot-video-1",
+      "evalId": "fr-20260907-01cca689",
+      "examFingerprint": "85e026007af17db692614084f12ff40c5bbf2348bcfda0a01deb95aad8928f4c",
+      "recordDigest": "b176309e60214fcf8b63317ca97122f228fc235e4bd09ad5dd9083b2795b6906",
+      "retired_for_future_evaluation": null
+    },
+    {
+      "canonicalBytesPublished": false,
+      "certificationReceiptSha256": "a4150483a75e35669c9b6d2f1f50b1c325acb05600be439914b57dc88c1ad5f3",
+      "disclosureClass": "answer_key",
+      "environmentId": "vvdex.annotation.robot-video-1",
+      "evalId": "fr-20260907-023b5cdb",
+      "examFingerprint": "85e026007af17db692614084f12ff40c5bbf2348bcfda0a01deb95aad8928f4c",
+      "recordDigest": "40a633cc2fd5e56e5a165ae5e4f8d8b27ceb1278fdf4ee38e46267b106cc8655",
+      "retired_for_future_evaluation": null
+    }
+  ],
+  "refused": 0,
+  "retired_for_future_evaluation": {},
+  "schema": "vvdex.forge.campaign-summary/v1",
+  "suspectRecords": [],
+  "withheldByHarness": 0
+}

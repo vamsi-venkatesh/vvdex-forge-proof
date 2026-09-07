@@ -1,0 +1,5 @@
+fr-20260907-01cca689
+recordDigest sha256: b176309e60214fcf8b63317ca97122f228fc235e4bd09ad5dd9083b2795b6906
+
+The canonical record bytes are not published: the sealed record carries content the disclosure policy withholds (transcripts[].diff.excerpt, rollouts[].lastWords), and the canonical bytes are the sealed record verbatim; the record digest is published instead.
+The digest above is the digest of the sealed record in the Forge; a holder of that record reproduces it with `shasum -a 256` on the canonical bytes or with `vvdex-env records verify`.

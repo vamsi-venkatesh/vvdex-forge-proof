@@ -1,0 +1,1380 @@
+{
+  "annotationCampaign": {
+    "campaignId": "fc-3377c49ce724",
+    "coverage": {
+      "cellsPending": 1,
+      "cellsRun": 14,
+      "complete": false,
+      "completedAttempts": 136,
+      "examsNotStarted": [],
+      "missingAttempts": 4,
+      "note": "Cells run against the cells this campaign declared it would run.",
+      "pending": [
+        {
+          "completedAttempts": 6,
+          "environmentId": "vvdex.annotation.text-labeling-1",
+          "missingAttempts": 4,
+          "model": "openai/gpt-oss-120b",
+          "plannedAttempts": 10
+        }
+      ],
+      "planDeclared": true,
+      "plannedAttempts": 140,
+      "plannedCells": 14,
+      "plannedExams": [
+        "vvdex.annotation.text-labeling-1",
+        "vvdex.annotation.structured-data-1"
+      ],
+      "plannedModels": [
+        "openai/gpt-oss-20b",
+        "openai/gpt-oss-120b",
+        "@cf/openai/gpt-oss-20b",
+        "codestral-latest",
+        "mistral-code-latest",
+        "ministral-14b-latest",
+        "ministral-8b-latest"
+      ],
+      "rolloutsPerCell": 10
+    },
+    "limitations": [
+      "Repeated attempts on these fixed tasks only; not a broad capability score.",
+      "All outcomes are retained; lane errors, withheld and invalid attempts are not model failures.",
+      "Quality is the existing grader measurement, separate from the pass gate.",
+      "Video delivery is stated per model from recorded receipts; native files and sampled frames are distinct. Provider-side sampling is not independently observed.",
+      "Provider token usage is recorded where available. Monetary usage is not an invoice, and requested seeds do not establish deterministic replay.",
+      "Private references, submissions, exact geometry, frame timestamps and raw sessions are withheld."
+    ],
+    "schema": "vvdex.forge.annotation-model-campaign/v1",
+    "tasks": [
+      {
+        "environmentId": "vvdex.annotation.structured-data-1",
+        "examFingerprint": "5d6b3708dba2cdf08218a44997058413d0a3aae738299bce8c346bb2b309fc28",
+        "modality": "structured",
+        "models": [
+          {
+            "attempts": 10,
+            "delivery": "canonical text tools",
+            "failed": 0,
+            "invalid": 0,
+            "laneErrors": 0,
+            "model": "openai/gpt-oss-20b",
+            "passed": 10,
+            "quality": {
+              "axes": [
+                {
+                  "id": "pairPrecision",
+                  "mean": 1.0,
+                  "n": 10
+                },
+                {
+                  "id": "pairRecall",
+                  "mean": 1.0,
+                  "n": 10
+                },
+                {
+                  "id": "pairF1",
+                  "mean": 1.0,
+                  "n": 10
+                },
+                {
+                  "id": "pairAccuracy",
+                  "mean": 1.0,
+                  "n": 10
+                },
+                {
+                  "id": "rowPrecision",
+                  "mean": 1.0,
+                  "n": 10
+                },
+                {
+                  "id": "rowRecall",
+                  "mean": 1.0,
+                  "n": 10
+                },
+                {
+                  "id": "rowF1",
+                  "mean": 1.0,
+                  "n": 10
+                },
+                {
+                  "id": "rowAccuracy",
+                  "mean": 1.0,
+                  "n": 10
+                }
+              ],
+              "measuredAttempts": 10,
+              "scoreMean": 1.0
+            },
+            "stages": {
+              "edit": 10,
+              "graded": 10,
+              "hidden_pass": 10,
+              "inspect": 10,
+              "submit": 10,
+              "test": 10
+            },
+            "withheld": 0
+          },
+          {
+            "attempts": 10,
+            "delivery": "canonical text tools",
+            "failed": 3,
+            "invalid": 0,
+            "laneErrors": 0,
+            "model": "openai/gpt-oss-120b",
+            "passed": 7,
+            "quality": {
+              "axes": [
+                {
+                  "id": "pairPrecision",
+                  "mean": 1.0,
+                  "n": 10
+                },
+                {
+                  "id": "pairRecall",
+                  "mean": 1.0,
+                  "n": 10
+                },
+                {
+                  "id": "pairF1",
+                  "mean": 1.0,
+                  "n": 10
+                },
+                {
+                  "id": "pairAccuracy",
+                  "mean": 1.0,
+                  "n": 10
+                },
+                {
+                  "id": "rowPrecision",
+                  "mean": 0.9,
+                  "n": 10
+                },
+                {
+                  "id": "rowRecall",
+                  "mean": 0.9,
+                  "n": 10
+                },
+                {
+                  "id": "rowF1",
+                  "mean": 0.9,
+                  "n": 10
+                },
+                {
+                  "id": "rowAccuracy",
+                  "mean": 0.9,
+                  "n": 10
+                }
+              ],
+              "measuredAttempts": 10,
+              "scoreMean": 0.925
+            },
+            "stages": {
+              "edit": 10,
+              "graded": 10,
+              "hidden_pass": 7,
+              "inspect": 10,
+              "submit": 10,
+              "test": 10
+            },
+            "withheld": 0
+          },
+          {
+            "attempts": 10,
+            "delivery": "canonical text tools",
+            "failed": 1,
+            "invalid": 0,
+            "laneErrors": 0,
+            "model": "@cf/openai/gpt-oss-20b",
+            "passed": 9,
+            "quality": {
+              "axes": [
+                {
+                  "id": "pairPrecision",
+                  "mean": 1.0,
+                  "n": 10
+                },
+                {
+                  "id": "pairRecall",
+                  "mean": 1.0,
+                  "n": 10
+                },
+                {
+                  "id": "pairF1",
+                  "mean": 1.0,
+                  "n": 10
+                },
+                {
+                  "id": "pairAccuracy",
+                  "mean": 1.0,
+                  "n": 10
+                },
+                {
+                  "id": "rowPrecision",
+                  "mean": 0.9666666666666668,
+                  "n": 10
+                },
+                {
+                  "id": "rowRecall",
+                  "mean": 0.9666666666666668,
+                  "n": 10
+                },
+                {
+                  "id": "rowF1",
+                  "mean": 0.9666666666666668,
+                  "n": 10
+                },
+                {
+                  "id": "rowAccuracy",
+                  "mean": 0.9666666666666668,
+                  "n": 10
+                }
+              ],
+              "measuredAttempts": 10,
+              "scoreMean": 0.975
+            },
+            "stages": {
+              "edit": 10,
+              "graded": 10,
+              "hidden_pass": 9,
+              "inspect": 10,
+              "submit": 10,
+              "test": 10
+            },
+            "withheld": 0
+          },
+          {
+            "attempts": 10,
+            "delivery": "canonical text tools",
+            "failed": 1,
+            "invalid": 0,
+            "laneErrors": 0,
+            "model": "codestral-latest",
+            "passed": 9,
+            "quality": {
+              "axes": [
+                {
+                  "id": "pairPrecision",
+                  "mean": 1.0,
+                  "n": 10
+                },
+                {
+                  "id": "pairRecall",
+                  "mean": 1.0,
+                  "n": 10
+                },
+                {
+                  "id": "pairF1",
+                  "mean": 1.0,
+                  "n": 10
+                },
+                {
+                  "id": "pairAccuracy",
+                  "mean": 1.0,
+                  "n": 10
+                },
+                {
+                  "id": "rowPrecision",
+                  "mean": 0.9666666666666666,
+                  "n": 10
+                },
+                {
+                  "id": "rowRecall",
+                  "mean": 0.9666666666666666,
+                  "n": 10
+                },
+                {
+                  "id": "rowF1",
+                  "mean": 0.9666666666666666,
+                  "n": 10
+                },
+                {
+                  "id": "rowAccuracy",
+                  "mean": 0.9666666666666666,
+                  "n": 10
+                }
+              ],
+              "measuredAttempts": 10,
+              "scoreMean": 0.975
+            },
+            "stages": {
+              "edit": 10,
+              "graded": 10,
+              "hidden_pass": 9,
+              "inspect": 10,
+              "submit": 10,
+              "test": 10
+            },
+            "withheld": 0
+          },
+          {
+            "attempts": 10,
+            "delivery": "canonical text tools",
+            "failed": 1,
+            "invalid": 0,
+            "laneErrors": 0,
+            "model": "mistral-code-latest",
+            "passed": 9,
+            "quality": {
+              "axes": [
+                {
+                  "id": "pairPrecision",
+                  "mean": 1.0,
+                  "n": 9
+                },
+                {
+                  "id": "pairRecall",
+                  "mean": 1.0,
+                  "n": 9
+                },
+                {
+                  "id": "pairF1",
+                  "mean": 1.0,
+                  "n": 9
+                },
+                {
+                  "id": "pairAccuracy",
+                  "mean": 1.0,
+                  "n": 9
+                },
+                {
+                  "id": "rowPrecision",
+                  "mean": 1.0,
+                  "n": 9
+                },
+                {
+                  "id": "rowRecall",
+                  "mean": 1.0,
+                  "n": 9
+                },
+                {
+                  "id": "rowF1",
+                  "mean": 1.0,
+                  "n": 9
+                },
+                {
+                  "id": "rowAccuracy",
+                  "mean": 1.0,
+                  "n": 9
+                }
+              ],
+              "measuredAttempts": 10,
+              "scoreMean": 0.9
+            },
+            "stages": {
+              "edit": 10,
+              "graded": 10,
+              "hidden_pass": 9,
+              "inspect": 10,
+              "submit": 9,
+              "test": 10
+            },
+            "withheld": 0
+          },
+          {
+            "attempts": 10,
+            "delivery": "canonical text tools",
+            "failed": 2,
+            "invalid": 0,
+            "laneErrors": 0,
+            "model": "ministral-14b-latest",
+            "passed": 8,
+            "quality": {
+              "axes": [
+                {
+                  "id": "pairPrecision",
+                  "mean": 1.0,
+                  "n": 9
+                },
+                {
+                  "id": "pairRecall",
+                  "mean": 1.0,
+                  "n": 9
+                },
+                {
+                  "id": "pairF1",
+                  "mean": 1.0,
+                  "n": 9
+                },
+                {
+                  "id": "pairAccuracy",
+                  "mean": 1.0,
+                  "n": 9
+                },
+                {
+                  "id": "rowPrecision",
+                  "mean": 0.9629629629629629,
+                  "n": 9
+                },
+                {
+                  "id": "rowRecall",
+                  "mean": 0.9629629629629629,
+                  "n": 9
+                },
+                {
+                  "id": "rowF1",
+                  "mean": 0.9629629629629629,
+                  "n": 9
+                },
+                {
+                  "id": "rowAccuracy",
+                  "mean": 0.9629629629629629,
+                  "n": 9
+                }
+              ],
+              "measuredAttempts": 10,
+              "scoreMean": 0.875
+            },
+            "stages": {
+              "edit": 10,
+              "graded": 10,
+              "hidden_pass": 8,
+              "inspect": 10,
+              "submit": 10,
+              "test": 10
+            },
+            "withheld": 0
+          },
+          {
+            "attempts": 10,
+            "delivery": "canonical text tools",
+            "failed": 9,
+            "invalid": 0,
+            "laneErrors": 0,
+            "model": "ministral-8b-latest",
+            "passed": 1,
+            "quality": {
+              "axes": [
+                {
+                  "id": "pairPrecision",
+                  "mean": 1.0,
+                  "n": 10
+                },
+                {
+                  "id": "pairRecall",
+                  "mean": 1.0,
+                  "n": 10
+                },
+                {
+                  "id": "pairF1",
+                  "mean": 1.0,
+                  "n": 10
+                },
+                {
+                  "id": "pairAccuracy",
+                  "mean": 1.0,
+                  "n": 10
+                },
+                {
+                  "id": "rowPrecision",
+                  "mean": 0.7000000000000001,
+                  "n": 10
+                },
+                {
+                  "id": "rowRecall",
+                  "mean": 0.7000000000000001,
+                  "n": 10
+                },
+                {
+                  "id": "rowF1",
+                  "mean": 0.7000000000000001,
+                  "n": 10
+                },
+                {
+                  "id": "rowAccuracy",
+                  "mean": 0.7000000000000001,
+                  "n": 10
+                }
+              ],
+              "measuredAttempts": 10,
+              "scoreMean": 0.775
+            },
+            "stages": {
+              "edit": 10,
+              "graded": 10,
+              "hidden_pass": 1,
+              "inspect": 10,
+              "submit": 10,
+              "test": 10
+            },
+            "withheld": 0
+          }
+        ]
+      },
+      {
+        "environmentId": "vvdex.annotation.text-labeling-1",
+        "examFingerprint": "e1abe51398b2d950a3415678aaf8ec796420dfb05ea89b3b64afd33c1e345fd3",
+        "modality": "text",
+        "models": [
+          {
+            "attempts": 10,
+            "delivery": "canonical text tools",
+            "failed": 0,
+            "invalid": 0,
+            "laneErrors": 9,
+            "model": "openai/gpt-oss-20b",
+            "passed": 1,
+            "quality": {
+              "axes": [
+                {
+                  "id": "classificationPrecision",
+                  "mean": 1.0,
+                  "n": 1
+                },
+                {
+                  "id": "classificationRecall",
+                  "mean": 1.0,
+                  "n": 1
+                },
+                {
+                  "id": "classificationF1",
+                  "mean": 1.0,
+                  "n": 1
+                },
+                {
+                  "id": "classificationAccuracy",
+                  "mean": 1.0,
+                  "n": 1
+                },
+                {
+                  "id": "spanPrecision",
+                  "mean": 1.0,
+                  "n": 1
+                },
+                {
+                  "id": "spanRecall",
+                  "mean": 1.0,
+                  "n": 1
+                },
+                {
+                  "id": "spanF1",
+                  "mean": 1.0,
+                  "n": 1
+                },
+                {
+                  "id": "spanOverlapIoU",
+                  "mean": 1.0,
+                  "n": 1
+                },
+                {
+                  "id": "spanExactF1",
+                  "mean": 1.0,
+                  "n": 1
+                }
+              ],
+              "measuredAttempts": 1,
+              "scoreMean": 1.0
+            },
+            "stages": {
+              "edit": 1,
+              "graded": 1,
+              "hidden_pass": 1,
+              "inspect": 1,
+              "submit": 1,
+              "test": 1
+            },
+            "withheld": 0
+          },
+          {
+            "attempts": 6,
+            "delivery": "canonical text tools",
+            "failed": 0,
+            "invalid": 0,
+            "laneErrors": 3,
+            "model": "openai/gpt-oss-120b",
+            "passed": 3,
+            "quality": {
+              "axes": [
+                {
+                  "id": "classificationPrecision",
+                  "mean": 1.0,
+                  "n": 3
+                },
+                {
+                  "id": "classificationRecall",
+                  "mean": 1.0,
+                  "n": 3
+                },
+                {
+                  "id": "classificationF1",
+                  "mean": 1.0,
+                  "n": 3
+                },
+                {
+                  "id": "classificationAccuracy",
+                  "mean": 1.0,
+                  "n": 3
+                },
+                {
+                  "id": "spanPrecision",
+                  "mean": 1.0,
+                  "n": 3
+                },
+                {
+                  "id": "spanRecall",
+                  "mean": 1.0,
+                  "n": 3
+                },
+                {
+                  "id": "spanF1",
+                  "mean": 1.0,
+                  "n": 3
+                },
+                {
+                  "id": "spanOverlapIoU",
+                  "mean": 1.0,
+                  "n": 3
+                },
+                {
+                  "id": "spanExactF1",
+                  "mean": 1.0,
+                  "n": 3
+                }
+              ],
+              "measuredAttempts": 3,
+              "scoreMean": 1.0
+            },
+            "stages": {
+              "edit": 3,
+              "graded": 3,
+              "hidden_pass": 3,
+              "inspect": 3,
+              "submit": 3,
+              "test": 3
+            },
+            "withheld": 0
+          },
+          {
+            "attempts": 10,
+            "delivery": "canonical text tools",
+            "failed": 0,
+            "invalid": 0,
+            "laneErrors": 0,
+            "model": "@cf/openai/gpt-oss-20b",
+            "passed": 10,
+            "quality": {
+              "axes": [
+                {
+                  "id": "classificationPrecision",
+                  "mean": 1.0,
+                  "n": 10
+                },
+                {
+                  "id": "classificationRecall",
+                  "mean": 1.0,
+                  "n": 10
+                },
+                {
+                  "id": "classificationF1",
+                  "mean": 1.0,
+                  "n": 10
+                },
+                {
+                  "id": "classificationAccuracy",
+                  "mean": 1.0,
+                  "n": 10
+                },
+                {
+                  "id": "spanPrecision",
+                  "mean": 1.0,
+                  "n": 10
+                },
+                {
+                  "id": "spanRecall",
+                  "mean": 1.0,
+                  "n": 10
+                },
+                {
+                  "id": "spanF1",
+                  "mean": 1.0,
+                  "n": 10
+                },
+                {
+                  "id": "spanOverlapIoU",
+                  "mean": 1.0,
+                  "n": 10
+                },
+                {
+                  "id": "spanExactF1",
+                  "mean": 1.0,
+                  "n": 10
+                }
+              ],
+              "measuredAttempts": 10,
+              "scoreMean": 1.0
+            },
+            "stages": {
+              "edit": 10,
+              "graded": 10,
+              "hidden_pass": 10,
+              "inspect": 10,
+              "submit": 10,
+              "test": 10
+            },
+            "withheld": 0
+          },
+          {
+            "attempts": 10,
+            "delivery": "canonical text tools",
+            "failed": 10,
+            "invalid": 0,
+            "laneErrors": 0,
+            "model": "codestral-latest",
+            "passed": 0,
+            "quality": {
+              "axes": [
+                {
+                  "id": "classificationPrecision",
+                  "mean": 1.0,
+                  "n": 7
+                },
+                {
+                  "id": "classificationRecall",
+                  "mean": 1.0,
+                  "n": 7
+                },
+                {
+                  "id": "classificationF1",
+                  "mean": 1.0,
+                  "n": 7
+                },
+                {
+                  "id": "classificationAccuracy",
+                  "mean": 1.0,
+                  "n": 7
+                },
+                {
+                  "id": "spanPrecision",
+                  "mean": 0.5,
+                  "n": 7
+                },
+                {
+                  "id": "spanRecall",
+                  "mean": 0.5,
+                  "n": 7
+                },
+                {
+                  "id": "spanF1",
+                  "mean": 0.5,
+                  "n": 7
+                },
+                {
+                  "id": "spanOverlapIoU",
+                  "mean": 0.5873015873015872,
+                  "n": 7
+                },
+                {
+                  "id": "spanExactF1",
+                  "mean": 0.5,
+                  "n": 7
+                }
+              ],
+              "measuredAttempts": 10,
+              "scoreMean": 0.5074074074074074
+            },
+            "stages": {
+              "edit": 10,
+              "graded": 10,
+              "hidden_pass": 0,
+              "inspect": 10,
+              "submit": 7,
+              "test": 10
+            },
+            "withheld": 0
+          },
+          {
+            "attempts": 10,
+            "delivery": "canonical text tools",
+            "failed": 10,
+            "invalid": 0,
+            "laneErrors": 0,
+            "model": "mistral-code-latest",
+            "passed": 0,
+            "quality": {
+              "axes": [
+                {
+                  "id": "classificationPrecision",
+                  "mean": 1.0,
+                  "n": 6
+                },
+                {
+                  "id": "classificationRecall",
+                  "mean": 1.0,
+                  "n": 6
+                },
+                {
+                  "id": "classificationF1",
+                  "mean": 1.0,
+                  "n": 6
+                },
+                {
+                  "id": "classificationAccuracy",
+                  "mean": 1.0,
+                  "n": 6
+                },
+                {
+                  "id": "spanPrecision",
+                  "mean": 0.5833333333333334,
+                  "n": 6
+                },
+                {
+                  "id": "spanRecall",
+                  "mean": 0.5833333333333334,
+                  "n": 6
+                },
+                {
+                  "id": "spanF1",
+                  "mean": 0.5833333333333334,
+                  "n": 6
+                },
+                {
+                  "id": "spanOverlapIoU",
+                  "mean": 0.6597222222222222,
+                  "n": 6
+                },
+                {
+                  "id": "spanExactF1",
+                  "mean": 0.5,
+                  "n": 6
+                }
+              ],
+              "measuredAttempts": 10,
+              "scoreMean": 0.4638888888888889
+            },
+            "stages": {
+              "edit": 10,
+              "graded": 10,
+              "hidden_pass": 0,
+              "inspect": 10,
+              "submit": 6,
+              "test": 10
+            },
+            "withheld": 0
+          },
+          {
+            "attempts": 10,
+            "delivery": "canonical text tools",
+            "failed": 10,
+            "invalid": 0,
+            "laneErrors": 0,
+            "model": "ministral-14b-latest",
+            "passed": 0,
+            "quality": {
+              "axes": [
+                {
+                  "id": "classificationPrecision",
+                  "mean": 1.0,
+                  "n": 10
+                },
+                {
+                  "id": "classificationRecall",
+                  "mean": 1.0,
+                  "n": 10
+                },
+                {
+                  "id": "classificationF1",
+                  "mean": 1.0,
+                  "n": 10
+                },
+                {
+                  "id": "classificationAccuracy",
+                  "mean": 1.0,
+                  "n": 10
+                },
+                {
+                  "id": "spanPrecision",
+                  "mean": 0.5,
+                  "n": 10
+                },
+                {
+                  "id": "spanRecall",
+                  "mean": 0.5,
+                  "n": 10
+                },
+                {
+                  "id": "spanF1",
+                  "mean": 0.5,
+                  "n": 10
+                },
+                {
+                  "id": "spanOverlapIoU",
+                  "mean": 0.5,
+                  "n": 10
+                },
+                {
+                  "id": "spanExactF1",
+                  "mean": 0.5,
+                  "n": 10
+                }
+              ],
+              "measuredAttempts": 10,
+              "scoreMean": 0.6666666666666667
+            },
+            "stages": {
+              "edit": 10,
+              "graded": 10,
+              "hidden_pass": 0,
+              "inspect": 10,
+              "submit": 10,
+              "test": 10
+            },
+            "withheld": 0
+          },
+          {
+            "attempts": 10,
+            "delivery": "canonical text tools",
+            "failed": 10,
+            "invalid": 0,
+            "laneErrors": 0,
+            "model": "ministral-8b-latest",
+            "passed": 0,
+            "quality": {
+              "axes": [
+                {
+                  "id": "classificationPrecision",
+                  "mean": 1.0,
+                  "n": 10
+                },
+                {
+                  "id": "classificationRecall",
+                  "mean": 1.0,
+                  "n": 10
+                },
+                {
+                  "id": "classificationF1",
+                  "mean": 1.0,
+                  "n": 10
+                },
+                {
+                  "id": "classificationAccuracy",
+                  "mean": 1.0,
+                  "n": 10
+                },
+                {
+                  "id": "spanPrecision",
+                  "mean": 0.5,
+                  "n": 10
+                },
+                {
+                  "id": "spanRecall",
+                  "mean": 0.5,
+                  "n": 10
+                },
+                {
+                  "id": "spanF1",
+                  "mean": 0.5,
+                  "n": 10
+                },
+                {
+                  "id": "spanOverlapIoU",
+                  "mean": 0.49000000000000005,
+                  "n": 10
+                },
+                {
+                  "id": "spanExactF1",
+                  "mean": 0.45,
+                  "n": 10
+                }
+              ],
+              "measuredAttempts": 10,
+              "scoreMean": 0.6599999999999999
+            },
+            "stages": {
+              "edit": 10,
+              "graded": 10,
+              "hidden_pass": 0,
+              "inspect": 10,
+              "submit": 10,
+              "test": 10
+            },
+            "withheld": 0
+          }
+        ]
+      }
+    ]
+  },
+  "campaignId": "fc-3377c49ce724",
+  "counts": {
+    "attempts": 136,
+    "cells": 14,
+    "certifiedPasses": 67,
+    "exams": 2,
+    "graded": 124,
+    "invalid": 0,
+    "laneErrors": 12,
+    "lanes": 7,
+    "modelFails": 57,
+    "withheld": 0
+  },
+  "disclosure": {
+    "vvdex.annotation.structured-data-1": {
+      "class": "answer_key",
+      "rule": "answer-key disclosure (ownership vvdex_proprietary \u2014 no declaration \u2014 proprietary by default; family annotation): the exam is VVDex evaluation IP and the graded output is an answer or a keyed value, so no submission content, diff, model claim or hidden-assertion name is published."
+    },
+    "vvdex.annotation.text-labeling-1": {
+      "class": "answer_key",
+      "rule": "answer-key disclosure (ownership vvdex_proprietary \u2014 no declaration \u2014 proprietary by default; family annotation): the exam is VVDex evaluation IP and the graded output is an answer or a keyed value, so no submission content, diff, model claim or hidden-assertion name is published."
+    }
+  },
+  "families": [
+    {
+      "envId": "vvdex.annotation.structured-data-1",
+      "family": "annotation",
+      "label": "Multimodal annotation",
+      "short": "Annotation \u00b7 structured-data-1",
+      "what": "Invented tabular records are reviewed for normalization, validity, duplicates, anomalies and relationships."
+    },
+    {
+      "envId": "vvdex.annotation.text-labeling-1",
+      "family": "annotation",
+      "label": "Multimodal annotation",
+      "short": "Annotation \u00b7 text-labeling-1",
+      "what": "An invented message is reviewed for classification and entity spans with consistent offsets."
+    }
+  ],
+  "lanes": [
+    {
+      "certifiedPasses": 19,
+      "countable": 20,
+      "counts": {
+        "certified_pass": 19,
+        "invalid": 0,
+        "lane_error": 0,
+        "model_fail": 1,
+        "withheld": 0
+      },
+      "lane": "@cf/openai/gpt-oss-20b",
+      "rate": 0.95,
+      "rateInterval95": [
+        0.7639,
+        0.9911
+      ]
+    },
+    {
+      "certifiedPasses": 11,
+      "countable": 11,
+      "counts": {
+        "certified_pass": 11,
+        "invalid": 0,
+        "lane_error": 9,
+        "model_fail": 0,
+        "withheld": 0
+      },
+      "lane": "openai/gpt-oss-20b",
+      "rate": 1.0,
+      "rateInterval95": [
+        0.7412,
+        1.0
+      ]
+    },
+    {
+      "certifiedPasses": 10,
+      "countable": 13,
+      "counts": {
+        "certified_pass": 10,
+        "invalid": 0,
+        "lane_error": 3,
+        "model_fail": 3,
+        "withheld": 0
+      },
+      "lane": "openai/gpt-oss-120b",
+      "rate": 0.7692307692307693,
+      "rateInterval95": [
+        0.4974,
+        0.9182
+      ]
+    },
+    {
+      "certifiedPasses": 9,
+      "countable": 20,
+      "counts": {
+        "certified_pass": 9,
+        "invalid": 0,
+        "lane_error": 0,
+        "model_fail": 11,
+        "withheld": 0
+      },
+      "lane": "codestral-latest",
+      "rate": 0.45,
+      "rateInterval95": [
+        0.2582,
+        0.6579
+      ]
+    },
+    {
+      "certifiedPasses": 9,
+      "countable": 20,
+      "counts": {
+        "certified_pass": 9,
+        "invalid": 0,
+        "lane_error": 0,
+        "model_fail": 11,
+        "withheld": 0
+      },
+      "lane": "mistral-code-latest",
+      "rate": 0.45,
+      "rateInterval95": [
+        0.2582,
+        0.6579
+      ]
+    },
+    {
+      "certifiedPasses": 8,
+      "countable": 20,
+      "counts": {
+        "certified_pass": 8,
+        "invalid": 0,
+        "lane_error": 0,
+        "model_fail": 12,
+        "withheld": 0
+      },
+      "lane": "ministral-14b-latest",
+      "rate": 0.4,
+      "rateInterval95": [
+        0.2188,
+        0.6134
+      ]
+    },
+    {
+      "certifiedPasses": 1,
+      "countable": 20,
+      "counts": {
+        "certified_pass": 1,
+        "invalid": 0,
+        "lane_error": 0,
+        "model_fail": 19,
+        "withheld": 0
+      },
+      "lane": "ministral-8b-latest",
+      "rate": 0.05,
+      "rateInterval95": [
+        0.0089,
+        0.2361
+      ]
+    }
+  ],
+  "perExamMatrix": {
+    "exams": [
+      {
+        "envId": "vvdex.annotation.structured-data-1",
+        "evalId": "fr-20260907-811ca1e7",
+        "family": "annotation",
+        "short": "Annotation \u00b7 structured-data-1",
+        "title": "Record normalization and duplicate QA"
+      },
+      {
+        "envId": "vvdex.annotation.text-labeling-1",
+        "evalId": "fr-20260907-d7a267e3",
+        "family": "annotation",
+        "short": "Annotation \u00b7 text-labeling-1",
+        "title": "Intent and entity annotation"
+      }
+    ],
+    "rows": [
+      {
+        "cells": {
+          "vvdex.annotation.structured-data-1": {
+            "graded": 10,
+            "invalid": 0,
+            "laneErrors": 0,
+            "passes": 9,
+            "text": "9/10",
+            "withheld": 0
+          },
+          "vvdex.annotation.text-labeling-1": {
+            "graded": 10,
+            "invalid": 0,
+            "laneErrors": 0,
+            "passes": 10,
+            "text": "10/10",
+            "withheld": 0
+          }
+        },
+        "certifiedPasses": 19,
+        "lane": "@cf/openai/gpt-oss-20b"
+      },
+      {
+        "cells": {
+          "vvdex.annotation.structured-data-1": {
+            "graded": 10,
+            "invalid": 0,
+            "laneErrors": 0,
+            "passes": 10,
+            "text": "10/10",
+            "withheld": 0
+          },
+          "vvdex.annotation.text-labeling-1": {
+            "graded": 1,
+            "invalid": 0,
+            "laneErrors": 9,
+            "passes": 1,
+            "text": "1/1 + 9 lane errors",
+            "withheld": 0
+          }
+        },
+        "certifiedPasses": 11,
+        "lane": "openai/gpt-oss-20b"
+      },
+      {
+        "cells": {
+          "vvdex.annotation.structured-data-1": {
+            "graded": 10,
+            "invalid": 0,
+            "laneErrors": 0,
+            "passes": 7,
+            "text": "7/10",
+            "withheld": 0
+          },
+          "vvdex.annotation.text-labeling-1": {
+            "graded": 3,
+            "invalid": 0,
+            "laneErrors": 3,
+            "passes": 3,
+            "text": "3/3 + 3 lane errors",
+            "withheld": 0
+          }
+        },
+        "certifiedPasses": 10,
+        "lane": "openai/gpt-oss-120b"
+      },
+      {
+        "cells": {
+          "vvdex.annotation.structured-data-1": {
+            "graded": 10,
+            "invalid": 0,
+            "laneErrors": 0,
+            "passes": 9,
+            "text": "9/10",
+            "withheld": 0
+          },
+          "vvdex.annotation.text-labeling-1": {
+            "graded": 10,
+            "invalid": 0,
+            "laneErrors": 0,
+            "passes": 0,
+            "text": "0/10",
+            "withheld": 0
+          }
+        },
+        "certifiedPasses": 9,
+        "lane": "codestral-latest"
+      },
+      {
+        "cells": {
+          "vvdex.annotation.structured-data-1": {
+            "graded": 10,
+            "invalid": 0,
+            "laneErrors": 0,
+            "passes": 9,
+            "text": "9/10",
+            "withheld": 0
+          },
+          "vvdex.annotation.text-labeling-1": {
+            "graded": 10,
+            "invalid": 0,
+            "laneErrors": 0,
+            "passes": 0,
+            "text": "0/10",
+            "withheld": 0
+          }
+        },
+        "certifiedPasses": 9,
+        "lane": "mistral-code-latest"
+      },
+      {
+        "cells": {
+          "vvdex.annotation.structured-data-1": {
+            "graded": 10,
+            "invalid": 0,
+            "laneErrors": 0,
+            "passes": 8,
+            "text": "8/10",
+            "withheld": 0
+          },
+          "vvdex.annotation.text-labeling-1": {
+            "graded": 10,
+            "invalid": 0,
+            "laneErrors": 0,
+            "passes": 0,
+            "text": "0/10",
+            "withheld": 0
+          }
+        },
+        "certifiedPasses": 8,
+        "lane": "ministral-14b-latest"
+      },
+      {
+        "cells": {
+          "vvdex.annotation.structured-data-1": {
+            "graded": 10,
+            "invalid": 0,
+            "laneErrors": 0,
+            "passes": 1,
+            "text": "1/10",
+            "withheld": 0
+          },
+          "vvdex.annotation.text-labeling-1": {
+            "graded": 10,
+            "invalid": 0,
+            "laneErrors": 0,
+            "passes": 0,
+            "text": "0/10",
+            "withheld": 0
+          }
+        },
+        "certifiedPasses": 1,
+        "lane": "ministral-8b-latest"
+      }
+    ]
+  },
+  "recordCount": 4,
+  "records": [
+    {
+      "canonicalBytesPublished": false,
+      "certificationReceiptSha256": null,
+      "disclosureClass": "answer_key",
+      "environmentId": "vvdex.annotation.structured-data-1",
+      "evalId": "fr-20260907-811ca1e7",
+      "examFingerprint": "5d6b3708dba2cdf08218a44997058413d0a3aae738299bce8c346bb2b309fc28",
+      "recordDigest": "50cbe9a820d64927b58510039c580bbed3bd161565d085363f841eb867181fab",
+      "retired_for_future_evaluation": null
+    },
+    {
+      "canonicalBytesPublished": false,
+      "certificationReceiptSha256": null,
+      "disclosureClass": "answer_key",
+      "environmentId": "vvdex.annotation.structured-data-1",
+      "evalId": "fr-20260907-aa28bed9",
+      "examFingerprint": "5d6b3708dba2cdf08218a44997058413d0a3aae738299bce8c346bb2b309fc28",
+      "recordDigest": "b5bf2458f67d7fef214fedfc66497d235bb436dfd5ca1a13080b1eb7f14e00dd",
+      "retired_for_future_evaluation": null
+    },
+    {
+      "canonicalBytesPublished": false,
+      "certificationReceiptSha256": null,
+      "disclosureClass": "answer_key",
+      "environmentId": "vvdex.annotation.text-labeling-1",
+      "evalId": "fr-20260907-d7a267e3",
+      "examFingerprint": "e1abe51398b2d950a3415678aaf8ec796420dfb05ea89b3b64afd33c1e345fd3",
+      "recordDigest": "7286bf674cfcf3482e06f76daaf1f68a1db1cbf89725833b7c3eb0f9f76e8009",
+      "retired_for_future_evaluation": null
+    },
+    {
+      "canonicalBytesPublished": false,
+      "certificationReceiptSha256": null,
+      "disclosureClass": "answer_key",
+      "environmentId": "vvdex.annotation.text-labeling-1",
+      "evalId": "fr-20260907-dad35536",
+      "examFingerprint": "e1abe51398b2d950a3415678aaf8ec796420dfb05ea89b3b64afd33c1e345fd3",
+      "recordDigest": "d98a068bbbb888bb6215a3e1a72a7d079fc043fd8b98f52d14be0a58303da22e",
+      "retired_for_future_evaluation": null
+    }
+  ],
+  "refused": 0,
+  "retired_for_future_evaluation": {},
+  "schema": "vvdex.forge.campaign-summary/v1",
+  "suspectRecords": [
+    "vvdex.annotation.text-labeling-1"
+  ],
+  "withheldByHarness": 0
+}

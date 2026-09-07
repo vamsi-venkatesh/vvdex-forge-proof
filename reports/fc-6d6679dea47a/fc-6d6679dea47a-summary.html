@@ -1,0 +1,31 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Codex and Claude Sonnet CLIs — text and structured, ten attempts each</title><style>
+@page{size:A4}*{box-sizing:border-box}html,body{margin:0;background:#eceae5;color:#171716;font-family:Arial,Helvetica,sans-serif}body{font-size:11pt;line-height:1.45}.sheet{width:186mm;height:263mm;margin:0 auto;background:#faf9f6;break-after:page;position:relative}.sheet:last-child{break-after:auto}.eyebrow{font-size:8pt;letter-spacing:.15em;color:#bd3d21;font-weight:700;border-top:2px solid #bd3d21;padding-top:4mm;margin-bottom:8mm}.hero{display:grid;grid-template-columns:1.35fr .65fr;gap:8mm;align-items:stretch}.hero.compact{grid-template-columns:1fr 1fr}.score{font-size:36pt;line-height:1;font-weight:750;letter-spacing:-.04em}.score span{font-size:15pt;color:#686760;letter-spacing:0}.score-note,.fine{color:#686760;font-size:8.7pt}.verdict{border:1px solid #cfccc4;border-radius:3mm;padding:5mm;display:flex;flex-direction:column;justify-content:center}.verdict.fail{border-left:3px solid #bd3d21}.verdict.pass{border-left:3px solid #25805c}.verdict span,.facts span,.panel span,.evidence span,.names span{display:block;text-transform:uppercase;letter-spacing:.09em;color:#77746c;font-size:7.5pt;margin-bottom:1mm}.verdict strong{font-size:15pt}.facts{display:grid;grid-template-columns:repeat(4,1fr);gap:3mm;margin:7mm 0}.facts div,.evidence div{border:1px solid #d7d4cc;border-radius:2mm;padding:4mm}.facts strong{font-size:12pt;overflow-wrap:anywhere}.callout{border-left:3px solid #bd3d21;background:#f2eee8;padding:4mm 5mm;margin:6mm 0}h1{font-size:22pt;line-height:1.12;margin:0 0 7mm;max-width:150mm}h2{font-size:13pt;margin:7mm 0 3mm;border-bottom:1px solid #d7d4cc;padding-bottom:2mm}.matrix{font-size:8pt;table-layout:fixed}.matrix th:first-child{width:36%}.matrix th:nth-child(2){width:29%}.matrix td,.matrix th{overflow-wrap:anywhere;text-align:left;padding:2mm 1.5mm}table{width:100%;border-collapse:collapse;font-size:9.5pt}th,td{padding:2.2mm 2mm;border-bottom:1px solid #d7d4cc;text-align:left}td{text-align:right;font-family:ui-monospace,SFMono-Regular,Menlo,monospace}td.margin{text-align:left;font-family:Arial,Helvetica,sans-serif;font-size:8.5pt;color:#3d3c38}table.axes thead th{font-size:7.5pt;text-transform:uppercase;letter-spacing:.09em;color:#77746c;text-align:left}.boundary{border-left:2px solid #bd3d21;padding-left:3mm;color:#171716}.panel{margin:3mm 0;padding:4mm 5mm;background:#f2f0eb;border-radius:2mm}.panel strong{font-size:10pt}.names{margin:3mm 0;padding:3mm 4mm;border-left:2px solid #cfccc4}.names strong{font-size:9pt;overflow-wrap:anywhere}.mono{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;overflow-wrap:anywhere}ul{padding-left:6mm;margin:2mm 0}li{margin:2.5mm 0}.evidence{display:grid;grid-template-columns:.7fr 1.3fr;gap:3mm}.digest{font-size:8.5pt}.detail{display:block;margin:6mm 0 3mm;padding:4mm 5mm;background:#171716;color:#fff;text-decoration:none;border-radius:2mm;font-weight:700}@media screen{.sheet{margin:8mm auto;box-shadow:0 4mm 14mm #0002}}@media print{html,body{background:#fff}.sheet{margin:0;box-shadow:none}}
+</style></head><body><section class="sheet"><h1>Codex and Claude Sonnet CLIs — text and structured, ten attempts each</h1>
+      <div class="eyebrow">PUBLIC RESULT · CAMPAIGN SUMMARY</div>
+      <div class="hero compact">
+        <div><div class="score">40<span> passes</span></div>
+        <p class="score-note">Across 40 graded attempts; no cross-exam quality score</p></div>
+        <div class="verdict"><span>Coverage</span><strong>2 exams · 2 lanes</strong></div>
+      </div>
+      <div class="facts">
+        <div><span>Completed attempts</span><strong>40</strong></div>
+        <div><span>Model failures</span><strong>0</strong></div>
+        <div><span>Lane errors</span><strong>0</strong></div>
+        <div><span>Withheld / invalid</span><strong>0 / 0</strong></div>
+      </div>
+      <h2>Results by AI exam</h2>
+      <table class="matrix"><thead><tr><th>Exam</th><th>Model</th><th>Passed / attempts</th><th>Errors</th></tr></thead><tbody><tr><th>Record normalization and duplicate QA</th><td>cli/claude-sonnet</td><td>10/10</td><td>0</td></tr><tr><th>Intent and entity annotation</th><td>cli/claude-sonnet</td><td>10/10</td><td>0</td></tr><tr><th>Record normalization and duplicate QA</th><td>cli/codex</td><td>10/10</td><td>0</td></tr><tr><th>Intent and entity annotation</th><td>cli/codex</td><td>10/10</td><td>0</td></tr></tbody></table>
+      <p class="fine">Showing all 4 model/exam results. Technical errors are counted in attempts but are not model failures.</p>
+      <p class="fine">2 verified records. Compare models within the same exam and input condition.</p>
+    </section><section class="sheet">
+      <div class="eyebrow">CONDITIONS · LIMITS · EVIDENCE</div>
+      <h2>What was evaluated</h2>
+      <div class="panel"><span>Input condition</span><strong>Conditions differ by exam and model lane; the detailed matrix retains each cell without merging unlike tasks.</strong></div>
+      <div class="panel"><span>Exam and revision</span><strong class="mono">2 exam revisions; each fingerprint is retained in the detailed report</strong></div>
+      <h2>Limits on the claim</h2><ul><li>This summary is accounting, not a leaderboard or a broad capability score.</li><li>Low sample cells support counts only; no ranking is inferred.</li><li>Lane errors, withheld and invalid attempts are retained outside the model-failure denominator.</li><li>Per-exam conditions and quality axes remain in the detailed report.</li></ul>
+      <h2>Evidence</h2>
+      <div class="evidence"><div><span>Campaign</span><strong class="mono">fc-6d6679dea47a</strong></div>
+      <div><span>Canonical digest</span><strong class="mono digest">2 sealed record digests in the detailed report</strong></div></div>
+      <a class="detail" href="https://vvdexops.com/reports/fc-6d6679dea47a/">Open the full evidence matrix and audit report →</a>
+      <p class="fine">Public disclosure excludes submissions, raw answers, private references, exact geometry, frame timestamps, and hidden-test material.</p>
+    </section></body></html>

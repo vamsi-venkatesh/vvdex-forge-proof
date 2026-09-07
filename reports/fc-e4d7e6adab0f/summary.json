@@ -1,0 +1,435 @@
+{
+  "annotationCampaign": {
+    "campaignId": "fc-e4d7e6adab0f",
+    "coverage": {
+      "cellsPending": 0,
+      "cellsRun": 3,
+      "complete": true,
+      "completedAttempts": 30,
+      "examsNotStarted": [],
+      "missingAttempts": 0,
+      "note": "Cells run against the cells this campaign declared it would run.",
+      "pending": [],
+      "planDeclared": true,
+      "plannedAttempts": 30,
+      "plannedCells": 3,
+      "plannedExams": [
+        "vvdex.annotation.text-labeling-1",
+        "vvdex.annotation.structured-data-1",
+        "vvdex.annotation.image-object-1"
+      ],
+      "plannedModels": [
+        "cli/opencode-muse-spark"
+      ],
+      "rolloutsPerCell": 10
+    },
+    "limitations": [
+      "Repeated attempts on these fixed tasks only; not a broad capability score.",
+      "All outcomes are retained; lane errors, withheld and invalid attempts are not model failures.",
+      "Quality is the existing grader measurement, separate from the pass gate.",
+      "Video uses sampled still images. Audio delivery is unsupported and was not attempted.",
+      "CLI attempt indices do not claim stochastic seed control. Subscription token and monetary usage are unavailable.",
+      "Private references, submissions, exact geometry, frame timestamps and raw sessions are withheld."
+    ],
+    "schema": "vvdex.forge.annotation-model-campaign/v1",
+    "tasks": [
+      {
+        "environmentId": "vvdex.annotation.image-object-1",
+        "examFingerprint": "422753713aeb9f41abcc4135d637e3064cae1e770fc8d22ec9dacf260b35a3ef",
+        "modality": "image",
+        "models": [
+          {
+            "attempts": 10,
+            "delivery": "image attachments",
+            "failed": 10,
+            "invalid": 0,
+            "laneErrors": 0,
+            "model": "cli/opencode-muse-spark",
+            "passed": 0,
+            "quality": {
+              "axes": [
+                {
+                  "id": "boxPrecision",
+                  "mean": 0.6,
+                  "n": 10
+                },
+                {
+                  "id": "boxRecall",
+                  "mean": 0.6,
+                  "n": 10
+                },
+                {
+                  "id": "boxF1",
+                  "mean": 0.6,
+                  "n": 10
+                },
+                {
+                  "id": "boxIoU",
+                  "mean": 0.513139362881007,
+                  "n": 10
+                },
+                {
+                  "id": "classificationPrecision",
+                  "mean": 1.0,
+                  "n": 10
+                },
+                {
+                  "id": "classificationRecall",
+                  "mean": 1.0,
+                  "n": 10
+                },
+                {
+                  "id": "classificationF1",
+                  "mean": 1.0,
+                  "n": 10
+                },
+                {
+                  "id": "classificationAccuracy",
+                  "mean": 1.0,
+                  "n": 10
+                },
+                {
+                  "id": "keypointPrecision",
+                  "mean": 1.0,
+                  "n": 10
+                },
+                {
+                  "id": "keypointRecall",
+                  "mean": 1.0,
+                  "n": 10
+                },
+                {
+                  "id": "keypointF1",
+                  "mean": 1.0,
+                  "n": 10
+                }
+              ],
+              "measuredAttempts": 10,
+              "scoreMean": 0.7494434198874845
+            },
+            "stages": {
+              "edit": 10,
+              "graded": 10,
+              "hidden_pass": 0,
+              "inspect": 10,
+              "submit": 10,
+              "test": 10
+            },
+            "withheld": 0
+          }
+        ]
+      },
+      {
+        "environmentId": "vvdex.annotation.structured-data-1",
+        "examFingerprint": "5d6b3708dba2cdf08218a44997058413d0a3aae738299bce8c346bb2b309fc28",
+        "modality": "structured",
+        "models": [
+          {
+            "attempts": 10,
+            "delivery": "canonical text tools",
+            "failed": 0,
+            "invalid": 0,
+            "laneErrors": 0,
+            "model": "cli/opencode-muse-spark",
+            "passed": 10,
+            "quality": {
+              "axes": [
+                {
+                  "id": "pairPrecision",
+                  "mean": 1.0,
+                  "n": 10
+                },
+                {
+                  "id": "pairRecall",
+                  "mean": 1.0,
+                  "n": 10
+                },
+                {
+                  "id": "pairF1",
+                  "mean": 1.0,
+                  "n": 10
+                },
+                {
+                  "id": "pairAccuracy",
+                  "mean": 1.0,
+                  "n": 10
+                },
+                {
+                  "id": "rowPrecision",
+                  "mean": 1.0,
+                  "n": 10
+                },
+                {
+                  "id": "rowRecall",
+                  "mean": 1.0,
+                  "n": 10
+                },
+                {
+                  "id": "rowF1",
+                  "mean": 1.0,
+                  "n": 10
+                },
+                {
+                  "id": "rowAccuracy",
+                  "mean": 1.0,
+                  "n": 10
+                }
+              ],
+              "measuredAttempts": 10,
+              "scoreMean": 1.0
+            },
+            "stages": {
+              "edit": 10,
+              "graded": 10,
+              "hidden_pass": 10,
+              "inspect": 10,
+              "submit": 10,
+              "test": 10
+            },
+            "withheld": 0
+          }
+        ]
+      },
+      {
+        "environmentId": "vvdex.annotation.text-labeling-1",
+        "examFingerprint": "e1abe51398b2d950a3415678aaf8ec796420dfb05ea89b3b64afd33c1e345fd3",
+        "modality": "text",
+        "models": [
+          {
+            "attempts": 10,
+            "delivery": "canonical text tools",
+            "failed": 0,
+            "invalid": 0,
+            "laneErrors": 0,
+            "model": "cli/opencode-muse-spark",
+            "passed": 10,
+            "quality": {
+              "axes": [
+                {
+                  "id": "classificationPrecision",
+                  "mean": 1.0,
+                  "n": 10
+                },
+                {
+                  "id": "classificationRecall",
+                  "mean": 1.0,
+                  "n": 10
+                },
+                {
+                  "id": "classificationF1",
+                  "mean": 1.0,
+                  "n": 10
+                },
+                {
+                  "id": "classificationAccuracy",
+                  "mean": 1.0,
+                  "n": 10
+                },
+                {
+                  "id": "spanPrecision",
+                  "mean": 1.0,
+                  "n": 10
+                },
+                {
+                  "id": "spanRecall",
+                  "mean": 1.0,
+                  "n": 10
+                },
+                {
+                  "id": "spanF1",
+                  "mean": 1.0,
+                  "n": 10
+                },
+                {
+                  "id": "spanOverlapIoU",
+                  "mean": 1.0,
+                  "n": 10
+                },
+                {
+                  "id": "spanExactF1",
+                  "mean": 1.0,
+                  "n": 10
+                }
+              ],
+              "measuredAttempts": 10,
+              "scoreMean": 1.0
+            },
+            "stages": {
+              "edit": 10,
+              "graded": 10,
+              "hidden_pass": 10,
+              "inspect": 10,
+              "submit": 10,
+              "test": 10
+            },
+            "withheld": 0
+          }
+        ]
+      }
+    ]
+  },
+  "campaignId": "fc-e4d7e6adab0f",
+  "counts": {
+    "attempts": 30,
+    "cells": 3,
+    "certifiedPasses": 20,
+    "exams": 3,
+    "graded": 30,
+    "invalid": 0,
+    "laneErrors": 0,
+    "lanes": 1,
+    "modelFails": 10,
+    "withheld": 0
+  },
+  "disclosure": {
+    "vvdex.annotation.image-object-1": {
+      "class": "answer_key",
+      "rule": "answer-key disclosure (ownership vvdex_proprietary \u2014 no declaration \u2014 proprietary by default; family annotation): the exam is VVDex evaluation IP and the graded output is an answer or a keyed value, so no submission content, diff, model claim or hidden-assertion name is published."
+    },
+    "vvdex.annotation.structured-data-1": {
+      "class": "answer_key",
+      "rule": "answer-key disclosure (ownership vvdex_proprietary \u2014 no declaration \u2014 proprietary by default; family annotation): the exam is VVDex evaluation IP and the graded output is an answer or a keyed value, so no submission content, diff, model claim or hidden-assertion name is published."
+    },
+    "vvdex.annotation.text-labeling-1": {
+      "class": "answer_key",
+      "rule": "answer-key disclosure (ownership vvdex_proprietary \u2014 no declaration \u2014 proprietary by default; family annotation): the exam is VVDex evaluation IP and the graded output is an answer or a keyed value, so no submission content, diff, model claim or hidden-assertion name is published."
+    }
+  },
+  "families": [
+    {
+      "envId": "vvdex.annotation.image-object-1",
+      "family": "annotation",
+      "label": "Multimodal annotation",
+      "short": "Annotation \u00b7 image-object-1",
+      "what": "A constructed image is reviewed for classification, object boxes, attributes and keypoints."
+    },
+    {
+      "envId": "vvdex.annotation.structured-data-1",
+      "family": "annotation",
+      "label": "Multimodal annotation",
+      "short": "Annotation \u00b7 structured-data-1",
+      "what": "Invented tabular records are reviewed for normalization, validity, duplicates, anomalies and relationships."
+    },
+    {
+      "envId": "vvdex.annotation.text-labeling-1",
+      "family": "annotation",
+      "label": "Multimodal annotation",
+      "short": "Annotation \u00b7 text-labeling-1",
+      "what": "An invented message is reviewed for classification and entity spans with consistent offsets."
+    }
+  ],
+  "lanes": [
+    {
+      "certifiedPasses": 20,
+      "countable": 30,
+      "counts": {
+        "certified_pass": 20,
+        "invalid": 0,
+        "lane_error": 0,
+        "model_fail": 10,
+        "withheld": 0
+      },
+      "lane": "cli/opencode-muse-spark",
+      "rate": 0.6666666666666666,
+      "rateInterval95": [
+        0.4878,
+        0.8077
+      ]
+    }
+  ],
+  "perExamMatrix": {
+    "exams": [
+      {
+        "envId": "vvdex.annotation.image-object-1",
+        "evalId": "fr-20260907-d8051665",
+        "family": "annotation",
+        "short": "Annotation \u00b7 image-object-1",
+        "title": "Object geometry annotation"
+      },
+      {
+        "envId": "vvdex.annotation.structured-data-1",
+        "evalId": "fr-20260907-4b1e97bc",
+        "family": "annotation",
+        "short": "Annotation \u00b7 structured-data-1",
+        "title": "Record normalization and duplicate QA"
+      },
+      {
+        "envId": "vvdex.annotation.text-labeling-1",
+        "evalId": "fr-20260907-c308bc27",
+        "family": "annotation",
+        "short": "Annotation \u00b7 text-labeling-1",
+        "title": "Intent and entity annotation"
+      }
+    ],
+    "rows": [
+      {
+        "cells": {
+          "vvdex.annotation.image-object-1": {
+            "graded": 10,
+            "invalid": 0,
+            "laneErrors": 0,
+            "passes": 0,
+            "text": "0/10",
+            "withheld": 0
+          },
+          "vvdex.annotation.structured-data-1": {
+            "graded": 10,
+            "invalid": 0,
+            "laneErrors": 0,
+            "passes": 10,
+            "text": "10/10",
+            "withheld": 0
+          },
+          "vvdex.annotation.text-labeling-1": {
+            "graded": 10,
+            "invalid": 0,
+            "laneErrors": 0,
+            "passes": 10,
+            "text": "10/10",
+            "withheld": 0
+          }
+        },
+        "certifiedPasses": 20,
+        "lane": "cli/opencode-muse-spark"
+      }
+    ]
+  },
+  "recordCount": 3,
+  "records": [
+    {
+      "canonicalBytesPublished": false,
+      "certificationReceiptSha256": null,
+      "disclosureClass": "answer_key",
+      "environmentId": "vvdex.annotation.image-object-1",
+      "evalId": "fr-20260907-d8051665",
+      "examFingerprint": "422753713aeb9f41abcc4135d637e3064cae1e770fc8d22ec9dacf260b35a3ef",
+      "recordDigest": "533b6d1f4d350c544088d42f0a3f3f3943d6e17c1095ac620bfe52406a8aeb5b",
+      "retired_for_future_evaluation": null
+    },
+    {
+      "canonicalBytesPublished": false,
+      "certificationReceiptSha256": null,
+      "disclosureClass": "answer_key",
+      "environmentId": "vvdex.annotation.structured-data-1",
+      "evalId": "fr-20260907-4b1e97bc",
+      "examFingerprint": "5d6b3708dba2cdf08218a44997058413d0a3aae738299bce8c346bb2b309fc28",
+      "recordDigest": "72451cce4189c11abcdcbbe77e3dfc4c37f13375d9be7ea006984415d15d5bbc",
+      "retired_for_future_evaluation": null
+    },
+    {
+      "canonicalBytesPublished": false,
+      "certificationReceiptSha256": null,
+      "disclosureClass": "answer_key",
+      "environmentId": "vvdex.annotation.text-labeling-1",
+      "evalId": "fr-20260907-c308bc27",
+      "examFingerprint": "e1abe51398b2d950a3415678aaf8ec796420dfb05ea89b3b64afd33c1e345fd3",
+      "recordDigest": "89f0a9f902db85a59371bfb233988ed854547dc96e9c1a2a8d6734bbf2943960",
+      "retired_for_future_evaluation": null
+    }
+  ],
+  "refused": 0,
+  "retired_for_future_evaluation": {},
+  "schema": "vvdex.forge.campaign-summary/v1",
+  "suspectRecords": [],
+  "withheldByHarness": 0
+}

@@ -1,0 +1,427 @@
+{
+  "campaignId": "fc-3377c49ce724",
+  "cells": {
+    "@cf/openai/gpt-oss-20b|vvdex.annotation.structured-data-1": {
+      "certified": null,
+      "certifiedCounts": {
+        "certified_pass": 9,
+        "invalid": 0,
+        "lane_error": 0,
+        "model_fail": 1,
+        "withheld": 0
+      },
+      "evalId": "fr-20260907-811ca1e7",
+      "grader": null,
+      "integrity": "verified_contained",
+      "withheldBy": null
+    },
+    "@cf/openai/gpt-oss-20b|vvdex.annotation.text-labeling-1": {
+      "certified": null,
+      "certifiedCounts": {
+        "certified_pass": 10,
+        "invalid": 0,
+        "lane_error": 0,
+        "model_fail": 0,
+        "withheld": 0
+      },
+      "evalId": "fr-20260907-dad35536",
+      "grader": null,
+      "integrity": "verified_contained",
+      "withheldBy": null
+    },
+    "codestral-latest|vvdex.annotation.structured-data-1": {
+      "certified": null,
+      "certifiedCounts": {
+        "certified_pass": 9,
+        "invalid": 0,
+        "lane_error": 0,
+        "model_fail": 1,
+        "withheld": 0
+      },
+      "evalId": "fr-20260907-aa28bed9",
+      "grader": null,
+      "integrity": "verified_contained",
+      "withheldBy": null
+    },
+    "codestral-latest|vvdex.annotation.text-labeling-1": {
+      "certified": null,
+      "certifiedCounts": {
+        "certified_pass": 0,
+        "invalid": 0,
+        "lane_error": 0,
+        "model_fail": 10,
+        "withheld": 0
+      },
+      "evalId": "fr-20260907-d7a267e3",
+      "grader": null,
+      "integrity": "verified_contained",
+      "withheldBy": null
+    },
+    "ministral-14b-latest|vvdex.annotation.structured-data-1": {
+      "certified": null,
+      "certifiedCounts": {
+        "certified_pass": 8,
+        "invalid": 0,
+        "lane_error": 0,
+        "model_fail": 2,
+        "withheld": 0
+      },
+      "evalId": "fr-20260907-aa28bed9",
+      "grader": null,
+      "integrity": "verified_contained",
+      "withheldBy": null
+    },
+    "ministral-14b-latest|vvdex.annotation.text-labeling-1": {
+      "certified": null,
+      "certifiedCounts": {
+        "certified_pass": 0,
+        "invalid": 0,
+        "lane_error": 0,
+        "model_fail": 10,
+        "withheld": 0
+      },
+      "evalId": "fr-20260907-d7a267e3",
+      "grader": null,
+      "integrity": "verified_contained",
+      "withheldBy": null
+    },
+    "ministral-8b-latest|vvdex.annotation.structured-data-1": {
+      "certified": null,
+      "certifiedCounts": {
+        "certified_pass": 1,
+        "invalid": 0,
+        "lane_error": 0,
+        "model_fail": 9,
+        "withheld": 0
+      },
+      "evalId": "fr-20260907-aa28bed9",
+      "grader": null,
+      "integrity": "verified_contained",
+      "withheldBy": null
+    },
+    "ministral-8b-latest|vvdex.annotation.text-labeling-1": {
+      "certified": null,
+      "certifiedCounts": {
+        "certified_pass": 0,
+        "invalid": 0,
+        "lane_error": 0,
+        "model_fail": 10,
+        "withheld": 0
+      },
+      "evalId": "fr-20260907-d7a267e3",
+      "grader": null,
+      "integrity": "verified_contained",
+      "withheldBy": null
+    },
+    "mistral-code-latest|vvdex.annotation.structured-data-1": {
+      "certified": null,
+      "certifiedCounts": {
+        "certified_pass": 9,
+        "invalid": 0,
+        "lane_error": 0,
+        "model_fail": 1,
+        "withheld": 0
+      },
+      "evalId": "fr-20260907-aa28bed9",
+      "grader": null,
+      "integrity": "verified_contained",
+      "withheldBy": null
+    },
+    "mistral-code-latest|vvdex.annotation.text-labeling-1": {
+      "certified": null,
+      "certifiedCounts": {
+        "certified_pass": 0,
+        "invalid": 0,
+        "lane_error": 0,
+        "model_fail": 10,
+        "withheld": 0
+      },
+      "evalId": "fr-20260907-d7a267e3",
+      "grader": null,
+      "integrity": "verified_contained",
+      "withheldBy": null
+    },
+    "openai/gpt-oss-120b|vvdex.annotation.structured-data-1": {
+      "certified": null,
+      "certifiedCounts": {
+        "certified_pass": 7,
+        "invalid": 0,
+        "lane_error": 0,
+        "model_fail": 3,
+        "withheld": 0
+      },
+      "evalId": "fr-20260907-811ca1e7",
+      "grader": null,
+      "integrity": "verified_contained",
+      "withheldBy": null
+    },
+    "openai/gpt-oss-120b|vvdex.annotation.text-labeling-1": {
+      "certified": null,
+      "certifiedCounts": {
+        "certified_pass": 3,
+        "invalid": 0,
+        "lane_error": 3,
+        "model_fail": 0,
+        "withheld": 0
+      },
+      "evalId": "fr-20260907-dad35536",
+      "grader": null,
+      "integrity": "verified_contained",
+      "withheldBy": null
+    },
+    "openai/gpt-oss-20b|vvdex.annotation.structured-data-1": {
+      "certified": null,
+      "certifiedCounts": {
+        "certified_pass": 10,
+        "invalid": 0,
+        "lane_error": 0,
+        "model_fail": 0,
+        "withheld": 0
+      },
+      "evalId": "fr-20260907-811ca1e7",
+      "grader": null,
+      "integrity": "verified_contained",
+      "withheldBy": null
+    },
+    "openai/gpt-oss-20b|vvdex.annotation.text-labeling-1": {
+      "certified": null,
+      "certifiedCounts": {
+        "certified_pass": 1,
+        "invalid": 0,
+        "lane_error": 9,
+        "model_fail": 0,
+        "withheld": 0
+      },
+      "evalId": "fr-20260907-dad35536",
+      "grader": null,
+      "integrity": "verified_contained",
+      "withheldBy": null
+    }
+  },
+  "certificationReceipts": {},
+  "counts": {
+    "campaignId": "fc-3377c49ce724",
+    "cells": 14,
+    "certifiedPasses": 67,
+    "lanes": {
+      "@cf/openai/gpt-oss-20b": {
+        "certified_pass": 19,
+        "invalid": 0,
+        "lane_error": 0,
+        "model_fail": 1,
+        "withheld": 0
+      },
+      "codestral-latest": {
+        "certified_pass": 9,
+        "invalid": 0,
+        "lane_error": 0,
+        "model_fail": 11,
+        "withheld": 0
+      },
+      "ministral-14b-latest": {
+        "certified_pass": 8,
+        "invalid": 0,
+        "lane_error": 0,
+        "model_fail": 12,
+        "withheld": 0
+      },
+      "ministral-8b-latest": {
+        "certified_pass": 1,
+        "invalid": 0,
+        "lane_error": 0,
+        "model_fail": 19,
+        "withheld": 0
+      },
+      "mistral-code-latest": {
+        "certified_pass": 9,
+        "invalid": 0,
+        "lane_error": 0,
+        "model_fail": 11,
+        "withheld": 0
+      },
+      "openai/gpt-oss-120b": {
+        "certified_pass": 10,
+        "invalid": 0,
+        "lane_error": 3,
+        "model_fail": 3,
+        "withheld": 0
+      },
+      "openai/gpt-oss-20b": {
+        "certified_pass": 11,
+        "invalid": 0,
+        "lane_error": 9,
+        "model_fail": 0,
+        "withheld": 0
+      }
+    },
+    "recordCount": 4,
+    "recordDigests": [
+      "50cbe9a820d64927b58510039c580bbed3bd161565d085363f841eb867181fab",
+      "7286bf674cfcf3482e06f76daaf1f68a1db1cbf89725833b7c3eb0f9f76e8009",
+      "b5bf2458f67d7fef214fedfc66497d235bb436dfd5ca1a13080b1eb7f14e00dd",
+      "d98a068bbbb888bb6215a3e1a72a7d079fc043fd8b98f52d14be0a58303da22e"
+    ],
+    "refused": 0,
+    "suspectRecords": [
+      "vvdex.annotation.text-labeling-1"
+    ],
+    "withheldByHarness": 0
+  },
+  "disclosure": {
+    "vvdex.annotation.structured-data-1": {
+      "class": "answer_key",
+      "rule": "answer-key disclosure (ownership vvdex_proprietary \u2014 no declaration \u2014 proprietary by default; family annotation): the exam is VVDex evaluation IP and the graded output is an answer or a keyed value, so no submission content, diff, model claim or hidden-assertion name is published."
+    },
+    "vvdex.annotation.text-labeling-1": {
+      "class": "answer_key",
+      "rule": "answer-key disclosure (ownership vvdex_proprietary \u2014 no declaration \u2014 proprietary by default; family annotation): the exam is VVDex evaluation IP and the graded output is an answer or a keyed value, so no submission content, diff, model claim or hidden-assertion name is published."
+    }
+  },
+  "lanes": [
+    {
+      "certifiedPasses": 19,
+      "countable": 20,
+      "counts": {
+        "certified_pass": 19,
+        "invalid": 0,
+        "lane_error": 0,
+        "model_fail": 1,
+        "withheld": 0
+      },
+      "lane": "@cf/openai/gpt-oss-20b",
+      "rate": 0.95,
+      "rateInterval95": [
+        0.7639,
+        0.9911
+      ]
+    },
+    {
+      "certifiedPasses": 11,
+      "countable": 11,
+      "counts": {
+        "certified_pass": 11,
+        "invalid": 0,
+        "lane_error": 9,
+        "model_fail": 0,
+        "withheld": 0
+      },
+      "lane": "openai/gpt-oss-20b",
+      "rate": 1.0,
+      "rateInterval95": [
+        0.7412,
+        1.0
+      ]
+    },
+    {
+      "certifiedPasses": 10,
+      "countable": 13,
+      "counts": {
+        "certified_pass": 10,
+        "invalid": 0,
+        "lane_error": 3,
+        "model_fail": 3,
+        "withheld": 0
+      },
+      "lane": "openai/gpt-oss-120b",
+      "rate": 0.7692307692307693,
+      "rateInterval95": [
+        0.4974,
+        0.9182
+      ]
+    },
+    {
+      "certifiedPasses": 9,
+      "countable": 20,
+      "counts": {
+        "certified_pass": 9,
+        "invalid": 0,
+        "lane_error": 0,
+        "model_fail": 11,
+        "withheld": 0
+      },
+      "lane": "codestral-latest",
+      "rate": 0.45,
+      "rateInterval95": [
+        0.2582,
+        0.6579
+      ]
+    },
+    {
+      "certifiedPasses": 9,
+      "countable": 20,
+      "counts": {
+        "certified_pass": 9,
+        "invalid": 0,
+        "lane_error": 0,
+        "model_fail": 11,
+        "withheld": 0
+      },
+      "lane": "mistral-code-latest",
+      "rate": 0.45,
+      "rateInterval95": [
+        0.2582,
+        0.6579
+      ]
+    },
+    {
+      "certifiedPasses": 8,
+      "countable": 20,
+      "counts": {
+        "certified_pass": 8,
+        "invalid": 0,
+        "lane_error": 0,
+        "model_fail": 12,
+        "withheld": 0
+      },
+      "lane": "ministral-14b-latest",
+      "rate": 0.4,
+      "rateInterval95": [
+        0.2188,
+        0.6134
+      ]
+    },
+    {
+      "certifiedPasses": 1,
+      "countable": 20,
+      "counts": {
+        "certified_pass": 1,
+        "invalid": 0,
+        "lane_error": 0,
+        "model_fail": 19,
+        "withheld": 0
+      },
+      "lane": "ministral-8b-latest",
+      "rate": 0.05,
+      "rateInterval95": [
+        0.0089,
+        0.2361
+      ]
+    }
+  ],
+  "refused": [],
+  "retired_for_future_evaluation": {},
+  "reviews": {
+    "vvdex.annotation.structured-data-1": {
+      "classification": [],
+      "law": "a suspect examiner may not blame the model: verdict-bearing suspicion not cleared by in-record evidence withholds every model_fail in the run",
+      "suspect": false,
+      "withheld": [],
+      "withheldCount": 0
+    },
+    "vvdex.annotation.text-labeling-1": {
+      "classification": [
+        {
+          "class": "diagnostic",
+          "rationale": "an API failure is a per-rollout lane event, already recorded on that rollout as lane_error; it cannot alter another rollout's grading. It lowers coverage, not verdicts.",
+          "reason": "R1 api-failure share 12/26 \u2014 most rollouts never got a working completion",
+          "rule": "R1"
+        }
+      ],
+      "law": "a suspect examiner may not blame the model: verdict-bearing suspicion not cleared by in-record evidence withholds every model_fail in the run",
+      "suspect": true,
+      "withheld": [],
+      "withheldCount": 0
+    }
+  },
+  "schema": "vvdex.forge.campaign-counts/v1"
+}
