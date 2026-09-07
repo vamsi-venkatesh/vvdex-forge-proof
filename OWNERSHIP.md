@@ -143,6 +143,8 @@ ownership registry; not typed.
 | `exams/vvdex.knowledge.memory-fact-update-1/provenance.public.json` | VVDex | VVDex proprietary; a proof descriptor, not the exam |
 | `reports/fc-2917108cf6be/campaign.json` | VVDex | generated public proof; VVDex proprietary, published as evidence |
 | `reports/fc-2917108cf6be/fc-2917108cf6be-executive.pdf` | VVDex | generated public proof; VVDex proprietary, published as evidence |
+| `reports/fc-2917108cf6be/fc-2917108cf6be-summary.html` | VVDex | generated public proof; VVDex proprietary, published as evidence |
+| `reports/fc-2917108cf6be/fc-2917108cf6be-summary.pdf` | VVDex | generated public proof; VVDex proprietary, published as evidence |
 | `reports/fc-2917108cf6be/fc-2917108cf6be.css` | VVDex | generated public proof; VVDex proprietary, published as evidence |
 | `reports/fc-2917108cf6be/fc-2917108cf6be.html` | VVDex | generated public proof; VVDex proprietary, published as evidence |
 | `reports/fc-2917108cf6be/fc-2917108cf6be.pdf` | VVDex | generated public proof; VVDex proprietary, published as evidence |
@@ -153,6 +155,8 @@ ownership registry; not typed.
 | `reports/fc-2917108cf6be/summary.json` | VVDex | generated public proof; VVDex proprietary, published as evidence |
 | `reports/fc-3194f803055c/campaign.json` | VVDex | generated public proof; VVDex proprietary, published as evidence |
 | `reports/fc-3194f803055c/fc-3194f803055c-executive.pdf` | VVDex | generated public proof; VVDex proprietary, published as evidence |
+| `reports/fc-3194f803055c/fc-3194f803055c-summary.html` | VVDex | generated public proof; VVDex proprietary, published as evidence |
+| `reports/fc-3194f803055c/fc-3194f803055c-summary.pdf` | VVDex | generated public proof; VVDex proprietary, published as evidence |
 | `reports/fc-3194f803055c/fc-3194f803055c.css` | VVDex | generated public proof; VVDex proprietary, published as evidence |
 | `reports/fc-3194f803055c/fc-3194f803055c.html` | VVDex | generated public proof; VVDex proprietary, published as evidence |
 | `reports/fc-3194f803055c/fc-3194f803055c.pdf` | VVDex | generated public proof; VVDex proprietary, published as evidence |
@@ -180,6 +184,8 @@ ownership registry; not typed.
 | `reports/fc-3194f803055c/summary.json` | VVDex | generated public proof; VVDex proprietary, published as evidence |
 | `reports/fc-403cfc23f9e5/campaign.json` | VVDex | generated public proof; VVDex proprietary, published as evidence |
 | `reports/fc-403cfc23f9e5/fc-403cfc23f9e5-executive.pdf` | VVDex | generated public proof; VVDex proprietary, published as evidence |
+| `reports/fc-403cfc23f9e5/fc-403cfc23f9e5-summary.html` | VVDex | generated public proof; VVDex proprietary, published as evidence |
+| `reports/fc-403cfc23f9e5/fc-403cfc23f9e5-summary.pdf` | VVDex | generated public proof; VVDex proprietary, published as evidence |
 | `reports/fc-403cfc23f9e5/fc-403cfc23f9e5.css` | VVDex | generated public proof; VVDex proprietary, published as evidence |
 | `reports/fc-403cfc23f9e5/fc-403cfc23f9e5.html` | VVDex | generated public proof; VVDex proprietary, published as evidence |
 | `reports/fc-403cfc23f9e5/fc-403cfc23f9e5.pdf` | VVDex | generated public proof; VVDex proprietary, published as evidence |
@@ -193,12 +199,16 @@ ownership registry; not typed.
 | `reports/fc-403cfc23f9e5/summary.json` | VVDex | generated public proof; VVDex proprietary, published as evidence |
 | `reports/fc-6fb3c7588801/campaign.json` | VVDex | generated public proof; VVDex proprietary, published as evidence |
 | `reports/fc-6fb3c7588801/fc-6fb3c7588801-executive.pdf` | VVDex | generated public proof; VVDex proprietary, published as evidence |
+| `reports/fc-6fb3c7588801/fc-6fb3c7588801-summary.html` | VVDex | generated public proof; VVDex proprietary, published as evidence |
+| `reports/fc-6fb3c7588801/fc-6fb3c7588801-summary.pdf` | VVDex | generated public proof; VVDex proprietary, published as evidence |
 | `reports/fc-6fb3c7588801/fc-6fb3c7588801.css` | VVDex | generated public proof; VVDex proprietary, published as evidence |
 | `reports/fc-6fb3c7588801/fc-6fb3c7588801.html` | VVDex | generated public proof; VVDex proprietary, published as evidence |
 | `reports/fc-6fb3c7588801/fc-6fb3c7588801.pdf` | VVDex | generated public proof; VVDex proprietary, published as evidence |
 | `reports/fc-6fb3c7588801/summary.json` | VVDex | generated public proof; VVDex proprietary, published as evidence |
 | `reports/fc-72fe6f91c29e/campaign.json` | VVDex | generated public proof; VVDex proprietary, published as evidence |
 | `reports/fc-72fe6f91c29e/fc-72fe6f91c29e-executive.pdf` | VVDex | generated public proof; VVDex proprietary, published as evidence |
+| `reports/fc-72fe6f91c29e/fc-72fe6f91c29e-summary.html` | VVDex | generated public proof; VVDex proprietary, published as evidence |
+| `reports/fc-72fe6f91c29e/fc-72fe6f91c29e-summary.pdf` | VVDex | generated public proof; VVDex proprietary, published as evidence |
 | `reports/fc-72fe6f91c29e/fc-72fe6f91c29e.css` | VVDex | generated public proof; VVDex proprietary, published as evidence |
 | `reports/fc-72fe6f91c29e/fc-72fe6f91c29e.html` | VVDex | generated public proof; VVDex proprietary, published as evidence |
 | `reports/fc-72fe6f91c29e/fc-72fe6f91c29e.pdf` | VVDex | generated public proof; VVDex proprietary, published as evidence |
@@ -219,6 +229,8 @@ ownership registry; not typed.
 | `reports/fc-72fe6f91c29e/summary.json` | VVDex | generated public proof; VVDex proprietary, published as evidence |
 | `reports/fc-8626f712e26f/campaign.json` | VVDex | generated public proof; VVDex proprietary, published as evidence |
 | `reports/fc-8626f712e26f/fc-8626f712e26f-executive.pdf` | VVDex | generated public proof; VVDex proprietary, published as evidence |
+| `reports/fc-8626f712e26f/fc-8626f712e26f-summary.html` | VVDex | generated public proof; VVDex proprietary, published as evidence |
+| `reports/fc-8626f712e26f/fc-8626f712e26f-summary.pdf` | VVDex | generated public proof; VVDex proprietary, published as evidence |
 | `reports/fc-8626f712e26f/fc-8626f712e26f.css` | VVDex | generated public proof; VVDex proprietary, published as evidence |
 | `reports/fc-8626f712e26f/fc-8626f712e26f.html` | VVDex | generated public proof; VVDex proprietary, published as evidence |
 | `reports/fc-8626f712e26f/fc-8626f712e26f.pdf` | VVDex | generated public proof; VVDex proprietary, published as evidence |
@@ -246,6 +258,8 @@ ownership registry; not typed.
 | `reports/fc-8626f712e26f/summary.json` | VVDex | generated public proof; VVDex proprietary, published as evidence |
 | `reports/fc-d89e429d2781/campaign.json` | VVDex | generated public proof; VVDex proprietary, published as evidence |
 | `reports/fc-d89e429d2781/fc-d89e429d2781-executive.pdf` | VVDex | generated public proof; VVDex proprietary, published as evidence |
+| `reports/fc-d89e429d2781/fc-d89e429d2781-summary.html` | VVDex | generated public proof; VVDex proprietary, published as evidence |
+| `reports/fc-d89e429d2781/fc-d89e429d2781-summary.pdf` | VVDex | generated public proof; VVDex proprietary, published as evidence |
 | `reports/fc-d89e429d2781/fc-d89e429d2781.css` | VVDex | generated public proof; VVDex proprietary, published as evidence |
 | `reports/fc-d89e429d2781/fc-d89e429d2781.html` | VVDex | generated public proof; VVDex proprietary, published as evidence |
 | `reports/fc-d89e429d2781/fc-d89e429d2781.pdf` | VVDex | generated public proof; VVDex proprietary, published as evidence |
@@ -287,6 +301,8 @@ ownership registry; not typed.
 | `reports/fc-d89e429d2781/summary.json` | VVDex | generated public proof; VVDex proprietary, published as evidence |
 | `reports/fc-ec21239c00aa/campaign.json` | VVDex | generated public proof; VVDex proprietary, published as evidence |
 | `reports/fc-ec21239c00aa/fc-ec21239c00aa-executive.pdf` | VVDex | generated public proof; VVDex proprietary, published as evidence |
+| `reports/fc-ec21239c00aa/fc-ec21239c00aa-summary.html` | VVDex | generated public proof; VVDex proprietary, published as evidence |
+| `reports/fc-ec21239c00aa/fc-ec21239c00aa-summary.pdf` | VVDex | generated public proof; VVDex proprietary, published as evidence |
 | `reports/fc-ec21239c00aa/fc-ec21239c00aa.css` | VVDex | generated public proof; VVDex proprietary, published as evidence |
 | `reports/fc-ec21239c00aa/fc-ec21239c00aa.html` | VVDex | generated public proof; VVDex proprietary, published as evidence |
 | `reports/fc-ec21239c00aa/fc-ec21239c00aa.pdf` | VVDex | generated public proof; VVDex proprietary, published as evidence |
