@@ -63,4 +63,4 @@ what terms. Where a specific file states its own terms, that file wins.
 
 Written permission for anything beyond viewing, evaluation and verification,
 and access to sealed evidence under agreement, is arranged through
-<https://vvdexops.com/connect/>.
+<https://vvdexops.com/book>.

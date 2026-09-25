@@ -16,7 +16,7 @@ record under agreement.** Recomputing a record digest means hashing the sealed
 record's canonical bytes. This repository publishes no canonical record body, so
 that check cannot be run here, and nothing below claims otherwise. A reader who
 needs it can ask for the sealed evidence through
-<https://vvdexops.com/connect/>; access is arranged under agreement, and no
+<https://vvdexops.com/book>; access is arranged under agreement, and no
 terms are promised in advance.
 
 Why no canonical body is published: a sealed record's bytes carry the grader's
@@ -215,7 +215,7 @@ The digest is the digest of the sealed record as it exists in the Forge; a
 holder of that record, meaning the customer who commissioned the run or an
 auditor under agreement, reproduces it with `shasum -a 256` or
 `vvdex-env records verify` and reaches the printed value. Access is arranged
-through <https://vvdexops.com/connect/>, under agreement; no terms are promised
+through <https://vvdexops.com/book>, under agreement; no terms are promised
 in advance.
 
 Each `<evalId>.record.public.json` carries the

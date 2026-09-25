@@ -169,3 +169,18 @@ Each row is read from the named campaign's `campaign.json` cell counts
 | Codex CLI and Claude Sonnet CLI: text 10/10, structured 10/10 each | `reports/fc-6d6679dea47a/campaign.json` cells |
 | Free API lanes, ten attempts per cell; Groq GPT-OSS-20B text 1 pass + 9 lane errors | `reports/fc-3377c49ce724/campaign.json` cells |
 | Cursor Grok pilots invalid (containment breached); Gemini pilots lane errors; audio no graded attempt | `reports/fc-0c7e7c67a231/campaign.json` and `reports/fc-6f40beb6605e/campaign.json` cells |
+
+## Running an exam on vvdexops.com · read September 25, 2026
+
+The README section "Run a Forge exam yourself" describes the live service, not
+an artifact in this repository. Each statement is read from the named page of
+the live site, on the date above.
+
+| Claim | Where it is stated |
+| --- | --- |
+| The exams anyone can run, with their titles and families | <https://vvdexops.com/api/v1/forge/exams>: the entries with `access` `public` |
+| Every other exam runs on request | The same list: every other entry has `access` `request` |
+| How an attempt is counted: certified pass, fail, endpoint error, withheld | <https://vvdexops.com/docs/forge-exams>, "How each attempt is counted" |
+| The free model takes the one exam it has passed | <https://vvdexops.com/docs/limits> |
+| Receipt format `vvdex.receipt/v2`: SHA-256 over RFC 8785 canonical JSON, Ed25519 signature, the sealed record's digest per Forge attempt, offline check with `vvdex/receipt_core.py` | <https://vvdexops.com/docs/receipts> |
+| Which of those exams have a descriptor here | The `exams/` directory of this repository |

@@ -20,6 +20,49 @@ are the ones the sealed records state. It is not a distribution of exams and it
 is not a release of the engine. Publishing a result grants no licence to the
 instrument that produced it.
 
+## Run a Forge exam yourself · vvdexops.com, since September 24, 2026
+
+Forge exams are no longer run only by VVDex. At <https://vvdexops.com> anyone
+can connect the model or agent they want to test (a provider's API with their
+own key, their own server, a model on their own machine, or an app over HTTP),
+choose a public exam and run it. Without a key, VVDex's free model takes the
+one exam it has passed. Every attempt runs in a sealed sandbox and is decided
+by the exam's hidden grader, as in the campaigns below. It counts as a
+certified pass only when the grader passed the submitted work and containment
+was verified; endpoint errors and withheld outcomes are shown apart and never
+enter a pass rate. [Forge exams](https://vvdexops.com/docs/forge-exams) walks
+one attempt.
+
+The exams anyone can run, on September 25, 2026:
+
+| Exam | Family | Descriptor here |
+| --- | --- | --- |
+| `vvdex.ops.gateway-incident-1`: incident triage across rotated gateway logs | Terminal operations | not yet |
+| `public.swe.martinblech-xmltodict-issue-257`: streaming items must equal what the full parse would have built | Software repair in an open-source project | [yes](exams/public.swe.martinblech-xmltodict-issue-257/) |
+| `public.data.overheid-open-data-rdw-tgk-as-uitvoering`: an axle summary over a real RDW type-approval table, in SQL | Data analysis in SQL | not yet |
+| `vvdex.browser.order-desk-1`: correct one order in an admin application, through a real browser | Browser task | [yes](exams/vvdex.browser.order-desk-1/) |
+| `vvdex.annotation.text-labeling-1`: intent and entity annotation | Annotation | [yes](exams/vvdex.annotation.text-labeling-1/) |
+
+Every other exam runs on request: VVDex runs it and sends the report, and its
+material stays private. Each exam's page in the app shows the checks it passed
+before it was certified.
+
+Every run is sealed in a receipt, `vvdex.receipt/v2`. Its digest is a SHA-256
+over the receipt's RFC 8785 canonical JSON, leaving out the digest and the
+signature themselves, and VVDex signs that digest with Ed25519. A Forge
+attempt's result carries the digest of its sealed record. A receipt can be
+checked at <https://vvdexops.com/check-receipt>, or offline with VVDex's public
+key and the one small file the hash rules live in, `vvdex/receipt_core.py` in
+the SDK ([Receipts](https://vvdexops.com/docs/receipts)). Runs can also be
+started from code and CI with the `vvdex` Python package and command line
+([Python SDK and CLI](https://vvdexops.com/docs/python),
+[GitHub Action](https://vvdexops.com/docs/ci)). The daily limits are on
+[Limits](https://vvdexops.com/docs/limits).
+
+None of this changes the evidence below: it is VVDex's own campaigns, and this
+repository publishes nothing else. The platform's code, like the engine, is not
+published.
+
 ## Annotation certification evidence
 
 Forge also evaluates multimodal annotations: robotic video, image objects, text
@@ -296,7 +339,7 @@ the campaign summary, the report manifests and the verification receipts.
 a record digest from the sealed bytes. No canonical record body is published
 here, on any record, so that check cannot be run from this repository and
 nothing here claims it can. Access to sealed evidence is arranged through
-<https://vvdexops.com/connect/>; no terms are promised in advance.
+<https://vvdexops.com/book>; no terms are promised in advance.
 
 ## 10. Public OSS example: xmltodict issue #257
 
@@ -371,7 +414,11 @@ Only what the records and the receipts substantiate.
 * Featured exam pages: <https://vvdexops.com/featured/>
 * Integrity disclosure: <https://vvdexops.com/integrity/>
 * Verify a record in the browser: <https://vvdexops.com/verify/>
-* Terms: <https://vvdexops.com/terms/>
+* Run a Forge exam: <https://vvdexops.com/app/forge>
+* What we tested: <https://vvdexops.com/results>
+* Check a run's receipt: <https://vvdexops.com/check-receipt>
+* Documentation: <https://vvdexops.com/docs>
+* Terms: <https://vvdexops.com/legal/terms>
 
 ## 14. Ownership and terms
 
@@ -412,7 +459,7 @@ controls, [VERIFICATION.md](VERIFICATION.md) for what a reader can check.
 
 Built and operated by VVDex, Magdeburg, DE. Written permission and access to
 sealed evidence under agreement are arranged through
-<https://vvdexops.com/connect/>.
+<https://vvdexops.com/book>.
 
 ## Capability evidence
 
